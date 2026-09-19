@@ -1,6 +1,6 @@
 # Handoff — unfinished, takeover-ready
 
-**Status:** Public handoff of an unfinished but substantial connectome research codebase. Most of the heavy lifting (evidence infrastructure, Affinity S7 FAST path, Vast/local hybrid fleet tooling, AWS decommission) is done. The full-volume affinity run is **not** finished.
+**Status:** Public handoff of an unfinished but substantial connectome research codebase. Most of the heavy lifting (evidence infrastructure, Affinity S7 FAST path, Vast/local hybrid fleet tooling, AWS decommission) is done. The full-volume affinity run is **not** finished — paused because **resources ran out** (cloud budget, out-of-pocket AI/compute spend, solo GPU-hours), not because the approach failed.
 
 This is not a finished biological connectome. There is no releasable Vigilia reconstruction. Takeover means continuing the **technical** Affinity S7 campaign and the evidence-first programme under the same scientific guardrails.
 
