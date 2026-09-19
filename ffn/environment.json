@@ -1,0 +1,41 @@
+{
+  "kind": "FFN_ENVIRONMENT_AUDIT",
+  "status": "ENVIRONMENT_IMPORT_PASS_CHECKPOINT_UNAVAILABLE",
+  "source": {
+    "repository": "https://github.com/google/ffn",
+    "commit": "b8df2d96d7c8da057fd2702ced19732a08ab6ae4",
+    "commit_date": "2026-09-09T13:31:11-07:00",
+    "license": "Apache-2.0",
+    "run_inference_py_sha256": "a574c9de8ad45974e4b2a97488c72aa4947ca3061067d878b656794fb325742d",
+    "requirements_sha256": "6fe85f5008134d989463345774023b3d3e55eed6558a0dd2fd5148f4cc568ab1"
+  },
+  "environment": {
+    "location": "third_party/ffn/.venv",
+    "python": "3.13.14",
+    "tensorflow": "2.21.0",
+    "jax": "0.11.1",
+    "numpy": "2.5.3",
+    "protobuf": "7.36.1",
+    "h5py": "3.14.0",
+    "scipy": "1.18.1",
+    "tensorstore": "0.1.85",
+    "connectomics": "20250606",
+    "backend": "CPU",
+    "gpu_execution": "NOT_TESTED"
+  },
+  "gates": {
+    "tensorflow_import": "PASS",
+    "ffn_inference_module_import": "PASS",
+    "reference_checkpoint": "UNAVAILABLE",
+    "reference_inference": "NOT_RUN",
+    "target_compatibility": "UNASSESSABLE_WITHOUT_CHECKPOINT",
+    "target_inference": "NOT_RUN"
+  },
+  "checkpoint_investigation": {
+    "official_example": "gs://ffn-flyem-fib25/ via upstream README",
+    "configured_checkpoint": "models/fib25/model.ckpt-27465036",
+    "public_https_probe": "https://storage.googleapis.com/ffn-flyem-fib25/models/fib25/model.ckpt-27465036.index",
+    "result": "HTTP_404_2026-09-16",
+    "conclusion": "No legitimate checkpoint has been acquired; no FFN inference is permitted."
+  }
+}

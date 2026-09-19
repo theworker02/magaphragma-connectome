@@ -1,0 +1,63 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "anomaly_map": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\morphguard\\anomaly_map.json",
+    "artifact_sha256": "9b866502a77024d3b490fe7f57c998aa45d34a5996e9e1d760481d375ace75d5",
+    "disclaimer": "Heuristic morphology flags ? not definitive biology errors.",
+    "kind_counts": {
+      "boundary_break": 1,
+      "discontinuity": 1,
+      "duplicate_branch": 1,
+      "extreme_tortuosity": 1,
+      "implausible_merge_point": 1,
+      "suspicious_branching": 1,
+      "tiny_fragment": 2
+    },
+    "n_anomalies": 8,
+    "provenance": {
+      "edges": [
+        {
+          "attrs": {},
+          "child": "anomaly_map",
+          "parent": "labels",
+          "relation": "audited_by_morphguard"
+        }
+      ],
+      "graph_id": "f68f900f92fc49efba71616af31ecbd5",
+      "nodes": [
+        {
+          "attrs": {
+            "shape": [
+              24,
+              32,
+              32
+            ]
+          },
+          "kind": "volume",
+          "label": "",
+          "node_id": "labels"
+        },
+        {
+          "attrs": {
+            "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\morphguard\\anomaly_map.json"
+          },
+          "kind": "artifact",
+          "label": "",
+          "node_id": "anomaly_map"
+        }
+      ]
+    },
+    "review_queue_size": 8,
+    "tool": "morphguard",
+    "version": "0.1.0"
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T16:02:29Z",
+  "tool": "morphguard"
+}

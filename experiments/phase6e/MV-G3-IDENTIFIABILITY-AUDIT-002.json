@@ -1,0 +1,281 @@
+{
+  "contract_result": {
+    "axes": {
+      "X": {
+        "C1_coverage_both_splits": false,
+        "C2_train_replication_ge2": false,
+        "C3_non_collinear": false,
+        "C3_non_collinear_crops_with_both": [],
+        "axis": "X",
+        "evaluable": false,
+        "failure_reasons": [
+          "C1_COVERAGE",
+          "C2_REPLICATION",
+          "C3_NON_COLLINEARITY"
+        ],
+        "train_different_crops": [
+          "MV-G3-TRAIN-E"
+        ],
+        "train_same_crops": [
+          "MV-G3-TRAIN-A",
+          "MV-G3-TRAIN-B",
+          "MV-G3-TRAIN-D",
+          "MV-G3-TRAIN-G",
+          "MV-G3-TRAIN-I",
+          "MV-G3-TRAIN-J",
+          "MV-G3-TRAIN-K",
+          "MV-G3-TRAIN-L"
+        ],
+        "validation_different_crops": [],
+        "validation_same_crops": [
+          "MV-G3-VALIDATION-V1",
+          "MV-G3-VALIDATION-V2",
+          "MV-G3-VALIDATION-V3"
+        ]
+      },
+      "Y": {
+        "C1_coverage_both_splits": true,
+        "C2_train_replication_ge2": true,
+        "C3_non_collinear": false,
+        "C3_non_collinear_crops_with_both": [],
+        "axis": "Y",
+        "evaluable": false,
+        "failure_reasons": [
+          "C3_NON_COLLINEARITY"
+        ],
+        "train_different_crops": [
+          "MV-G3-TRAIN-C",
+          "MV-G3-TRAIN-E"
+        ],
+        "train_same_crops": [
+          "MV-G3-TRAIN-A",
+          "MV-G3-TRAIN-B",
+          "MV-G3-TRAIN-D",
+          "MV-G3-TRAIN-F",
+          "MV-G3-TRAIN-G",
+          "MV-G3-TRAIN-H",
+          "MV-G3-TRAIN-I",
+          "MV-G3-TRAIN-J",
+          "MV-G3-TRAIN-K",
+          "MV-G3-TRAIN-L"
+        ],
+        "validation_different_crops": [
+          "MV-G3-VALIDATION-V3"
+        ],
+        "validation_same_crops": [
+          "MV-G3-VALIDATION-V1",
+          "MV-G3-VALIDATION-V3"
+        ]
+      },
+      "Z": {
+        "C1_coverage_both_splits": false,
+        "C2_train_replication_ge2": false,
+        "C3_non_collinear": false,
+        "C3_non_collinear_crops_with_both": [],
+        "axis": "Z",
+        "evaluable": false,
+        "failure_reasons": [
+          "C1_COVERAGE",
+          "C2_REPLICATION",
+          "C3_NON_COLLINEARITY"
+        ],
+        "train_different_crops": [
+          "MV-G3-TRAIN-A",
+          "MV-G3-TRAIN-B",
+          "MV-G3-TRAIN-C",
+          "MV-G3-TRAIN-D",
+          "MV-G3-TRAIN-F",
+          "MV-G3-TRAIN-G",
+          "MV-G3-TRAIN-H",
+          "MV-G3-TRAIN-I",
+          "MV-G3-TRAIN-J",
+          "MV-G3-TRAIN-K",
+          "MV-G3-TRAIN-L"
+        ],
+        "train_same_crops": [],
+        "validation_different_crops": [
+          "MV-G3-VALIDATION-V1",
+          "MV-G3-VALIDATION-V2"
+        ],
+        "validation_same_crops": []
+      }
+    },
+    "cohort_valid": false,
+    "contract": "G3_AFFINITY_EVAL_COHORT_LEVEL_IDENTIFIABILITY_CONTRACT_V1",
+    "evaluable_axes": []
+  },
+  "id": "MV-G3-IDENTIFIABILITY-AUDIT-002",
+  "per_axis_train_crop_class_counts": {
+    "X": {
+      "MV-G3-TRAIN-A": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      },
+      "MV-G3-TRAIN-B": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 3
+      },
+      "MV-G3-TRAIN-D": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "MV-G3-TRAIN-E": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-G": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "MV-G3-TRAIN-I": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-J": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-K": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-L": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      }
+    },
+    "Y": {
+      "MV-G3-TRAIN-A": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 13
+      },
+      "MV-G3-TRAIN-B": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 11
+      },
+      "MV-G3-TRAIN-C": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-D": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 9
+      },
+      "MV-G3-TRAIN-E": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-F": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 4
+      },
+      "MV-G3-TRAIN-G": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 5
+      },
+      "MV-G3-TRAIN-H": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "MV-G3-TRAIN-I": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-J": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-K": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      },
+      "MV-G3-TRAIN-L": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 6
+      }
+    },
+    "Z": {
+      "MV-G3-TRAIN-A": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-B": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-C": {
+        "DIFFERENT_PROCESS": 11,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-D": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-F": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-G": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-H": {
+        "DIFFERENT_PROCESS": 5,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-I": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-J": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-K": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-TRAIN-L": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      }
+    }
+  },
+  "per_axis_validation_crop_class_counts": {
+    "X": {
+      "MV-G3-VALIDATION-V1": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      },
+      "MV-G3-VALIDATION-V2": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 4
+      },
+      "MV-G3-VALIDATION-V3": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      }
+    },
+    "Y": {
+      "MV-G3-VALIDATION-V1": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 5
+      },
+      "MV-G3-VALIDATION-V3": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 3
+      }
+    },
+    "Z": {
+      "MV-G3-VALIDATION-V1": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 0
+      },
+      "MV-G3-VALIDATION-V2": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      }
+    }
+  },
+  "scope": "TRAIN A-H + I-L (-005) + VALIDATION; interface-level; contract unchanged"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "MV-G3-AXIS-EFFECT-FINDINGS-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T17:05:00Z",
+  "status": "FROZEN_EXPLANATORY_FINDINGS",
+  "question": "Why do independently sampled crops repeatedly produce Z=DIFFERENT_PROCESS and Y/X=SAME_PROCESS?",
+  "read_only_audit": true,
+  "hypotheses": {
+    "H1a_coordinate_or_pair_bug": {
+      "verdict": "NOT_SUPPORTED",
+      "evidence": "Synthetic coordinate tests (tests/test_axis_semantics_geometry.py) confirm the affinity pair is exactly +1 along the affinity axis for all three axes: Z=(z,y,x)<->(z+1,y,x), Y=(z,y,x)<->(z,y+1,x), X=(z,y,x)<->(z,y,x+1). Array order is ZYX throughout (registration/coordinate_frames.json array_order=ZYX); no transpose/flip in pair construction."
+    },
+    "H2_voxel_scale_anisotropy": {
+      "verdict": "RULED_OUT",
+      "evidence": "Source five_yuri_4contrast is isotropic 8x8x8 nm (dvid survey manifest source.voxel_size_nm_xyz=[8,8,8]; registration/coordinate_frames.json voxel_size_nm_xyz=[8,8,8]). A one-voxel step is 8 nm along Z, Y, and X equally. This is NOT anisotropic ssTEM (contrast: registry CREMI 40x4x4).",
+      "physical_voxel_spacing_nm_zyx": [8.0, 8.0, 8.0]
+    },
+    "H1b_interface_context_non_equivariance": {
+      "verdict": "REAL_IMPLEMENTATION_PROPERTY",
+      "evidence": "The historical 3-member spread uses other[0] (first axis != affinity axis), so Z-affinity spreads along Y, while Y- and X-affinity both spread along Z. The spread direction is not equivariant across axes."
+    },
+    "H1b_as_dominant_cause": {
+      "verdict": "NOT_SUPPORTED",
+      "evidence": "Counterfactual comparison MV-G3-AXIS-CONTEXT-COMPARISON-001 recomputed the axis effect under CENTER_ONLY, HISTORICAL_ASYMMETRIC, and SYMMETRIC_BOTH_ORTHO context constructions. Headline axis_mean_spread is essentially unchanged across constructions (e.g. step: 9.39 / 8.06 / 8.23; ctx_grad: 9.92 / 8.13 / 8.19). Restoring context symmetry does NOT remove the axis effect.",
+      "referenced_artifact": "experiments/phase6e/MV-G3-AXIS-CONTEXT-COMPARISON-001.json"
+    },
+    "H3_dominant_gradient_candidate_selection": {
+      "verdict": "UNRESOLVED_NOW_PRIMARY",
+      "reason": "The remaining strongest untested mechanism: edge eligibility is decided by axis = argmax(abs(gradient)) at each candidate, so an axis only becomes reviewable where its gradient dominates. This couples which edges are seen to axis orientation. Phase B tests this directly by defining all three edges at each location independently."
+    },
+    "H4_biological_or_acquisition_directional_structure": {
+      "verdict": "UNRESOLVED",
+      "reason": "If axis-neutral eligibility still yields Z=DIFFERENT/Y,X=SAME at the same locations, the effect is intrinsic to Z-adjacent edges (biology/acquisition), not selection."
+    }
+  },
+  "within_class_center_edge_statistics": {
+    "source": "MV-G3-AXIS-CONTEXT-COMPARISON-001 (raw-only; labels used only to stratify)",
+    "single_voxel_intensity_step_means_by_axis_class": {
+      "note": "From the 'step' construction, HISTORICAL_ASYMMETRIC per_axis means.",
+      "Z": {"DIFFERENT_mean": 7.81, "DIFFERENT_n": 60, "SAME_n": 0},
+      "Y": {"DIFFERENT_mean": 69.49, "DIFFERENT_n": 13, "SAME_mean": 5.13, "SAME_n": 76},
+      "X": {"DIFFERENT_mean": 52.0, "DIFFERENT_n": 2, "SAME_mean": 4.08, "SAME_n": 38}
+    },
+    "key_observation": "Z-DIFFERENT edges occupy a LOW single-voxel intensity-step regime (mean ~7.8) that OVERLAPS the Y/X SAME regime (Y-SAME ~5.1, X-SAME ~4.1), whereas Y/X-DIFFERENT edges sit at a much higher step regime (~52-70). Every reviewed Z edge was DIFFERENT (0 SAME).",
+    "interpretation_caveat": "This does NOT by itself prove the expert applied different labeling criteria across axes. A single 1-voxel intensity step is insufficient to characterize the surrounding 3-D biological morphology the reviewer actually judged. It is a raw-signal observation, not a claim about reviewer behavior."
+  },
+  "immutability": {
+    "did_not_modify": ["historical generator", "MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002", "any prior receipt or event log", "the identifiability contract"],
+    "negative_result_recorded": "MV-G3-AXIS-CONTEXT-COMPARISON-001 stands as a negative causal result for the replicate-context (H1b) hypothesis; the 3-member context is NOT replaced merely to restore symmetry."
+  },
+  "next_action": "Phase B-F: build a NEW axis-neutral, paired-location (Z/Y/X triplet) generator that defines all three edges at each location independently of argmax-gradient, predeclare stratification, run methodological tests, then a small prospective review to test H3 vs H4.",
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

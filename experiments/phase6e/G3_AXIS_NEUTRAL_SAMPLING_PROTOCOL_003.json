@@ -1,0 +1,733 @@
+{
+  "C_E_MAGNITUDE_CONTRAST_AVAILABLE_IN_FRESH_ELIGIBLE_POOL": false,
+  "contrast_strata": {
+    "boundaries_frozen_before_location_selection": true,
+    "definition": "relative within-eligible-population percentile ranks of raw-only local edge contrast (mean |c->c+1| over Z,Y,X)",
+    "labels": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "percentile_edges": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "population_contrast_boundaries": [
+      0.0,
+      1.0,
+      1.6666666269302368,
+      2.6666667461395264,
+      61.33333206176758
+    ]
+  },
+  "created_at": "2026-09-17T17:10:03.473412Z",
+  "crop_ordering": "canonical survey source-ID ascending (contrast-independent)",
+  "designed_axis_balance": {
+    "X": 12,
+    "Y": 12,
+    "Z": 12
+  },
+  "edge_eligibility": "all three edges eligible independently; NOT gated by argmax(|gradient|)",
+  "edges_per_location": 3,
+  "excluded_sources": {
+    "existing_regions_A_H_C_E_and_validation": [
+      "MV-DVID-RAW-SURVEY-001",
+      "MV-DVID-RAW-SURVEY-002",
+      "MV-DVID-RAW-SURVEY-004",
+      "MV-DVID-RAW-SURVEY-008",
+      "MV-DVID-RAW-SURVEY-015",
+      "MV-DVID-RAW-SURVEY-017",
+      "MV-DVID-RAW-SURVEY-022",
+      "MV-DVID-RAW-SURVEY-024",
+      "MV-DVID-RAW-SURVEY-025",
+      "MV-DVID-RAW-SURVEY-027",
+      "MV-DVID-RAW-SURVEY-031"
+    ],
+    "used_005": [
+      "MV-DVID-RAW-SURVEY-003",
+      "MV-DVID-RAW-SURVEY-007",
+      "MV-DVID-RAW-SURVEY-009",
+      "MV-DVID-RAW-SURVEY-013"
+    ],
+    "used_006": [
+      "MV-DVID-RAW-SURVEY-010",
+      "MV-DVID-RAW-SURVEY-014",
+      "MV-DVID-RAW-SURVEY-019"
+    ]
+  },
+  "forbidden_inputs": [
+    "SAME/DIFFERENT labels",
+    "class predictions",
+    "learned affinities",
+    "historical class composition",
+    "argmax-gradient edge eligibility",
+    "C/E or any used/reviewed crop"
+  ],
+  "historical_edges_excluded_count": 677,
+  "id": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-003",
+  "location_selection": "within assigned stratum, deterministic sha256 hash-rank over 12-voxel-separated interior centers using immutable raw_sha256+source_id+stratum+coords",
+  "locations": [
+    {
+      "assigned_stratum": "Q1",
+      "center_zyx": [
+        23,
+        3,
+        39
+      ],
+      "contrast_percentile_rank": 0.010416666666666666,
+      "crop_id": "MV-G3-AXNEU3-01",
+      "edges": {
+        "X": [
+          [
+            23,
+            3,
+            39
+          ],
+          [
+            23,
+            3,
+            40
+          ]
+        ],
+        "Y": [
+          [
+            23,
+            3,
+            39
+          ],
+          [
+            23,
+            4,
+            39
+          ]
+        ],
+        "Z": [
+          [
+            23,
+            3,
+            39
+          ],
+          [
+            24,
+            3,
+            39
+          ]
+        ]
+      },
+      "index": 1,
+      "raw_contrast": 0.3333333432674408,
+      "raw_sha256": "ba13215792b0278429b4a98b8ceccf60d481b797554cefa7f894991060cc5e4d",
+      "source_id": "MV-DVID-RAW-SURVEY-005"
+    },
+    {
+      "assigned_stratum": "Q2",
+      "center_zyx": [
+        3,
+        113,
+        51
+      ],
+      "contrast_percentile_rank": 0.17102713178294573,
+      "crop_id": "MV-G3-AXNEU3-02",
+      "edges": {
+        "X": [
+          [
+            3,
+            113,
+            51
+          ],
+          [
+            3,
+            113,
+            52
+          ]
+        ],
+        "Y": [
+          [
+            3,
+            113,
+            51
+          ],
+          [
+            3,
+            114,
+            51
+          ]
+        ],
+        "Z": [
+          [
+            3,
+            113,
+            51
+          ],
+          [
+            4,
+            113,
+            51
+          ]
+        ]
+      },
+      "index": 2,
+      "raw_contrast": 1.0,
+      "raw_sha256": "32e3ac4b406c943888034423abce14a3b8ebba41bac3f78f7daeb5333ba02235",
+      "source_id": "MV-DVID-RAW-SURVEY-006"
+    },
+    {
+      "assigned_stratum": "Q3",
+      "center_zyx": [
+        42,
+        111,
+        68
+      ],
+      "contrast_percentile_rank": 0.44089147286821706,
+      "crop_id": "MV-G3-AXNEU3-03",
+      "edges": {
+        "X": [
+          [
+            42,
+            111,
+            68
+          ],
+          [
+            42,
+            111,
+            69
+          ]
+        ],
+        "Y": [
+          [
+            42,
+            111,
+            68
+          ],
+          [
+            42,
+            112,
+            68
+          ]
+        ],
+        "Z": [
+          [
+            42,
+            111,
+            68
+          ],
+          [
+            43,
+            111,
+            68
+          ]
+        ]
+      },
+      "index": 3,
+      "raw_contrast": 1.6666666269302368,
+      "raw_sha256": "ed6da55ec9d327cd001231f04a8724ba42a7361f05d8fe2f65ee8dbf276979ca",
+      "source_id": "MV-DVID-RAW-SURVEY-011"
+    },
+    {
+      "assigned_stratum": "Q4",
+      "center_zyx": [
+        13,
+        94,
+        21
+      ],
+      "contrast_percentile_rank": 0.7149951550387597,
+      "crop_id": "MV-G3-AXNEU3-04",
+      "edges": {
+        "X": [
+          [
+            13,
+            94,
+            21
+          ],
+          [
+            13,
+            94,
+            22
+          ]
+        ],
+        "Y": [
+          [
+            13,
+            94,
+            21
+          ],
+          [
+            13,
+            95,
+            21
+          ]
+        ],
+        "Z": [
+          [
+            13,
+            94,
+            21
+          ],
+          [
+            14,
+            94,
+            21
+          ]
+        ]
+      },
+      "index": 4,
+      "raw_contrast": 2.6666667461395264,
+      "raw_sha256": "06e378e5531853cf2324a2b9b49e035252333963ef821efacfbda09d307c0df1",
+      "source_id": "MV-DVID-RAW-SURVEY-012"
+    },
+    {
+      "assigned_stratum": "Q1",
+      "center_zyx": [
+        33,
+        6,
+        69
+      ],
+      "contrast_percentile_rank": 0.05935077519379845,
+      "crop_id": "MV-G3-AXNEU3-05",
+      "edges": {
+        "X": [
+          [
+            33,
+            6,
+            69
+          ],
+          [
+            33,
+            6,
+            70
+          ]
+        ],
+        "Y": [
+          [
+            33,
+            6,
+            69
+          ],
+          [
+            33,
+            7,
+            69
+          ]
+        ],
+        "Z": [
+          [
+            33,
+            6,
+            69
+          ],
+          [
+            34,
+            6,
+            69
+          ]
+        ]
+      },
+      "index": 5,
+      "raw_contrast": 0.6666666865348816,
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "source_id": "MV-DVID-RAW-SURVEY-016"
+    },
+    {
+      "assigned_stratum": "Q2",
+      "center_zyx": [
+        48,
+        118,
+        122
+      ],
+      "contrast_percentile_rank": 0.17102713178294573,
+      "crop_id": "MV-G3-AXNEU3-06",
+      "edges": {
+        "X": [
+          [
+            48,
+            118,
+            122
+          ],
+          [
+            48,
+            118,
+            123
+          ]
+        ],
+        "Y": [
+          [
+            48,
+            118,
+            122
+          ],
+          [
+            48,
+            119,
+            122
+          ]
+        ],
+        "Z": [
+          [
+            48,
+            118,
+            122
+          ],
+          [
+            49,
+            118,
+            122
+          ]
+        ]
+      },
+      "index": 6,
+      "raw_contrast": 1.0,
+      "raw_sha256": "2ef65a6b2d1dcc216fd8073bee042179d7e58d1e402a51a054e2e3ae94e74a07",
+      "source_id": "MV-DVID-RAW-SURVEY-018"
+    },
+    {
+      "assigned_stratum": "Q3",
+      "center_zyx": [
+        53,
+        50,
+        45
+      ],
+      "contrast_percentile_rank": 0.44089147286821706,
+      "crop_id": "MV-G3-AXNEU3-07",
+      "edges": {
+        "X": [
+          [
+            53,
+            50,
+            45
+          ],
+          [
+            53,
+            50,
+            46
+          ]
+        ],
+        "Y": [
+          [
+            53,
+            50,
+            45
+          ],
+          [
+            53,
+            51,
+            45
+          ]
+        ],
+        "Z": [
+          [
+            53,
+            50,
+            45
+          ],
+          [
+            54,
+            50,
+            45
+          ]
+        ]
+      },
+      "index": 7,
+      "raw_contrast": 1.6666666269302368,
+      "raw_sha256": "c39928206ab843b34b3fc4cd82d7ca2fe3b95a967959c4c5a9ff9f8355469bff",
+      "source_id": "MV-DVID-RAW-SURVEY-020"
+    },
+    {
+      "assigned_stratum": "Q4",
+      "center_zyx": [
+        13,
+        61,
+        50
+      ],
+      "contrast_percentile_rank": 0.8420542635658915,
+      "crop_id": "MV-G3-AXNEU3-08",
+      "edges": {
+        "X": [
+          [
+            13,
+            61,
+            50
+          ],
+          [
+            13,
+            61,
+            51
+          ]
+        ],
+        "Y": [
+          [
+            13,
+            61,
+            50
+          ],
+          [
+            13,
+            62,
+            50
+          ]
+        ],
+        "Z": [
+          [
+            13,
+            61,
+            50
+          ],
+          [
+            14,
+            61,
+            50
+          ]
+        ]
+      },
+      "index": 8,
+      "raw_contrast": 4.333333492279053,
+      "raw_sha256": "bdc5b40a41cbeba386ed235246453d2087ec517fb1afe3ac7c2da884e0cbcb33",
+      "source_id": "MV-DVID-RAW-SURVEY-021"
+    },
+    {
+      "assigned_stratum": "Q1",
+      "center_zyx": [
+        43,
+        3,
+        51
+      ],
+      "contrast_percentile_rank": 0.05935077519379845,
+      "crop_id": "MV-G3-AXNEU3-09",
+      "edges": {
+        "X": [
+          [
+            43,
+            3,
+            51
+          ],
+          [
+            43,
+            3,
+            52
+          ]
+        ],
+        "Y": [
+          [
+            43,
+            3,
+            51
+          ],
+          [
+            43,
+            4,
+            51
+          ]
+        ],
+        "Z": [
+          [
+            43,
+            3,
+            51
+          ],
+          [
+            44,
+            3,
+            51
+          ]
+        ]
+      },
+      "index": 9,
+      "raw_contrast": 0.6666666865348816,
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "source_id": "MV-DVID-RAW-SURVEY-023"
+    },
+    {
+      "assigned_stratum": "Q2",
+      "center_zyx": [
+        55,
+        110,
+        3
+      ],
+      "contrast_percentile_rank": 0.17102713178294573,
+      "crop_id": "MV-G3-AXNEU3-10",
+      "edges": {
+        "X": [
+          [
+            55,
+            110,
+            3
+          ],
+          [
+            55,
+            110,
+            4
+          ]
+        ],
+        "Y": [
+          [
+            55,
+            110,
+            3
+          ],
+          [
+            55,
+            111,
+            3
+          ]
+        ],
+        "Z": [
+          [
+            55,
+            110,
+            3
+          ],
+          [
+            56,
+            110,
+            3
+          ]
+        ]
+      },
+      "index": 10,
+      "raw_contrast": 1.0,
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "source_id": "MV-DVID-RAW-SURVEY-026"
+    },
+    {
+      "assigned_stratum": "Q3",
+      "center_zyx": [
+        44,
+        89,
+        109
+      ],
+      "contrast_percentile_rank": 0.44089147286821706,
+      "crop_id": "MV-G3-AXNEU3-11",
+      "edges": {
+        "X": [
+          [
+            44,
+            89,
+            109
+          ],
+          [
+            44,
+            89,
+            110
+          ]
+        ],
+        "Y": [
+          [
+            44,
+            89,
+            109
+          ],
+          [
+            44,
+            90,
+            109
+          ]
+        ],
+        "Z": [
+          [
+            44,
+            89,
+            109
+          ],
+          [
+            45,
+            89,
+            109
+          ]
+        ]
+      },
+      "index": 11,
+      "raw_contrast": 1.6666666269302368,
+      "raw_sha256": "3f8f36ff168743b9a0af088381bea2b9fc920f521bc6625b81fa15117f831f98",
+      "source_id": "MV-DVID-RAW-SURVEY-028"
+    },
+    {
+      "assigned_stratum": "Q4",
+      "center_zyx": [
+        54,
+        33,
+        123
+      ],
+      "contrast_percentile_rank": 0.7623546511627907,
+      "crop_id": "MV-G3-AXNEU3-12",
+      "edges": {
+        "X": [
+          [
+            54,
+            33,
+            123
+          ],
+          [
+            54,
+            33,
+            124
+          ]
+        ],
+        "Y": [
+          [
+            54,
+            33,
+            123
+          ],
+          [
+            54,
+            34,
+            123
+          ]
+        ],
+        "Z": [
+          [
+            54,
+            33,
+            123
+          ],
+          [
+            55,
+            33,
+            123
+          ]
+        ]
+      },
+      "index": 12,
+      "raw_contrast": 3.0,
+      "raw_sha256": "ee943c9d1b3b3a9fb8f39fee4a0480a32e65dd1acf8ce510e3a9bb4a16268740",
+      "source_id": "MV-DVID-RAW-SURVEY-029"
+    }
+  ],
+  "locations_per_crop": 1,
+  "n_crops": 12,
+  "observed_fresh_contrast_range": {
+    "boundaries": [
+      0.0,
+      1.0,
+      1.6666666269302368,
+      2.6666667461395264,
+      61.33333206176758
+    ],
+    "max": 61.33333206176758,
+    "min": 0.0,
+    "p50": 1.6666666269302368
+  },
+  "primary_question": "At the same fresh physical location, do independently reviewed Z/Y/X adjacent affinity edges retain the historical axis/class relationship?",
+  "sampler_id": "AXIS_NEUTRAL_PAIRED_LOCATION_V3",
+  "schema_version": 1,
+  "scope_limitation": "Tests axis dependence across the contrast distribution available in FRESH INDEPENDENT tissue. Does NOT establish behavior in the historical C/E absolute-contrast regime.",
+  "status": "PREDECLARED_FIXED_BEFORE_LABELS",
+  "stratum_rotation": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4"
+  ],
+  "total_edges": 36
+}

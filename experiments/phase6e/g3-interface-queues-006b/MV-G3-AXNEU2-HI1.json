@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-AXNEU-QUEUE-MV-G3-AXNEU2-HI1-006",
+  "created_at": "2026-09-17T22:16:22.086362Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU2-HI1-006",
+  "crop_id": "MV-G3-AXNEU2-HI1",
+  "raw_sha256": "ff7a7ae770a775605752448f5318b50050324a895ea49b41b22dab3bbcf2335b",
+  "selection": {
+    "method": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+    "contrast_regime": "high",
+    "band_counts": {
+      "LOW": 1,
+      "MID": 2,
+      "HIGH": 0
+    },
+    "locations": 3,
+    "edge_eligibility": "all three axis edges eligible independently; NOT argmax-gated",
+    "label_blind": true,
+    "forbidden_inputs": [
+      "SAME/DIFFERENT labels",
+      "class predictions",
+      "learned affinities",
+      "historical class composition",
+      "argmax-gradient edge eligibility"
+    ],
+    "excluded_historical_edges": 569
+  },
+  "locations": [
+    {
+      "center_zyx": [
+        3,
+        3,
+        3
+      ],
+      "contrast": 3.667,
+      "contrast_band": "LOW"
+    },
+    {
+      "center_zyx": [
+        3,
+        3,
+        15
+      ],
+      "contrast": 6.0,
+      "contrast_band": "MID"
+    },
+    {
+      "center_zyx": [
+        3,
+        3,
+        27
+      ],
+      "contrast": 5.0,
+      "contrast_band": "MID"
+    }
+  ],
+  "questions": [
+    {
+      "id": "MV-G3-AXNEU-L01-Z",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L01-Z",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L01",
+      "location_center_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_right_zyx": [
+        4,
+        3,
+        3
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "contrast_band": "LOW",
+      "local_contrast": 3.667,
+      "raw_gradient_score": 3.667,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L01-Y",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L01-Y",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L01",
+      "location_center_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        4,
+        3
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "contrast_band": "LOW",
+      "local_contrast": 3.667,
+      "raw_gradient_score": 3.667,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L01-X",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L01-X",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L01",
+      "location_center_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        3,
+        4
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "contrast_band": "LOW",
+      "local_contrast": 3.667,
+      "raw_gradient_score": 3.667,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L02-Z",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L02-Z",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L02",
+      "location_center_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_right_zyx": [
+        4,
+        3,
+        15
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "contrast_band": "MID",
+      "local_contrast": 6.0,
+      "raw_gradient_score": 6.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L02-Y",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L02-Y",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L02",
+      "location_center_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_right_zyx": [
+        3,
+        4,
+        15
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "contrast_band": "MID",
+      "local_contrast": 6.0,
+      "raw_gradient_score": 6.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L02-X",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L02-X",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L02",
+      "location_center_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        15
+      ],
+      "pair_right_zyx": [
+        3,
+        3,
+        16
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "contrast_band": "MID",
+      "local_contrast": 6.0,
+      "raw_gradient_score": 6.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L03-Z",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L03-Z",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L03",
+      "location_center_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_right_zyx": [
+        4,
+        3,
+        27
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "contrast_band": "MID",
+      "local_contrast": 5.0,
+      "raw_gradient_score": 5.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L03-Y",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L03-Y",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L03",
+      "location_center_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_right_zyx": [
+        3,
+        4,
+        27
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "contrast_band": "MID",
+      "local_contrast": 5.0,
+      "raw_gradient_score": 5.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-L03-X",
+      "kind": "RAW_EM_AXIS_NEUTRAL_PAIRED_EDGE",
+      "interface_id": "MV-G3-AXNEU-L03-X",
+      "interface_member": 1,
+      "interface_members": 1,
+      "location_id": "L03",
+      "location_center_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_left_zyx": [
+        3,
+        3,
+        27
+      ],
+      "pair_right_zyx": [
+        3,
+        3,
+        28
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "contrast_band": "MID",
+      "local_contrast": 5.0,
+      "raw_gradient_score": 5.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Axis-neutral paired-location diagnostic: at each fixed physical center all three axis edges are reviewed independently. Purpose is to test axis/class confounding; not training supervision."
+}

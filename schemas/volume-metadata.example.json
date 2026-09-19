@@ -1,0 +1,13 @@
+{
+  "dataset_id": "MV-WASPSYN-S3-V00",
+  "specimen_id": "SOURCE-SPECIMEN-UNKNOWN",
+  "format": "tiff",
+  "voxel_size_nm": [8.0, 8.0, 8.0],
+  "shape_zyx": [400, 400, 400],
+  "coordinate_frame": "source-volume-voxel-zyx",
+  "origin_nm_xyz": [0.0, 0.0, 0.0],
+  "source_url": "https://REPLACE-WITH-VERIFIED-ARTIFACT-URL",
+  "source_sha256": "REPLACE-WITH-VERIFIED-SHA256",
+  "evidence_status": "SOURCE_ANNOTATED",
+  "notes": "Replace every placeholder from authoritative dataset metadata before ingestion."
+}

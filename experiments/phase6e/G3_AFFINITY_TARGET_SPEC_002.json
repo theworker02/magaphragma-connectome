@@ -1,0 +1,56 @@
+{
+  "id": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "schema_version": 1,
+  "status": "NORMATIVE_TARGET_SPECIFICATION",
+  "supersedes": "CURRENT_AFFINITY_TARGET as operationalized by G3 human SAME_PROCESS/DIFFERENT_PROCESS review under review_external_boundary_package.py (declared INVALID in G3_AFFINITY_TARGET_SEMANTICS_AUDIT_001)",
+  "companion_document": "research/G3_AFFINITY_TARGET_SPEC_002.md",
+  "coordinate_frames": {
+    "array_order": "ZYX",
+    "world_axis_order": "XYZ",
+    "channel_zyx": {"0": "Z", "1": "Y", "2": "X"},
+    "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+    "isotropy_required": true,
+    "permutation_invariance_required": true
+  },
+  "layers": {
+    "biological_target": {
+      "name": "nearest_neighbor_object_affinity",
+      "definition": "For voxel v in ZYX integer array coordinates and axis a in {0,1,2}, let e_a be the unit step along axis a. Let S be a valid reference instance segmentation assigning each voxel an object id (0 = background/ignore). Then A(v,a) = 1 iff S(v) != 0 and S(v) == S(v+e_a); else A(v,a) = 0 when both voxels are inside the labeled domain; undefined/ignored when either voxel is outside the volume or marked ignore.",
+      "mathematical_form": "A(v,a) = 1[S(v) = S(v+e_a) ≠ 0]",
+      "required_properties": [
+        "invariant under any permutation π of axes when S and A are transformed consistently",
+        "independent of EM intensity appearance",
+        "independent of reviewer UI",
+        "independent of model predictions"
+      ]
+    },
+    "observable_em_evidence": {
+      "definition": "Raw EM intensities (and optional derived image features) in a neighborhood of {v, v+e_a}. Evidence may correlate with A but is not A.",
+      "forbidden_collapse": "Do not treat local membrane appearance as identical to object identity."
+    },
+    "annotation_procedure": {
+      "definition": "Any human or algorithmic procedure used to estimate A from evidence or from reference S.",
+      "validity_requirement": "A procedure is valid only if its outputs are equivariant under axis permutation of the full presentation (geometry + context + display + controls) OR if labels are derived mechanically from a validated S.",
+      "failed_procedure": "G3 interface-queue Napari review of SAME_PROCESS/DIFFERENT_PROCESS (008) — presentation not permutation-equivariant; target declared INVALID for training."
+    },
+    "model_prediction": {
+      "definition": "A learned function Â(raw, v, a) approximating A.",
+      "forbidden_collapse": "Model outputs are not biological truth; they require evaluation against biological_target or independent instance GT."
+    }
+  },
+  "derivation_from_instance_segmentation": {
+    "allowed": true,
+    "rule": "If a validated instance volume S exists in the same crop and frame, affinities SHALL be computed by comparing S(v) and S(v+e_a) for each a; provenance MUST record S path, hash, frame id, and derivation code version.",
+    "current_dvid_survey_status": "NO_VALID_INSTANCE_S_ON_G3_008_CROPS"
+  },
+  "evaluation_contract": {
+    "permutation_equivariance": "For any axis permutation π, metrics computed on A and on π(A) after transforming predictions/labels must match within numerical tolerance when the biological volumes are permuted.",
+    "identifiability": "Training/evaluation must not use a label set that is a deterministic function of axis identity alone.",
+    "held_out": "Never evaluate production claims on volumes whose labels were used for training or for UI debugging of the same decisions."
+  },
+  "explicit_non_goals": [
+    "Do not redefine A to match historical G3-008 labels",
+    "Do not treat orientation-collinear human labels as biological_target",
+    "Do not promote SAME_PROCESS decisions to MV-N / MV-SYN / MV-CONN"
+  ]
+}

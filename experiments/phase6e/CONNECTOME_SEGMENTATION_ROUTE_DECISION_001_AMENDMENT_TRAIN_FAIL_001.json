@@ -1,0 +1,25 @@
+{
+  "id": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_TRAIN_FAIL_001",
+  "created_at": "2026-09-18T03:10:00Z",
+  "parent_decision": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "status": "AMENDMENT_LOCKED",
+  "state": "AFFINITY_MODEL_QUALIFICATION_OPEN_AFTER_PGT002_001_FAIL",
+  "updated_pipeline_stage_board": {
+    "annotation_procedure_SPEC002": "VALIDATED",
+    "production_GT": "BATCH_002_PROMOTED",
+    "affinity_training_authorization": "REOPENED",
+    "first_controlled_train_PGT002_001": "FAIL (GATE_D); permanently recorded",
+    "affinity_model_qualified_for_dense_seg": false,
+    "dense_neuronal_segmentation": "STILL_CLOSED",
+    "process_reconstruction_connectome": "STILL_CLOSED",
+    "active_gate": "Frozen failure-analysis experiment AFFINITY_TRAIN_PGT002_FAILURE_ANALYSIS_001"
+  },
+  "do_not": [
+    "Touch GATE_D",
+    "Promote checkpoint-step10",
+    "Run dense segmentation",
+    "Retrain identical config for hundreds more steps as next move"
+  ],
+  "permanent_fail_artifact": "experiments/phase6e/AFFINITY_TRAIN_PGT002_001_FAIL_PERMANENT.json",
+  "next_experiment": "experiments/phase6e/AFFINITY_TRAIN_PGT002_FAILURE_ANALYSIS_001.json"
+}

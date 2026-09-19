@@ -1,0 +1,37 @@
+{
+  "id": "AFFINITY_S7_AWS_FLEET_PLAN_001",
+  "historical_status": "DECOMMISSIONED_FOR_AFFINITY_PRODUCTION",
+  "historical_note": "Retained as historical planning evidence. Do not deploy. Use tools/affinity_vast.py.",
+  "created_at": "2026-09-18T05:35:00Z",
+  "status": "READY_TO_DEPLOY_AFTER_QUOTA_CHECK",
+  "goal": "~3 wall-clock days for affinity inference over 28798 chunks",
+  "software": "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_002 (claim-lock + batch 16)",
+  "cloudformation": "infrastructure/aws_s7_workers/s7-gpu-fleet.yaml",
+  "recommended_instances": [
+    {
+      "type": "g6.xlarge",
+      "gpu": "1x NVIDIA L4 24GB",
+      "why": "Inference-oriented, Spot-friendly, matches single-GPU worker model"
+    },
+    {
+      "type": "g5.xlarge",
+      "gpu": "1x NVIDIA A10G 24GB",
+      "why": "Fallback if G6 capacity/quota tight"
+    }
+  ],
+  "capacity_math": {
+    "fast001_measured_min_per_chunk": 3.1,
+    "fast002_target_min_per_chunk": 1.5,
+    "chunks": 28798,
+    "gpu_days_at_fast002": 30,
+    "gpus_for_3_wall_days": 10
+  },
+  "deploy_steps": [
+    "Upload checkpoint + chunks.json to S3",
+    "aws cloudformation deploy --template-file infrastructure/aws_s7_workers/s7-gpu-fleet.yaml ... DesiredCapacity=10",
+    "seed_claim_table.sh against ClaimTable",
+    "Bake/user-data: clone repo, pip torch+cuda, run fast worker --claim --loop with S7_CLAIM_BACKEND=dynamodb"
+  ],
+  "cost_caution": "GPU Spot fleets are billable; set DesiredCapacity=0 when idle. Do not leave ASG at 10 overnight without watching Spot interruptions.",
+  "biological_gates": "UNCHANGED — affinity artifacts only; MV-SEG/synapses/graph still CLOSED"
+}

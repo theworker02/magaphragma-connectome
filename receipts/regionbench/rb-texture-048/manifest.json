@@ -1,0 +1,19 @@
+{
+  "file_sha256": "03b9c93f8c2c0045be0d9d546b8b89d8a2e3c9bd891ba95f8ed0fc9867d8d06b",
+  "frozen": true,
+  "region": {
+    "description": "noisy texture field",
+    "kind": "texture",
+    "manifest_relpath": "receipts/regionbench/rb-texture-048/manifest.json",
+    "npy_relpath": "receipts/regionbench/rb-texture-048/volume.npy",
+    "region_id": "rb-texture-048",
+    "seed": 202,
+    "shape": [
+      48,
+      48,
+      48
+    ],
+    "volume_sha256": "42dd16cd5bf4bb9cc80b0d599123d24e3dc2c284de8cf1bace1e471714ff4757"
+  },
+  "schema": "regionbench/v1"
+}\n

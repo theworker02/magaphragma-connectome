@@ -1,0 +1,13 @@
+{
+  "id": "MV-AUTOCONSENSUS-ADMISSION-001",
+  "status": "AUTO_CONSENSUS_ADAPTATION_INSUFFICIENT_FOR_FIRST_EXPERIMENT",
+  "evaluated_records": [
+    "local_research_build/phase6ca/MV-DVID-ANN-000001/consensus/record.json",
+    "local_research_build/phase6ca/MV-DVID-ANN-000002/consensus/record.json",
+    "local_research_build/phase6ca/MV-DVID-ANN-000004/consensus/record.json"
+  ],
+  "observation": "Each existing immutable experimental record retains one high-confidence component only. Those records are preserved, but they contain no certified different-process relationships and cannot train a separation model without confirmation collapse.",
+  "decision": "Do not start mixed-domain, teacher/student, or target-only adaptation from this cohort.",
+  "next_experiment": "Generate conservative oversegmented target supervoxels and explicit high-confidence SAME_PROCESS and DIFFERENT_PROCESS pair masks, then reapply the stricter admission gate. MV-GTVOL-000004 remains excluded.",
+  "biological_artifacts": {"MV-FRAG": 0, "MV-N": 0, "MV-CONN": 0}
+}

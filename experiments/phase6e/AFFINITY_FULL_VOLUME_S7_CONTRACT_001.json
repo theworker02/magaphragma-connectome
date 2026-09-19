@@ -1,0 +1,40 @@
+{
+  "id": "AFFINITY_FULL_VOLUME_S7_CONTRACT_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T04:30:00Z",
+  "status": "FROZEN_BEFORE_FIRST_FULL_VOLUME_CHUNK",
+  "frozen_before_seeing_full_volume_chunk_results": true,
+  "authorization": "AFFINITY_S6_SEG_QC_AUTHORIZATION_001",
+  "domain": {
+    "id": "MV-DOMAIN-PRODUCTION-001",
+    "manifest": "local_research_build/phase5c-production/domain.json",
+    "chunks_index": "local_research_build/phase5c-production/chunks.json",
+    "chunk_count": 28798,
+    "core_shape_voxels_xyz": [1024, 1024, 128],
+    "overlap_margin_voxels_xyz": [64, 64, 16]
+  },
+  "model": {
+    "candidate_id": "C_PATCH_20_64_64",
+    "checkpoint": "experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/extend/checkpoints/checkpoint-step10.pt",
+    "checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+    "crop_size_zyx": [20, 64, 64],
+    "stride_zyx": [10, 32, 32]
+  },
+  "per_chunk_stack": [
+    "Fetch read_bounds raw from DVID",
+    "Sliding-window affinity + boundary inference",
+    "Crop predictions to core_bounds",
+    "True-3D ELF watershed + multicut (beta=0.1)",
+    "Write chunk receipt; update processing_state"
+  ],
+  "priority_order": [
+    "Chunks overlapping AFFINITY-ROI-001 package bounds first",
+    "Then expanding neighbor frontier (BFS on neighbor_chunk_ids)",
+    "Then remaining NOT_STARTED by chunk id ascending"
+  ],
+  "outputs_root": "experiments/phase6e/AFFINITY-FULLVOL-S7-001",
+  "classification": "MACHINE_PSEUDOLABEL_CHUNKED — not production MV-SEG / biological identity",
+  "halo_note": "Phase5C planning halo (64,64,16) retained for read context; model patch is 20x64x64. Revalidation of halo vs receptive field is recorded as ACCEPT_PLANNING_HALO_FOR_S7_V1 under this freeze.",
+  "completion_rule": "S7 remains RUNNING until all 28798 chunks reach segmentation_state COMPLETE or FAILED; whole_domain_processed only when zero NOT_STARTED remain",
+  "s8_still_separate": true
+}

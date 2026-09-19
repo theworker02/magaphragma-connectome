@@ -1,0 +1,11 @@
+{
+  "id": "MV-PRE-GROUNDTRUTH-BASELINE-AMENDMENT-001",
+  "amends": "production/MV-PRE-GROUNDTRUTH-BASELINE.json",
+  "original_record_retained": true,
+  "reason": "The baseline was authored alongside a new ground-truth importer regression test. The final executed suite contains 20 tests, not the 19 tests present before that test was added.",
+  "corrected_test_status": {
+    "command": "$env:PYTHONPATH='src'; python -m unittest discover -s tests -v",
+    "status": "PASS",
+    "tests": 20
+  }
+}

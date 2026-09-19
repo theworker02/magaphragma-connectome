@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-AXNEU3-QUEUE-MV-G3-AXNEU3-09-007",
+  "created_at": "2026-09-17T17:10:03.484708Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-09-007",
+  "crop_id": "MV-G3-AXNEU3-09",
+  "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+  "selection": {
+    "method": "AXIS_NEUTRAL_PAIRED_LOCATION_V3",
+    "protocol": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-003",
+    "assigned_stratum": "Q1",
+    "center_zyx": [
+      43,
+      3,
+      51
+    ],
+    "label_blind": true,
+    "argmax_gradient_used": false
+  },
+  "questions": [
+    {
+      "id": "MV-G3-AXNEU3-09-Z",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU3-09",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        43,
+        3,
+        51
+      ],
+      "pair_right_zyx": [
+        44,
+        3,
+        51
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "assigned_stratum": "Q1",
+      "raw_contrast": 0.6666666865348816,
+      "contrast_percentile_rank": 0.05935077519379845,
+      "raw_gradient_score": 0.6666666865348816,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V3",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU3-09-Y",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU3-09",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        43,
+        3,
+        51
+      ],
+      "pair_right_zyx": [
+        43,
+        4,
+        51
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "assigned_stratum": "Q1",
+      "raw_contrast": 0.6666666865348816,
+      "contrast_percentile_rank": 0.05935077519379845,
+      "raw_gradient_score": 0.6666666865348816,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V3",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU3-09-X",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU3-09",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        43,
+        3,
+        51
+      ],
+      "pair_right_zyx": [
+        43,
+        3,
+        52
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "assigned_stratum": "Q1",
+      "raw_contrast": 0.6666666865348816,
+      "contrast_percentile_rank": 0.05935077519379845,
+      "raw_gradient_score": 0.6666666865348816,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V3",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Paired Z/Y/X edges at one physical location; each independently reviewed. Location chosen by raw-only contrast stratum + deterministic hash; no class targeted."
+}

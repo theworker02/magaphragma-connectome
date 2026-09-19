@@ -1,0 +1,80 @@
+{
+  "tool": "branchjudge",
+  "ts": "20260918T155202Z",
+  "decision": "REVIEW",
+  "merge_evidence": 0.8748426053755238,
+  "split_evidence": 0.1251573946244762,
+  "strongest": [
+    "direction agreement 1.00, link align 1.00",
+    "similar local diameter ratio 0.95",
+    "morph score 0.95"
+  ],
+  "conflicting": [
+    "segmentation confidence 0.45",
+    "low segmentation confidence at junction (0.45)"
+  ],
+  "evidence": [
+    {
+      "name": "geometric_continuity",
+      "supports": "MERGE",
+      "score": 0.23999999999999988,
+      "detail": "endpoints separated by 3.8 voxels"
+    },
+    {
+      "name": "direction_vectors",
+      "supports": "MERGE",
+      "score": 0.9998000066893232,
+      "detail": "direction agreement 1.00, link align 1.00"
+    },
+    {
+      "name": "diameter_consistency",
+      "supports": "MERGE",
+      "score": 0.9523809523809523,
+      "detail": "similar local diameter ratio 0.95"
+    },
+    {
+      "name": "segmentation_confidence",
+      "supports": "SPLIT",
+      "score": 0.55,
+      "detail": "segmentation confidence 0.45"
+    },
+    {
+      "name": "boundary_location",
+      "supports": "NEUTRAL",
+      "score": 0.3,
+      "detail": "objects meet near chunk boundary"
+    },
+    {
+      "name": "morphological_compatibility",
+      "supports": "MERGE",
+      "score": 0.9522857174711064,
+      "detail": "morph score 0.95"
+    },
+    {
+      "name": "local_imagery",
+      "supports": "MERGE",
+      "score": 0.3999999999999999,
+      "detail": "image agreement 0.70"
+    },
+    {
+      "name": "model_evidence",
+      "supports": "MERGE",
+      "score": 0.30000000000000004,
+      "detail": "model evidence 0.65"
+    }
+  ],
+  "source_region": {
+    "centroid_a": [
+      0.0,
+      0.0,
+      5.0
+    ],
+    "centroid_b": [
+      0.06666666666666667,
+      0.0,
+      18.8
+    ],
+    "endpoint_distance": 3.8000000000000007
+  },
+  "note": "Scores are evidence weights, not calibrated biological probabilities."
+}

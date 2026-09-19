@@ -1,0 +1,19 @@
+{
+  "file_sha256": "a2156fc3edcf7490fd1b039d6e2e9ac51c780bc6da373c08466eb34a4d57ee89",
+  "frozen": true,
+  "region": {
+    "description": "axial seam discontinuity",
+    "kind": "seam",
+    "manifest_relpath": "receipts/regionbench/rb-seam-040/manifest.json",
+    "npy_relpath": "receipts/regionbench/rb-seam-040/volume.npy",
+    "region_id": "rb-seam-040",
+    "seed": 404,
+    "shape": [
+      40,
+      40,
+      40
+    ],
+    "volume_sha256": "ed432b1cfea5a0906a6394a61c67fdbe87623eb3aa2cf6994f35903a301ec372"
+  },
+  "schema": "regionbench/v1"
+}\n

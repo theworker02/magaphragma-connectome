@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "DIFFERENT_CLASS_DISCOVERY_001-MASTER-QUEUE",
+  "discovery_batch_id": "DIFFERENT_CLASS_DISCOVERY_001",
+  "created_at": "2026-09-18T01:51:35.376514Z",
+  "status": "EXPERT_EQUIVARIANT_DISCOVERY_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "expected_n_decisions": 12,
+  "questions": [
+    {
+      "opaque_decision_id": "MV-DCD-E58F28416BA3",
+      "presentation_order_index": 0,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        42,
+        83,
+        110
+      ],
+      "pair_right_zyx": [
+        42,
+        84,
+        110
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-AAFC89A7EC3A",
+      "presentation_order_index": 1,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        57,
+        93,
+        52
+      ],
+      "pair_right_zyx": [
+        57,
+        93,
+        53
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-8566460BEAB7",
+      "presentation_order_index": 2,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        57,
+        35,
+        47
+      ],
+      "pair_right_zyx": [
+        57,
+        35,
+        48
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-E3095D609660",
+      "presentation_order_index": 3,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        11,
+        26,
+        90
+      ],
+      "pair_right_zyx": [
+        12,
+        26,
+        90
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-B45FB6A66A83",
+      "presentation_order_index": 4,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        38,
+        61,
+        11
+      ],
+      "pair_right_zyx": [
+        38,
+        62,
+        11
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-C981DA531766",
+      "presentation_order_index": 5,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        8,
+        51,
+        63
+      ],
+      "pair_right_zyx": [
+        9,
+        51,
+        63
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-292DC685ECB0",
+      "presentation_order_index": 6,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        11,
+        88,
+        74
+      ],
+      "pair_right_zyx": [
+        11,
+        88,
+        75
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-4DC0861BA26F",
+      "presentation_order_index": 7,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        33,
+        109
+      ],
+      "pair_right_zyx": [
+        14,
+        33,
+        109
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-CC0534D3C7F6",
+      "presentation_order_index": 8,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        11,
+        10,
+        82
+      ],
+      "pair_right_zyx": [
+        11,
+        11,
+        82
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-94B7C8D63567",
+      "presentation_order_index": 9,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        34,
+        77,
+        44
+      ],
+      "pair_right_zyx": [
+        34,
+        77,
+        45
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-4ED96552F776",
+      "presentation_order_index": 10,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        44,
+        64,
+        28
+      ],
+      "pair_right_zyx": [
+        45,
+        64,
+        28
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-DCD-976986EFB4F3",
+      "presentation_order_index": 11,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        53,
+        66,
+        56
+      ],
+      "pair_right_zyx": [
+        53,
+        67,
+        56
+      ],
+      "crop_id": "MV-DCD-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "DIFFERENT-class discovery under abs face-step enrichment. Not training. Not G3-009. Not AS2 revalidation."
+}

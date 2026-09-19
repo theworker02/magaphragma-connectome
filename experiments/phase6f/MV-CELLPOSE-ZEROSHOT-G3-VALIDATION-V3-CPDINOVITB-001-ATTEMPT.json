@@ -1,0 +1,12 @@
+{
+  "id": "MV-CELLPOSE-ZEROSHOT-G3-VALIDATION-V3-CPDINOVITB-001-ATTEMPT",
+  "status": "INVOCATION_REJECTED_BEFORE_MODEL_EXECUTION",
+  "created_at": "2026-09-17T00:00:00Z",
+  "model": "cpdino-vitb",
+  "protected_volume": "MV-GTVOL-000004",
+  "protected_volume_used": false,
+  "scientific_interpretation": "NONE",
+  "reason": "The launcher supplied an obsolete argument contract. argparse rejected the process before raw data or model weights were loaded.",
+  "stderr_log": "experiments/phase6f/MV-CELLPOSE-ZEROSHOT-G3-VALIDATION-V3-CPDINOVITB-001.err.log",
+  "next_run": "Use the current --crop-id, --raw, --model, and --output contract in a new immutable output directory."
+}

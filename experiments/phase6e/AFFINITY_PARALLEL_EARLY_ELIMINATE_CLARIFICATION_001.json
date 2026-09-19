@@ -1,0 +1,17 @@
+{
+  "id": "AFFINITY_PARALLEL_EARLY_ELIMINATE_CLARIFICATION_001",
+  "created_at": "2026-09-18T03:52:00Z",
+  "status": "LOCKED",
+  "parent_funnel": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "parent_matrix": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+  "bug_observed": "Worker eliminated a candidate whenever the latest check-step metrics met chance, even if earlier short-budget checkpoints already showed margin>0. Candidate C_PATCH_20_64_64 had margin>0 at steps 10 and 20 (selected step10 also GATE_D true) but was marked ELIMINATED_CHANCE when step 30 margin went non-positive.",
+  "clarified_rule": "A short-run candidate is ELIMINATED_CHANCE only if it never leaves chance during the short budget—i.e. every early_eliminate_check_step observed so far satisfies (balanced_acc==0.5 AND margin<=0). If any check-step has margin>0 (or balanced≠0.5), the candidate is SURVIVOR_SHORT at end of short budget; checkpoint selection remains max balanced_acc then lowest step.",
+  "does_not_change": [
+    "GATE_A–E",
+    "decision_threshold 0.5",
+    "train/eval split",
+    "candidate configs",
+    "no new candidates invented"
+  ],
+  "action": "Reclassify C_PATCH_20_64_64 short as SURVIVOR_SHORT; run S2 extend only for C; A/B/D remain ELIMINATED_CHANCE (never left chance)."
+}

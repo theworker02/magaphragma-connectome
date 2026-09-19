@@ -1,0 +1,1530 @@
+{
+  "biological_promotions": {
+    "MV-CONN": 0,
+    "MV-FRAG": 0,
+    "MV-N": 0,
+    "MV-SYN": 0
+  },
+  "cohort": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\G2_SPATIAL_EXPANSION_COHORT_001.json",
+    "sha256": "da364cb6f2f3d4c41189eee765b2d69c1ecf1bef7a57d6317e6f940b3bf2aaaa"
+  },
+  "created_at": "2026-09-17T03:01:59.807131Z",
+  "id": "MV-G2-DVID-REVIEWED-AFFINITY-001",
+  "loro_folds": [
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-A",
+      "train_with": [
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-C",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-B",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-C",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-C",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-D",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-C"
+      ]
+    }
+  ],
+  "protected_regression": {
+    "included": false,
+    "volume": "MV-GTVOL-000004"
+  },
+  "regions": [
+    {
+      "crop_id": "MV-G2-TRAIN-A",
+      "excluded_edge_pairs": 12,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-A\\supervision_mask_czyx.npy",
+        "sha256": "5a9eb0862a6572a14d5619e8dd9ae23b4693ef1022824f96b3ebcd891a302f6a",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-A\\receipt.json",
+      "receipt_sha256": "91b001cf551c693382bfd6be196dfbd7fe314473186745ced0540b2e800114c8",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-TRAIN-A\\workspace.events.jsonl",
+      "review_log_sha256": "0e1b316755adab8dc2fe9638054da09a584d3828775f4e995212a250a82009b9",
+      "split": "G2_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-A\\affinity_targets_czyx.npy",
+        "sha256": "fa6e81694c2cbfdf75eafaabb9652b40547acb665bb0a3f8528b0221fa0ee294",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 5
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613560623046",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            36,
+            99,
+            89
+          ],
+          "pair_right_zyx": [
+            37,
+            99,
+            89
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:40.623059Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613567566249",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            2,
+            75,
+            50
+          ],
+          "pair_right_zyx": [
+            2,
+            75,
+            51
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:47.566259Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613568926353",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            37,
+            53,
+            123
+          ],
+          "pair_right_zyx": [
+            37,
+            54,
+            123
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:48.926364Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613569747377",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            34,
+            60,
+            99
+          ],
+          "pair_right_zyx": [
+            34,
+            60,
+            100
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:49.747386Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613570967551",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            40,
+            85,
+            48
+          ],
+          "pair_right_zyx": [
+            40,
+            86,
+            48
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:17",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:50.967561Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-A",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613578277943",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            40,
+            12,
+            38
+          ],
+          "pair_right_zyx": [
+            41,
+            12,
+            38
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:18",
+          "rationale": null,
+          "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:52:58.277954Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-A"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-TRAIN-B",
+      "excluded_edge_pairs": 13,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-B\\supervision_mask_czyx.npy",
+        "sha256": "040070ca50e5aa1a3dd851e79902a51e794281c911a1c850e479b4b9b9fb7a97",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-B\\receipt.json",
+      "receipt_sha256": "f73f92d40c58e77557e404c727cb49923b951fb1c11fd9665355a3ae1bf6cfc1",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-TRAIN-B\\workspace.events.jsonl",
+      "review_log_sha256": "ffb0086102279f9e1cd25d03248d0b90b9eea6db61106370e738aa7bf08c7b6a",
+      "split": "G2_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-B\\affinity_targets_czyx.npy",
+        "sha256": "aba0ee84f0401765469e31caf17e8928b28d0ddceb9848e4376b60cbb61ffde5",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 3
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-B",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613647204065",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            16,
+            27,
+            125
+          ],
+          "pair_right_zyx": [
+            16,
+            27,
+            126
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:54:07.204077Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-B"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-B",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613648939076",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            24,
+            105,
+            101
+          ],
+          "pair_right_zyx": [
+            25,
+            105,
+            101
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:54:08.939088Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-B"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-B",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613652082703",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            15,
+            30,
+            1
+          ],
+          "pair_right_zyx": [
+            15,
+            30,
+            2
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:54:12.082715Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-B"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-B",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613653573447",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            5,
+            3,
+            56
+          ],
+          "pair_right_zyx": [
+            5,
+            3,
+            57
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:54:13.573459Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-B"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-TRAIN-C",
+      "excluded_edge_pairs": 5,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-C\\supervision_mask_czyx.npy",
+        "sha256": "be9876950e3e320a73db6c75034f197fa40c628445731984f5c3672c0fd4ed54",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-C\\receipt.json",
+      "receipt_sha256": "61208d4d56cc8eff268158b64e2dff3e8f21fe1fbfc68cd817187b60cf4672ed",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-TRAIN-C\\workspace.events.jsonl",
+      "review_log_sha256": "982c6a5ec560b75301fb27a209734459805e9b142c40d7c1e56f45006f2cb8ea",
+      "split": "G2_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-C\\affinity_targets_czyx.npy",
+        "sha256": "0121cfd802fe76d1bc1ac15954e8c2b3a5024798f742706ec2ec33388d8b3463",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 11
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613697600246",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            20,
+            13,
+            52
+          ],
+          "pair_right_zyx": [
+            20,
+            14,
+            52
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:1",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:54:57.600258Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613703204624",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            4,
+            57,
+            23
+          ],
+          "pair_right_zyx": [
+            4,
+            57,
+            24
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:4",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:03.204633Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613707971687",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            59,
+            108,
+            22
+          ],
+          "pair_right_zyx": [
+            59,
+            109,
+            22
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:7",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:07.971696Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613708583870",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            39,
+            62,
+            18
+          ],
+          "pair_right_zyx": [
+            39,
+            63,
+            18
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:8",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:08.583881Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613709849694",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            8,
+            75,
+            56
+          ],
+          "pair_right_zyx": [
+            9,
+            75,
+            56
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:9",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:09.849705Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613710516789",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            5,
+            48,
+            15
+          ],
+          "pair_right_zyx": [
+            6,
+            48,
+            15
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:10",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:10.516799Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613713694832",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            18,
+            16,
+            18
+          ],
+          "pair_right_zyx": [
+            18,
+            16,
+            19
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:12",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:13.694844Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613714318270",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            6,
+            4,
+            8
+          ],
+          "pair_right_zyx": [
+            6,
+            4,
+            9
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:14.318281Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613714963230",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            46,
+            80,
+            14
+          ],
+          "pair_right_zyx": [
+            46,
+            80,
+            15
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:14.963241Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613716330192",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            38,
+            122,
+            103
+          ],
+          "pair_right_zyx": [
+            38,
+            123,
+            103
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:16.330203Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613716921447",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            42,
+            59,
+            26
+          ],
+          "pair_right_zyx": [
+            42,
+            60,
+            26
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:16.921457Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613720236388",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            6,
+            118,
+            91
+          ],
+          "pair_right_zyx": [
+            6,
+            119,
+            91
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:17",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:20.236398Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-C",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613722336565",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            43,
+            77,
+            32
+          ],
+          "pair_right_zyx": [
+            43,
+            77,
+            33
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:18",
+          "rationale": null,
+          "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:55:22.336578Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-TRAIN-D",
+      "excluded_edge_pairs": 13,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-D\\supervision_mask_czyx.npy",
+        "sha256": "a82dece504c93a35c771c6d1c1bee4b0391f1ccd6eceba9530d4f3d299ed94f5",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-D\\receipt.json",
+      "receipt_sha256": "ea5ea5939e9502eb3c959df749194bc97b5d1a66670d7cc3d04217c16562c6b3",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-TRAIN-D\\workspace.events.jsonl",
+      "review_log_sha256": "919f1473a59460667d71c72e56f7662c00ce0b2b68c15a460a5daceb02e37ebb",
+      "split": "G2_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-TRAIN-D\\affinity_targets_czyx.npy",
+        "sha256": "d47a3b61ec655b7b6d6ab7b00139a43a14233df9930a44215d886f94a470b7fe",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 3
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-D",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613763927544",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            7,
+            24,
+            44
+          ],
+          "pair_right_zyx": [
+            7,
+            24,
+            45
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:56:03.927555Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-D"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-TRAIN-D",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613764501308",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            47,
+            51,
+            123
+          ],
+          "pair_right_zyx": [
+            47,
+            51,
+            124
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:56:04.501319Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-D"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-TRAIN-D",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613765250466",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            49,
+            15,
+            123
+          ],
+          "pair_right_zyx": [
+            49,
+            16,
+            123
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:56:05.250477Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-D"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-D",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613766678087",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            33,
+            84,
+            116
+          ],
+          "pair_right_zyx": [
+            34,
+            84,
+            116
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:56:06.678097Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-D"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-TRAIN-D",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613769122653",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            5,
+            9,
+            95
+          ],
+          "pair_right_zyx": [
+            6,
+            9,
+            95
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:18",
+          "rationale": null,
+          "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+          "reviewer": "matth",
+          "split": "G2_TARGET_TRAIN",
+          "timestamp": "2026-09-17T02:56:09.122664Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-D"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-VALIDATION-V1",
+      "excluded_edge_pairs": 15,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V1\\supervision_mask_czyx.npy",
+        "sha256": "68aaa83041fa597444d50be01ba5195e777c6e044e4dcd041a1b428b7bba03f6",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V1\\receipt.json",
+      "receipt_sha256": "3cf4df9e100d5d7ba48bd089bf52177ad360f38342123b854ca70efe70226b54",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-VALIDATION-V1\\workspace.events.jsonl",
+      "review_log_sha256": "27fff8ede87f2c1a783ff9122f4791609599934a5edc3e36ff3df0293547d4e0",
+      "split": "G2_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V1\\affinity_targets_czyx.npy",
+        "sha256": "00d38a9673547ac5f4312b2e71c216a7276ff1d49dd5e21db6ddf0ec3ae69b8c",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 2
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-VALIDATION-V1",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613812895705",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            27,
+            15,
+            119
+          ],
+          "pair_right_zyx": [
+            28,
+            15,
+            119
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:56:52.895715Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V1"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V1",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613815463074",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            58,
+            12,
+            97
+          ],
+          "pair_right_zyx": [
+            58,
+            13,
+            97
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:56:55.463084Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V1"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V1",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613816176152",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            53,
+            122,
+            88
+          ],
+          "pair_right_zyx": [
+            53,
+            122,
+            89
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:17",
+          "rationale": null,
+          "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:56:56.176162Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V1"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-VALIDATION-V2",
+      "excluded_edge_pairs": 12,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V2\\supervision_mask_czyx.npy",
+        "sha256": "957c1fd8c6082353464f616f997acb2d96c19e78462de272fbaace440fd1f100",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V2\\receipt.json",
+      "receipt_sha256": "bb86f54fa2f6de91e39e36ad35f27bd04b08b2b12b29f7912f55369b5693cd49",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-VALIDATION-V2\\workspace.events.jsonl",
+      "review_log_sha256": "fc678174eb9001b09aa138843d5eeae5a89bad589571e76d35d8daa4a1e042e0",
+      "split": "G2_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V2\\affinity_targets_czyx.npy",
+        "sha256": "4fe681f1f9397da1fdbefd2d8ec3c041a4981d6b34fc956c9332e8e092afe959",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 5
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613856728194",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            46,
+            101,
+            121
+          ],
+          "pair_right_zyx": [
+            46,
+            102,
+            121
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:36.728204Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613857284441",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            1,
+            91,
+            17
+          ],
+          "pair_right_zyx": [
+            1,
+            91,
+            18
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:37.284451Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613857884516",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            5,
+            27,
+            53
+          ],
+          "pair_right_zyx": [
+            5,
+            27,
+            54
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:37.884528Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613858446034",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            14,
+            22,
+            37
+          ],
+          "pair_right_zyx": [
+            14,
+            22,
+            38
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:38.446045Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        },
+        {
+          "channel_name": "Z",
+          "channel_zyx": 0,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613859676677",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            5,
+            102,
+            29
+          ],
+          "pair_right_zyx": [
+            6,
+            102,
+            29
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:17",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:39.676689Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V2",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613860899926",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            15,
+            110,
+            122
+          ],
+          "pair_right_zyx": [
+            15,
+            111,
+            122
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:18",
+          "rationale": null,
+          "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:57:40.899938Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V2"
+        }
+      ]
+    },
+    {
+      "crop_id": "MV-G2-VALIDATION-V3",
+      "excluded_edge_pairs": 9,
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V3\\supervision_mask_czyx.npy",
+        "sha256": "b88579a29935270713eb409b6cea0f12cf5927e5976669fd5c37e0b7a2a7aa5c",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "note": "Crop-edge decisions remain in the immutable append-only log but are IGNORE for G2 fitting/evaluation.",
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V3\\receipt.json",
+      "receipt_sha256": "e3a5027b1b8316e0aee40f12916877154b8129fc7ce7d1fdc86d869aa9e768d5",
+      "review_log": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-external-review-packages-001\\MV-G2-VALIDATION-V3\\workspace.events.jsonl",
+      "review_log_sha256": "e15d3b53f912c3088a7eabf703b76d606cb675fa119fecc58f941d986c4c1822",
+      "split": "G2_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\g2-reviewed-affinity\\MV-G2-VALIDATION-V3\\affinity_targets_czyx.npy",
+        "sha256": "6fefb83d0731ff44e0aa12c2897a237426177206dc844fa16ca464b5733fa8f5",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "usable_counts": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 7
+      },
+      "usable_interior_pairs": [
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613919135579",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            2,
+            16,
+            88
+          ],
+          "pair_right_zyx": [
+            2,
+            16,
+            89
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:6",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:58:39.135590Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "DIFFERENT_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613940040190",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            14,
+            12,
+            100
+          ],
+          "pair_right_zyx": [
+            14,
+            12,
+            101
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:10",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:00.040201Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613945642833",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            23,
+            107,
+            22
+          ],
+          "pair_right_zyx": [
+            23,
+            108,
+            22
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:11",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:05.642845Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613947828017",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            2,
+            81,
+            7
+          ],
+          "pair_right_zyx": [
+            2,
+            82,
+            7
+          ],
+          "question_reference": "MERGE_CONFIDENT_RAW_BOUNDARY_CANDIDATE:12",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:07.828027Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613949900609",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            11,
+            118,
+            46
+          ],
+          "pair_right_zyx": [
+            11,
+            118,
+            47
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:13",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:09.900618Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613953042310",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            19,
+            72,
+            11
+          ],
+          "pair_right_zyx": [
+            19,
+            73,
+            11
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:14",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:13.042320Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613954586102",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            26,
+            73,
+            1
+          ],
+          "pair_right_zyx": [
+            26,
+            74,
+            1
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:15",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:14.586112Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "Y",
+          "channel_zyx": 1,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613956982725",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            14,
+            54,
+            38
+          ],
+          "pair_right_zyx": [
+            14,
+            55,
+            38
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:16",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:16.982735Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        },
+        {
+          "channel_name": "X",
+          "channel_zyx": 2,
+          "crop_id": "MV-G2-VALIDATION-V3",
+          "decision": "SAME_PROCESS",
+          "effect": "REVIEWED_LOCAL_AFFINITY_EVIDENCE_NOT_A_BIOLOGICAL_PROMOTION",
+          "id": "MV-EXTERNAL-BOUNDARY-EVENT-1789613961740923",
+          "orthogonal_views_inspected": true,
+          "pair_left_zyx": [
+            6,
+            111,
+            81
+          ],
+          "pair_right_zyx": [
+            6,
+            111,
+            82
+          ],
+          "question_reference": "MERGE_CONFIDENT_CONTINUITY_CONTROL:18",
+          "rationale": null,
+          "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+          "reviewer": "matth",
+          "split": "G2_TARGET_VALIDATION",
+          "timestamp": "2026-09-17T02:59:21.740934Z",
+          "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-ION-V3"
+        }
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "status": "FROZEN_READY_FOR_G2_LORO",
+  "training_boundary": "Only G2_TARGET_TRAIN usable_interior_pairs may enter G2 optimization. Validation regions are evaluation-only."
+}

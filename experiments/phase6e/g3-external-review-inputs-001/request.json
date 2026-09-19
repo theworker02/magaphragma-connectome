@@ -1,0 +1,121 @@
+{
+  "cohort": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\MV-G3-SPATIAL-DIVERSITY-COHORT-001.json",
+    "sha256": "e32de39a0d0083647143730ea276026aa81ae3047e76a40bba33e5b1a3ecb235"
+  },
+  "id": "MV-G3-EXTERNAL-REVIEW-REQUEST-001",
+  "prohibited_sources": [
+    "MV-GTVOL-000004"
+  ],
+  "requested_review_sets": [
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-A",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-001",
+      "raw_sha256": "bcff730698cbde54cbe310355942e26cdd603874ec2941506281d89bbe9c9239",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        1984,
+        1600,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-B",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-008",
+      "raw_sha256": "475ee2cc235625b16a8cd7cdc9291ae144d166e0444ad9d62ce32ec06ce37774",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        14464,
+        4992,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-C",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-017",
+      "raw_sha256": "ff7a7ae770a775605752448f5318b50050324a895ea49b41b22dab3bbcf2335b",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        1984,
+        1600,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-D",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-024",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        14464,
+        4992,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-E",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-027",
+      "raw_sha256": "67576bd85058b72c2d0637d19f5e0dccbed906fd4537aceee7f0a2b82935c66b",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        10304,
+        8384,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-TRAIN-F",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-031",
+      "raw_sha256": "e3f37482cde357f771b5a35a4fd6222235c803972641b7b4456f451658a69550",
+      "role": "G3_TARGET_TRAIN",
+      "source_origin_xyz": [
+        10304,
+        11776,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-VALIDATION-V1",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-004",
+      "raw_sha256": "5b43d4f00367781f46a860b51bd264e78ae0ca3d39802088f11fb5558b5db6b1",
+      "role": "G3_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        14464,
+        1600,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-VALIDATION-V2",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-015",
+      "raw_sha256": "da035333727235123fa31ae05a6f1a539d61362bd1f72f886be852a2ed8d9542",
+      "role": "G3_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        10304,
+        11776,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G3-VALIDATION-V3",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-025",
+      "raw_sha256": "5ca319f584b064768f46ae352d5b0f198f01d11b29c8ba7f8305734d02676983",
+      "role": "G3_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        1984,
+        8384,
+        11456
+      ]
+    }
+  ],
+  "schema_version": 1
+}

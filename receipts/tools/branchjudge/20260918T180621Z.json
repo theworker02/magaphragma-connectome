@@ -1,0 +1,90 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "conflicting": [
+      "segmentation confidence 0.40",
+      "low segmentation confidence at junction (0.40)"
+    ],
+    "decision": "REVIEW",
+    "evidence": [
+      {
+        "detail": "endpoints separated by 4.0 voxels",
+        "name": "geometric_continuity",
+        "score": 0.19999999999999996,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "direction agreement 1.00, link align 1.00",
+        "name": "direction_vectors",
+        "score": 0.9992009587217895,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "similar local diameter ratio 1.00",
+        "name": "diameter_consistency",
+        "score": 1.0,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "segmentation confidence 0.40",
+        "name": "segmentation_confidence",
+        "score": 0.6,
+        "supports": "SPLIT"
+      },
+      {
+        "detail": "objects meet near chunk boundary",
+        "name": "boundary_location",
+        "score": 0.3,
+        "supports": "NEUTRAL"
+      },
+      {
+        "detail": "morph score 1.00",
+        "name": "morphological_compatibility",
+        "score": 0.9996004793608948,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "image agreement 0.50",
+        "name": "local_imagery",
+        "score": 0.0,
+        "supports": "SPLIT"
+      },
+      {
+        "detail": "model evidence 0.50",
+        "name": "model_evidence",
+        "score": 0.0,
+        "supports": "SPLIT"
+      }
+    ],
+    "merge_evidence": 0.8420554457032032,
+    "note": "Scores are evidence weights, not calibrated biological probabilities.",
+    "source_region": {
+      "centroid_a": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "centroid_b": [
+        0.1,
+        0.0,
+        11.5
+      ],
+      "endpoint_distance": 4.0
+    },
+    "split_evidence": 0.1579445542967967,
+    "strongest": [
+      "similar local diameter ratio 1.00",
+      "morph score 1.00",
+      "direction agreement 1.00, link align 1.00"
+    ]
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T18:06:21Z",
+  "tool": "branchjudge"
+}

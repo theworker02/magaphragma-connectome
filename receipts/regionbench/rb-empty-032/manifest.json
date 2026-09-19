@@ -1,0 +1,19 @@
+{
+  "file_sha256": "bd05b287434bf8c1e9750e86202b13e8fac64743b9ca2454b73973683cdcd5c5",
+  "frozen": true,
+  "region": {
+    "description": "near-empty tissue",
+    "kind": "empty",
+    "manifest_relpath": "receipts/regionbench/rb-empty-032/manifest.json",
+    "npy_relpath": "receipts/regionbench/rb-empty-032/volume.npy",
+    "region_id": "rb-empty-032",
+    "seed": 101,
+    "shape": [
+      32,
+      32,
+      32
+    ],
+    "volume_sha256": "743facdb166d93fafe5f3fb7cca713b0ba7e778805279ab1b420afc553b79b13"
+  },
+  "schema": "regionbench/v1"
+}\n

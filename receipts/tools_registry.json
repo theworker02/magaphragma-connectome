@@ -1,0 +1,189 @@
+{
+  "voxscout": {
+    "id": "voxscout",
+    "name": "VoxScout",
+    "subsystem": "VoxScout",
+    "summary": "Intelligent spatial planner \u2014 priority map before expensive compute.",
+    "entrypoint": "python tools/voxscout.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "plan"
+  },
+  "axonforge": {
+    "id": "axonforge",
+    "name": "AxonForge",
+    "subsystem": "AxonForge",
+    "summary": "Completeness-preserving adaptive tile acceleration (GPU execution).",
+    "entrypoint": "python tools/axonforge.py",
+    "dashboard": "http://127.0.0.1:8741/",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "execute"
+  },
+  "gaphound": {
+    "id": "gaphound",
+    "name": "GapHound",
+    "subsystem": "GapHound",
+    "summary": "Completeness hunter \u2014 scan gaps + minimum AxonForge repair-plan.",
+    "entrypoint": "python tools/gaphound.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "completeness"
+  },
+  "tilemedic": {
+    "id": "tilemedic",
+    "name": "TileMedic",
+    "subsystem": "TileMedic",
+    "summary": "Safe failed-tile recovery without mutating scientific parameters.",
+    "entrypoint": "python tools/tilemedic.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "recover"
+  },
+  "branchjudge": {
+    "id": "branchjudge",
+    "name": "BranchJudge",
+    "subsystem": "BranchJudge",
+    "summary": "Split/merge evidence assistant (evidence scores, not bio probabilities).",
+    "entrypoint": "python tools/branchjudge.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "decide"
+  },
+  "seamsmith": {
+    "id": "seamsmith",
+    "name": "SeamSmith",
+    "subsystem": "SeamSmith",
+    "summary": "Boundary reconciliation across chunk/tile seams (never auto-merges).",
+    "entrypoint": "python tools/seamsmith.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "reconcile"
+  },
+  "morphguard": {
+    "id": "morphguard",
+    "name": "MorphGuard",
+    "subsystem": "MorphGuard",
+    "summary": "Neuron morphology auditor \u2014 anomaly map + review queue.",
+    "entrypoint": "python tools/morphguard.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "audit"
+  },
+  "neurocache": {
+    "id": "neurocache",
+    "name": "NeuroCache",
+    "subsystem": "NeuroCache",
+    "summary": "Semantic scientific computation cache (identity-aware reuse).",
+    "entrypoint": "python tools/neurocache.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "cache"
+  },
+  "synapselens": {
+    "id": "synapselens",
+    "name": "SynapseLens",
+    "subsystem": "SynapseLens",
+    "summary": "Synaptic evidence engine with information-gain review priority.",
+    "entrypoint": "python tools/synapselens.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "connectivity"
+  },
+  "tracewire": {
+    "id": "tracewire",
+    "name": "TraceWire",
+    "subsystem": "TraceWire",
+    "summary": "Scientific provenance debugger (forward/back walks).",
+    "entrypoint": "python tools/tracewire.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "provenance"
+  },
+  "deltagraph": {
+    "id": "deltagraph",
+    "name": "DeltaGraph",
+    "subsystem": "DeltaGraph",
+    "summary": "Connectome structural diff + pipeline cause inference.",
+    "entrypoint": "python tools/deltagraph.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "diff"
+  },
+  "runddoctor": {
+    "id": "runddoctor",
+    "name": "RunDoctor",
+    "subsystem": "RunDoctor",
+    "summary": "One-command pipeline diagnosis.",
+    "entrypoint": "python tools/runddoctor.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "diagnose"
+  },
+  "hyperdrain": {
+    "id": "hyperdrain",
+    "name": "HyperDrain",
+    "subsystem": "HyperDrain",
+    "summary": "Packed-eager affinity inference engine (mass production / fleet).",
+    "entrypoint": "python tools/hyperdrain.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "execute"
+  },
+  "regionbench": {
+    "id": "regionbench",
+    "name": "RegionBench",
+    "subsystem": "RegionBench",
+    "summary": "Frozen synthetic benchmark regions for comparable metrics.",
+    "entrypoint": "python tools/regionbench.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "bench"
+  },
+  "pipeline": {
+    "id": "pipeline",
+    "name": "Pipeline",
+    "subsystem": "Pipeline",
+    "summary": "Cross-tool flows: plan (VoxScout->hints) and close-gaps.",
+    "entrypoint": "python tools/pipeline.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "orchestrate"
+  },
+  "edgeprobe": {
+    "id": "edgeprobe",
+    "name": "EdgeProbe",
+    "subsystem": "EdgeProbe",
+    "summary": "TraceWire edge diagnostic bundle under receipts/edgeprobe/.",
+    "entrypoint": "python tools/edgeprobe.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "provenance"
+  },
+  "artifactvet": {
+    "id": "artifactvet",
+    "name": "ArtifactVet",
+    "subsystem": "ArtifactVet",
+    "summary": "Validate schema/shape/dtype/hash before stage handoff.",
+    "entrypoint": "python tools/artifactvet.py",
+    "dashboard": "",
+    "powered_on": true,
+    "autonomous": false,
+    "stage": "gate"
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vigilia Connectome mark">
+  <rect width="128" height="128" rx="24" fill="#070b13"/>
+  <path d="M26 27 64 101 102 27" fill="none" stroke="#dce9f7" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="64" cy="65" r="8" fill="#67c8ff"/>
+  <circle cx="42" cy="42" r="5" fill="#b9a5ff"/>
+  <circle cx="86" cy="42" r="5" fill="#b9a5ff"/>
+</svg>

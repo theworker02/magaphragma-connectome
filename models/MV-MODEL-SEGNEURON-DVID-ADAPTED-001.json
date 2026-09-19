@@ -1,0 +1,51 @@
+{
+  "id": "MV-MODEL-SEGNEURON-DVID-ADAPTED-001",
+  "status": "EXPERIMENTAL_G1_DEVELOPMENT_PASS_PROTECTED_REGRESSION_INSUFFICIENT",
+  "model_family": "SegNeuron MNet",
+  "initialization": {
+    "source_checkpoint": "experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+    "training_state": "model_and_Adam_optimizer_state_restored_for_future_adaptation_only",
+    "source_training_domain": "FIB-SEM source cohort",
+    "source_to_target_transfer_result": "INSUFFICIENT_AT_STEP_2250"
+  },
+  "target_supervision": {
+    "dataset": "MV-SRC-FLATIRON-DVID-WASP5",
+    "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+    "required_lineage": "RAW_DVID -> HUMAN_REVIEWED_LOCAL_SAME_DIFFERENT_DECISION -> MASKED_AFFINITY_SUPERVISION",
+    "regression_only_exclusion": "MV-GTVOL-000004",
+    "admission_gate": "local_research_build/phase6e/dvid_reviewed_pair_supervision_gate_001.json",
+    "train_supervision": "local_research_build/phase6e/external-review/dense-raw-candidate-001/reviewed-affinity-supervision-v2/receipt.json",
+    "validation_supervision": "local_research_build/phase6e/external-review/dense-raw-candidate-002/reviewed-affinity-supervision-v2/receipt.json"
+  },
+  "g1_experiment": {
+    "run": "experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/receipt.json",
+    "selected_checkpoint": "experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+    "selected_checkpoint_sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+    "selection_metric": "frozen reviewed DVID validation masked affinity BCE",
+    "reviewed_validation_result": {"same_mean_affinity": 0.9940867026646932, "different_mean_affinity": 0.12204145989380777, "same_accuracy_at_0_5": 1.0, "different_accuracy_at_0_5": 1.0},
+    "protected_regression_used": true,
+    "true_3d_development_replay": {
+      "status": "PASS_NONDEGENERATE_MACHINE_DIAGNOSTIC",
+      "volume": "MV-DVID-RAW-SURVEY-003",
+      "receipt": "local_research_build/phase6c/g1-development-MV-DVID-RAW-SURVEY-003-step2280-true3d-replay-001/receipt.json",
+      "qa_receipt": "local_research_build/phase6c/g1-development-MV-DVID-RAW-SURVEY-003-step2280-true3d-replay-001/reconstruction-qa.json",
+      "multicut_instances": 54,
+      "negative_cost_edges": 8518,
+      "largest_instance_fraction": 0.2832205295562744,
+      "biological_admission": "NOT_ATTEMPTED_REVIEW_REQUIRED"
+    },
+    "protected_regression_replay": {
+      "status": "FAIL_SINGLE_INSTANCE",
+      "volume": "MV-GTVOL-000004",
+      "receipt": "local_research_build/phase6c/MV-GTVOL-000004-g1-step2280-true3d-replay-001/receipt.json",
+      "qa_receipt": "local_research_build/phase6c/MV-GTVOL-000004-g1-step2280-true3d-replay-001/reconstruction-qa.json",
+      "split_probability_median": 0.028260887129255133,
+      "split_probability_max": 0.268543004989624,
+      "negative_cost_edges": 0,
+      "multicut_instances": 1,
+      "largest_instance_fraction": 1.0,
+      "conclusion": "LOCAL_DEVELOPMENT_SEPARATION_DID_NOT_GENERALIZE_TO_PROTECTED_REGRESSION_VOLUME"
+    }
+  },
+  "scientific_claims": {"target_adaptation_executed": true, "target_native_labels_available": true, "target_supervision_status": "REVIEWED_LOCAL_AFFINITY_EVIDENCE", "mv_frag_created": 0, "mv_neuron_created": 0, "mv_connection_created": 0}
+}

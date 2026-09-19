@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-09-17T16:21:25.831169Z",
+  "declared_sampling_rule": {
+    "allowed_selection_inputs": [
+      "raw-EM 3D gradient",
+      "dominant-axis orientation",
+      "rank/quantile bands",
+      "crop identity"
+    ],
+    "candidate_ordering": "descending raw-EM gradient magnitude within each axis; rank 0 == highest",
+    "declared_before_labels": true,
+    "forbidden_selection_inputs": [
+      "SAME/DIFFERENT labels",
+      "class predictions",
+      "learned affinities",
+      "prior crop class composition"
+    ],
+    "interface_geometry": "center member + neighbours (-1,0),(1,0) along the two axes orthogonal to the affinity axis; positive neighbour along the affinity axis is the pair",
+    "population": "interior voxels; each candidate assigned to its dominant |3D raw-EM gradient| axis (Z/Y/X)",
+    "purpose": "broad axis + raw-EM coverage to give a genuine chance of within-region SAME/DIFFERENT contrast; NOT targeting any class",
+    "sampler_id": "STRATIFIED_AXIS_x_RANKBAND_V1",
+    "selectable_centres": "greedy 12-voxel spatially-separated centres per axis (exact d^2>=144)",
+    "stratification": "for each axis independently: 6 rank bands 0-10..90-100%; 1 interface per (axis, band) => up to 18 interfaces/crop",
+    "within_band_pick": "lowest rank in band that is interior, in-bounds, and 12-voxel separated from centres already chosen this crop (across all axes)"
+  },
+  "id": "MV-G3-NEW-TRAIN-REVIEW-BATCH-005",
+  "per_crop": [
+    {
+      "axis_counts": {
+        "X": 6,
+        "Y": 6,
+        "Z": 6
+      },
+      "crop_id": "MV-G3-TRAIN-I",
+      "interfaces": 18,
+      "questions": 54,
+      "source_id": "MV-DVID-RAW-SURVEY-013",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-I-005"
+    },
+    {
+      "axis_counts": {
+        "X": 6,
+        "Y": 6,
+        "Z": 6
+      },
+      "crop_id": "MV-G3-TRAIN-J",
+      "interfaces": 18,
+      "questions": 54,
+      "source_id": "MV-DVID-RAW-SURVEY-009",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-J-005"
+    },
+    {
+      "axis_counts": {
+        "X": 6,
+        "Y": 6,
+        "Z": 6
+      },
+      "crop_id": "MV-G3-TRAIN-K",
+      "interfaces": 18,
+      "questions": 54,
+      "source_id": "MV-DVID-RAW-SURVEY-003",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-K-005"
+    },
+    {
+      "axis_counts": {
+        "X": 6,
+        "Y": 6,
+        "Z": 6
+      },
+      "crop_id": "MV-G3-TRAIN-L",
+      "interfaces": 18,
+      "questions": 54,
+      "source_id": "MV-DVID-RAW-SURVEY-007",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-L-005"
+    }
+  ],
+  "selection_protocol": "MV-G3-NEW-REGION-SELECTION-PROTOCOL-001"
+}

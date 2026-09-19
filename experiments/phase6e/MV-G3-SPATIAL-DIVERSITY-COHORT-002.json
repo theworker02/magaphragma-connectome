@@ -1,0 +1,499 @@
+{
+  "created_at": "2026-09-17T12:04:41.884454Z",
+  "id": "MV-G3-SPATIAL-DIVERSITY-COHORT-002",
+  "loro_folds": [
+    {
+      "held_out_region": "MV-G3-TRAIN-A",
+      "train_with": [
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-B",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-D",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-F",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-G",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-H",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G"
+      ]
+    }
+  ],
+  "plan": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\G3_SPATIAL_DIVERSITY_PLAN_002.json",
+    "sha256": "43226cc802dbf4c665f77c81bf517609347949f8f615ffbd69cdb3f31c9c3340"
+  },
+  "protected_regression": {
+    "included": false,
+    "volume": "MV-GTVOL-000004"
+  },
+  "regions": [
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-A",
+      "pre_review_raw_statistics": {
+        "mean": 246.49273777008057,
+        "mean_abs_3d_gradient": 3.5466904640197754,
+        "quantiles_p01_p10_p50_p90_p99": [
+          242.0,
+          244.0,
+          247.0,
+          248.0,
+          250.0
+        ],
+        "std": 1.570737167742873
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-001-raw_zyx.npy",
+      "raw_sha256": "bcff730698cbde54cbe310355942e26cdd603874ec2941506281d89bbe9c9239",
+      "raw_stratum": "low-contrast / low-gradient",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-001",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-B",
+      "pre_review_raw_statistics": {
+        "mean": 241.82818126678467,
+        "mean_abs_3d_gradient": 5.638731956481934,
+        "quantiles_p01_p10_p50_p90_p99": [
+          235.0,
+          239.0,
+          242.0,
+          245.0,
+          247.0
+        ],
+        "std": 2.4246238176685946
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-008-raw_zyx.npy",
+      "raw_sha256": "475ee2cc235625b16a8cd7cdc9291ae144d166e0444ad9d62ce32ec06ce37774",
+      "raw_stratum": "moderate-contrast / moderate-gradient",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-008",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-D",
+      "pre_review_raw_statistics": {
+        "mean": 238.88023281097412,
+        "mean_abs_3d_gradient": 6.645543098449707,
+        "quantiles_p01_p10_p50_p90_p99": [
+          231.0,
+          235.0,
+          239.0,
+          242.0,
+          245.0
+        ],
+        "std": 2.8720993730675692
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-024-raw_zyx.npy",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "raw_stratum": "high local-gradient / dense-boundary appearance candidate",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-024",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-F",
+      "pre_review_raw_statistics": {
+        "mean": 245.23527145385742,
+        "mean_abs_3d_gradient": 4.103457450866699,
+        "quantiles_p01_p10_p50_p90_p99": [
+          240.0,
+          243.0,
+          245.0,
+          247.0,
+          249.0
+        ],
+        "std": 1.802825504158445
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-031-raw_zyx.npy",
+      "raw_sha256": "e3f37482cde357f771b5a35a4fd6222235c803972641b7b4456f451658a69550",
+      "raw_stratum": "low-contrast distant spatial control",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-031",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-G",
+      "pre_review_raw_statistics": {
+        "mean": 246.2980489730835,
+        "mean_abs_3d_gradient": 3.695091485977173,
+        "quantiles_p01_p10_p50_p90_p99": [
+          242.0,
+          244.0,
+          246.0,
+          248.0,
+          250.0
+        ],
+        "std": 1.6386569321839033
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-002-raw_zyx.npy",
+      "raw_sha256": "74caf4ee2e2d20a61099f3dcef29c12133f7588da25572b010cc98d7b4ea3227",
+      "raw_stratum": "low-contrast / independent x-location replacement",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-002",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-TRAIN-H",
+      "pre_review_raw_statistics": {
+        "mean": 240.9167194366455,
+        "mean_abs_3d_gradient": 5.9026594161987305,
+        "quantiles_p01_p10_p50_p90_p99": [
+          234.0,
+          237.0,
+          241.0,
+          244.0,
+          246.0
+        ],
+        "std": 2.6362979701729214
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-022-raw_zyx.npy",
+      "raw_sha256": "4d630429b618700e7ab4972123ae627e3279c5b9221f2d108ee0ddc35c925ee5",
+      "raw_stratum": "moderate-contrast / high-z independent replacement",
+      "role": "G3_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-022",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-VALIDATION-V1",
+      "pre_review_raw_statistics": {
+        "mean": 244.82104206085205,
+        "mean_abs_3d_gradient": 4.357061386108398,
+        "quantiles_p01_p10_p50_p90_p99": [
+          240.0,
+          242.0,
+          245.0,
+          247.0,
+          249.0
+        ],
+        "std": 1.9005309727653046
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-004-raw_zyx.npy",
+      "raw_sha256": "5b43d4f00367781f46a860b51bd264e78ae0ca3d39802088f11fb5558b5db6b1",
+      "raw_stratum": "independent low-contrast validation",
+      "role": "G3_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-004",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-VALIDATION-V2",
+      "pre_review_raw_statistics": {
+        "mean": 241.33802890777588,
+        "mean_abs_3d_gradient": 5.2989630699157715,
+        "quantiles_p01_p10_p50_p90_p99": [
+          235.0,
+          238.0,
+          241.0,
+          244.0,
+          246.0
+        ],
+        "std": 2.29875697498762
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-015-raw_zyx.npy",
+      "raw_sha256": "da035333727235123fa31ae05a6f1a539d61362bd1f72f886be852a2ed8d9542",
+      "raw_stratum": "independent moderate-contrast validation",
+      "role": "G3_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-015",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G3-VALIDATION-V3",
+      "pre_review_raw_statistics": {
+        "mean": 181.3743600845337,
+        "mean_abs_3d_gradient": 19.027191162109375,
+        "quantiles_p01_p10_p50_p90_p99": [
+          53.0,
+          110.0,
+          176.0,
+          245.0,
+          248.0
+        ],
+        "std": 57.27154090639961
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-025-raw_zyx.npy",
+      "raw_sha256": "5ca319f584b064768f46ae352d5b0f198f01d11b29c8ba7f8305734d02676983",
+      "raw_stratum": "independent high-variance validation",
+      "role": "G3_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-025",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "review_requirement": "Each region requires reviewed SAME_PROCESS, DIFFERENT_PROCESS, and a boundary-interface decision package before G3 training.",
+  "schema_version": 1,
+  "selection": {
+    "method": "SPATIAL_PLUS_PRE_REVIEW_RAW_APPEARANCE_STRATIFICATION_V1",
+    "prohibited_inputs": [
+      "SegNeuron predictions",
+      "G1/G2 reconstruction metrics",
+      "G2 LORO labels",
+      "MV-GTVOL-000004",
+      "post-selection model output",
+      "validation evidence for training"
+    ]
+  },
+  "status": "FROZEN_PENDING_G3_INTERFACE_REVIEW",
+  "survey": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\manifest.json",
+    "sha256": "97b16d616b3eb25c4b7139e8e228eaae7cafeaeee88ef55e7a9239fc3ad2b80e"
+  }
+}

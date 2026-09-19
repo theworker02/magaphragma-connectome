@@ -1,0 +1,46 @@
+{
+  "id": "MV-EXTERNAL-DVID-BOUNDARY-REVIEW-001",
+  "status": "LOCAL_REVIEW_PACKAGE_READY_PENDING_RIGHTS_CONFIRMATION_AND_EXTERNAL_EXPERT",
+  "purpose": "Acquire a small, independent set of local neuronal SAME_PROCESS and DIFFERENT_PROCESS decisions for target-domain affinity supervision. This request is not whole-neuron tracing and does not authorize biological reconstruction.",
+  "raw_data_handling": {
+    "redistribution": "NOT_AUTHORIZED_BY_THIS_REQUEST",
+    "delivery": "Reviewer must receive legitimate access to the local project data or separately authorized source access. Do not export or upload raw EM until source terms explicitly permit that route.",
+    "source_identity": "MV-SRC-FLATIRON-DVID-WASP5"
+  },
+  "protected_regions": {
+    "MV-GTVOL-000004": "REGRESSION_ONLY; prohibited from review, question generation, training, validation, or calibration"
+  },
+  "requested_review_sets": [
+    {
+      "role": "DVID_TARGET_TRAIN",
+      "crop_id": "MV-DVID-ANN-000001",
+      "parent_region_id": "MV-GTVOL-000001",
+      "raw_sha256": "3a14ba4546f74fec691b74e36aab04dba6cafaafa202581555714fe32e2a6137",
+      "raw_shape_zyx": [64, 128, 128],
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "source_origin_xyz": [1056, 1056, 1056]
+    },
+    {
+      "role": "DVID_TARGET_VALIDATION",
+      "crop_id": "MV-DVID-ANN-000004",
+      "parent_region_id": "MV-GTVOL-000005",
+      "raw_sha256": "ca4cae75ac7af99696ecff2b1c8b5cd176de52d2f19c5191913a591c01b24b98",
+      "raw_shape_zyx": [96, 128, 128],
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "source_origin_xyz": [15072, 2080, 13488]
+    }
+  ],
+  "required_decision_schema": {
+    "allowed_decisions": ["SAME_PROCESS", "DIFFERENT_PROCESS", "UNCERTAIN", "BAD_QUESTION"],
+    "geometry": "A and B must be an adjacent, axis-aligned Z/Y/X voxel pair. Record the left voxel as pair_left_zyx and channel_zyx as 0=Z, 1=Y, 2=X.",
+    "minimum_evidence": "Raw EM in XY, XZ, YZ, and neighbouring Z slices. Machine overlays may be consulted only after the raw-EM judgement and must be recorded as optional diagnostics.",
+    "uncertainty": "UNCERTAIN and BAD_QUESTION are excluded from loss; neither may be coerced into SAME or DIFFERENT.",
+    "prohibited_claims": ["complete neuron identity", "biological fragment", "synapse", "connection"]
+  },
+  "admission_gate": {
+    "train": ["SAME_PROCESS > 0", "DIFFERENT_PROCESS > 0"],
+    "validation": ["SAME_PROCESS > 0", "DIFFERENT_PROCESS > 0"],
+    "global": ["reviewer identity and timestamp recorded", "raw hash matches", "no cross-split overlap", "MV-GTVOL-000004 excluded", "integrity verifier passes"]
+  },
+  "downstream_state": "G1 remains BLOCKED_PENDING_REVIEWED_DVID_BOUNDARY_EVIDENCE. No MV-FRAG, MV-N, MV-SYN, or MV-CONN may be created from this request."
+}

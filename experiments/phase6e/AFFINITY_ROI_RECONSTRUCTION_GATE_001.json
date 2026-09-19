@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-09-18T03:20:00Z",
+  "downstream_stack_when_opened": [
+    "dense affinity inference on ROI",
+    "watershed / mutex / configured segmentation",
+    "segmentation QC gates (to be frozen in SEG_ROI_QC_CONTRACT before first ROI run)",
+    "on PASS: authorize full-volume; on FAIL: archive + diagnose (no full-volume)"
+  ],
+  "explicit_origin_zyx_recorded": {
+    "anchor_source_id": "MV-DVID-RAW-SURVEY-079",
+    "origin_xyz": [
+      10240,
+      7424,
+      10560
+    ],
+    "raw_sha256": "63b33bf6b40af7dbaa68f0c936b242e7a4a48e22973dd7ae10cbdf802027089d",
+    "shape_zyx": [
+      64,
+      256,
+      256
+    ]
+  },
+  "human_value_after_seg": "Prioritize topology errors (false merge/split, uncertain branches) and active-learning cases over cosmetic voxel fixes",
+  "id": "AFFINITY_ROI_RECONSTRUCTION_GATE_001",
+  "materialized_package": "experiments/phase6e/AFFINITY-ROI-001/package/ROI_PACKAGE.json",
+  "opened_at": "2026-09-18T04:09:19.887096Z",
+  "opened_by": "AFFINITY_S4_ROI_AUTHORIZATION_001",
+  "parent_funnel": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "purpose": "Predeclare a representative small 3-D ROI for the first affinities\u2192segmentation\u2192QC mini-connectome. Discover segmentation failures here\u2014not after full-volume inference.",
+  "roi_selection_rule_frozen": {
+    "explicit_origin_zyx": "TO_BE_MATERIALIZED_ONLY_AFTER_S4 \u2014 record exact crop_id + origin + sha256 in ROI package at open time",
+    "must_not_include_eval_sources": true,
+    "seed_material": "AFFINITY_ROI_RECONSTRUCTION_GATE_001|ROI",
+    "selection": "Deterministic hash rank among survey crops that contributed PROMOTED Batch 002 train sources but excluding both frozen eval sources (078, 083)",
+    "size_zyx_voxels": [
+      64,
+      256,
+      256
+    ],
+    "source": "DVID five_yuri_4contrast 8nm"
+  },
+  "schema_version": 1,
+  "status": "S6_PASS_S7_RUNNING",
+  "still_closed": [
+    "synapse detection",
+    "full connectivity graph",
+    "full-volume inference"
+  ],
+  "training_not_relevant": true
+}

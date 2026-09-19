@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-RAW-CONTINUITY-QUEUE-RAIN-C",
+  "created_at": "2026-09-17T11:47:23.374648Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-RAIN-C",
+  "crop_id": "MV-G3-TRAIN-C",
+  "raw_sha256": "ff7a7ae770a775605752448f5318b50050324a895ea49b41b22dab3bbcf2335b",
+  "selection": {
+    "method": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+    "interfaces": 8,
+    "direct_pairs_per_interface": 1,
+    "prohibited_inputs": [
+      "SegNeuron",
+      "G2 predictions",
+      "supervoxels",
+      "prior labels"
+    ]
+  },
+  "questions": [
+    {
+      "id": "MV-G3-CONTROL-001-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-001",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        6,
+        57,
+        91
+      ],
+      "pair_right_zyx": [
+        7,
+        57,
+        91
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-002-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-002",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        12,
+        55,
+        71
+      ],
+      "pair_right_zyx": [
+        13,
+        55,
+        71
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-003-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-003",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        6,
+        108,
+        18
+      ],
+      "pair_right_zyx": [
+        7,
+        108,
+        18
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-004-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-004",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        48,
+        81,
+        86
+      ],
+      "pair_right_zyx": [
+        49,
+        81,
+        86
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-005-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-005",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        41,
+        90,
+        57
+      ],
+      "pair_right_zyx": [
+        42,
+        90,
+        57
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-006-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-006",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        43,
+        118,
+        4
+      ],
+      "pair_right_zyx": [
+        44,
+        118,
+        4
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-007-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-007",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        3,
+        77,
+        93
+      ],
+      "pair_right_zyx": [
+        4,
+        77,
+        93
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-CONTROL-008-01",
+      "kind": "RAW_EM_CONTINUITY_CONTROL",
+      "interface_id": "MV-G3-CONTROL-008",
+      "interface_member": 1,
+      "interface_members": 1,
+      "pair_left_zyx": [
+        36,
+        79,
+        34
+      ],
+      "pair_right_zyx": [
+        37,
+        79,
+        34
+      ],
+      "channel_zyx": 0,
+      "raw_gradient_score": 0.0,
+      "selection": "RAW_EM_LOW_GRADIENT_CONTINUITY_CONTROL_V1",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Raw features choose review locations only. Each direct pair remains an independent expert decision; no group is automatically promoted."
+}

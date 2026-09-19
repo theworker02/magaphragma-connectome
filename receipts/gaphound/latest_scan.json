@@ -1,0 +1,18 @@
+{
+  "shape_zyx": [
+    32,
+    32,
+    32
+  ],
+  "tile_zyx": [
+    16,
+    16,
+    16
+  ],
+  "coverage": 1.0,
+  "validated": 1.0,
+  "missing_frac": 0.0,
+  "counts": {},
+  "regions": [],
+  "highest_priority": null
+}

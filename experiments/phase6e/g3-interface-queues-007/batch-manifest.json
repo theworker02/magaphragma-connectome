@@ -1,0 +1,142 @@
+{
+  "C_E_MAGNITUDE_CONTRAST_AVAILABLE_IN_FRESH_ELIGIBLE_POOL": false,
+  "created_at": "2026-09-17T17:10:03.488014Z",
+  "id": "MV-G3-AXIS-NEUTRAL-REVIEW-BATCH-007",
+  "locations": 12,
+  "per_crop": [
+    {
+      "center_zyx": [
+        23,
+        3,
+        39
+      ],
+      "crop_id": "MV-G3-AXNEU3-01",
+      "source_id": "MV-DVID-RAW-SURVEY-005",
+      "stratum": "Q1",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-01-007"
+    },
+    {
+      "center_zyx": [
+        3,
+        113,
+        51
+      ],
+      "crop_id": "MV-G3-AXNEU3-02",
+      "source_id": "MV-DVID-RAW-SURVEY-006",
+      "stratum": "Q2",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-02-007"
+    },
+    {
+      "center_zyx": [
+        42,
+        111,
+        68
+      ],
+      "crop_id": "MV-G3-AXNEU3-03",
+      "source_id": "MV-DVID-RAW-SURVEY-011",
+      "stratum": "Q3",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-03-007"
+    },
+    {
+      "center_zyx": [
+        13,
+        94,
+        21
+      ],
+      "crop_id": "MV-G3-AXNEU3-04",
+      "source_id": "MV-DVID-RAW-SURVEY-012",
+      "stratum": "Q4",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-04-007"
+    },
+    {
+      "center_zyx": [
+        33,
+        6,
+        69
+      ],
+      "crop_id": "MV-G3-AXNEU3-05",
+      "source_id": "MV-DVID-RAW-SURVEY-016",
+      "stratum": "Q1",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-05-007"
+    },
+    {
+      "center_zyx": [
+        48,
+        118,
+        122
+      ],
+      "crop_id": "MV-G3-AXNEU3-06",
+      "source_id": "MV-DVID-RAW-SURVEY-018",
+      "stratum": "Q2",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-06-007"
+    },
+    {
+      "center_zyx": [
+        53,
+        50,
+        45
+      ],
+      "crop_id": "MV-G3-AXNEU3-07",
+      "source_id": "MV-DVID-RAW-SURVEY-020",
+      "stratum": "Q3",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-07-007"
+    },
+    {
+      "center_zyx": [
+        13,
+        61,
+        50
+      ],
+      "crop_id": "MV-G3-AXNEU3-08",
+      "source_id": "MV-DVID-RAW-SURVEY-021",
+      "stratum": "Q4",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-08-007"
+    },
+    {
+      "center_zyx": [
+        43,
+        3,
+        51
+      ],
+      "crop_id": "MV-G3-AXNEU3-09",
+      "source_id": "MV-DVID-RAW-SURVEY-023",
+      "stratum": "Q1",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-09-007"
+    },
+    {
+      "center_zyx": [
+        55,
+        110,
+        3
+      ],
+      "crop_id": "MV-G3-AXNEU3-10",
+      "source_id": "MV-DVID-RAW-SURVEY-026",
+      "stratum": "Q2",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-10-007"
+    },
+    {
+      "center_zyx": [
+        44,
+        89,
+        109
+      ],
+      "crop_id": "MV-G3-AXNEU3-11",
+      "source_id": "MV-DVID-RAW-SURVEY-028",
+      "stratum": "Q3",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-11-007"
+    },
+    {
+      "center_zyx": [
+        54,
+        33,
+        123
+      ],
+      "crop_id": "MV-G3-AXNEU3-12",
+      "source_id": "MV-DVID-RAW-SURVEY-029",
+      "stratum": "Q4",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-12-007"
+    }
+  ],
+  "protocol": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-003",
+  "total_edges": 36
+}

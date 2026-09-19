@@ -1,0 +1,16 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "event": "put",
+    "identity_hash": "36709cef4371d044b7187d5acdb0865be082656a9e4b5ab7df7f2867004ff112"
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:15:10Z",
+  "tool": "neurocache"
+}

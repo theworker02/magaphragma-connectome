@@ -1,0 +1,394 @@
+{
+  "abs_axis_min": 12.0,
+  "anchors_xyz": [
+    [
+      1984,
+      1600,
+      11456
+    ],
+    [
+      10304,
+      8384,
+      11456
+    ],
+    [
+      11328,
+      7552,
+      13440
+    ]
+  ],
+  "created_at": "2026-09-18T02:06:06.156400Z",
+  "id": "AFFINITY_SPEC002_VALIDATION_002_SOURCE_ACQUISITION",
+  "manifest_path": "local_research_build/phase6e/dvid_raw_context_survey_001/manifest.json",
+  "n_fetched": 20,
+  "n_selected": 12,
+  "per_selected": [
+    {
+      "axis_abs_ge12_counts": {
+        "X": 441687,
+        "X_max": 132.0,
+        "Y": 441641,
+        "Y_max": 168.0,
+        "Z": 444661,
+        "Z_max": 134.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10752,
+          10880
+        ],
+        "y": [
+          7936,
+          8064
+        ],
+        "z": [
+          11008,
+          11072
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-051",
+      "intensity_std": 57.783877142866054,
+      "raw_sha256": "0b5d6119bae94e069619c4cd8bc5fc1fab8035299c81f920a1ba985c750214ad"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 428741,
+        "X_max": 158.0,
+        "Y": 422683,
+        "Y_max": 171.0,
+        "Z": 435098,
+        "Z_max": 132.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8640,
+          8768
+        ],
+        "z": [
+          11712,
+          11776
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-067",
+      "intensity_std": 57.75581395559568,
+      "raw_sha256": "c884a573cfbe484ebf451d55696a81518a2166a5c137f783e3cea2c8a7bf0f0b"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 404089,
+        "X_max": 134.0,
+        "Y": 406075,
+        "Y_max": 169.0,
+        "Z": 418953,
+        "Z_max": 127.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          11328,
+          11456
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          13056,
+          13120
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-066",
+      "intensity_std": 56.599724105315325,
+      "raw_sha256": "9b1a9f8692289fd7a4cbfd48e4d12f6f3257c889e9abe854fed0ea5815778761"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 376271,
+        "X_max": 110.0,
+        "Y": 434243,
+        "Y_max": 185.0,
+        "Z": 454976,
+        "Z_max": 126.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10112,
+          10240
+        ],
+        "y": [
+          8576,
+          8704
+        ],
+        "z": [
+          11264,
+          11328
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-064",
+      "intensity_std": 59.07082262405298,
+      "raw_sha256": "0c1ba20ea3a6aeead3c3bb5e91a9bd5f5b9f9e77826a9d2d2a658b705466b617"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 362338,
+        "X_max": 132.0,
+        "Y": 398821,
+        "Y_max": 178.0,
+        "Z": 394350,
+        "Z_max": 140.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11712,
+          11776
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-058",
+      "intensity_std": 61.28830710058532,
+      "raw_sha256": "62513226832b76ec1f89241c64ac5e4684930b0fdbfa97d573338cd1b778e7be"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 361871,
+        "X_max": 127.0,
+        "Y": 414076,
+        "Y_max": 169.0,
+        "Z": 387865,
+        "Z_max": 135.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10752,
+          10880
+        ],
+        "y": [
+          8832,
+          8960
+        ],
+        "z": [
+          11008,
+          11072
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-057",
+      "intensity_std": 58.96533207299424,
+      "raw_sha256": "5fd3b6484b78658561848055326baf9fa742528288a7c2a4a1b92c8b2e016bc9"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 428861,
+        "X_max": 129.0,
+        "Y": 357979,
+        "Y_max": 164.0,
+        "Z": 424137,
+        "Z_max": 123.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10880,
+          11008
+        ],
+        "y": [
+          8000,
+          8128
+        ],
+        "z": [
+          12992,
+          13056
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-068",
+      "intensity_std": 51.32284421184554,
+      "raw_sha256": "c88c6a455d6ab6de999c709a2646c7d7894034bd4e8b7b7de5bdb3b423a28c02"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 300281,
+        "X_max": 105.0,
+        "Y": 322681,
+        "Y_max": 150.0,
+        "Z": 326467,
+        "Z_max": 91.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          11712,
+          11840
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-049",
+      "intensity_std": 38.7595206594209,
+      "raw_sha256": "55db8dcd9469ba94276fd938950c9a311bbc4895d00ee1c1dd87df663b160540"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 288911,
+        "X_max": 108.0,
+        "Y": 349249,
+        "Y_max": 105.0,
+        "Z": 354117,
+        "Z_max": 105.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1856,
+          1984
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-052",
+      "intensity_std": 28.121760165492056,
+      "raw_sha256": "1ec3a4bf1d329095d6739b457a6d88894e6cf3596cc7c81a6cfa9f9fecf64e41"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 244761,
+        "X_max": 94.0,
+        "Y": 278579,
+        "Y_max": 104.0,
+        "Z": 329113,
+        "Z_max": 118.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          2240,
+          2368
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-059",
+      "intensity_std": 32.83855500292159,
+      "raw_sha256": "2087450530f892a3e23425e41aea5d4862e19f0bc60877f9b04e7ad961c73323"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 242922,
+        "X_max": 107.0,
+        "Y": 279758,
+        "Y_max": 127.0,
+        "Z": 296189,
+        "Z_max": 123.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          11648,
+          11776
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          13120,
+          13184
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-050",
+      "intensity_std": 40.17876229736451,
+      "raw_sha256": "ca848a70950859fa365d0f63b0b2c7fd5fc3b2cf93ef08ddcecb61415c4283c3"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 219026,
+        "X_max": 107.0,
+        "Y": 250873,
+        "Y_max": 163.0,
+        "Z": 239903,
+        "Z_max": 112.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          11520,
+          11648
+        ],
+        "y": [
+          7744,
+          7872
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-061",
+      "intensity_std": 28.905617030002045,
+      "raw_sha256": "221a1362a6b9b2838c68e3dad9bce5cbc9e02f9faaab01af6e3aa1fbdcc053e8"
+    }
+  ],
+  "prohibited_inputs": [
+    "human_labels",
+    "g3_labels",
+    "model_predictions",
+    "segmentation"
+  ],
+  "reserve_ids": [
+    "MV-DVID-RAW-SURVEY-053",
+    "MV-DVID-RAW-SURVEY-054",
+    "MV-DVID-RAW-SURVEY-055",
+    "MV-DVID-RAW-SURVEY-056",
+    "MV-DVID-RAW-SURVEY-060",
+    "MV-DVID-RAW-SURVEY-062",
+    "MV-DVID-RAW-SURVEY-063",
+    "MV-DVID-RAW-SURVEY-065"
+  ],
+  "selected_ids": [
+    "MV-DVID-RAW-SURVEY-049",
+    "MV-DVID-RAW-SURVEY-050",
+    "MV-DVID-RAW-SURVEY-051",
+    "MV-DVID-RAW-SURVEY-052",
+    "MV-DVID-RAW-SURVEY-057",
+    "MV-DVID-RAW-SURVEY-058",
+    "MV-DVID-RAW-SURVEY-059",
+    "MV-DVID-RAW-SURVEY-061",
+    "MV-DVID-RAW-SURVEY-064",
+    "MV-DVID-RAW-SURVEY-066",
+    "MV-DVID-RAW-SURVEY-067",
+    "MV-DVID-RAW-SURVEY-068"
+  ],
+  "status": "ACQUIRED"
+}

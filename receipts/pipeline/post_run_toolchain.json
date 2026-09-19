@@ -1,0 +1,145 @@
+{
+  "artifactvet": {
+    "issues": [],
+    "kind": "json",
+    "meta": {
+      "keys": [
+        "accepted",
+        "cache_hit_rate",
+        "claims",
+        "ledger",
+        "pass_name",
+        "project",
+        "rejected",
+        "subsystem",
+        "version"
+      ],
+      "sha256": "0aeedf8d3560dfc8be59be0089bb14245209121a8fa85f6fbd826b2fb9785b53",
+      "size_bytes": 590
+    },
+    "ok": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\SUMMARY.json"
+  },
+  "branchjudge": {
+    "n_assisted": 1
+  },
+  "deltagraph": {
+    "edges_changed": {
+      "added": 0,
+      "removed": 0
+    },
+    "neurons_added": 1,
+    "synapses_added": 1
+  },
+  "edgeprobe": {
+    "ascii_back": "?: edge:af-pre->af-post",
+    "ascii_forward": "?: edge:af-pre->af-post",
+    "back": [
+      {
+        "id": "edge:af-pre->af-post",
+        "kind": "?",
+        "node_id": "edge:af-pre->af-post",
+        "stage": "?"
+      }
+    ],
+    "bundle": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\edgeprobe\\af-pre__af-post__20260918T221620Z",
+    "entity_id": "edge:af-pre->af-post",
+    "forward": [
+      {
+        "id": "edge:af-pre->af-post",
+        "kind": "?",
+        "node_id": "edge:af-pre->af-post",
+        "stage": "?"
+      }
+    ],
+    "n_back": 1,
+    "n_forward": 1,
+    "post": "af-post",
+    "pre": "af-pre",
+    "schema": "edgeprobe/v1"
+  },
+  "gaphound": {
+    "coverage": 1.0,
+    "failed": 0,
+    "missing": 0,
+    "repair_items": 0
+  },
+  "hyperdrain": {
+    "aggregate_tiles_per_sec": 17.900483065623593,
+    "eta_hours_one_gpu": 1548.234009387679,
+    "id": "HYPERDRAIN_FLEET_PLAN",
+    "n_gpus": 1
+  },
+  "morphguard": {
+    "kind_counts": {
+      "implausible_merge_point": 2
+    },
+    "n_anomalies": 2,
+    "review_queue": 2
+  },
+  "runddoctor": {
+    "n_checks": 9,
+    "n_ok": 9,
+    "switch": {
+      "autonomous": false,
+      "flips": 28,
+      "last_flip_s": 1789769723.122323,
+      "last_reason": "manual",
+      "mode": "manual",
+      "powered_on": true
+    },
+    "tool_imports": {
+      "artifactvet": true,
+      "axonforge": true,
+      "branchjudge": true,
+      "deltagraph": true,
+      "edgeprobe": true,
+      "gaphound": true,
+      "hyperdrain": true,
+      "morphguard": true,
+      "neurocache": true,
+      "pipeline": true,
+      "regionbench": true,
+      "runddoctor": true,
+      "seamsmith": true,
+      "synapselens": true,
+      "tilemedic": true,
+      "tracewire": true,
+      "voxscout": true
+    }
+  },
+  "seamsmith": {
+    "mode": "branch_assist",
+    "n_review": 1
+  },
+  "shape_zyx": [
+    32,
+    32,
+    32
+  ],
+  "synapselens": {
+    "counts": {
+      "AMBIGUOUS": 1,
+      "CONFLICTING": 0,
+      "PROBABLE": 0,
+      "REJECTED": 0,
+      "REVIEW": 0,
+      "SUPPORTED": 1
+    },
+    "review_queue": 1,
+    "total": 2
+  },
+  "tiles_done": 8,
+  "tools_invoked": [
+    "artifactvet",
+    "branchjudge",
+    "deltagraph",
+    "edgeprobe",
+    "gaphound",
+    "hyperdrain",
+    "morphguard",
+    "runddoctor",
+    "seamsmith",
+    "synapselens"
+  ]
+}

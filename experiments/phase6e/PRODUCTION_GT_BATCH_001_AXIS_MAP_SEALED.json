@@ -1,0 +1,635 @@
+{
+  "batch_id": "PRODUCTION_GT_BATCH_001",
+  "entries": [
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        3,
+        113,
+        3
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-01",
+      "face_step": 9.0,
+      "opaque_decision_id": "MV-PGT1-BC43B23F0938",
+      "pair_left_zyx": [
+        3,
+        113,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        113,
+        4
+      ],
+      "presentation_order_index": 3,
+      "raw_sha256": "4b2331454f1b1d593ad46de1e3f1f4c4d57a4d556dd47125e4704652a4585765",
+      "source_id": "MV-DVID-RAW-SURVEY-053",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-01\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        3,
+        113,
+        3
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-01",
+      "face_step": 21.0,
+      "opaque_decision_id": "MV-PGT1-CD6285EC9F3B",
+      "pair_left_zyx": [
+        3,
+        113,
+        3
+      ],
+      "pair_right_zyx": [
+        4,
+        113,
+        3
+      ],
+      "presentation_order_index": 7,
+      "raw_sha256": "4b2331454f1b1d593ad46de1e3f1f4c4d57a4d556dd47125e4704652a4585765",
+      "source_id": "MV-DVID-RAW-SURVEY-053",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-01\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        3,
+        113,
+        3
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-01",
+      "face_step": 16.0,
+      "opaque_decision_id": "MV-PGT1-59A5ED94740E",
+      "pair_left_zyx": [
+        3,
+        113,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        114,
+        3
+      ],
+      "presentation_order_index": 18,
+      "raw_sha256": "4b2331454f1b1d593ad46de1e3f1f4c4d57a4d556dd47125e4704652a4585765",
+      "source_id": "MV-DVID-RAW-SURVEY-053",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-01\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        3,
+        3,
+        39
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-02",
+      "face_step": 3.0,
+      "opaque_decision_id": "MV-PGT1-0847E95BB13C",
+      "pair_left_zyx": [
+        3,
+        3,
+        39
+      ],
+      "pair_right_zyx": [
+        3,
+        4,
+        39
+      ],
+      "presentation_order_index": 1,
+      "raw_sha256": "0c37fb8f20c7fd97e55089eab65d6edcf14fc82c12d89ed844a33128193fcaa1",
+      "source_id": "MV-DVID-RAW-SURVEY-054",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-02\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        3,
+        3,
+        39
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-02",
+      "face_step": 14.0,
+      "opaque_decision_id": "MV-PGT1-E33188D3EA01",
+      "pair_left_zyx": [
+        3,
+        3,
+        39
+      ],
+      "pair_right_zyx": [
+        4,
+        3,
+        39
+      ],
+      "presentation_order_index": 13,
+      "raw_sha256": "0c37fb8f20c7fd97e55089eab65d6edcf14fc82c12d89ed844a33128193fcaa1",
+      "source_id": "MV-DVID-RAW-SURVEY-054",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-02\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        3,
+        3,
+        39
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-02",
+      "face_step": 9.0,
+      "opaque_decision_id": "MV-PGT1-B536038CF8E6",
+      "pair_left_zyx": [
+        3,
+        3,
+        39
+      ],
+      "pair_right_zyx": [
+        3,
+        3,
+        40
+      ],
+      "presentation_order_index": 20,
+      "raw_sha256": "0c37fb8f20c7fd97e55089eab65d6edcf14fc82c12d89ed844a33128193fcaa1",
+      "source_id": "MV-DVID-RAW-SURVEY-054",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-02\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        13,
+        6,
+        21
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-03",
+      "face_step": 7.0,
+      "opaque_decision_id": "MV-PGT1-E0313CCD1379",
+      "pair_left_zyx": [
+        13,
+        6,
+        21
+      ],
+      "pair_right_zyx": [
+        13,
+        7,
+        21
+      ],
+      "presentation_order_index": 12,
+      "raw_sha256": "804957f99aa819df35a20cd656a97f02bce361569642661720ea807ad5dd9d42",
+      "source_id": "MV-DVID-RAW-SURVEY-055",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-03\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        13,
+        6,
+        21
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-03",
+      "face_step": 17.0,
+      "opaque_decision_id": "MV-PGT1-4A6BE84D6F22",
+      "pair_left_zyx": [
+        13,
+        6,
+        21
+      ],
+      "pair_right_zyx": [
+        13,
+        6,
+        22
+      ],
+      "presentation_order_index": 19,
+      "raw_sha256": "804957f99aa819df35a20cd656a97f02bce361569642661720ea807ad5dd9d42",
+      "source_id": "MV-DVID-RAW-SURVEY-055",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-03\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        13,
+        6,
+        21
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-03",
+      "face_step": 9.0,
+      "opaque_decision_id": "MV-PGT1-408C6516223B",
+      "pair_left_zyx": [
+        13,
+        6,
+        21
+      ],
+      "pair_right_zyx": [
+        14,
+        6,
+        21
+      ],
+      "presentation_order_index": 23,
+      "raw_sha256": "804957f99aa819df35a20cd656a97f02bce361569642661720ea807ad5dd9d42",
+      "source_id": "MV-DVID-RAW-SURVEY-055",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-03\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        43,
+        123,
+        57
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-04",
+      "face_step": 2.0,
+      "opaque_decision_id": "MV-PGT1-E50FDA7186F8",
+      "pair_left_zyx": [
+        43,
+        123,
+        57
+      ],
+      "pair_right_zyx": [
+        43,
+        124,
+        57
+      ],
+      "presentation_order_index": 10,
+      "raw_sha256": "02d6d31e6fcbf2090914a749ee7d7544c90823306321ffaaffa879d05a95506c",
+      "source_id": "MV-DVID-RAW-SURVEY-056",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-04\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        43,
+        123,
+        57
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-04",
+      "face_step": 6.0,
+      "opaque_decision_id": "MV-PGT1-F3CB160FD479",
+      "pair_left_zyx": [
+        43,
+        123,
+        57
+      ],
+      "pair_right_zyx": [
+        44,
+        123,
+        57
+      ],
+      "presentation_order_index": 11,
+      "raw_sha256": "02d6d31e6fcbf2090914a749ee7d7544c90823306321ffaaffa879d05a95506c",
+      "source_id": "MV-DVID-RAW-SURVEY-056",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-04\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        43,
+        123,
+        57
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-04",
+      "face_step": 12.0,
+      "opaque_decision_id": "MV-PGT1-1FF30E3AC1F1",
+      "pair_left_zyx": [
+        43,
+        123,
+        57
+      ],
+      "pair_right_zyx": [
+        43,
+        123,
+        58
+      ],
+      "presentation_order_index": 21,
+      "raw_sha256": "02d6d31e6fcbf2090914a749ee7d7544c90823306321ffaaffa879d05a95506c",
+      "source_id": "MV-DVID-RAW-SURVEY-056",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-04\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        3,
+        47,
+        63
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-05",
+      "face_step": 2.0,
+      "opaque_decision_id": "MV-PGT1-E2C970CF7F7F",
+      "pair_left_zyx": [
+        3,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        3,
+        48,
+        63
+      ],
+      "presentation_order_index": 2,
+      "raw_sha256": "759c0d512a690823a80ff32e5a7e262e3b3fc7c01334cca78ab65e031bcf698f",
+      "source_id": "MV-DVID-RAW-SURVEY-060",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-05\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        3,
+        47,
+        63
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-05",
+      "face_step": 23.0,
+      "opaque_decision_id": "MV-PGT1-A5203912E85C",
+      "pair_left_zyx": [
+        3,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        4,
+        47,
+        63
+      ],
+      "presentation_order_index": 15,
+      "raw_sha256": "759c0d512a690823a80ff32e5a7e262e3b3fc7c01334cca78ab65e031bcf698f",
+      "source_id": "MV-DVID-RAW-SURVEY-060",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-05\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        3,
+        47,
+        63
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-05",
+      "face_step": 10.0,
+      "opaque_decision_id": "MV-PGT1-7B51FA62414D",
+      "pair_left_zyx": [
+        3,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        3,
+        47,
+        64
+      ],
+      "presentation_order_index": 17,
+      "raw_sha256": "759c0d512a690823a80ff32e5a7e262e3b3fc7c01334cca78ab65e031bcf698f",
+      "source_id": "MV-DVID-RAW-SURVEY-060",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-05\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        3,
+        25,
+        15
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-06",
+      "face_step": 28.0,
+      "opaque_decision_id": "MV-PGT1-56D22DB5BAD3",
+      "pair_left_zyx": [
+        3,
+        25,
+        15
+      ],
+      "pair_right_zyx": [
+        4,
+        25,
+        15
+      ],
+      "presentation_order_index": 4,
+      "raw_sha256": "eec8aff86df7c82c79006f153c85f12a8a9b5bef1986d2e412a84749a932bda9",
+      "source_id": "MV-DVID-RAW-SURVEY-062",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-06\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        3,
+        25,
+        15
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-06",
+      "face_step": 5.0,
+      "opaque_decision_id": "MV-PGT1-75B01B539ABD",
+      "pair_left_zyx": [
+        3,
+        25,
+        15
+      ],
+      "pair_right_zyx": [
+        3,
+        26,
+        15
+      ],
+      "presentation_order_index": 8,
+      "raw_sha256": "eec8aff86df7c82c79006f153c85f12a8a9b5bef1986d2e412a84749a932bda9",
+      "source_id": "MV-DVID-RAW-SURVEY-062",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-06\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        3,
+        25,
+        15
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-06",
+      "face_step": 15.0,
+      "opaque_decision_id": "MV-PGT1-1B44B3DFB0D7",
+      "pair_left_zyx": [
+        3,
+        25,
+        15
+      ],
+      "pair_right_zyx": [
+        3,
+        25,
+        16
+      ],
+      "presentation_order_index": 16,
+      "raw_sha256": "eec8aff86df7c82c79006f153c85f12a8a9b5bef1986d2e412a84749a932bda9",
+      "source_id": "MV-DVID-RAW-SURVEY-062",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-06\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        3,
+        101,
+        118
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-07",
+      "face_step": 3.0,
+      "opaque_decision_id": "MV-PGT1-574195A5DC6A",
+      "pair_left_zyx": [
+        3,
+        101,
+        118
+      ],
+      "pair_right_zyx": [
+        3,
+        101,
+        119
+      ],
+      "presentation_order_index": 0,
+      "raw_sha256": "8eb03ed0e1c741cc0cb43517cf860792a6f9cd71b8e34d095237f36dd59cecb8",
+      "source_id": "MV-DVID-RAW-SURVEY-063",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-07\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        3,
+        101,
+        118
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-07",
+      "face_step": 14.0,
+      "opaque_decision_id": "MV-PGT1-F369FDDF70A4",
+      "pair_left_zyx": [
+        3,
+        101,
+        118
+      ],
+      "pair_right_zyx": [
+        3,
+        102,
+        118
+      ],
+      "presentation_order_index": 9,
+      "raw_sha256": "8eb03ed0e1c741cc0cb43517cf860792a6f9cd71b8e34d095237f36dd59cecb8",
+      "source_id": "MV-DVID-RAW-SURVEY-063",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-07\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        3,
+        101,
+        118
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-07",
+      "face_step": 15.0,
+      "opaque_decision_id": "MV-PGT1-A2A7A6884126",
+      "pair_left_zyx": [
+        3,
+        101,
+        118
+      ],
+      "pair_right_zyx": [
+        4,
+        101,
+        118
+      ],
+      "presentation_order_index": 22,
+      "raw_sha256": "8eb03ed0e1c741cc0cb43517cf860792a6f9cd71b8e34d095237f36dd59cecb8",
+      "source_id": "MV-DVID-RAW-SURVEY-063",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-07\\workspace.json"
+    },
+    {
+      "axis_name": "Y",
+      "center_zyx": [
+        43,
+        47,
+        63
+      ],
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT1-08",
+      "face_step": 9.0,
+      "opaque_decision_id": "MV-PGT1-1F020DEC08CA",
+      "pair_left_zyx": [
+        43,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        48,
+        63
+      ],
+      "presentation_order_index": 5,
+      "raw_sha256": "abf60ea40f8dffac67101ad04460d24c444c1d072e3d464ca7aa5cd08aba4b59",
+      "source_id": "MV-DVID-RAW-SURVEY-065",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-08\\workspace.json"
+    },
+    {
+      "axis_name": "Z",
+      "center_zyx": [
+        43,
+        47,
+        63
+      ],
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT1-08",
+      "face_step": 14.0,
+      "opaque_decision_id": "MV-PGT1-C37722506A10",
+      "pair_left_zyx": [
+        43,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        44,
+        47,
+        63
+      ],
+      "presentation_order_index": 6,
+      "raw_sha256": "abf60ea40f8dffac67101ad04460d24c444c1d072e3d464ca7aa5cd08aba4b59",
+      "source_id": "MV-DVID-RAW-SURVEY-065",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-08\\workspace.json"
+    },
+    {
+      "axis_name": "X",
+      "center_zyx": [
+        43,
+        47,
+        63
+      ],
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT1-08",
+      "face_step": 1.0,
+      "opaque_decision_id": "MV-PGT1-DBA0AC5BEC45",
+      "pair_left_zyx": [
+        43,
+        47,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        47,
+        64
+      ],
+      "presentation_order_index": 14,
+      "raw_sha256": "abf60ea40f8dffac67101ad04460d24c444c1d072e3d464ca7aa5cd08aba4b59",
+      "source_id": "MV-DVID-RAW-SURVEY-065",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-08\\workspace.json"
+    }
+  ],
+  "id": "PRODUCTION_GT_BATCH_001_AXIS_MAP_SEALED",
+  "mapping_hash": "8cc06430c6cd5c50408626202de450bdfd376a9233c19f16a16d249ec543e144",
+  "order_hash": "7bc54d0b66f7a93a446017aa7aa64abfef8129866547af1f98870d13523d084e",
+  "seed_material": "PRODUCTION_GT_BATCH_001|ABS_FACE_ENRICHED|EQUIVARIANT_EDGE_FACE_V1",
+  "status": "UNBLINDED",
+  "unblinded_at": "2026-09-18T02:26:54.055774Z"
+}

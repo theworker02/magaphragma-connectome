@@ -1,0 +1,183 @@
+{
+  "all_checkpoint_balanced_scores": [
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 10,
+      "margin": -0.007185015827417374
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 20,
+      "margin": -0.01764657348394394
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 30,
+      "margin": -0.020165137946605682
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 40,
+      "margin": -0.019874203950166702
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 50,
+      "margin": -0.02292977273464203
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 60,
+      "margin": -0.021170593798160553
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 70,
+      "margin": -0.02262824773788452
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 80,
+      "margin": -0.028300553560256958
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 90,
+      "margin": -0.029751434922218323
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 100,
+      "margin": -0.03149041160941124
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 110,
+      "margin": -0.029013238847255707
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "global_step": 120,
+      "margin": -0.0303482823073864
+    }
+  ],
+  "checkpoint_every": 10,
+  "contract_id": "AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001",
+  "created_at": "2026-09-18T03:08:29.024772Z",
+  "device": "AMD  Radeon RX 7800 XT",
+  "do_not_promote_selected_checkpoint": true,
+  "do_not_run_dense_segmentation_from_this_run": true,
+  "do_not_weaken_GATE_D": true,
+  "eval_metrics": {
+    "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+    "SAME_PROCESS_accuracy_at_0p5": 0.5,
+    "balanced_edge_accuracy_at_0p5": 0.5,
+    "margin": -0.007185015827417374,
+    "mean_pred_DIFFERENT": 0.5727644599974155,
+    "mean_pred_SAME": 0.5655794441699982,
+    "n_eval_edges": 6
+  },
+  "eval_metrics_extended": {
+    "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+    "SAME_PROCESS_accuracy_at_0p5": 0.5,
+    "balanced_edge_accuracy_at_0p5": 0.5,
+    "constant_same_accuracy": 0.3333333333333333,
+    "margin": -0.007185015827417374,
+    "mean_pred_DIFFERENT": 0.5727644599974155,
+    "mean_pred_SAME": 0.5655794441699982,
+    "n_eval_edges": 6,
+    "opaque_ids_scored": [
+      "MV-PGT2-5E2C51243843",
+      "MV-PGT2-BAB09CA48AC4",
+      "MV-PGT2-BB854E1BF43D",
+      "MV-PGT2-C2C6E21DB1B7",
+      "MV-PGT2-E992DA993C6B",
+      "MV-PGT2-FD2E7E5D4C10"
+    ],
+    "pair_predictions": [
+      {
+        "affinity": 0.9956455230712891,
+        "opaque_decision_id": "MV-PGT2-5E2C51243843",
+        "target": 0
+      },
+      {
+        "affinity": 0.1532834768295288,
+        "opaque_decision_id": "MV-PGT2-BAB09CA48AC4",
+        "target": 0
+      },
+      {
+        "affinity": 0.9921025633811951,
+        "opaque_decision_id": "MV-PGT2-BB854E1BF43D",
+        "target": 0
+      },
+      {
+        "affinity": 0.15226244926452637,
+        "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7",
+        "target": 1
+      },
+      {
+        "affinity": 0.15002627670764923,
+        "opaque_decision_id": "MV-PGT2-E992DA993C6B",
+        "target": 0
+      },
+      {
+        "affinity": 0.97889643907547,
+        "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10",
+        "target": 1
+      }
+    ]
+  },
+  "eval_sources": [
+    "MV-DVID-RAW-SURVEY-078",
+    "MV-DVID-RAW-SURVEY-083"
+  ],
+  "finalized_from_checkpoints": true,
+  "gate_outcomes": {
+    "GATE_A_eval_completeness": true,
+    "GATE_B_both_classes_scored": true,
+    "GATE_C_better_than_constant_same": true,
+    "GATE_D_positive_margin": false,
+    "GATE_E_no_eval_leakage": true
+  },
+  "init_checkpoint_path_and_sha256": {
+    "note": "Loaded model_weights only; Adam freshly initialized for this run",
+    "path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+    "sha256": "094eabaaaa93ce33349e5c3a9ee1c166bcda8081c307d6a2d51c74a10d8af354"
+  },
+  "permanent_fail_artifact": "experiments/phase6e/AFFINITY_TRAIN_PGT002_001_FAIL_PERMANENT.json",
+  "promoted_gt_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+  "reopen_decision_id": "AFFINITY_TRAINING_REOPEN_DECISION_001",
+  "run_id": "AFFINITY-TRAIN-PGT002-001",
+  "seeds": {
+    "dataloader_generator_seed": 20260918,
+    "numpy_seed": 20260918,
+    "python_hash_seed": "0",
+    "split_seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT",
+    "torch_manual_seed": 20260918
+  },
+  "selected_checkpoint_path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-TRAIN-PGT002-001/run/checkpoints/checkpoint-step10.pt",
+  "selected_checkpoint_sha256": "4ffee3ecf00141c3883cb65ddc0b31390902223283577099ab7d347611ec4568",
+  "selected_checkpoint_step": 10,
+  "status": "COMPLETED",
+  "steps": 120,
+  "target_loss_weight": 0.25,
+  "torch_hip_version": "7.2.53211-e1a6bc5663",
+  "torch_version": "2.9.1+rocm7.2.1.gitff65f5bc",
+  "train_sources": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ],
+  "train_sources_seen_in_batches": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ],
+  "verdict": "AFFINITY_TRAIN_PGT002_001_FAIL"
+}

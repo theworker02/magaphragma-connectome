@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "models": [
+    {
+      "id": "MV-MODEL-SEGNEURON-0001",
+      "status": "TECHNICAL_EXECUTION_PASS_PENDING_QUALIFICATION",
+      "architecture": "SegNeuron affinity inference plus FRMC instance postprocessing",
+      "implementation": "https://github.com/yanchaoz/SegNeuron.git",
+      "implementation_commit": "ea6f0c963a2f60f0f130244da27e2b2d753f8ee9",
+      "checkpoint_source": "https://huggingface.co/yanchaoz/SegNeuron/resolve/main/SegNeuronModel.ckpt",
+      "checkpoint_repository_commit": "b6b92dbcdc654a1aba119b3cb40c069f15662491",
+      "checkpoint_sha256": "3767a3793cbbdbf98041b8c4c270b92d2355213d11605568c003322bb759bef5",
+      "license": "MIT",
+      "training_data": "EMNeuron; official archive inspection confirms raw TIFF plus MaskIns neuronal-instance pairs and FIB25 validation raw/label volumes",
+      "training_artifacts": {
+        "repository": "https://huggingface.co/datasets/yanchaoz/EMNeuron",
+        "repository_commit": "62df92b933550cc2a5d3849fe8543191c356f2d4",
+        "license": "MIT",
+        "labeled_archive_sha256": "966daa6048a22d2647efbe82f53b2a17fa09047c00a942a4101b724260fc1880",
+        "validation_archive_sha256": "a3f30ae39deb84488c8a9eafc0edfa539d4ea2628fe7e464a6636b83695fd3c2",
+        "archive_status": "ACQUIRED_AND_INDEXED_LOCAL_CACHE",
+        "split_lineage_status": "NOT_YET_INDEPENDENTLY_VERIFIED"
+      },
+      "target_compatibility": "EXTERNAL_8NM_FIBSEM_INSTANCE_LABELS_AVAILABLE_DVID_HELDOUT_EVALUATION_UNAVAILABLE",
+      "production_selection": "NOT_SELECTED",
+      "technical_execution": {
+        "status": "PASS",
+        "run_id": "MV-SEGNEURON-TECH-0001",
+        "input_id": "MV-INPUT-DVID-SMOKE-0001",
+        "input_shape_zyx": [20, 128, 128],
+        "input_sha256": "936f1eee65e0f46857ec1dcd2109e2bd7bd1db9b84e97af0cfa23e9d81c74aa7",
+        "device": "cpu",
+        "torch_version": "2.12.0+cpu",
+        "inference_seconds": 6.484590000007302,
+        "output_kind": "affinities_and_auxiliary_foreground_probability_only"
+      },
+      "zero_shot_dvid_proposal": {
+        "status": "EXECUTED_PROPOSAL_REJECTED_FOR_LABELING",
+        "run_id": "MV-SEGNEURON-ZERO-SHOT-000004",
+        "region_id": "MV-GTVOL-000004",
+        "input_sha256": "6ff072f65794e9c1e10f741cb2e37f213b16c8b16947258af622d1ff41fe5943",
+        "patches": 171,
+        "cpu_seconds": 207.8525731000118,
+        "pseudolabel_method": "AFFINITY_COMPONENT_PROPOSAL_V0",
+        "pseudolabel_sha256": "9da42c8a8d4694e789bfa5c42e87ef574debbeedce657893c893078c29d7e34c",
+        "result": "one component covering 7077384 of 7077888 voxels",
+        "automated_qa": "NEAR_FULL_VOLUME_MERGE_CANDIDATE",
+        "scientific_interpretation": "NOT_GROUND_TRUTH_NOT_INSTANCE_VALIDATION_NOT_PRODUCTION_ELIGIBLE"
+      },
+      "reason": "Compatible FIB-SEM resolution and real-DVID technical execution are encouraging but do not replace held-out Megaphragma/DVID-native neuronal-instance evaluation."
+    },
+    {
+      "id": "MV-MODEL-CREMI-BOUNDARY-0001",
+      "status": "REJECTED",
+      "architecture": "small 3-D TensorFlow boundary model",
+      "target_compatibility": "REJECTED_RESOLUTION_AND_MODALITY_MISMATCH",
+      "production_selection": "NOT_SELECTED",
+      "reason": "Held-out CREMI boundary Dice 0.0002661048896773478; CREMI is anisotropic Drosophila ssTEM, not target FIB-SEM instance ground truth."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "counts": {
+      "failed": 8
+    },
+    "coverage": 0.0,
+    "highest_priority": {
+      "box": {
+        "x0": 0,
+        "x1": 32,
+        "y0": 0,
+        "y1": 32,
+        "z0": 0,
+        "z1": 32
+      },
+      "kind": "failed",
+      "priority": 0.9,
+      "reason": "equivalence_gate_reject",
+      "tile_key": "T-Z000-Y000-X000"
+    },
+    "missing_frac": 0.0,
+    "regions": [
+      {
+        "box": {
+          "x0": 0,
+          "x1": 32,
+          "y0": 0,
+          "y1": 32,
+          "z0": 0,
+          "z1": 32
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z000-Y000-X000"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 64,
+          "y0": 0,
+          "y1": 32,
+          "z0": 0,
+          "z1": 32
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z000-Y000-X001"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 32,
+          "y0": 32,
+          "y1": 64,
+          "z0": 0,
+          "z1": 32
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z000-Y001-X000"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 64,
+          "y0": 32,
+          "y1": 64,
+          "z0": 0,
+          "z1": 32
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z000-Y001-X001"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 32,
+          "y0": 0,
+          "y1": 32,
+          "z0": 32,
+          "z1": 64
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z001-Y000-X000"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 64,
+          "y0": 0,
+          "y1": 32,
+          "z0": 32,
+          "z1": 64
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z001-Y000-X001"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 32,
+          "y0": 32,
+          "y1": 64,
+          "z0": 32,
+          "z1": 64
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z001-Y001-X000"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 64,
+          "y0": 32,
+          "y1": 64,
+          "z0": 32,
+          "z1": 64
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z001-Y001-X001"
+      }
+    ],
+    "shape_zyx": [
+      64,
+      64,
+      64
+    ],
+    "tile_zyx": [
+      32,
+      32,
+      32
+    ],
+    "validated": 0.0
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:15:23Z",
+  "tool": "gaphound"
+}

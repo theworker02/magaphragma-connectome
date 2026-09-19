@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_BEFORE_FIRST_OPTIMIZER_STEP",
+  "classification": "EXECUTION_ENVIRONMENT_PATH_ADAPTER_REQUIRED",
+  "attempted_run_id": "MV-TRAIN-SEGNEURON-DVID-G1-001",
+  "model_or_scientific_failure": false,
+  "optimizer_steps_completed": 0,
+  "cause": "Immutable reviewed receipts retain Windows absolute provenance paths while the ROCm runner executes under WSL.",
+  "remediation": "A read-only Windows-to-WSL path adapter was added to the G1 runner; the original empty run directory is preserved."
+}

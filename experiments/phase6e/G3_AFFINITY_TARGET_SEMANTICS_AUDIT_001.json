@@ -1,0 +1,96 @@
+{
+  "id": "MV-G3-AFFINITY-TARGET-SEMANTICS-AUDIT-001",
+  "schema_version": 1,
+  "status": "READ_ONLY_FORENSIC_AUDIT_COMPLETE",
+  "trigger": "G3_008_COMPLETE_12_OF_12_ORIENTATION_COLLINEAR",
+  "CURRENT_AFFINITY_TARGET_STATUS": "CURRENT_AFFINITY_TARGET_INVALID",
+  "intended_target": "affinity(axis, voxel) = whether the two neighboring voxels belong to the same biological process/object across that face",
+  "intended_constraint": "On isotropic 8x8x8 nm FIB-SEM, this relation must not become trivially determined by global X/Y/Z orientation",
+  "experiment_result": {
+    "artifact": "experiments/phase6e/G3_008_COMPLETE_REVIEW_FREEZE_001.json",
+    "completion_audit": "experiments/phase6e/G3_AXNEU4_008_COMPLETION_AUDIT.json",
+    "n_triplets": 12,
+    "n_orientation_collinear_Zdiff_YXsame": 12,
+    "holds_across_Q1_Q2_Q3_Q4": true,
+    "holds_across_12_distinct_fresh_crops": true,
+    "paired_location_question_answer": "YES — historical orientation pattern persists at matched physical centers"
+  },
+  "branch": "SEMANTIC_TARGET_STOP",
+  "do_not_train": true,
+  "presentation_path_inspection": {
+    "reviewer": "tools/review_external_boundary_package.py",
+    "event_writer": "src/mvconnectome/external_boundary_review.py:append_external_boundary_event",
+    "raw_load": "numpy.load(workspace.raw.path, mmap_mode='r'); array order ZYX; no transpose/flip/rotate",
+    "pair_contract": "pair_right = pair_left with +1 on channel_zyx (0=Z,1=Y,2=X); writer recomputes right from left+channel",
+    "queue_binding": "frozen interface queue binds workspace_id + raw_sha256; spinner/channel controls disabled under --interface-queue",
+    "question_order": "always Z then Y then X (interface_member 1/2/3)",
+    "displayed_planes": {
+      "XY": "raw[a_z]; row=y, col=x; marks only points with z==fixed",
+      "XZ": "raw[:, a_y, :]; row=z, col=x; marks only points with y==fixed",
+      "YZ": "raw[:, :, a_x]; row=z, col=y; marks only points with x==fixed"
+    },
+    "napari_camera_focus": "viewer.dims.set_point((0,1,2), a) — volume cursor always on pair_left (A), never midpoint",
+    "point_placement": "A=red, B=green; 5x5 marker patch; colors fixed across axes",
+    "intensity_normalization": "per-plane min/max stretch inside _plane(); not global volume normalization; can change apparent contrast across the three docked planes",
+    "overlays_labels_text": "axis/channel announced in status text; SAME/DIFFERENT/UNCERTAIN/BAD buttons identical for all axes; no model segmentation loaded",
+    "context_member_construction": "G3-008 uses single central +1 edge per axis (no historical 3-member replicate spread in the queue)",
+    "channel_order": "CZYX affinity convention elsewhere; reviewer channel_zyx is scalar 0/1/2 matching Z/Y/X"
+  },
+  "axis_dependent_ui_asymmetries_found": [
+    {
+      "id": "COVISIBILITY_ON_PRIMARY_PLANE",
+      "detail": "For a Z-pair, A and B never co-appear on the docked XY plane (different z). For Y-pairs they co-appear on XY; for X-pairs they co-appear on XY. Each axis has exactly one docked plane where B is absent, but the commonly attended XY plane systematically hides B only for Z."
+    },
+    {
+      "id": "NAPARI_FOCUS_ON_A_ONLY",
+      "detail": "Main volume slice is parked on A. Y/X neighbors share A's Z slice; Z neighbor requires changing the Z slider to see B in the main view."
+    },
+    {
+      "id": "FIXED_QUESTION_ORDER_Z_THEN_Y_THEN_X",
+      "detail": "Presentation order is constant. Alone this cannot explain Z-specific DIFFERENT unless combined with an axis-specific visual/semantic cue; recorded here as a residual bias channel."
+    },
+    {
+      "id": "PER_PLANE_INTENSITY_STRETCH",
+      "detail": "_plane() normalizes each 2-D view independently; orthogonal planes can look differently contrasted for the same volume."
+    }
+  ],
+  "hypothesis_verdicts_after_008": {
+    "1_coordinate_pair_bug": {
+      "verdict": "REJECTED",
+      "basis": "Prior geometry tests 4/4 for central +1 neighbor; -008 queues and events match canonical +1 Z/Y/X pairs; writer recomputes right from left+channel; no array transpose in reviewer path"
+    },
+    "2_presentation_ui_semantic_artifact": {
+      "verdict": "NOT_EXCLUDED_PRIMARY_SUSPECT",
+      "basis": "Documented XY co-visibility asymmetry and A-only napari focus specifically disadvantage Z-pair joint inspection relative to Y/X, while every completed triplet is Z=DIFFERENT / Y,X=SAME"
+    },
+    "3_annotation_target_definition_problem": {
+      "verdict": "NOT_EXCLUDED",
+      "basis": "Local SAME/DIFFERENT neuronal-process judgment on a single face may not be axis-comparable even if UI were equalized; the intended affinity relation may be ill-posed as elicited"
+    },
+    "4_raw_image_membrane_phenomenon": {
+      "verdict": "NOT_EXCLUDED",
+      "basis": "FIB-SEM milling/section direction can imprint membrane appearance along Z without being a voxel-size anisotropy; could produce a real image-domain axis effect distinct from process topology"
+    },
+    "5_genuine_biological_orientation_effect": {
+      "verdict": "NOT_ASSUMED",
+      "basis": "Cannot be claimed while presentation asymmetries and target-definition concerns remain open; isotropic 8 nm spacing rules out trivial physical step-size anisotropy only"
+    },
+    "historical_H3_argmax_gradient_selection": {
+      "verdict": "RULED_OUT_BY_008_DESIGN",
+      "basis": "All three axes reviewed at the same physical center under axis-neutral paired-location protocol-004; pattern still 12/12"
+    }
+  },
+  "why_target_marked_invalid": "As operationalized and collected under the current reviewer path, labels are a deterministic function of global axis identity (12/12). That violates the intended constraint for an isotropic-volume biological affinity target usable for axis-agnostic membrane learning. Validity as a scientific description of biology is not claimed; validity as a training target is denied.",
+  "root_cause_among_2_3_4_5": "UNRESOLVED — STOP before training; do not silently redefine the target; do not collect more labels only to force identifiability",
+  "prior_related_audits": [
+    "experiments/phase6e/G3_AXIS_SEMANTICS_AUDIT_FINDINGS.json",
+    "experiments/phase6e/MV-G3-AXIS-SEMANTICS-GEOMETRY-AUDIT-001.json"
+  ],
+  "did_not": [
+    "train_model",
+    "modify_reviewer_ui",
+    "alter_event_logs",
+    "fabricate_affinities_or_segmentation",
+    "redefine_target_in_code"
+  ]
+}

@@ -1,0 +1,1069 @@
+{
+  "axis_text_absent_from_panel_names": true,
+  "decision": "SYNTHETIC_GATE_PASSED_HUMAN_SMOKE_MAY_PROCEED",
+  "failures": [],
+  "fixtures": {
+    "edge_near_membrane": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+        "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+        "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+        "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 0,
+      "pair_left_zyx": [
+        12,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "LONGITUDINAL_2": "e2eb4206169e43bd57546244b46918cde6f56d2d4a7ea015b58fb3bd269f828b",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "a0545c60fa230836baff6f414a1bce7bccf7ede0219cfb467b8df04b0ffecd07"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "oblique_boundary": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+        "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+        "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+        "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 0,
+      "pair_left_zyx": [
+        11,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "dea41dbd74cad45ed4e53d9b88b2a0693fac10ecd2c2e9067de53cadc79f2c9d",
+            "LONGITUDINAL_2": "6302e7e229c7bd2cb4981e64689196fb83b84caa1f681ed921c129dcb5a3a4d1",
+            "SIDE_A": "00b02d22a5b2d7df6769232f7d2653de4b2b7a0a9ac67853873baae69b589ed2",
+            "SIDE_B": "9420c2cc9fe2b9fd09de6db6adbad0d74149a540e69a92f5f71d99dbd2093b02"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "planar_membrane_Y_same": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+        "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+        "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+        "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 1,
+      "pair_left_zyx": [
+        10,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "bc976b62e2309d0dc67b3457a2b34749b90b446524176e53061a913c0188c29d",
+            "SIDE_A": "fdec858d270426511b33934afcb5d7fe1d794c3031a215e6ee0b144a9d866a6c",
+            "SIDE_B": "59e1c247771e62bdece28508ff199ae76c7c9246bd57fd209a016a0f26d774fb"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "planar_membrane_Z": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+        "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+        "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+        "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 0,
+      "pair_left_zyx": [
+        12,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "LONGITUDINAL_2": "4c1b680028e3c469c715c231ff2e8c2a39595f1357e8dc334f94d552a25365eb",
+            "SIDE_A": "e7cff60bb819bbc2547ba08204ed6f32a9f4605431bd40fd3837b6b5b4904c27",
+            "SIDE_B": "e1265caaf3b596fda969339fa1c16b1f16bf7b5928211c5633d6e69a893d80c7"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "symmetric_cross": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+        "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+        "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+        "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 1,
+      "pair_left_zyx": [
+        12,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "c2e3ddac3198944d1b8beb89ebc177c642b4ee58791d2966bc19c298310412fc",
+            "SIDE_A": "e951e78d4916c0452a4dc7e474a866ca8086941ef50e27a3ac2119addeb1247f",
+            "SIDE_B": "d4bdba67d4707d5a075556e6988a04f32ee4ca1831da6edc5d83430bb47bb111"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "thin_process_X": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+        "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+        "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+        "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 2,
+      "pair_left_zyx": [
+        12,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "LONGITUDINAL_2": "8a75b7c6909f97dc8f97449880cfa12a8fc9773cb0334bbe1db97c767d3e9c91",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "tubular_process": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+        "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+        "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+        "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 0,
+      "pair_left_zyx": [
+        12,
+        17,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "584ec375729a0cde3850adc80d918c937216ffc54a3aeb551e6f81d96f2f8acd",
+            "LONGITUDINAL_2": "a2962c44a6cc60ed1644a7a1bd5fb9c0ab02ab9b712eede14e80884cac141334",
+            "SIDE_A": "a57b6f24b498930fca989248df32ae17f0a41839260e5eb299717e931e4a1148",
+            "SIDE_B": "c956e0335307df6921161091528bb8c00e707c75c91cc4a2cf882d5c485cb77c"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    "uniform_same": {
+      "base_fingerprint": {
+        "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+        "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+        "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+        "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+      },
+      "base_visibility": {
+        "LONGITUDINAL_1": {
+          "A": true,
+          "B": true
+        },
+        "LONGITUDINAL_2": {
+          "A": true,
+          "B": true
+        },
+        "SIDE_A": {
+          "A": true,
+          "B": false
+        },
+        "SIDE_B": {
+          "A": false,
+          "B": true
+        }
+      },
+      "channel_zyx": 0,
+      "pair_left_zyx": [
+        12,
+        12,
+        12
+      ],
+      "pass": true,
+      "permutation_results": [
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 0,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "channel_zyx": 1,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "channel_zyx": 2,
+          "errors": [],
+          "fingerprint": {
+            "LONGITUDINAL_1": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "LONGITUDINAL_2": "7776d699c78556e3d49b8dc8f30935e044503d97d4cc1208bb79577e74c9c024",
+            "SIDE_A": "f6737414095580265aac81a7ad0d4556e223d1ec8fc5d82ef39e54506b4e1e18",
+            "SIDE_B": "770eaf462a20022ff41db8547790d1f6ea784c2d40fb74a47eb36c21592f3fba"
+          },
+          "pass": true,
+          "perm": [
+            2,
+            1,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "fixtures_sha256": "cdfbf5771c67b61dec1df1abdb50eb297ba2ce407a51eab2d1dd699961eb613d",
+  "id": "MV-G3-PRESENTATION-EQUIVARIANCE-REPAIR-001",
+  "overall_pass": true,
+  "panel_contract": [
+    "SIDE_A",
+    "SIDE_B",
+    "LONGITUDINAL_1",
+    "LONGITUDINAL_2"
+  ],
+  "radius_voxels": 8,
+  "schema_version": 1,
+  "status": "PASS_EQUIVARIANT",
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "voxel_nm": 8.0
+}

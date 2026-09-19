@@ -1,0 +1,356 @@
+{
+  "all_12_match_Z_DIFF_Y_X_SAME": true,
+  "complete_36_of_36": true,
+  "completed_valid_decisions": 36,
+  "final_status": "COMPLETE_AND_PATTERN_CONFIRMED",
+  "hypothesized_pattern": {
+    "X": "SAME_PROCESS",
+    "Y": "SAME_PROCESS",
+    "Z": "DIFFERENT_PROCESS"
+  },
+  "id": "MV-G3-AXNEU4-008-COMPLETION-AUDIT",
+  "integrity_failures": [],
+  "intended_centers": 12,
+  "intended_edges": 36,
+  "n_locations": 12,
+  "per_location": [
+    {
+      "center_zyx": [
+        6,
+        123,
+        57
+      ],
+      "crop": "MV-G3-AXNEU4-01",
+      "events": 3,
+      "log_sha256": "fa337f6964592340463037256a28525384a86059916edaf094a69d219bfbb340",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        23,
+        3,
+        111
+      ],
+      "crop": "MV-G3-AXNEU4-02",
+      "events": 3,
+      "log_sha256": "865baf9bd0cb8dcd0819a67936dd03eaf8aa996e311b79d906f3f8bc6f6a53d1",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        55,
+        17,
+        10
+      ],
+      "crop": "MV-G3-AXNEU4-03",
+      "events": 3,
+      "log_sha256": "92d50166cd75b9edd917c47994af38abc8a48cd59d5833c61307efc4d939a0bd",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        39,
+        119,
+        3
+      ],
+      "crop": "MV-G3-AXNEU4-04",
+      "events": 3,
+      "log_sha256": "bede5e528b63b25708e4b3b2ea348d86648dcfb8b3f8619f676e0cbbbc0ab829",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        13,
+        115,
+        117
+      ],
+      "crop": "MV-G3-AXNEU4-05",
+      "events": 3,
+      "log_sha256": "72ab1924ea3ffa4fe2ed350e05416fb41b9bc4928e750c72dbc31248a936bddb",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        33,
+        39,
+        38
+      ],
+      "crop": "MV-G3-AXNEU4-06",
+      "events": 3,
+      "log_sha256": "937eecf91060d33aa86cdd81a95b2b0e467d232f4afcb49a042d9fdf99d84d89",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        23,
+        58,
+        68
+      ],
+      "crop": "MV-G3-AXNEU4-07",
+      "events": 3,
+      "log_sha256": "1f7f246aaed7017b4c1e1d9e881217c4c1d9686eba8634030ab4bc1329e60560",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        23,
+        68,
+        111
+      ],
+      "crop": "MV-G3-AXNEU4-08",
+      "events": 3,
+      "log_sha256": "eb6008c4a193283a30faa5af704387ee61644a1369e25d6e95bd3500cdbb81cb",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        24,
+        92,
+        123
+      ],
+      "crop": "MV-G3-AXNEU4-09",
+      "events": 3,
+      "log_sha256": "2755ad6bf5de01c33300952555d1d89eb5624a2c0b5c9863ba6a59b3e9c123e5",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        52,
+        77,
+        76
+      ],
+      "crop": "MV-G3-AXNEU4-10",
+      "events": 3,
+      "log_sha256": "62ed4c4dfc59efa245a123935c52d1671837910257eb8d2b9191b08e2ef9214a",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        3,
+        113,
+        39
+      ],
+      "crop": "MV-G3-AXNEU4-11",
+      "events": 3,
+      "log_sha256": "c540342c732df74127d725279c4cd7c932857a56feab63de64dbc62906c1f03b",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    {
+      "center_zyx": [
+        13,
+        83,
+        62
+      ],
+      "crop": "MV-G3-AXNEU4-12",
+      "events": 3,
+      "log_sha256": "66a1d05e76b2cc0aa9efbd8ec4c4ce508139878facf227a4039b8fc02b7947a1",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    }
+  ],
+  "triplets": {
+    "MV-G3-AXNEU4-01": {
+      "center_zyx": [
+        6,
+        123,
+        57
+      ],
+      "stratum": "Q1",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-02": {
+      "center_zyx": [
+        23,
+        3,
+        111
+      ],
+      "stratum": "Q2",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-03": {
+      "center_zyx": [
+        55,
+        17,
+        10
+      ],
+      "stratum": "Q3",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-04": {
+      "center_zyx": [
+        39,
+        119,
+        3
+      ],
+      "stratum": "Q4",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-05": {
+      "center_zyx": [
+        13,
+        115,
+        117
+      ],
+      "stratum": "Q1",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-06": {
+      "center_zyx": [
+        33,
+        39,
+        38
+      ],
+      "stratum": "Q2",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-07": {
+      "center_zyx": [
+        23,
+        58,
+        68
+      ],
+      "stratum": "Q3",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-08": {
+      "center_zyx": [
+        23,
+        68,
+        111
+      ],
+      "stratum": "Q4",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-09": {
+      "center_zyx": [
+        24,
+        92,
+        123
+      ],
+      "stratum": "Q1",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-10": {
+      "center_zyx": [
+        52,
+        77,
+        76
+      ],
+      "stratum": "Q2",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-11": {
+      "center_zyx": [
+        3,
+        113,
+        39
+      ],
+      "stratum": "Q3",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    },
+    "MV-G3-AXNEU4-12": {
+      "center_zyx": [
+        13,
+        83,
+        62
+      ],
+      "stratum": "Q4",
+      "triplet": {
+        "X": "SAME_PROCESS",
+        "Y": "SAME_PROCESS",
+        "Z": "DIFFERENT_PROCESS"
+      }
+    }
+  }
+}

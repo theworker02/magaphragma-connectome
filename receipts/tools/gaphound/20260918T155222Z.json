@@ -1,0 +1,56 @@
+{
+  "tool": "gaphound",
+  "ts": "20260918T155222Z",
+  "repair_plan": {
+    "n_work_items": 3,
+    "vs_full_volume_tiles": 7,
+    "worklist": [
+      {
+        "tile_key": "T-Z000-Y001-X000",
+        "box": {
+          "z0": 0,
+          "y0": 64,
+          "x0": 0,
+          "z1": 32,
+          "y1": 100,
+          "x1": 64
+        },
+        "action": "recompute",
+        "reason": "inference artifact absent",
+        "priority": 0.95,
+        "kind": "missing"
+      },
+      {
+        "tile_key": "T-Z000-Y001-X001",
+        "box": {
+          "z0": 0,
+          "y0": 64,
+          "x0": 64,
+          "z1": 32,
+          "y1": 100,
+          "x1": 100
+        },
+        "action": "recompute",
+        "reason": "inference artifact absent",
+        "priority": 0.95,
+        "kind": "missing"
+      },
+      {
+        "tile_key": "T-Z000-Y000-X000",
+        "box": {
+          "z0": 0,
+          "y0": 0,
+          "x0": 0,
+          "z1": 32,
+          "y1": 64,
+          "x1": 64
+        },
+        "action": "recover_then_recompute",
+        "reason": "NaN in output",
+        "priority": 0.9,
+        "kind": "failed"
+      }
+    ],
+    "note": "Minimum AxonForge worklist to close holes \u2014 does not rerun full volume."
+  }
+}

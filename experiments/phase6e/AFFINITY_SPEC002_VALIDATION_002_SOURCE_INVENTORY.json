@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-09-18T02:06:39.400569Z",
+  "discovery_prior": "experiments/phase6e/DIFFERENT_CLASS_DISCOVERY_001.json",
+  "do_not_train": true,
+  "enrichment": "max single-face |\u0394I| >= 12.0",
+  "id": "AFFINITY_SPEC002_VALIDATION_002_SOURCE_INVENTORY",
+  "n": 12,
+  "not_g3_009": true,
+  "selected_sources": [
+    "MV-DVID-RAW-SURVEY-049",
+    "MV-DVID-RAW-SURVEY-050",
+    "MV-DVID-RAW-SURVEY-051",
+    "MV-DVID-RAW-SURVEY-052",
+    "MV-DVID-RAW-SURVEY-057",
+    "MV-DVID-RAW-SURVEY-058",
+    "MV-DVID-RAW-SURVEY-059",
+    "MV-DVID-RAW-SURVEY-061",
+    "MV-DVID-RAW-SURVEY-064",
+    "MV-DVID-RAW-SURVEY-066",
+    "MV-DVID-RAW-SURVEY-067",
+    "MV-DVID-RAW-SURVEY-068"
+  ],
+  "vs_as2_001": "AS2-001 used relative Q1\u2013Q4 on mean3 face-step (~0.3\u20133 abs) and got NEGATIVE_CLASS_NOT_DEMONSTRATED. AS2-002 uses C/E-neighborhood fresh crops and abs-max-face enrichment after DIFFERENT_CLASS_DISCOVERY_001 demonstrated DIFFERENT on abs\u226512 edges under equivariant UI."
+}

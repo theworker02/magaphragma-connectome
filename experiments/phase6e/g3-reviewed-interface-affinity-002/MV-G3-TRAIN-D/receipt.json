@@ -1,0 +1,650 @@
+{
+  "counts": {
+    "eligible_interfaces": {
+      "DIFFERENT_PROCESS": 3,
+      "SAME_PROCESS": 5
+    },
+    "eligible_pairs": {
+      "DIFFERENT_PROCESS": 9,
+      "SAME_PROCESS": 15
+    },
+    "ignored_pairs": 3145704
+  },
+  "created_at": "2026-09-17T12:19:32.441133Z",
+  "crop_id": "MV-G3-TRAIN-D",
+  "eligible_pairs": [
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-001",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        10,
+        21,
+        99
+      ],
+      "pair_right_zyx": [
+        11,
+        21,
+        99
+      ],
+      "question_reference": "MV-G3-IF-001-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-001",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        10,
+        20,
+        99
+      ],
+      "pair_right_zyx": [
+        11,
+        20,
+        99
+      ],
+      "question_reference": "MV-G3-IF-001-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-001",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        10,
+        22,
+        99
+      ],
+      "pair_right_zyx": [
+        11,
+        22,
+        99
+      ],
+      "question_reference": "MV-G3-IF-001-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-002",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        56,
+        97,
+        66
+      ],
+      "pair_right_zyx": [
+        56,
+        98,
+        66
+      ],
+      "question_reference": "MV-G3-IF-002-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-002",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        55,
+        97,
+        66
+      ],
+      "pair_right_zyx": [
+        55,
+        98,
+        66
+      ],
+      "question_reference": "MV-G3-IF-002-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-002",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        57,
+        97,
+        66
+      ],
+      "pair_right_zyx": [
+        57,
+        98,
+        66
+      ],
+      "question_reference": "MV-G3-IF-002-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-003",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        11,
+        4,
+        120
+      ],
+      "pair_right_zyx": [
+        12,
+        4,
+        120
+      ],
+      "question_reference": "MV-G3-IF-003-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-003",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        11,
+        3,
+        120
+      ],
+      "pair_right_zyx": [
+        12,
+        3,
+        120
+      ],
+      "question_reference": "MV-G3-IF-003-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-003",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        11,
+        5,
+        120
+      ],
+      "pair_right_zyx": [
+        12,
+        5,
+        120
+      ],
+      "question_reference": "MV-G3-IF-003-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-004",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        43,
+        117,
+        20
+      ],
+      "pair_right_zyx": [
+        43,
+        118,
+        20
+      ],
+      "question_reference": "MV-G3-IF-004-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-004",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        42,
+        117,
+        20
+      ],
+      "pair_right_zyx": [
+        42,
+        118,
+        20
+      ],
+      "question_reference": "MV-G3-IF-004-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-004",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        44,
+        117,
+        20
+      ],
+      "pair_right_zyx": [
+        44,
+        118,
+        20
+      ],
+      "question_reference": "MV-G3-IF-004-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-005",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        38,
+        74,
+        119
+      ],
+      "pair_right_zyx": [
+        38,
+        74,
+        120
+      ],
+      "question_reference": "MV-G3-IF-005-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-005",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        37,
+        74,
+        119
+      ],
+      "pair_right_zyx": [
+        37,
+        74,
+        120
+      ],
+      "question_reference": "MV-G3-IF-005-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-005",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        39,
+        74,
+        119
+      ],
+      "pair_right_zyx": [
+        39,
+        74,
+        120
+      ],
+      "question_reference": "MV-G3-IF-005-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-006",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        16,
+        25,
+        11
+      ],
+      "pair_right_zyx": [
+        16,
+        26,
+        11
+      ],
+      "question_reference": "MV-G3-IF-006-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-006",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        15,
+        25,
+        11
+      ],
+      "pair_right_zyx": [
+        15,
+        26,
+        11
+      ],
+      "question_reference": "MV-G3-IF-006-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 1,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-006",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        17,
+        25,
+        11
+      ],
+      "pair_right_zyx": [
+        17,
+        26,
+        11
+      ],
+      "question_reference": "MV-G3-IF-006-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-007",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        33,
+        23,
+        14
+      ],
+      "pair_right_zyx": [
+        33,
+        23,
+        15
+      ],
+      "question_reference": "MV-G3-IF-007-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-007",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        32,
+        23,
+        14
+      ],
+      "pair_right_zyx": [
+        32,
+        23,
+        15
+      ],
+      "question_reference": "MV-G3-IF-007-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 2,
+      "decision": "SAME_PROCESS",
+      "interface_id": "MV-G3-IF-007",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        34,
+        23,
+        14
+      ],
+      "pair_right_zyx": [
+        34,
+        23,
+        15
+      ],
+      "question_reference": "MV-G3-IF-007-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-008",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        21,
+        123,
+        52
+      ],
+      "pair_right_zyx": [
+        22,
+        123,
+        52
+      ],
+      "question_reference": "MV-G3-IF-008-01",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-008",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        21,
+        122,
+        52
+      ],
+      "pair_right_zyx": [
+        22,
+        122,
+        52
+      ],
+      "question_reference": "MV-G3-IF-008-02",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    },
+    {
+      "channel_zyx": 0,
+      "decision": "DIFFERENT_PROCESS",
+      "interface_id": "MV-G3-IF-008",
+      "loss_weight": 0.3333333333333333,
+      "pair_left_zyx": [
+        21,
+        124,
+        52
+      ],
+      "pair_right_zyx": [
+        22,
+        124,
+        52
+      ],
+      "question_reference": "MV-G3-IF-008-03",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "reviewer": "matth"
+    }
+  ],
+  "id": "MV-G3-REVIEWED-INTERFACE-AFFINITY-RAIN-D",
+  "interfaces": [
+    {
+      "decision": "DIFFERENT_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-001",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-001-01",
+        "MV-G3-IF-001-02",
+        "MV-G3-IF-001-03"
+      ]
+    },
+    {
+      "decision": "SAME_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-002",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-002-01",
+        "MV-G3-IF-002-02",
+        "MV-G3-IF-002-03"
+      ]
+    },
+    {
+      "decision": "DIFFERENT_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-003",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-003-01",
+        "MV-G3-IF-003-02",
+        "MV-G3-IF-003-03"
+      ]
+    },
+    {
+      "decision": "SAME_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-004",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-004-01",
+        "MV-G3-IF-004-02",
+        "MV-G3-IF-004-03"
+      ]
+    },
+    {
+      "decision": "SAME_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-005",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-005-01",
+        "MV-G3-IF-005-02",
+        "MV-G3-IF-005-03"
+      ]
+    },
+    {
+      "decision": "SAME_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-006",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-006-01",
+        "MV-G3-IF-006-02",
+        "MV-G3-IF-006-03"
+      ]
+    },
+    {
+      "decision": "SAME_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-007",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-007-01",
+        "MV-G3-IF-007-02",
+        "MV-G3-IF-007-03"
+      ]
+    },
+    {
+      "decision": "DIFFERENT_PROCESS",
+      "eligible": true,
+      "eligible_pair_count": 3,
+      "exclusion_reason": null,
+      "interface_id": "MV-G3-IF-008",
+      "interior_pair_count": 3,
+      "member_pair_count": 3,
+      "member_questions": [
+        "MV-G3-IF-008-01",
+        "MV-G3-IF-008-02",
+        "MV-G3-IF-008-03"
+      ]
+    }
+  ],
+  "mask": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\supervision_mask_czyx.npy",
+    "sha256": "e929d51441461f14d566eb3bef4e1b21e4c16c775fc1463dfb49b4316ceb1414",
+    "shape_czyx": [
+      3,
+      64,
+      128,
+      128
+    ]
+  },
+  "materializer": {
+    "contract": "INTERFACE_LEVEL_FAIL_CLOSED_V1",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\src\\mvconnectome\\g3_supervision.py",
+    "sha256": "641fb701f430c526a0ab52b6b68ab66852aa7e001943c7721bf0b058cdeda6e6"
+  },
+  "prohibited_promotions": [
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "queue": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-interface-queues-001\\MV-G3-TRAIN-D.json",
+    "sha256": "d2b6ee7e27a0f7af560507fe43279ad4043c52d779df854dfade26f91ec427a3"
+  },
+  "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+  "review_log": {
+    "events": 24,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-external-review-packages-001\\MV-G3-TRAIN-D\\workspace.events.jsonl",
+    "sha256": "c7fecf94083441588c679c46e878e60de749742c0e650913e9d911c0d6fe6d1d"
+  },
+  "schema_version": 1,
+  "split": "G3_TARGET_TRAIN",
+  "status": "REVIEWED_DVID_INTERFACE_AFFINITY_SUPERVISION",
+  "targets": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\affinity_targets_czyx.npy",
+    "sha256": "8f9f8a1b98597dbf9de9e85fae593adf89ced86f0d4bd970dbc5abcc409d97b4",
+    "shape_czyx": [
+      3,
+      64,
+      128,
+      128
+    ]
+  },
+  "weights": {
+    "dtype": "float32",
+    "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\interface_weights_czyx.npy",
+    "sha256": "886917f81788bf82ea98eec547f79e163288b9b12d878a3efc2b0025bf49aa49",
+    "shape_czyx": [
+      3,
+      64,
+      128,
+      128
+    ]
+  },
+  "workspace": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-external-review-packages-001\\MV-G3-TRAIN-D\\workspace.json",
+    "sha256": "a72da90f4281400f94d46032ff5f2f7c5102d11844c9b7e4c94fd85dfa74ee27"
+  }
+}

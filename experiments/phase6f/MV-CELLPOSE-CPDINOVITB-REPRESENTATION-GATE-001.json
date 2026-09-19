@@ -1,0 +1,41 @@
+{
+  "id": "MV-CELLPOSE-CPDINOVITB-REPRESENTATION-GATE-001",
+  "status": "BLOCKED_BY_FROZEN_G3_AXIS_CLASS_CONFOUNDING",
+  "scope": "CellposeDINO ViT-B representation audit only. No Cellpose mask dynamics, affinity head, target adaptation, protected-regression access, or biological promotion occurred.",
+  "direct_output_result": {
+    "decision": "INSUFFICIENT_FOR_AFFINITY_HEAD_TRAINING",
+    "evidence": "No Train-A-declared Cellpose flow/cell-probability descriptor was consistently discriminative across V1, V2, and V3.",
+    "receipt": "experiments/phase6f/MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001-AMENDMENT-002.json"
+  },
+  "internal_feature_result": {
+    "model": "cpdino-vitb",
+    "checkpoint_sha256": "3ed4c06a3963ab13ff377d4e2957174aaaf637434eb031ae9931fcbfaf9a217f",
+    "feature_contract": "Final CPDINO encoder.norm token after CLS/storage-token removal, bilinearly sampled at reviewed raw coordinates. XY 2-D encoder only.",
+    "axis_balanced_region": "MV-G3-VALIDATION-V3",
+    "V3_same_vs_different_on_channel_1": {
+      "encoder_l2_delta_different_low_auc": 0.8425925925925926,
+      "encoder_cosine_similarity_different_high_auc": 0.8333333333333334
+    },
+    "interpretation": "A single axis-balanced region contains an exploratory feature contrast. It does not demonstrate spatial generalization."
+  },
+  "confounding_audit": {
+    "MV-G3-TRAIN-A": {"different_channels": [0], "same_channels": [1, 2]},
+    "MV-G3-VALIDATION-V1": {"different_channels": [0], "same_channels": [1, 2]},
+    "MV-G3-VALIDATION-V2": {"different_channels": [0], "same_channels": [2]},
+    "MV-G3-VALIDATION-V3": {"different_channels": [1], "same_channels": [1, 2]},
+    "conclusion": "The frozen cohort cannot supply a Train-A-selected, cross-region, axis-controlled encoder separability test. Physical affinity axis can otherwise explain the observed class difference."
+  },
+  "prohibited_actions": [
+    "Cellpose affinity-head training",
+    "Cellpose-derived pseudolabel creation",
+    "G4 training",
+    "MV-GTVOL-000004 access",
+    "MV-FRAG promotion",
+    "MV-N promotion",
+    "MV-SYN promotion",
+    "MV-CONN promotion"
+  ],
+  "next_required_evidence": "A separately versioned, spatially independent expert-review cohort containing both SAME_PROCESS and DIFFERENT_PROCESS examples for each evaluated Z/Y/X axis in TRAIN and VALIDATION. It must be collected before a representation-selection or affinity-head experiment.",
+  "integrity": {"pytest": "51 passed", "vigilia_verify": "PASS"},
+  "scientific_state": {"MV-GTVOL-000004_used": false, "MV-FRAG": 0, "MV-N": 0, "MV-CONN": 0}
+}

@@ -1,0 +1,29 @@
+{
+  "id": "SEG_ROI_QC_CONTRACT_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T04:05:00Z",
+  "status": "FROZEN_BEFORE_FIRST_ROI_SEGMENTATION",
+  "frozen_before_seeing_roi_seg_results": true,
+  "parent_roi_gate": "AFFINITY_ROI_RECONSTRUCTION_GATE_001",
+  "parent_s4": "AFFINITY_S4_ROI_AUTHORIZATION_001",
+  "purpose": "Predeclared machine QC for the first ROI mini-connectome segmentation. Human S6 remains required; this contract only archives automatic FAIL/PASS signals.",
+  "segmentation_stack_frozen": {
+    "affinity_inference": "Sliding-window MNet with candidate C patch (20,64,64), stride (10,32,32), Gaussian blend",
+    "watershed": "ELF distance_transform_watershed true-3D (tools/elf_true3d_stage.py settings)",
+    "agglomeration": "ELF RAG affinity features + multicut_kernighan_lin beta=0.1",
+    "fusion": "fused=min(affinities, boundaries); split=1-fused; watershed_input=max(split[1], split[2])"
+  },
+  "machine_qc_gates": {
+    "QC_A_affinity_completeness": "affinities.npy shape (3,Z,Y,X) matches ROI shape_zyx; finite probs in [0,1]",
+    "QC_B_not_single_instance": "unique labels excluding 0 >= 2",
+    "QC_C_not_all_tiny": "fraction of instances with voxel_count < 512 < 0.95",
+    "QC_D_z_extent_nonzero": "median instance z_extent >= 2",
+    "QC_E_fragment_rag_nonempty": "rag edges >= 1 OR fragment count >= 2"
+  },
+  "pass_rule": "All QC_A–E true → MACHINE_QC_PASS (still requires human S6). Else MACHINE_QC_FAIL → archive; no full-volume.",
+  "prohibited": [
+    "Full-volume on MACHINE_QC_FAIL",
+    "Treating ROI labels as production MV-SEG / biological identity",
+    "Retuning QC thresholds after seeing this ROI's metrics"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "AFFINITY_S7_THROUGHPUT_ENGINEERING_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T05:05:00Z",
+  "status": "PILOT_RUNNING_FAST_CONTRACT_FROZEN",
+  "frozen_before_first_chunk_completion_receipt": true,
+  "purpose": "After MV-CHUNK-10019646 completes, use measured tiles/sec, phase timings, I/O, memory, and artifact sizes to size a high-throughput full-volume affinity pipeline—without lowering biological gates (MV-SEG / synapses / graph remain closed until their contracts).",
+  "parent_contract": "AFFINITY_FULL_VOLUME_S7_CONTRACT_001",
+  "pilot_chunk_id": "MV-CHUNK-10019646",
+  "non_goals": [
+    "Changing GATE_D or affinity qualification thresholds",
+    "Assigning biological identity to chunk labels",
+    "Opening synapse/graph stages",
+    "Optimizing annotation/training further as the primary lever"
+  ],
+  "required_measurements_on_pilot_chunk": {
+    "tiles_total": true,
+    "tiles_per_second": true,
+    "phase_seconds": ["dvid_fetch", "raw_save", "affinity_infer", "core_crop_save", "segmentation", "total_wall"],
+    "gpu_utilization_samples": "rocm-smi or sysfs gpu_busy during infer (best-effort if tooling present)",
+    "vram_peak_bytes": "torch.cuda.max_memory_allocated if available",
+    "host_peak_rss_bytes": "best-effort",
+    "output_bytes": ["raw_read_zyx.npy", "affinities_core_czyx.npy", "boundaries_core.tif", "labels.npy if present"],
+    "io_wait_proxy": "dvid_fetch_seconds vs infer_seconds ratio"
+  },
+  "derived_full_volume_cost_formula": {
+    "serial_gpu_hours": "n_chunks * pilot_infer_seconds / 3600",
+    "n_chunks": 28798,
+    "note": "Naive serial bound; replace with measured pilot_infer_seconds. Adjust for edge chunks with smaller cores."
+  },
+  "candidate_throughput_levers_predeclared": [
+    {
+      "id": "T1_BATCHED_TILE_INFER",
+      "claim": "Stack multiple 20x64x64 tiles per forward to raise GPU occupancy"
+    },
+    {
+      "id": "T2_PIPELINE_FETCH_INFER_SEG",
+      "claim": "Overlap DVID fetch / GPU infer / ELF seg across workers on one machine"
+    },
+    {
+      "id": "T3_MULTI_GPU_OR_MULTI_WORKER",
+      "claim": "Shard chunk queue across GPUs/hosts"
+    },
+    {
+      "id": "T4_SPATIAL_CONSOLIDATION",
+      "claim": "Larger fused inference slabs reduce per-voxel tile overhead vs 28k independent jobs"
+    },
+    {
+      "id": "T5_SKIP_PERSIST_RAW_READ",
+      "claim": "Not writing full read-halo raw to disk cuts I/O (keep core affinities only)"
+    },
+    {
+      "id": "T6_STRIDE_OR_HALO_REVISIT",
+      "claim": "After measuring, revisit stride (10,32,32) and planning halo vs receptive field—new frozen contract required before changing"
+    }
+  ],
+  "decision_rule_after_pilot_receipt": "Write AFFINITY_S7_THROUGHPUT_PILOT_RECEIPT_001 from measured numbers; pick ONE primary lever for the next frozen throughput contract; do not change biological gates.",
+  "gates_unchanged": {
+    "MV_SEG_production": "CLOSED",
+    "synapses": "CLOSED",
+    "connectivity_graph": "CLOSED",
+    "biological_identity": "FORBIDDEN from machine labels"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "evidence": [
+    {
+      "id": "MV-EV-000002",
+      "status": "SOURCE_ANNOTATED",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+      "coordinates_nm_xyz": [34048.0, 50048.0, 48320.0],
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/512_512_64/4000_6000_6000",
+      "publication_doi": null,
+      "method": "Direct public DVID raw-volume retrieval on 2026-09-16; local immutable cache SHA-256 78e786152f9c473eced1d18456da92fd2329044637ebfd545bd1ff3ca099fbcd",
+      "confidence": null,
+      "model_hash": null,
+      "reviewer": null,
+      "notes": "Real EM source evidence. Attribution and release rights are unresolved, so this local-only source cannot enter a scientific release."
+    },
+    {
+      "id": "MV-EV-000001",
+      "status": "LITERATURE_DERIVED",
+      "dataset_id": "MV-SRC-LAMINA-CATMAID",
+      "volume_id": null,
+      "coordinates_nm_xyz": null,
+      "source_url": "https://doi.org/10.1016/j.cub.2023.09.021",
+      "publication_doi": "10.1016/j.cub.2023.09.021",
+      "method": "2026-09-16 source audit using the paper's data-availability statement and a live CATMAID landing endpoint check",
+      "confidence": null,
+      "model_hash": null,
+      "reviewer": null,
+      "notes": "Supports the source registry's reference-access claim only. It does not support any biological reconstruction claim or dataset-export license assertion."
+    }
+  ]
+}

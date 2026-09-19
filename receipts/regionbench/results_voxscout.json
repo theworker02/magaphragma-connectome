@@ -1,0 +1,38 @@
+[
+  {
+    "detail": "",
+    "metrics": {
+      "n_tiles": 8
+    },
+    "ok": true,
+    "region_id": "rb-empty-032",
+    "tool": "voxscout"
+  },
+  {
+    "detail": "",
+    "metrics": {
+      "n_tiles": 27
+    },
+    "ok": true,
+    "region_id": "rb-texture-048",
+    "tool": "voxscout"
+  },
+  {
+    "detail": "",
+    "metrics": {
+      "n_tiles": 64
+    },
+    "ok": true,
+    "region_id": "rb-blob-064",
+    "tool": "voxscout"
+  },
+  {
+    "detail": "",
+    "metrics": {
+      "n_tiles": 27
+    },
+    "ok": true,
+    "region_id": "rb-seam-040",
+    "tool": "voxscout"
+  }
+]\n

@@ -1,0 +1,110 @@
+{
+  "shape_zyx": [
+    32,
+    32,
+    32
+  ],
+  "tile_zyx": [
+    16,
+    16,
+    16
+  ],
+  "tasks": {
+    "AF-VOLUME-X000-Y000-Z000-L0": {
+      "tile": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.570357,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X001-Y000-Z000-L0": {
+      "tile": {
+        "x": 1,
+        "y": 0,
+        "z": 0,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.622505,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X000-Y001-Z000-L0": {
+      "tile": {
+        "x": 0,
+        "y": 1,
+        "z": 0,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.568938,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X001-Y001-Z000-L0": {
+      "tile": {
+        "x": 1,
+        "y": 1,
+        "z": 0,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.57099,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X000-Y000-Z001-L0": {
+      "tile": {
+        "x": 0,
+        "y": 0,
+        "z": 1,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.646801,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X001-Y000-Z001-L0": {
+      "tile": {
+        "x": 1,
+        "y": 0,
+        "z": 1,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.648453,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X000-Y001-Z001-L0": {
+      "tile": {
+        "x": 0,
+        "y": 1,
+        "z": 1,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.568925,
+      "reason": "",
+      "voxels": 4096
+    },
+    "AF-VOLUME-X001-Y001-Z001-L0": {
+      "tile": {
+        "x": 1,
+        "y": 1,
+        "z": 1,
+        "level": 0
+      },
+      "status": "CACHED",
+      "priority": 0.572569,
+      "reason": "",
+      "voxels": 4096
+    }
+  }
+}

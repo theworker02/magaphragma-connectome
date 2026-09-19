@@ -1,0 +1,8 @@
+# Set blank_issues_enabled to true so people can still open a free-form issue.
+blank_issues_enabled: true
+# To add a "Sponsor / collaborate" link on the new-issue chooser, uncomment
+# and replace <owner>/<repo> with this repository's path once it's on GitHub:
+# contact_links:
+#   - name: Collaboration and support
+#     url: https://github.com/<owner>/<repo>/blob/main/SUPPORT.md
+#     about: Interested in an EM partnership or supporting the project? Start here.

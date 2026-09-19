@@ -1,0 +1,46 @@
+{
+  "id": "MV-G3-TRAIN-C-INTERFACE-ADMISSION-DECISION-001",
+  "created_at": "2026-09-17T11:50:53.1261584Z",
+  "status": "REJECTED_UNBALANCED_INTERFACE_EVIDENCE",
+  "region_id": "MV-G3-TRAIN-C",
+  "split": "G3_TARGET_TRAIN",
+  "reviewer": "matth",
+  "review_log_sha256": "d54b1b747b9418aadfee0983d967c14f2990d7c927e9c96dd02a4d9ddd11be3e",
+  "boundary_queue_sha256": "716adefd5494f907155a8cde63ad9588dccde53653cb15afc203f6f279bdfe8a",
+  "continuity_control_queue_sha256": "2a755314e9246770d8912c4fb1ddcf19ba0b3834c8a8068ebd040a53a4580881",
+  "reviewed_pair_counts": {
+    "DIFFERENT_PROCESS": 31,
+    "SAME_PROCESS": 1,
+    "UNCERTAIN": 0,
+    "BAD_QUESTION": 0
+  },
+  "interface_evidence": {
+    "boundary_interfaces": 8,
+    "unanimous_different_interfaces": 7,
+    "contradictory_interfaces": ["MV-G3-IF-005"],
+    "eligible_same_interfaces": 0,
+    "eligible_different_interfaces": 15
+  },
+  "admission_result": {
+    "same_process_required": true,
+    "different_process_required": true,
+    "same_process_available": false,
+    "different_process_available": true,
+    "eligible_for_g3_supervision": false
+  },
+  "reason": "The raw-EM continuity-control sampler produced eight additional reviewer-confirmed DIFFERENT_PROCESS observations. The only SAME_PROCESS observation belongs to an interface with two DIFFERENT_PROCESS observations and is excluded fail-closed as contradictory. This region therefore has no eligible interface-level SAME_PROCESS supervision.",
+  "preservation": {
+    "review_events_append_only": true,
+    "no_decision_reinterpretation": true,
+    "no_target_tensor_materialized": true,
+    "no_g3_training_started": true,
+    "mv_gtvol_000004_accessed": false
+  },
+  "prohibited_followups": [
+    "relabel_different_as_same",
+    "admit_mixed_interface_as_same",
+    "train_on_train_c_as_currently_reviewed",
+    "retune_the_continuity_sampler_to_manufacture_same_evidence"
+  ],
+  "next_dataset_action": "A future G3 dataset version must either replace TRAIN-C with a newly frozen spatial region that independently admits both classes, or obtain reviewer-directed raw-EM SAME_PROCESS evidence under a separately specified and frozen protocol. The current cohort remains unchanged."
+}

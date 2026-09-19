@@ -1,0 +1,321 @@
+{
+  "created_at": "2026-09-16T15:07:33.906483Z",
+  "id": "MV-DVID-GT-v1-CANDIDATE",
+  "plan_sha256": "1be9b81ed1f9bbe291e1913e1038f856f61a2719826566d8430ae439aa8c94de",
+  "regions": [
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          1024,
+          1216
+        ],
+        "y": [
+          1024,
+          1216
+        ],
+        "z": [
+          1024,
+          1216
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000001",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          8192.0,
+          9728.0
+        ],
+        "y": [
+          8192.0,
+          9728.0
+        ],
+        "z": [
+          8192.0,
+          9728.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000001\\raw_zyx.npy",
+      "raw_sha256": "a8282dc04a789528a7e83a5fba92a057f1ec23a1d71eec6ff9efa1d40eedcd07",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "stratified parent-volume sample; pending visual-QA difficulty assessment",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/1024_1024_1024",
+      "spatial_group": "TRAIN_NORTHWEST",
+      "split": "train",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    },
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          7808,
+          8000
+        ],
+        "y": [
+          3008,
+          3200
+        ],
+        "z": [
+          6784,
+          6976
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000002",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          62464.0,
+          64000.0
+        ],
+        "y": [
+          24064.0,
+          25600.0
+        ],
+        "z": [
+          54272.0,
+          55808.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000002\\raw_zyx.npy",
+      "raw_sha256": "b996b406bb8e48c36cc7257aa8aa46d36768283515d88b7640e4e653ee1f85fb",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "stratified parent-volume sample; pending visual-QA difficulty assessment",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/7808_3008_6784",
+      "spatial_group": "TRAIN_CENTRAL",
+      "split": "train",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    },
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          13632,
+          13824
+        ],
+        "y": [
+          9728,
+          9920
+        ],
+        "z": [
+          12032,
+          12224
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000003",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          109056.0,
+          110592.0
+        ],
+        "y": [
+          77824.0,
+          79360.0
+        ],
+        "z": [
+          96256.0,
+          97792.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000003\\raw_zyx.npy",
+      "raw_sha256": "64608aa85c05c8da24a9634c788531d9e9d55d013bcd8dce704babe7982539e1",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "stratified parent-volume sample; pending visual-QA difficulty assessment",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/13632_9728_12032",
+      "spatial_group": "TRAIN_SOUTHEAST",
+      "split": "train",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    },
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          4096,
+          4288
+        ],
+        "y": [
+          10624,
+          10816
+        ],
+        "z": [
+          3904,
+          4096
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000004",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          32768.0,
+          34304.0
+        ],
+        "y": [
+          84992.0,
+          86528.0
+        ],
+        "z": [
+          31232.0,
+          32768.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000004\\raw_zyx.npy",
+      "raw_sha256": "6ff072f65794e9c1e10f741cb2e37f213b16c8b16947258af622d1ff41fe5943",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "spatially isolated validation sample; pending visual-QA difficulty assessment",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/4096_10624_3904",
+      "spatial_group": "VALIDATION_NORTHEAST",
+      "split": "validation",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    },
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          15040,
+          15232
+        ],
+        "y": [
+          2048,
+          2240
+        ],
+        "z": [
+          13440,
+          13632
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000005",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          120320.0,
+          121856.0
+        ],
+        "y": [
+          16384.0,
+          17920.0
+        ],
+        "z": [
+          107520.0,
+          109056.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000005\\raw_zyx.npy",
+      "raw_sha256": "8cdfba5d18ea3e7fb9e1d74c375dc24dc605c719c58682a595815fb23d857434",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "spatially isolated validation sample; pending visual-QA difficulty assessment",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/15040_2048_13440",
+      "spatial_group": "VALIDATION_SOUTHWEST",
+      "split": "validation",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    },
+    {
+      "ambiguities": 0,
+      "bounds_xyz": {
+        "x": [
+          10880,
+          11072
+        ],
+        "y": [
+          5888,
+          6080
+        ],
+        "z": [
+          8320,
+          8512
+        ]
+      },
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "dimensions_voxels_xyz": [
+        192,
+        192,
+        192
+      ],
+      "id": "MV-GTVOL-000006",
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "labeled_voxels": 0,
+      "physical_bounds_nm_xyz": {
+        "x": [
+          87040.0,
+          88576.0
+        ],
+        "y": [
+          47104.0,
+          48640.0
+        ],
+        "z": [
+          66560.0,
+          68096.0
+        ]
+      },
+      "raw_data_immutable": true,
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\cache\\dvid_native_ground_truth\\MV-GTVOL-000006\\raw_zyx.npy",
+      "raw_sha256": "8abd1afbf6c39253e162c247ef16a2e484cb4505e55e5ad0aab1c278b45acdfc",
+      "review_status": "UNANNOTATED",
+      "selection_reason": "spatially isolated held-out test sample; frozen before model evaluation",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/192_192_192/10880_5888_8320",
+      "spatial_group": "TEST_CENTRAL_EAST",
+      "split": "test",
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "RAW_REGIONS_MATERIALIZED_AWAITING_QUALIFIED_LABELS"
+}

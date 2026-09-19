@@ -1,0 +1,192 @@
+{
+  "batch_002_predeclared": {
+    "center_selection": {
+      "abs_max_face_step_min": 20.0,
+      "emit_all_three_axes": true,
+      "hash_seed": "PRODUCTION_GT_BATCH_002|ABS_FACE_GE_20|EQUIVARIANT_EDGE_FACE_V1",
+      "metric": "max single-face |\u0394I| over the three +1 faces at center",
+      "one_location_per_source": true,
+      "pinned_historical_edge_exclusion": "G3_008_PINNED_EXCLUSION_SNAPSHOT_001",
+      "rule": "Among greedy-separated interior centers with max face |\u0394I|\u226520 and not pinned-excluded, pick hash-min center"
+    },
+    "crop_acquisition": {
+      "crop_screen_raw_only": {
+        "axis_balanced_definition": "\u22658 faces with abs |\u0394I|\u226512 on each of Z, Y, and X within the crop",
+        "rank_by": "maximize min(Z,Y,X) abs\u226512 counts, then intensity std",
+        "require_axis_balanced_ce_scale": true
+      },
+      "method": "Non-overlapping 128\u00d7128\u00d764 blocks near historical C/E anchors (017/027/035 XYZ origins), 64-aligned",
+      "n_fetch_cap": 24
+    },
+    "edges_per_location": 3,
+    "hard_exclusions": [
+      "All sources with nonempty human event logs",
+      "AFFINITY_SPEC002_VALIDATION_002 sources",
+      "PRODUCTION_GT_BATCH_001 sources",
+      "smoke / discovery / AS2-001 sources",
+      "SURVEY-017/027 as sole targets without new independent crops"
+    ],
+    "id": "PRODUCTION_GT_BATCH_002",
+    "materialized_at": "2026-09-18T02:33:08.714581Z",
+    "n_locations": 8,
+    "per_location_max_face_steps_pre_label": [
+      {
+        "center_zyx": [
+          3,
+          69,
+          3
+        ],
+        "face_steps": {
+          "X": 19.0,
+          "Y": 19.0,
+          "Z": 21.0
+        },
+        "max_face_step": 21.0,
+        "source_id": "MV-DVID-RAW-SURVEY-076"
+      },
+      {
+        "center_zyx": [
+          15,
+          110,
+          3
+        ],
+        "face_steps": {
+          "X": 23.0,
+          "Y": 17.0,
+          "Z": 19.0
+        },
+        "max_face_step": 23.0,
+        "source_id": "MV-DVID-RAW-SURVEY-078"
+      },
+      {
+        "center_zyx": [
+          13,
+          17,
+          62
+        ],
+        "face_steps": {
+          "X": 20.0,
+          "Y": 8.0,
+          "Z": 4.0
+        },
+        "max_face_step": 20.0,
+        "source_id": "MV-DVID-RAW-SURVEY-079"
+      },
+      {
+        "center_zyx": [
+          40,
+          123,
+          101
+        ],
+        "face_steps": {
+          "X": 14.0,
+          "Y": 12.0,
+          "Z": 41.0
+        },
+        "max_face_step": 41.0,
+        "source_id": "MV-DVID-RAW-SURVEY-082"
+      },
+      {
+        "center_zyx": [
+          54,
+          94,
+          55
+        ],
+        "face_steps": {
+          "X": 23.0,
+          "Y": 8.0,
+          "Z": 14.0
+        },
+        "max_face_step": 23.0,
+        "source_id": "MV-DVID-RAW-SURVEY-083"
+      },
+      {
+        "center_zyx": [
+          20,
+          123,
+          111
+        ],
+        "face_steps": {
+          "X": 13.0,
+          "Y": 39.0,
+          "Z": 37.0
+        },
+        "max_face_step": 39.0,
+        "source_id": "MV-DVID-RAW-SURVEY-087"
+      },
+      {
+        "center_zyx": [
+          43,
+          91,
+          63
+        ],
+        "face_steps": {
+          "X": 39.0,
+          "Y": 11.0,
+          "Z": 17.0
+        },
+        "max_face_step": 39.0,
+        "source_id": "MV-DVID-RAW-SURVEY-088"
+      },
+      {
+        "center_zyx": [
+          20,
+          123,
+          123
+        ],
+        "face_steps": {
+          "X": 41.0,
+          "Y": 1.0,
+          "Z": 12.0
+        },
+        "max_face_step": 41.0,
+        "source_id": "MV-DVID-RAW-SURVEY-092"
+      }
+    ],
+    "selected_sources_materialized": [
+      "MV-DVID-RAW-SURVEY-076",
+      "MV-DVID-RAW-SURVEY-078",
+      "MV-DVID-RAW-SURVEY-079",
+      "MV-DVID-RAW-SURVEY-082",
+      "MV-DVID-RAW-SURVEY-083",
+      "MV-DVID-RAW-SURVEY-087",
+      "MV-DVID-RAW-SURVEY-088",
+      "MV-DVID-RAW-SURVEY-092"
+    ],
+    "total_decisions": 24
+  },
+  "created_at": "2026-09-18T02:30:00Z",
+  "failed_candidate_prior": "experiments/phase6e/PRODUCTION_GT_BATCH_001_FAILED_CANDIDATE.json",
+  "frozen_before_seeing_batch_002_labels": true,
+  "id": "PRODUCTION_GT_BATCH_002_SAMPLING_FREEZE",
+  "justification_for_stronger_tissue_sampling": {
+    "as2_002_abs_max_face_steps_observed": [
+      17.0,
+      15.0,
+      44.0,
+      45.0,
+      65.0,
+      14.0,
+      14.0,
+      24.0,
+      22.0,
+      24.0,
+      34.0,
+      22.0
+    ],
+    "as2_002_regime_summary": "approx 14\u201365 absolute max-face steps on axis-balanced C/E-neighborhood crops",
+    "batch_001_role": "Permanent failed candidate (sampling failure on milder reserve tissue); does not reopen SPEC002 validation",
+    "not_based_on": [
+      "PRODUCTION_GT_BATCH_001 labels",
+      "visual inspection for DIFFERENT appearance",
+      "retuning SPEC002 presentation or QC thresholds"
+    ],
+    "sole_basis": "Pre-production validated evidence from AFFINITY_SPEC002_VALIDATION_002"
+  },
+  "parent_production_protocol": "AFFINITY_PRODUCTION_LABELING_PROTOCOL_001",
+  "presentation_decision_rules_exclusions": "UNCHANGED",
+  "qc_gates": "UNCHANGED (same as AFFINITY_PRODUCTION_LABELING_PROTOCOL_001.qc_gates_before_PRODUCTION_GT_PROMOTED)",
+  "schema_version": 1,
+  "spec002_procedure": "UNCHANGED",
+  "status": "FROZEN_BEFORE_BATCH_002_LABELS"
+}

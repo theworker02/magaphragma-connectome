@@ -1,0 +1,23 @@
+{
+  "audit_id": "MV-INDEP-MODEL-MOSS-001",
+  "model_name": "MOSS LSD Boundary 2D (MtLSD)",
+  "upstream_repository": "https://github.com/StructuralNeurobiologyLab/MOSS",
+  "upstream_commit": "dcfdc8b1fe6c1f158452142697966e905d2c4b4b",
+  "checkpoint_path": "local_research_build\\phase6e\\independent_model_candidates\\moss\\pretrained_models\\lsd_mtlsd_checkpoint.pth",
+  "checkpoint_size_bytes": 15020178,
+  "checkpoint_sha256": "2a5a2df513c4dc669fb161f452c1dad98dd96302976b90864c240c6cc2482fac",
+  "source_contract": {
+    "input": "N,1,H,W grayscale EM normalized to [0,1]",
+    "native_affinity_outputs": "2 2-D affinities: Y,X",
+    "wrapper_output": "1 2-D boundary probability/logit = 1 - mean(Y,X affinities)",
+    "training_data": "UNKNOWN; repository says only pretrained on EM data",
+    "weight_license": "UNKNOWN; repository MIT code license does not explicitly cover checkpoint"
+  },
+  "eligibility": "REJECTED_INCOMPLETE_WEIGHT_PROVENANCE_AND_NOT_TRUE_3D",
+  "rejection_reasons": [
+    "WEIGHT_LICENSE_UNKNOWN",
+    "TRAINING_DATA_UNKNOWN",
+    "TWO_DIMENSIONAL_ONLY",
+    "NO_Z_AFFINITY_OR_3D_BOUNDARY_CONTRACT"
+  ]
+}

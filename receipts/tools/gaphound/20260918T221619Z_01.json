@@ -1,0 +1,36 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "repair_plan": {
+      "n_work_items": 1,
+      "note": "Minimum AxonForge worklist to close holes — does not rerun full volume.",
+      "vs_full_volume_tiles": 1,
+      "worklist": [
+        {
+          "action": "recover_then_recompute",
+          "box": {
+            "x0": 0,
+            "x1": 32,
+            "y0": 0,
+            "y1": 32,
+            "z0": 0,
+            "z1": 32
+          },
+          "kind": "failed",
+          "priority": 0.9,
+          "reason": "equivalence_gate_reject",
+          "tile_key": "T-Z000-Y000-X000"
+        }
+      ]
+    }
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:16:19Z",
+  "tool": "gaphound"
+}

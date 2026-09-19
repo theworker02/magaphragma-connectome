@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-PRSMOKE-QUEUE-MV-G3-PRSMOKE-03",
+  "smoke_batch_id": "MV-G3-PRESENTATION-REPAIR-SMOKE-001",
+  "created_at": "2026-09-18T01:17:50.663582Z",
+  "status": "EXPERT_EQUIVARIANT_SMOKE_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-PRSMOKE-03-PRSMOKE",
+  "crop_id": "MV-G3-PRSMOKE-03",
+  "raw_sha256": "bf53402a0eac81d8176a1fcb99fc7cfe8001dce7e37cc53e7b44b52dfa706c40",
+  "questions": [
+    {
+      "opaque_decision_id": "MV-PRS-DCD43177E4C4",
+      "presentation_order_index": 0,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        13,
+        104,
+        89
+      ],
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-037C3ADFDF10",
+      "presentation_order_index": 5,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        13,
+        105,
+        88
+      ],
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-F8F2C9DE2A07",
+      "presentation_order_index": 8,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        14,
+        104,
+        88
+      ],
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Presentation-repair smoke only under SPEC_002. Not training supervision. Not G3-009. Axis identity hidden until batch freeze."
+}

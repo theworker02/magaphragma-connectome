@@ -1,0 +1,36 @@
+{
+  "id": "AFFINITY_S4_ROI_AUTHORIZATION_001",
+  "created_at": "2026-09-18T04:05:00Z",
+  "status": "APPROVED",
+  "human_decision": "AUTHORIZE_ROI_OPEN",
+  "parent_funnel": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "parent_summary": "experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/FUNNEL_SUMMARY.json",
+  "authorized_candidate": {
+    "candidate_id": "C_PATCH_20_64_64",
+    "phase": "extend",
+    "run_id": "AFFINITY-PARALLEL-C_PATCH_20_64_64-EXTEND",
+    "selected_checkpoint_step": 10,
+    "selected_checkpoint_path": "experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/extend/checkpoints/checkpoint-step10.pt",
+    "selected_checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+    "gate_outcomes_at_authorization": {
+      "GATE_A_eval_completeness": true,
+      "GATE_B_both_classes_scored": true,
+      "GATE_C_better_than_constant_same": true,
+      "GATE_D_positive_margin": true,
+      "GATE_E_no_eval_leakage": true
+    },
+    "known_limitation": "balanced_edge_accuracy_at_0p5 remains 0.5; PASS is on positive margin + frozen GATE_A–E only"
+  },
+  "authorizes": [
+    "Open AFFINITY_ROI_RECONSTRUCTION_GATE_001",
+    "Materialize ROI package",
+    "S5 dense affinity inference + ROI segmentation under SEG_ROI_QC_CONTRACT_001"
+  ],
+  "does_not_authorize": [
+    "Full-volume inference (S7)",
+    "Synapse detection",
+    "Connectivity graph",
+    "Weakening GATE_D",
+    "Skipping S6 human seg QC"
+  ]
+}

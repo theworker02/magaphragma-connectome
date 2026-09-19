@@ -1,0 +1,11 @@
+{
+  "id": "MV-CELLPOSE-ZEROSHOT-G3-TRAIN-A-CPSAMV2-001-ATTEMPT",
+  "status": "NO_RECEIPT_PROCESS_EXIT",
+  "classification": "INFRASTRUCTURE_EXECUTION_ATTEMPT_NOT_A_MODEL_RESULT",
+  "input": "MV-G3-TRAIN-A raw DVID crop",
+  "model": "cpsam_v2",
+  "observation": "The foreground 3-D invocation exited without output arrays or a receipt. No Cellpose prediction was available for interpretation.",
+  "follow_up": "The exact fixed call was relaunched once as a hidden job with captured logs and completed as MV-CELLPOSE-ZEROSHOT-G3-TRAIN-A-CPSAMV2-002.",
+  "scientific_consequence": "No model failure, target-compatibility conclusion, label, training, or biological record is inferred from this attempt.",
+  "protected_regression_used": false
+}

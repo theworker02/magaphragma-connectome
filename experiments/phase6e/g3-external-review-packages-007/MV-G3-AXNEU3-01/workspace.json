@@ -1,0 +1,57 @@
+{
+  "allowed_decisions": [
+    "BAD_QUESTION",
+    "DIFFERENT_PROCESS",
+    "SAME_PROCESS",
+    "UNCERTAIN"
+  ],
+  "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+  "created_at": "2026-09-17T17:10:03.474896Z",
+  "crop_id": "MV-G3-AXNEU3-01",
+  "event_log": {
+    "append_only": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-external-review-packages-007\\MV-G3-AXNEU3-01\\workspace.events.jsonl"
+  },
+  "id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU3-01-007",
+  "pair_contract": "pair_left_zyx is followed by its positive neighbour along channel_zyx: 0=Z, 1=Y, 2=X.",
+  "parent_region_id": "MV-DVID-RAW-SURVEY-005",
+  "prohibited_promotions": [
+    "REVIEWED_DVID_LABEL",
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "provenance": {
+    "assigned_stratum": "Q1",
+    "center_zyx": [
+      23,
+      3,
+      39
+    ],
+    "protocol": {
+      "id": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-003",
+      "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\G3_AXIS_NEUTRAL_SAMPLING_PROTOCOL_003.json"
+    },
+    "sampler": "AXIS_NEUTRAL_PAIRED_LOCATION_V3"
+  },
+  "raw": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-005-raw_zyx.npy",
+    "sha256": "ba13215792b0278429b4a98b8ceccf60d481b797554cefa7f894991060cc5e4d",
+    "shape_zyx": [
+      64,
+      128,
+      128
+    ]
+  },
+  "review_state": "UNREVIEWED",
+  "schema_version": 1,
+  "source_origin_xyz": [
+    1984,
+    4992,
+    3776
+  ],
+  "split": "G3_TARGET_TRAIN",
+  "status": "EXTERNAL_EXPERT_RAW_EM_REVIEW_REQUIRED"
+}

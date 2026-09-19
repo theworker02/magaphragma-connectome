@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-09-17T02:26:11.114691Z",
+  "existing_reviewed_regions": [
+    {
+      "bounds_xyz": {
+        "x": [
+          4352,
+          4608
+        ],
+        "y": [
+          8064,
+          8320
+        ],
+        "z": [
+          7616,
+          7744
+        ]
+      },
+      "id": "G1-REVIEWED-TRAIN-001",
+      "receipt": "local_research_build/phase6e/external-review/dense-raw-candidate-001/reviewed-affinity-supervision-v2/receipt.json",
+      "role": "DVID_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          11520,
+          11776
+        ],
+        "y": [
+          8064,
+          8320
+        ],
+        "z": [
+          7616,
+          7744
+        ]
+      },
+      "id": "G1-REVIEWED-VALIDATION-001",
+      "receipt": "local_research_build/phase6e/external-review/dense-raw-candidate-002/reviewed-affinity-supervision-v2/receipt.json",
+      "role": "DVID_TARGET_VALIDATION"
+    }
+  ],
+  "id": "MV-G2-SPATIAL-EXPANSION-COHORT-001",
+  "leave_one_region_out": [
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-A",
+      "train_with": [
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-C",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-B",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-C",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-C",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-D"
+      ]
+    },
+    {
+      "criterion": "reviewed SAME and DIFFERENT decisions in held-out region are excluded from G2 fitting and assessed separately",
+      "held_out_region": "MV-G2-TRAIN-D",
+      "train_with": [
+        "MV-G2-TRAIN-A",
+        "MV-G2-TRAIN-B",
+        "MV-G2-TRAIN-C"
+      ]
+    }
+  ],
+  "promotion_gate": {
+    "prohibited_actions": [
+      "tune G1",
+      "select checkpoints on MV-GTVOL-000004",
+      "create MV-FRAG",
+      "create MV-N",
+      "create MV-CONN"
+    ],
+    "protected_regression": "MV-GTVOL-000004",
+    "requires_each_region": [
+      "reviewed SAME_PROCESS > 0",
+      "reviewed DIFFERENT_PROCESS > 0"
+    ],
+    "requires_loro": "non-degenerate held-out-region boundary behavior before MV-GTVOL-000004 may be replayed"
+  },
+  "regions": [
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-TRAIN-A",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-007-raw_zyx.npy",
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "role": "G2_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-007",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/10304_4992_3776",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-TRAIN-B",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-014-raw_zyx.npy",
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "role": "G2_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-014",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/6144_11776_3776",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-TRAIN-C",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-023-raw_zyx.npy",
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "role": "G2_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-023",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/10304_4992_11456",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-TRAIN-D",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-030-raw_zyx.npy",
+      "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+      "role": "G2_TARGET_TRAIN",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-030",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/6144_11776_11456",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-VALIDATION-V1",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-009-raw_zyx.npy",
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "role": "G2_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-009",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/1984_8384_3776",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-VALIDATION-V2",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-016-raw_zyx.npy",
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "role": "G2_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-016",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/14464_11776_3776",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "dtype": "uint8",
+      "id": "MV-G2-VALIDATION-V3",
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-026-raw_zyx.npy",
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "role": "G2_TARGET_VALIDATION",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-026",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/6144_8384_11456",
+      "status": "FROZEN_PENDING_G1_DIAGNOSTIC_AND_EXPERT_REVIEW",
+      "voxel_size_nm_xyz": [
+        8,
+        8,
+        8
+      ]
+    }
+  ],
+  "reserved_evaluation_regions": [
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "id": "G1-DEVELOPMENT-RAW-SURVEY-003",
+      "role": "DEVELOPMENT_EVALUATION_ONLY"
+    }
+  ],
+  "schema_version": 1,
+  "selection": {
+    "method": "PRE_G1_SPATIALLY_STRATIFIED_REGION_SELECTION_V1",
+    "post_freeze_diagnostic": "Use frozen G1 step2280 output only to rank candidate merge-confident/raw-EM-boundary contradictions and continuity controls within each frozen region.",
+    "prohibited_inputs": [
+      "G1 prediction",
+      "G1 reconstruction quality",
+      "MV-GTVOL-000004",
+      "review outcomes"
+    ]
+  },
+  "source_survey": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\manifest.json",
+    "sha256": "97b16d616b3eb25c4b7139e8e228eaae7cafeaeee88ef55e7a9239fc3ad2b80e"
+  },
+  "status": "FROZEN_BEFORE_G1_DIAGNOSTIC_REVIEW"
+}

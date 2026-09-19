@@ -1,0 +1,93 @@
+{
+  "S0": {
+    "created_at": "2026-09-18T03:46:43.801688Z",
+    "issues": [],
+    "n_edges_audited": 24,
+    "n_issues": 0,
+    "outcome": "CONSTRUCTION_OK",
+    "stage_id": "S0_CONSTRUCTION_PREFLIGHT",
+    "supports_F3": false
+  },
+  "S1_eliminated": [
+    {
+      "candidate_id": "A_LR_1E3",
+      "eval_metrics": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "margin": -0.052676498889923096,
+        "mean_pred_DIFFERENT": 0.5760352946817875,
+        "mean_pred_SAME": 0.5233587957918644,
+        "n_eval_edges": 6
+      },
+      "status": "ELIMINATED_CHANCE"
+    },
+    {
+      "candidate_id": "B_DIFF_CLASS_WEIGHT_3",
+      "eval_metrics": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "margin": -0.00861678272485733,
+        "mean_pred_DIFFERENT": 0.5761997997760773,
+        "mean_pred_SAME": 0.5675830170512199,
+        "n_eval_edges": 6
+      },
+      "status": "ELIMINATED_CHANCE"
+    },
+    {
+      "candidate_id": "D_TARGET_LOSS_WEIGHT_1",
+      "eval_metrics": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "margin": -0.00968334823846817,
+        "mean_pred_DIFFERENT": 0.5773469060659409,
+        "mean_pred_SAME": 0.5676635578274727,
+        "n_eval_edges": 6
+      },
+      "status": "ELIMINATED_CHANCE"
+    }
+  ],
+  "S1_survivors": [
+    "C_PATCH_20_64_64"
+  ],
+  "S3_passers": [
+    {
+      "candidate_id": "C_PATCH_20_64_64",
+      "eval_metrics": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "margin": 0.023772791028022766,
+        "mean_pred_DIFFERENT": 0.6398649662733078,
+        "mean_pred_SAME": 0.6636377573013306,
+        "n_eval_edges": 6
+      },
+      "gate_outcomes": {
+        "GATE_A_eval_completeness": true,
+        "GATE_B_both_classes_scored": true,
+        "GATE_C_better_than_constant_same": true,
+        "GATE_D_positive_margin": true,
+        "GATE_E_no_eval_leakage": true
+      },
+      "selected_checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+      "selected_checkpoint_step": 10
+    }
+  ],
+  "created_at": "2026-09-18T03:59:08.627152Z",
+  "dense_segmentation": "STILL_CLOSED",
+  "early_eliminate_clarification_id": "AFFINITY_PARALLEL_EARLY_ELIMINATE_CLARIFICATION_001",
+  "full_volume_still_closed": true,
+  "funnel_id": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "gate_d_unchanged": true,
+  "id": "AFFINITY_PARALLEL_FUNNEL_001_SUMMARY",
+  "matrix_id": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+  "next_human_gate": "S4_HUMAN_SCIENTIFIC_GATE_AFFINITY_QUALIFIED \u2014 authorize ROI package open",
+  "orchestrator_note": "Primary orchestrator crashed after S1 on Windows cp1252 Unicode arrow; shorts had completed; this finalize recovered S1 classification + S2.",
+  "roi_opened": true,
+  "roi_still_closed": false,
+  "roi_summary": "experiments/phase6e/AFFINITY-ROI-001/ROI_SUMMARY.json",
+  "s6_pending": true,
+  "status": "AWAITING_HUMAN_S6_SEG_QC"
+}

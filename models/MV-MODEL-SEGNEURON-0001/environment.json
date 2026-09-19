@@ -1,0 +1,15 @@
+{
+  "run_id": "MV-SEGNEURON-TECH-0001",
+  "implementation_repository": "https://github.com/yanchaoz/SegNeuron.git",
+  "implementation_commit": "ea6f0c963a2f60f0f130244da27e2b2d753f8ee9",
+  "environment": "third_party/segneuron/.venv (project-local; system torch inherited)",
+  "python": "3.13.14",
+  "torch": "2.12.0+cpu",
+  "numpy": "2.4.6",
+  "tifffile": "2026.9.15",
+  "device": "cpu",
+  "cuda_available": false,
+  "checkpoint_sha256": "3767a3793cbbdbf98041b8c4c270b92d2355213d11605568c003322bb759bef5",
+  "execution_status": "PASS",
+  "scientific_qualification": "NOT_RUN"
+}

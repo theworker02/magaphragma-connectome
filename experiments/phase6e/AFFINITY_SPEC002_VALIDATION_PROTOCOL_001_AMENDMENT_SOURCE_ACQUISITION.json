@@ -1,0 +1,45 @@
+{
+  "allowed_mutations": [
+    "status",
+    "independence_check",
+    "stop_reason",
+    "next_required_if_stopped",
+    "source_inventory contents",
+    "reassessed_at / reassessment metadata"
+  ],
+  "created_at": "2026-09-18T01:38:39.838243Z",
+  "forbidden_mutations": [
+    "predeclared_verdict_rules",
+    "design.n_locations",
+    "design.total_decisions",
+    "blinding",
+    "scientific_question"
+  ],
+  "id": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001_AMENDMENT_SOURCE_ACQUISITION",
+  "n_independent_after": 18,
+  "n_independent_before": 2,
+  "newly_acquired_ids": [
+    "MV-DVID-RAW-SURVEY-033",
+    "MV-DVID-RAW-SURVEY-034",
+    "MV-DVID-RAW-SURVEY-035",
+    "MV-DVID-RAW-SURVEY-036",
+    "MV-DVID-RAW-SURVEY-037",
+    "MV-DVID-RAW-SURVEY-038",
+    "MV-DVID-RAW-SURVEY-039",
+    "MV-DVID-RAW-SURVEY-040",
+    "MV-DVID-RAW-SURVEY-041",
+    "MV-DVID-RAW-SURVEY-042",
+    "MV-DVID-RAW-SURVEY-043",
+    "MV-DVID-RAW-SURVEY-044",
+    "MV-DVID-RAW-SURVEY-045",
+    "MV-DVID-RAW-SURVEY-046",
+    "MV-DVID-RAW-SURVEY-047",
+    "MV-DVID-RAW-SURVEY-048"
+  ],
+  "parent_protocol": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001",
+  "purpose": "Record source acquisition and independence reassessment; do not alter verdict rules.",
+  "status_after": "FROZEN_READY_TO_PROVISION",
+  "status_before": "STOPPED_FRESH_SOURCE_INDEPENDENCE_UNSATISFIED",
+  "verdict_rules_sha256": "a8dde9ca2d1da427f81dfd37873f292c6ea2e5a2131d8b76e0e058d51fafd685",
+  "verdict_rules_unchanged": true
+}

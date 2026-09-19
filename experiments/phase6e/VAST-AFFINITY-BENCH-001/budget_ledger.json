@@ -1,0 +1,65 @@
+{
+  "committed_usd": 20.522666666666666,
+  "config": {
+    "benchmark_usd": 5.0,
+    "drain_frac": 0.95,
+    "hard_limit_usd": 160.0,
+    "stop_provision_frac": 0.85,
+    "target_usd": 100.0,
+    "warn_frac": 0.7
+  },
+  "created_at": "2026-09-18T22:35:00Z",
+  "events": [
+    {
+      "at": "2026-09-18T22:35:00Z",
+      "kind": "init",
+      "note": "Affinity Vast budget ledger initialized; AWS Affinity path decommissioned"
+    },
+    {
+      "at": "2026-09-19T18:19:21.523532Z",
+      "commitment_usd": 12.826666666666668,
+      "context": "launch",
+      "hourly_usd": 0.5344444444444445,
+      "hours": 24.0,
+      "kind": "authorize_provision"
+    },
+    {
+      "amount_usd": 12.826666666666668,
+      "at": "2026-09-19T18:19:24.197803Z",
+      "context": "launch_rollback",
+      "kind": "release_commitment"
+    },
+    {
+      "at": "2026-09-19T18:20:51.115373Z",
+      "commitment_usd": 12.826666666666668,
+      "context": "launch",
+      "hourly_usd": 0.5344444444444445,
+      "hours": 24.0,
+      "kind": "authorize_provision"
+    },
+    {
+      "amount_usd": 2.5653333333333332,
+      "at": "2026-09-19T18:20:53.487787Z",
+      "context": "launch_partial_release",
+      "kind": "release_commitment"
+    },
+    {
+      "at": "2026-09-19T18:39:54.221656Z",
+      "commitment_usd": 12.826666666666668,
+      "context": "launch",
+      "hourly_usd": 0.5344444444444445,
+      "hours": 24.0,
+      "kind": "authorize_provision"
+    },
+    {
+      "amount_usd": 2.5653333333333332,
+      "at": "2026-09-19T18:39:56.133961Z",
+      "context": "launch_partial_release",
+      "kind": "release_commitment"
+    }
+  ],
+  "reserved_benchmark_usd": 0.0,
+  "schema_version": 1,
+  "spent_usd": 0.0,
+  "updated_at": "2026-09-19T18:39:56.133994Z"
+}

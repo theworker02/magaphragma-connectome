@@ -1,0 +1,17 @@
+{
+  "id": "MV-G3-TRAIN-E-INTERFACE-ADMISSION-DECISION-001",
+  "created_at": "2026-09-17T11:56:56.1414519Z",
+  "status": "REJECTED_UNBALANCED_INTERFACE_EVIDENCE",
+  "region_id": "MV-G3-TRAIN-E",
+  "split": "G3_TARGET_TRAIN",
+  "reviewer": "matth",
+  "review_log_sha256": "d76d19c7c81d48a88b5f012e18b776189ce0c0adced10507403a042a7c11ae14",
+  "queue_sha256": "cc75480e979e1a99cee559611a2a5cc3420fd05d5100418dab84f2075a4f977b",
+  "reviewed_pair_counts": {"SAME_PROCESS": 0, "DIFFERENT_PROCESS": 24, "UNCERTAIN": 0, "BAD_QUESTION": 0},
+  "interface_counts": {"SAME_PROCESS": 0, "DIFFERENT_PROCESS": 8, "UNCERTAIN": 0, "BAD_QUESTION": 0, "CONTRADICTORY": 0, "ELIGIBLE": 8},
+  "admission_result": {"same_process_required": true, "different_process_required": true, "same_process_available": false, "different_process_available": true, "eligible_for_g3_supervision": false},
+  "reason": "All reviewed frozen raw-EM interface groups were unanimously DIFFERENT_PROCESS. The evidence is retained, but this region cannot be admitted to the current mixed-domain G3 supervision because it contains no eligible SAME_PROCESS interface evidence.",
+  "preservation": {"review_events_append_only": true, "no_decision_reinterpretation": true, "no_target_tensor_materialized": true, "no_g3_training_started": true, "mv_gtvol_000004_accessed": false},
+  "prohibited_followups": ["relabel_different_as_same", "train_on_train_e_as_currently_reviewed", "retune_queue_to_manufacture_same_evidence"],
+  "next_dataset_action": "A future dataset version may retain this region as DIFFERENT-only auxiliary evidence only under an explicitly changed, predeclared loss design; the frozen current G3 cohort is unchanged."
+}

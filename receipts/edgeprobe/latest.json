@@ -1,0 +1,27 @@
+{
+  "ascii_back": "?: edge:af-pre->af-post",
+  "ascii_forward": "?: edge:af-pre->af-post",
+  "back": [
+    {
+      "id": "edge:af-pre->af-post",
+      "kind": "?",
+      "node_id": "edge:af-pre->af-post",
+      "stage": "?"
+    }
+  ],
+  "bundle": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\edgeprobe\\af-pre__af-post__20260918T221620Z",
+  "entity_id": "edge:af-pre->af-post",
+  "forward": [
+    {
+      "id": "edge:af-pre->af-post",
+      "kind": "?",
+      "node_id": "edge:af-pre->af-post",
+      "stage": "?"
+    }
+  ],
+  "n_back": 1,
+  "n_forward": 1,
+  "post": "af-post",
+  "pre": "af-pre",
+  "schema": "edgeprobe/v1"
+}\n

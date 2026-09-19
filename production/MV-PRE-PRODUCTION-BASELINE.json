@@ -1,0 +1,96 @@
+{
+  "backend_state": {
+    "ffn": "ENVIRONMENT_IMPORT_PASS_CHECKPOINT_UNAVAILABLE",
+    "full_volume_processing": "BLOCKED_MODEL_VALIDATION",
+    "production_segmenter": "NONE_SELECTED",
+    "synapse_backend": "UNKNOWN_OR_UNAVAILABLE"
+  },
+  "chunk_strategy": {
+    "chunk_count": 28798,
+    "core_shape_voxels_xyz": [
+      1024,
+      1024,
+      128
+    ],
+    "overlap_margin_voxels_xyz": [
+      64,
+      64,
+      16
+    ],
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase5c-production\\chunks.json",
+    "rationale": "1024x1024x128 cores are multiples of DVID 64-cube blocks; 64x64x16 read halos are provisional planning margins and must be revalidated against the selected model receptive field.",
+    "sha256": "9c4f2944332fbee41c3a071f8b57a397bd09830a23f7843decd9ece90abddece",
+    "source_block_shape_voxels_xyz": [
+      64,
+      64,
+      64
+    ]
+  },
+  "created_at": "2026-09-16T14:36:30.659417Z",
+  "dvid_source": {
+    "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+    "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+    "volume_id": "MV-FIBSEM-WASP5-YURI-4C"
+  },
+  "id": "MV-PRE-PRODUCTION-BASELINE",
+  "immutable_after_creation": true,
+  "production_domain": {
+    "dimensions_voxels_xyz": [
+      16648,
+      13544,
+      15401
+    ],
+    "edge_read": {
+      "eligibility": "LOCAL_PROCESSING_ONLY_PENDING_SOURCE_TERMS_REVIEW",
+      "far_boundary_raw_bytes": 262144,
+      "far_boundary_raw_read_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/64_64_64/16584_13480_15337",
+      "far_boundary_raw_sha256": "146171f08f15b01203d3e22a4df82b72ecb2c8a5cc1e285201847c2826afc8aa",
+      "parent_metadata_sha256": "0400003dae908dd557797f085696bd4962e47563923fe661fccfd7fd59650abb",
+      "parent_metadata_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/info",
+      "rights": "UNVERIFIED_FOR_REDISTRIBUTION_AND_DERIVATIVE_RELEASE",
+      "status": "PUBLIC_PARENT_METADATA_AND_FAR_BOUNDARY_RAW_READ_VERIFIED",
+      "whole_domain_downloaded": false,
+      "whole_domain_processed": false
+    },
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase5c-production\\domain.json",
+    "physical_dimensions_nm_xyz": [
+      133184.0,
+      108352.0,
+      123208.0
+    ],
+    "sha256": "9576fd9a590c44c9ef5f196a502f4318d98783384053a6e467e3105a4c35324a",
+    "source_bounds_xyz": {
+      "x": [
+        0,
+        16648
+      ],
+      "y": [
+        0,
+        13544
+      ],
+      "z": [
+        0,
+        15401
+      ]
+    },
+    "voxel_size_nm_xyz": [
+      8.0,
+      8.0,
+      8.0
+    ]
+  },
+  "registration": {
+    "catmaid_derived_dvid_seeding": "PROHIBITED",
+    "decision": "INSUFFICIENT_EVIDENCE",
+    "decision_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\registration\\decision.json"
+  },
+  "source_hashes": {
+    "far_boundary_raw_sha256": "146171f08f15b01203d3e22a4df82b72ecb2c8a5cc1e285201847c2826afc8aa",
+    "parent_metadata_sha256": "0400003dae908dd557797f085696bd4962e47563923fe661fccfd7fd59650abb"
+  },
+  "test_results_at_freeze": {
+    "command": "$env:PYTHONPATH='src'; python -m unittest discover -s tests -v",
+    "status": "PASS",
+    "tests": 16
+  }
+}

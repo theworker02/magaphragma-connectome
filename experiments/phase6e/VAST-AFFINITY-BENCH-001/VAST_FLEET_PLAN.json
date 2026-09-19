@@ -1,0 +1,30 @@
+{
+  "qualified_gpu": "RTX 4060 Ti",
+  "n_gpus": 5,
+  "offer_ids": [
+    49517349,
+    50005213,
+    49619742,
+    50286319,
+    49921234
+  ],
+  "dph_per_gpu": 0.1068888888888889,
+  "fleet_hourly_usd": 0.5223703703703704,
+  "tiles_per_sec_per_gpu": 18.9,
+  "aggregate_tiles_per_sec": 94.5,
+  "chunks_per_hour": 98.09688581314879,
+  "remaining_chunks": 28609,
+  "estimated_completion_hours": 291.64024691358026,
+  "estimated_compute_cost_usd": 152.3442237951532,
+  "estimated_ancillary_cost_usd": 0.0,
+  "estimated_total_cost_usd": 152.3442237951532,
+  "budget_remaining_usd": 149.73866666666666,
+  "interruptible": false,
+  "cost_per_chunk": 0.005448128551832256,
+  "notes": [
+    "best_offer_id=49517349",
+    "need_for_target=9",
+    "affordable_under_budget=5",
+    "ranking_metric=projected_remaining_cost"
+  ]
+}

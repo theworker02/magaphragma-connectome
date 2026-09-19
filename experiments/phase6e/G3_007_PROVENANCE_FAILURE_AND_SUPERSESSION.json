@@ -1,0 +1,42 @@
+{
+  "id": "MV-G3-007-PROVENANCE-FAILURE-AND-SUPERSESSION-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T17:55:00Z",
+  "status": "FROZEN_007_MARKED_NONREPRODUCIBLE_SUPERSEDED_FOR_PROSPECTIVE_USE",
+  "subject": {
+    "protocol": "experiments/phase6e/G3_AXIS_NEUTRAL_SAMPLING_PROTOCOL_003.json",
+    "batch_queues": "experiments/phase6e/g3-interface-queues-007",
+    "batch_workspaces": "experiments/phase6e/g3-external-review-packages-007"
+  },
+  "preserved_not_deleted": true,
+  "review_state_at_supersession": "ALL 12 -007 event logs EMPTY (zero human decisions); superseding destroys no human evidence",
+  "decision_rule_applied": "Synthetic reference==optimized (semantics essentially preserved) BUT real regeneration != frozen -007 => optimization is NOT the culprit; the frozen artifact was generated under different state/logic. Per plan: do not force compatibility; mark superseded, freeze corrected deterministic spec, generate clean -008, run twice, compare.",
+  "root_causes": [
+    {
+      "id": "RC1_STATEFUL_HISTORICAL_EXCLUSION",
+      "detail": "historical_edges() globs g3-interface-queues-*/*.json at run time, which now includes -006 and -007 itself. Frozen build saw 677 excluded edges; regeneration sees 713. The exclusion set is order-of-creation dependent and self-referential, so the frozen selection is not reproducible.",
+      "evidence": "frozen historical_edges_excluded_count=677 vs regenerated=713"
+    },
+    {
+      "id": "RC2_FLOAT_UNSTABLE_CONTRAST",
+      "detail": "eligible_centers computes contrast from float32 array subtraction then casts to float64; the pure-python reference uses float64 throughout. ~3e-7 differences can flip stratum membership for near-boundary candidates and perturb sha256 hash-rank selection.",
+      "evidence": "test_007_reference_vs_optimized::test_eligible_centers_match: optimized 11.482645988 vs reference 11.482645670"
+    },
+    {
+      "id": "RC3_COMPETING_BUILDERS",
+      "detail": "Two builder scripts (build_g3_007_axis_neutral.py and build_g3_007_axis_neutral_paired.py) both claim to produce protocol-003/-007. Which one produced the frozen artifact is not determinable from the artifact alone.",
+      "evidence": "both files present in tools/ with overlapping ids"
+    }
+  ],
+  "internal_determinism": "The paired builder's stratum+hash pipeline is internally deterministic (run1==run2); the non-reproducibility is due to RC1 (external state) and RC2 (float), not RNG.",
+  "corrective_specification_for_008": {
+    "pinned_exclusion": "Historical excluded edges MUST be an explicit enumerated snapshot written into the -008 protocol (with sha256), not a live glob. -008 excludes exactly the edges enumerated at -008 creation and records them.",
+    "stable_contrast": "Contrast computed in float64 from float64-promoted raw, matching the pure-python reference exactly (atol=0).",
+    "single_builder": "Exactly one -008 builder module; the -007 builders are retained only as historical record and not used prospectively.",
+    "double_run_gate": "Generate -008 twice from identical inputs into two locations and require byte-identical canonical manifests before any review."
+  },
+  "immutability": {
+    "did_not_modify": ["-007 protocol/queues/workspaces", "-002 supervision", "identifiability contract", "A-H/-003/-004/-005/-006 logs"]
+  },
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

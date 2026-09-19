@@ -1,0 +1,37 @@
+{
+  "id": "MV-PHASE6E-RAW-MEMBRANE-PILOT-001-DECISION",
+  "created_at": "2026-09-16T23:22:00Z",
+  "status": "RAW_EM_MEMBRANE_CROSSING_DIFFERENT_DISCOVERY_FAILED",
+  "decision": "FAILED",
+  "reason": "The frozen raw-EM-only 20-question pilot yielded zero reviewer-confirmed DIFFERENT_PROCESS decisions. The candidate generator selected high-gradient local transitions that the reviewer judged to be within-process continuity.",
+  "crop_id": "MV-DVID-ANN-000005-MEMBRANE-PILOT-001",
+  "parent_region_id": "MV-GTVOL-000005",
+  "raw_sha256": "faa894750e35a5288cfca6f84d7eaed3fcd37b0c3843494b0dec92b1274ee350",
+  "questions_sha256": "cc691eaba66d94d16cd18b159acca4b83b924e56cd5ddac0abbbcd237f5405b5",
+  "review_log_sha256": "082b676c4aa5e7f78a2a100344a9086cd12de96c4bc69d7474f6c6210fdcf32f",
+  "review_reconciliation": {
+    "frozen_questions": 20,
+    "unique_questions_reviewed": 20,
+    "append_events": 21,
+    "duplicate_question_id": "MV-MEM-Q-020",
+    "duplicate_decisions": ["SAME_PROCESS", "SAME_PROCESS"],
+    "duplicate_is_conflicting": false,
+    "same_process": 20,
+    "different_process": 0,
+    "uncertain": 0,
+    "bad_question": 0
+  },
+  "axis_zyx_coverage": {"Z": 12, "Y": 3, "X": 5},
+  "spatial_coverage": {
+    "minimum_candidate_separation_voxels": 12,
+    "spatial_clusters_represented": 20,
+    "protected_volume_overlap": "NONE",
+    "regression_volume": "MV-GTVOL-000004_EXCLUDED"
+  },
+  "scientific_consequence": "No DIFFERENT_PROCESS target affinity supervision was created. G1 remains blocked. The frozen sampler must not be retuned or expanded to manufacture separation labels.",
+  "next_required_evidence": [
+    "documented compatible independent neuronal-EM boundary model", 
+    "or independently reviewed local DVID boundary decisions"
+  ],
+  "prohibited_promotions": ["REVIEWED_DVID_LABEL", "MV-FRAG", "MV-N", "MV-SYN", "MV-CONN"]
+}

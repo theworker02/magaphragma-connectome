@@ -1,0 +1,8 @@
+{
+  "id": "MV-CELLPOSE-CPDINOVITB-ENCODER-PAIR-AUDIT-G3-TRAIN-A-001-ATTEMPT",
+  "status": "REJECTED_BEFORE_MODEL_INFERENCE",
+  "reason": "The supplied raw file hash did not match the frozen Train-A review receipt. The audit fail-closed before CellposeDINO was loaded or any encoder feature was calculated.",
+  "scientific_interpretation": "NONE",
+  "protected_volume_used": false,
+  "next_run": "Use the exact raw path and hash recorded by the frozen Train-A workspace in a new immutable output."
+}

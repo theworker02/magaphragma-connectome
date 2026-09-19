@@ -1,0 +1,26 @@
+{
+  "ascii_back": "?: edge:nA->nB",
+  "ascii_forward": "?: edge:nA->nB",
+  "back": [
+    {
+      "id": "edge:nA->nB",
+      "kind": "?",
+      "node_id": "edge:nA->nB",
+      "stage": "?"
+    }
+  ],
+  "entity_id": "edge:nA->nB",
+  "forward": [
+    {
+      "id": "edge:nA->nB",
+      "kind": "?",
+      "node_id": "edge:nA->nB",
+      "stage": "?"
+    }
+  ],
+  "n_back": 1,
+  "n_forward": 1,
+  "post": "nB",
+  "pre": "nA",
+  "schema": "edgeprobe/v1"
+}\n

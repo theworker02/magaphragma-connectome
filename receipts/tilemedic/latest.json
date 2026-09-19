@@ -1,0 +1,13 @@
+{
+  "tile_key": "t1",
+  "diagnosis": "OOM",
+  "action": "lower_batch_retry",
+  "success": true,
+  "safe": true,
+  "detail": {
+    "batch_size": 8
+  },
+  "altered_keys": [
+    "batch_size"
+  ]
+}

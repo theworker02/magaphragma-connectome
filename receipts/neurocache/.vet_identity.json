@@ -1,0 +1,34 @@
+{
+  "source_volume_hash": "synthetic",
+  "coordinates": [
+    32.0,
+    32.0,
+    32.0,
+    64.0,
+    64.0,
+    64.0
+  ],
+  "resolution": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "preprocessing": {
+    "normalize": "uint8_scale"
+  },
+  "model": "axonforge",
+  "checkpoint": "default",
+  "precision": "fp32",
+  "tile_dimensions": [
+    32,
+    64,
+    64
+  ],
+  "halo": 8,
+  "scientific_config": {
+    "tile_key": "T-Z001-Y001-X001",
+    "stage": "tile_inference"
+  },
+  "algorithm_version": "1.0",
+  "identity_hash": "4603ba01cae37b9f1dae300a34ee472286b63dfc6df12698eb274b1e0598c691"
+}\n

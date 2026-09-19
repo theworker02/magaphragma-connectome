@@ -1,0 +1,17 @@
+{
+  "kind": "EXTERNAL_LABELED_EM_SPLITS",
+  "dataset": "CREMI",
+  "organism": "Drosophila melanogaster",
+  "modality": "ssTEM",
+  "coordinate_order": "ZYX",
+  "voxel_size_nm_zyx": [40.0, 4.0, 4.0],
+  "rights": "LOCAL_PROCESSING_ONLY_UNTIL_ARTIFACT_TERMS_RECORDED",
+  "not_a_megaphragma_identity_source": true,
+  "splits": {
+    "train": [{"id":"CREMI-A","path":"datasets/cache/cremi/sample_A_20160501.hdf","sha256":"4c563d1b78acb2bcfb3ea958b6fe1533422f7f4a19f3e05b600bfa11430b510d"}],
+    "validation": [{"id":"CREMI-B","path":"datasets/cache/cremi/sample_B_20160501.hdf","sha256":"6ae298123d3e5ee4525b57b97cafc881eb05fea118d3db68f89b3b292f7f4fcb"}],
+    "test": [{"id":"CREMI-C","path":"datasets/cache/cremi/sample_C_20160501.hdf","sha256":"78cad175d98b957ff8d3033754b79fec1aceec75fed55c95c7dea693d7af96cd"}]
+  },
+  "labels": "volumes/labels/neuron_ids",
+  "raw": "volumes/raw"
+}

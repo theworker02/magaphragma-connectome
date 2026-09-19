@@ -1,0 +1,17 @@
+{
+  "decision": "FAILED",
+  "experiment": "SUPERVOXEL_INTERFACE_DIFFERENT_DISCOVERY",
+  "reason": "The reviewed supervoxel-interface samplers selected within-process continuation interfaces and yielded no defensible DIFFERENT_PROCESS decisions.",
+  "validation_crop_id": "MV-DVID-ANN-000004",
+  "reviewed_counts": {
+    "SAME_PROCESS": 84,
+    "UNCERTAIN": 12,
+    "DIFFERENT_PROCESS": 0
+  },
+  "prohibited_followups": [
+    "relabel_uncertain_as_different",
+    "continue_same_supervoxel_interface_sampler",
+    "start_G1_target_adaptation"
+  ],
+  "next_method": "RAW_EM_MEMBRANE_CROSSING_PAIR_REVIEW"
+}

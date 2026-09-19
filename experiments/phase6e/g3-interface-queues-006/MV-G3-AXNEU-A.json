@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-AXNEU-QUEUE-MV-G3-AXNEU-A-006",
+  "created_at": "2026-09-17T16:44:36.816716Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU-A-006",
+  "crop_id": "MV-G3-AXNEU-A",
+  "raw_sha256": "3613064be285ecc3c4fc979691c71648df666cbb5ef9a8e7ba233cb80659249b",
+  "selection": {
+    "method": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+    "declared_sampling_rule": {
+      "sampler_id": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "declared_before_labels": true,
+      "edge_eligibility": "at each selected interior center, all three edges (Z,Y,X) are eligible INDEPENDENTLY; eligibility does NOT depend on argmax(|gradient|)",
+      "edges": {
+        "Z": "(z,y,x)<->(z+1,y,x)",
+        "Y": "(z,y,x)<->(z,y+1,x)",
+        "X": "(z,y,x)<->(z,y,x+1)"
+      },
+      "location_selection": "interior centers, 12-voxel spatially separated, deterministically drawn to spread across predeclared raw edge-contrast bands",
+      "location_stratifier": "mean absolute single-voxel intensity step across the location's three axis edges (raw EM only)",
+      "contrast_bands": [
+        {
+          "label": "very_low",
+          "lo": 0.0,
+          "hi": 5.0
+        },
+        {
+          "label": "low",
+          "lo": 5.0,
+          "hi": 15.0
+        },
+        {
+          "label": "mid",
+          "lo": 15.0,
+          "hi": 40.0
+        },
+        {
+          "label": "high",
+          "lo": 40.0,
+          "hi": 1000000000.0
+        }
+      ],
+      "locations_per_crop": 3,
+      "presentation_order": "deterministic interleave of (location, axis) so axes are not shown in blocks",
+      "allowed_inputs": [
+        "raw EM intensity",
+        "raw gradient for stratification only",
+        "crop identity",
+        "geometry"
+      ],
+      "forbidden_inputs": [
+        "argmax-gradient edge eligibility",
+        "SAME/DIFFERENT labels",
+        "class predictions",
+        "learned affinities",
+        "historical class composition"
+      ],
+      "purpose": "test H3 (dominant-gradient selection) vs H4 (intrinsic Z-edge effect) with balanced Z/Y/X edge eligibility at matched locations"
+    },
+    "locations": 3,
+    "edges_per_location": 3,
+    "band_counts": {
+      "very_low": 1,
+      "low": 2,
+      "mid": 0,
+      "high": 0
+    }
+  },
+  "questions": [
+    {
+      "id": "MV-G3-AXNEU-001",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC01",
+      "location_index": 1,
+      "pair_left_zyx": [
+        41,
+        15,
+        61
+      ],
+      "pair_right_zyx": [
+        42,
+        15,
+        61
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "location_contrast": 13.333333333333334,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.333333333333334,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-002",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC02",
+      "location_index": 2,
+      "pair_left_zyx": [
+        59,
+        123,
+        40
+      ],
+      "pair_right_zyx": [
+        59,
+        123,
+        41
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "location_contrast": 4.666666666666667,
+      "contrast_band": "very_low",
+      "raw_gradient_score": 4.666666666666667,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-003",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC03",
+      "location_index": 3,
+      "pair_left_zyx": [
+        29,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        29,
+        70,
+        3
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "location_contrast": 13.0,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.0,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-004",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC01",
+      "location_index": 1,
+      "pair_left_zyx": [
+        41,
+        15,
+        61
+      ],
+      "pair_right_zyx": [
+        41,
+        16,
+        61
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "location_contrast": 13.333333333333334,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.333333333333334,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-005",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC02",
+      "location_index": 2,
+      "pair_left_zyx": [
+        59,
+        123,
+        40
+      ],
+      "pair_right_zyx": [
+        60,
+        123,
+        40
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "location_contrast": 4.666666666666667,
+      "contrast_band": "very_low",
+      "raw_gradient_score": 4.666666666666667,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-006",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC03",
+      "location_index": 3,
+      "pair_left_zyx": [
+        29,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        29,
+        69,
+        4
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "location_contrast": 13.0,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.0,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-007",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC01",
+      "location_index": 1,
+      "pair_left_zyx": [
+        41,
+        15,
+        61
+      ],
+      "pair_right_zyx": [
+        41,
+        15,
+        62
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "location_contrast": 13.333333333333334,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.333333333333334,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-008",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC02",
+      "location_index": 2,
+      "pair_left_zyx": [
+        59,
+        123,
+        40
+      ],
+      "pair_right_zyx": [
+        59,
+        124,
+        40
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "location_contrast": 4.666666666666667,
+      "contrast_band": "very_low",
+      "raw_gradient_score": 4.666666666666667,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-AXNEU-009",
+      "kind": "RAW_EM_AXIS_NEUTRAL_EDGE",
+      "interface_id": "MV-G3-AXNEU-LOC03",
+      "location_index": 3,
+      "pair_left_zyx": [
+        29,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        30,
+        69,
+        3
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "location_contrast": 13.0,
+      "contrast_band": "low",
+      "raw_gradient_score": 13.0,
+      "interface_member": 1,
+      "interface_members": 1,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_V1",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Axis-neutral paired-location edges: all three axes are eligible at each center independently of gradient dominance. Each edge is an independent expert decision; stratification targets no class."
+}

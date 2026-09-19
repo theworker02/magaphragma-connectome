@@ -1,0 +1,361 @@
+{
+  "Y_DIFFERENT_source_crops": [
+    "MV-G3-TRAIN-C",
+    "MV-G3-TRAIN-E"
+  ],
+  "Y_SAME_source_crops": [
+    "MV-G3-TRAIN-A",
+    "MV-G3-TRAIN-B",
+    "MV-G3-TRAIN-D",
+    "MV-G3-TRAIN-F",
+    "MV-G3-TRAIN-G",
+    "MV-G3-TRAIN-H"
+  ],
+  "Y_class_crop_disjoint": true,
+  "axis_identifiability": {
+    "X": {
+      "both_classes_present_in_train": true,
+      "class_crop_collinear": true,
+      "crops_with_both_classes": [],
+      "different_crops": [
+        "MV-G3-TRAIN-E"
+      ],
+      "replicated_different_ge2": false,
+      "replicated_same_ge2": true,
+      "same_crops": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-G"
+      ]
+    },
+    "Y": {
+      "both_classes_present_in_train": true,
+      "class_crop_collinear": true,
+      "crops_with_both_classes": [],
+      "different_crops": [
+        "MV-G3-TRAIN-C",
+        "MV-G3-TRAIN-E"
+      ],
+      "replicated_different_ge2": true,
+      "replicated_same_ge2": true,
+      "same_crops": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    "Z": {
+      "both_classes_present_in_train": false,
+      "class_crop_collinear": false,
+      "crops_with_both_classes": [],
+      "different_crops": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-C",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ],
+      "replicated_different_ge2": true,
+      "replicated_same_ge2": false,
+      "same_crops": []
+    }
+  },
+  "decision_unit": "interface_id (member-agreement required; CONTRADICTORY/UNCERTAIN/BAD excluded from class)",
+  "id": "MV-G3-IDENTIFIABILITY-AUDIT-001",
+  "per_crop_interface_counts": {
+    "MV-G3-TRAIN-A": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 13
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-B": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 3
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 11
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-C": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 11,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 1,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-D": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 9
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-E": {
+      "X": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 0
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 0
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-F": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 4
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-G": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 5
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-TRAIN-H": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 2
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 5,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+      },
+      "_split": "G3_TARGET_TRAIN"
+    },
+    "MV-G3-VALIDATION-V1": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 5
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_VALIDATION"
+    },
+    "MV-G3-VALIDATION-V2": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 4
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_VALIDATION"
+    },
+    "MV-G3-VALIDATION-V3": {
+      "X": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 1
+      },
+      "Y": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 3
+      },
+      "Z": {
+        "DIFFERENT_PROCESS": 0,
+        "SAME_PROCESS": 0
+      },
+      "_contradictory": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "_split": "G3_TARGET_VALIDATION"
+    }
+  },
+  "scope": "all reviewed TRAIN A-H + VALIDATION event logs (-001..-004), read-only",
+  "train_axis_class_replicated_across_crops": {
+    "X:SAME_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-G"
+    ],
+    "Y:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-C",
+      "MV-G3-TRAIN-E"
+    ],
+    "Y:SAME_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-F",
+      "MV-G3-TRAIN-G",
+      "MV-G3-TRAIN-H"
+    ],
+    "Z:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-C",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-F",
+      "MV-G3-TRAIN-G",
+      "MV-G3-TRAIN-H"
+    ]
+  },
+  "train_axis_class_supply": {
+    "X:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-E"
+    ],
+    "X:SAME_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-G"
+    ],
+    "Y:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-C",
+      "MV-G3-TRAIN-E"
+    ],
+    "Y:SAME_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-F",
+      "MV-G3-TRAIN-G",
+      "MV-G3-TRAIN-H"
+    ],
+    "Z:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-C",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-F",
+      "MV-G3-TRAIN-G",
+      "MV-G3-TRAIN-H"
+    ],
+    "Z:SAME_PROCESS": []
+  },
+  "train_axis_class_unique_source_crops": {
+    "X:DIFFERENT_PROCESS": [
+      "MV-G3-TRAIN-E"
+    ]
+  }
+}

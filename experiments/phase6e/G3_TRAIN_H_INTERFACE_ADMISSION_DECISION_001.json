@@ -1,0 +1,13 @@
+{
+  "id": "MV-G3-TRAIN-H-INTERFACE-ADMISSION-DECISION-001",
+  "status": "ADMITTED_WITH_CONTRADICTORY_INTERFACE_EXCLUDED_PENDING_G3_002_DATASET_FREEZE",
+  "region_id": "MV-G3-TRAIN-H",
+  "split": "G3_TARGET_TRAIN",
+  "reviewer": "matth",
+  "reviewed_pair_counts": {"SAME_PROCESS": 7, "DIFFERENT_PROCESS": 17, "UNCERTAIN": 0, "BAD_QUESTION": 0},
+  "interface_counts": {"SAME_PROCESS": 2, "DIFFERENT_PROCESS": 5, "UNCERTAIN": 0, "BAD_QUESTION": 0, "CONTRADICTORY": 1, "ELIGIBLE": 7},
+  "excluded_interface_ids": ["MV-G3-IF-001"],
+  "admission_result": {"same_process_required": true, "different_process_required": true, "same_process_available": true, "different_process_available": true, "eligible_for_g3_supervision": true},
+  "preservation": {"original_review_events_append_only": true, "no_correction_inferred": true, "mixed_interface_excluded_fail_closed": true, "no_target_tensor_materialized_yet": true, "mv_gtvol_000004_accessed": false},
+  "reason": "The reviewer reported a possible first-question misclick but did not identify a conflicting question reference. The log is preserved without correction. IF-001 has mixed SAME/DIFFERENT decisions and is excluded; the other seven unanimous interfaces retain both required classes."
+}

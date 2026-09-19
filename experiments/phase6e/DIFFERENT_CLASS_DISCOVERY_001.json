@@ -1,0 +1,303 @@
+{
+  "blinding": {
+    "axis_blind_during_judgment": true,
+    "mapping_hash": "e9f44df9eae5a461bc6f1262db40152b581a10125a84850ceaaf6f099cd343a8",
+    "order_hash": "c2656f2536a21a018c766f42ad1e65b298eb0578a7d836b174e50149eef386b8",
+    "sealed_axis_map_path": "experiments/phase6e/DIFFERENT_CLASS_DISCOVERY_AXIS_MAP_SEALED_001.json"
+  },
+  "completed_at": "2026-09-18T02:02:23.794270Z",
+  "created_at": "2026-09-18T01:51:35.377101Z",
+  "design": {
+    "abs_face_step_min": 12.0,
+    "n_decisions": 12,
+    "n_per_axis": 4,
+    "note_on_035": "SURVEY-035 was used in AS2 at one low-contrast center (mean3\u22482). This discovery uses other centers with abs face-step \u226512, spatially separated by \u226516 voxels from that AS2 center.",
+    "screen_path": "experiments/phase6e/DIFFERENT_CLASS_DISCOVERY_SCREEN_001.json",
+    "selection": "abs |\u0394I| >= 12.0 on single face; darker-endpoint tiebreak; sep>=16; 4 per axis; prefer SURVEY-035 C/E-magnitude tissue",
+    "source": "MV-DVID-RAW-SURVEY-035"
+  },
+  "do_not_train": true,
+  "id": "DIFFERENT_CLASS_DISCOVERY_001",
+  "launch_example": ".\\.venv-reviewer\\Scripts\\python.exe tools\\review_equivariant_edge_batch.py experiments\\phase6e\\different-class-discovery-queues\\MASTER_BATCH.json --reviewer matth",
+  "not_a_g3_training_cohort": true,
+  "not_as2_revalidation": true,
+  "not_experiment_009": true,
+  "paths": {
+    "master_queue": "experiments/phase6e/different-class-discovery-queues/MASTER_BATCH.json",
+    "packages": "experiments/phase6e/different-class-discovery-packages",
+    "queues": "experiments/phase6e/different-class-discovery-queues"
+  },
+  "predeclared_verdict_rules": {
+    "DIFFERENT_CLASS_DEMONSTRATED": "\u22651 DIFFERENT_PROCESS among class-countable edges.",
+    "DIFFERENT_CLASS_STILL_NOT_FOUND": "Zero DIFFERENT_PROCESS among class-countable edges.",
+    "discovery_labels_are_not_automatic_production_gt": true,
+    "do_not_train": true,
+    "exclusions_from_class_counts": [
+      "UNCERTAIN",
+      "BAD_QUESTION"
+    ],
+    "priority_order": [
+      "DIFFERENT_CLASS_STILL_NOT_FOUND",
+      "DIFFERENT_CLASS_DEMONSTRATED"
+    ]
+  },
+  "presentation_mode": "EQUIVARIANT_EDGE_FACE_V1",
+  "results": {
+    "by_axis_decision": {
+      "X:DIFFERENT_PROCESS": 1,
+      "X:SAME_PROCESS": 3,
+      "Y:DIFFERENT_PROCESS": 3,
+      "Y:SAME_PROCESS": 1,
+      "Z:SAME_PROCESS": 3
+    },
+    "class_counts": {
+      "DIFFERENT_PROCESS": 4,
+      "SAME_PROCESS": 7,
+      "excluded": 1
+    },
+    "decisions": [
+      {
+        "abs_face_step": 121.0,
+        "axis_name": "X",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696829808265",
+        "opaque_decision_id": "MV-DCD-292DC685ECB0",
+        "pair_left_zyx": [
+          11,
+          88,
+          74
+        ],
+        "pair_right_zyx": [
+          11,
+          88,
+          75
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 135.0,
+        "axis_name": "Z",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696848866588",
+        "opaque_decision_id": "MV-DCD-4DC0861BA26F",
+        "pair_left_zyx": [
+          13,
+          33,
+          109
+        ],
+        "pair_right_zyx": [
+          14,
+          33,
+          109
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 121.0,
+        "axis_name": "Z",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696909793183",
+        "opaque_decision_id": "MV-DCD-4ED96552F776",
+        "pair_left_zyx": [
+          44,
+          64,
+          28
+        ],
+        "pair_right_zyx": [
+          45,
+          64,
+          28
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 135.0,
+        "axis_name": "X",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696769411810",
+        "opaque_decision_id": "MV-DCD-8566460BEAB7",
+        "pair_left_zyx": [
+          57,
+          35,
+          47
+        ],
+        "pair_right_zyx": [
+          57,
+          35,
+          48
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 122.0,
+        "axis_name": "X",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696893655484",
+        "opaque_decision_id": "MV-DCD-94B7C8D63567",
+        "pair_left_zyx": [
+          34,
+          77,
+          44
+        ],
+        "pair_right_zyx": [
+          34,
+          77,
+          45
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 170.0,
+        "axis_name": "Y",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696929340785",
+        "opaque_decision_id": "MV-DCD-976986EFB4F3",
+        "pair_left_zyx": [
+          53,
+          66,
+          56
+        ],
+        "pair_right_zyx": [
+          53,
+          67,
+          56
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 121.0,
+        "axis_name": "X",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696752529000",
+        "opaque_decision_id": "MV-DCD-AAFC89A7EC3A",
+        "pair_left_zyx": [
+          57,
+          93,
+          52
+        ],
+        "pair_right_zyx": [
+          57,
+          93,
+          53
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 178.0,
+        "axis_name": "Y",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696797344992",
+        "opaque_decision_id": "MV-DCD-B45FB6A66A83",
+        "pair_left_zyx": [
+          38,
+          61,
+          11
+        ],
+        "pair_right_zyx": [
+          38,
+          62,
+          11
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 117.0,
+        "axis_name": "Z",
+        "decision": "UNCERTAIN",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696814175597",
+        "opaque_decision_id": "MV-DCD-C981DA531766",
+        "pair_left_zyx": [
+          8,
+          51,
+          63
+        ],
+        "pair_right_zyx": [
+          9,
+          51,
+          63
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 160.0,
+        "axis_name": "Y",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696873878682",
+        "opaque_decision_id": "MV-DCD-CC0534D3C7F6",
+        "pair_left_zyx": [
+          11,
+          10,
+          82
+        ],
+        "pair_right_zyx": [
+          11,
+          11,
+          82
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 118.0,
+        "axis_name": "Z",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696783464083",
+        "opaque_decision_id": "MV-DCD-E3095D609660",
+        "pair_left_zyx": [
+          11,
+          26,
+          90
+        ],
+        "pair_right_zyx": [
+          12,
+          26,
+          90
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      },
+      {
+        "abs_face_step": 161.0,
+        "axis_name": "Y",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789696735822133",
+        "opaque_decision_id": "MV-DCD-E58F28416BA3",
+        "pair_left_zyx": [
+          42,
+          83,
+          110
+        ],
+        "pair_right_zyx": [
+          42,
+          84,
+          110
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-035"
+      }
+    ],
+    "n_decisions": 12
+  },
+  "schema_version": 1,
+  "status": "COMPLETE_UNBLINDED",
+  "synthetic_gate": {
+    "overall_pass": true,
+    "path": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json"
+  },
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "verdict": {
+    "detail": "4 DIFFERENT_PROCESS of 11 class-countable edges.",
+    "discovery_labels_are_not_automatic_production_gt": true,
+    "do_not_train": true,
+    "value": "DIFFERENT_CLASS_DEMONSTRATED"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001-AMENDMENT-002",
+  "amends": "MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001",
+  "status": "CPDINO_VITB_ZERO_SHOT_RAW_OUTPUT_AUDIT_COMPLETE",
+  "scope": "Frozen G3 Train A plus V1/V2/V3 exploratory raw-output descriptors only. No Cellpose mask, threshold, neuronal instance, pseudolabel, target adaptation, or protected-regression access occurred.",
+  "frozen_descriptor_orientations_declared_from_train_a": {
+    "cell_probability_abs_delta": "DIFFERENT_HIGH",
+    "flow_l2_delta": "DIFFERENT_LOW",
+    "flow_cosine_similarity": "DIFFERENT_HIGH"
+  },
+  "auc_by_region": {
+    "MV-G3-TRAIN-A": {"cell_probability_abs_delta_different_high": 0.762962962962963, "flow_l2_delta_different_low": 0.8074074074074074, "flow_cosine_similarity_different_high": 0.6814814814814815},
+    "MV-G3-VALIDATION-V1": {"cell_probability_abs_delta_different_high": 0.46296296296296297, "flow_l2_delta_different_low": 0.9814814814814815, "flow_cosine_similarity_different_high": 0.7685185185185185},
+    "MV-G3-VALIDATION-V2": {"cell_probability_abs_delta_different_high": 0.7638888888888888, "flow_l2_delta_different_low": 0.5208333333333333, "flow_cosine_similarity_different_high": 0.5625},
+    "MV-G3-VALIDATION-V3": {"cell_probability_abs_delta_different_high": 0.4722222222222222, "flow_l2_delta_different_low": 0.712962962962963, "flow_cosine_similarity_different_high": 0.3148148148148148}
+  },
+  "decision": "RAW_OUTPUT_DESCRIPTOR_TRANSFER_INSUFFICIENT_FOR_AFFINITY_HEAD_TRAINING",
+  "reason": "No single Train-A-declared direct Cellpose output descriptor remained consistently discriminative across V1, V2, and V3. This does not establish that every internal encoder feature is uninformative; it only closes the direct flow/cell-probability descriptor route.",
+  "model_runtime": {
+    "cpdino_vitb": "AMD_ROCM_REAL_DVID_INFERENCE_PASS",
+    "cpdino_vitl": "AMD_SYNTHETIC_FORWARD_PASS_REAL_DVID_INFERENCE_BLOCKED_INSUFFICIENT_SAFE_VRAM_HEADROOM",
+    "cpsam_v2": "AMD_ROCM_REAL_DVID_TRAIN_A_ONLY_NOT_ADVANCED_TO_VALIDATION"
+  },
+  "scientific_state": {
+    "MV-GTVOL-000004_used": false,
+    "G3_labels_changed": false,
+    "target_adaptation_started": false,
+    "biological_promotions": false,
+    "MV-FRAG": 0,
+    "MV-N": 0,
+    "MV-CONN": 0
+  },
+  "next_allowed_experiment": "A separately versioned, no-training CellposeDINO internal-feature separability audit. It must use the frozen G3 cohort, preserve the same protected-volume exclusion, and predeclare feature extraction and evaluation before any affinity-head training is considered."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "MV-CELLPOSE-CPDINOVITB-ENCODER-PAIR-AUDIT-AMENDMENT-001",
+  "amends": "MV-CELLPOSE-CPDINOVITB-ENCODER-PAIR-AUDIT-G3-TRAIN-A-002",
+  "status": "AXIS_QUANTIZATION_CONFOUNDED_NOT_ELIGIBLE_FOR_SELECTION",
+  "finding": "Train-A SAME pairs were Y/X-adjacent while all reviewed DIFFERENT pairs were Z-adjacent. The initial nearest-token extraction also made many direct XY neighbors identical under CPDINO's stride-8 token grid.",
+  "consequence": "Its apparent AUC=1.0 cannot be interpreted as neuron-boundary separability and cannot select a Cellpose representation or authorize affinity-head training.",
+  "remediation": "The versioned extractor now bilinearly interpolates the token grid and emits a fail-closed axis-confounding gate. Frozen labels and all original receipts remain unchanged.",
+  "protected_volume_used": false,
+  "biological_promotions": false
+}

@@ -1,0 +1,243 @@
+{
+  "axis_index_legend": {
+    "0": "Z",
+    "1": "Y",
+    "2": "X"
+  },
+  "crops_measured": 12,
+  "id": "MV-G3-AXIS-GRADIENT-STATISTICS-001",
+  "per_crop": {
+    "MV-G3-TRAIN-A": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.5008699459729957,
+        0.2910334170458442,
+        0.20809663698116004
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.44967904630903255,
+        0.31235671710224666,
+        0.23796423658872076
+      ],
+      "mean_abs_grad_ZYX": [
+        0.8656008839607239,
+        0.775213360786438,
+        0.7490750551223755
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-001"
+    },
+    "MV-G3-TRAIN-B": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.452047558591035,
+        0.3088018608271785,
+        0.2391505805817865
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.4441024513575904,
+        0.3141695064306914,
+        0.24172804221171815
+      ],
+      "mean_abs_grad_ZYX": [
+        1.350053071975708,
+        1.2343339920043945,
+        1.1877565383911133
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-008"
+    },
+    "MV-G3-TRAIN-C": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.3453372749260951,
+        0.3898759602998823,
+        0.2647867647740226
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.2242676855389603,
+        0.5855042260043997,
+        0.19022808845664005
+      ],
+      "mean_abs_grad_ZYX": [
+        7.848143100738525,
+        8.922658920288086,
+        7.309288501739502
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-017"
+    },
+    "MV-G3-TRAIN-D": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.44650932730356135,
+        0.31030428416536154,
+        0.2431863885310771
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.4760422456920511,
+        0.29127292940522514,
+        0.23268482490272374
+      ],
+      "mean_abs_grad_ZYX": [
+        1.6108468770980835,
+        1.4525717496871948,
+        1.390024185180664
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-024"
+    },
+    "MV-G3-TRAIN-E": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.3178859038634405,
+        0.3828109796217183,
+        0.2993031165148412
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.03126809496236248,
+        0.7505500868558194,
+        0.21818181818181817
+      ],
+      "mean_abs_grad_ZYX": [
+        13.799354553222656,
+        16.774831771850586,
+        14.264280319213867
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-027"
+    },
+    "MV-G3-TRAIN-F": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.48780338062626843,
+        0.29566579247328767,
+        0.2165308269004439
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.4914337240757439,
+        0.2909152389540126,
+        0.21765103697024346
+      ],
+      "mean_abs_grad_ZYX": [
+        0.9976444244384766,
+        0.889896810054779,
+        0.8586129546165466
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-031"
+    },
+    "MV-G3-TRAIN-G": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.49387215153508973,
+        0.29434060180337135,
+        0.2117872466615389
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.4500868055555556,
+        0.3135850694444444,
+        0.236328125
+      ],
+      "mean_abs_grad_ZYX": [
+        0.9028898477554321,
+        0.8133120536804199,
+        0.7829508185386658
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-002"
+    },
+    "MV-G3-TRAIN-H": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.454024919144835,
+        0.30663336700367905,
+        0.23934171385148598
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.48688750862663904,
+        0.294570968484012,
+        0.21854152288934897
+      ],
+      "mean_abs_grad_ZYX": [
+        1.4363051652908325,
+        1.2904901504516602,
+        1.2418867349624634
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-022"
+    },
+    "MV-G3-TRAIN-I": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.4735147207369172,
+        0.3012920609031684,
+        0.22519321835991438
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.48196313468279994,
+        0.3006898111500622,
+        0.21734705416713784
+      ],
+      "mean_abs_grad_ZYX": [
+        1.138694405555725,
+        1.0218157768249512,
+        0.9814820885658264
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-013"
+    },
+    "MV-G3-TRAIN-J": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.46737992197129063,
+        0.3028859965341167,
+        0.22973408149459268
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.46565504459631646,
+        0.30985752345650414,
+        0.22448743194717943
+      ],
+      "mean_abs_grad_ZYX": [
+        1.1748273372650146,
+        1.0621049404144287,
+        1.0239536762237549
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-009"
+    },
+    "MV-G3-TRAIN-K": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.4869600774726853,
+        0.29597160570480685,
+        0.21706831682250785
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.4686740623349181,
+        0.307554146856841,
+        0.2237717908082409
+      ],
+      "mean_abs_grad_ZYX": [
+        0.9749013185501099,
+        0.8758143186569214,
+        0.8437103033065796
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-003"
+    },
+    "MV-G3-TRAIN-L": {
+      "dominant_axis_fraction_all_ZYX": [
+        0.45597795364612775,
+        0.30698088203949625,
+        0.237041164314376
+      ],
+      "dominant_axis_fraction_top1pct_ZYX": [
+        0.44834241598546776,
+        0.3195958219800182,
+        0.2320617620345141
+      ],
+      "mean_abs_grad_ZYX": [
+        1.300337553024292,
+        1.1832174062728882,
+        1.140382170677185
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-007"
+    }
+  },
+  "pooled_dominant_axis_fraction_top1pct_ZYX": [
+    0.4098668516431197,
+    0.36588517051035635,
+    0.22424797784652375
+  ],
+  "pooled_mean_abs_grad_ZYX": [
+    2.7832998782396317,
+    3.0246884375810623,
+    2.6477836122115455
+  ],
+  "voxel_isotropic": true,
+  "voxel_size_nm_xyz": [
+    8,
+    8,
+    8
+  ]
+}

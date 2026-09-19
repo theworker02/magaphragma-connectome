@@ -1,0 +1,406 @@
+"""FAST S7 worker under AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001.
+
+Batched tiles, core-only fetch, stride (10,64,64), AMP, no raw persist, seg deferred.
+"""
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import os
+import sys
+import time
+from datetime import datetime, timezone
+from itertools import product
+from pathlib import Path
+from urllib.request import urlopen
+
+import numpy as np
+
+REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO / "tools"))
+CONTRACT_FAST_001 = REPO / "experiments/phase6e/AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001.json"
+CONTRACT_FAST_002 = REPO / "experiments/phase6e/AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_002.json"
+S6 = REPO / "experiments/phase6e/AFFINITY_S6_SEG_QC_AUTHORIZATION_001.json"
+CHUNKS = REPO / "local_research_build/phase5c-production/chunks.json"
+ROI_PKG = REPO / "experiments/phase6e/AFFINITY-ROI-001/package/ROI_PACKAGE.json"
+OUT = REPO / "experiments/phase6e/AFFINITY-FULLVOL-S7-001"
+CKPT = REPO / "experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/extend/checkpoints/checkpoint-step10.pt"
+BASE = "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/"
+CROP_SIZE = (20, 64, 64)
+STRIDE = (10, 64, 64)
+BATCH = 8
+STATE_PATH = OUT / "queue_state.json"
+N_CHUNKS = 28798
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        while chunk := f.read(1024 * 1024):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def win_to_wsl(path: Path | str) -> Path:
+    text = str(path).replace("\\", "/")
+    on_linux = sys.platform.startswith("linux")
+    if text.startswith("/mnt/") and not on_linux:
+        parts = text.split("/")
+        return Path(f"{parts[2].upper()}:/" + "/".join(parts[3:]))
+    if len(text) >= 2 and text[1] == ":" and on_linux:
+        return Path(f"/mnt/{text[0].lower()}/{text[3:]}")
+    return Path(text)
+
+
+def overlaps(a: dict, b: dict) -> bool:
+    for ax in ("x", "y", "z"):
+        if a[ax][1] <= b[ax][0] or b[ax][1] <= a[ax][0]:
+            return False
+    return True
+
+
+def roi_bounds_xyz(pkg: dict) -> dict:
+    ox, oy, oz = pkg["roi_origin_xyz"]
+    sx, sy, sz = pkg["roi_size_xyz"]
+    return {"x": [ox, ox + sx], "y": [oy, oy + sy], "z": [oz, oz + sz]}
+
+
+def load_state(chunks: list[dict]) -> dict:
+    if STATE_PATH.exists():
+        return json.loads(STATE_PATH.read_text(encoding="utf-8"))
+    return {
+        "created_at": _now(),
+        "contract_id": "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001",
+        "completed": [],
+        "failed": [],
+        "status_by_id": {c["id"]: "NOT_STARTED" for c in chunks},
+    }
+
+
+def save_state(state: dict) -> None:
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp = STATE_PATH.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(state, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    tmp.replace(STATE_PATH)
+
+
+def priority_queue(chunks: list[dict], state: dict, roi: dict) -> list[dict]:
+    by_id = {c["id"]: c for c in chunks}
+    # Reclaim RUNNING stubs that never wrote affinities (crashed/killed workers)
+    for c in chunks:
+        cid = c["id"]
+        if state["status_by_id"].get(cid) == "RUNNING":
+            aff = OUT / "chunks" / cid / "affinities_core_czyx.npy"
+            if not aff.exists():
+                state["status_by_id"][cid] = "NOT_STARTED"
+    pending = [c for c in chunks if state["status_by_id"].get(c["id"]) == "NOT_STARTED"]
+    seed = [c for c in pending if overlaps(c["core_bounds_xyz"], roi)]
+    ordered, seen, frontier = [], set(), [c["id"] for c in sorted(seed, key=lambda c: c["id"])]
+    while frontier:
+        cid = frontier.pop(0)
+        if cid in seen or state["status_by_id"].get(cid) != "NOT_STARTED":
+            continue
+        seen.add(cid)
+        ordered.append(by_id[cid])
+        for nid in by_id[cid].get("neighbor_chunk_ids", []):
+            if nid not in seen and state["status_by_id"].get(nid) == "NOT_STARTED":
+                frontier.append(nid)
+    rest = sorted([c for c in pending if c["id"] not in seen], key=lambda c: c["id"])
+    return ordered + rest
+
+
+def fetch_raw(bounds: dict) -> tuple[np.ndarray, str]:
+    x0, x1 = bounds["x"]
+    y0, y1 = bounds["y"]
+    z0, z1 = bounds["z"]
+    sx, sy, sz = x1 - x0, y1 - y0, z1 - z0
+    url = BASE + f"{sx}_{sy}_{sz}/{x0}_{y0}_{z0}"
+    expected = sx * sy * sz
+    with urlopen(url, timeout=600) as response:
+        payload = response.read()
+    if len(payload) != expected:
+        raise RuntimeError(f"bad payload {len(payload)} != {expected}")
+    return np.frombuffer(payload, dtype=np.uint8).reshape((sz, sy, sx)), url
+
+
+def tile_layout(shape):
+    counts = tuple(max(1, (n - c) // s + 2) for n, c, s in zip(shape, CROP_SIZE, STRIDE))
+    padded_shape = tuple(c + (count - 1) * s for c, count, s in zip(CROP_SIZE, counts, STRIDE))
+    padding = tuple(((p - n) // 2, (p - n + 1) // 2) for n, p in zip(shape, padded_shape))
+    starts = tuple(tuple(i * step for i in range(count)) for count, step in zip(counts, STRIDE))
+    return padding, starts
+
+
+def gaussian_weight():
+    zz, yy, xx = np.meshgrid(*(np.linspace(-1, 1, n, dtype=np.float32) for n in CROP_SIZE), indexing="ij")
+    distance = np.sqrt(zz * zz + yy * yy + xx * xx)
+    return 1e-6 + np.exp(-(distance**2 / (2.0 * 0.2**2)))
+
+
+def infer_volume_batched(model, volume: np.ndarray, device: str, batch_size: int = BATCH):
+    import torch
+
+    padding, starts = tile_layout(volume.shape)
+    padded = np.pad(volume, padding, mode="reflect")
+    sums = np.zeros((4,) + padded.shape, dtype=np.float32)
+    weights = np.zeros(padded.shape, dtype=np.float32)
+    patch_weight = gaussian_weight()
+    positions = list(product(*starts))
+    total = len(positions)
+    model = model.to(device).eval()
+    if hasattr(torch.cuda, "reset_peak_memory_stats"):
+        torch.cuda.reset_peak_memory_stats()
+    t0 = time.perf_counter()
+    use_amp = device.startswith("cuda")
+    with torch.inference_mode():
+        for start in range(0, total, batch_size):
+            batch_pos = positions[start : start + batch_size]
+            patches = []
+            regions = []
+            for position in batch_pos:
+                region = tuple(slice(s, s + size) for s, size in zip(position, CROP_SIZE))
+                patch = np.ascontiguousarray(padded[region], dtype=np.float32) / 255.0
+                patches.append(patch)
+                regions.append(region)
+            tensor = torch.from_numpy(np.stack(patches)[:, None]).to(device)
+            if use_amp:
+                with torch.autocast(device_type="cuda", dtype=torch.float16):
+                    affinities, boundaries = model(tensor)
+            else:
+                affinities, boundaries = model(tensor)
+            prediction = torch.cat((affinities, boundaries), dim=1).float().cpu().numpy()
+            for i, region in enumerate(regions):
+                sums[(slice(None),) + region] += prediction[i] * patch_weight
+                weights[region] += patch_weight
+            done = min(start + batch_size, total)
+            if done % 256 < batch_size or done == total:
+                elapsed = time.perf_counter() - t0
+                tps = done / elapsed if elapsed > 0 else float("nan")
+                print(f"    infer {done}/{total} tiles_per_sec={tps:.2f} batch={batch_size}", flush=True)
+    infer_seconds = time.perf_counter() - t0
+    sums /= weights[None]
+    np.clip(sums, 0.0, 1.0, out=sums)
+    original = tuple(slice(pad[0], pad[0] + size) for pad, size in zip(padding, volume.shape))
+    telemetry = {
+        "tiles_total": total,
+        "infer_seconds": infer_seconds,
+        "tiles_per_second": total / infer_seconds if infer_seconds > 0 else None,
+        "tile_batch_size": batch_size,
+        "stride_zyx": list(STRIDE),
+        "crop_size_zyx": list(CROP_SIZE),
+        "amp": use_amp,
+        "vram_peak_bytes": int(torch.cuda.max_memory_allocated()) if torch.cuda.is_available() else None,
+        "read_shape_zyx": list(volume.shape),
+        "mode": "FAST_001",
+    }
+    return sums[(slice(0, 3),) + original].copy(), sums[(3,) + original].copy(), telemetry
+
+
+def process_chunk_fast(chunk: dict, model, device: str, batch_size: int = BATCH) -> dict:
+    cid = chunk["id"]
+    chunk_dir = OUT / "chunks" / cid
+    if (chunk_dir / "affinities_core_czyx.npy").exists():
+        raise FileExistsError(chunk_dir)
+    chunk_dir.mkdir(parents=True, exist_ok=True)
+
+    phases: dict[str, float] = {}
+    wall0 = time.perf_counter()
+    core = chunk["core_bounds_xyz"]
+    print(f"  FAST fetch {cid} core={core}", flush=True)
+    t = time.perf_counter()
+    raw, url = fetch_raw(core)
+    phases["dvid_fetch_seconds"] = time.perf_counter() - t
+    phases["raw_save_seconds"] = 0.0  # T5: skip
+    print(f"  FAST infer {cid} shape={raw.shape}", flush=True)
+    affinities, boundaries, infer_tel = infer_volume_batched(model, raw, device=device, batch_size=batch_size)
+    phases["affinity_infer_seconds"] = float(infer_tel["infer_seconds"])
+    t = time.perf_counter()
+    np.save(chunk_dir / "affinities_core_czyx.npy", affinities, allow_pickle=False)
+    import tifffile
+
+    tifffile.imwrite(chunk_dir / "boundaries_core.tif", boundaries)
+    phases["core_crop_save_seconds"] = time.perf_counter() - t
+    del raw
+    phases["segmentation_seconds"] = 0.0
+    phases["total_wall_seconds"] = time.perf_counter() - wall0
+    status = "AFFINITY_DONE_SEG_PENDING"
+    output_bytes = {p.name: p.stat().st_size for p in chunk_dir.iterdir() if p.is_file()}
+    receipt = {
+        "chunk_id": cid,
+        "created_at": _now(),
+        "throughput_contract_id": "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001",
+        "source_url": url,
+        "core_bounds_xyz": core,
+        "read_bounds_xyz": core,  # core-only
+        "affinities_shape_czyx": list(affinities.shape),
+        "segmentation": {"deferred": True},
+        "status": status,
+        "classification": "MACHINE_PSEUDOLABEL_CHUNK",
+        "checkpoint_sha256": sha256(win_to_wsl(CKPT)),
+        "throughput_telemetry": {
+            **infer_tel,
+            "phase_seconds": phases,
+            "output_bytes": output_bytes,
+            "naive_serial_full_volume_gpu_hours": N_CHUNKS * phases["affinity_infer_seconds"] / 3600.0,
+        },
+    }
+    (chunk_dir / "receipt.json").write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    (chunk_dir / "throughput_telemetry.json").write_text(
+        json.dumps(receipt["throughput_telemetry"], indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    return receipt
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--max-chunks", type=int, default=4)
+    ap.add_argument("--loop", action="store_true", help="Keep taking batches until NOT_STARTED is empty")
+    ap.add_argument("--batch-size", type=int, default=16)
+    ap.add_argument("--claim", action="store_true", help="Use exclusive claim-lock (FAST_002 multi-worker)")
+    ap.add_argument("--contract", default="FAST_002")
+    args = ap.parse_args()
+    batch_size = int(args.batch_size)
+
+    if json.loads(S6.read_text(encoding="utf-8")).get("status") != "APPROVED":
+        raise SystemExit("S6 not approved")
+    contract_path = CONTRACT_FAST_002 if args.contract == "FAST_002" else CONTRACT_FAST_001
+    contract = json.loads(contract_path.read_text(encoding="utf-8"))
+    chunks = json.loads(CHUNKS.read_text(encoding="utf-8"))["chunks"]
+    roi = roi_bounds_xyz(json.loads(ROI_PKG.read_text(encoding="utf-8")))
+
+    OUT.mkdir(parents=True, exist_ok=True)
+    state = load_state(chunks)
+    state["fast_contract_id"] = contract["id"]
+    state["opened_at"] = state.get("opened_at") or _now()
+    save_state(state)
+
+    import torch
+
+    if not torch.cuda.is_available():
+        raise SystemExit("CUDA/ROCm required")
+    sys.path.insert(0, str(REPO / "third_party/segneuron/Train_and_Inference"))
+    from model.Mnet import MNet
+
+    model = MNet(1, kn=(32, 64, 96, 128, 256), FMU="sub")
+    ckpt = torch.load(win_to_wsl(CKPT), map_location="cuda", weights_only=False)
+    model.load_state_dict(ckpt["model_weights"], strict=True)
+
+    from s7_chunk_claim import (  # noqa: E402
+        claim_backend,
+        complete_dynamodb,
+        release_local,
+        try_claim_dynamodb,
+        try_claim_local,
+        worker_id,
+    )
+
+    wid = worker_id()
+    backend = claim_backend()
+    ddb_table = os.environ.get("S7_DDB_TABLE", "")
+    print(f"worker_id={wid} claim={args.claim} backend={backend} contract={args.contract}", flush=True)
+
+    total_done_run = []
+    while True:
+        state = load_state(chunks)
+        queue = priority_queue(chunks, state, roi)
+        save_state(state)  # persist any RUNNING reclaim
+        print(f"FAST queue pending={len(queue)} max={args.max_chunks} batch={batch_size}", flush=True)
+        if not queue:
+            break
+        done = []
+        for chunk in queue[: args.max_chunks]:
+            cid = chunk["id"]
+            if args.claim:
+                if backend == "dynamodb":
+                    if not ddb_table:
+                        raise SystemExit("S7_DDB_TABLE required for dynamodb claim backend")
+                    if not try_claim_dynamodb(cid, ddb_table, wid=wid):
+                        print(f"  skip {cid} (claim lost)", flush=True)
+                        continue
+                else:
+                    if not try_claim_local(cid, wid=wid):
+                        print(f"  skip {cid} (claim lost)", flush=True)
+                        continue
+            else:
+                if state["status_by_id"].get(cid) == "RUNNING":
+                    aff = OUT / "chunks" / cid / "affinities_core_czyx.npy"
+                    if aff.exists():
+                        print(f"  skip {cid} (RUNNING with affinities)", flush=True)
+                        continue
+                state["status_by_id"][cid] = "RUNNING"
+                save_state(state)
+            try:
+                receipt = process_chunk_fast(chunk, model, device="cuda", batch_size=batch_size)
+                receipt["throughput_contract_id"] = (
+                    "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_002"
+                    if args.contract == "FAST_002"
+                    else "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001"
+                )
+                receipt["worker_id"] = wid
+                (OUT / "chunks" / cid / "receipt.json").write_text(
+                    json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+                )
+                if args.claim:
+                    if backend == "dynamodb":
+                        complete_dynamodb(cid, ddb_table, receipt["status"])
+                    release_local(cid, receipt["status"])
+                else:
+                    state = load_state(chunks)
+                    state["status_by_id"][cid] = receipt["status"]
+                    state.setdefault("completed", []).append(cid)
+                    save_state(state)
+                done.append(receipt)
+                total_done_run.append(cid)
+                tel = receipt["throughput_telemetry"]
+                print(
+                    json.dumps(
+                        {
+                            "chunk": cid,
+                            "tiles": tel["tiles_total"],
+                            "tiles_per_sec": tel["tiles_per_second"],
+                            "infer_s": tel["infer_seconds"],
+                            "naive_serial_gpu_days": tel["naive_serial_full_volume_gpu_hours"] / 24.0,
+                            "worker_id": wid,
+                        }
+                    ),
+                    flush=True,
+                )
+            except Exception as exc:  # noqa: BLE001
+                if args.claim:
+                    if backend == "dynamodb" and ddb_table:
+                        complete_dynamodb(cid, ddb_table, "FAILED")
+                    release_local(cid, "FAILED")
+                else:
+                    state = load_state(chunks)
+                    state["status_by_id"][cid] = "FAILED"
+                    state.setdefault("failed", []).append({"id": cid, "error": str(exc)})
+                    save_state(state)
+                print(f"FAILED {cid}: {exc}", flush=True)
+
+        state = load_state(chunks)
+        n_done = sum(1 for s in state["status_by_id"].values() if s in {"COMPLETE", "AFFINITY_DONE_SEG_PENDING"})
+        n_left = sum(1 for s in state["status_by_id"].values() if s == "NOT_STARTED")
+        summary = {
+            "id": "AFFINITY_FULLVOL_S7_001_PROGRESS",
+            "updated_at": _now(),
+            "mode": "FAST_002" if args.claim else "FAST_001",
+            "chunks_completed_this_run": total_done_run[-50:],
+            "n_done": n_done,
+            "n_not_started": n_left,
+            "n_total": len(chunks),
+            "status": "RUNNING" if n_left else "COMPLETE",
+        }
+        (OUT / "PROGRESS.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        print(json.dumps(summary, indent=2), flush=True)
+        if not args.loop or n_left == 0:
+            break
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

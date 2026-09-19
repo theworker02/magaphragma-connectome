@@ -1,0 +1,51 @@
+{
+  "artifactvet": {
+    "issues": [],
+    "kind": "json",
+    "meta": {
+      "keys": [
+        "class_counts",
+        "n_tiles",
+        "tile_zyx",
+        "tiles",
+        "tool_version",
+        "volume_shape"
+      ],
+      "sha256": "f8dd17a16904cbfe3fcb1710d43cc8b38c94ea39bef904dae7d8cb3319ed08db",
+      "size_bytes": 4120
+    },
+    "ok": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\voxscout\\priority_map.json"
+  },
+  "hints": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\pipeline\\axonforge_hints.json",
+  "note": "Hints only \u2014 never discards tiles; optimize_ok guides AxonForge scheduling.",
+  "pipeline": "plan",
+  "priority_map": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\voxscout\\priority_map.json",
+  "region_id": null,
+  "shape_zyx": [
+    32,
+    32,
+    32
+  ],
+  "steps": [
+    {
+      "action": "analyze",
+      "class_counts": {
+        "HIGH_COMPLEXITY": 8
+      },
+      "n_tiles": 8,
+      "tool": "voxscout"
+    },
+    {
+      "action": "hints",
+      "n_hints": 8,
+      "optimize_ok": 0,
+      "tool": "axonforge"
+    }
+  ],
+  "tile_zyx": [
+    16,
+    16,
+    16
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "MV-MAP-CATMAID-TO-WASP5-001",
+  "source_frame_id": "MV-FRAME-CATMAID-001",
+  "target_volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+  "status": "VERIFIED",
+  "source_nm_to_target_voxel_matrix": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+  "validation_method": "Describe independent landmark registration here",
+  "validation_evidence_ids": ["MV-EV-REPLACE-WITH-REAL-EVIDENCE"]
+}

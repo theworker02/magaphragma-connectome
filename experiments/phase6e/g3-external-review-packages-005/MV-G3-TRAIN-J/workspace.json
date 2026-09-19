@@ -1,0 +1,51 @@
+{
+  "allowed_decisions": [
+    "BAD_QUESTION",
+    "DIFFERENT_PROCESS",
+    "SAME_PROCESS",
+    "UNCERTAIN"
+  ],
+  "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+  "created_at": "2026-09-17T16:21:22.578399Z",
+  "crop_id": "MV-G3-TRAIN-J",
+  "event_log": {
+    "append_only": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-external-review-packages-005\\MV-G3-TRAIN-J\\workspace.events.jsonl"
+  },
+  "id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-J-005",
+  "pair_contract": "pair_left_zyx is followed by its positive neighbour along channel_zyx: 0=Z, 1=Y, 2=X.",
+  "parent_region_id": "MV-DVID-RAW-SURVEY-009",
+  "prohibited_promotions": [
+    "REVIEWED_DVID_LABEL",
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "provenance": {
+    "sampler": "STRATIFIED_AXIS_x_RANKBAND_V1",
+    "selection_protocol": {
+      "id": "MV-G3-NEW-REGION-SELECTION-PROTOCOL-001",
+      "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\G3_NEW_REGION_SELECTION_PROTOCOL_001.json"
+    }
+  },
+  "raw": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-009-raw_zyx.npy",
+    "sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+    "shape_zyx": [
+      64,
+      128,
+      128
+    ]
+  },
+  "review_state": "UNREVIEWED",
+  "schema_version": 1,
+  "source_origin_xyz": [
+    1984,
+    8384,
+    3776
+  ],
+  "split": "G3_TARGET_TRAIN",
+  "status": "EXTERNAL_EXPERT_RAW_EM_REVIEW_REQUIRED"
+}

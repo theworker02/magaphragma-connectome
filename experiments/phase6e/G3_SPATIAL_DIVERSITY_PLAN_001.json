@@ -1,0 +1,17 @@
+{
+  "id": "MV-G3-SPATIAL-DIVERSITY-COHORT-001",
+  "selection_rationale": "Pre-review spatial and raw-EM contrast stratification after the immutable G2 LORO failure. Selection does not use G2 model output, held-out labels, reconstruction results, or MV-GTVOL-000004.",
+  "excluded_sources": ["MV-DVID-RAW-SURVEY-003", "MV-DVID-RAW-SURVEY-007", "MV-DVID-RAW-SURVEY-009", "MV-DVID-RAW-SURVEY-014", "MV-DVID-RAW-SURVEY-016", "MV-DVID-RAW-SURVEY-023", "MV-DVID-RAW-SURVEY-026", "MV-DVID-RAW-SURVEY-030"],
+  "selected_regions": [
+    {"id":"MV-G3-TRAIN-A","source_id":"MV-DVID-RAW-SURVEY-001","role":"G3_TARGET_TRAIN","raw_stratum":"low-contrast / low-gradient"},
+    {"id":"MV-G3-TRAIN-B","source_id":"MV-DVID-RAW-SURVEY-008","role":"G3_TARGET_TRAIN","raw_stratum":"moderate-contrast / moderate-gradient"},
+    {"id":"MV-G3-TRAIN-C","source_id":"MV-DVID-RAW-SURVEY-017","role":"G3_TARGET_TRAIN","raw_stratum":"high-variance / organelle-rich appearance candidate"},
+    {"id":"MV-G3-TRAIN-D","source_id":"MV-DVID-RAW-SURVEY-024","role":"G3_TARGET_TRAIN","raw_stratum":"high local-gradient / dense-boundary appearance candidate"},
+    {"id":"MV-G3-TRAIN-E","source_id":"MV-DVID-RAW-SURVEY-027","role":"G3_TARGET_TRAIN","raw_stratum":"highest-gradient / high-contrast appearance candidate"},
+    {"id":"MV-G3-TRAIN-F","source_id":"MV-DVID-RAW-SURVEY-031","role":"G3_TARGET_TRAIN","raw_stratum":"low-contrast distant spatial control"},
+    {"id":"MV-G3-VALIDATION-V1","source_id":"MV-DVID-RAW-SURVEY-004","role":"G3_TARGET_VALIDATION","raw_stratum":"independent low-contrast validation"},
+    {"id":"MV-G3-VALIDATION-V2","source_id":"MV-DVID-RAW-SURVEY-015","role":"G3_TARGET_VALIDATION","raw_stratum":"independent moderate-contrast validation"},
+    {"id":"MV-G3-VALIDATION-V3","source_id":"MV-DVID-RAW-SURVEY-025","role":"G3_TARGET_VALIDATION","raw_stratum":"independent high-variance validation"}
+  ],
+  "prohibited_inputs": ["G2 predictions", "G2 LORO labels", "G2 reconstruction metrics", "MV-GTVOL-000004", "post-selection review outcomes"]
+}

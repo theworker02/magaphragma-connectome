@@ -1,0 +1,56 @@
+{
+  "id": "MV-G3-AXIS-SEMANTICS-GEOMETRY-AUDIT-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T17:05:00Z",
+  "status": "READ_ONLY_AUDIT_COMPLETE_NO_IMPLEMENTATION_MODIFIED",
+  "scope": "Trace Z/Y/X interface semantics from raw voxels to frozen supervision; distinguish H1/H2/H3/H4.",
+  "trace": {
+    "affinity_pair_rule": {
+      "source": "tools/generate_g3_interface_queue.py and tools/build_g3_005_new_train_review.py _members()",
+      "rule": "pair_right = left[:axis] + [left[axis]+1] + left[axis+1:]",
+      "Z_axis0": "(z,y,x) <-> (z+1,y,x)",
+      "Y_axis1": "(z,y,x) <-> (z,y+1,x)",
+      "X_axis2": "(z,y,x) <-> (z,y,x+1)",
+      "symmetry_verdict": "SYMMETRIC: affinity pair is always +1 along the affinity axis for all three axes (verified by tests/test_axis_semantics_geometry.py)"
+    },
+    "three_member_spread": {
+      "rule": "offsets ((0,0),(-1,0),(1,0)) applied to other[0],other[1] where other = axes != affinity axis",
+      "documented_asymmetry": "spread replicate direction = other[0] (first non-affinity axis): Z-affinity spreads along Y; Y-affinity spreads along Z; X-affinity spreads along Z",
+      "impact": "Does NOT change the biological pair judged (still +1 along affinity axis); only the location of the 2 replicate observations differs. Not a coordinate bug."
+    },
+    "array_vs_world_order": {
+      "array_order": "ZYX (numpy)",
+      "world_order": "XYZ (DVID/registration)",
+      "source": "registration/coordinate_frames.json: array_order=ZYX, axis_order=XYZ",
+      "channel_zyx_convention": "0=Z,1=Y,2=X consistently in workspace pair_contract, queue channel_zyx, reviewer, and materializer"
+    },
+    "napari_visualization": {
+      "source": "tools/review_external_boundary_package.py",
+      "renders": "raw EM in XY/XZ/YZ planes; A(left) and B(right=+1 along channel) marked; reviewer sees exactly pair_left_zyx and pair_right_zyx",
+      "verdict": "displayed voxels equal the recorded affinity pair for each channel_zyx"
+    },
+    "interior_boundary_checks": "identical per axis (interior margin applied symmetrically on all three axes)"
+  },
+  "voxel_resolution": {
+    "voxel_size_nm_xyz": [8, 8, 8],
+    "sources": ["local_research_build/phase6e/dvid_raw_context_survey_001/manifest.json source block", "registration/coordinate_frames.json", "provenance/evidence.json (five_yuri_4contrast)"],
+    "isotropic": true,
+    "one_voxel_step_nm": {"Z": 8, "Y": 8, "X": 8},
+    "verdict": "ISOTROPIC. A one-voxel Z affinity spans the same 8 nm physical distance as Y or X. This is FIB-SEM, not anisotropic ssTEM (contrast: registry CREMI 40x4x4)."
+  },
+  "raw_edge_contrast_by_crop_label_blind": {
+    "metric": "mean |single-voxel intensity step| over the 3 axis edges at interior centers",
+    "high_contrast_crops": {"MV-DVID-RAW-SURVEY-017_(C)": 9.82, "MV-DVID-RAW-SURVEY-027_(E)": 17.03},
+    "low_contrast_crops": {"MV-DVID-RAW-SURVEY-001_(A)": 1.18, "MV-DVID-RAW-SURVEY-010": 1.81, "MV-DVID-RAW-SURVEY-014": 1.69, "MV-DVID-RAW-SURVEY-019": 1.36},
+    "finding": "The crops carrying Y-DIFFERENT (C,E) are ~6-14x higher raw edge contrast than the all-Y-SAME crops. Crop identity, raw contrast, and Y-class are mutually confounded in the historical data."
+  },
+  "hypothesis_assessment": {
+    "H1_implementation_bug": "NOT SUPPORTED. Affinity pair semantics are symmetric and coordinate-correct across Z/Y/X (tested). Only a benign replicate-spread-direction asymmetry exists.",
+    "H2_anisotropy": "RULED OUT. Isotropic 8x8x8 nm; one-voxel step is physically identical on all axes.",
+    "H3_candidate_generation": "PLAUSIBLE and PARTIALLY SUPPORTED. Historical selection used argmax(|gradient|) to ASSIGN each candidate to one axis, so Z/Y/X were never sampled at matched locations; and high-contrast (C/E) vs low-contrast crops were unevenly represented. This can manufacture an axis/class association.",
+    "H4_biological": "NOT YET PROVEN. Cannot be separated from H3 + crop/contrast confound with historical data. Requires the paired-location, contrast-balanced experiment.",
+    "conclusion": "No implementation bug or anisotropy. The Z=DIFFERENT / Y,X=SAME pattern is confounded with crop identity AND raw contrast AND per-axis selection. The axis-neutral paired-location experiment across balanced contrast strata is required to separate H3 from H4."
+  },
+  "tests": {"path": "tests/test_axis_semantics_geometry.py", "result": "4 passed"},
+  "did_not_modify_implementation": true
+}

@@ -1,0 +1,163 @@
+{
+  "consideration_trace": [
+    {
+      "accepted": true,
+      "candidate": "MV-DVID-RAW-SURVEY-013",
+      "min_gap": 7616,
+      "skip_reason": null,
+      "y_band": [
+        11776,
+        11904
+      ]
+    },
+    {
+      "accepted": true,
+      "candidate": "MV-DVID-RAW-SURVEY-009",
+      "min_gap": 6656,
+      "skip_reason": null,
+      "y_band": [
+        8384,
+        8512
+      ]
+    },
+    {
+      "accepted": true,
+      "candidate": "MV-DVID-RAW-SURVEY-003",
+      "min_gap": 4032,
+      "skip_reason": null,
+      "y_band": [
+        1600,
+        1728
+      ]
+    },
+    {
+      "accepted": true,
+      "candidate": "MV-DVID-RAW-SURVEY-007",
+      "min_gap": 4032,
+      "skip_reason": null,
+      "y_band": [
+        4992,
+        5120
+      ]
+    }
+  ],
+  "forbidden_inputs": [
+    "SAME/DIFFERENT labels",
+    "class predictions",
+    "learned affinities",
+    "A-H class composition"
+  ],
+  "id": "MV-G3-NEW-REGION-SELECTION-PROTOCOL-001",
+  "label_blind": true,
+  "new_split": "G3_TARGET_TRAIN",
+  "rule_description": "Rank eligible survey candidates by DESC min_gap_to_any_existing, tie-break ASC source_id; greedily accept enforcing distinct y-band and mutual non-overlap; stop at 4.",
+  "schema_version": 1,
+  "selected": [
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "min_gap_to_any_existing": 7616,
+      "new_crop_id": "MV-G3-TRAIN-I",
+      "raw_sha256": "424cfb707ce6b81a4712774aca860878e5d17f87d2971c19b68ac102af2bdb3f",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-013"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "min_gap_to_any_existing": 6656,
+      "new_crop_id": "MV-G3-TRAIN-J",
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-009"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "min_gap_to_any_existing": 4032,
+      "new_crop_id": "MV-G3-TRAIN-K",
+      "raw_sha256": "ca728132f431603511c9ff4e84cb64f5863d73dac4a3de69663678cac5ffcebc",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-003"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "min_gap_to_any_existing": 4032,
+      "new_crop_id": "MV-G3-TRAIN-L",
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-007"
+    }
+  ],
+  "selection_rule": "SELECT_V1",
+  "status": "PREDECLARED_SELECTION_FIXED_BEFORE_LABELS",
+  "survey": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\MV-G3-NEW-REGION-SURVEY-001.json"
+  },
+  "target_n": 4
+}

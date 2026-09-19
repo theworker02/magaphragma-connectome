@@ -1,0 +1,66 @@
+{
+  "id": "MV-G3-COHORT-IDENTIFIABILITY-CONTRACT-DECISION-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T16:20:00Z",
+  "status": "PREDECLARED_CONTRACT_REVISION_AND_AUDIT_VERDICT",
+  "decision_kind": "PROSPECTIVE_VALIDATION_CONTRACT_REVISION",
+  "supersedes_contract_not_artifacts": {
+    "note": "This revises the SCIENTIFIC INVARIANT used to admit regions into a G3 affinity-representation evaluation cohort. It does NOT modify, reinterpret, or invalidate any prior frozen artifact. All prior artifacts remain the authoritative historical record.",
+    "preserved_immutable_artifacts": [
+      {"path": "experiments/phase6e/MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002.json", "sha256": "e26c747e16bd5426e12323032f00fa6e9481ca60745536a73997846f422dadc4"},
+      {"path": "experiments/phase6e/G3_COHORT_001_REVIEW_ADMISSION_DECISION.json", "sha256": "5ec5532bf03341d577359c7c76533e60f56a7333c4fc1722de70d371151c7e33"}
+    ],
+    "prior_rejection_of_C_E_remains_valid": "TRAIN-C and TRAIN-E remain rejected under the PER-REGION both-class contract (COHORT-001 admission decision). That historical decision is not reversed; this artifact defines a different, cohort-level contract for a new dataset version."
+  },
+  "old_invariant": "Each individual TRAIN region must contain both SAME_PROCESS and DIFFERENT_PROCESS eligible interface evidence.",
+  "revision_motivation": {
+    "diagnosed_incompatibility": "The old per-region both-class rule and the per-axis both-class-in-both-splits requirement (needed for axis-leakage-safe affinity evaluation) are in direct conflict on the existing reviewed crop set. The per-region rule excludes exactly the crops (C, E) that carry Y x DIFFERENT_PROCESS, so the admitted cohort (A,B,D,F,G,H) is structurally forced into an axis confound (Z=DIFFERENT-only, Y/X=SAME-dominant).",
+    "prospective_not_retroactive": "This revision is made because of a diagnosed structural incompatibility in the real reviewed evidence, and the new contract is fully specified and justified BEFORE evaluating whether any dataset passes it. It is not a threshold reverse-engineered to make a failed metric pass.",
+    "supporting_audit": {"path": "experiments/phase6e/MV-G3-IDENTIFIABILITY-AUDIT-001.json", "sha256": "36e600126a6cef9541a1ac6f564acccb7ae665cb20feb97147ba9dc01c9f21e0"}
+  },
+  "new_contract": {
+    "name": "G3_AFFINITY_EVAL_COHORT_LEVEL_IDENTIFIABILITY_CONTRACT_V1",
+    "unit_of_evidence": "interface_id (member-agreement required; CONTRADICTORY / UNCERTAIN / BAD_QUESTION are not class evidence)",
+    "an_axis_is_EVALUABLE_iff_all_hold": [
+      "C1 COVERAGE: the axis carries >=1 SAME_PROCESS and >=1 DIFFERENT_PROCESS interface in BOTH the TRAIN split and the VALIDATION split (cohort-level (axis x split x class) coverage).",
+      "C2 CROSS-REGION REPLICATION: within TRAIN, each of {SAME_PROCESS, DIFFERENT_PROCESS} for the axis appears in >=2 distinct spatially-independent crops (no single-crop class evidence).",
+      "C3 CLASS/CROP NON-COLLINEARITY: within TRAIN, the class must NOT be perfectly predictable from crop identity on that axis. Concretely at least one of: (a) >=1 crop supplies BOTH classes on the axis (within-region contrast), OR (b) the SAME-supplying and DIFFERENT-supplying crop sets overlap such that a leave-one-crop-out split cannot linearly separate class by crop identity. If SAME and DIFFERENT come from strictly DISJOINT crop sets, C3 FAILS.",
+      "C4 SPATIAL INDEPENDENCE: all TRAIN and VALIDATION regions remain spatially disjoint (existing G3 invariant, unchanged)."
+    ],
+    "cohort_is_valid_iff": "at least one axis is EVALUABLE under C1-C4, and the protected volume MV-GTVOL-000004 is absent.",
+    "rationale": "C1 prevents axis leakage (a class only on some axes). C2 prevents single-crop idiosyncrasy. C3 is the key addition: it prevents merely MOVING the confound from physical axis to crop appearance, i.e. a classifier scoring by learning per-crop texture instead of process affinity. C4 preserves voxel-level independence. This is the weakest set that blocks BOTH axis and crop/region confounding; weaker (dropping C3) would readmit C/E but leave class perfectly collinear with crop on axis Y.",
+    "thresholds_justification": ">=2 crops (C2) is the minimum for any replication. C3 requires breaking perfect collinearity rather than a tuned margin, so it is not fit to the current dataset. No threshold here was selected because A-H happens to pass it; see verdict below (A-H FAILS)."
+  },
+  "audit_verdict_against_new_contract": {
+    "dataset_evaluated": "all reviewed TRAIN A-H (interface-level, event logs -001..-004)",
+    "per_axis": {
+      "Z": {"C1_coverage": false, "reason": "Z has zero SAME_PROCESS interfaces in TRAIN", "evaluable": false},
+      "Y": {"C1_coverage": true, "C2_replication": true, "C3_non_collinearity": false, "reason": "Y SAME comes only from {A,B,D,F,G,H}; Y DIFFERENT comes only from {C,E}; crop sets are DISJOINT => class perfectly collinear with crop; no crop carries both Y classes", "evaluable": false},
+      "X": {"C1_coverage": true, "C2_replication": false, "C3_non_collinearity": false, "reason": "X DIFFERENT unique to crop E (no replication) and disjoint from X SAME crops", "evaluable": false}
+    },
+    "cohort_valid": false,
+    "conclusion": "No axis is EVALUABLE under the new cohort-level identifiability contract using the existing A-H evidence. Admitting TRAIN-C/E would satisfy C1/C2 on Y but FAILS C3: Y class remains perfectly collinear with crop identity. This is a crop confound substituted for the axis confound, which the contract explicitly forbids."
+  },
+  "required_next_action": {
+    "path": "SANCTIONED_FRESH_REGIONS",
+    "description": "Because A-H (with or without C/E) cannot satisfy C3 on any axis, follow the previously sanctioned path: select new spatially-independent TRAIN region(s) and collect ONLY the evidence required to break class/crop collinearity on a target axis. Specifically, the cheapest identifiability fix is to obtain, on a single axis, at least one crop that contains BOTH SAME_PROCESS and DIFFERENT_PROCESS interfaces on that axis (within-region contrast), reviewed fresh and label-blind.",
+    "do_not": [
+      "mutate or reinterpret -002 or the COHORT-001 admission decision",
+      "admit C/E and declare success (fails C3)",
+      "reuse validation regions for training",
+      "mine A/B/D/F/G/H further for a class the audit shows is crop-collinear",
+      "access MV-GTVOL-000004"
+    ]
+  },
+  "negative_evidence_preserved": {
+    "note": "The -003 and -004 stratified Y/TRAIN review batches are RETAINED as real negative evidence: broad label-blind sampling across rank bands on A/B/D produced only SAME_PROCESS, consistent with the audit finding that Y-DIFFERENT is confined to C/E.",
+    "batches": [
+      "experiments/phase6e/g3-interface-queues-003",
+      "experiments/phase6e/g3-interface-queues-004",
+      "experiments/phase6e/g3-external-review-packages-003",
+      "experiments/phase6e/g3-external-review-packages-004"
+    ]
+  },
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0},
+  "downstream_gate": "No CellposeDINO/ViT-B affinity evaluation, reconstruction, connectivity, or connectome step may proceed until a cohort satisfies G3_AFFINITY_EVAL_COHORT_LEVEL_IDENTIFIABILITY_CONTRACT_V1."
+}

@@ -1,0 +1,501 @@
+{
+  "blinding": {
+    "axis_blind_during_judgment": true,
+    "deterministic_pseudorandom_order_seed_material": "MV-G3-PRESENTATION-REPAIR-SMOKE-001|SPEC_002|EQUIVARIANT_EDGE_FACE_V1",
+    "fixed_ZYX_order": false,
+    "mapping_hash": "3b08c188648e259beb6cf1cda3df24c7b9d7b3f4b6cd27e3bb08303ff6aa15fc",
+    "order_hash": "ee945fe0c74c6396bbb32964e4b58afe6378191fd38a415aa6f213f19aef83a1",
+    "sealed_axis_map_path": "experiments/phase6e/G3_PRESENTATION_REPAIR_SMOKE_AXIS_MAP_SEALED_001.json",
+    "unblind_only_after_all_12_complete": true,
+    "unblinded_at": "2026-09-18T01:29:58.719087Z"
+  },
+  "completed_at": "2026-09-18T01:29:58.719071Z",
+  "created_at": "2026-09-18T01:17:50.666832Z",
+  "design": {
+    "edges_per_location": 3,
+    "excluded": [
+      "C/E SURVEY-017/027",
+      "all -008 locations/sources",
+      "prior -005/-006 sources"
+    ],
+    "n_locations": 4,
+    "selection_rule": "hash-ranked greedy-separated centers; no label/model inputs",
+    "sources": [
+      "MV-DVID-RAW-SURVEY-030",
+      "MV-DVID-RAW-SURVEY-032"
+    ],
+    "total_decisions": 12
+  },
+  "do_not_train": true,
+  "id": "MV-G3-PRESENTATION-REPAIR-SMOKE-001",
+  "launch_example": ".\\.venv-reviewer\\Scripts\\python.exe tools\\review_equivariant_edge_batch.py experiments\\phase6e\\g3-presentation-repair-smoke-queues\\MASTER_BATCH.json --reviewer matth",
+  "not_a_g3_training_cohort": true,
+  "not_experiment_009": true,
+  "paths": {
+    "master_queue": "experiments/phase6e/g3-presentation-repair-smoke-queues/MASTER_BATCH.json",
+    "packages": "experiments/phase6e/g3-presentation-repair-smoke-packages",
+    "queues": "experiments/phase6e/g3-presentation-repair-smoke-queues"
+  },
+  "per_location": [
+    {
+      "center_zyx": [
+        13,
+        93,
+        117
+      ],
+      "crop_id": "MV-G3-PRSMOKE-01",
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-030",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-PRSMOKE-01-PRSMOKE"
+    },
+    {
+      "center_zyx": [
+        15,
+        117,
+        15
+      ],
+      "crop_id": "MV-G3-PRSMOKE-02",
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-030",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-PRSMOKE-02-PRSMOKE"
+    },
+    {
+      "center_zyx": [
+        13,
+        104,
+        88
+      ],
+      "crop_id": "MV-G3-PRSMOKE-03",
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-032",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-PRSMOKE-03-PRSMOKE"
+    },
+    {
+      "center_zyx": [
+        3,
+        69,
+        63
+      ],
+      "crop_id": "MV-G3-PRSMOKE-04",
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-032",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-PRSMOKE-04-PRSMOKE"
+    }
+  ],
+  "predeclared_interpretation": {
+    "exclusions_from_pattern_test": [
+      "UNCERTAIN",
+      "BAD_QUESTION"
+    ],
+    "frozen_before_labels": true,
+    "no_interface_tuning_after_seeing_labels": true,
+    "pathological_pattern": {
+      "X": "SAME_PROCESS",
+      "Y": "SAME_PROCESS",
+      "Z": "DIFFERENT_PROCESS"
+    },
+    "question": "Does presentation repair eliminate or materially disrupt the deterministic orientation-collinear response (Z=DIFFERENT, Y=SAME, X=SAME) observed under the invalid interface?",
+    "smoke_labels_are_not_production_gt": true,
+    "verdict_rules": {
+      "PRESENTATION_DEFECT_CAUSALLY_SUPPORTED": "After unblinding, the set of location triplets is not uniformly the pathological pattern (at least one location breaks Z=DIFF & Y=SAME & X=SAME).",
+      "PRESENTATION_FIX_INSUFFICIENT": "After unblinding, all 4 location triplets exactly match the pathological pattern (or all completed triplets do, if any UNCERTAIN/BAD excluded from pattern test and remaining still all match)."
+    }
+  },
+  "presentation_mode": "EQUIVARIANT_EDGE_FACE_V1",
+  "results": {
+    "decisions": [
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          13,
+          104,
+          88
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-G3-PRSMOKE-03",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694985072382",
+        "opaque_decision_id": "MV-PRS-037C3ADFDF10",
+        "pair_left_zyx": [
+          13,
+          104,
+          88
+        ],
+        "pair_right_zyx": [
+          13,
+          105,
+          88
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:45.072391Z"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          13,
+          93,
+          117
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-G3-PRSMOKE-01",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694985706431",
+        "opaque_decision_id": "MV-PRS-106AD2F95A1D",
+        "pair_left_zyx": [
+          13,
+          93,
+          117
+        ],
+        "pair_right_zyx": [
+          13,
+          93,
+          118
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:45.706440Z"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          69,
+          63
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-G3-PRSMOKE-04",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694983502133",
+        "opaque_decision_id": "MV-PRS-33E350FDD51A",
+        "pair_left_zyx": [
+          3,
+          69,
+          63
+        ],
+        "pair_right_zyx": [
+          3,
+          70,
+          63
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:43.502141Z"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          69,
+          63
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-G3-PRSMOKE-04",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694989321933",
+        "opaque_decision_id": "MV-PRS-364099A5A77B",
+        "pair_left_zyx": [
+          3,
+          69,
+          63
+        ],
+        "pair_right_zyx": [
+          4,
+          69,
+          63
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:49.321945Z"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          15,
+          117,
+          15
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-G3-PRSMOKE-02",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694975864210",
+        "opaque_decision_id": "MV-PRS-57D0E4DD5F5A",
+        "pair_left_zyx": [
+          15,
+          117,
+          15
+        ],
+        "pair_right_zyx": [
+          15,
+          118,
+          15
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:35.864219Z"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          13,
+          93,
+          117
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-G3-PRSMOKE-01",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694977507786",
+        "opaque_decision_id": "MV-PRS-5EC466C56E4E",
+        "pair_left_zyx": [
+          13,
+          93,
+          117
+        ],
+        "pair_right_zyx": [
+          14,
+          93,
+          117
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:37.507796Z"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          15,
+          117,
+          15
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-G3-PRSMOKE-02",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694986707315",
+        "opaque_decision_id": "MV-PRS-7C96440C39AE",
+        "pair_left_zyx": [
+          15,
+          117,
+          15
+        ],
+        "pair_right_zyx": [
+          16,
+          117,
+          15
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:46.707325Z"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          69,
+          63
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-G3-PRSMOKE-04",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694988727483",
+        "opaque_decision_id": "MV-PRS-8B39ADFA1C8E",
+        "pair_left_zyx": [
+          3,
+          69,
+          63
+        ],
+        "pair_right_zyx": [
+          3,
+          69,
+          64
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:48.727492Z"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          15,
+          117,
+          15
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-G3-PRSMOKE-02",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694987950374",
+        "opaque_decision_id": "MV-PRS-A59DF2122A30",
+        "pair_left_zyx": [
+          15,
+          117,
+          15
+        ],
+        "pair_right_zyx": [
+          15,
+          117,
+          16
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:47.950382Z"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          13,
+          93,
+          117
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-G3-PRSMOKE-01",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694976783138",
+        "opaque_decision_id": "MV-PRS-C241FAB53400",
+        "pair_left_zyx": [
+          13,
+          93,
+          117
+        ],
+        "pair_right_zyx": [
+          13,
+          94,
+          117
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-030",
+        "timestamp": "2026-09-18T01:29:36.783146Z"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          13,
+          104,
+          88
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-G3-PRSMOKE-03",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694966128130",
+        "opaque_decision_id": "MV-PRS-DCD43177E4C4",
+        "pair_left_zyx": [
+          13,
+          104,
+          88
+        ],
+        "pair_right_zyx": [
+          13,
+          104,
+          89
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:26.128142Z"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          13,
+          104,
+          88
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-G3-PRSMOKE-03",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789694987358621",
+        "opaque_decision_id": "MV-PRS-F8F2C9DE2A07",
+        "pair_left_zyx": [
+          13,
+          104,
+          88
+        ],
+        "pair_right_zyx": [
+          14,
+          104,
+          88
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-032",
+        "timestamp": "2026-09-18T01:29:47.358632Z"
+      }
+    ],
+    "evaluable_triplets": 4,
+    "n_decisions": 12,
+    "pathological_triplets": 0,
+    "triplets": [
+      {
+        "center_zyx": [
+          13,
+          93,
+          117
+        ],
+        "crop_id": "MV-G3-PRSMOKE-01",
+        "excluded_from_pattern_test": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_pathological_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-030"
+      },
+      {
+        "center_zyx": [
+          15,
+          117,
+          15
+        ],
+        "crop_id": "MV-G3-PRSMOKE-02",
+        "excluded_from_pattern_test": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_pathological_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-030"
+      },
+      {
+        "center_zyx": [
+          13,
+          104,
+          88
+        ],
+        "crop_id": "MV-G3-PRSMOKE-03",
+        "excluded_from_pattern_test": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_pathological_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-032"
+      },
+      {
+        "center_zyx": [
+          3,
+          69,
+          63
+        ],
+        "crop_id": "MV-G3-PRSMOKE-04",
+        "excluded_from_pattern_test": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_pathological_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-032"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "smoke_labels_are_not_production_gt": true,
+  "status": "COMPLETE_UNBLINDED",
+  "synthetic_gate": {
+    "fixtures_sha256": "cdfbf5771c67b61dec1df1abdb50eb297ba2ce407a51eab2d1dd699961eb613d",
+    "overall_pass": true,
+    "path": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json"
+  },
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "verdict": "PRESENTATION_DEFECT_CAUSALLY_SUPPORTED",
+  "verdict_detail": "0/4 evaluable triplets match pathological pattern; pattern broken."
+}

@@ -1,0 +1,475 @@
+{
+  "axis_eligibility_contract": {
+    "axis_channel_zyx_names": {
+      "0": "Z",
+      "1": "Y",
+      "2": "X"
+    },
+    "definition": "An affinity axis is eligible only if it carries at least one reviewed SAME_PROCESS and one reviewed DIFFERENT_PROCESS pair in BOTH the TRAIN and the VALIDATION split.",
+    "required_cells_per_axis": [
+      {
+        "class": "SAME_PROCESS",
+        "split": "TRAIN"
+      },
+      {
+        "class": "DIFFERENT_PROCESS",
+        "split": "TRAIN"
+      },
+      {
+        "class": "SAME_PROCESS",
+        "split": "VALIDATION"
+      },
+      {
+        "class": "DIFFERENT_PROCESS",
+        "split": "VALIDATION"
+      }
+    ]
+  },
+  "axis_split_class_matrix": {
+    "0": {
+      "axis_name": "Z",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 57,
+          "SAME_PROCESS": 0
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 18,
+          "SAME_PROCESS": 0
+        }
+      }
+    },
+    "1": {
+      "axis_name": "Y",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 60
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 24
+        }
+      }
+    },
+    "2": {
+      "axis_name": "X",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 24
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 18
+        }
+      }
+    }
+  },
+  "cohort_kind": "G3_EXPERT_REVIEW_AXIS_BALANCED",
+  "counts": {
+    "eligible_axis_count": 0,
+    "excluded_axis_count": 3,
+    "regions": 9,
+    "total_reviewed_pairs": 210
+  },
+  "created_at": "2026-09-17T15:00:46.130428Z",
+  "excluded_axes": [
+    {
+      "axis_channel_zyx": 0,
+      "axis_name": "Z",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 57,
+          "SAME_PROCESS": 0
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 18,
+          "SAME_PROCESS": 0
+        }
+      },
+      "deficient_cells": [
+        {
+          "class": "SAME_PROCESS",
+          "split": "TRAIN"
+        },
+        {
+          "class": "SAME_PROCESS",
+          "split": "VALIDATION"
+        }
+      ],
+      "failure_reason": "AXIS_MISSING_REQUIRED_SPLIT_CLASS_CELL",
+      "required_additional_reviewed_supervision": [
+        {
+          "axis_name": "Z",
+          "class": "SAME_PROCESS",
+          "needed_minimum_pairs": 1,
+          "split": "TRAIN"
+        },
+        {
+          "axis_name": "Z",
+          "class": "SAME_PROCESS",
+          "needed_minimum_pairs": 1,
+          "split": "VALIDATION"
+        }
+      ],
+      "total_reviewed_pairs": 75
+    },
+    {
+      "axis_channel_zyx": 1,
+      "axis_name": "Y",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 60
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 24
+        }
+      },
+      "deficient_cells": [
+        {
+          "class": "DIFFERENT_PROCESS",
+          "split": "TRAIN"
+        }
+      ],
+      "failure_reason": "AXIS_MISSING_REQUIRED_SPLIT_CLASS_CELL",
+      "required_additional_reviewed_supervision": [
+        {
+          "axis_name": "Y",
+          "class": "DIFFERENT_PROCESS",
+          "needed_minimum_pairs": 1,
+          "split": "TRAIN"
+        }
+      ],
+      "total_reviewed_pairs": 93
+    },
+    {
+      "axis_channel_zyx": 2,
+      "axis_name": "X",
+      "cells": {
+        "TRAIN": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 24
+        },
+        "VALIDATION": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 18
+        }
+      },
+      "deficient_cells": [
+        {
+          "class": "DIFFERENT_PROCESS",
+          "split": "TRAIN"
+        },
+        {
+          "class": "DIFFERENT_PROCESS",
+          "split": "VALIDATION"
+        }
+      ],
+      "failure_reason": "AXIS_MISSING_REQUIRED_SPLIT_CLASS_CELL",
+      "required_additional_reviewed_supervision": [
+        {
+          "axis_name": "X",
+          "class": "DIFFERENT_PROCESS",
+          "needed_minimum_pairs": 1,
+          "split": "TRAIN"
+        },
+        {
+          "axis_name": "X",
+          "class": "DIFFERENT_PROCESS",
+          "needed_minimum_pairs": 1,
+          "split": "VALIDATION"
+        }
+      ],
+      "total_reviewed_pairs": 42
+    }
+  ],
+  "failure_reason": "NO_AXIS_SATISFIES_TRAIN_AND_VALIDATION_SAME_AND_DIFFERENT",
+  "id": "MV-G3-AXIS-REVIEW-COHORT-MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002",
+  "included_axes": [],
+  "prohibited_promotions": [
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "provenance": {
+    "source_region_receipts": [
+      {
+        "crop_id": "MV-G3-TRAIN-A",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\receipt.json",
+        "sha256": "5cf487324ba4b3c00388923c079f5ff518910528a0f3260c7b4670bf02a50df5"
+      },
+      {
+        "crop_id": "MV-G3-TRAIN-B",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\receipt.json",
+        "sha256": "ab67854d7f2d987d8c09f7facc9ec9344fab361e63d133dc1793ce25e82e3417"
+      },
+      {
+        "crop_id": "MV-G3-TRAIN-D",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\receipt.json",
+        "sha256": "4346cfb8b0239799c1156b16014cbab4f1646e7ea0b933406caf8667d0a69302"
+      },
+      {
+        "crop_id": "MV-G3-TRAIN-F",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\receipt.json",
+        "sha256": "8134a1712069abc5661b66c3cf3fc0881ad69e29ddb13a7d91b437ee3a02de30"
+      },
+      {
+        "crop_id": "MV-G3-TRAIN-G",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\receipt.json",
+        "sha256": "7b8554516a950afffabd31832abe20f1f7b771873454e3b5fc3093d4ba4f4202"
+      },
+      {
+        "crop_id": "MV-G3-TRAIN-H",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\receipt.json",
+        "sha256": "b6e083bd5f8d267c402c0d461f7d97d9ed242c075d2103ab100f7443908d2124"
+      },
+      {
+        "crop_id": "MV-G3-VALIDATION-V1",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\receipt.json",
+        "sha256": "9e25410fb4e9e006becb6df905c19f6d22867c1623002dd90860ef71b33c032f"
+      },
+      {
+        "crop_id": "MV-G3-VALIDATION-V2",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\receipt.json",
+        "sha256": "e614b92e03eff2246a5a598bd0ad7da22929cc09479b7b330a67dbfeb076d7c5"
+      },
+      {
+        "crop_id": "MV-G3-VALIDATION-V3",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\receipt.json",
+        "sha256": "8a4b3b1961f7f8ad7517b41f22a331e766def757eab955915aa900ddcf3d9495"
+      }
+    ],
+    "supervision_manifest": {
+      "id": "MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002",
+      "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002.json",
+      "sha256": "e26c747e16bd5426e12323032f00fa6e9481ca60745536a73997846f422dadc4",
+      "status": "FROZEN_READY_FOR_G3_LORO"
+    }
+  },
+  "region_summaries": [
+    {
+      "crop_id": "MV-G3-TRAIN-A",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 3
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 12
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\receipt.json",
+      "receipt_sha256": "5cf487324ba4b3c00388923c079f5ff518910528a0f3260c7b4670bf02a50df5",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-B",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 9
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 6
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\receipt.json",
+      "receipt_sha256": "ab67854d7f2d987d8c09f7facc9ec9344fab361e63d133dc1793ce25e82e3417",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-D",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 6
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 9
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\receipt.json",
+      "receipt_sha256": "4346cfb8b0239799c1156b16014cbab4f1646e7ea0b933406caf8667d0a69302",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-F",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 0
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 12
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 12,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\receipt.json",
+      "receipt_sha256": "8134a1712069abc5661b66c3cf3fc0881ad69e29ddb13a7d91b437ee3a02de30",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-G",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 6
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 15
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 3,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\receipt.json",
+      "receipt_sha256": "7b8554516a950afffabd31832abe20f1f7b771873454e3b5fc3093d4ba4f4202",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-H",
+      "eligible_pair_count": 21,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 0
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 6
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 15,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\receipt.json",
+      "receipt_sha256": "b6e083bd5f8d267c402c0d461f7d97d9ed242c075d2103ab100f7443908d2124",
+      "split": "G3_TARGET_TRAIN",
+      "split_label": "TRAIN"
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V1",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 3
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 15
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 6,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\receipt.json",
+      "receipt_sha256": "9e25410fb4e9e006becb6df905c19f6d22867c1623002dd90860ef71b33c032f",
+      "split": "G3_TARGET_VALIDATION",
+      "split_label": "VALIDATION"
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V2",
+      "eligible_pair_count": 24,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 12
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 0
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 12,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\receipt.json",
+      "receipt_sha256": "e614b92e03eff2246a5a598bd0ad7da22929cc09479b7b330a67dbfeb076d7c5",
+      "split": "G3_TARGET_VALIDATION",
+      "split_label": "VALIDATION"
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V3",
+      "eligible_pair_count": 21,
+      "pairs_by_axis": {
+        "X": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 3
+        },
+        "Y": {
+          "DIFFERENT_PROCESS": 9,
+          "SAME_PROCESS": 9
+        },
+        "Z": {
+          "DIFFERENT_PROCESS": 0,
+          "SAME_PROCESS": 0
+        }
+      },
+      "receipt_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\receipt.json",
+      "receipt_sha256": "8a4b3b1961f7f8ad7517b41f22a331e766def757eab955915aa900ddcf3d9495",
+      "split": "G3_TARGET_VALIDATION",
+      "split_label": "VALIDATION"
+    }
+  ],
+  "remediation": "Collect the additional reviewed supervision listed per excluded axis so that at least one Z/Y/X axis has both SAME and DIFFERENT reviewed pairs in both TRAIN and VALIDATION, then freeze a new cohort version.",
+  "schema_version": 1,
+  "scientific_boundary": "This cohort only declares which affinity axes may be evaluated for SAME/DIFFERENT representation separability without physical-axis leakage. It does not itself make biological claims and cannot enter training, labels, MV-FRAG, MV-N, MV-SYN, or MV-CONN.",
+  "spatial_disjointness_guarantee": {
+    "invariant": "TRAIN_VALIDATION_SPATIAL_DISJOINTNESS_PRESERVED",
+    "method": "BOUNDS_XYZ_BOX_INTERSECTION",
+    "note": "Axis balance is an additional constraint layered on top of the source G3 cohort validity conditions; it does not replace them. Regions listed as not re-checkable here were already spatially validated at G3 cohort freeze time; their bounds are simply not inlined in this manifest.",
+    "overlaps_detected": [],
+    "regions_checked": [],
+    "regions_without_bounds_not_recheckable_here": [
+      "MV-G3-TRAIN-A",
+      "MV-G3-TRAIN-B",
+      "MV-G3-TRAIN-D",
+      "MV-G3-TRAIN-F",
+      "MV-G3-TRAIN-G",
+      "MV-G3-TRAIN-H",
+      "MV-G3-VALIDATION-V1",
+      "MV-G3-VALIDATION-V2",
+      "MV-G3-VALIDATION-V3"
+    ]
+  },
+  "status": "FAILED_NO_ELIGIBLE_AXIS"
+}

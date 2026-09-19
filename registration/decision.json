@@ -1,0 +1,15 @@
+{
+  "id": "MV-REGISTRATION-INVESTIGATION-001",
+  "source_frame": "MV-FRAME-CATMAID-001",
+  "target_frame": "MV-FRAME-DVID-WASP5-001",
+  "specimen_compatibility": "SPECIMEN_IDENTITY_UNKNOWN",
+  "transforms_tested": 0,
+  "fit_landmarks": 0,
+  "validation_landmarks": 0,
+  "final_decision": "INSUFFICIENT_EVIDENCE",
+  "reason_codes": ["NO_AUTHORITATIVE_SHARED_PARENT_DATASET", "NO_SPECIMEN_IDENTIFIER_MATCH", "NO_AUTHORITATIVE_TRANSFORM", "NO_INDEPENDENT_LANDMARKS"],
+  "seed_safety": "UNSAFE",
+  "catmaid_derived_seed_status": "PROHIBITED",
+  "dvid_native_reconstruction_status": "ELIGIBLE_AWAITING_REGISTERED_BACKEND",
+  "source_artifact_sha256": "168fd38b723ca52a8bd43237643e31d79e2d6aa7d2d0369bfc5d7790c291762e"
+}

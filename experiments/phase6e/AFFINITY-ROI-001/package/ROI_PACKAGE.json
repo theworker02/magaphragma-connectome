@@ -1,0 +1,45 @@
+{
+  "anchor_bounds_xyz": {
+    "x": [
+      10304,
+      10432
+    ],
+    "y": [
+      7488,
+      7616
+    ],
+    "z": [
+      10560,
+      10624
+    ]
+  },
+  "anchor_survey_raw_sha256": "6923f56473a9db60d687987c03a9a4b218a448dbd3a1f579a20cb25146ce5557",
+  "anchor_survey_source_id": "MV-DVID-RAW-SURVEY-079",
+  "authorized_checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+  "created_at": "2026-09-18T04:09:19.871514Z",
+  "eval_sources_excluded": [
+    "MV-DVID-RAW-SURVEY-078",
+    "MV-DVID-RAW-SURVEY-083"
+  ],
+  "id": "AFFINITY_ROI_001_PACKAGE",
+  "raw_path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-ROI-001/package/roi_raw_zyx.npy",
+  "raw_sha256": "63b33bf6b40af7dbaa68f0c936b242e7a4a48e22973dd7ae10cbdf802027089d",
+  "roi_origin_xyz": [
+    10240,
+    7424,
+    10560
+  ],
+  "roi_size_xyz": [
+    256,
+    256,
+    64
+  ],
+  "s4_authorization": "AFFINITY_S4_ROI_AUTHORIZATION_001",
+  "seed_material": "AFFINITY_ROI_RECONSTRUCTION_GATE_001|ROI",
+  "shape_zyx": [
+    64,
+    256,
+    256
+  ],
+  "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/256_256_64/10240_7424_10560"
+}

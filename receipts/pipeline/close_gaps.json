@@ -1,0 +1,54 @@
+{
+  "artifactvet": {
+    "issues": [],
+    "kind": "json",
+    "meta": {
+      "keys": [
+        "counts",
+        "coverage",
+        "highest_priority",
+        "missing_frac",
+        "regions",
+        "shape_zyx",
+        "tile_zyx",
+        "validated"
+      ],
+      "sha256": "c14b3e9a375e72a58f0677f08e9736672b50a72a825d4790b6abb0035f2ff161",
+      "size_bytes": 233
+    },
+    "ok": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\gaphound\\latest_scan.json"
+  },
+  "pipeline": "close-gaps",
+  "recoveries": [],
+  "repair_plan": {
+    "n_work_items": 0,
+    "note": "Minimum AxonForge worklist to close holes \u2014 does not rerun full volume.",
+    "vs_full_volume_tiles": 64,
+    "worklist": []
+  },
+  "shape_zyx": [
+    64,
+    64,
+    64
+  ],
+  "steps": [
+    {
+      "action": "scan",
+      "counts": {},
+      "coverage": 1.0,
+      "tool": "gaphound"
+    },
+    {
+      "action": "repair-plan",
+      "n_work_items": 0,
+      "tool": "gaphound"
+    },
+    {
+      "action": "recover",
+      "n_recoveries": 0,
+      "skipped": false,
+      "tool": "tilemedic"
+    }
+  ]
+}

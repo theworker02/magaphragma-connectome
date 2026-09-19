@@ -1,0 +1,16 @@
+{
+  "note": "Heuristic morphology flags only \u2014 not definitive biology errors.",
+  "pipeline": "audit",
+  "steps": [
+    {
+      "action": "analyze",
+      "kind_counts": {
+        "implausible_merge_point": 2,
+        "tiny_fragment": 1
+      },
+      "n_anomalies": 3,
+      "review_queue": 3,
+      "tool": "morphguard"
+    }
+  ]
+}

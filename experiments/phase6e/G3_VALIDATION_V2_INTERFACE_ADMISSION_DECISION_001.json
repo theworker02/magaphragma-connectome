@@ -1,0 +1,14 @@
+{
+  "id": "MV-G3-VALIDATION-V2-INTERFACE-ADMISSION-DECISION-001",
+  "created_at": "2026-09-17T12:00:26.9296563Z",
+  "status": "ADMITTED_VALIDATION_ONLY_PENDING_G3_DATASET_FREEZE",
+  "region_id": "MV-G3-VALIDATION-V2",
+  "split": "G3_TARGET_VALIDATION",
+  "reviewer": "matth",
+  "review_log_sha256": "7e2c7cf4d842cf397f17b5403c08e7c27b2bf79e00f8a70986fc81b311dec110",
+  "queue_sha256": "eedcac5d2c547074c23c7124e11350b895ff7565959dd9aff89147a4b040393a",
+  "reviewed_pair_counts": {"SAME_PROCESS": 12, "DIFFERENT_PROCESS": 12, "UNCERTAIN": 0, "BAD_QUESTION": 0},
+  "interface_counts": {"SAME_PROCESS": 4, "DIFFERENT_PROCESS": 4, "UNCERTAIN": 0, "BAD_QUESTION": 0, "CONTRADICTORY": 0, "ELIGIBLE": 8},
+  "admission_result": {"same_process_required": true, "different_process_required": true, "same_process_available": true, "different_process_available": true, "eligible_for_g3_validation": true},
+  "preservation": {"review_events_append_only": true, "validation_never_used_for_optimization": true, "no_target_tensor_materialized_yet": true, "mv_gtvol_000004_accessed": false}
+}

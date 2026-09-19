@@ -1,0 +1,18 @@
+{
+  "aws_asg": {
+    "desired": 12,
+    "in_service": 2
+  },
+  "aws_od_g_vt_vcpu_quota": 8.0,
+  "id": "AFFINITY_FUNNEL_PROGRESS",
+  "local_affinities_npy": 66,
+  "local_labels_npy": 59,
+  "local_status_counts": {
+    "AFFINITY_DONE_SEG_PENDING": 6,
+    "COMPLETE": 57,
+    "NOT_STARTED": 28732,
+    "RUNNING": 3
+  },
+  "s3_chunk_prefixes": 226,
+  "updated_at": "2026-09-18T14:34:28.011590Z"
+}

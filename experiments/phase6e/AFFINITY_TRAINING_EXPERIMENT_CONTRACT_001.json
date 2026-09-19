@@ -1,0 +1,115 @@
+{
+  "id": "AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T02:45:00Z",
+  "status": "FROZEN_BEFORE_FIRST_TRAINING_RUN",
+  "frozen_before_any_optimization": true,
+  "authorization": "AFFINITY_TRAINING_REOPEN_DECISION_001",
+  "run_id_prefix": "AFFINITY-TRAIN-PGT002-001",
+  "eligible_gt": {
+    "promoted_artifact": "experiments/phase6e/PRODUCTION_GT_PROMOTED_BATCH_002.json",
+    "promoted_artifact_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+    "label_filter": ["SAME_PROCESS", "DIFFERENT_PROCESS"],
+    "drop": ["UNCERTAIN", "BAD_QUESTION"]
+  },
+  "train_eval_split": {
+    "unit": "source_crop (all three axis edges of a location travel together)",
+    "method": "Deterministic hash rank of source_id; no label-dependent assignment",
+    "seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT",
+    "rank_key": "sha256(seed_material|source_id).hexdigest ascending",
+    "n_train_sources": 6,
+    "n_eval_sources": 2,
+    "train_sources": [
+      "MV-DVID-RAW-SURVEY-076",
+      "MV-DVID-RAW-SURVEY-079",
+      "MV-DVID-RAW-SURVEY-082",
+      "MV-DVID-RAW-SURVEY-087",
+      "MV-DVID-RAW-SURVEY-088",
+      "MV-DVID-RAW-SURVEY-092"
+    ],
+    "eval_sources": [
+      "MV-DVID-RAW-SURVEY-078",
+      "MV-DVID-RAW-SURVEY-083"
+    ],
+    "recorded_class_counts_at_freeze": {
+      "train": {"SAME_PROCESS": 12, "DIFFERENT_PROCESS": 6},
+      "eval": {"SAME_PROCESS": 2, "DIFFERENT_PROCESS": 4}
+    },
+    "eval_holdout_rule": "Eval sources and their edges MUST NOT be used for loss, early stopping, checkpoint selection, or hyperparameter decisions"
+  },
+  "model_config": {
+    "architecture": "SegNeuron MNet",
+    "implementation": "third_party/segneuron/.../model/Mnet.py",
+    "mnet_kwargs": {"in_channels": 1, "kn": [32, 64, 96, 128, 256], "FMU": "sub"},
+    "output": "3-channel ZYX affinity",
+    "patch_shape_zyx": [20, 128, 128],
+    "optimizer": "Adam",
+    "learning_rate": 1e-4,
+    "loss": {
+      "name": "masked_affinity_bce",
+      "notes": "Sparse supervision only on labeled +1 faces from promoted GT; unlabeled voxels ignored"
+    },
+    "trainer_entrypoint_intended": "tools/train_dvid_adaptation_rocm.py (or successor that consumes the frozen PGT002 manifest without altering this contract)",
+    "initialization": "Document exact checkpoint path at run start in the run receipt; if resuming a prior Megaphragma adaptation checkpoint, record its sha256 in the run receipt"
+  },
+  "seeds": {
+    "python_hash_seed": "0",
+    "torch_manual_seed": 20260918,
+    "numpy_seed": 20260918,
+    "dataloader_generator_seed": 20260918,
+    "split_seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT"
+  },
+  "checkpoint_selection_rule": {
+    "monitor": "eval_set_only",
+    "primary_metric": "balanced_edge_accuracy_at_0p5",
+    "definition": "Mean of (SAME accuracy @ threshold 0.5) and (DIFFERENT accuracy @ threshold 0.5) on eval edges only",
+    "selection": "Choose the checkpoint with maximum primary_metric; ties → lowest training step",
+    "forbidden": [
+      "Selecting checkpoints using train-set metrics",
+      "Selecting checkpoints using validation_002 / batch_001 / smoke / discovery labels",
+      "Retuning threshold on the eval set after seeing final numbers for the purpose of claiming a pass"
+    ],
+    "decision_threshold_frozen": 0.5
+  },
+  "evaluation_metrics_and_gates": {
+    "reported_on_eval_only": [
+      "n_eval_edges",
+      "SAME_PROCESS accuracy @ 0.5",
+      "DIFFERENT_PROCESS accuracy @ 0.5",
+      "balanced_edge_accuracy_at_0p5",
+      "mean predicted affinity on SAME edges",
+      "mean predicted affinity on DIFFERENT edges",
+      "margin = mean(SAME preds) - mean(DIFFERENT preds)"
+    ],
+    "pass_fail_gates_for_this_first_run": {
+      "GATE_A_eval_completeness": "All frozen eval edges scored exactly once",
+      "GATE_B_both_classes_scored": "Eval contains ≥1 SAME and ≥1 DIFFERENT (already true at freeze)",
+      "GATE_C_better_than_constant_same": "balanced_edge_accuracy_at_0p5 > accuracy of constant SAME predictor on the same eval edges",
+      "GATE_D_positive_margin": "margin > 0",
+      "GATE_E_no_eval_leakage": "Run receipt proves eval sources absent from training batches"
+    },
+    "pass_rule": "All of GATE_A–E must pass for AFFINITY_TRAIN_PGT002_001_PASS; otherwise AFFINITY_TRAIN_PGT002_001_FAIL",
+    "note_on_supervision_sufficiency": "Whether 24 promoted edges are sufficient for downstream segmentation is a separate prospective gate after this first controlled run; it is NOT a Batch 002 QC modification and NOT grounds to alter these frozen train gates post hoc"
+  },
+  "prohibited_during_run": [
+    "Using eval edges in the loss",
+    "Early stopping / model selection on non-eval or excluded corpora",
+    "Ingesting AFFINITY_SPEC002_VALIDATION_002 or Batch 001 labels",
+    "Changing split, seeds, architecture, threshold, or pass/fail gates after seeing eval results"
+  ],
+  "run_receipt_required_fields": [
+    "run_id",
+    "contract_id",
+    "reopen_decision_id",
+    "promoted_gt_sha256",
+    "train_sources",
+    "eval_sources",
+    "init_checkpoint_path_and_sha256",
+    "seeds",
+    "selected_checkpoint_step",
+    "eval_metrics",
+    "gate_outcomes",
+    "verdict"
+  ],
+  "training_not_launched_by_this_contract": true
+}

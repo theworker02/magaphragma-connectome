@@ -1,0 +1,41 @@
+{
+  "checksum_sha256": "e6f61ada78977a5b90168adc8d16a6b942d32263261e619d91a90e3f10bfc9d9",
+  "identity": {
+    "algorithm_version": "0.1.0",
+    "checkpoint": "ckpt-001",
+    "coordinates": [
+      0,
+      0,
+      0,
+      64,
+      64,
+      64
+    ],
+    "halo": 16,
+    "identity_hash": "4d7bfe94440909912e16736c6ca7ffe46b6e9f45a17becfe50298b4e368041d8",
+    "model": "ffn-v2",
+    "precision": "fp16",
+    "preprocessing": {
+      "clip": true,
+      "logging_verbosity": 99
+    },
+    "resolution": [
+      8.0,
+      8.0,
+      8.0
+    ],
+    "scientific_config": {
+      "log_level": "DEBUG",
+      "threshold": 0.5
+    },
+    "source_volume_hash": "abc123",
+    "tile_dimensions": [
+      64,
+      64,
+      64
+    ]
+  },
+  "identity_hash": "4d7bfe94440909912e16736c6ca7ffe46b6e9f45a17becfe50298b4e368041d8",
+  "payload_file": "payload.json",
+  "payload_kind": "json"
+}

@@ -1,0 +1,98 @@
+{
+  "created_at": "2026-09-17T16:44:44.491603Z",
+  "declared_sampling_rule": {
+    "allowed_inputs": [
+      "raw EM intensity",
+      "raw gradient for stratification only",
+      "crop identity",
+      "geometry"
+    ],
+    "contrast_bands": [
+      {
+        "hi": 5.0,
+        "label": "very_low",
+        "lo": 0.0
+      },
+      {
+        "hi": 15.0,
+        "label": "low",
+        "lo": 5.0
+      },
+      {
+        "hi": 40.0,
+        "label": "mid",
+        "lo": 15.0
+      },
+      {
+        "hi": 1000000000.0,
+        "label": "high",
+        "lo": 40.0
+      }
+    ],
+    "declared_before_labels": true,
+    "edge_eligibility": "at each selected interior center, all three edges (Z,Y,X) are eligible INDEPENDENTLY; eligibility does NOT depend on argmax(|gradient|)",
+    "edges": {
+      "X": "(z,y,x)<->(z,y,x+1)",
+      "Y": "(z,y,x)<->(z,y+1,x)",
+      "Z": "(z,y,x)<->(z+1,y,x)"
+    },
+    "forbidden_inputs": [
+      "argmax-gradient edge eligibility",
+      "SAME/DIFFERENT labels",
+      "class predictions",
+      "learned affinities",
+      "historical class composition"
+    ],
+    "location_selection": "interior centers, 12-voxel spatially separated, deterministically drawn to spread across predeclared raw edge-contrast bands",
+    "location_stratifier": "mean absolute single-voxel intensity step across the location's three axis edges (raw EM only)",
+    "locations_per_crop": 3,
+    "presentation_order": "deterministic interleave of (location, axis) so axes are not shown in blocks",
+    "purpose": "test H3 (dominant-gradient selection) vs H4 (intrinsic Z-edge effect) with balanced Z/Y/X edge eligibility at matched locations",
+    "sampler_id": "AXIS_NEUTRAL_PAIRED_LOCATION_V1"
+  },
+  "id": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-001",
+  "locations_per_crop": 3,
+  "n_crops": 3,
+  "selected_crops": [
+    {
+      "band_counts": {
+        "high": 0,
+        "low": 2,
+        "mid": 0,
+        "very_low": 1
+      },
+      "crop_id": "MV-G3-AXNEU-A",
+      "edges": 9,
+      "locations": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-010",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU-A-006"
+    },
+    {
+      "band_counts": {
+        "high": 0,
+        "low": 2,
+        "mid": 0,
+        "very_low": 1
+      },
+      "crop_id": "MV-G3-AXNEU-B",
+      "edges": 9,
+      "locations": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-014",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU-B-006"
+    },
+    {
+      "band_counts": {
+        "high": 0,
+        "low": 2,
+        "mid": 0,
+        "very_low": 1
+      },
+      "crop_id": "MV-G3-AXNEU-C",
+      "edges": 9,
+      "locations": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-019",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU-C-006"
+    }
+  ],
+  "status": "PREDECLARED_FIXED_BEFORE_LABELS"
+}

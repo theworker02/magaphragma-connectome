@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 160" role="img" aria-label="Vigilia Connectome for Megaphragma viggianii">
+  <rect width="760" height="160" fill="#070b13"/>
+  <path d="M32 30 67 125 102 30" fill="none" stroke="#dce9f7" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="67" cy="78" r="8" fill="#67c8ff"/>
+  <text x="132" y="78" fill="#f5f8fc" font-family="Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="4">VIGILIA</text>
+  <text x="134" y="114" fill="#9fb3c8" font-family="Arial, sans-serif" font-size="21" letter-spacing="1">CONNECTOME · MEGAPHRAGMA VIGGIANII</text>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "id": "MV-G3-AXIS-SEMANTICS-AUDIT-FINDINGS-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T17:10:00Z",
+  "status": "READ_ONLY_AUDIT_COMPLETE_NO_PRODUCTION_CHANGE",
+  "objective": "Explain why independently sampled crops repeatedly produce Z=DIFFERENT and Y/X=SAME.",
+  "evidence_artifacts": {
+    "axis_semantics_tests": "tests/test_axis_semantics_geometry.py",
+    "context_comparison": "experiments/phase6e/MV-G3-AXIS-CONTEXT-COMPARISON-001.json",
+    "identifiability_audit_combined": "experiments/phase6e/MV-G3-IDENTIFIABILITY-AUDIT-002.json",
+    "voxel_metadata": "local_research_build/phase6e/dvid_raw_context_survey_001/manifest.json (source.voxel_size_nm_xyz=[8,8,8])"
+  },
+  "coordinate_trace": {
+    "array_order": "ZYX (numpy)", "world_order": "XYZ (DVID/registration)",
+    "affinity_pair_rule": "pair_right = left with +1 on the affinity axis; verified Z:(z+1,y,x) Y:(z,y+1,x) X:(z,y,x+1)",
+    "affinity_edge_equivariant": true,
+    "three_member_spread_rule": "offsets applied to other[0] (first axis != affinity axis): Z-affinity spreads along Y; Y-affinity spreads along Z; X-affinity spreads along Z",
+    "three_member_spread_equivariant": false,
+    "boundary_interior_checks": "identical per axis (>=0 and <shape, +1 neighbour in bounds)",
+    "reviewer_visualization": "review_external_boundary_package.py renders XY/XZ/YZ raw planes with A(left)/B(right) marks; A/B derived directly from pair_left_zyx/pair_right_zyx; no transpose/flip/scale applied"
+  },
+  "hypothesis_verdicts": {
+    "H1_coordinate_bug": "REJECTED. The affinity pair is +1 along the affinity axis for all three axes; the visualization shows exactly those voxels; no transpose/flip. The affinity EDGE is axis-equivariant.",
+    "H1b_review_unit_geometry_asymmetry": "CONFIRMED AS PRESENT but REJECTED AS CAUSE. The 3-member replicate spread is non-equivariant (Z spreads along Y; Y/X spread along Z). However the counterfactual comparison shows this does NOT drive the labels: (a) the decision tracks the affinity-edge intensity step under the fully-equivariant CENTER_ONLY construction; (b) axis mean spread of raw context does NOT shrink under SYMMETRIC_BOTH_ORTHO vs HISTORICAL (ctx_grad 8.13 hist vs 8.19 symmetric vs 9.92 center-only). Replacing the context geometry would not change the labels.",
+    "H2_anisotropy": "REJECTED. Source is isotropic FIB-SEM 8x8x8 nm (survey manifest + registration/coordinate_frames.json). A one-voxel step is 8 nm on Z, Y, and X equally.",
+    "H3_candidate_generation_effect": "SUPPORTED. Candidates are assigned to an axis by argmax(|3D gradient|). Interfaces whose dominant gradient is Z are selected as Z-interfaces; in this FIB-SEM volume these are near-uniformly judged DIFFERENT. Critically, Z-DIFFERENT interfaces have a LOW mean edge step (~9.7) -- comparable to Y-SAME (~8.8) and X-SAME (~7.0) -- whereas Y/X-DIFFERENT interfaces have LARGE steps (~72-80). So the Z channel selects a different raw regime than the in-plane channels and the class assigned to it does not follow the same edge-strength criterion the in-plane axes follow.",
+    "H4_genuine_structural_effect": "PARTIALLY SUPPORTED / NOT EXCLUDED. On Y and X the expert applies a consistent edge-strength criterion (strong membrane => DIFFERENT, else SAME), so in-plane axes are internally coherent. The Z channel's uniform DIFFERENT verdict at low edge strength is consistent with a genuine sectioning-direction property of the volume (adjacent Z voxels frequently cross a process boundary) rather than an implementation artifact."
+  },
+  "key_quantities": {
+    "affinity_edge_step_mean_by_axis_and_class": {
+      "Z": {"SAME": null, "DIFFERENT": 9.73, "n_DIFFERENT": 60, "n_SAME": 0},
+      "Y": {"SAME": 8.79, "DIFFERENT": 79.54, "n_SAME": 76, "n_DIFFERENT": 13},
+      "X": {"SAME": 7.0, "DIFFERENT": 72.5, "n_SAME": 38, "n_DIFFERENT": 2}
+    },
+    "interpretation": "In-plane (Y,X) DIFFERENT requires a strong raw membrane; Z is labeled DIFFERENT even at weak raw steps. Z is judged by a different effective relation than Y/X."
+  },
+  "conclusion": "No coordinate/implementation BUG causes the pattern (H1 rejected; the affinity edge is equivariant). The demonstrated review-unit geometry asymmetry (H1b) is real but is NOT the cause (counterfactual symmetric construction does not remove the axis difference). Anisotropy (H2) is excluded by isotropic 8nm voxels. The pattern is driven by H3 (axis-dominant-gradient candidate assignment routes a distinct raw regime into the Z channel) and is consistent with H4 (a genuine sectioning-direction property). Therefore Z=DIFFERENT / Y,X=SAME is a property of what the Z channel SELECTS and of the data, not a fixable coordinate error.",
+  "recommended_next_direction_not_yet_executed": "Because there is no coordinate bug to correct, do NOT patch the affinity edge. The identifiability failure is better addressed at the level of (a) the candidate-generation axis-assignment rule (H3) and/or (b) reconsidering whether a per-physical-axis SAME/DIFFERENT contract is the right scientific target for an isotropic volume where the Z channel selects a distinct regime. This requires a design decision, not an automated fix.",
+  "did_not_modify": ["any production generator/sampler", "any frozen artifact", "any review log"],
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

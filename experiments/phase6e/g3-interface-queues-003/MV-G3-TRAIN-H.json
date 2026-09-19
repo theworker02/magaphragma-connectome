@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-RAW-BOUNDARY-QUEUE-RAIN-H",
+  "created_at": "2026-09-17T15:07:07.170601Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-H-003",
+  "crop_id": "MV-G3-TRAIN-H",
+  "raw_sha256": "4d630429b618700e7ab4972123ae627e3279c5b9221f2d108ee0ddc35c925ee5",
+  "selection": {
+    "method": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+    "interfaces": 3,
+    "direct_pairs_per_interface": 3,
+    "prohibited_inputs": [
+      "SegNeuron",
+      "G2 predictions",
+      "supervoxels",
+      "prior labels",
+      "reviewed SAME/DIFFERENT decisions"
+    ],
+    "skip_candidates": 0,
+    "orientation_axis": "Y",
+    "orientation_axis_channel_zyx": 1,
+    "label_blind": true,
+    "exclusion_sources": [
+      {
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-interface-queues-002\\MV-G3-TRAIN-H.json",
+        "sha256": "5ea04abc4da6ddd6fc3800cb7af31ab73b6f0b10dc96fd74353e63fd94206b50",
+        "excluded_questions": 24
+      }
+    ],
+    "excluded_pair_count": 24
+  },
+  "questions": [
+    {
+      "id": "MV-G3-IF-001-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        14,
+        20,
+        89
+      ],
+      "pair_right_zyx": [
+        14,
+        21,
+        89
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.173495292663574,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-001-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        13,
+        20,
+        89
+      ],
+      "pair_right_zyx": [
+        13,
+        21,
+        89
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.173495292663574,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-001-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        15,
+        20,
+        89
+      ],
+      "pair_right_zyx": [
+        15,
+        21,
+        89
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.173495292663574,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        60,
+        16,
+        21
+      ],
+      "pair_right_zyx": [
+        60,
+        17,
+        21
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.062305450439453,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        59,
+        16,
+        21
+      ],
+      "pair_right_zyx": [
+        59,
+        17,
+        21
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.062305450439453,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        61,
+        16,
+        21
+      ],
+      "pair_right_zyx": [
+        61,
+        17,
+        21
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.062305450439453,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        25,
+        71,
+        103
+      ],
+      "pair_right_zyx": [
+        25,
+        72,
+        103
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.012492179870605,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        24,
+        71,
+        103
+      ],
+      "pair_right_zyx": [
+        24,
+        72,
+        103
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.012492179870605,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        26,
+        71,
+        103
+      ],
+      "pair_right_zyx": [
+        26,
+        72,
+        103
+      ],
+      "channel_zyx": 1,
+      "raw_gradient_score": 10.012492179870605,
+      "selection": "RAW_EM_3D_GRADIENT_INTERFACE_GROUP_V1",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Raw features choose review locations only. Each direct pair remains an independent expert decision; no group is automatically promoted."
+}

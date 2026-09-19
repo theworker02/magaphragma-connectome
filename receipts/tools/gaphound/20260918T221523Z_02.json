@@ -1,0 +1,2104 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "counts": {
+      "missing": 147
+    },
+    "coverage": 0.5714285714285714,
+    "highest_priority": {
+      "box": {
+        "x0": 0,
+        "x1": 16,
+        "y0": 0,
+        "y1": 16,
+        "z0": 64,
+        "z1": 80
+      },
+      "kind": "missing",
+      "priority": 0.95,
+      "reason": "inference artifact absent",
+      "tile_key": "T-Z004-Y000-X000"
+    },
+    "missing_frac": 0.42857142857142855,
+    "regions": [
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 0,
+          "y1": 16,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y000-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 16,
+          "y1": 32,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y001-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 32,
+          "y1": 48,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y002-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 48,
+          "y1": 64,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y003-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 64,
+          "y1": 80,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y004-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 80,
+          "y1": 96,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y005-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 96,
+          "y1": 100,
+          "z0": 64,
+          "z1": 80
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z004-Y006-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 0,
+          "y1": 16,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y000-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 16,
+          "y1": 32,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y001-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 32,
+          "y1": 48,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y002-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 48,
+          "y1": 64,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y003-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 64,
+          "y1": 80,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y004-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 80,
+          "y1": 96,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y005-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 96,
+          "y1": 100,
+          "z0": 80,
+          "z1": 96
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z005-Y006-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 0,
+          "y1": 16,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y000-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 16,
+          "y1": 32,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y001-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 32,
+          "y1": 48,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y002-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 48,
+          "y1": 64,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y003-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 64,
+          "y1": 80,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y004-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 80,
+          "y1": 96,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y005-X006"
+      },
+      {
+        "box": {
+          "x0": 0,
+          "x1": 16,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X000"
+      },
+      {
+        "box": {
+          "x0": 16,
+          "x1": 32,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X001"
+      },
+      {
+        "box": {
+          "x0": 32,
+          "x1": 48,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X002"
+      },
+      {
+        "box": {
+          "x0": 48,
+          "x1": 64,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X003"
+      },
+      {
+        "box": {
+          "x0": 64,
+          "x1": 80,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X004"
+      },
+      {
+        "box": {
+          "x0": 80,
+          "x1": 96,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X005"
+      },
+      {
+        "box": {
+          "x0": 96,
+          "x1": 100,
+          "y0": 96,
+          "y1": 100,
+          "z0": 96,
+          "z1": 100
+        },
+        "kind": "missing",
+        "priority": 0.95,
+        "reason": "inference artifact absent",
+        "tile_key": "T-Z006-Y006-X006"
+      }
+    ],
+    "shape_zyx": [
+      100,
+      100,
+      100
+    ],
+    "tile_zyx": [
+      16,
+      16,
+      16
+    ],
+    "validated": 0.5714285714285714
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:15:23Z",
+  "tool": "gaphound"
+}

@@ -1,0 +1,184 @@
+{
+  "CURRENT_EQUALS_RUN1": true,
+  "checks": {
+    "all_12_event_logs_empty": {
+      "detail": {
+        "MV-G3-AXNEU4-01": false,
+        "MV-G3-AXNEU4-02": true,
+        "MV-G3-AXNEU4-03": true,
+        "MV-G3-AXNEU4-04": true,
+        "MV-G3-AXNEU4-05": true,
+        "MV-G3-AXNEU4-06": true,
+        "MV-G3-AXNEU4-07": true,
+        "MV-G3-AXNEU4-08": true,
+        "MV-G3-AXNEU4-09": true,
+        "MV-G3-AXNEU4-10": true,
+        "MV-G3-AXNEU4-11": true,
+        "MV-G3-AXNEU4-12": true
+      },
+      "pass": false
+    },
+    "axis_balance_12_12_12": {
+      "detail": {
+        "X": 12,
+        "Y": 12,
+        "Z": 12
+      },
+      "pass": true
+    },
+    "build_invariants": {
+      "detail": null,
+      "pass": true
+    },
+    "count_12_distinct_sources": {
+      "detail": null,
+      "pass": true
+    },
+    "count_12_locations": {
+      "detail": {
+        "n": 12
+      },
+      "pass": true
+    },
+    "count_36_edges": {
+      "detail": null,
+      "pass": true
+    },
+    "current_equals_run1": {
+      "detail": null,
+      "pass": true
+    },
+    "ondisk_008_all_36_edges_match": {
+      "detail": null,
+      "pass": true
+    },
+    "ondisk_008_centers_match": {
+      "detail": null,
+      "pass": true
+    },
+    "pinned_count_713": {
+      "detail": null,
+      "pass": true
+    },
+    "pinned_digest_matches": {
+      "detail": null,
+      "pass": true
+    },
+    "protocol_004_matches": {
+      "detail": null,
+      "pass": true
+    },
+    "selection_cannot_discover_review_dirs": {
+      "detail": {
+        "forbidden_hits": [],
+        "reachable_functions": [
+          "build_g3_008_axis_neutral._axis_index",
+          "build_g3_008_axis_neutral._edges",
+          "build_g3_008_axis_neutral._hash_rank",
+          "build_g3_008_axis_neutral.eligible_centers",
+          "build_g3_008_axis_neutral.greedy_separated_centers",
+          "build_g3_008_axis_neutral.pinned_historical_edges",
+          "build_g3_008_axis_neutral.select_only"
+        ]
+      },
+      "pass": true
+    },
+    "selection_closure_excludes_build": {
+      "detail": {
+        "reachable": [
+          "build_g3_008_axis_neutral._axis_index",
+          "build_g3_008_axis_neutral._edges",
+          "build_g3_008_axis_neutral._hash_rank",
+          "build_g3_008_axis_neutral.eligible_centers",
+          "build_g3_008_axis_neutral.greedy_separated_centers",
+          "build_g3_008_axis_neutral.pinned_historical_edges",
+          "build_g3_008_axis_neutral.select_only"
+        ]
+      },
+      "pass": true
+    },
+    "snapshot_digest": {
+      "detail": {
+        "digest": "2cbabb9933c3e88fa2a03287ec8cd2b65f0dd3b72dcaf35b235402c7892dafeb"
+      },
+      "pass": true
+    },
+    "snapshot_id_status": {
+      "detail": null,
+      "pass": true
+    },
+    "snapshot_unique_713": {
+      "detail": {
+        "count": 713
+      },
+      "pass": true
+    },
+    "stratum_balance_3_each": {
+      "detail": {
+        "Q1": 3,
+        "Q2": 3,
+        "Q3": 3,
+        "Q4": 3
+      },
+      "pass": true
+    }
+  },
+  "current_canonical_sha256": "8b1d1872a9620b9524aa49ad9b3196bf9d212a93bb9c8529b65d8a55947eda37",
+  "decision": "STOP_DIVERGENCE_OR_GATE_FAILURE",
+  "failures": [
+    "all_12_event_logs_empty"
+  ],
+  "id": "MV-G3-008-FINAL-PRE-REVIEW-VERIFICATION-001",
+  "overall": "FAIL",
+  "run1_canonical_sha256": "8b1d1872a9620b9524aa49ad9b3196bf9d212a93bb9c8529b65d8a55947eda37",
+  "selection_reachability": {
+    "build_reachable_from_select_only": false,
+    "conservative_note": "Closure follows name references from select_only into every project-defined callable (this and other repo modules); stdlib/numpy are not project-defined and are not recursed. Directory-discovery calls or review/output dir references anywhere in this set fail the gate.",
+    "cross_module": true,
+    "forbidden_hits": [],
+    "forbidden_patterns": [
+      "\\bglob\\b",
+      "\\biterdir\\b",
+      "\\blistdir\\b",
+      "\\brglob\\b",
+      "\\bwalk\\b",
+      "\\bscandir\\b",
+      "g3-interface-queues",
+      "g3-external-review-packages"
+    ],
+    "per_function_forbidden_scan": {
+      "build_g3_008_axis_neutral._axis_index": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral._edges": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral._hash_rank": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral.eligible_centers": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral.greedy_separated_centers": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral.pinned_historical_edges": {
+        "forbidden_hits": []
+      },
+      "build_g3_008_axis_neutral.select_only": {
+        "forbidden_hits": []
+      }
+    },
+    "reachable_count": 7,
+    "reachable_functions": [
+      "build_g3_008_axis_neutral._axis_index",
+      "build_g3_008_axis_neutral._edges",
+      "build_g3_008_axis_neutral._hash_rank",
+      "build_g3_008_axis_neutral.eligible_centers",
+      "build_g3_008_axis_neutral.greedy_separated_centers",
+      "build_g3_008_axis_neutral.pinned_historical_edges",
+      "build_g3_008_axis_neutral.select_only"
+    ],
+    "root": "build_g3_008_axis_neutral.select_only"
+  }
+}

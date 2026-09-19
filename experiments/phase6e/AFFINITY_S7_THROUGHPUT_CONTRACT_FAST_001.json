@@ -1,0 +1,37 @@
+{
+  "id": "AFFINITY_S7_THROUGHPUT_CONTRACT_FAST_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T05:15:00Z",
+  "status": "FROZEN_BEFORE_FAST_QUEUE_EXECUTION",
+  "frozen_before_seeing_fast_chunk_results": true,
+  "parent_engineering": "AFFINITY_S7_THROUGHPUT_ENGINEERING_001",
+  "parent_s7": "AFFINITY_FULL_VOLUME_S7_CONTRACT_001",
+  "purpose": "Accelerate authorized full-volume affinity inference without opening MV-SEG / synapses / graph or changing affinity GATE_A–E.",
+  "primary_lever": "T1_BATCHED_TILE_INFER",
+  "accompanying_operational_levers": [
+    "T5_SKIP_PERSIST_RAW_READ",
+    "CORE_ONLY_FETCH_NO_PLANNING_HALO",
+    "T6_STRIDE_YX_64",
+    "AMP_FP16_INFER",
+    "DEFER_SEG_OFF_GPU_CRITICAL_PATH"
+  ],
+  "changes_vs_pilot_serial_path": {
+    "fetch": "core_bounds only (not read_bounds halo)",
+    "persist_raw_read": false,
+    "crop_size_zyx": [20, 64, 64],
+    "stride_zyx": [10, 64, 64],
+    "tile_batch_size": 8,
+    "amp_dtype": "float16",
+    "segmentation": "Deferred to separate ELF pass; affinity chunk marked AFFINITY_DONE_SEG_PENDING"
+  },
+  "does_not_change": [
+    "Authorized checkpoint C_PATCH_20_64_64 step10",
+    "GATE_A–E / threshold 0.5",
+    "MV-SEG production gate (still CLOSED)",
+    "Synapse / connectivity graph (still CLOSED)",
+    "Biological identity prohibition"
+  ],
+  "expected_effect_order_of_magnitude": "Fewer tiles per chunk (~3–6× vs halo+stride32 path) plus better GPU occupancy from batching; exact speedup measured on first FAST chunk receipt",
+  "worker": "tools/run_affinity_fullvol_s7_fast_worker.py",
+  "pilot_chunk_note": "MV-CHUNK-10019646 may finish on the slow path; remaining NOT_STARTED chunks use FAST_001"
+}

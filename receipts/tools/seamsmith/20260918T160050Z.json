@@ -1,0 +1,79 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "action_counts": {
+      "HOLD": 3,
+      "MATCH": 2,
+      "REVIEW": 3,
+      "SPLIT": 1
+    },
+    "artifact_sha256": "11f0ee48c48929baa23c351f93975d66628e0fd4a1258ed2b7e372060dec2de1",
+    "auto_merge_applied": false,
+    "axis": "x",
+    "halo": 4,
+    "n_candidates": 9,
+    "provenance": {
+      "edges": [
+        {
+          "attrs": {},
+          "child": "seam_report",
+          "parent": "labels_a",
+          "relation": "seam_input"
+        },
+        {
+          "attrs": {},
+          "child": "seam_report",
+          "parent": "labels_b",
+          "relation": "seam_input"
+        }
+      ],
+      "graph_id": "3bb88e3736ee4de9bab1d0cd4883b85e",
+      "nodes": [
+        {
+          "attrs": {
+            "shape": [
+              16,
+              24,
+              28
+            ]
+          },
+          "kind": "volume",
+          "label": "",
+          "node_id": "labels_a"
+        },
+        {
+          "attrs": {
+            "shape": [
+              16,
+              24,
+              28
+            ]
+          },
+          "kind": "volume",
+          "label": "",
+          "node_id": "labels_b"
+        },
+        {
+          "attrs": {
+            "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\seamsmith\\seam_report.json"
+          },
+          "kind": "artifact",
+          "label": "",
+          "node_id": "seam_report"
+        }
+      ]
+    },
+    "report": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\seamsmith\\seam_report.json",
+    "tool": "seamsmith",
+    "version": "0.1.0"
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T16:00:50Z",
+  "tool": "seamsmith"
+}

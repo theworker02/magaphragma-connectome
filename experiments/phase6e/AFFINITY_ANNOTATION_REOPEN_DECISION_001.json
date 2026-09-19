@@ -1,0 +1,40 @@
+{
+  "id": "AFFINITY_ANNOTATION_REOPEN_DECISION_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T02:25:00Z",
+  "ANNOTATION_REOPEN": "APPROVED",
+  "status": "ANNOTATION_REOPEN_APPROVED",
+  "cites": {
+    "verdict": "SPEC002_ANNOTATION_PROCEDURE_VALIDATED",
+    "validation_artifact": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002.json",
+    "validation_class_counts": {
+      "SAME_PROCESS": 14,
+      "DIFFERENT_PROCESS": 15,
+      "excluded_UNCERTAIN_or_BAD": 7
+    },
+    "orientation_invariance": "PASS",
+    "negative_class_recoverability": "PASS",
+    "synthetic_gate": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json",
+    "presentation_smoke": "experiments/phase6e/G3_PRESENTATION_REPAIR_SMOKE_001.json"
+  },
+  "what_is_validated": "The SPEC002 equivariant annotation procedure (measurement instrument), not any affinity model.",
+  "what_reopens": [
+    "Production ground-truth acquisition under the frozen SPEC002 production protocol"
+  ],
+  "what_does_not_reopen": [
+    "Affinity model training",
+    "G3-008 / invalid orientation-collinear label reuse",
+    "G3-009",
+    "Use of AFFINITY_SPEC002_VALIDATION_002 (or AS2-001 / DCD / smoke) as training data",
+    "Automatic promotion of any batch to production GT without QC gates",
+    "Dense segmentation / connectome claims"
+  ],
+  "hard_separation": {
+    "validation_labels": "Permanently excluded from training; evidence only",
+    "production_labels": "Candidate GT until PRODUCTION_GT_PROMOTED after frozen QC",
+    "training": "Requires separate AFFINITY_TRAINING_REOPEN / TRAIN_AUTHORIZATION after promotion"
+  },
+  "next_active_gate": "PRODUCTION_GT_BATCH_001 acquisition → QC → PRODUCTION_GT_PROMOTED",
+  "protocol_path": "experiments/phase6e/AFFINITY_PRODUCTION_LABELING_PROTOCOL_001.json",
+  "route_amendment_path": "experiments/phase6e/CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_SPEC002_VALIDATED.json"
+}

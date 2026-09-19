@@ -1,0 +1,40 @@
+{
+  "checksum_sha256": "22f7e1db77a0fc98db386bf025bfcd3d5a3072994dc4b297584a7e4008ce381a",
+  "identity": {
+    "algorithm_version": "1.0",
+    "checkpoint": "default",
+    "coordinates": [
+      16.0,
+      0.0,
+      16.0,
+      32.0,
+      16.0,
+      32.0
+    ],
+    "halo": 8,
+    "identity_hash": "f9264b0492253cc98e52cad78f9fdcab3073b3ea0d28565f99e9b92563ac26e4",
+    "model": "axonforge",
+    "precision": "fp32",
+    "preprocessing": {
+      "normalize": "uint8_scale"
+    },
+    "resolution": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "scientific_config": {
+      "stage": "tile_inference",
+      "tile_key": "T-Z001-Y000-X001"
+    },
+    "source_volume_hash": "synthetic",
+    "tile_dimensions": [
+      32,
+      64,
+      64
+    ]
+  },
+  "identity_hash": "f9264b0492253cc98e52cad78f9fdcab3073b3ea0d28565f99e9b92563ac26e4",
+  "payload_file": "payload.json",
+  "payload_kind": "json"
+}

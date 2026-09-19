@@ -1,0 +1,38 @@
+{
+  "id": "MV-G3-SPATIAL-DIVERSITY-COHORT-001-REVIEW-ADMISSION-DECISION",
+  "created_at": "2026-09-17T12:02:29.3527752Z",
+  "cohort_path": "experiments/phase6e/MV-G3-SPATIAL-DIVERSITY-COHORT-001.json",
+  "cohort_sha256": "e32de39a0d0083647143730ea276026aa81ae3047e76a40bba33e5b1a3ecb235",
+  "status": "REJECTED_AS_FROZEN_G3_TRAINING_DATASET",
+  "review_completion": {
+    "regions_completed": 9,
+    "frozen_questions_per_region": 24,
+    "all_review_events_append_only": true,
+    "mv_gtvol_000004_used": false
+  },
+  "training_regions": {
+    "ADMITTED_PENDING_DATASET_FREEZE": ["MV-G3-TRAIN-A", "MV-G3-TRAIN-B", "MV-G3-TRAIN-D", "MV-G3-TRAIN-F"],
+    "REJECTED_UNBALANCED_INTERFACE_EVIDENCE": ["MV-G3-TRAIN-C", "MV-G3-TRAIN-E"]
+  },
+  "validation_regions": {
+    "ADMITTED_VALIDATION_ONLY_PENDING_DATASET_FREEZE": ["MV-G3-VALIDATION-V1", "MV-G3-VALIDATION-V2", "MV-G3-VALIDATION-V3"]
+  },
+  "reason": "The frozen six-training-region cohort requires each region to retain eligible SAME_PROCESS and DIFFERENT_PROCESS interface evidence. TRAIN-C has zero eligible SAME interfaces after excluding a contradictory group; TRAIN-E has zero SAME interfaces. The original cohort therefore cannot be materialized, trained, or silently reduced.",
+  "scientific_consequence": "This is a supervision-coverage failure, not a model result. No G3 affinity tensor, LORO run, model selection, evaluator selection, or protected MV-GTVOL-000004 replay has occurred.",
+  "preserved_assets": [
+    "all nine frozen raw crops",
+    "all nine raw-EM-only queues",
+    "all append-only expert review logs",
+    "per-region admission decisions",
+    "G3 interface evidence contract"
+  ],
+  "required_next_action": "Create a new G3 dataset version with two newly selected, spatially independent TRAIN replacement regions before review. Do not alter this frozen cohort or reuse validation evidence for optimization.",
+  "prohibited_actions": [
+    "drop_train_c_or_train_e_without_a_new_dataset_version",
+    "reinterpret_different_as_same",
+    "use_validation_regions_for_training",
+    "start_g3_training",
+    "access_mv_gtvol_000004"
+  ],
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

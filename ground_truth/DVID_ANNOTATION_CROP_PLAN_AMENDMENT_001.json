@@ -1,0 +1,23 @@
+{
+  "id": "MV-DVID-ANNOTATION-CROP-PLAN-AMENDMENT-001",
+  "purpose": "Independent raw-EM membrane-crossing validation pilot; selected before membrane candidates are generated.",
+  "selection_method": {
+    "parent_region_id": "MV-GTVOL-000005",
+    "candidate_grid": "48x96x96 ZYX blocks wholly outside existing validation crop",
+    "ranking": "mean three-dimensional raw intensity-gradient magnitude",
+    "selected_gradient_mean": 2.5246,
+    "selection_is_not": ["SegNeuron affinity ranking", "supervoxel contact ranking", "model-output optimization"]
+  },
+  "crop": {
+    "id": "MV-DVID-ANN-000005",
+    "parent_region_id": "MV-GTVOL-000005",
+    "split": "DVID_TARGET_VALIDATION",
+    "origin_zyx": [0, 64, 64],
+    "shape_zyx": [48, 96, 96],
+    "purpose": "RAW_EM_MEMBRANE_CROSSING_PILOT",
+    "overlap_assertions": {
+      "MV-DVID-ANN-000004": "NO_OVERLAP: new Z range [0,48), previous Z range [48,144)"
+    }
+  },
+  "protected_regions": ["MV-GTVOL-000004"]
+}

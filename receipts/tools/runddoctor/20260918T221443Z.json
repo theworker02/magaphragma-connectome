@@ -1,0 +1,92 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "checks": [
+      {
+        "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets",
+        "name": "dataset readable",
+        "ok": true
+      },
+      {
+        "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\axonforge\\work_graph.json",
+        "name": "manifests valid",
+        "ok": true
+      },
+      {
+        "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\models",
+        "name": "checkpoint available",
+        "ok": true
+      },
+      {
+        "detail": "optional",
+        "name": "GPU detected",
+        "ok": true
+      },
+      {
+        "detail": "import ok",
+        "name": "AxonForge operational",
+        "ok": true
+      },
+      {
+        "detail": "on=True mode=manual",
+        "name": "AxonForge switch",
+        "ok": true
+      },
+      {
+        "detail": "17/17 ok",
+        "name": "registered tools importable",
+        "ok": true
+      },
+      {
+        "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\neurocache",
+        "name": "cache writable",
+        "ok": true
+      },
+      {
+        "detail": "643.6 GiB free",
+        "name": "storage available",
+        "ok": true
+      }
+    ],
+    "recommended": [
+      "connectome tilemedic recover --failed  # prior TileMedic receipts present"
+    ],
+    "switch": {
+      "autonomous": false,
+      "flips": 24,
+      "last_flip_s": 1789754941.9213493,
+      "last_reason": "manual",
+      "mode": "manual",
+      "powered_on": true
+    },
+    "tool_imports": {
+      "artifactvet": true,
+      "axonforge": true,
+      "branchjudge": true,
+      "deltagraph": true,
+      "edgeprobe": true,
+      "gaphound": true,
+      "hyperdrain": true,
+      "morphguard": true,
+      "neurocache": true,
+      "pipeline": true,
+      "regionbench": true,
+      "runddoctor": true,
+      "seamsmith": true,
+      "synapselens": true,
+      "tilemedic": true,
+      "tracewire": true,
+      "voxscout": true
+    },
+    "warnings": []
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:14:43Z",
+  "tool": "runddoctor"
+}

@@ -1,0 +1,27 @@
+{
+  "project": "Connectome Project",
+  "subsystem": "AxonForge",
+  "version": "1.4.0",
+  "ledger": {
+    "total_voxels": 32768,
+    "validated_voxels": 32768,
+    "rejected_voxels": 0,
+    "cached_voxels": 32768,
+    "uncertain_regions": 0,
+    "validated_coverage": 1.0,
+    "unaccounted_volume": 0
+  },
+  "claims": {
+    "halo_cache": false,
+    "cascade_speed": false,
+    "adaptive_e2e_speed": false
+  },
+  "pass_name": "B_HALO",
+  "cache_hit_rate": 0.0,
+  "accepted": [],
+  "rejected": [
+    "halo_cache",
+    "cascade_speed",
+    "adaptive_e2e_speed"
+  ]
+}

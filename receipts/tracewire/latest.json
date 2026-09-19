@@ -1,0 +1,248 @@
+{
+  "edges": [
+    {
+      "attrs": {},
+      "child": "smoke-preprocess-001",
+      "parent": "smoke-volume-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-tile-001",
+      "parent": "smoke-preprocess-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-model_checkpoint-001",
+      "parent": "smoke-tile-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-inference-001",
+      "parent": "smoke-model_checkpoint-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-segment-001",
+      "parent": "smoke-inference-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-synapse-001",
+      "parent": "smoke-segment-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-graph_edge-001",
+      "parent": "smoke-synapse-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "smoke-neuron-001",
+      "parent": "smoke-graph_edge-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-preprocess-001",
+      "parent": "demo-volume-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-tile-001",
+      "parent": "demo-preprocess-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-model_checkpoint-001",
+      "parent": "demo-tile-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-inference-001",
+      "parent": "demo-model_checkpoint-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-segment-001",
+      "parent": "demo-inference-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-synapse-001",
+      "parent": "demo-segment-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-graph_edge-001",
+      "parent": "demo-synapse-001",
+      "relation": "produces"
+    },
+    {
+      "attrs": {},
+      "child": "demo-neuron-001",
+      "parent": "demo-graph_edge-001",
+      "relation": "produces"
+    }
+  ],
+  "graph_id": "23114e96cf664df2a7fa56ec87c01fe7",
+  "nodes": [
+    {
+      "attrs": {
+        "stage": "volume"
+      },
+      "kind": "volume",
+      "label": "volume",
+      "node_id": "smoke-volume-001"
+    },
+    {
+      "attrs": {
+        "stage": "preprocess"
+      },
+      "kind": "preprocess",
+      "label": "preprocess",
+      "node_id": "smoke-preprocess-001"
+    },
+    {
+      "attrs": {
+        "stage": "tile"
+      },
+      "kind": "tile",
+      "label": "tile",
+      "node_id": "smoke-tile-001"
+    },
+    {
+      "attrs": {
+        "stage": "model_checkpoint"
+      },
+      "kind": "model_checkpoint",
+      "label": "model_checkpoint",
+      "node_id": "smoke-model_checkpoint-001"
+    },
+    {
+      "attrs": {
+        "stage": "inference"
+      },
+      "kind": "inference",
+      "label": "inference",
+      "node_id": "smoke-inference-001"
+    },
+    {
+      "attrs": {
+        "stage": "segment"
+      },
+      "kind": "segment",
+      "label": "segment",
+      "node_id": "smoke-segment-001"
+    },
+    {
+      "attrs": {
+        "stage": "synapse"
+      },
+      "kind": "synapse",
+      "label": "synapse",
+      "node_id": "smoke-synapse-001"
+    },
+    {
+      "attrs": {
+        "stage": "graph_edge"
+      },
+      "kind": "graph_edge",
+      "label": "graph_edge",
+      "node_id": "smoke-graph_edge-001"
+    },
+    {
+      "attrs": {
+        "stage": "neuron"
+      },
+      "kind": "neuron",
+      "label": "neuron",
+      "node_id": "smoke-neuron-001"
+    },
+    {
+      "attrs": {
+        "stage": "volume"
+      },
+      "kind": "volume",
+      "label": "volume",
+      "node_id": "demo-volume-001"
+    },
+    {
+      "attrs": {
+        "stage": "preprocess"
+      },
+      "kind": "preprocess",
+      "label": "preprocess",
+      "node_id": "demo-preprocess-001"
+    },
+    {
+      "attrs": {
+        "stage": "tile"
+      },
+      "kind": "tile",
+      "label": "tile",
+      "node_id": "demo-tile-001"
+    },
+    {
+      "attrs": {
+        "stage": "model_checkpoint"
+      },
+      "kind": "model_checkpoint",
+      "label": "model_checkpoint",
+      "node_id": "demo-model_checkpoint-001"
+    },
+    {
+      "attrs": {
+        "stage": "inference"
+      },
+      "kind": "inference",
+      "label": "inference",
+      "node_id": "demo-inference-001"
+    },
+    {
+      "attrs": {
+        "stage": "segment"
+      },
+      "kind": "segment",
+      "label": "segment",
+      "node_id": "demo-segment-001"
+    },
+    {
+      "attrs": {
+        "stage": "synapse"
+      },
+      "kind": "synapse",
+      "label": "synapse",
+      "node_id": "demo-synapse-001"
+    },
+    {
+      "attrs": {
+        "stage": "graph_edge"
+      },
+      "kind": "graph_edge",
+      "label": "graph_edge",
+      "node_id": "demo-graph_edge-001"
+    },
+    {
+      "attrs": {
+        "stage": "neuron"
+      },
+      "kind": "neuron",
+      "label": "neuron",
+      "node_id": "demo-neuron-001"
+    }
+  ],
+  "saved_at": "2026-09-18T16:01:00Z"
+}

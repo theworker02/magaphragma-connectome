@@ -1,0 +1,88 @@
+{
+  "neurons": {
+    "n1": {
+      "centroid": [
+        2,
+        0,
+        0
+      ],
+      "confidence": 0.85,
+      "member_ids": [
+        1,
+        2
+      ]
+    },
+    "n2": {
+      "centroid": [
+        100,
+        0,
+        0
+      ],
+      "confidence": 0.8
+    },
+    "n4": {
+      "centroid": [
+        1,
+        1,
+        0
+      ],
+      "confidence": 0.7,
+      "member_ids": [
+        3,
+        4
+      ]
+    },
+    "n5": {
+      "centroid": [
+        50,
+        50,
+        0
+      ],
+      "confidence": 0.7,
+      "member_ids": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "synapses": {
+    "s1": {
+      "confidence": 0.9
+    },
+    "s3": {
+      "confidence": 0.55
+    }
+  },
+  "edges": [
+    [
+      "n1",
+      "n2"
+    ],
+    [
+      "n1",
+      "n4"
+    ]
+  ],
+  "components": [
+    [
+      "n1",
+      "n2",
+      "n4"
+    ],
+    [
+      "n5"
+    ]
+  ],
+  "degrees": {
+    "n1": 2,
+    "n2": 1,
+    "n4": 1
+  },
+  "meta": {
+    "checkpoint": "ckpt-b",
+    "synapse_threshold": 0.4,
+    "source_volume_hash": "volAAA",
+    "boundary_reconciliation": "v2"
+  }
+}

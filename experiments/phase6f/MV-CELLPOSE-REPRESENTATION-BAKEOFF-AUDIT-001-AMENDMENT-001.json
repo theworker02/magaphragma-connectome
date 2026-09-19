@@ -1,0 +1,22 @@
+{
+  "id": "MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001-AMENDMENT-001",
+  "status": "EXTERNAL_CHECKPOINT_EXECUTION_REQUIRES_EXPLICIT_USER_CONFIRMATION",
+  "amends": "MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001",
+  "checkpoint_safely_inspected": {
+    "model": "cpdino",
+    "sha256": "fad0dda262554922da1c5ab0e0004b00c1b14b8a48bea6781b89222567577573",
+    "inspection": "torch.load(weights_only=True, mmap=True)",
+    "result": "PASS"
+  },
+  "blocked_actions": [
+    "cpdino CellposeModel load and AMD forward",
+    "any further CellposeModel checkpoint load including cpdino-vitb V1 evaluation"
+  ],
+  "reason": "The execution safety service requires an explicit user authorization before invoking the pinned Cellpose model loader on an external checkpoint, despite completed weights-only inspection.",
+  "scientific_state": {
+    "MV-GTVOL-000004_used": false,
+    "G3_labels_changed": false,
+    "training_started": false,
+    "biological_promotions": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "MV-G3-AXNEU4-008-STATE-TRANSITION-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T17:05:00Z",
+  "batch_id": "MV-G3-AXIS-NEUTRAL-PAIRED-REVIEW-BATCH-008",
+  "state_transition": {"from": "PRE_REVIEW", "to": "PARTIAL_REVIEW"},
+  "reason": "The empty-log pre-review gate correctly detected that -008 is not wholly untouched: MV-G3-AXNEU4-01 already contains 3 recorded human decisions from the exact canonical -008 selection. Per decision Path 1, valid human-review provenance is preserved rather than destroyed; the batch is therefore reclassified from PRE_REVIEW to PARTIAL_REVIEW without modifying any event, queue, center, edge, sampler, or threshold.",
+  "canonical_selection_verification": {
+    "canonical_008_selection_verified": true,
+    "all_scientific_selection_gates_passed": true,
+    "sampler": "AXIS_NEUTRAL_PAIRED_LOCATION (canonical -008)",
+    "note": "Selection/provenance/spatial/label-blind gates all passed for the canonical -008 batch prior to this transition."
+  },
+  "review_state": {
+    "total_intended_decisions": 36,
+    "locations": 12,
+    "edges_per_location": 3,
+    "already_recorded_decisions": 3,
+    "remaining_decisions": 33,
+    "reviewed_locations": ["MV-G3-AXNEU4-01"],
+    "unreviewed_locations": [
+      "MV-G3-AXNEU4-02", "MV-G3-AXNEU4-03", "MV-G3-AXNEU4-04", "MV-G3-AXNEU4-05",
+      "MV-G3-AXNEU4-06", "MV-G3-AXNEU4-07", "MV-G3-AXNEU4-08", "MV-G3-AXNEU4-09",
+      "MV-G3-AXNEU4-10", "MV-G3-AXNEU4-11", "MV-G3-AXNEU4-12"
+    ]
+  },
+  "preserved_evidence": {
+    "location": "MV-G3-AXNEU4-01",
+    "event_count": 3,
+    "event_log_path": "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-01/workspace.events.jsonl",
+    "event_log_sha256_at_transition": "fa337f6964592340463037256a28525384a86059916edaf094a69d219bfbb340",
+    "re_blinding_prohibited": "AXNEU4-01 labels have been observed; it must NOT be deleted and re-reviewed. Its 3 decisions count toward the final 36."
+  },
+  "integrity_assertions": {
+    "no_existing_event_modified": true,
+    "no_queue_changed": true,
+    "no_center_or_edge_changed": true,
+    "sampler_unchanged": true,
+    "thresholds_unchanged": true,
+    "identifiability_contract_unchanged": true
+  },
+  "prohibitions_in_effect": [
+    "no_aggregate_label_analysis_until_36_complete",
+    "no_use_of_observed_AXNEU4-01_labels_to_alter_sampling_strata_thresholds_or_presentation",
+    "no_creation_of_-009",
+    "no_sampler_rerun_or_redesign",
+    "no_interpretation_of_AXNEU4-01_triplet_now"
+  ],
+  "resume_plan": {
+    "resume_at": "MV-G3-AXNEU4-02",
+    "proceed_sequentially_through": "MV-G3-AXNEU4-12",
+    "post_completion": [
+      "freeze complete review artifact",
+      "validate event integrity and exactly one final decision per intended edge",
+      "report the 12 explicit Z/Y/X triplets",
+      "then perform prospective label analysis",
+      "rerun predeclared identifiability contract unchanged",
+      "determine whether same-location paired experiment breaks or preserves the historical axis/class relationship"
+    ]
+  },
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

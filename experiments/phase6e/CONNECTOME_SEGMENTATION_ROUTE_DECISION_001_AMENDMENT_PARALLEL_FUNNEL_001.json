@@ -1,0 +1,45 @@
+{
+  "id": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_PARALLEL_FUNNEL_001",
+  "created_at": "2026-09-18T03:20:00Z",
+  "parent_decision": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "amends": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_TRAIN_FAIL_001",
+  "status": "AMENDMENT_LOCKED",
+  "state": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_FROZEN_AWAITING_EXECUTE",
+  "workflow_change": {
+    "from": "serial train → evaluate → diagnose → retrain",
+    "to": "frozen parallel short-qualification matrix → extend survivors → GATE_A–E → human S4 → predeclared ROI mini-connectome → seg QC → full-volume",
+    "evidence_standard": "UNCHANGED (same split, threshold 0.5, GATE_A–E including GATE_D margin>0)"
+  },
+  "updated_pipeline_stage_board": {
+    "annotation_procedure_SPEC002": "VALIDATED",
+    "production_GT": "BATCH_002_PROMOTED",
+    "affinity_training_authorization": "REOPENED",
+    "first_controlled_train_PGT002_001": "FAIL (GATE_D); permanently recorded",
+    "serial_failure_analysis_001": "SUPERSEDED_AS_ACTIVE_GATE (construction preflight retained as funnel S0)",
+    "affinity_parallel_qualification_funnel": "FROZEN (AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001)",
+    "candidate_matrix": "FROZEN (AFFINITY_PARALLEL_CANDIDATE_MATRIX_001) — not launched by this amendment",
+    "roi_reconstruction_gate": "CLOSED (AFFINITY_ROI_RECONSTRUCTION_GATE_001)",
+    "affinity_model_qualified_for_dense_seg": false,
+    "dense_neuronal_segmentation": "STILL_CLOSED",
+    "full_volume_inference": "STILL_CLOSED",
+    "process_reconstruction_connectome": "STILL_CLOSED",
+    "active_gate": "Orchestrator dry-run ready; execute only with tools/orchestrate_affinity_qualification_funnel.py --execute"
+  },
+  "do_not": [
+    "Touch GATE_D",
+    "Promote checkpoint-step10 from PGT002-001",
+    "Run dense segmentation or full-volume before ROI QC PASS",
+    "Retrain identical PGT002-001 config for hundreds more steps",
+    "Invent new candidates inside MATRIX_001 after seeing short-run scores",
+    "Open ROI until ≥1 candidate PASS + human S4"
+  ],
+  "artifacts": {
+    "funnel": "experiments/phase6e/AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001.json",
+    "matrix": "experiments/phase6e/AFFINITY_PARALLEL_CANDIDATE_MATRIX_001.json",
+    "roi_gate": "experiments/phase6e/AFFINITY_ROI_RECONSTRUCTION_GATE_001.json",
+    "orchestrator": "tools/orchestrate_affinity_qualification_funnel.py",
+    "worker": "tools/train_affinity_parallel_candidate.py"
+  },
+  "human_gates": ["S4 affinity authorize ROI", "S6 ROI seg QC", "S8 targeted proofreading / active labeling"],
+  "next_executable_step": "python tools/orchestrate_affinity_qualification_funnel.py --execute  (after dry-run review)"
+}

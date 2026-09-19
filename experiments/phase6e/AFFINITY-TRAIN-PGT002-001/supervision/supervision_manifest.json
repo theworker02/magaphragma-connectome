@@ -1,0 +1,660 @@
+{
+  "contract_id": "AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001",
+  "counts": {
+    "eval": {
+      "DIFFERENT_PROCESS": 4,
+      "SAME_PROCESS": 2,
+      "n": 6
+    },
+    "train": {
+      "DIFFERENT_PROCESS": 6,
+      "SAME_PROCESS": 12,
+      "n": 18
+    }
+  },
+  "created_at": "2026-09-18T02:51:27.801161Z",
+  "eval_edges": [
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-02",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-5E2C51243843",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        15,
+        110,
+        4
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-078-raw_zyx.npy",
+      "raw_sha256": "db4130cbdc69c25e09a9b6772aa6b216e3b0273112b88b0c12e4795328932381",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-078",
+      "target": 0
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-05",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-BAB09CA48AC4",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        55,
+        94,
+        55
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-083-raw_zyx.npy",
+      "raw_sha256": "6a46d50e7d50954d8c331574ccde905a4ba425034908fb86ab3b31824a0dbcb6",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-083",
+      "target": 0
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-02",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-BB854E1BF43D",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        15,
+        111,
+        3
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-078-raw_zyx.npy",
+      "raw_sha256": "db4130cbdc69c25e09a9b6772aa6b216e3b0273112b88b0c12e4795328932381",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-078",
+      "target": 0
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-05",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        54,
+        95,
+        55
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-083-raw_zyx.npy",
+      "raw_sha256": "6a46d50e7d50954d8c331574ccde905a4ba425034908fb86ab3b31824a0dbcb6",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-083",
+      "target": 1
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-05",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-E992DA993C6B",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        54,
+        94,
+        56
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-083-raw_zyx.npy",
+      "raw_sha256": "6a46d50e7d50954d8c331574ccde905a4ba425034908fb86ab3b31824a0dbcb6",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-083",
+      "target": 0
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-02",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        16,
+        110,
+        3
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-078-raw_zyx.npy",
+      "raw_sha256": "db4130cbdc69c25e09a9b6772aa6b216e3b0273112b88b0c12e4795328932381",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-078",
+      "target": 1
+    }
+  ],
+  "eval_sources": [
+    "MV-DVID-RAW-SURVEY-078",
+    "MV-DVID-RAW-SURVEY-083"
+  ],
+  "id": "AFFINITY-TRAIN-PGT002-001-SUPERVISION",
+  "promoted_artifact": "experiments/phase6e/PRODUCTION_GT_PROMOTED_BATCH_002.json",
+  "promoted_artifact_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+  "status": "FROZEN_SPARSE_EDGE_SUPERVISION",
+  "train_edges": [
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-03",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-278692AF03E9",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        13,
+        18,
+        62
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-079-raw_zyx.npy",
+      "raw_sha256": "6923f56473a9db60d687987c03a9a4b218a448dbd3a1f579a20cb25146ce5557",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-079",
+      "target": 0
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-08",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-288803F0D60B",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        20,
+        123,
+        124
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-092-raw_zyx.npy",
+      "raw_sha256": "6d707f657981c59bb02d3559f5fdc401847f295c5844f7532ed749d8af8f1030",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-092",
+      "target": 1
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-04",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-2BAB2DBDF0A7",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        40,
+        123,
+        102
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-082-raw_zyx.npy",
+      "raw_sha256": "b1e14b8279899d1183ee87b2ca185cbb871b05bc869584effd1c98a319a7e1f3",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-082",
+      "target": 1
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-04",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-2BEBEEDCFF92",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        41,
+        123,
+        101
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-082-raw_zyx.npy",
+      "raw_sha256": "b1e14b8279899d1183ee87b2ca185cbb871b05bc869584effd1c98a319a7e1f3",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-082",
+      "target": 0
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-01",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-2CE1833D1CCB",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        70,
+        3
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-076-raw_zyx.npy",
+      "raw_sha256": "19000df78c5934ad1b7b392acec9895d998cca9777240ff4b28101ee648783eb",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-076",
+      "target": 0
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-01",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-30FB1AD8CDD9",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        69,
+        4
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-076-raw_zyx.npy",
+      "raw_sha256": "19000df78c5934ad1b7b392acec9895d998cca9777240ff4b28101ee648783eb",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-076",
+      "target": 0
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-04",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-4966B41367CE",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        40,
+        124,
+        101
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-082-raw_zyx.npy",
+      "raw_sha256": "b1e14b8279899d1183ee87b2ca185cbb871b05bc869584effd1c98a319a7e1f3",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-082",
+      "target": 1
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-06",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-49E6371C12AA",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        21,
+        123,
+        111
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-087-raw_zyx.npy",
+      "raw_sha256": "93e4ab2f2d8c4b4fa06ad7e24cdeef835595c53f372d14e1b107607066345077",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-087",
+      "target": 1
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-07",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-4B39A820CA3B",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        44,
+        91,
+        63
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-088-raw_zyx.npy",
+      "raw_sha256": "0da51dce5ec7833a96c28d87fe610a26e9e70bb23328059104f51b651ce0687d",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-088",
+      "target": 0
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-07",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-55E748E01AD8",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        91,
+        64
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-088-raw_zyx.npy",
+      "raw_sha256": "0da51dce5ec7833a96c28d87fe610a26e9e70bb23328059104f51b651ce0687d",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-088",
+      "target": 1
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-08",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-57A99981556A",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        20,
+        124,
+        123
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-092-raw_zyx.npy",
+      "raw_sha256": "6d707f657981c59bb02d3559f5fdc401847f295c5844f7532ed749d8af8f1030",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-092",
+      "target": 1
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-06",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-58E145DE5FF6",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        20,
+        124,
+        111
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-087-raw_zyx.npy",
+      "raw_sha256": "93e4ab2f2d8c4b4fa06ad7e24cdeef835595c53f372d14e1b107607066345077",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-087",
+      "target": 1
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-03",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-7637862CBC1B",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        14,
+        17,
+        62
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-079-raw_zyx.npy",
+      "raw_sha256": "6923f56473a9db60d687987c03a9a4b218a448dbd3a1f579a20cb25146ce5557",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-079",
+      "target": 1
+    },
+    {
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-PGT2-07",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-9FAE4E76F2A2",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        92,
+        63
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-088-raw_zyx.npy",
+      "raw_sha256": "0da51dce5ec7833a96c28d87fe610a26e9e70bb23328059104f51b651ce0687d",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-088",
+      "target": 1
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-08",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-AF87B0160AA0",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        21,
+        123,
+        123
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-092-raw_zyx.npy",
+      "raw_sha256": "6d707f657981c59bb02d3559f5fdc401847f295c5844f7532ed749d8af8f1030",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-092",
+      "target": 1
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-03",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-BCABD87BA2BF",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        13,
+        17,
+        63
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-079-raw_zyx.npy",
+      "raw_sha256": "6923f56473a9db60d687987c03a9a4b218a448dbd3a1f579a20cb25146ce5557",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-079",
+      "target": 1
+    },
+    {
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-PGT2-06",
+      "decision": "DIFFERENT_PROCESS",
+      "opaque_decision_id": "MV-PGT2-BF49DC3573EF",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        20,
+        123,
+        112
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-087-raw_zyx.npy",
+      "raw_sha256": "93e4ab2f2d8c4b4fa06ad7e24cdeef835595c53f372d14e1b107607066345077",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-087",
+      "target": 0
+    },
+    {
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-PGT2-01",
+      "decision": "SAME_PROCESS",
+      "opaque_decision_id": "MV-PGT2-DD8E15EDBE9C",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        4,
+        69,
+        3
+      ],
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-076-raw_zyx.npy",
+      "raw_sha256": "19000df78c5934ad1b7b392acec9895d998cca9777240ff4b28101ee648783eb",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_id": "MV-DVID-RAW-SURVEY-076",
+      "target": 1
+    }
+  ],
+  "train_sources": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ]
+}

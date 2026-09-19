@@ -1,0 +1,18 @@
+{
+  "id": "AFFINITY_S6_SEG_QC_AUTHORIZATION_001",
+  "created_at": "2026-09-18T04:30:00Z",
+  "status": "APPROVED",
+  "human_decision": "S6_PASS",
+  "authorization_utterance": "do it",
+  "parent_roi_summary": "experiments/phase6e/AFFINITY-ROI-001/ROI_SUMMARY.json",
+  "machine_qc_at_authorization": "MACHINE_QC_PASS",
+  "authorizes": [
+    "S7_FULL_VOLUME_INFERENCE under AFFINITY_FULL_VOLUME_S7_CONTRACT_001"
+  ],
+  "does_not_authorize": [
+    "Synapse detection as production",
+    "Biological identity / CATMAID transfer",
+    "Redistribution of parent DVID data"
+  ],
+  "notes": "Human S6 PASS recorded to open S7. ROI labels remain MACHINE_PSEUDOLABEL pending ongoing proofreading (S8)."
+}

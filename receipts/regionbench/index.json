@@ -1,0 +1,61 @@
+{
+  "regions": [
+    {
+      "description": "near-empty tissue",
+      "kind": "empty",
+      "manifest_relpath": "receipts/regionbench/rb-empty-032/manifest.json",
+      "npy_relpath": "receipts/regionbench/rb-empty-032/volume.npy",
+      "region_id": "rb-empty-032",
+      "seed": 101,
+      "shape": [
+        32,
+        32,
+        32
+      ],
+      "volume_sha256": "743facdb166d93fafe5f3fb7cca713b0ba7e778805279ab1b420afc553b79b13"
+    },
+    {
+      "description": "noisy texture field",
+      "kind": "texture",
+      "manifest_relpath": "receipts/regionbench/rb-texture-048/manifest.json",
+      "npy_relpath": "receipts/regionbench/rb-texture-048/volume.npy",
+      "region_id": "rb-texture-048",
+      "seed": 202,
+      "shape": [
+        48,
+        48,
+        48
+      ],
+      "volume_sha256": "42dd16cd5bf4bb9cc80b0d599123d24e3dc2c284de8cf1bace1e471714ff4757"
+    },
+    {
+      "description": "dense central blob",
+      "kind": "blob",
+      "manifest_relpath": "receipts/regionbench/rb-blob-064/manifest.json",
+      "npy_relpath": "receipts/regionbench/rb-blob-064/volume.npy",
+      "region_id": "rb-blob-064",
+      "seed": 303,
+      "shape": [
+        64,
+        64,
+        64
+      ],
+      "volume_sha256": "e4666bb53be6f2811bc58189a6c6a0e26ff443210aaa71421d2b76bb4355f00c"
+    },
+    {
+      "description": "axial seam discontinuity",
+      "kind": "seam",
+      "manifest_relpath": "receipts/regionbench/rb-seam-040/manifest.json",
+      "npy_relpath": "receipts/regionbench/rb-seam-040/volume.npy",
+      "region_id": "rb-seam-040",
+      "seed": 404,
+      "shape": [
+        40,
+        40,
+        40
+      ],
+      "volume_sha256": "ed432b1cfea5a0906a6394a61c67fdbe87623eb3aa2cf6994f35903a301ec372"
+    }
+  ],
+  "schema": "regionbench-index/v1"
+}\n

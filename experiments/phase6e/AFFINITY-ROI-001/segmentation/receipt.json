@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-09-18T04:10:42.873533Z",
+  "machine_qc": {
+    "gates": {
+      "QC_A_affinity_completeness": true,
+      "QC_B_not_single_instance": true,
+      "QC_C_not_all_tiny": true,
+      "QC_D_z_extent_nonzero": true,
+      "QC_E_fragment_rag_nonempty": true
+    },
+    "metrics": {
+      "fragment_count": 952,
+      "median_z_extent": 57.0,
+      "n_instances": 7,
+      "rag_edges": 5978,
+      "tiny_instance_fraction_lt_512": 0.0
+    },
+    "verdict": "MACHINE_QC_PASS"
+  },
+  "qc_contract": "SEG_ROI_QC_CONTRACT_001",
+  "segmentation": {
+    "beta": 0.1,
+    "fragments": {
+      "count": 952
+    },
+    "instances": {
+      "count": 7
+    },
+    "rag": {
+      "edges": 5978,
+      "nodes": 1433
+    },
+    "watershed": {
+      "algorithm": "ELF distance_transform_watershed",
+      "dimensions": "3D",
+      "sigma_seeds": 2.0,
+      "threshold": 0.25,
+      "warnings": []
+    }
+  }
+}

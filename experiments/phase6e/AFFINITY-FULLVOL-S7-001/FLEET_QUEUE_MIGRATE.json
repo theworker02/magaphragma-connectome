@@ -1,0 +1,21 @@
+{
+  "out": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\AFFINITY-FULLVOL-S7-001",
+  "running_before": [
+    "MV-CHUNK-10000032",
+    "MV-CHUNK-10000041",
+    "MV-CHUNK-10000184"
+  ],
+  "reclaimed": [],
+  "still_running": [
+    "MV-CHUNK-10000032",
+    "MV-CHUNK-10000041",
+    "MV-CHUNK-10000184"
+  ],
+  "counts": {
+    "COMPLETE": 57,
+    "AFFINITY_DONE_SEG_PENDING": 142,
+    "RUNNING": 3,
+    "NOT_STARTED": 28596
+  },
+  "note": "Completed / AFFINITY_DONE_SEG_PENDING unchanged. Artifacts untouched."
+}

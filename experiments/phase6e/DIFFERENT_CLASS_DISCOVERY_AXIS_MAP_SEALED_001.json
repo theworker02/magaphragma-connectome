@@ -1,0 +1,251 @@
+{
+  "batch_id": "DIFFERENT_CLASS_DISCOVERY_001",
+  "entries": [
+    {
+      "abs_face_step": 161.0,
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-E58F28416BA3",
+      "pair_left_zyx": [
+        42,
+        83,
+        110
+      ],
+      "pair_right_zyx": [
+        42,
+        84,
+        110
+      ],
+      "presentation_order_index": 0,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 121.0,
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-AAFC89A7EC3A",
+      "pair_left_zyx": [
+        57,
+        93,
+        52
+      ],
+      "pair_right_zyx": [
+        57,
+        93,
+        53
+      ],
+      "presentation_order_index": 1,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 135.0,
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-8566460BEAB7",
+      "pair_left_zyx": [
+        57,
+        35,
+        47
+      ],
+      "pair_right_zyx": [
+        57,
+        35,
+        48
+      ],
+      "presentation_order_index": 2,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 118.0,
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-E3095D609660",
+      "pair_left_zyx": [
+        11,
+        26,
+        90
+      ],
+      "pair_right_zyx": [
+        12,
+        26,
+        90
+      ],
+      "presentation_order_index": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 178.0,
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-B45FB6A66A83",
+      "pair_left_zyx": [
+        38,
+        61,
+        11
+      ],
+      "pair_right_zyx": [
+        38,
+        62,
+        11
+      ],
+      "presentation_order_index": 4,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 117.0,
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-C981DA531766",
+      "pair_left_zyx": [
+        8,
+        51,
+        63
+      ],
+      "pair_right_zyx": [
+        9,
+        51,
+        63
+      ],
+      "presentation_order_index": 5,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 121.0,
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-292DC685ECB0",
+      "pair_left_zyx": [
+        11,
+        88,
+        74
+      ],
+      "pair_right_zyx": [
+        11,
+        88,
+        75
+      ],
+      "presentation_order_index": 6,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 135.0,
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-4DC0861BA26F",
+      "pair_left_zyx": [
+        13,
+        33,
+        109
+      ],
+      "pair_right_zyx": [
+        14,
+        33,
+        109
+      ],
+      "presentation_order_index": 7,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 160.0,
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-CC0534D3C7F6",
+      "pair_left_zyx": [
+        11,
+        10,
+        82
+      ],
+      "pair_right_zyx": [
+        11,
+        11,
+        82
+      ],
+      "presentation_order_index": 8,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 122.0,
+      "axis_name": "X",
+      "channel_zyx": 2,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-94B7C8D63567",
+      "pair_left_zyx": [
+        34,
+        77,
+        44
+      ],
+      "pair_right_zyx": [
+        34,
+        77,
+        45
+      ],
+      "presentation_order_index": 9,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 121.0,
+      "axis_name": "Z",
+      "channel_zyx": 0,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-4ED96552F776",
+      "pair_left_zyx": [
+        44,
+        64,
+        28
+      ],
+      "pair_right_zyx": [
+        45,
+        64,
+        28
+      ],
+      "presentation_order_index": 10,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    },
+    {
+      "abs_face_step": 170.0,
+      "axis_name": "Y",
+      "channel_zyx": 1,
+      "crop_id": "MV-DCD-01",
+      "opaque_decision_id": "MV-DCD-976986EFB4F3",
+      "pair_left_zyx": [
+        53,
+        66,
+        56
+      ],
+      "pair_right_zyx": [
+        53,
+        67,
+        56
+      ],
+      "presentation_order_index": 11,
+      "source_id": "MV-DVID-RAW-SURVEY-035",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\different-class-discovery-packages\\MV-DCD-01\\workspace.json"
+    }
+  ],
+  "id": "DIFFERENT_CLASS_DISCOVERY_AXIS_MAP_SEALED_001",
+  "mapping_hash": "e9f44df9eae5a461bc6f1262db40152b581a10125a84850ceaaf6f099cd343a8",
+  "order_hash": "c2656f2536a21a018c766f42ad1e65b298eb0578a7d836b174e50149eef386b8",
+  "seed_material": "DIFFERENT_CLASS_DISCOVERY_001|ABS_FACE_STEP|EQUIVARIANT_EDGE_FACE_V1",
+  "status": "UNBLINDED",
+  "unblinded_at": "2026-09-18T02:02:23.794657Z"
+}

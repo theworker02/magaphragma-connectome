@@ -1,0 +1,28 @@
+{
+  "id": "AWS_S7_GPU_FLEET_PLAN_001",
+  "historical_status": "DECOMMISSIONED_FOR_AFFINITY_PRODUCTION",
+  "historical_note": "Retained as immutable evidence of prior AWS FAST_002 fleet attempts. Production cloud is Vast.ai — docs/VAST_AFFINITY.md.",
+  "updated_at": "2026-09-18T11:35:00Z",
+  "status": "SCALED_TO_2_QUOTA_LIMIT",
+  "identity": {"profile": "mloon25", "account": "903449438107"},
+  "quota": {
+    "us-east-1_g_vt_on_demand_vcpus": 8,
+    "us-east-1_g_vt_spot_vcpus": 8,
+    "request_for_48_status": "CASE_OPENED",
+    "max_g6_xlarge_now": 2
+  },
+  "stack": {
+    "name": "magaphragma-s7-fast002",
+    "DesiredCapacity": 2,
+    "ClaimTableName": "magaphragma-s7-fast002-ClaimTable-MPG4DCAP9MEE",
+    "ArtifactBucketName": "magaphragma-s7-fast002-artifactbucket-wynhdg4uocpn",
+    "artifacts": {
+      "worker_tgz": "s3://magaphragma-s7-fast002-artifactbucket-wynhdg4uocpn/release/worker.tgz",
+      "checkpoint": "s3://magaphragma-s7-fast002-artifactbucket-wynhdg4uocpn/models/checkpoint-step10.pt",
+      "chunks": "s3://magaphragma-s7-fast002-artifactbucket-wynhdg4uocpn/index/chunks.json"
+    }
+  },
+  "ddb_seed": {"total": 28798, "not_started": 28775, "done": 23},
+  "local": {"backend": "local_file_claims", "note": "Still draining independently; may overlap AWS until switched to dynamodb"},
+  "next_for_4_to_5_gpus": "Wait for quota >16–20 vCPU G/VT then set DesiredCapacity=5"
+}

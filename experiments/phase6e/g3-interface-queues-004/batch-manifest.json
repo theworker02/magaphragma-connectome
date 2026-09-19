@@ -1,0 +1,163 @@
+{
+  "created_at": "2026-09-17T15:47:54.469514Z",
+  "crops": [
+    "MV-G3-TRAIN-A",
+    "MV-G3-TRAIN-B",
+    "MV-G3-TRAIN-D",
+    "MV-G3-TRAIN-F",
+    "MV-G3-TRAIN-G",
+    "MV-G3-TRAIN-H"
+  ],
+  "declared_sampling_rule": {
+    "allocation": "1 interface per (crop, band) by default (per_band configurable); 6 TRAIN crops x 6 bands",
+    "allowed_selection_inputs": [
+      "raw-EM 3D gradient",
+      "Y orientation",
+      "TRAIN split",
+      "crop identity",
+      "deterministic rank/quantile bands",
+      "exclusion of prior exact pairs"
+    ],
+    "band_boundaries_fraction_of_separated_pool": [
+      {
+        "hi": 0.1,
+        "label": "0-10%",
+        "lo": 0.0
+      },
+      {
+        "hi": 0.25,
+        "label": "10-25%",
+        "lo": 0.1
+      },
+      {
+        "hi": 0.5,
+        "label": "25-50%",
+        "lo": 0.25
+      },
+      {
+        "hi": 0.75,
+        "label": "50-75%",
+        "lo": 0.5
+      },
+      {
+        "hi": 0.9,
+        "label": "75-90%",
+        "lo": 0.75
+      },
+      {
+        "hi": 1.0,
+        "label": "90-100%",
+        "lo": 0.9
+      }
+    ],
+    "band_index_math": "start = floor(lo * n_separated); end = ceil(hi * n_separated); ranks [start, end)",
+    "candidate_ordering": "descending raw-EM gradient magnitude score (stable sort); rank 0 == highest score",
+    "declared_before_labels": true,
+    "forbidden_selection_inputs": [
+      "SAME/DIFFERENT labels",
+      "target-class predictions",
+      "affinity model outputs",
+      "previously observed SAME/DIFFERENT decisions"
+    ],
+    "interface_geometry": "boundary: center member offset (0,0) plus neighbours (-1,0),(1,0) along the two axes orthogonal to Y; positive neighbour along Y is the affinity pair",
+    "population": "interior voxels whose argmax(|3D raw-EM gradient|) axis == Y(channel 1)",
+    "purpose": "broad geometric/raw-EM coverage; NOT targeting the missing DIFFERENT_PROCESS class",
+    "sampler_id": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+    "selectable_centres": "greedy 12-voxel spatially-separated centres over the ranked eligible population (exact predicate d^2 >= 144)",
+    "within_band_pick": "lowest rank (highest gradient) in band that is interior, in-bounds, not a prior exact pair, and 12-voxel separated from centres already chosen in this batch"
+  },
+  "id": "MV-G3-Y-TRAIN-STRATIFIED-REVIEW-BATCH-004",
+  "note": "Declared sampling rule fixed at created_at, before any -004 SAME/DIFFERENT label exists.",
+  "per_band_target": 1,
+  "per_crop": [
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-A",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-A-004"
+    },
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-B",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-B-004"
+    },
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-D",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-D-004"
+    },
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-F",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-F-004"
+    },
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-G",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-G-004"
+    },
+    {
+      "band_counts": {
+        "0-10%": 1,
+        "10-25%": 1,
+        "25-50%": 1,
+        "50-75%": 1,
+        "75-90%": 1,
+        "90-100%": 1
+      },
+      "crop_id": "MV-G3-TRAIN-H",
+      "interfaces": 6,
+      "questions": 18,
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-H-004"
+    }
+  ],
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "totals": {
+    "interfaces": 36,
+    "questions": 108
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "MV-G3-TRAIN-A-INTERFACE-ADMISSION-DECISION-001",
+  "created_at": "2026-09-17T11:52:15.1308701Z",
+  "status": "ADMITTED_PENDING_G3_DATASET_FREEZE",
+  "region_id": "MV-G3-TRAIN-A",
+  "split": "G3_TARGET_TRAIN",
+  "reviewer": "matth",
+  "review_log_sha256": "903275d72451dcb4a66e090fb80ce545660771b15ff7b404b789469a5e3f5eda",
+  "queue_sha256": "5841267a847bc1415e49e0c8b003bf4695d21e38bae0a9dfaf921f956e05b132",
+  "reviewed_pair_counts": {
+    "SAME_PROCESS": 15,
+    "DIFFERENT_PROCESS": 9,
+    "UNCERTAIN": 0,
+    "BAD_QUESTION": 0
+  },
+  "interface_counts": {
+    "SAME_PROCESS": 5,
+    "DIFFERENT_PROCESS": 3,
+    "UNCERTAIN": 0,
+    "BAD_QUESTION": 0,
+    "CONTRADICTORY": 0,
+    "ELIGIBLE": 8
+  },
+  "admission_result": {
+    "same_process_required": true,
+    "different_process_required": true,
+    "same_process_available": true,
+    "different_process_available": true,
+    "eligible_for_g3_supervision": true
+  },
+  "preservation": {
+    "review_events_append_only": true,
+    "interface_is_statistical_unit": true,
+    "direct_pairs_remain_linked_to_interface": true,
+    "no_target_tensor_materialized_yet": true,
+    "mv_gtvol_000004_accessed": false
+  }
+}

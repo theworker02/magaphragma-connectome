@@ -1,0 +1,34 @@
+{
+  "id": "MV-G2-SPATIAL-EXPANSION-COHORT-001",
+  "selection_rationale": "A geographically stratified selection fixed before new G1 diagnostics, chosen to broaden the already-reviewed DVID coverage rather than optimize for an attractive prediction.",
+  "existing_reviewed_regions": [
+    {
+      "id": "G1-REVIEWED-TRAIN-001",
+      "bounds_xyz": {"x": [4352, 4608], "y": [8064, 8320], "z": [7616, 7744]},
+      "role": "DVID_TARGET_TRAIN",
+      "receipt": "local_research_build/phase6e/external-review/dense-raw-candidate-001/reviewed-affinity-supervision-v2/receipt.json"
+    },
+    {
+      "id": "G1-REVIEWED-VALIDATION-001",
+      "bounds_xyz": {"x": [11520, 11776], "y": [8064, 8320], "z": [7616, 7744]},
+      "role": "DVID_TARGET_VALIDATION",
+      "receipt": "local_research_build/phase6e/external-review/dense-raw-candidate-002/reviewed-affinity-supervision-v2/receipt.json"
+    }
+  ],
+  "reserved_evaluation_regions": [
+    {
+      "id": "G1-DEVELOPMENT-RAW-SURVEY-003",
+      "bounds_xyz": {"x": [10304, 10432], "y": [1600, 1728], "z": [3776, 3840]},
+      "role": "DEVELOPMENT_EVALUATION_ONLY"
+    }
+  ],
+  "selected_regions": [
+    {"id": "MV-G2-TRAIN-A", "source_id": "MV-DVID-RAW-SURVEY-007", "role": "G2_TARGET_TRAIN"},
+    {"id": "MV-G2-TRAIN-B", "source_id": "MV-DVID-RAW-SURVEY-014", "role": "G2_TARGET_TRAIN"},
+    {"id": "MV-G2-TRAIN-C", "source_id": "MV-DVID-RAW-SURVEY-023", "role": "G2_TARGET_TRAIN"},
+    {"id": "MV-G2-TRAIN-D", "source_id": "MV-DVID-RAW-SURVEY-030", "role": "G2_TARGET_TRAIN"},
+    {"id": "MV-G2-VALIDATION-V1", "source_id": "MV-DVID-RAW-SURVEY-009", "role": "G2_TARGET_VALIDATION"},
+    {"id": "MV-G2-VALIDATION-V2", "source_id": "MV-DVID-RAW-SURVEY-016", "role": "G2_TARGET_VALIDATION"},
+    {"id": "MV-G2-VALIDATION-V3", "source_id": "MV-DVID-RAW-SURVEY-026", "role": "G2_TARGET_VALIDATION"}
+  ]
+}

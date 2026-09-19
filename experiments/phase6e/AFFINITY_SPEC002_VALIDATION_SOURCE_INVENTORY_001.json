@@ -1,0 +1,804 @@
+{
+  "acquisition_receipt_sha256": "deadf51cb85abf1b28e1310b2c64d0893553f63520e4ff5dfcf5fb620f87e8b6",
+  "created_at": "2026-09-18T01:38:39.837168Z",
+  "eligible_independent_never_reviewed": [
+    "MV-DVID-RAW-SURVEY-014",
+    "MV-DVID-RAW-SURVEY-019",
+    "MV-DVID-RAW-SURVEY-033",
+    "MV-DVID-RAW-SURVEY-034",
+    "MV-DVID-RAW-SURVEY-035",
+    "MV-DVID-RAW-SURVEY-036",
+    "MV-DVID-RAW-SURVEY-037",
+    "MV-DVID-RAW-SURVEY-038",
+    "MV-DVID-RAW-SURVEY-039",
+    "MV-DVID-RAW-SURVEY-040",
+    "MV-DVID-RAW-SURVEY-041",
+    "MV-DVID-RAW-SURVEY-042",
+    "MV-DVID-RAW-SURVEY-043",
+    "MV-DVID-RAW-SURVEY-044",
+    "MV-DVID-RAW-SURVEY-045",
+    "MV-DVID-RAW-SURVEY-046",
+    "MV-DVID-RAW-SURVEY-047",
+    "MV-DVID-RAW-SURVEY-048"
+  ],
+  "hard_exclude_reasons": {
+    "008_sources": [
+      "MV-DVID-RAW-SURVEY-005",
+      "MV-DVID-RAW-SURVEY-006",
+      "MV-DVID-RAW-SURVEY-011",
+      "MV-DVID-RAW-SURVEY-012",
+      "MV-DVID-RAW-SURVEY-016",
+      "MV-DVID-RAW-SURVEY-018",
+      "MV-DVID-RAW-SURVEY-020",
+      "MV-DVID-RAW-SURVEY-021",
+      "MV-DVID-RAW-SURVEY-023",
+      "MV-DVID-RAW-SURVEY-026",
+      "MV-DVID-RAW-SURVEY-028",
+      "MV-DVID-RAW-SURVEY-029"
+    ],
+    "any_nonempty_event_log": [
+      "MV-DVID-RAW-CANDIDATE-001",
+      "MV-DVID-RAW-CANDIDATE-002",
+      "MV-DVID-RAW-SURVEY-001",
+      "MV-DVID-RAW-SURVEY-002",
+      "MV-DVID-RAW-SURVEY-003",
+      "MV-DVID-RAW-SURVEY-004",
+      "MV-DVID-RAW-SURVEY-005",
+      "MV-DVID-RAW-SURVEY-006",
+      "MV-DVID-RAW-SURVEY-007",
+      "MV-DVID-RAW-SURVEY-008",
+      "MV-DVID-RAW-SURVEY-009",
+      "MV-DVID-RAW-SURVEY-010",
+      "MV-DVID-RAW-SURVEY-011",
+      "MV-DVID-RAW-SURVEY-012",
+      "MV-DVID-RAW-SURVEY-013",
+      "MV-DVID-RAW-SURVEY-015",
+      "MV-DVID-RAW-SURVEY-016",
+      "MV-DVID-RAW-SURVEY-017",
+      "MV-DVID-RAW-SURVEY-018",
+      "MV-DVID-RAW-SURVEY-020",
+      "MV-DVID-RAW-SURVEY-021",
+      "MV-DVID-RAW-SURVEY-022",
+      "MV-DVID-RAW-SURVEY-023",
+      "MV-DVID-RAW-SURVEY-024",
+      "MV-DVID-RAW-SURVEY-025",
+      "MV-DVID-RAW-SURVEY-026",
+      "MV-DVID-RAW-SURVEY-027",
+      "MV-DVID-RAW-SURVEY-028",
+      "MV-DVID-RAW-SURVEY-029",
+      "MV-DVID-RAW-SURVEY-030",
+      "MV-DVID-RAW-SURVEY-031",
+      "MV-DVID-RAW-SURVEY-032"
+    ],
+    "historical_CE": [
+      "MV-DVID-RAW-SURVEY-017",
+      "MV-DVID-RAW-SURVEY-027"
+    ],
+    "presentation_repair_smoke_sources": [
+      "MV-DVID-RAW-SURVEY-030",
+      "MV-DVID-RAW-SURVEY-032"
+    ]
+  },
+  "hard_exclude_sources": [
+    "MV-DVID-RAW-SURVEY-005",
+    "MV-DVID-RAW-SURVEY-006",
+    "MV-DVID-RAW-SURVEY-011",
+    "MV-DVID-RAW-SURVEY-012",
+    "MV-DVID-RAW-SURVEY-016",
+    "MV-DVID-RAW-SURVEY-017",
+    "MV-DVID-RAW-SURVEY-018",
+    "MV-DVID-RAW-SURVEY-020",
+    "MV-DVID-RAW-SURVEY-021",
+    "MV-DVID-RAW-SURVEY-023",
+    "MV-DVID-RAW-SURVEY-026",
+    "MV-DVID-RAW-SURVEY-027",
+    "MV-DVID-RAW-SURVEY-028",
+    "MV-DVID-RAW-SURVEY-029",
+    "MV-DVID-RAW-SURVEY-030",
+    "MV-DVID-RAW-SURVEY-032"
+  ],
+  "id": "AFFINITY_SPEC002_VALIDATION_SOURCE_INVENTORY_001",
+  "independence_requirement": {
+    "available_independent_sources": 18,
+    "n_locations_required": 12,
+    "prefer_one_location_per_independent_source": true,
+    "satisfied": true
+  },
+  "n_survey_records": 48,
+  "never_human_reviewed_sources": [
+    "MV-DVID-RAW-SURVEY-014",
+    "MV-DVID-RAW-SURVEY-019",
+    "MV-DVID-RAW-SURVEY-033",
+    "MV-DVID-RAW-SURVEY-034",
+    "MV-DVID-RAW-SURVEY-035",
+    "MV-DVID-RAW-SURVEY-036",
+    "MV-DVID-RAW-SURVEY-037",
+    "MV-DVID-RAW-SURVEY-038",
+    "MV-DVID-RAW-SURVEY-039",
+    "MV-DVID-RAW-SURVEY-040",
+    "MV-DVID-RAW-SURVEY-041",
+    "MV-DVID-RAW-SURVEY-042",
+    "MV-DVID-RAW-SURVEY-043",
+    "MV-DVID-RAW-SURVEY-044",
+    "MV-DVID-RAW-SURVEY-045",
+    "MV-DVID-RAW-SURVEY-046",
+    "MV-DVID-RAW-SURVEY-047",
+    "MV-DVID-RAW-SURVEY-048"
+  ],
+  "newly_acquired_sources": [
+    {
+      "bounds_xyz": {
+        "x": [
+          3008,
+          3136
+        ],
+        "y": [
+          5824,
+          5952
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-033",
+      "raw_sha256": "e420bc8406be1b7833141892eacb8260b6db96426b61787fa86e542c0d5b2900",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/3008_5824_13440"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          3008,
+          3136
+        ],
+        "y": [
+          12608,
+          12736
+        ],
+        "z": [
+          5696,
+          5760
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-034",
+      "raw_sha256": "c96ec1f627e0cd7cf810b75d92692c891313133bd84e468380bb45ed3b843e9a",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/3008_12608_5696"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          11328,
+          11456
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-035",
+      "raw_sha256": "4c0489173a36744b8ce9755c7098cc3fd2c3bb84eb72fe3eb1c4c9afd4444b67",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/11328_7552_13440"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          960,
+          1088
+        ],
+        "y": [
+          10880,
+          11008
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-036",
+      "raw_sha256": "5737b80c94105a37a60fa530cf20dbb24b474c7cddee8d29b6b9ec7083fbcee0",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/960_10880_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          960,
+          1088
+        ],
+        "y": [
+          4160,
+          4288
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-037",
+      "raw_sha256": "54c7679d7adce47629e46ba015abb0d104580f87dcb5d0637009506a164972d2",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/960_4160_13440"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          3008,
+          3136
+        ],
+        "y": [
+          2432,
+          2560
+        ],
+        "z": [
+          5696,
+          5760
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-038",
+      "raw_sha256": "e45369ec8edf2deac9cccae2b8e2eb641f045c32de0699e3fec8f4f323d0677a",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/3008_2432_5696"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          13440,
+          13568
+        ],
+        "y": [
+          4160,
+          4288
+        ],
+        "z": [
+          5696,
+          5760
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-039",
+      "raw_sha256": "a21bbe4b18e026cb81a55353e20027685d7128df7a520d620f13d4ccb6c03391",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/13440_4160_5696"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          7168,
+          7296
+        ],
+        "y": [
+          768,
+          896
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-040",
+      "raw_sha256": "28a730c34cef0dc80e111cd7a91e26e0bed927ad3dfb2dab9762d7245683cc9b",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/7168_768_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          9280,
+          9408
+        ],
+        "y": [
+          10880,
+          11008
+        ],
+        "z": [
+          5696,
+          5760
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-041",
+      "raw_sha256": "4c1315a7915e7c9e6f557b6755cddcf43390c401a410a01f1facfad07fda3529",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/9280_10880_5696"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          960,
+          1088
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          9536,
+          9600
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-042",
+      "raw_sha256": "9b608282d67324f8e5025f9ed628603a7b33c14d7db8985521cd0b730bb3c293",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/960_7552_9536"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          5120,
+          5248
+        ],
+        "y": [
+          9216,
+          9344
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-043",
+      "raw_sha256": "13acb95775cc05dced232455b0c8e7ead6c02f1a49f9c103b596e67452203f92",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/5120_9216_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          7168,
+          7296
+        ],
+        "y": [
+          4160,
+          4288
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-044",
+      "raw_sha256": "447fb3d9140678706d233802f5ad30ab9441359d2abcc30c8f8a5c9893285a34",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/7168_4160_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          13440,
+          13568
+        ],
+        "y": [
+          2432,
+          2560
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-045",
+      "raw_sha256": "d295c0983e45a4617acf5365cc2195acdd126a139b7fe756171d61ec4b3dacf0",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/13440_2432_13440"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          13440,
+          13568
+        ],
+        "y": [
+          5824,
+          5952
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-046",
+      "raw_sha256": "b7b523c8242d616a2e65143cb6bdc647b500cb2532cea8fa423e909e7ac4b917",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/13440_5824_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          3008,
+          3136
+        ],
+        "y": [
+          7552,
+          7680
+        ],
+        "z": [
+          1856,
+          1920
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-047",
+      "raw_sha256": "97f537269927e8fcd095cd937d755d8151922857995af7b100cbf011509a71cd",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/3008_7552_1856"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          5120,
+          5248
+        ],
+        "y": [
+          2432,
+          2560
+        ],
+        "z": [
+          13440,
+          13504
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-048",
+      "raw_sha256": "00a4cb30cdade8e815d250f5cd67a0b9e388ba80b2b90c9eeaac7797047377ff",
+      "source_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/128_128_64/5120_2432_13440"
+    }
+  ],
+  "per_source_hashes": {
+    "MV-DVID-RAW-SURVEY-014": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-014-raw_zyx.npy",
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-019": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-019-raw_zyx.npy",
+      "raw_sha256": "a5057a1e34a89f9fd79df34191bc376222e951cf0d8a012b6f20c480026a2602",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-033": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-033-raw_zyx.npy",
+      "raw_sha256": "e420bc8406be1b7833141892eacb8260b6db96426b61787fa86e542c0d5b2900",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-034": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-034-raw_zyx.npy",
+      "raw_sha256": "c96ec1f627e0cd7cf810b75d92692c891313133bd84e468380bb45ed3b843e9a",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-035": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-035-raw_zyx.npy",
+      "raw_sha256": "4c0489173a36744b8ce9755c7098cc3fd2c3bb84eb72fe3eb1c4c9afd4444b67",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-036": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-036-raw_zyx.npy",
+      "raw_sha256": "5737b80c94105a37a60fa530cf20dbb24b474c7cddee8d29b6b9ec7083fbcee0",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-037": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-037-raw_zyx.npy",
+      "raw_sha256": "54c7679d7adce47629e46ba015abb0d104580f87dcb5d0637009506a164972d2",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-038": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-038-raw_zyx.npy",
+      "raw_sha256": "e45369ec8edf2deac9cccae2b8e2eb641f045c32de0699e3fec8f4f323d0677a",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-039": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-039-raw_zyx.npy",
+      "raw_sha256": "a21bbe4b18e026cb81a55353e20027685d7128df7a520d620f13d4ccb6c03391",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-040": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-040-raw_zyx.npy",
+      "raw_sha256": "28a730c34cef0dc80e111cd7a91e26e0bed927ad3dfb2dab9762d7245683cc9b",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-041": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-041-raw_zyx.npy",
+      "raw_sha256": "4c1315a7915e7c9e6f557b6755cddcf43390c401a410a01f1facfad07fda3529",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-042": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-042-raw_zyx.npy",
+      "raw_sha256": "9b608282d67324f8e5025f9ed628603a7b33c14d7db8985521cd0b730bb3c293",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-043": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-043-raw_zyx.npy",
+      "raw_sha256": "13acb95775cc05dced232455b0c8e7ead6c02f1a49f9c103b596e67452203f92",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-044": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-044-raw_zyx.npy",
+      "raw_sha256": "447fb3d9140678706d233802f5ad30ab9441359d2abcc30c8f8a5c9893285a34",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-045": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-045-raw_zyx.npy",
+      "raw_sha256": "d295c0983e45a4617acf5365cc2195acdd126a139b7fe756171d61ec4b3dacf0",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-046": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-046-raw_zyx.npy",
+      "raw_sha256": "b7b523c8242d616a2e65143cb6bdc647b500cb2532cea8fa423e909e7ac4b917",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-047": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-047-raw_zyx.npy",
+      "raw_sha256": "97f537269927e8fcd095cd937d755d8151922857995af7b100cbf011509a71cd",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-048": {
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-048-raw_zyx.npy",
+      "raw_sha256": "00a4cb30cdade8e815d250f5cd67a0b9e388ba80b2b90c9eeaac7797047377ff",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    }
+  },
+  "sources_with_human_decisions": {
+    "MV-DVID-RAW-CANDIDATE-001": {
+      "n_event_logs": 1,
+      "paths": [
+        "local_research_build/phase6e/external-review/dense-raw-candidate-001/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-CANDIDATE-002": {
+      "n_event_logs": 1,
+      "paths": [
+        "local_research_build/phase6e/external-review/dense-raw-candidate-002/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-001": {
+      "n_event_logs": 3,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-004/MV-G3-TRAIN-A/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-003/MV-G3-TRAIN-A/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-A/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-002": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-002/MV-G3-TRAIN-G/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-003": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-005/MV-G3-TRAIN-K/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-004": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V1/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-005": {
+      "n_event_logs": 2,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-01/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-007/MV-G3-AXNEU3-01/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-006": {
+      "n_event_logs": 2,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-02/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-007/MV-G3-AXNEU3-02/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-007": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-005/MV-G3-TRAIN-L/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-008": {
+      "n_event_logs": 3,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-004/MV-G3-TRAIN-B/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-003/MV-G3-TRAIN-B/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-B/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-009": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-005/MV-G3-TRAIN-J/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-010": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-006/MV-G3-AXNEU-A/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-011": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-03/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-012": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-04/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-013": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-005/MV-G3-TRAIN-I/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-015": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V2/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-016": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-05/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-017": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-C/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-018": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-06/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-020": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-07/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-021": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-08/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-022": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-002/MV-G3-TRAIN-H/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-023": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-09/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-024": {
+      "n_event_logs": 2,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-004/MV-G3-TRAIN-D/workspace.events.jsonl",
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-D/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-025": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V3/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-026": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-10/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-027": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-E/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-028": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-11/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-029": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-008/MV-G3-AXNEU4-12/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-030": {
+      "n_event_logs": 2,
+      "paths": [
+        "experiments/phase6e/g3-presentation-repair-smoke-packages/MV-G3-PRSMOKE-01/workspace.events.jsonl",
+        "experiments/phase6e/g3-presentation-repair-smoke-packages/MV-G3-PRSMOKE-02/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-031": {
+      "n_event_logs": 1,
+      "paths": [
+        "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-F/workspace.events.jsonl"
+      ]
+    },
+    "MV-DVID-RAW-SURVEY-032": {
+      "n_event_logs": 2,
+      "paths": [
+        "experiments/phase6e/g3-presentation-repair-smoke-packages/MV-G3-PRSMOKE-03/workspace.events.jsonl",
+        "experiments/phase6e/g3-presentation-repair-smoke-packages/MV-G3-PRSMOKE-04/workspace.events.jsonl"
+      ]
+    }
+  },
+  "supersedes_prior_inventory_snapshot": true,
+  "survey_manifest_sha256": "fc0810421d0b662a62d4f509798a7f983a2c82973786ace27ef8e9e3c534ad4f",
+  "survey_protocol_sha256": "53b6b12b36392abbbfaa6ba3874b44245c8b7ea8be74bbb9993680d9efb6bf78"
+}

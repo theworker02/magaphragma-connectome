@@ -1,0 +1,22 @@
+{
+  "id": "MV-PRE-GROUNDTRUTH-BASELINE",
+  "immutable_after_creation": true,
+  "scope": "DVID-native annotation qualification before any registered instance labels",
+  "production_domain": "MV-DOMAIN-PRODUCTION-001",
+  "dvid_parent": {
+    "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+    "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+    "bounds_xyz": {"x": [0, 16648], "y": [0, 13544], "z": [0, 15401]},
+    "dimensions_voxels_xyz": [16648, 13544, 15401],
+    "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+    "physical_dimensions_nm_xyz": [133184.0, 108352.0, 123208.0],
+    "parent_metadata_sha256": "0400003dae908dd557797f085696bd4962e47563923fe661fccfd7fd59650abb",
+    "far_boundary_read_sha256": "146171f08f15b01203d3e22a4df82b72ecb2c8a5cc1e285201847c2826afc8aa"
+  },
+  "registration": {"decision": "INSUFFICIENT_EVIDENCE", "catmaid_derived_seeding": "PROHIBITED"},
+  "backends": {"ffn": "CHECKPOINT_UNAVAILABLE", "segneuron": "TECHNICAL_EXECUTION_PASS_PENDING_QUALIFICATION", "production_segmenter": "NONE_SELECTED", "synapse_backend": "UNKNOWN_OR_UNAVAILABLE"},
+  "model_candidates": ["MV-MODEL-SEGNEURON-0001", "MV-MODEL-CREMI-BOUNDARY-0001:REJECTED"],
+  "ground_truth_plan": "ground_truth/DVID_NATIVE_GT_PLAN.yaml",
+  "test_status": {"command": "$env:PYTHONPATH='src'; python -m unittest discover -s tests -v", "status": "PASS", "tests": 19},
+  "note": "Six raw GT source cubes were materialized immediately after plan selection. No labels, instances, model qualification metrics, or production chunks exist in this baseline."
+}

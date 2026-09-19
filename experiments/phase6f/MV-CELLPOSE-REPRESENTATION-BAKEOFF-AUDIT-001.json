@@ -1,0 +1,51 @@
+{
+  "id": "MV-CELLPOSE-REPRESENTATION-BAKEOFF-AUDIT-001",
+  "status": "CPSAM_V2_RUNTIME_QUALIFIED_ZERO_SHOT_IN_PROGRESS",
+  "scope": "Representation audit only; not a neuronal-instance segmentation replacement.",
+  "frozen_inputs": {
+    "g3_dataset": "experiments/phase6e/MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002.json",
+    "g3_dataset_sha256": "e26c747e16bd5426e12323032f00fa6e9481ca60745536a73997846f422dadc4",
+    "protected_regression": "MV-GTVOL-000004",
+    "protected_regression_used": false
+  },
+  "upstream": {
+    "repository": "https://github.com/MouseLand/cellpose",
+    "commit": "a54cb48849b7e225a81e8e43dcb042d42427f543",
+    "code_license": "BSD-3-Clause",
+    "model_training_data_license_statement": "Cellpose upstream states all Cellpose models were trained on CC-BY-NC data.",
+    "models": {
+      "cpsam_v2": {
+        "architecture": "CellposeSAM / SAM ViT-L",
+        "checkpoint": "third_party/cellpose-runtime/models/cpsam_v2",
+        "checkpoint_sha256": "0f1cc3f7ecdd8a037a57c6c48d9d8921391be4cbce3fa9f13c3e3a2e1253c667",
+        "checkpoint_bytes": 1233586851,
+        "runtime_status": "AMD_FORWARD_PASS; THREE_D_ZERO_SHOT_IN_PROGRESS",
+        "scientific_status": "UNQUALIFIED_FOR_MEGAPHRAGMA_NEURON_SEGMENTATION"
+      },
+      "cpdino": {"runtime_status": "PENDING_DINOV3_DEPENDENCY_AND_CHECKPOINT", "scientific_status": "NOT_RUN"},
+      "cpdino-vitb": {"runtime_status": "PENDING_DINOV3_DEPENDENCY_AND_CHECKPOINT", "scientific_status": "NOT_RUN"}
+    }
+  },
+  "runtime": {
+    "base_environment": "third_party/segneuron/.venv-rocm (read-only)",
+    "candidate_overlay": "third_party/cellpose-runtime/site-packages",
+    "python": "3.12.10",
+    "torch": "2.9.0+rocmsdk20251116",
+    "hip": "7.1.52802-561cc400e1",
+    "physical_device": "AMD Radeon RX 7800 XT",
+    "adapter": "DECLARED_TORCHVISION_NMS_SCHEMA_ONLY; Cellpose uses transforms, not NMS, in this audit.",
+    "known_nonblocking_warning": "torchvision.io image extension cannot load under this ROCm/Torchvision ABI; it is not used for NumPy DVID input."
+  },
+  "gates": {
+    "source_pinned": "PASS",
+    "checkpoint_safe_inspection": "PASS",
+    "cpu_checkpoint_load": "PASS",
+    "amd_synthetic_forward": "PASS",
+    "two_d_cellpose_api_probe": "PASS",
+    "three_d_real_dvid_zero_shot": "IN_PROGRESS",
+    "feature_separability": "NOT_RUN",
+    "affinity_head_training": "PROHIBITED_PENDING_FEATURE_GATE",
+    "mv_gtvol_000004_access": "PROHIBITED"
+  },
+  "scientific_boundary": "Cellpose flow/cell-probability outputs are machine diagnostics only. They cannot become neuronal labels, review decisions, MV-FRAG, MV-N, MV-SYN, or MV-CONN without separate evidence gates."
+}

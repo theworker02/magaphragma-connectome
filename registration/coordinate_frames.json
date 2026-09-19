@@ -1,0 +1,28 @@
+{
+  "frames": [
+    {
+      "id": "MV-FRAME-CATMAID-001",
+      "system": "CATMAID project 1 / stack 1",
+      "units": "nm",
+      "axis_order": "XYZ",
+      "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+      "dimensions_voxels_xyz": [8000, 12000, 12331],
+      "origin_nm_xyz": [0.0, 0.0, 0.0],
+      "source_coordinate_semantics": "physical nanometres; source values immutable",
+      "evidence": "public CATMAID stack metadata audit 2026-09-16"
+    },
+    {
+      "id": "MV-FRAME-DVID-WASP5-001",
+      "system": "Flatiron DVID aa49d16e88424cdbae89f4b8ced2a49b / five_yuri_4contrast",
+      "units": "voxel indices with derived nm",
+      "axis_order": "XYZ",
+      "array_order": "ZYX",
+      "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+      "parent_dimensions_voxels_xyz": [16648, 13544, 15401],
+      "crop_bounds_voxels_xyz": {"x": [4000, 4512], "y": [6000, 6512], "z": [6000, 6064]},
+      "crop_bounds_nm_xyz": {"x": [32000, 36096], "y": [48000, 52096], "z": [48000, 48512]},
+      "raw_sha256": "78e786152f9c473eced1d18456da92fd2329044637ebfd545bd1ff3ca099fbcd"
+    }
+  ],
+  "cross_frame_transform": {"status": "UNKNOWN", "prohibited_uses": ["CATMAID-derived seeds", "source-neuron physical mapping", "source-synapse physical mapping", "physical MV-CONN mapping"]}
+}

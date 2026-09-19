@@ -1,0 +1,21 @@
+schema_version: "1.0"
+id: MV-TARGET-DOMAIN-DVID-WASP5-001
+species: "Megaphragma viggianii"
+modality: FIB-SEM
+task: neuronal_instance_segmentation
+dimensionality: 3D
+production_scope: MV-DOMAIN-PRODUCTION-001
+source_dataset: MV-SRC-FLATIRON-DVID-WASP5
+source_volume: MV-FIBSEM-WASP5-YURI-4C
+specimen_id: SPECIMEN_UNKNOWN
+coordinate_frame: MV-FRAME-DVID-WASP5-001
+voxel_size_nm_xyz: [8.0, 8.0, 8.0]
+bit_depth: 8
+dtype: uint8
+normalization: "NOT_YET_SELECTED; source intensity must remain immutable and a model-specific derived normalization receipt is required"
+contrast_characteristics: UNKNOWN_PENDING_VISUAL_QA
+acquisition_artifacts: UNKNOWN_PENDING_VISUAL_QA
+source_rights: UNVERIFIED_FOR_REDISTRIBUTION_AND_DERIVATIVE_RELEASE
+full_volume_processing: BLOCKED_MODEL_VALIDATION
+catmaid_dvid_registration: INSUFFICIENT_EVIDENCE
+catmaid_derived_seeding: PROHIBITED

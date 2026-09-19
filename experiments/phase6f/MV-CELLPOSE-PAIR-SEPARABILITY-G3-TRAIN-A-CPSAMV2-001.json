@@ -1,0 +1,555 @@
+{
+  "status": "EXPLORATORY_RAW_OUTPUT_PAIR_SEPARABILITY_ONLY",
+  "region": "MV-G3-TRAIN-A",
+  "region_receipt": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\receipt.json",
+    "sha256": "5cf487324ba4b3c00388923c079f5ff518910528a0f3260c7b4670bf02a50df5"
+  },
+  "flows": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6f\\MV-CELLPOSE-ZEROSHOT-G3-TRAIN-A-CPSAMV2-002\\cellpose_flows_czyx.npy",
+    "sha256": "cd99e5ddb405e8677dd64f5f361dbddc9d94e3f1e4b24b30963c247370739219"
+  },
+  "cell_probability": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6f\\MV-CELLPOSE-ZEROSHOT-G3-TRAIN-A-CPSAMV2-002\\cellpose_cell_probability_zyx.npy",
+    "sha256": "d61c25d2a8529fdb74e140cc1c4242d7074ee1ce40720016c4a0df0d2e81d709"
+  },
+  "features": {
+    "cell_probability_abs_delta": {
+      "same": {
+        "count": 15,
+        "mean": 0.523273762067159,
+        "median": 0.43181753158569336,
+        "quantiles_p10_p50_p90": [
+          0.060483121871948244,
+          0.43181753158569336,
+          1.170347785949707
+        ]
+      },
+      "different": {
+        "count": 9,
+        "mean": 0.7162260148260329,
+        "median": 0.47895193099975586,
+        "quantiles_p10_p50_p90": [
+          0.26066648960113525,
+          0.47895193099975586,
+          1.4375268459320067
+        ]
+      },
+      "auc_without_posthoc_orientation": {
+        "different_high_auc": 0.6148148148148148,
+        "different_low_auc": 0.3851851851851852
+      }
+    },
+    "flow_l2_delta": {
+      "same": {
+        "count": 15,
+        "mean": 1.2977274378140768,
+        "median": 1.2414655685424805,
+        "quantiles_p10_p50_p90": [
+          0.604751980304718,
+          1.2414655685424805,
+          1.9165097951889039
+        ]
+      },
+      "different": {
+        "count": 9,
+        "mean": 1.1651794844203525,
+        "median": 1.2257118225097656,
+        "quantiles_p10_p50_p90": [
+          0.5818787455558777,
+          1.2257118225097656,
+          1.6857945442199709
+        ]
+      },
+      "auc_without_posthoc_orientation": {
+        "different_high_auc": 0.4222222222222222,
+        "different_low_auc": 0.5777777777777777
+      }
+    },
+    "flow_cosine_similarity": {
+      "same": {
+        "count": 15,
+        "mean": 0.6582302330968557,
+        "median": 0.7760611861172535,
+        "quantiles_p10_p50_p90": [
+          0.30604039395821825,
+          0.7760611861172535,
+          0.9394783860432255
+        ]
+      },
+      "different": {
+        "count": 9,
+        "mean": 0.7724772085629561,
+        "median": 0.8594350184383027,
+        "quantiles_p10_p50_p90": [
+          0.6304865629736118,
+          0.8594350184383027,
+          0.9363598100013986
+        ]
+      },
+      "auc_without_posthoc_orientation": {
+        "different_high_auc": 0.6444444444444445,
+        "different_low_auc": 0.3555555555555555
+      }
+    }
+  },
+  "pairs": [
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        49,
+        62,
+        108
+      ],
+      "right_zyx": [
+        49,
+        63,
+        108
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.07518577575683594,
+      "flow_l2_delta": 1.616799235343933,
+      "flow_cosine_similarity": -0.09930280759481078
+    },
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        48,
+        62,
+        108
+      ],
+      "right_zyx": [
+        48,
+        63,
+        108
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.6858072280883789,
+      "flow_l2_delta": 1.9656709432601929,
+      "flow_cosine_similarity": 0.2231498637993499
+    },
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        50,
+        62,
+        108
+      ],
+      "right_zyx": [
+        50,
+        63,
+        108
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.2728515863418579,
+      "flow_l2_delta": 0.9181960225105286,
+      "flow_cosine_similarity": 0.5891381167826153
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        6,
+        44,
+        102
+      ],
+      "right_zyx": [
+        6,
+        45,
+        102
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.2579388618469238,
+      "flow_l2_delta": 0.2544597387313843,
+      "flow_cosine_similarity": 0.9228191074068404
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        5,
+        44,
+        102
+      ],
+      "right_zyx": [
+        5,
+        45,
+        102
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.0389611721038818,
+      "flow_l2_delta": 0.984168529510498,
+      "flow_cosine_similarity": 0.4303761891965207
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        7,
+        44,
+        102
+      ],
+      "right_zyx": [
+        7,
+        45,
+        102
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.3242008686065674,
+      "flow_l2_delta": 0.6591269373893738,
+      "flow_cosine_similarity": 0.7838514193662464
+    },
+    {
+      "interface_id": "MV-G3-IF-003",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        5,
+        58,
+        85
+      ],
+      "right_zyx": [
+        6,
+        58,
+        85
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.4695746898651123,
+      "flow_l2_delta": 2.1552748680114746,
+      "flow_cosine_similarity": 0.9321163347126442
+    },
+    {
+      "interface_id": "MV-G3-IF-003",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        5,
+        57,
+        85
+      ],
+      "right_zyx": [
+        6,
+        57,
+        85
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.368296504020691,
+      "flow_l2_delta": 1.38932466506958,
+      "flow_cosine_similarity": 0.8600100138586202
+    },
+    {
+      "interface_id": "MV-G3-IF-003",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        5,
+        59,
+        85
+      ],
+      "right_zyx": [
+        6,
+        59,
+        85
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 1.4295148849487305,
+      "flow_l2_delta": 1.4325321912765503,
+      "flow_cosine_similarity": 0.7856569164234545
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        48,
+        52,
+        60
+      ],
+      "right_zyx": [
+        48,
+        53,
+        60
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.42504358291625977,
+      "flow_l2_delta": 0.5685020089149475,
+      "flow_cosine_similarity": 0.9708155269333004
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        47,
+        52,
+        60
+      ],
+      "right_zyx": [
+        47,
+        53,
+        60
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.7647831439971924,
+      "flow_l2_delta": 1.4368743896484375,
+      "flow_cosine_similarity": 0.9505845718008156
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        49,
+        52,
+        60
+      ],
+      "right_zyx": [
+        49,
+        53,
+        60
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.558089017868042,
+      "flow_l2_delta": 1.4273550510406494,
+      "flow_cosine_similarity": 0.5436778848487532
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        23,
+        50,
+        113
+      ],
+      "right_zyx": [
+        24,
+        50,
+        113
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.42332029342651367,
+      "flow_l2_delta": 0.6650101542472839,
+      "flow_cosine_similarity": 0.8173060756667853
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        23,
+        49,
+        113
+      ],
+      "right_zyx": [
+        24,
+        49,
+        113
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.5686383247375488,
+      "flow_l2_delta": 1.2257118225097656,
+      "flow_cosine_similarity": 0.845475414065392
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        23,
+        51,
+        113
+      ],
+      "right_zyx": [
+        24,
+        51,
+        113
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.047894835472106934,
+      "flow_l2_delta": 1.5684244632720947,
+      "flow_cosine_similarity": 0.009805149174240909
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        24,
+        53,
+        29
+      ],
+      "right_zyx": [
+        24,
+        53,
+        30
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.43181753158569336,
+      "flow_l2_delta": 1.2414655685424805,
+      "flow_cosine_similarity": 0.7760611861172535
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        23,
+        53,
+        29
+      ],
+      "right_zyx": [
+        23,
+        53,
+        30
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.2669510841369629,
+      "flow_l2_delta": 1.8427680730819702,
+      "flow_cosine_similarity": 0.5563116416446895
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        25,
+        53,
+        29
+      ],
+      "right_zyx": [
+        25,
+        53,
+        30
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.23778414726257324,
+      "flow_l2_delta": 1.118443489074707,
+      "flow_cosine_similarity": 0.8549667308909223
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        48,
+        8,
+        84
+      ],
+      "right_zyx": [
+        49,
+        8,
+        84
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.47895193099975586,
+      "flow_l2_delta": 0.6010802984237671,
+      "flow_cosine_similarity": 0.8594350184383027
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        48,
+        7,
+        84
+      ],
+      "right_zyx": [
+        49,
+        7,
+        84
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.34598326683044434,
+      "flow_l2_delta": 0.5050725340843201,
+      "flow_cosine_similarity": 0.9533337111564159
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 0,
+      "left_zyx": [
+        48,
+        9,
+        84
+      ],
+      "right_zyx": [
+        49,
+        9,
+        84
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.31385940313339233,
+      "flow_l2_delta": 0.9441843628883362,
+      "flow_cosine_similarity": 0.8891562435707492
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        19,
+        92,
+        27
+      ],
+      "right_zyx": [
+        19,
+        93,
+        27
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.011439800262451172,
+      "flow_l2_delta": 1.6108111143112183,
+      "flow_cosine_similarity": 0.8681991184452089
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        18,
+        92,
+        27
+      ],
+      "right_zyx": [
+        18,
+        93,
+        27
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.050681352615356445,
+      "flow_l2_delta": 1.235377550125122,
+      "flow_cosine_similarity": 0.8651657278246837
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        20,
+        92,
+        27
+      ],
+      "right_zyx": [
+        20,
+        93,
+        27
+      ],
+      "loss_weight": 0.3333333333333333,
+      "cell_probability_abs_delta": 0.4475712776184082,
+      "flow_l2_delta": 2.585892915725708,
+      "flow_cosine_similarity": 0.6376392189904496
+    }
+  ],
+  "scientific_boundary": "These are Cellpose output descriptors, not documented neuronal-affinity channels or independently validated membrane probabilities. They cannot by themselves enter training or establish a biological boundary."
+}

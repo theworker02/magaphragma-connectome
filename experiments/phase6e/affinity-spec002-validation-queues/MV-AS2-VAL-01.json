@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "MV-AS2-VAL-QUEUE-MV-AS2-VAL-01",
+  "validation_batch_id": "AFFINITY_SPEC002_VALIDATION_001",
+  "created_at": "2026-09-18T01:38:54.298963Z",
+  "status": "EXPERT_EQUIVARIANT_VALIDATION_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2-VAL-01-AS2VAL",
+  "crop_id": "MV-AS2-VAL-01",
+  "raw_sha256": "e420bc8406be1b7833141892eacb8260b6db96426b61787fa86e542c0d5b2900",
+  "questions": [
+    {
+      "opaque_decision_id": "MV-AS2-025FD9E703DC",
+      "presentation_order_index": 1,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        47,
+        44,
+        3
+      ],
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-0747A4D01EF4",
+      "presentation_order_index": 2,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        46,
+        44,
+        4
+      ],
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-D5FEFF79F4FC",
+      "presentation_order_index": 19,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        46,
+        45,
+        3
+      ],
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "SPEC002 annotation-procedure validation only. Not training supervision. Not G3-009. Axis identity hidden until batch freeze."
+}

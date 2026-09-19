@@ -1,0 +1,110 @@
+{
+  "id": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T03:20:00Z",
+  "status": "FROZEN_BEFORE_ANY_CANDIDATE_LAUNCH",
+  "frozen_before_seeing_results": true,
+  "parent_funnel": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "shared_frozen_context": {
+    "supervision_manifest": "experiments/phase6e/AFFINITY-TRAIN-PGT002-001/supervision/supervision_manifest.json",
+    "promoted_gt": "experiments/phase6e/PRODUCTION_GT_PROMOTED_BATCH_002.json",
+    "promoted_gt_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+    "train_sources": [
+      "MV-DVID-RAW-SURVEY-076",
+      "MV-DVID-RAW-SURVEY-079",
+      "MV-DVID-RAW-SURVEY-082",
+      "MV-DVID-RAW-SURVEY-087",
+      "MV-DVID-RAW-SURVEY-088",
+      "MV-DVID-RAW-SURVEY-092"
+    ],
+    "eval_sources": [
+      "MV-DVID-RAW-SURVEY-078",
+      "MV-DVID-RAW-SURVEY-083"
+    ],
+    "init_checkpoint": "experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+    "architecture": "SegNeuron MNet",
+    "mnet_kwargs": {"in_channels": 1, "kn": [32, 64, 96, 128, 256], "FMU": "sub"},
+    "decision_threshold": 0.5,
+    "seeds": {
+      "python_hash_seed": "0",
+      "torch_manual_seed": 20260918,
+      "numpy_seed": 20260918,
+      "dataloader_generator_seed": 20260918,
+      "split_seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT"
+    },
+    "gates": "AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001 GATE_A–E unchanged"
+  },
+  "design_rule": "Each candidate changes exactly one training factor relative to the failed PGT002-001 baseline. Baseline itself is NOT re-run (already FAIL_PERMANENT).",
+  "baseline_reference_not_rerun": {
+    "run_id": "AFFINITY-TRAIN-PGT002-001",
+    "learning_rate": 1e-4,
+    "optimizer": "Adam",
+    "patch_shape_zyx": [20, 128, 128],
+    "target_loss_weight": 0.25,
+    "different_class_loss_multiplier": 1.0,
+    "outcome": "FAIL GATE_D; balanced_acc=0.5 plateau through step 120"
+  },
+  "candidates": [
+    {
+      "candidate_id": "A_LR_1E3",
+      "tests_failure_class": "F2_OPTIMIZATION_OR_CONFIG",
+      "changes_exactly_one_thing": "learning_rate 1e-4 → 1e-3",
+      "config": {
+        "learning_rate": 0.001,
+        "optimizer": "Adam",
+        "patch_shape_zyx": [20, 128, 128],
+        "target_loss_weight": 0.25,
+        "different_class_loss_multiplier": 1.0
+      }
+    },
+    {
+      "candidate_id": "B_DIFF_CLASS_WEIGHT_3",
+      "tests_failure_class": "F2_OPTIMIZATION_OR_CONFIG",
+      "changes_exactly_one_thing": "DIFFERENT_PROCESS supervised voxels weighted ×3 in masked BCE (class imbalance treatment)",
+      "config": {
+        "learning_rate": 0.0001,
+        "optimizer": "Adam",
+        "patch_shape_zyx": [20, 128, 128],
+        "target_loss_weight": 0.25,
+        "different_class_loss_multiplier": 3.0
+      }
+    },
+    {
+      "candidate_id": "C_PATCH_20_64_64",
+      "tests_failure_class": "F4_SPATIAL_SCALE_SIGNAL",
+      "changes_exactly_one_thing": "patch_shape_zyx [20,128,128] → [20,64,64] (tighter spatial context around labeled face)",
+      "config": {
+        "learning_rate": 0.0001,
+        "optimizer": "Adam",
+        "patch_shape_zyx": [20, 64, 64],
+        "target_loss_weight": 0.25,
+        "different_class_loss_multiplier": 1.0
+      }
+    },
+    {
+      "candidate_id": "D_TARGET_LOSS_WEIGHT_1",
+      "tests_failure_class": "F2_OPTIMIZATION_OR_CONFIG",
+      "changes_exactly_one_thing": "target_loss_weight 0.25 → 1.0 (stronger GT signal vs FIB-SEM source loss)",
+      "config": {
+        "learning_rate": 0.0001,
+        "optimizer": "Adam",
+        "patch_shape_zyx": [20, 128, 128],
+        "target_loss_weight": 1.0,
+        "different_class_loss_multiplier": 1.0
+      }
+    }
+  ],
+  "short_budget": {"steps": 30, "checkpoint_every": 10},
+  "extend_budget": {"steps": 120, "checkpoint_every": 10},
+  "early_eliminate": {
+    "at_steps": [10, 20, 30],
+    "rule": "balanced_edge_accuracy_at_0p5 == 0.5 AND margin <= 0 → ELIMINATED_CHANCE"
+  },
+  "forbidden_after_freeze": [
+    "Adding candidates after seeing S1 scores",
+    "Changing GATE_D or threshold",
+    "Using eval labels in the loss",
+    "Claiming PASS without all GATE_A–E"
+  ],
+  "training_not_launched_by_this_document": true
+}

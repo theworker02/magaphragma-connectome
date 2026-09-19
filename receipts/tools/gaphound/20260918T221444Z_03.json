@@ -1,0 +1,20 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "repair_plan": {
+      "n_work_items": 0,
+      "note": "Minimum AxonForge worklist to close holes — does not rerun full volume.",
+      "vs_full_volume_tiles": 7,
+      "worklist": []
+    }
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:14:44Z",
+  "tool": "gaphound"
+}

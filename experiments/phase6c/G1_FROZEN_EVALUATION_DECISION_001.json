@@ -1,0 +1,45 @@
+{
+  "id": "MV-G1-FROZEN-EVALUATION-001",
+  "classification": "EXPERIMENTAL_MODEL_EVALUATION",
+  "frozen_model": {
+    "id": "MV-MODEL-SEGNEURON-DVID-ADAPTED-001",
+    "checkpoint": "experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+    "checkpoint_sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+    "selection_rule": "lowest frozen reviewed DVID validation masked affinity BCE; MV-GTVOL-000004 was excluded from training and checkpoint selection"
+  },
+  "frozen_postprocessing": {
+    "environment_specification": "third_party/segneuron/environment-postprocess.yml",
+    "environment_specification_sha256": "5a0d034d54b23bc836d0ff078ecde8a49c081604201df464be5ecd984ac7c3cd",
+    "algorithm": "ELF distance_transform_watershed -> RAG -> learned interface feature -> multicut",
+    "parameters": {"dimensions": "3D", "threshold": 0.25, "sigma_seeds": 2.0, "beta": 0.1},
+    "synthetic_semantics_fixture": "local_research_build/phase6c/elf-runtime-restored-001/synthetic-multicut-semantics.json",
+    "runtime_qualification": "PASS; historical environment path was unavailable, so a separately restored pinned-specification runtime was qualified with fresh synthetic fixtures"
+  },
+  "development_gate": {
+    "volume": "MV-DVID-RAW-SURVEY-003",
+    "status": "PASS_NONDEGENERATE_MACHINE_DIAGNOSTIC",
+    "receipt": "local_research_build/phase6c/g1-development-MV-DVID-RAW-SURVEY-003-step2280-true3d-replay-001/receipt.json",
+    "qa_receipt": "local_research_build/phase6c/g1-development-MV-DVID-RAW-SURVEY-003-step2280-true3d-replay-001/reconstruction-qa.json",
+    "negative_cost_edges": 8518,
+    "multicut_instances": 54,
+    "largest_instance_fraction": 0.2832205295562744,
+    "admission": "NOT_A_BIOLOGICAL_FRAGMENT; review-required machine diagnostic only"
+  },
+  "protected_regression": {
+    "volume": "MV-GTVOL-000004",
+    "role": "REGRESSION_ONLY",
+    "status": "FAIL_SINGLE_INSTANCE",
+    "receipt": "local_research_build/phase6c/MV-GTVOL-000004-g1-step2280-true3d-replay-001/receipt.json",
+    "qa_receipt": "local_research_build/phase6c/MV-GTVOL-000004-g1-step2280-true3d-replay-001/reconstruction-qa.json",
+    "split_probability": {"median": 0.028260887129255133, "max": 0.268543004989624, "edges_gt_0_5": 0},
+    "negative_cost_edges": 0,
+    "multicut_instances": 1,
+    "largest_instance_fraction": 1.0
+  },
+  "decision": {
+    "result": "G1_TARGET_GENERALIZATION_INSUFFICIENT",
+    "interpretation": "The fixed G1 model and fixed restored evaluator separate the selected development volume but reproduce a one-instance merge on the untouched protected volume.",
+    "prohibited_actions": ["create MV-FRAG", "create MV-N", "create MV-SYN", "create MV-CONN", "tune beta or thresholds against MV-GTVOL-000004", "retrain or alter the frozen G1 result"],
+    "next_scientific_gate": "Acquire spatially diverse reviewed target boundary evidence before defining a new adaptation experiment."
+  }
+}

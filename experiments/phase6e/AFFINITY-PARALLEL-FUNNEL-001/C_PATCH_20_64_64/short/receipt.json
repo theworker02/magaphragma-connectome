@@ -1,0 +1,156 @@
+{
+  "all_checkpoint_summaries": [
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "chance_under_early_eliminate_rule": false,
+      "global_step": 10,
+      "margin": 0.023676656186580658
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "chance_under_early_eliminate_rule": false,
+      "global_step": 20,
+      "margin": 0.013359349220991135
+    },
+    {
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "chance_under_early_eliminate_rule": true,
+      "global_step": 30,
+      "margin": -0.0032889842987060547
+    }
+  ],
+  "candidate_id": "C_PATCH_20_64_64",
+  "changes_exactly_one_thing": "patch_shape_zyx [20,128,128] \u2192 [20,64,64] (tighter spatial context around labeled face)",
+  "checkpoint_every": 10,
+  "config": {
+    "different_class_loss_multiplier": 1.0,
+    "learning_rate": 0.0001,
+    "optimizer": "Adam",
+    "patch_shape_zyx": [
+      20,
+      64,
+      64
+    ],
+    "target_loss_weight": 0.25
+  },
+  "created_at": "2026-09-18T03:50:45.396855Z",
+  "device": "AMD  Radeon RX 7800 XT",
+  "do_not_run_dense_segmentation_from_short_or_fail": true,
+  "do_not_weaken_GATE_D": true,
+  "early_eliminate_at_step": 30,
+  "early_eliminated": false,
+  "eval_metrics": {
+    "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+    "SAME_PROCESS_accuracy_at_0p5": 0.5,
+    "balanced_edge_accuracy_at_0p5": 0.5,
+    "margin": 0.023676656186580658,
+    "mean_pred_DIFFERENT": 0.6381741985678673,
+    "mean_pred_SAME": 0.6618508547544479,
+    "n_eval_edges": 6
+  },
+  "eval_metrics_extended": {
+    "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+    "SAME_PROCESS_accuracy_at_0p5": 0.5,
+    "balanced_edge_accuracy_at_0p5": 0.5,
+    "constant_same_accuracy": 0.3333333333333333,
+    "margin": 0.023676656186580658,
+    "mean_pred_DIFFERENT": 0.6381741985678673,
+    "mean_pred_SAME": 0.6618508547544479,
+    "n_eval_edges": 6,
+    "opaque_ids_scored": [
+      "MV-PGT2-5E2C51243843",
+      "MV-PGT2-BAB09CA48AC4",
+      "MV-PGT2-BB854E1BF43D",
+      "MV-PGT2-C2C6E21DB1B7",
+      "MV-PGT2-E992DA993C6B",
+      "MV-PGT2-FD2E7E5D4C10"
+    ],
+    "pair_predictions": [
+      {
+        "affinity": 0.9968363046646118,
+        "opaque_decision_id": "MV-PGT2-5E2C51243843",
+        "target": 0
+      },
+      {
+        "affinity": 0.2696155607700348,
+        "opaque_decision_id": "MV-PGT2-BAB09CA48AC4",
+        "target": 0
+      },
+      {
+        "affinity": 0.9942252039909363,
+        "opaque_decision_id": "MV-PGT2-BB854E1BF43D",
+        "target": 0
+      },
+      {
+        "affinity": 0.33700641989707947,
+        "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7",
+        "target": 1
+      },
+      {
+        "affinity": 0.29201972484588623,
+        "opaque_decision_id": "MV-PGT2-E992DA993C6B",
+        "target": 0
+      },
+      {
+        "affinity": 0.9866952896118164,
+        "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10",
+        "target": 1
+      }
+    ]
+  },
+  "eval_sources": [
+    "MV-DVID-RAW-SURVEY-078",
+    "MV-DVID-RAW-SURVEY-083"
+  ],
+  "funnel_id": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "gate_outcomes": {
+    "GATE_A_eval_completeness": true,
+    "GATE_B_both_classes_scored": true,
+    "GATE_C_better_than_constant_same": true,
+    "GATE_D_positive_margin": true,
+    "GATE_E_no_eval_leakage": true
+  },
+  "init_checkpoint_path_and_sha256": {
+    "path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+    "sha256": "094eabaaaa93ce33349e5c3a9ee1c166bcda8081c307d6a2d51c74a10d8af354"
+  },
+  "matrix_id": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+  "phase": "short",
+  "promoted_gt_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+  "reclassification_note": "Never-left-chance rule; prior ELIMINATED_CHANCE was last-step-only bug",
+  "reclassified_by": "AFFINITY_PARALLEL_EARLY_ELIMINATE_CLARIFICATION_001",
+  "run_id": "AFFINITY-PARALLEL-C_PATCH_20_64_64-SHORT",
+  "runtime_seconds": 114.8907699584961,
+  "seeds": {
+    "dataloader_generator_seed": 20260918,
+    "numpy_seed": 20260918,
+    "python_hash_seed": "0",
+    "split_seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT",
+    "torch_manual_seed": 20260918
+  },
+  "selected_checkpoint_path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/short/checkpoints/checkpoint-step10.pt",
+  "selected_checkpoint_sha256": "421fb1c8e86186a7fb94a1972857de4b86280b174bf8b0eb839b47150494913d",
+  "selected_checkpoint_step": 10,
+  "status": "SURVIVOR_SHORT",
+  "steps_completed": 30,
+  "steps_requested": 30,
+  "tests_failure_class": "F4_SPATIAL_SCALE_SIGNAL",
+  "torch_version": "2.9.1+rocm7.2.1.gitff65f5bc",
+  "train_sources": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ],
+  "train_sources_seen_in_batches": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ],
+  "verdict": "AFFINITY-PARALLEL-C_PATCH_20_64_64-SHORT_SURVIVOR_SHORT"
+}

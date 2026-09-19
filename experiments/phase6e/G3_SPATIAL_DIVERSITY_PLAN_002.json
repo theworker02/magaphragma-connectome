@@ -1,0 +1,19 @@
+{
+  "id": "MV-G3-SPATIAL-DIVERSITY-COHORT-002",
+  "selection_rationale": "Replacement dataset after G3-001 failed its per-region class-admission rule. The need for replacements follows the frozen G3-001 admission decision; candidate ranking uses only pre-existing raw-survey coordinates and raw-EM appearance metadata, not model output, reconstruction metrics, or individual review decisions.",
+  "replaces": "MV-G3-SPATIAL-DIVERSITY-COHORT-001",
+  "excluded_sources": ["MV-DVID-RAW-SURVEY-003", "MV-DVID-RAW-SURVEY-007", "MV-DVID-RAW-SURVEY-009", "MV-DVID-RAW-SURVEY-014", "MV-DVID-RAW-SURVEY-016", "MV-DVID-RAW-SURVEY-023", "MV-DVID-RAW-SURVEY-026", "MV-DVID-RAW-SURVEY-030"],
+  "selected_regions": [
+    {"id":"MV-G3-TRAIN-A","source_id":"MV-DVID-RAW-SURVEY-001","role":"G3_TARGET_TRAIN","raw_stratum":"low-contrast / low-gradient"},
+    {"id":"MV-G3-TRAIN-B","source_id":"MV-DVID-RAW-SURVEY-008","role":"G3_TARGET_TRAIN","raw_stratum":"moderate-contrast / moderate-gradient"},
+    {"id":"MV-G3-TRAIN-D","source_id":"MV-DVID-RAW-SURVEY-024","role":"G3_TARGET_TRAIN","raw_stratum":"high local-gradient / dense-boundary appearance candidate"},
+    {"id":"MV-G3-TRAIN-F","source_id":"MV-DVID-RAW-SURVEY-031","role":"G3_TARGET_TRAIN","raw_stratum":"low-contrast distant spatial control"},
+    {"id":"MV-G3-TRAIN-G","source_id":"MV-DVID-RAW-SURVEY-002","role":"G3_TARGET_TRAIN","raw_stratum":"low-contrast / independent x-location replacement"},
+    {"id":"MV-G3-TRAIN-H","source_id":"MV-DVID-RAW-SURVEY-022","role":"G3_TARGET_TRAIN","raw_stratum":"moderate-contrast / high-z independent replacement"},
+    {"id":"MV-G3-VALIDATION-V1","source_id":"MV-DVID-RAW-SURVEY-004","role":"G3_TARGET_VALIDATION","raw_stratum":"independent low-contrast validation"},
+    {"id":"MV-G3-VALIDATION-V2","source_id":"MV-DVID-RAW-SURVEY-015","role":"G3_TARGET_VALIDATION","raw_stratum":"independent moderate-contrast validation"},
+    {"id":"MV-G3-VALIDATION-V3","source_id":"MV-DVID-RAW-SURVEY-025","role":"G3_TARGET_VALIDATION","raw_stratum":"independent high-variance validation"}
+  ],
+  "prohibited_inputs": ["SegNeuron predictions", "G1/G2 reconstruction metrics", "G2 LORO labels", "MV-GTVOL-000004", "post-selection model output", "validation evidence for training"],
+  "replacement_ranking_contract": "Only raw-survey spatial coordinates and raw-EM intensity statistics were used to choose G/H. G3-001 review outcomes were used solely to establish that C/E require replacement."
+}

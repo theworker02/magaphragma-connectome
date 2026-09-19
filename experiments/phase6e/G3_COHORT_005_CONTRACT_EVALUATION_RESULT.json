@@ -1,0 +1,47 @@
+{
+  "id": "MV-G3-COHORT-005-CONTRACT-EVALUATION-RESULT-001",
+  "schema_version": 1,
+  "created_at": "2026-09-17T16:40:00Z",
+  "status": "CONTRACT_NOT_SATISFIED_STOP_AND_REASSESS",
+  "contract": "G3_AFFINITY_EVAL_COHORT_LEVEL_IDENTIFIABILITY_CONTRACT_V1",
+  "contract_unchanged": true,
+  "inputs": {
+    "existing_train": "A-H (frozen -002 subset A,B,D,F,G,H) + rejected C,E review logs",
+    "new_train_005": ["MV-G3-TRAIN-I", "MV-G3-TRAIN-J", "MV-G3-TRAIN-K", "MV-G3-TRAIN-L"],
+    "new_train_005_sources": ["MV-DVID-RAW-SURVEY-013", "MV-DVID-RAW-SURVEY-009", "MV-DVID-RAW-SURVEY-003", "MV-DVID-RAW-SURVEY-007"],
+    "audit": {"path": "experiments/phase6e/MV-G3-IDENTIFIABILITY-AUDIT-002.json"},
+    "selection_protocol": "MV-G3-NEW-REGION-SELECTION-PROTOCOL-001",
+    "sampler": "STRATIFIED_AXIS_x_RANKBAND_V1 (predeclared, label-blind)"
+  },
+  "verdict": {
+    "cohort_valid": false,
+    "evaluable_axes": [],
+    "Z": {"C1": false, "reason": "Z has zero SAME_PROCESS interfaces in TRAIN across ALL 12 crops A-L; Z is DIFFERENT-only"},
+    "Y": {"C1": true, "C2": true, "C3": false, "reason": "Y SAME comes only from {A,B,D,F,G,H,I,J,K,L}; Y DIFFERENT only from {C,E}; disjoint crop sets, no crop supplies both Y classes => class perfectly collinear with crop"},
+    "X": {"C1": false, "C2": false, "reason": "X DIFFERENT unique to crop E; no replication; X SAME/DIFFERENT crop-disjoint"}
+  },
+  "structural_finding": {
+    "observation": "All four newly selected, spatially-independent, label-blind TRAIN crops (I,J,K,L) produced the SAME axis-aligned pattern as the original cohort: Z = all DIFFERENT_PROCESS, X = all SAME_PROCESS, Y = all SAME_PROCESS, across all six raw-EM rank bands.",
+    "consistency": "This pattern is now observed in 10/10 crops that carry Z or X/Y interfaces (A,B,D,F,G,H,I,J,K,L). Within-region SAME/DIFFERENT contrast on a single axis does NOT occur in any reviewed crop under the current interface geometry.",
+    "interpretation_candidate_label_blind": "At single-voxel-pair granularity on axis-aligned faces, the reviewed decision appears near-deterministically tied to the physical axis of the interface (Z faces separate distinct processes; X/Y faces lie within a process). This means SAME vs DIFFERENT is confounded with physical axis at the level the interface geometry samples it, so NO amount of additional crop sampling under this geometry can break class/crop or class/axis collinearity.",
+    "implication": "The blocker is very likely the INTERFACE GEOMETRY / LABELING DEFINITION, not cohort composition. The anisotropic EM (z-section vs in-plane) plausibly makes axis-aligned single-pair interfaces axis-deterministic."
+  },
+  "actions_taken": [
+    "Provisioned 4 new spatially-independent TRAIN crops via predeclared label-blind protocol",
+    "Collected 72 new reviewed interfaces (216 member decisions) across Z/Y/X x rank bands",
+    "Ran the identifiability contract exactly as written; no thresholds changed"
+  ],
+  "stop_reason": "Predeclared contract not satisfied by any axis; per governing instruction, do NOT auto-collect another round or modify the contract. Reassess interface geometry / labeling definition before further data collection.",
+  "immutability": {
+    "did_not_modify": [
+      "MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002",
+      "G3_COHORT_001_REVIEW_ADMISSION_DECISION",
+      "G3_COHORT_002_IDENTIFIABILITY_CONTRACT_DECISION (contract)",
+      "A-H event logs",
+      "-003 / -004 batches"
+    ]
+  },
+  "negative_evidence_preserved": ["-003", "-004", "-005 (I,J,K,L)"],
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0},
+  "downstream_gate": "No CellposeDINO/ViT-B evaluation, reconstruction, connectivity, or connectome step may proceed: no identifiable axis exists."
+}

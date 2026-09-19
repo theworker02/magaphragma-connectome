@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vigilia Connectome</title>
+  <style>
+    :root { color-scheme: dark; --ink:#f5f8fc; --muted:#9fb3c8; --line:#243247; --accent:#67c8ff; --bg:#070b13; }
+    * { box-sizing:border-box } body { margin:0; min-height:100vh; font:16px/1.5 ui-sans-serif,system-ui,sans-serif; color:var(--ink); background:radial-gradient(circle at 70% -20%,#18304c 0,transparent 35%),var(--bg) }
+    main { max-width:960px; margin:auto; padding:11vh 32px } .eyebrow { color:var(--accent); letter-spacing:.12em; font-size:.75rem; font-weight:700 } h1 { font-size:clamp(2.5rem,8vw,5.5rem); margin:.1em 0; letter-spacing:-.06em } .species { color:var(--muted); font-style:italic; font-size:1.2rem }
+    section { margin-top:64px; border-left:1px solid var(--line); padding:8px 0 8px 24px } h2 { margin:0 0 10px; font-size:1.2rem } p { max-width:680px; color:var(--muted) } code { color:#c7e9ff } .state { display:inline-block; border:1px solid var(--line); color:var(--accent); padding:4px 8px; font:600 .75rem ui-monospace,monospace; letter-spacing:.06em }
+  </style>
+</head>
+<body><main>
+  <div class="eyebrow">EVIDENCE-FIRST CONNECTOMICS</div><h1>VIGILIA</h1><div class="species">Megaphragma viggianii</div>
+  <section><div class="state" id="state">LOADING DATASET STATE</div><h2 id="title">Checking biological release registry</h2><p id="message">The explorer will not substitute a diagram or sample metrics for absent biology.</p></section>
+  <section><h2>Interpretation rule</h2><p>Every entity is presented with its status: <code>SOURCE_ANNOTATED</code>, <code>MACHINE_PREDICTED</code>, <code>MANUALLY_VERIFIED</code>, <code>LITERATURE_DERIVED</code>, or <code>UNKNOWN</code>. A connection view resolves to its synapses, segments, volume coordinates, and source evidence.</p></section>
+  <section><h2>Explorer state</h2><p id="counts">No biological reconstruction metrics loaded.</p></section>
+  <!-- Read-only state rendering: absent biology remains an explicit empty state. -->
+  <script>
+    // The explorer reflects server evidence only; it never substitutes demo statistics.
+    fetch('/api/status').then(r=>r.json()).then(data=>{ document.querySelector('#state').textContent=data.dataset_state; document.querySelector('#title').textContent=data.scientific_release || 'No released reconstruction'; document.querySelector('#message').textContent=data.message; document.querySelector('#counts').textContent=Object.entries(data.counts).map(([k,v])=>`${k}: ${v}`).join(' · '); }).catch(()=>{ document.querySelector('#state').textContent='API UNAVAILABLE'; document.querySelector('#message').textContent='Start the local Vigilia server to query the evidence registry.'; });
+  </script>
+</main></body></html>

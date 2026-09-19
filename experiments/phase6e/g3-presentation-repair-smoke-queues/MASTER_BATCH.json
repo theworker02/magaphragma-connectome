@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-PRESENTATION-REPAIR-SMOKE-001-MASTER-QUEUE",
+  "smoke_batch_id": "MV-G3-PRESENTATION-REPAIR-SMOKE-001",
+  "created_at": "2026-09-18T01:17:50.666232Z",
+  "status": "EXPERT_EQUIVARIANT_SMOKE_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "questions": [
+    {
+      "opaque_decision_id": "MV-PRS-DCD43177E4C4",
+      "presentation_order_index": 0,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        13,
+        104,
+        89
+      ],
+      "crop_id": "MV-G3-PRSMOKE-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-57D0E4DD5F5A",
+      "presentation_order_index": 1,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        117,
+        15
+      ],
+      "pair_right_zyx": [
+        15,
+        118,
+        15
+      ],
+      "crop_id": "MV-G3-PRSMOKE-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-C241FAB53400",
+      "presentation_order_index": 2,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        93,
+        117
+      ],
+      "pair_right_zyx": [
+        13,
+        94,
+        117
+      ],
+      "crop_id": "MV-G3-PRSMOKE-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-5EC466C56E4E",
+      "presentation_order_index": 3,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        93,
+        117
+      ],
+      "pair_right_zyx": [
+        14,
+        93,
+        117
+      ],
+      "crop_id": "MV-G3-PRSMOKE-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-33E350FDD51A",
+      "presentation_order_index": 4,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        63
+      ],
+      "pair_right_zyx": [
+        3,
+        70,
+        63
+      ],
+      "crop_id": "MV-G3-PRSMOKE-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-037C3ADFDF10",
+      "presentation_order_index": 5,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        13,
+        105,
+        88
+      ],
+      "crop_id": "MV-G3-PRSMOKE-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-106AD2F95A1D",
+      "presentation_order_index": 6,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        93,
+        117
+      ],
+      "pair_right_zyx": [
+        13,
+        93,
+        118
+      ],
+      "crop_id": "MV-G3-PRSMOKE-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-7C96440C39AE",
+      "presentation_order_index": 7,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        117,
+        15
+      ],
+      "pair_right_zyx": [
+        16,
+        117,
+        15
+      ],
+      "crop_id": "MV-G3-PRSMOKE-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-F8F2C9DE2A07",
+      "presentation_order_index": 8,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        104,
+        88
+      ],
+      "pair_right_zyx": [
+        14,
+        104,
+        88
+      ],
+      "crop_id": "MV-G3-PRSMOKE-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-A59DF2122A30",
+      "presentation_order_index": 9,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        117,
+        15
+      ],
+      "pair_right_zyx": [
+        15,
+        117,
+        16
+      ],
+      "crop_id": "MV-G3-PRSMOKE-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-8B39ADFA1C8E",
+      "presentation_order_index": 10,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        63
+      ],
+      "pair_right_zyx": [
+        3,
+        69,
+        64
+      ],
+      "crop_id": "MV-G3-PRSMOKE-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PRS-364099A5A77B",
+      "presentation_order_index": 11,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        63
+      ],
+      "pair_right_zyx": [
+        4,
+        69,
+        63
+      ],
+      "crop_id": "MV-G3-PRSMOKE-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-presentation-repair-smoke-packages\\MV-G3-PRSMOKE-04\\workspace.json",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "All 12 smoke decisions in deterministic blinded order across 4 locations. Not training supervision. Not G3-009."
+}

@@ -1,0 +1,1729 @@
+{
+  "status": "COMPLETED",
+  "classification": "EXPERIMENTAL_G2_LORO_REVIEWED_DVID_TARGET_ADAPTATION",
+  "run_id": "MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001",
+  "fold": "A",
+  "held_out_region": "MV-G2-TRAIN-A",
+  "train_regions": [
+    "MV-G2-TRAIN-B",
+    "MV-G2-TRAIN-C",
+    "MV-G2-TRAIN-D"
+  ],
+  "start_global_step": 2280,
+  "final_global_step": 2310,
+  "resume": {
+    "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6c\\MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002\\checkpoint-step2280.pt",
+    "sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+    "exact_model_and_adam_state_restored": true,
+    "scheduler": "NONE"
+  },
+  "dataset": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-G2-DVID-REVIEWED-AFFINITY-003.json",
+    "sha256": "dc0af1a87f59cd79df669a8618117672c8adebe9fa410f27d85699cf8807acd0"
+  },
+  "target_loss_weight": 0.25,
+  "source_supervision": {
+    "cohort": "Hemi-brain-fib/0..3",
+    "frozen_validation": "Hemi-brain-fib/4"
+  },
+  "history": [
+    {
+      "global_step": 2281,
+      "source_loss": 0.3791547417640686,
+      "target_masked_affinity_loss": 2.1483819484710693,
+      "total_loss": 0.9162502288818359,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          40,
+          210,
+          120
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          16,
+          27,
+          125
+        ],
+        "patch_origin_zyx": [
+          6,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1959227904
+    },
+    {
+      "global_step": 2282,
+      "source_loss": 0.2813056707382202,
+      "target_masked_affinity_loss": 0.05980202183127403,
+      "total_loss": 0.2962561845779419,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          53,
+          239,
+          157
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          20,
+          13,
+          52
+        ],
+        "patch_origin_zyx": [
+          10,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1959985664
+    },
+    {
+      "global_step": 2283,
+      "source_loss": 0.44440627098083496,
+      "target_masked_affinity_loss": 1.9291428327560425,
+      "total_loss": 0.926692008972168,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          66,
+          268,
+          194
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          7,
+          24,
+          44
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1960129024
+    },
+    {
+      "global_step": 2284,
+      "source_loss": 0.3845629096031189,
+      "target_masked_affinity_loss": 1.6427754163742065,
+      "total_loss": 0.7952567338943481,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          79,
+          297,
+          231
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          24,
+          105,
+          101
+        ],
+        "patch_origin_zyx": [
+          14,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1961243136
+    },
+    {
+      "global_step": 2285,
+      "source_loss": 0.3517235815525055,
+      "target_masked_affinity_loss": 1.606799602508545,
+      "total_loss": 0.7534234523773193,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          92,
+          326,
+          268
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          4,
+          57,
+          23
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 6
+      },
+      "gpu_memory_allocated_bytes": 1958781440
+    },
+    {
+      "global_step": 2286,
+      "source_loss": 0.2593032717704773,
+      "target_masked_affinity_loss": 0.012814037501811981,
+      "total_loss": 0.26250678300857544,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          105,
+          355,
+          305
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          47,
+          51,
+          123
+        ],
+        "patch_origin_zyx": [
+          37,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1956729344
+    },
+    {
+      "global_step": 2287,
+      "source_loss": 0.29232850670814514,
+      "target_masked_affinity_loss": 0.3973972797393799,
+      "total_loss": 0.3916778266429901,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          118,
+          384,
+          342
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          15,
+          30,
+          1
+        ],
+        "patch_origin_zyx": [
+          5,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 4
+      },
+      "gpu_memory_allocated_bytes": 1960878592
+    },
+    {
+      "global_step": 2288,
+      "source_loss": 0.37479814887046814,
+      "target_masked_affinity_loss": 0.08636940270662308,
+      "total_loss": 0.39639049768447876,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          131,
+          23,
+          379
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          59,
+          108,
+          22
+        ],
+        "patch_origin_zyx": [
+          44,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1960952320
+    },
+    {
+      "global_step": 2289,
+      "source_loss": 0.3407248258590698,
+      "target_masked_affinity_loss": 0.004652238916605711,
+      "total_loss": 0.341887891292572,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          144,
+          52,
+          26
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          49,
+          15,
+          123
+        ],
+        "patch_origin_zyx": [
+          39,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1957114368
+    },
+    {
+      "global_step": 2290,
+      "source_loss": 0.3029239773750305,
+      "target_masked_affinity_loss": 0.036238864064216614,
+      "total_loss": 0.31198370456695557,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          157,
+          81,
+          63
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          5,
+          3,
+          56
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1958760960
+    },
+    {
+      "global_step": 2291,
+      "source_loss": 0.3718286156654358,
+      "target_masked_affinity_loss": 0.010934378020465374,
+      "total_loss": 0.37456220388412476,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          170,
+          110,
+          100
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          39,
+          62,
+          18
+        ],
+        "patch_origin_zyx": [
+          29,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 5
+      },
+      "gpu_memory_allocated_bytes": 1966187008
+    },
+    {
+      "global_step": 2292,
+      "source_loss": 0.3675994873046875,
+      "target_masked_affinity_loss": 2.3406026363372803,
+      "total_loss": 0.9527501463890076,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          183,
+          139,
+          137
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          33,
+          84,
+          116
+        ],
+        "patch_origin_zyx": [
+          23,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961599488
+    },
+    {
+      "global_step": 2293,
+      "source_loss": 0.3131629228591919,
+      "target_masked_affinity_loss": 0.01579926535487175,
+      "total_loss": 0.3171127438545227,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          196,
+          168,
+          174
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          16,
+          27,
+          125
+        ],
+        "patch_origin_zyx": [
+          6,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1963602432
+    },
+    {
+      "global_step": 2294,
+      "source_loss": 1.0001490116119385,
+      "target_masked_affinity_loss": 0.23297791182994843,
+      "total_loss": 1.0583934783935547,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          209,
+          197,
+          211
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          8,
+          75,
+          56
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 6
+      },
+      "gpu_memory_allocated_bytes": 1962095104
+    },
+    {
+      "global_step": 2295,
+      "source_loss": 0.33310410380363464,
+      "target_masked_affinity_loss": 0.08399295806884766,
+      "total_loss": 0.35410234332084656,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          222,
+          226,
+          248
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          5,
+          9,
+          95
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1961832960
+    },
+    {
+      "global_step": 2296,
+      "source_loss": 0.29583001136779785,
+      "target_masked_affinity_loss": 0.017542120069265366,
+      "total_loss": 0.30021554231643677,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          235,
+          255,
+          285
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          24,
+          105,
+          101
+        ],
+        "patch_origin_zyx": [
+          14,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1960550912
+    },
+    {
+      "global_step": 2297,
+      "source_loss": 0.4903339743614197,
+      "target_masked_affinity_loss": 0.10995998233556747,
+      "total_loss": 0.5178239941596985,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          248,
+          284,
+          322
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          5,
+          48,
+          15
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 6
+      },
+      "gpu_memory_allocated_bytes": 1961402880
+    },
+    {
+      "global_step": 2298,
+      "source_loss": 0.5310059785842896,
+      "target_masked_affinity_loss": 0.06426268815994263,
+      "total_loss": 0.547071635723114,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          261,
+          313,
+          359
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          7,
+          24,
+          44
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1960223232
+    },
+    {
+      "global_step": 2299,
+      "source_loss": 0.5389882922172546,
+      "target_masked_affinity_loss": 0.03968307003378868,
+      "total_loss": 0.548909068107605,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          274,
+          342,
+          6
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          15,
+          30,
+          1
+        ],
+        "patch_origin_zyx": [
+          5,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 4
+      },
+      "gpu_memory_allocated_bytes": 1961009664
+    },
+    {
+      "global_step": 2300,
+      "source_loss": 0.3643623888492584,
+      "target_masked_affinity_loss": 1.6010212898254395,
+      "total_loss": 0.7646176815032959,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          287,
+          371,
+          43
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          18,
+          16,
+          18
+        ],
+        "patch_origin_zyx": [
+          8,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1964155392
+    },
+    {
+      "global_step": 2301,
+      "source_loss": 0.3355104923248291,
+      "target_masked_affinity_loss": 0.010570447891950607,
+      "total_loss": 0.33815309405326843,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          300,
+          10,
+          80
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          47,
+          51,
+          123
+        ],
+        "patch_origin_zyx": [
+          37,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1962123776
+    },
+    {
+      "global_step": 2302,
+      "source_loss": 0.27091681957244873,
+      "target_masked_affinity_loss": 0.0023178146220743656,
+      "total_loss": 0.2714962661266327,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          313,
+          39,
+          117
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          5,
+          3,
+          56
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1962451456
+    },
+    {
+      "global_step": 2303,
+      "source_loss": 0.25360918045043945,
+      "target_masked_affinity_loss": 0.017868364229798317,
+      "total_loss": 0.2580762803554535,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          326,
+          68,
+          154
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          6,
+          4,
+          8
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 6
+      },
+      "gpu_memory_allocated_bytes": 1962451456
+    },
+    {
+      "global_step": 2304,
+      "source_loss": 0.31007885932922363,
+      "target_masked_affinity_loss": 0.00298530631698668,
+      "total_loss": 0.3108251988887787,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          339,
+          97,
+          191
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          49,
+          15,
+          123
+        ],
+        "patch_origin_zyx": [
+          39,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1964483072
+    },
+    {
+      "global_step": 2305,
+      "source_loss": 0.374395489692688,
+      "target_masked_affinity_loss": 0.11629870533943176,
+      "total_loss": 0.40347015857696533,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          352,
+          126,
+          228
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          16,
+          27,
+          125
+        ],
+        "patch_origin_zyx": [
+          6,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1963155968
+    },
+    {
+      "global_step": 2306,
+      "source_loss": 0.3010547459125519,
+      "target_masked_affinity_loss": 0.01304005365818739,
+      "total_loss": 0.3043147623538971,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          365,
+          155,
+          265
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          46,
+          80,
+          14
+        ],
+        "patch_origin_zyx": [
+          36,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 5
+      },
+      "gpu_memory_allocated_bytes": 1965072896
+    },
+    {
+      "global_step": 2307,
+      "source_loss": 0.3077702522277832,
+      "target_masked_affinity_loss": 0.3256519138813019,
+      "total_loss": 0.3891832232475281,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          378,
+          184,
+          302
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          33,
+          84,
+          116
+        ],
+        "patch_origin_zyx": [
+          23,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1964417536
+    },
+    {
+      "global_step": 2308,
+      "source_loss": 0.27769362926483154,
+      "target_masked_affinity_loss": 0.028677750378847122,
+      "total_loss": 0.28486305475234985,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          391,
+          213,
+          339
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-B",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          24,
+          105,
+          101
+        ],
+        "patch_origin_zyx": [
+          14,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1963442688
+    },
+    {
+      "global_step": 2309,
+      "source_loss": 0.4310762882232666,
+      "target_masked_affinity_loss": 0.006950026843696833,
+      "total_loss": 0.4328137934207916,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          4,
+          242,
+          376
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-C",
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          38,
+          122,
+          103
+        ],
+        "patch_origin_zyx": [
+          28,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 5
+      },
+      "gpu_memory_allocated_bytes": 1962816000
+    },
+    {
+      "global_step": 2310,
+      "source_loss": 0.23025557398796082,
+      "target_masked_affinity_loss": 0.027145281434059143,
+      "total_loss": 0.2370418906211853,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          17,
+          271,
+          23
+        ]
+      },
+      "target_batch": {
+        "crop_id": "MV-G2-TRAIN-D",
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          5,
+          9,
+          95
+        ],
+        "patch_origin_zyx": [
+          0,
+          0,
+          0
+        ],
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1964425728
+    }
+  ],
+  "checkpoints": [
+    {
+      "global_step": 2290,
+      "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\checkpoint-step2290.pt",
+      "checkpoint_sha256": "3763e0b97aeeb9f6966482e6c3a2e4c03e4c909700a6b411f262569a85e29181",
+      "source_validation_loss": 0.29025396704673767,
+      "held_out_region": {
+        "reviewed_pairs": 6,
+        "masked_affinity_bce": 0.29003751611647505,
+        "same_pair_count": 5,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.974300479888916,
+        "same_quantiles_p10_p50_p90": [
+          0.9407924056053162,
+          0.9950798749923706,
+          0.9955930471420288
+        ],
+        "different_mean_affinity": 0.32869094610214233,
+        "different_quantiles_p10_p50_p90": [
+          0.32869094610214233,
+          0.32869094610214233,
+          0.32869094610214233
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "margin": 0.6456095337867737,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9333429932594299
+          },
+          {
+            "target": 1,
+            "affinity": 0.9953737854957581
+          },
+          {
+            "target": 1,
+            "affinity": 0.9950798749923706
+          },
+          {
+            "target": 1,
+            "affinity": 0.995739221572876
+          },
+          {
+            "target": 1,
+            "affinity": 0.9519665241241455
+          },
+          {
+            "target": 0,
+            "affinity": 0.32869094610214233
+          }
+        ]
+      },
+      "independent_validation": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 0.9438889920711517,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8026396632194519,
+          "same_quantiles_p10_p50_p90": [
+            0.7966415762901307,
+            0.8026396632194519,
+            0.8086377501487731
+          ],
+          "different_mean_affinity": 0.9078170657157898,
+          "different_quantiles_p10_p50_p90": [
+            0.9078170657157898,
+            0.9078170657157898,
+            0.9078170657157898
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.10517740249633789,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9078170657157898
+            },
+            {
+              "target": 1,
+              "affinity": 0.7951420545578003
+            },
+            {
+              "target": 1,
+              "affinity": 0.8101372718811035
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.7963414788246155,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.9680816650390625,
+          "same_quantiles_p10_p50_p90": [
+            0.9255032181739807,
+            0.9920626282691956,
+            0.996269142627716
+          ],
+          "different_mean_affinity": 0.9592629671096802,
+          "different_quantiles_p10_p50_p90": [
+            0.9592629671096802,
+            0.9592629671096802,
+            0.9592629671096802
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.00881869792938228,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.9150270819664001
+            },
+            {
+              "target": 1,
+              "affinity": 0.9971433281898499
+            },
+            {
+              "target": 1,
+              "affinity": 0.9949578642845154
+            },
+            {
+              "target": 1,
+              "affinity": 0.9920626282691956
+            },
+            {
+              "target": 0,
+              "affinity": 0.9592629671096802
+            },
+            {
+              "target": 1,
+              "affinity": 0.9412174224853516
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 0.8286639129122099,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.9869277392114911,
+          "same_quantiles_p10_p50_p90": [
+            0.9655099391937256,
+            0.9983596205711365,
+            0.9998425126075745
+          ],
+          "different_mean_affinity": 0.9728901088237762,
+          "different_quantiles_p10_p50_p90": [
+            0.9539261281490325,
+            0.9728901088237762,
+            0.9918540894985199
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.014037630387714883,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9965950846672058
+            },
+            {
+              "target": 0,
+              "affinity": 0.9491851329803467
+            },
+            {
+              "target": 1,
+              "affinity": 0.9588561654090881
+            },
+            {
+              "target": 1,
+              "affinity": 0.9699457883834839
+            },
+            {
+              "target": 1,
+              "affinity": 0.9997379183769226
+            },
+            {
+              "target": 1,
+              "affinity": 0.9983596205711365
+            },
+            {
+              "target": 1,
+              "affinity": 0.9999994039535522
+            },
+            {
+              "target": 1,
+              "affinity": 0.9818666577339172
+            },
+            {
+              "target": 1,
+              "affinity": 0.9997286200523376
+            }
+          ]
+        }
+      }
+    },
+    {
+      "global_step": 2300,
+      "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\checkpoint-step2300.pt",
+      "checkpoint_sha256": "a15bb6adb3f4134a631bf926a4520f990c52e002415def9ab6eaa795f007867f",
+      "source_validation_loss": 0.30109071731567383,
+      "held_out_region": {
+        "reviewed_pairs": 6,
+        "masked_affinity_bce": 0.8419981890668472,
+        "same_pair_count": 5,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.6499783009290695,
+        "same_quantiles_p10_p50_p90": [
+          0.1578700453042984,
+          0.9421164989471436,
+          0.9830316543579102
+        ],
+        "different_mean_affinity": 0.5544614195823669,
+        "different_quantiles_p10_p50_p90": [
+          0.5544614195823669,
+          0.5544614195823669,
+          0.5544614195823669
+        ],
+        "same_accuracy_at_0_5": 0.6,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": 0.09551688134670255,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.2385653853416443
+          },
+          {
+            "target": 1,
+            "affinity": 0.9848853349685669
+          },
+          {
+            "target": 1,
+            "affinity": 0.980251133441925
+          },
+          {
+            "target": 1,
+            "affinity": 0.10407315194606781
+          },
+          {
+            "target": 1,
+            "affinity": 0.9421164989471436
+          },
+          {
+            "target": 0,
+            "affinity": 0.5544614195823669
+          }
+        ]
+      },
+      "independent_validation": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 0.15702825287977853,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8531013131141663,
+          "same_quantiles_p10_p50_p90": [
+            0.8217345356941224,
+            0.8531013131141663,
+            0.8844680905342102
+          ],
+          "different_mean_affinity": 0.16164182126522064,
+          "different_quantiles_p10_p50_p90": [
+            0.16164182126522064,
+            0.16164182126522064,
+            0.16164182126522064
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 1.0,
+          "margin": 0.6914594918489456,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.16164182126522064
+            },
+            {
+              "target": 1,
+              "affinity": 0.8138928413391113
+            },
+            {
+              "target": 1,
+              "affinity": 0.8923097848892212
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.6248639325300852,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.9444325566291809,
+          "same_quantiles_p10_p50_p90": [
+            0.8581898927688598,
+            0.9782217144966125,
+            0.9959734559059144
+          ],
+          "different_mean_affinity": 0.8544921278953552,
+          "different_quantiles_p10_p50_p90": [
+            0.8544921278953552,
+            0.8544921278953552,
+            0.8544921278953552
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.08994042873382568,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.7838946580886841
+            },
+            {
+              "target": 1,
+              "affinity": 0.9990399479866028
+            },
+            {
+              "target": 1,
+              "affinity": 0.9696327447891235
+            },
+            {
+              "target": 1,
+              "affinity": 0.9913737177848816
+            },
+            {
+              "target": 0,
+              "affinity": 0.8544921278953552
+            },
+            {
+              "target": 1,
+              "affinity": 0.9782217144966125
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 1.1522080389161904,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.990318204675402,
+          "same_quantiles_p10_p50_p90": [
+            0.9780266880989075,
+            0.9934706687927246,
+            0.9995124936103821
+          ],
+          "different_mean_affinity": 0.9961196184158325,
+          "different_quantiles_p10_p50_p90": [
+            0.9943798780441284,
+            0.9961196184158325,
+            0.9978593587875366
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.005801413740430528,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9982942938804626
+            },
+            {
+              "target": 0,
+              "affinity": 0.9939449429512024
+            },
+            {
+              "target": 1,
+              "affinity": 0.9877852201461792
+            },
+            {
+              "target": 1,
+              "affinity": 0.9805939793586731
+            },
+            {
+              "target": 1,
+              "affinity": 0.9934706687927246
+            },
+            {
+              "target": 1,
+              "affinity": 0.9991974234580994
+            },
+            {
+              "target": 1,
+              "affinity": 0.9999850988388062
+            },
+            {
+              "target": 1,
+              "affinity": 0.974175751209259
+            },
+            {
+              "target": 1,
+              "affinity": 0.9970192909240723
+            }
+          ]
+        }
+      }
+    },
+    {
+      "global_step": 2310,
+      "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\checkpoint-step2310.pt",
+      "checkpoint_sha256": "cf888aaee5347ec9be1d2a6fc5f09906c33af4c64f5b3f67f612a6efd13cb39b",
+      "source_validation_loss": 0.26159238815307617,
+      "held_out_region": {
+        "reviewed_pairs": 6,
+        "masked_affinity_bce": 0.7337568427125613,
+        "same_pair_count": 5,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.7963063418865204,
+        "same_quantiles_p10_p50_p90": [
+          0.4996441662311554,
+          0.9510437250137329,
+          0.9738139033317565
+        ],
+        "different_mean_affinity": 0.9395636320114136,
+        "different_quantiles_p10_p50_p90": [
+          0.9395636320114136,
+          0.9395636320114136,
+          0.9395636320114136
+        ],
+        "same_accuracy_at_0_5": 0.8,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": -0.1432572901248932,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.7550725936889648
+          },
+          {
+            "target": 1,
+            "affinity": 0.9769558310508728
+          },
+          {
+            "target": 1,
+            "affinity": 0.9691010117530823
+          },
+          {
+            "target": 1,
+            "affinity": 0.3293585479259491
+          },
+          {
+            "target": 1,
+            "affinity": 0.9510437250137329
+          },
+          {
+            "target": 0,
+            "affinity": 0.9395636320114136
+          }
+        ]
+      },
+      "independent_validation": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 0.09191400185227394,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8621634840965271,
+          "same_quantiles_p10_p50_p90": [
+            0.8532888770103455,
+            0.8621634840965271,
+            0.8710380911827087
+          ],
+          "different_mean_affinity": 0.013644661754369736,
+          "different_quantiles_p10_p50_p90": [
+            0.013644661754369736,
+            0.013644661754369736,
+            0.013644661754369736
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 1.0,
+          "margin": 0.8485188223421574,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.013644661754369736
+            },
+            {
+              "target": 1,
+              "affinity": 0.8732567429542542
+            },
+            {
+              "target": 1,
+              "affinity": 0.8510702252388
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.5364964753389359,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8996545433998108,
+          "same_quantiles_p10_p50_p90": [
+            0.7217317461967468,
+            0.9849933385848999,
+            0.9931595683097839
+          ],
+          "different_mean_affinity": 0.9371172785758972,
+          "different_quantiles_p10_p50_p90": [
+            0.9371172785758972,
+            0.9371172785758972,
+            0.9371172785758972
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.03746273517608645,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.5526754260063171
+            },
+            {
+              "target": 1,
+              "affinity": 0.9753162264823914
+            },
+            {
+              "target": 1,
+              "affinity": 0.9849933385848999
+            },
+            {
+              "target": 1,
+              "affinity": 0.9952223896980286
+            },
+            {
+              "target": 0,
+              "affinity": 0.9371172785758972
+            },
+            {
+              "target": 1,
+              "affinity": 0.990065336227417
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 1.0588475055992603,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.9859196032796588,
+          "same_quantiles_p10_p50_p90": [
+            0.9678160667419433,
+            0.9910708665847778,
+            0.9990041494369507
+          ],
+          "different_mean_affinity": 0.9941949844360352,
+          "different_quantiles_p10_p50_p90": [
+            0.9921708583831788,
+            0.9941949844360352,
+            0.9962191104888916
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.008275381156376382,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9916648268699646
+            },
+            {
+              "target": 0,
+              "affinity": 0.9967251420021057
+            },
+            {
+              "target": 1,
+              "affinity": 0.9400309920310974
+            },
+            {
+              "target": 1,
+              "affinity": 0.9863394498825073
+            },
+            {
+              "target": 1,
+              "affinity": 0.9890802502632141
+            },
+            {
+              "target": 1,
+              "affinity": 0.9965936541557312
+            },
+            {
+              "target": 1,
+              "affinity": 0.9999452829360962
+            },
+            {
+              "target": 1,
+              "affinity": 0.9910708665847778
+            },
+            {
+              "target": 1,
+              "affinity": 0.998376727104187
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "best_held_out_pair_checkpoint": {
+    "global_step": 2290,
+    "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\checkpoint-step2290.pt",
+    "checkpoint_sha256": "3763e0b97aeeb9f6966482e6c3a2e4c03e4c909700a6b411f262569a85e29181",
+    "source_validation_loss": 0.29025396704673767,
+    "held_out_region": {
+      "reviewed_pairs": 6,
+      "masked_affinity_bce": 0.29003751611647505,
+      "same_pair_count": 5,
+      "different_pair_count": 1,
+      "same_mean_affinity": 0.974300479888916,
+      "same_quantiles_p10_p50_p90": [
+        0.9407924056053162,
+        0.9950798749923706,
+        0.9955930471420288
+      ],
+      "different_mean_affinity": 0.32869094610214233,
+      "different_quantiles_p10_p50_p90": [
+        0.32869094610214233,
+        0.32869094610214233,
+        0.32869094610214233
+      ],
+      "same_accuracy_at_0_5": 1.0,
+      "different_accuracy_at_0_5": 1.0,
+      "margin": 0.6456095337867737,
+      "pair_predictions": [
+        {
+          "target": 1,
+          "affinity": 0.9333429932594299
+        },
+        {
+          "target": 1,
+          "affinity": 0.9953737854957581
+        },
+        {
+          "target": 1,
+          "affinity": 0.9950798749923706
+        },
+        {
+          "target": 1,
+          "affinity": 0.995739221572876
+        },
+        {
+          "target": 1,
+          "affinity": 0.9519665241241455
+        },
+        {
+          "target": 0,
+          "affinity": 0.32869094610214233
+        }
+      ]
+    },
+    "independent_validation": {
+      "MV-G2-VALIDATION-V1": {
+        "reviewed_pairs": 3,
+        "masked_affinity_bce": 0.9438889920711517,
+        "same_pair_count": 2,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.8026396632194519,
+        "same_quantiles_p10_p50_p90": [
+          0.7966415762901307,
+          0.8026396632194519,
+          0.8086377501487731
+        ],
+        "different_mean_affinity": 0.9078170657157898,
+        "different_quantiles_p10_p50_p90": [
+          0.9078170657157898,
+          0.9078170657157898,
+          0.9078170657157898
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": -0.10517740249633789,
+        "pair_predictions": [
+          {
+            "target": 0,
+            "affinity": 0.9078170657157898
+          },
+          {
+            "target": 1,
+            "affinity": 0.7951420545578003
+          },
+          {
+            "target": 1,
+            "affinity": 0.8101372718811035
+          }
+        ]
+      },
+      "MV-G2-VALIDATION-V2": {
+        "reviewed_pairs": 6,
+        "masked_affinity_bce": 0.7963414788246155,
+        "same_pair_count": 5,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.9680816650390625,
+        "same_quantiles_p10_p50_p90": [
+          0.9255032181739807,
+          0.9920626282691956,
+          0.996269142627716
+        ],
+        "different_mean_affinity": 0.9592629671096802,
+        "different_quantiles_p10_p50_p90": [
+          0.9592629671096802,
+          0.9592629671096802,
+          0.9592629671096802
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": 0.00881869792938228,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9150270819664001
+          },
+          {
+            "target": 1,
+            "affinity": 0.9971433281898499
+          },
+          {
+            "target": 1,
+            "affinity": 0.9949578642845154
+          },
+          {
+            "target": 1,
+            "affinity": 0.9920626282691956
+          },
+          {
+            "target": 0,
+            "affinity": 0.9592629671096802
+          },
+          {
+            "target": 1,
+            "affinity": 0.9412174224853516
+          }
+        ]
+      },
+      "MV-G2-VALIDATION-V3": {
+        "reviewed_pairs": 9,
+        "masked_affinity_bce": 0.8286639129122099,
+        "same_pair_count": 7,
+        "different_pair_count": 2,
+        "same_mean_affinity": 0.9869277392114911,
+        "same_quantiles_p10_p50_p90": [
+          0.9655099391937256,
+          0.9983596205711365,
+          0.9998425126075745
+        ],
+        "different_mean_affinity": 0.9728901088237762,
+        "different_quantiles_p10_p50_p90": [
+          0.9539261281490325,
+          0.9728901088237762,
+          0.9918540894985199
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": 0.014037630387714883,
+        "pair_predictions": [
+          {
+            "target": 0,
+            "affinity": 0.9965950846672058
+          },
+          {
+            "target": 0,
+            "affinity": 0.9491851329803467
+          },
+          {
+            "target": 1,
+            "affinity": 0.9588561654090881
+          },
+          {
+            "target": 1,
+            "affinity": 0.9699457883834839
+          },
+          {
+            "target": 1,
+            "affinity": 0.9997379183769226
+          },
+          {
+            "target": 1,
+            "affinity": 0.9983596205711365
+          },
+          {
+            "target": 1,
+            "affinity": 0.9999994039535522
+          },
+          {
+            "target": 1,
+            "affinity": 0.9818666577339172
+          },
+          {
+            "target": 1,
+            "affinity": 0.9997286200523376
+          }
+        ]
+      }
+    }
+  },
+  "device": "AMD  Radeon RX 7800 XT",
+  "torch_version": "2.9.0+rocmsdk20251116",
+  "torch_hip_version": "7.1.52802-561cc400e1",
+  "peak_gpu_memory_allocated_bytes": 11495323136,
+  "runtime_seconds": 288.6354546546936,
+  "protected_regression_used": false,
+  "biological_promotions": {
+    "MV-FRAG": 0,
+    "MV-N": 0,
+    "MV-SYN": 0,
+    "MV-CONN": 0
+  }
+}

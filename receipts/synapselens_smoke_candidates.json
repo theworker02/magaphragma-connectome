@@ -1,0 +1,68 @@
+[
+  {
+    "pre_id": "n1",
+    "post_id": "n2",
+    "xyz": [
+      10,
+      20,
+      30
+    ],
+    "prediction_confidence": 0.92,
+    "local_image_evidence": 0.88,
+    "segmentation_confidence": 0.9,
+    "boundary_status": "clean",
+    "morphological_context": 0.85,
+    "model_agreement": 0.91,
+    "provenance": {
+      "tile": "t1"
+    }
+  },
+  {
+    "pre_id": "n3",
+    "post_id": "n4",
+    "xyz": [
+      1,
+      2,
+      3
+    ],
+    "prediction_confidence": 0.1,
+    "local_image_evidence": 0.1,
+    "segmentation_confidence": 0.2,
+    "boundary_status": "uncertain",
+    "morphological_context": 0.2,
+    "model_agreement": 0.15,
+    "provenance": {}
+  },
+  {
+    "pre_id": "n5",
+    "post_id": "n6",
+    "xyz": [
+      5,
+      5,
+      5
+    ],
+    "prediction_confidence": 0.9,
+    "local_image_evidence": 0.2,
+    "segmentation_confidence": 0.5,
+    "boundary_status": "partial",
+    "morphological_context": 0.3,
+    "model_agreement": 0.25,
+    "provenance": {}
+  },
+  {
+    "pre_id": "n7",
+    "post_id": "n8",
+    "xyz": [
+      8,
+      8,
+      8
+    ],
+    "prediction_confidence": 0.55,
+    "local_image_evidence": 0.5,
+    "segmentation_confidence": 0.52,
+    "boundary_status": "uncertain",
+    "morphological_context": 0.4,
+    "model_agreement": 0.5,
+    "provenance": {}
+  }
+]

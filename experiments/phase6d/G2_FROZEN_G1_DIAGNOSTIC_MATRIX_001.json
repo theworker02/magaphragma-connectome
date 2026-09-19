@@ -1,0 +1,729 @@
+{
+  "schema_version": 1,
+  "id": "MV-G2-FROZEN-G1-DIAGNOSTIC-MATRIX-001",
+  "created_at": "2026-09-17T02:42:19.063403Z",
+  "status": "FROZEN_BEFORE_EXPERT_REVIEW_AND_G2_TRAINING",
+  "cohort": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\G2_SPATIAL_EXPANSION_COHORT_001.json",
+    "sha256": "da364cb6f2f3d4c41189eee765b2d69c1ecf1bef7a57d6317e6f940b3bf2aaaa"
+  },
+  "checkpoint_sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+  "regions": [
+    {
+      "region_id": "MV-G2-TRAIN-A",
+      "role": "G2_TARGET_TRAIN",
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "inference": {
+        "receipt_sha256": "ba0a58fae0cd8e7890755404756c164d9255aed50ace24939adff4949cdc0e22",
+        "affinity": {
+          "min": 0.40864500403404236,
+          "max": 0.9999861121177673,
+          "mean": 0.9857630133628845,
+          "std": 0.0174662284553051,
+          "p01": 0.9261844897270203,
+          "p50": 0.9896432161331177,
+          "p99": 0.9994906187057495,
+          "fraction_ge_0_9": 0.9945856730143229
+        },
+        "boundary": {
+          "min": 0.886742115020752,
+          "max": 0.9929328560829163,
+          "mean": 0.9815678596496582,
+          "std": 0.004115551710128784,
+          "p01": 0.9701797962188721,
+          "p50": 0.9816247224807739,
+          "p99": 0.9886539131402969,
+          "fraction_ge_0_9": 0.9999847412109375
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "9b4f2d02ddf75a3852d7cfb531f2e222c6d3905b13c21dd8476df7d99f853d68",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 6,
+          "z_extent": {
+            "min": 5.0,
+            "max": 64.0,
+            "mean": 49.5,
+            "std": 21.06141812256082,
+            "p01": 7.0,
+            "p50": 59.5,
+            "p99": 64.0
+          }
+        },
+        "rag": {
+          "nodes": 16,
+          "edges": 11
+        },
+        "split_probability": {
+          "min": 0.022778908784190813,
+          "median": 0.03525264446551983,
+          "max": 0.04363005472159728,
+          "edges_gt_0_5": 0,
+          "edges_gt_0_75": 0,
+          "edges_gt_0_9": 0
+        },
+        "costs": {
+          "negative": 0,
+          "positive": 11
+        },
+        "instances": {
+          "count": 1,
+          "largest_fraction": 1.0,
+          "size_min": 1048576,
+          "size_median": 1048576.0,
+          "size_max": 1048576
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-TRAIN-A-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "7c228b6d51cef0fe074f28efb625c44221ce3453bba449a73a13518c9e3fecb3",
+        "merge_confident_raw_boundary_candidates": 78446,
+        "continuity_controls": 749855,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-TRAIN-B",
+      "role": "G2_TARGET_TRAIN",
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "inference": {
+        "receipt_sha256": "0435e253925458d43fb0c04e20cda16c49fe3030ca075c6a1eb2af4e53f374d6",
+        "affinity": {
+          "min": 0.43798306584358215,
+          "max": 0.9999900460243225,
+          "mean": 0.9858806133270264,
+          "std": 0.016372645273804665,
+          "p01": 0.9306381440162659,
+          "p50": 0.9895223379135132,
+          "p99": 0.9995091396570206,
+          "fraction_ge_0_9": 0.9954757690429688
+        },
+        "boundary": {
+          "min": 0.8999543786048889,
+          "max": 0.9938242435455322,
+          "mean": 0.9814494848251343,
+          "std": 0.004205367062240839,
+          "p01": 0.9701105803251266,
+          "p50": 0.9813427031040192,
+          "p99": 0.9889374524354935,
+          "fraction_ge_0_9": 0.9999990463256836
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "5b11afc15c43c2e9ea4d61dda0af24c9647626da93befcced9c740574c7da286",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 6,
+          "z_extent": {
+            "min": 12.0,
+            "max": 64.0,
+            "mean": 41.5,
+            "std": 22.91833327273168,
+            "p01": 12.3,
+            "p50": 45.5,
+            "p99": 64.0
+          }
+        },
+        "rag": {
+          "nodes": 14,
+          "edges": 12
+        },
+        "split_probability": {
+          "min": 0.02483210585823991,
+          "median": 0.038174129879296234,
+          "max": 0.06475147577725589,
+          "edges_gt_0_5": 0,
+          "edges_gt_0_75": 0,
+          "edges_gt_0_9": 0
+        },
+        "costs": {
+          "negative": 0,
+          "positive": 12
+        },
+        "instances": {
+          "count": 1,
+          "largest_fraction": 1.0,
+          "size_min": 1048576,
+          "size_median": 1048576.0,
+          "size_max": 1048576
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-TRAIN-B-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "3644b862123f1eaed93000d1a26164c8da7f6c49656ee2b5a5a24c48b7060708",
+        "merge_confident_raw_boundary_candidates": 79875,
+        "continuity_controls": 686720,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-TRAIN-C",
+      "role": "G2_TARGET_TRAIN",
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "inference": {
+        "receipt_sha256": "ef48b2539edff5be043f87140b01519e3e987cddb89a19d8bf785b9b5f9ee645",
+        "affinity": {
+          "min": 1.129407792177517e-06,
+          "max": 0.9999963045120239,
+          "mean": 0.80780029296875,
+          "std": 0.2959040403366089,
+          "p01": 0.007880040518939495,
+          "p50": 0.97670578956604,
+          "p99": 0.9995216566324234,
+          "fraction_ge_0_9": 0.6508693695068359
+        },
+        "boundary": {
+          "min": 0.0003174646117258817,
+          "max": 0.999730110168457,
+          "mean": 0.9003400206565857,
+          "std": 0.21464903652668,
+          "p01": 0.060816286131739616,
+          "p50": 0.9908632636070251,
+          "p99": 0.9980354905128479,
+          "fraction_ge_0_9": 0.8102245330810547
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "1c2ba956bf9df36b16d44f432e9c2f56f29c33e05e10adda4bce5aec5b6776d0",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 266,
+          "z_extent": {
+            "min": 1.0,
+            "max": 63.0,
+            "mean": 18.872180451127818,
+            "std": 10.787359306593187,
+            "p01": 4.0,
+            "p50": 16.0,
+            "p99": 52.35000000000002
+          }
+        },
+        "rag": {
+          "nodes": 383,
+          "edges": 1539
+        },
+        "split_probability": {
+          "min": 0.005126625299453735,
+          "median": 0.6389883500666707,
+          "max": 0.9997677803039551,
+          "edges_gt_0_5": 1006,
+          "edges_gt_0_75": 601,
+          "edges_gt_0_9": 349
+        },
+        "costs": {
+          "negative": 347,
+          "positive": 1192
+        },
+        "instances": {
+          "count": 4,
+          "largest_fraction": 0.7648839950561523,
+          "size_min": 2132,
+          "size_median": 122202.5,
+          "size_max": 802039
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-TRAIN-C-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "59f218187e3a5af012da9fd97e759c4b0ef2471fd4bcc7b80ef2e0dd3349f2cc",
+        "merge_confident_raw_boundary_candidates": 25162,
+        "continuity_controls": 804694,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-TRAIN-D",
+      "role": "G2_TARGET_TRAIN",
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+      "inference": {
+        "receipt_sha256": "1b2e5694b493f4b07d9b24986f12b09098531c5cccb4b2927161be297b0c1404",
+        "affinity": {
+          "min": 0.408415824174881,
+          "max": 0.9999906420707703,
+          "mean": 0.98569256067276,
+          "std": 0.01952134445309639,
+          "p01": 0.9099175924062729,
+          "p50": 0.9900079369544983,
+          "p99": 0.9995613694190979,
+          "fraction_ge_0_9": 0.9916350046793619
+        },
+        "boundary": {
+          "min": 0.8944448232650757,
+          "max": 0.9917905926704407,
+          "mean": 0.981275200843811,
+          "std": 0.004125845618546009,
+          "p01": 0.970116600394249,
+          "p50": 0.9812215566635132,
+          "p99": 0.9884933233261108,
+          "fraction_ge_0_9": 0.9999933242797852
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "6863649a32e29612ff60eeb6a05bdc3393d672dc3f8c55c2fab8e5074895bccd",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 13,
+          "z_extent": {
+            "min": 1.0,
+            "max": 64.0,
+            "mean": 37.23076923076923,
+            "std": 21.832064795947222,
+            "p01": 1.8399999999999999,
+            "p50": 38.0,
+            "p99": 64.0
+          }
+        },
+        "rag": {
+          "nodes": 22,
+          "edges": 39
+        },
+        "split_probability": {
+          "min": 0.020139753818511963,
+          "median": 0.03500766377912927,
+          "max": 0.17840822303996368,
+          "edges_gt_0_5": 0,
+          "edges_gt_0_75": 0,
+          "edges_gt_0_9": 0
+        },
+        "costs": {
+          "negative": 0,
+          "positive": 39
+        },
+        "instances": {
+          "count": 1,
+          "largest_fraction": 1.0,
+          "size_min": 1048576,
+          "size_median": 1048576.0,
+          "size_max": 1048576
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-TRAIN-D-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "3d437724a820da16dda311f688e9ed9fcf6c975172f22fa483d001245723e24b",
+        "merge_confident_raw_boundary_candidates": 71343,
+        "continuity_controls": 862668,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-VALIDATION-V1",
+      "role": "G2_TARGET_VALIDATION",
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "inference": {
+        "receipt_sha256": "13dc91e26301d8b2d97854cb051c03da9a8d3a529790ff27590e9f1b0931dfc3",
+        "affinity": {
+          "min": 0.33907419443130493,
+          "max": 0.999990701675415,
+          "mean": 0.9855859279632568,
+          "std": 0.017246024683117867,
+          "p01": 0.9292628371715546,
+          "p50": 0.9893175959587097,
+          "p99": 0.9996451139450073,
+          "fraction_ge_0_9": 0.9950243631998698
+        },
+        "boundary": {
+          "min": 0.8525649309158325,
+          "max": 0.9935844540596008,
+          "mean": 0.9814080595970154,
+          "std": 0.004161744844168425,
+          "p01": 0.9701172411441803,
+          "p50": 0.9814308285713196,
+          "p99": 0.9887641817331314,
+          "fraction_ge_0_9": 0.9999732971191406
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "eb9f2db0810389100e43512d29f431cd88f8b0c2bb8f534e805e41ee4cd82bf3",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 14,
+          "z_extent": {
+            "min": 7.0,
+            "max": 64.0,
+            "mean": 37.5,
+            "std": 21.629180025406153,
+            "p01": 7.52,
+            "p50": 32.5,
+            "p99": 64.0
+          }
+        },
+        "rag": {
+          "nodes": 27,
+          "edges": 39
+        },
+        "split_probability": {
+          "min": 0.018141546558229735,
+          "median": 0.027961362771882343,
+          "max": 0.3606366515159607,
+          "edges_gt_0_5": 0,
+          "edges_gt_0_75": 0,
+          "edges_gt_0_9": 0
+        },
+        "costs": {
+          "negative": 0,
+          "positive": 39
+        },
+        "instances": {
+          "count": 1,
+          "largest_fraction": 1.0,
+          "size_min": 1048576,
+          "size_median": 1048576.0,
+          "size_max": 1048576
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-VALIDATION-V1-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "8dfe4340b5896208619f6d1631b9edd018905abc1500f4a903792320b0324749",
+        "merge_confident_raw_boundary_candidates": 77643,
+        "continuity_controls": 685991,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-VALIDATION-V2",
+      "role": "G2_TARGET_VALIDATION",
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "inference": {
+        "receipt_sha256": "c1a4b7f78db5a2689c227ff5f2ddd879b8c15409da85ffec7e1e152d5db805b1",
+        "affinity": {
+          "min": 0.5055762529373169,
+          "max": 0.999987006187439,
+          "mean": 0.9858161807060242,
+          "std": 0.016499672085046768,
+          "p01": 0.9262214994430542,
+          "p50": 0.9896010756492615,
+          "p99": 0.9996411204338074,
+          "fraction_ge_0_9": 0.9946762720743815
+        },
+        "boundary": {
+          "min": 0.8916526436805725,
+          "max": 0.9943955540657043,
+          "mean": 0.9815075397491455,
+          "std": 0.004191046580672264,
+          "p01": 0.9703613370656967,
+          "p50": 0.9813516438007355,
+          "p99": 0.9890362173318863,
+          "fraction_ge_0_9": 0.9999971389770508
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "3eba8c383114ac54e4b902bc935976536fa768a9704335ec918ef7e38b55d9fe",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 17,
+          "z_extent": {
+            "min": 1.0,
+            "max": 64.0,
+            "mean": 28.941176470588236,
+            "std": 21.083784090079593,
+            "p01": 1.0,
+            "p50": 26.0,
+            "p99": 64.0
+          }
+        },
+        "rag": {
+          "nodes": 28,
+          "edges": 48
+        },
+        "split_probability": {
+          "min": 0.01970796978644777,
+          "median": 0.032975669255048363,
+          "max": 0.2376082181930542,
+          "edges_gt_0_5": 0,
+          "edges_gt_0_75": 0,
+          "edges_gt_0_9": 0
+        },
+        "costs": {
+          "negative": 0,
+          "positive": 48
+        },
+        "instances": {
+          "count": 1,
+          "largest_fraction": 1.0,
+          "size_min": 1048576,
+          "size_median": 1048576.0,
+          "size_max": 1048576
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-VALIDATION-V2-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "b2e88763a25a96bda2fa302113819bf42d0f4786f6842581e196e57e18ac7cad",
+        "merge_confident_raw_boundary_candidates": 74782,
+        "continuity_controls": 791104,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    },
+    {
+      "region_id": "MV-G2-VALIDATION-V3",
+      "role": "G2_TARGET_VALIDATION",
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "inference": {
+        "receipt_sha256": "b85f2a5c507fd0520f29e52a96b0686d939fac9e14849cfe284c829c400e2c6b",
+        "affinity": {
+          "min": 0.00039494934026151896,
+          "max": 1.0,
+          "mean": 0.7263160347938538,
+          "std": 0.34784233570098877,
+          "p01": 0.018088277876377106,
+          "p50": 0.9571536779403687,
+          "p99": 0.9998694658279419,
+          "fraction_ge_0_9": 0.5632489522298177
+        },
+        "boundary": {
+          "min": 0.0008880915702320635,
+          "max": 0.9999164342880249,
+          "mean": 0.7749111652374268,
+          "std": 0.34563201665878296,
+          "p01": 0.01542071532458067,
+          "p50": 0.993785172700882,
+          "p99": 0.9994493126869202,
+          "fraction_ge_0_9": 0.6639423370361328
+        }
+      },
+      "true3d": {
+        "receipt_sha256": "3a25bed26644edde3da03c6071c009e3f79d7eb37e48c7989c64b4d473cc89c2",
+        "watershed": {
+          "algorithm": "ELF distance_transform_watershed",
+          "dimensions": "3D",
+          "threshold": 0.25,
+          "sigma_seeds": 2.0,
+          "pixel_pitch_zyx": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "warnings": []
+        },
+        "fragments": {
+          "count": 448,
+          "z_extent": {
+            "min": 1.0,
+            "max": 62.0,
+            "mean": 16.446428571428573,
+            "std": 8.51583533956665,
+            "p01": 2.4699999999999998,
+            "p50": 15.0,
+            "p99": 46.059999999999945
+          }
+        },
+        "rag": {
+          "nodes": 622,
+          "edges": 2988
+        },
+        "split_probability": {
+          "min": 0.0028211308850182425,
+          "median": 0.8468599833240837,
+          "max": 0.9981571674346924,
+          "edges_gt_0_5": 2343,
+          "edges_gt_0_75": 1877,
+          "edges_gt_0_9": 1147
+        },
+        "costs": {
+          "negative": 1139,
+          "positive": 1849
+        },
+        "instances": {
+          "count": 9,
+          "largest_fraction": 0.5962181091308594,
+          "size_min": 2137,
+          "size_median": 10969.0,
+          "size_max": 625180
+        }
+      },
+      "raw_em_correspondence": {
+        "status": "EXPERT_REVIEW_REQUIRED",
+        "queue": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6d\\g1-diagnostic-MV-G2-VALIDATION-V3-step2280\\g2-diagnostic-queue.json",
+        "queue_sha256": "b86617c1c46495da6a1b729105489e6193584201d3962988e6eb6c11a1d6ed7c",
+        "merge_confident_raw_boundary_candidates": 9898,
+        "continuity_controls": 650490,
+        "frozen_questions": 18
+      },
+      "scientific_boundary": "Machine diagnostics only; no question is a biological label until an identified expert reviews it."
+    }
+  ],
+  "promotion_rule": "No G2 training until expert-reviewed SAME and DIFFERENT decisions exist in every required TRAIN and VALIDATION region; MV-GTVOL-000004 remains excluded.",
+  "prohibited_actions": [
+    "G2 training",
+    "checkpoint selection",
+    "MV-GTVOL-000004 replay",
+    "MV-FRAG",
+    "MV-N",
+    "MV-CONN"
+  ]
+}

@@ -1,0 +1,1952 @@
+{
+  "status": "RUNNING",
+  "history": [
+    {
+      "global_step": 2251,
+      "source_loss": 0.24106040596961975,
+      "target_masked_affinity_loss": 0.0035297509748488665,
+      "total_loss": 0.24194283783435822,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          50,
+          120,
+          180
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          46,
+          10,
+          104
+        ],
+        "patch_origin_zyx": [
+          36,
+          0,
+          40
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1958310400
+    },
+    {
+      "global_step": 2252,
+      "source_loss": 0.21566066145896912,
+      "target_masked_affinity_loss": 0.01259748637676239,
+      "total_loss": 0.21881003677845,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          63,
+          149,
+          217
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          81,
+          245,
+          117
+        ],
+        "patch_origin_zyx": [
+          71,
+          128,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1959772672
+    },
+    {
+      "global_step": 2253,
+      "source_loss": 0.1684095561504364,
+      "target_masked_affinity_loss": 2.4481730461120605,
+      "total_loss": 0.7804528474807739,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          76,
+          178,
+          254
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          21,
+          110,
+          21
+        ],
+        "patch_origin_zyx": [
+          11,
+          46,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1961673216
+    },
+    {
+      "global_step": 2254,
+      "source_loss": 0.1824207305908203,
+      "target_masked_affinity_loss": 0.4732228219509125,
+      "total_loss": 0.30072644352912903,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          89,
+          207,
+          291
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          26,
+          206,
+          229
+        ],
+        "patch_origin_zyx": [
+          16,
+          128,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961214464
+    },
+    {
+      "global_step": 2255,
+      "source_loss": 0.187602698802948,
+      "target_masked_affinity_loss": 1.2970041036605835,
+      "total_loss": 0.5118536949157715,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          102,
+          236,
+          328
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          33,
+          113,
+          118
+        ],
+        "patch_origin_zyx": [
+          23,
+          49,
+          54
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1962000896
+    },
+    {
+      "global_step": 2256,
+      "source_loss": 0.25876930356025696,
+      "target_masked_affinity_loss": 3.2749319076538086,
+      "total_loss": 1.0775022506713867,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          115,
+          265,
+          365
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          39,
+          190,
+          189
+        ],
+        "patch_origin_zyx": [
+          29,
+          126,
+          125
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1958134272
+    },
+    {
+      "global_step": 2257,
+      "source_loss": 0.3433532416820526,
+      "target_masked_affinity_loss": 1.3695489168167114,
+      "total_loss": 0.6857404708862305,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          128,
+          294,
+          12
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          56,
+          107,
+          166
+        ],
+        "patch_origin_zyx": [
+          46,
+          43,
+          102
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1958134272
+    },
+    {
+      "global_step": 2258,
+      "source_loss": 0.2531205415725708,
+      "target_masked_affinity_loss": 0.24564790725708008,
+      "total_loss": 0.3145325183868408,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          141,
+          323,
+          49
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          57,
+          225,
+          103
+        ],
+        "patch_origin_zyx": [
+          47,
+          128,
+          39
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1958003200
+    },
+    {
+      "global_step": 2259,
+      "source_loss": 0.30438682436943054,
+      "target_masked_affinity_loss": 0.002512867795303464,
+      "total_loss": 0.30501502752304077,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          154,
+          352,
+          86
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          98,
+          90,
+          142
+        ],
+        "patch_origin_zyx": [
+          88,
+          26,
+          78
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1962017280
+    },
+    {
+      "global_step": 2260,
+      "source_loss": 0.28250253200531006,
+      "target_masked_affinity_loss": 0.2392420917749405,
+      "total_loss": 0.3423130512237549,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          167,
+          381,
+          123
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          131,
+          185
+        ],
+        "patch_origin_zyx": [
+          108,
+          67,
+          121
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1959838208
+    },
+    {
+      "global_step": 2261,
+      "source_loss": 0.23430079221725464,
+      "target_masked_affinity_loss": 0.1228497102856636,
+      "total_loss": 0.2650132179260254,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          180,
+          20,
+          160
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          246,
+          165
+        ],
+        "patch_origin_zyx": [
+          108,
+          128,
+          101
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1967104512
+    },
+    {
+      "global_step": 2262,
+      "source_loss": 0.3843163251876831,
+      "target_masked_affinity_loss": 1.0823005437850952,
+      "total_loss": 0.6548914909362793,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          193,
+          49,
+          197
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          13,
+          208,
+          28
+        ],
+        "patch_origin_zyx": [
+          3,
+          128,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1966195200
+    },
+    {
+      "global_step": 2263,
+      "source_loss": 0.27354374527931213,
+      "target_masked_affinity_loss": 0.7929919362068176,
+      "total_loss": 0.47179174423217773,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          206,
+          78,
+          234
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          21,
+          84,
+          244
+        ],
+        "patch_origin_zyx": [
+          11,
+          20,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1963696640
+    },
+    {
+      "global_step": 2264,
+      "source_loss": 0.2893041670322418,
+      "target_masked_affinity_loss": 0.09667165577411652,
+      "total_loss": 0.31347209215164185,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          219,
+          107,
+          271
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          26,
+          146,
+          127
+        ],
+        "patch_origin_zyx": [
+          16,
+          82,
+          63
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1965146624
+    },
+    {
+      "global_step": 2265,
+      "source_loss": 0.3937752842903137,
+      "target_masked_affinity_loss": 0.19633620977401733,
+      "total_loss": 0.44285935163497925,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          232,
+          136,
+          308
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          36,
+          217,
+          163
+        ],
+        "patch_origin_zyx": [
+          26,
+          128,
+          99
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1966092800
+    },
+    {
+      "global_step": 2266,
+      "source_loss": 0.3348847031593323,
+      "target_masked_affinity_loss": 0.011822998523712158,
+      "total_loss": 0.3378404378890991,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          245,
+          165,
+          345
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          78,
+          139,
+          117
+        ],
+        "patch_origin_zyx": [
+          68,
+          75,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1965195776
+    },
+    {
+      "global_step": 2267,
+      "source_loss": 0.29026809334754944,
+      "target_masked_affinity_loss": 0.0009422567673027515,
+      "total_loss": 0.2905036509037018,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          258,
+          194,
+          382
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          46,
+          10,
+          104
+        ],
+        "patch_origin_zyx": [
+          36,
+          0,
+          40
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1964306944
+    },
+    {
+      "global_step": 2268,
+      "source_loss": 0.25796785950660706,
+      "target_masked_affinity_loss": 0.00889422558248043,
+      "total_loss": 0.260191410779953,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          271,
+          223,
+          29
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          81,
+          245,
+          117
+        ],
+        "patch_origin_zyx": [
+          71,
+          128,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1963778560
+    },
+    {
+      "global_step": 2269,
+      "source_loss": 0.4196321964263916,
+      "target_masked_affinity_loss": 0.03183785453438759,
+      "total_loss": 0.4275916516780853,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          284,
+          252,
+          66
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          21,
+          110,
+          21
+        ],
+        "patch_origin_zyx": [
+          11,
+          46,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1966195200
+    },
+    {
+      "global_step": 2270,
+      "source_loss": 0.4289247989654541,
+      "target_masked_affinity_loss": 0.013543537817895412,
+      "total_loss": 0.43231067061424255,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          297,
+          281,
+          103
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          26,
+          206,
+          229
+        ],
+        "patch_origin_zyx": [
+          16,
+          128,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1966109184
+    },
+    {
+      "global_step": 2271,
+      "source_loss": 0.37835633754730225,
+      "target_masked_affinity_loss": 0.048363737761974335,
+      "total_loss": 0.3904472589492798,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          310,
+          310,
+          140
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          33,
+          113,
+          118
+        ],
+        "patch_origin_zyx": [
+          23,
+          49,
+          54
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1963254272
+    },
+    {
+      "global_step": 2272,
+      "source_loss": 0.1959758847951889,
+      "target_masked_affinity_loss": 0.037253182381391525,
+      "total_loss": 0.20528918504714966,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          323,
+          339,
+          177
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          39,
+          190,
+          189
+        ],
+        "patch_origin_zyx": [
+          29,
+          126,
+          125
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1960763904
+    },
+    {
+      "global_step": 2273,
+      "source_loss": 0.38428083062171936,
+      "target_masked_affinity_loss": 0.3143012821674347,
+      "total_loss": 0.46285614371299744,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          336,
+          368,
+          214
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          56,
+          107,
+          166
+        ],
+        "patch_origin_zyx": [
+          46,
+          43,
+          102
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1962664448
+    },
+    {
+      "global_step": 2274,
+      "source_loss": 0.39374983310699463,
+      "target_masked_affinity_loss": 0.020264681428670883,
+      "total_loss": 0.39881598949432373,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          349,
+          7,
+          251
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          57,
+          225,
+          103
+        ],
+        "patch_origin_zyx": [
+          47,
+          128,
+          39
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1959977472
+    },
+    {
+      "global_step": 2275,
+      "source_loss": 0.26059406995773315,
+      "target_masked_affinity_loss": 0.0015744437696412206,
+      "total_loss": 0.26098766922950745,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          362,
+          36,
+          288
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          98,
+          90,
+          142
+        ],
+        "patch_origin_zyx": [
+          88,
+          26,
+          78
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1963545088
+    },
+    {
+      "global_step": 2276,
+      "source_loss": 0.2750794589519501,
+      "target_masked_affinity_loss": 0.015265656635165215,
+      "total_loss": 0.27889588475227356,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          375,
+          65,
+          325
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          131,
+          185
+        ],
+        "patch_origin_zyx": [
+          108,
+          67,
+          121
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1962861056
+    },
+    {
+      "global_step": 2277,
+      "source_loss": 0.3047235608100891,
+      "target_masked_affinity_loss": 0.022210413590073586,
+      "total_loss": 0.3102761507034302,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          388,
+          94,
+          362
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          246,
+          165
+        ],
+        "patch_origin_zyx": [
+          108,
+          128,
+          101
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1960567296
+    },
+    {
+      "global_step": 2278,
+      "source_loss": 0.2585095763206482,
+      "target_masked_affinity_loss": 0.658516526222229,
+      "total_loss": 0.42313870787620544,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          1,
+          123,
+          9
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          13,
+          208,
+          28
+        ],
+        "patch_origin_zyx": [
+          3,
+          128,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1960763904
+    },
+    {
+      "global_step": 2279,
+      "source_loss": 0.3079489469528198,
+      "target_masked_affinity_loss": 0.31779801845550537,
+      "total_loss": 0.38739845156669617,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          14,
+          152,
+          46
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          21,
+          84,
+          244
+        ],
+        "patch_origin_zyx": [
+          11,
+          20,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1959547392
+    },
+    {
+      "global_step": 2280,
+      "source_loss": 0.3095327615737915,
+      "target_masked_affinity_loss": 0.015816466882824898,
+      "total_loss": 0.31348687410354614,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          27,
+          181,
+          83
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          26,
+          146,
+          127
+        ],
+        "patch_origin_zyx": [
+          16,
+          82,
+          63
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1958629888
+    },
+    {
+      "global_step": 2281,
+      "source_loss": 0.3791547417640686,
+      "target_masked_affinity_loss": 0.024142613634467125,
+      "total_loss": 0.3851903975009918,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          40,
+          210,
+          120
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          36,
+          217,
+          163
+        ],
+        "patch_origin_zyx": [
+          26,
+          128,
+          99
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1961382400
+    },
+    {
+      "global_step": 2282,
+      "source_loss": 0.2803035378456116,
+      "target_masked_affinity_loss": 0.01700333133339882,
+      "total_loss": 0.2845543622970581,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          53,
+          239,
+          157
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          78,
+          139,
+          117
+        ],
+        "patch_origin_zyx": [
+          68,
+          75,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1962103296
+    },
+    {
+      "global_step": 2283,
+      "source_loss": 0.4402012526988983,
+      "target_masked_affinity_loss": 0.0036150512751191854,
+      "total_loss": 0.4411050081253052,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          66,
+          268,
+          194
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          46,
+          10,
+          104
+        ],
+        "patch_origin_zyx": [
+          36,
+          0,
+          40
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1963676160
+    },
+    {
+      "global_step": 2284,
+      "source_loss": 0.3700794577598572,
+      "target_masked_affinity_loss": 0.003884655889123678,
+      "total_loss": 0.371050626039505,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          79,
+          297,
+          231
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          81,
+          245,
+          117
+        ],
+        "patch_origin_zyx": [
+          71,
+          128,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1961550336
+    },
+    {
+      "global_step": 2285,
+      "source_loss": 0.33980900049209595,
+      "target_masked_affinity_loss": 0.022466672584414482,
+      "total_loss": 0.34542566537857056,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          92,
+          326,
+          268
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          21,
+          110,
+          21
+        ],
+        "patch_origin_zyx": [
+          11,
+          46,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1964368384
+    },
+    {
+      "global_step": 2286,
+      "source_loss": 0.23940593004226685,
+      "target_masked_affinity_loss": 0.0042716944590210915,
+      "total_loss": 0.24047385156154633,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          105,
+          355,
+          305
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          26,
+          206,
+          229
+        ],
+        "patch_origin_zyx": [
+          16,
+          128,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1962533376
+    },
+    {
+      "global_step": 2287,
+      "source_loss": 0.2757188081741333,
+      "target_masked_affinity_loss": 0.019778715446591377,
+      "total_loss": 0.28066349029541016,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          118,
+          384,
+          342
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          33,
+          113,
+          118
+        ],
+        "patch_origin_zyx": [
+          23,
+          49,
+          54
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1959911936
+    },
+    {
+      "global_step": 2288,
+      "source_loss": 0.34227949380874634,
+      "target_masked_affinity_loss": 0.019637970253825188,
+      "total_loss": 0.3471889793872833,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          131,
+          23,
+          379
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          39,
+          190,
+          189
+        ],
+        "patch_origin_zyx": [
+          29,
+          126,
+          125
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1963610624
+    },
+    {
+      "global_step": 2289,
+      "source_loss": 0.2745406925678253,
+      "target_masked_affinity_loss": 0.0023902717512100935,
+      "total_loss": 0.275138258934021,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          144,
+          52,
+          26
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          56,
+          107,
+          166
+        ],
+        "patch_origin_zyx": [
+          46,
+          43,
+          102
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961447936
+    },
+    {
+      "global_step": 2290,
+      "source_loss": 0.252058744430542,
+      "target_masked_affinity_loss": 0.01280449889600277,
+      "total_loss": 0.2552598714828491,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          157,
+          81,
+          63
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          57,
+          225,
+          103
+        ],
+        "patch_origin_zyx": [
+          47,
+          128,
+          39
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961681408
+    },
+    {
+      "global_step": 2291,
+      "source_loss": 0.3472512364387512,
+      "target_masked_affinity_loss": 0.003341828705742955,
+      "total_loss": 0.3480866849422455,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          170,
+          110,
+          100
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          98,
+          90,
+          142
+        ],
+        "patch_origin_zyx": [
+          88,
+          26,
+          78
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1960493568
+    },
+    {
+      "global_step": 2292,
+      "source_loss": 0.3441441059112549,
+      "target_masked_affinity_loss": 0.015158718451857567,
+      "total_loss": 0.3479337990283966,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          183,
+          139,
+          137
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          131,
+          185
+        ],
+        "patch_origin_zyx": [
+          108,
+          67,
+          121
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961447936
+    },
+    {
+      "global_step": 2293,
+      "source_loss": 0.24892324209213257,
+      "target_masked_affinity_loss": 0.022496303543448448,
+      "total_loss": 0.2545473277568817,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          196,
+          168,
+          174
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 1,
+        "anchor_zyx": [
+          122,
+          246,
+          165
+        ],
+        "patch_origin_zyx": [
+          108,
+          128,
+          101
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1961644544
+    },
+    {
+      "global_step": 2294,
+      "source_loss": 0.7886086702346802,
+      "target_masked_affinity_loss": 0.004990849643945694,
+      "total_loss": 0.7898563742637634,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          209,
+          197,
+          211
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          13,
+          208,
+          28
+        ],
+        "patch_origin_zyx": [
+          3,
+          128,
+          0
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1960186368
+    },
+    {
+      "global_step": 2295,
+      "source_loss": 0.28605425357818604,
+      "target_masked_affinity_loss": 0.007846239022910595,
+      "total_loss": 0.28801581263542175,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          222,
+          226,
+          248
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          21,
+          84,
+          244
+        ],
+        "patch_origin_zyx": [
+          11,
+          20,
+          128
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961972224
+    },
+    {
+      "global_step": 2296,
+      "source_loss": 0.22938936948776245,
+      "target_masked_affinity_loss": 0.013988642022013664,
+      "total_loss": 0.23288652300834656,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          235,
+          255,
+          285
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          26,
+          146,
+          127
+        ],
+        "patch_origin_zyx": [
+          16,
+          82,
+          63
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1958076928
+    },
+    {
+      "global_step": 2297,
+      "source_loss": 0.4310010075569153,
+      "target_masked_affinity_loss": 0.02828993648290634,
+      "total_loss": 0.4380734860897064,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/0",
+        "patch_origin_zyx": [
+          248,
+          284,
+          322
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          36,
+          217,
+          163
+        ],
+        "patch_origin_zyx": [
+          26,
+          128,
+          99
+        ],
+        "anchor_decision": "DIFFERENT_PROCESS",
+        "supervised_pairs_in_patch": 3
+      },
+      "gpu_memory_allocated_bytes": 1958208000
+    },
+    {
+      "global_step": 2298,
+      "source_loss": 0.4998926520347595,
+      "target_masked_affinity_loss": 0.005868334788829088,
+      "total_loss": 0.501359760761261,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/1",
+        "patch_origin_zyx": [
+          261,
+          313,
+          359
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 2,
+        "anchor_zyx": [
+          78,
+          139,
+          117
+        ],
+        "patch_origin_zyx": [
+          68,
+          75,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1961120256
+    },
+    {
+      "global_step": 2299,
+      "source_loss": 0.4798029661178589,
+      "target_masked_affinity_loss": 0.013189549557864666,
+      "total_loss": 0.48310035467147827,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/2",
+        "patch_origin_zyx": [
+          274,
+          342,
+          6
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          46,
+          10,
+          104
+        ],
+        "patch_origin_zyx": [
+          36,
+          0,
+          40
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 1
+      },
+      "gpu_memory_allocated_bytes": 1959911936
+    },
+    {
+      "global_step": 2300,
+      "source_loss": 0.2864753007888794,
+      "target_masked_affinity_loss": 0.008764859288930893,
+      "total_loss": 0.2886665165424347,
+      "source_batch": {
+        "source_pair": "Hemi-brain-fib/3",
+        "patch_origin_zyx": [
+          287,
+          371,
+          43
+        ]
+      },
+      "target_batch": {
+        "anchor_channel_zyx": 0,
+        "anchor_zyx": [
+          81,
+          245,
+          117
+        ],
+        "patch_origin_zyx": [
+          71,
+          128,
+          53
+        ],
+        "anchor_decision": "SAME_PROCESS",
+        "supervised_pairs_in_patch": 2
+      },
+      "gpu_memory_allocated_bytes": 1961636352
+    }
+  ],
+  "checkpoints": [
+    {
+      "global_step": 2260,
+      "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2260.pt",
+      "checkpoint_sha256": "fe568604cfb2d56513a2a7b52691f4f8255f197623c8c51e132ea6547c640dcb",
+      "source_validation_loss": 0.2470819056034088,
+      "reviewed_dvid_validation": {
+        "reviewed_pairs": 14,
+        "masked_affinity_bce": 0.16789983821633672,
+        "same_pair_count": 6,
+        "different_pair_count": 8,
+        "same_mean_affinity": 0.9958463609218597,
+        "different_mean_affinity": 0.19500170648097992,
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9972643852233887
+          },
+          {
+            "target": 1,
+            "affinity": 0.9951647520065308
+          },
+          {
+            "target": 0,
+            "affinity": 0.18515251576900482
+          },
+          {
+            "target": 0,
+            "affinity": 0.07417553663253784
+          },
+          {
+            "target": 1,
+            "affinity": 0.9948909282684326
+          },
+          {
+            "target": 1,
+            "affinity": 0.9985872507095337
+          },
+          {
+            "target": 0,
+            "affinity": 0.46608251333236694
+          },
+          {
+            "target": 0,
+            "affinity": 0.1674276441335678
+          },
+          {
+            "target": 1,
+            "affinity": 0.9908310770988464
+          },
+          {
+            "target": 0,
+            "affinity": 0.0654972493648529
+          },
+          {
+            "target": 0,
+            "affinity": 0.24444365501403809
+          },
+          {
+            "target": 0,
+            "affinity": 0.2934023141860962
+          },
+          {
+            "target": 0,
+            "affinity": 0.06383222341537476
+          },
+          {
+            "target": 1,
+            "affinity": 0.9983397722244263
+          }
+        ]
+      }
+    },
+    {
+      "global_step": 2270,
+      "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2270.pt",
+      "checkpoint_sha256": "4050dff6a45e8f756e6cf638cff623b4b723a4db6a076f9d0cb330c02467a7e9",
+      "source_validation_loss": 0.24263475835323334,
+      "reviewed_dvid_validation": {
+        "reviewed_pairs": 14,
+        "masked_affinity_bce": 0.12493003005095359,
+        "same_pair_count": 6,
+        "different_pair_count": 8,
+        "same_mean_affinity": 0.993932823340098,
+        "different_mean_affinity": 0.14608092978596687,
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9981960654258728
+          },
+          {
+            "target": 1,
+            "affinity": 0.989202082157135
+          },
+          {
+            "target": 0,
+            "affinity": 0.08305108547210693
+          },
+          {
+            "target": 0,
+            "affinity": 0.03278130292892456
+          },
+          {
+            "target": 1,
+            "affinity": 0.9882017970085144
+          },
+          {
+            "target": 1,
+            "affinity": 0.9930295348167419
+          },
+          {
+            "target": 0,
+            "affinity": 0.4300561547279358
+          },
+          {
+            "target": 0,
+            "affinity": 0.18812432885169983
+          },
+          {
+            "target": 1,
+            "affinity": 0.9969646334648132
+          },
+          {
+            "target": 0,
+            "affinity": 0.0488189160823822
+          },
+          {
+            "target": 0,
+            "affinity": 0.09976742416620255
+          },
+          {
+            "target": 0,
+            "affinity": 0.23757301270961761
+          },
+          {
+            "target": 0,
+            "affinity": 0.04847521334886551
+          },
+          {
+            "target": 1,
+            "affinity": 0.998002827167511
+          }
+        ]
+      }
+    },
+    {
+      "global_step": 2280,
+      "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+      "checkpoint_sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+      "source_validation_loss": 0.2531355023384094,
+      "reviewed_dvid_validation": {
+        "reviewed_pairs": 14,
+        "masked_affinity_bce": 0.1074269848800863,
+        "same_pair_count": 6,
+        "different_pair_count": 8,
+        "same_mean_affinity": 0.9940867026646932,
+        "different_mean_affinity": 0.12204145989380777,
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9974057078361511
+          },
+          {
+            "target": 1,
+            "affinity": 0.9815410375595093
+          },
+          {
+            "target": 0,
+            "affinity": 0.09346167743206024
+          },
+          {
+            "target": 0,
+            "affinity": 0.018742764368653297
+          },
+          {
+            "target": 1,
+            "affinity": 0.9905151128768921
+          },
+          {
+            "target": 1,
+            "affinity": 0.9972617626190186
+          },
+          {
+            "target": 0,
+            "affinity": 0.2845776081085205
+          },
+          {
+            "target": 0,
+            "affinity": 0.10189379751682281
+          },
+          {
+            "target": 1,
+            "affinity": 0.9991564750671387
+          },
+          {
+            "target": 0,
+            "affinity": 0.038443271070718765
+          },
+          {
+            "target": 0,
+            "affinity": 0.14644666016101837
+          },
+          {
+            "target": 0,
+            "affinity": 0.2522120177745819
+          },
+          {
+            "target": 0,
+            "affinity": 0.04055388271808624
+          },
+          {
+            "target": 1,
+            "affinity": 0.9986401200294495
+          }
+        ]
+      }
+    },
+    {
+      "global_step": 2290,
+      "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2290.pt",
+      "checkpoint_sha256": "a5d09fd361e8bcfd019eed07e941d2c3956fd8e6bf819a03ab5479a72ef44bc6",
+      "source_validation_loss": 0.2289145290851593,
+      "reviewed_dvid_validation": {
+        "reviewed_pairs": 14,
+        "masked_affinity_bce": 0.2272987191806481,
+        "same_pair_count": 6,
+        "different_pair_count": 8,
+        "same_mean_affinity": 0.9903816978136698,
+        "different_mean_affinity": 0.131663873558864,
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.99649977684021
+          },
+          {
+            "target": 1,
+            "affinity": 0.9556729793548584
+          },
+          {
+            "target": 0,
+            "affinity": 0.13857229053974152
+          },
+          {
+            "target": 0,
+            "affinity": 0.02443281002342701
+          },
+          {
+            "target": 1,
+            "affinity": 0.9961718916893005
+          },
+          {
+            "target": 1,
+            "affinity": 0.9956499934196472
+          },
+          {
+            "target": 0,
+            "affinity": 0.2599670886993408
+          },
+          {
+            "target": 0,
+            "affinity": 0.17368383705615997
+          },
+          {
+            "target": 1,
+            "affinity": 0.9992883801460266
+          },
+          {
+            "target": 0,
+            "affinity": 0.032810889184474945
+          },
+          {
+            "target": 0,
+            "affinity": 0.18864744901657104
+          },
+          {
+            "target": 0,
+            "affinity": 0.2003653198480606
+          },
+          {
+            "target": 0,
+            "affinity": 0.03483130410313606
+          },
+          {
+            "target": 1,
+            "affinity": 0.9990071654319763
+          }
+        ]
+      }
+    },
+    {
+      "global_step": 2300,
+      "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2300.pt",
+      "checkpoint_sha256": "d79d16c9008451af03b3f87782562a62092fd5de8395d9f3eb2981b302456908",
+      "source_validation_loss": 0.2237989604473114,
+      "reviewed_dvid_validation": {
+        "reviewed_pairs": 14,
+        "masked_affinity_bce": 0.1941266381847007,
+        "same_pair_count": 6,
+        "different_pair_count": 8,
+        "same_mean_affinity": 0.9881894489129385,
+        "different_mean_affinity": 0.16685921046882868,
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9909608960151672
+          },
+          {
+            "target": 1,
+            "affinity": 0.9878301024436951
+          },
+          {
+            "target": 0,
+            "affinity": 0.09155459702014923
+          },
+          {
+            "target": 0,
+            "affinity": 0.013226144015789032
+          },
+          {
+            "target": 1,
+            "affinity": 0.9889423847198486
+          },
+          {
+            "target": 1,
+            "affinity": 0.9630317091941833
+          },
+          {
+            "target": 0,
+            "affinity": 0.4466557800769806
+          },
+          {
+            "target": 0,
+            "affinity": 0.2968927025794983
+          },
+          {
+            "target": 1,
+            "affinity": 0.9993630051612854
+          },
+          {
+            "target": 0,
+            "affinity": 0.03911583125591278
+          },
+          {
+            "target": 0,
+            "affinity": 0.17262955009937286
+          },
+          {
+            "target": 0,
+            "affinity": 0.2532995045185089
+          },
+          {
+            "target": 0,
+            "affinity": 0.021499574184417725
+          },
+          {
+            "target": 1,
+            "affinity": 0.9990085959434509
+          }
+        ]
+      }
+    }
+  ],
+  "best_reviewed_dvid_validation_checkpoint": {
+    "global_step": 2280,
+    "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+    "checkpoint_sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b",
+    "source_validation_loss": 0.2531355023384094,
+    "reviewed_dvid_validation": {
+      "reviewed_pairs": 14,
+      "masked_affinity_bce": 0.1074269848800863,
+      "same_pair_count": 6,
+      "different_pair_count": 8,
+      "same_mean_affinity": 0.9940867026646932,
+      "different_mean_affinity": 0.12204145989380777,
+      "same_accuracy_at_0_5": 1.0,
+      "different_accuracy_at_0_5": 1.0,
+      "pair_predictions": [
+        {
+          "target": 1,
+          "affinity": 0.9974057078361511
+        },
+        {
+          "target": 1,
+          "affinity": 0.9815410375595093
+        },
+        {
+          "target": 0,
+          "affinity": 0.09346167743206024
+        },
+        {
+          "target": 0,
+          "affinity": 0.018742764368653297
+        },
+        {
+          "target": 1,
+          "affinity": 0.9905151128768921
+        },
+        {
+          "target": 1,
+          "affinity": 0.9972617626190186
+        },
+        {
+          "target": 0,
+          "affinity": 0.2845776081085205
+        },
+        {
+          "target": 0,
+          "affinity": 0.10189379751682281
+        },
+        {
+          "target": 1,
+          "affinity": 0.9991564750671387
+        },
+        {
+          "target": 0,
+          "affinity": 0.038443271070718765
+        },
+        {
+          "target": 0,
+          "affinity": 0.14644666016101837
+        },
+        {
+          "target": 0,
+          "affinity": 0.2522120177745819
+        },
+        {
+          "target": 0,
+          "affinity": 0.04055388271808624
+        },
+        {
+          "target": 1,
+          "affinity": 0.9986401200294495
+        }
+      ]
+    }
+  },
+  "g1_policy": "Selection uses frozen reviewed DVID validation; MV-GTVOL-000004 not read."
+}

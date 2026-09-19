@@ -1,0 +1,47 @@
+{
+  "id": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_SPEC002_VALIDATED",
+  "created_at": "2026-09-18T02:25:00Z",
+  "parent_decision": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "status": "AMENDMENT_LOCKED",
+  "state_transition": [
+    "AS2-001 → NEGATIVE_CLASS_NOT_DEMONSTRATED (relative-Q / presentation-era enrichment failure)",
+    "SPEC002 repair + equivariant UI",
+    "DIFFERENT_CLASS_DISCOVERY_001 → DIFFERENT recoverability under abs≥12",
+    "AFFINITY_SPEC002_VALIDATION_002 → SPEC002_ANNOTATION_PROCEDURE_VALIDATED (SAME=14, DIFFERENT=15, EXCLUDED=7; orientation invariance PASS)",
+    "ANNOTATION_REOPEN = APPROVED",
+    "next: PRODUCTION_GT_BATCH_001 → QC → PRODUCTION_GT_PROMOTED → AFFINITY TRAINING REOPEN → dense seg → reconstruction → connectome"
+  ],
+  "ANNOTATION_REOPEN": "APPROVED",
+  "cites": {
+    "verdict": "SPEC002_ANNOTATION_PROCEDURE_VALIDATED",
+    "artifact": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002.json"
+  },
+  "project_status_now": "Annotation bottleneck resolved experimentally; production ground-truth generation is the active gate.",
+  "instrument_vs_model": "Procedure validation validates the measurement instrument only. It does not authorize affinity-model readiness or training.",
+  "updated_pipeline_stage_board": {
+    "EM_voxels": "AVAILABLE",
+    "annotation_procedure_SPEC002": "VALIDATED",
+    "production_GT_generation": "ACTIVE_GATE",
+    "production_GT_promoted": "NOT_YET",
+    "affinity_training": "BLOCKED_UNTIL_PRODUCTION_GT_PROMOTED_AND_TRAIN_AUTHORIZATION",
+    "segmentation_agglomeration": "BLOCKED",
+    "process_neuron_reconstruction": "BLOCKED",
+    "connectivity_extraction": "BLOCKED",
+    "graph_QC_connectome": "BLOCKED"
+  },
+  "decision_state_after_amendment": "ANNOTATION_REOPEN_APPROVED_PRODUCTION_GT_ACTIVE_TRAINING_STILL_BLOCKED",
+  "still_no_valid_segmentation_route": true,
+  "permanent_training_exclusions": [
+    "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002.json",
+    "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_001.json",
+    "experiments/phase6e/DIFFERENT_CLASS_DISCOVERY_001.json",
+    "experiments/phase6e/G3_PRESENTATION_REPAIR_SMOKE_001.json",
+    "G3-008 labels"
+  ],
+  "explicitly_still_forbidden": [
+    "train on validation/discovery/smoke/G3-008 labels",
+    "create G3-009",
+    "tune production protocol after seeing production labels",
+    "claim connectome readiness without promoted production GT and validated segmentation"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "cohort": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\G2_SPATIAL_EXPANSION_COHORT_001.json",
+    "sha256": "da364cb6f2f3d4c41189eee765b2d69c1ecf1bef7a57d6317e6f940b3bf2aaaa"
+  },
+  "id": "MV-G2-EXTERNAL-REVIEW-REQUEST-001",
+  "prohibited_sources": [
+    "MV-GTVOL-000004"
+  ],
+  "requested_review_sets": [
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-TRAIN-A",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-007",
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "role": "G2_TARGET_TRAIN",
+      "source_origin_xyz": [
+        10304,
+        4992,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-TRAIN-B",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-014",
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "role": "G2_TARGET_TRAIN",
+      "source_origin_xyz": [
+        6144,
+        11776,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-TRAIN-C",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-023",
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "role": "G2_TARGET_TRAIN",
+      "source_origin_xyz": [
+        10304,
+        4992,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-TRAIN-D",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-030",
+      "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+      "role": "G2_TARGET_TRAIN",
+      "source_origin_xyz": [
+        6144,
+        11776,
+        11456
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-VALIDATION-V1",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-009",
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "role": "G2_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        1984,
+        8384,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-VALIDATION-V2",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-016",
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "role": "G2_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        14464,
+        11776,
+        3776
+      ]
+    },
+    {
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "crop_id": "MV-G2-VALIDATION-V3",
+      "parent_region_id": "MV-DVID-RAW-SURVEY-026",
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "role": "G2_TARGET_VALIDATION",
+      "source_origin_xyz": [
+        6144,
+        8384,
+        11456
+      ]
+    }
+  ],
+  "schema_version": 1
+}

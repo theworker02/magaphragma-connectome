@@ -1,0 +1,49 @@
+{
+  "id": "PRODUCTION_GT_BATCH_001_FAILED_CANDIDATE",
+  "schema_version": 1,
+  "created_at": "2026-09-18T02:30:00Z",
+  "status": "PERMANENT_FAILED_CANDIDATE_ARTIFACT",
+  "immutable": true,
+  "source_batch": "PRODUCTION_GT_BATCH_001",
+  "source_batch_path": "experiments/phase6e/PRODUCTION_GT_BATCH_001.json",
+  "gt_status": "CANDIDATE_PRODUCTION_GT_QC_FAILED",
+  "purpose": "Auditable record that an inconvenient all-SAME candidate production batch was rejected by frozen QC rather than discarded or silently incorporated.",
+  "qc_gates": {
+    "complete_batch": "PASS",
+    "orientation_invariance": "PASS",
+    "provenance": "PASS",
+    "no_validation_leakage": "PASS",
+    "both_classes_present": "FAIL"
+  },
+  "class_counts": {
+    "SAME_PROCESS": 23,
+    "DIFFERENT_PROCESS": 0,
+    "excluded": 1
+  },
+  "interpretation": {
+    "sampling_failure_vs_procedure_failure": "SAMPLING_FAILURE",
+    "procedure_status_unchanged": "SPEC002_ANNOTATION_PROCEDURE_VALIDATED",
+    "do_not_reopen_spec002_validation": true,
+    "do_not_retune_spec002_from_this_batch": true,
+    "justification": "VALIDATION_002 already demonstrated both-class recoverability under the frozen procedure on stronger C/E-scale tissue (abs steps ~14–65). Batch 001 used milder reserve tissue under abs≥12 and recovered 0 DIFFERENT; QC correctly refused promotion."
+  },
+  "consequences": {
+    "NO_promotion": true,
+    "NO_affinity_training": true,
+    "NO_reuse_as_production_GT": true,
+    "NO_protocol_retuning": true,
+    "permanently_excluded_from_training": true,
+    "permanently_excluded_from_production_GT_corpora": true
+  },
+  "sources": [
+    "MV-DVID-RAW-SURVEY-053",
+    "MV-DVID-RAW-SURVEY-054",
+    "MV-DVID-RAW-SURVEY-055",
+    "MV-DVID-RAW-SURVEY-056",
+    "MV-DVID-RAW-SURVEY-060",
+    "MV-DVID-RAW-SURVEY-062",
+    "MV-DVID-RAW-SURVEY-063",
+    "MV-DVID-RAW-SURVEY-065"
+  ],
+  "active_gate_after": "Acquire independent PRODUCTION_GT_BATCH_002 from stronger predeclared C/E-scale tissue under existing SPEC002 procedure and existing QC gates"
+}

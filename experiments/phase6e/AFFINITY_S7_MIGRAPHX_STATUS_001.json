@@ -1,0 +1,17 @@
+{
+  "id": "AFFINITY_S7_MIGRAPHX_STATUS_001",
+  "updated_at": "2026-09-18T06:26:00Z",
+  "finding": "libmigraphx was already installed (migraphx 2.15.0 on ROCm 7.2.1). Prior failure was PYTHONPATH + incomplete torch_migraphx wheel needing JIT + ninja-build.",
+  "fixed": {
+    "PYTHONPATH": "/opt/rocm-7.2.1/lib",
+    "LD_LIBRARY_PATH": "/opt/rocm-7.2.1/lib:/opt/rocm-7.2.1/lib/migraphx/lib",
+    "apt": "ninja-build",
+    "import": "import migraphx; import torch_migraphx  OK"
+  },
+  "bench": {
+    "eager_tiles_per_sec": 18.85,
+    "compile_tiles_per_sec": 20.82,
+    "migraphx": "SIGKILL during torch.compile(backend=migraphx) warmup on MNet — likely OOM / unsupported graph; not usable for S7 yet"
+  },
+  "recommendation": "Keep FAST_003 infer-backend=compile. Retry migraphx later with smaller subgraph or FX lower only if memory allows."
+}

@@ -1,0 +1,15 @@
+{
+  "amends": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\production\\MV-PRE-PRODUCTION-BASELINE.json",
+    "sha256": "41f3992ac335615431ba444c41b58387f2c27829a8441e1e52a04c1bbe0b6c59"
+  },
+  "corrected_test_results": {
+    "command": "$env:PYTHONPATH='src'; python -m unittest discover -s tests -v",
+    "status": "PASS",
+    "tests": 17
+  },
+  "created_at": "2026-09-16T14:37:24.451948Z",
+  "id": "MV-PRE-PRODUCTION-BASELINE-AMENDMENT-001",
+  "original_record_retained": true,
+  "reason": "The frozen baseline recorded the prior 16-test count although the freeze invocation ran 17 tests after qualification metrics were added."
+}

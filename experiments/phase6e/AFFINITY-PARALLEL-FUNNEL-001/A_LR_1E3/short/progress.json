@@ -1,0 +1,115 @@
+{
+  "status": "RUNNING",
+  "best": {
+    "global_step": 10,
+    "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/A_LR_1E3/short/checkpoints/checkpoint-step10.pt",
+    "checkpoint_sha256": "f7da34e05d2e91edc3cc8ac03614f87ae6bff91a84959ff5b698840f89dc2bbf",
+    "eval_metrics": {
+      "n_eval_edges": 6,
+      "opaque_ids_scored": [
+        "MV-PGT2-5E2C51243843",
+        "MV-PGT2-BAB09CA48AC4",
+        "MV-PGT2-BB854E1BF43D",
+        "MV-PGT2-C2C6E21DB1B7",
+        "MV-PGT2-E992DA993C6B",
+        "MV-PGT2-FD2E7E5D4C10"
+      ],
+      "SAME_PROCESS_accuracy_at_0p5": 0.5,
+      "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "mean_pred_SAME": 0.5233587957918644,
+      "mean_pred_DIFFERENT": 0.5760352946817875,
+      "margin": -0.052676498889923096,
+      "constant_same_accuracy": 0.3333333333333333,
+      "pair_predictions": [
+        {
+          "target": 0,
+          "affinity": 0.9624667763710022,
+          "opaque_decision_id": "MV-PGT2-5E2C51243843"
+        },
+        {
+          "target": 0,
+          "affinity": 0.1947549432516098,
+          "opaque_decision_id": "MV-PGT2-BAB09CA48AC4"
+        },
+        {
+          "target": 0,
+          "affinity": 0.9413760900497437,
+          "opaque_decision_id": "MV-PGT2-BB854E1BF43D"
+        },
+        {
+          "target": 1,
+          "affinity": 0.12079346925020218,
+          "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7"
+        },
+        {
+          "target": 0,
+          "affinity": 0.2055433690547943,
+          "opaque_decision_id": "MV-PGT2-E992DA993C6B"
+        },
+        {
+          "target": 1,
+          "affinity": 0.9259241223335266,
+          "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10"
+        }
+      ]
+    },
+    "chance_under_early_eliminate_rule": true
+  },
+  "last": {
+    "global_step": 10,
+    "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/A_LR_1E3/short/checkpoints/checkpoint-step10.pt",
+    "checkpoint_sha256": "f7da34e05d2e91edc3cc8ac03614f87ae6bff91a84959ff5b698840f89dc2bbf",
+    "eval_metrics": {
+      "n_eval_edges": 6,
+      "opaque_ids_scored": [
+        "MV-PGT2-5E2C51243843",
+        "MV-PGT2-BAB09CA48AC4",
+        "MV-PGT2-BB854E1BF43D",
+        "MV-PGT2-C2C6E21DB1B7",
+        "MV-PGT2-E992DA993C6B",
+        "MV-PGT2-FD2E7E5D4C10"
+      ],
+      "SAME_PROCESS_accuracy_at_0p5": 0.5,
+      "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "mean_pred_SAME": 0.5233587957918644,
+      "mean_pred_DIFFERENT": 0.5760352946817875,
+      "margin": -0.052676498889923096,
+      "constant_same_accuracy": 0.3333333333333333,
+      "pair_predictions": [
+        {
+          "target": 0,
+          "affinity": 0.9624667763710022,
+          "opaque_decision_id": "MV-PGT2-5E2C51243843"
+        },
+        {
+          "target": 0,
+          "affinity": 0.1947549432516098,
+          "opaque_decision_id": "MV-PGT2-BAB09CA48AC4"
+        },
+        {
+          "target": 0,
+          "affinity": 0.9413760900497437,
+          "opaque_decision_id": "MV-PGT2-BB854E1BF43D"
+        },
+        {
+          "target": 1,
+          "affinity": 0.12079346925020218,
+          "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7"
+        },
+        {
+          "target": 0,
+          "affinity": 0.2055433690547943,
+          "opaque_decision_id": "MV-PGT2-E992DA993C6B"
+        },
+        {
+          "target": 1,
+          "affinity": 0.9259241223335266,
+          "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10"
+        }
+      ]
+    },
+    "chance_under_early_eliminate_rule": true
+  }
+}

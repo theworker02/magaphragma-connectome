@@ -1,0 +1,489 @@
+{
+  "id": "MV-CELLPOSE-CPDINOVITB-ENCODER-PAIR-AUDIT-MV-G3-VALIDATION-V3",
+  "status": "EXPLORATORY_INTERNAL_FEATURE_PAIR_SEPARABILITY_ONLY",
+  "region": "MV-G3-VALIDATION-V3",
+  "region_receipt": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\receipt.json",
+    "sha256": "8a4b3b1961f7f8ad7517b41f22a331e766def757eab955915aa900ddcf3d9495"
+  },
+  "raw": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-025-raw_zyx.npy",
+    "sha256": "5ca319f584b064768f46ae352d5b0f198f01d11b29c8ba7f8305734d02676983",
+    "shape_zyx": [
+      64,
+      128,
+      128
+    ]
+  },
+  "model": {
+    "name": "cpdino-vitb",
+    "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\third_party\\cellpose-runtime\\models\\cpdino-vitb",
+    "checkpoint_sha256": "3ed4c06a3963ab13ff377d4e2957174aaaf637434eb031ae9931fcbfaf9a217f",
+    "source_commit": "a54cb48849b7e225a81e8e43dcb042d42427f543"
+  },
+  "feature_contract": {
+    "network_stage": "CPDINO final encoder.norm tokens after CLS/storage-token removal and before Cellpose linear readout",
+    "dim": 768,
+    "spatial_mode": "XY 2-D encoder features only; Z-adjacent pairs compare independently encoded neighboring XY planes",
+    "normalization": "Cellpose transforms.normalize_img(normalize=True, norm3D=True)",
+    "tile": {
+      "shape_yx": [
+        384,
+        384
+      ],
+      "stride_yx": [
+        8,
+        8
+      ],
+      "conv_padding_yx": [
+        4,
+        4
+      ],
+      "raw_padding_yx": [
+        128,
+        128,
+        128,
+        128
+      ]
+    }
+  },
+  "runtime": {
+    "device": "AMD  Radeon RX 7800 XT",
+    "torch": "2.9.0+rocmsdk20251116",
+    "torch_hip": "7.1.52802-561cc400e1",
+    "required_z_slices": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      23,
+      24,
+      25,
+      32,
+      33,
+      34,
+      35,
+      41,
+      42,
+      43,
+      51,
+      52,
+      53
+    ],
+    "runtime_seconds": 5.194114685058594,
+    "peak_gpu_memory_allocated_bytes": 1091564032
+  },
+  "features": {
+    "encoder_l2_delta": {
+      "same": {
+        "count": 12,
+        "mean": 0.513237364590168,
+        "median": 0.5489409565925598
+      },
+      "different": {
+        "count": 9,
+        "mean": 0.28602979746129775,
+        "median": 0.3288966715335846
+      },
+      "auc_without_posthoc_orientation": {
+        "different_high_auc": 0.1574074074074074,
+        "different_low_auc": 0.8425925925925926
+      }
+    },
+    "encoder_cosine_similarity": {
+      "same": {
+        "count": 12,
+        "mean": 0.9973422686258951,
+        "median": 0.9968508183956146
+      },
+      "different": {
+        "count": 9,
+        "mean": 0.9988361067242093,
+        "median": 0.9987344741821289
+      },
+      "auc_without_posthoc_orientation": {
+        "different_high_auc": 0.8333333333333334,
+        "different_low_auc": 0.16666666666666663
+      }
+    }
+  },
+  "axis_confounding_gate": {
+    "class_presence_by_channel_zyx": {
+      "0": [],
+      "1": [
+        "DIFFERENT_PROCESS",
+        "SAME_PROCESS"
+      ],
+      "2": [
+        "SAME_PROCESS"
+      ]
+    },
+    "axes_with_both_reviewed_classes": [
+      1
+    ],
+    "global_cross_class_auc_interpretable": true,
+    "reason": "Global SAME/DIFFERENT AUC is not eligible for model selection when no affinity axis contains both reviewed classes; otherwise physical axis can explain class differences."
+  },
+  "pairs": [
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        33,
+        17,
+        74
+      ],
+      "right_zyx": [
+        33,
+        18,
+        74
+      ],
+      "encoder_l2_delta": 0.35263335704803467,
+      "encoder_cosine_similarity": 0.9984092116355896
+    },
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        32,
+        17,
+        74
+      ],
+      "right_zyx": [
+        32,
+        18,
+        74
+      ],
+      "encoder_l2_delta": 0.40831562876701355,
+      "encoder_cosine_similarity": 0.9979074597358704
+    },
+    {
+      "interface_id": "MV-G3-IF-001",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        34,
+        17,
+        74
+      ],
+      "right_zyx": [
+        34,
+        18,
+        74
+      ],
+      "encoder_l2_delta": 0.3634200990200043,
+      "encoder_cosine_similarity": 0.9984121918678284
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        42,
+        26,
+        102
+      ],
+      "right_zyx": [
+        42,
+        27,
+        102
+      ],
+      "encoder_l2_delta": 0.3288966715335846,
+      "encoder_cosine_similarity": 0.9987344741821289
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        41,
+        26,
+        102
+      ],
+      "right_zyx": [
+        41,
+        27,
+        102
+      ],
+      "encoder_l2_delta": 0.4714023172855377,
+      "encoder_cosine_similarity": 0.9974260330200195
+    },
+    {
+      "interface_id": "MV-G3-IF-002",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        43,
+        26,
+        102
+      ],
+      "right_zyx": [
+        43,
+        27,
+        102
+      ],
+      "encoder_l2_delta": 0.236689031124115,
+      "encoder_cosine_similarity": 0.9993270039558411
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        52,
+        11,
+        73
+      ],
+      "right_zyx": [
+        52,
+        12,
+        73
+      ],
+      "encoder_l2_delta": 0.7833557724952698,
+      "encoder_cosine_similarity": 0.9957807064056396
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        51,
+        11,
+        73
+      ],
+      "right_zyx": [
+        51,
+        12,
+        73
+      ],
+      "encoder_l2_delta": 0.6262062191963196,
+      "encoder_cosine_similarity": 0.9963672161102295
+    },
+    {
+      "interface_id": "MV-G3-IF-004",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        53,
+        11,
+        73
+      ],
+      "right_zyx": [
+        53,
+        12,
+        73
+      ],
+      "encoder_l2_delta": 0.6659621596336365,
+      "encoder_cosine_similarity": 0.9965384006500244
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        24,
+        19,
+        97
+      ],
+      "right_zyx": [
+        24,
+        20,
+        97
+      ],
+      "encoder_l2_delta": 0.14734183251857758,
+      "encoder_cosine_similarity": 0.9997389316558838
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        23,
+        19,
+        97
+      ],
+      "right_zyx": [
+        23,
+        20,
+        97
+      ],
+      "encoder_l2_delta": 0.13980326056480408,
+      "encoder_cosine_similarity": 0.9997580647468567
+    },
+    {
+      "interface_id": "MV-G3-IF-005",
+      "decision": "DIFFERENT_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        25,
+        19,
+        97
+      ],
+      "right_zyx": [
+        25,
+        20,
+        97
+      ],
+      "encoder_l2_delta": 0.12576597929000854,
+      "encoder_cosine_similarity": 0.999811589717865
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        34,
+        9,
+        61
+      ],
+      "right_zyx": [
+        34,
+        10,
+        61
+      ],
+      "encoder_l2_delta": 0.426785945892334,
+      "encoder_cosine_similarity": 0.9978740215301514
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        33,
+        9,
+        61
+      ],
+      "right_zyx": [
+        33,
+        10,
+        61
+      ],
+      "encoder_l2_delta": 0.48493802547454834,
+      "encoder_cosine_similarity": 0.9971632361412048
+    },
+    {
+      "interface_id": "MV-G3-IF-006",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        35,
+        9,
+        61
+      ],
+      "right_zyx": [
+        35,
+        10,
+        61
+      ],
+      "encoder_l2_delta": 0.3646998107433319,
+      "encoder_cosine_similarity": 0.9985390901565552
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        3,
+        3,
+        35
+      ],
+      "right_zyx": [
+        3,
+        4,
+        35
+      ],
+      "encoder_l2_delta": 0.6227726340293884,
+      "encoder_cosine_similarity": 0.9964762330055237
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        2,
+        3,
+        35
+      ],
+      "right_zyx": [
+        2,
+        4,
+        35
+      ],
+      "encoder_l2_delta": 0.6381645798683167,
+      "encoder_cosine_similarity": 0.9964269995689392
+    },
+    {
+      "interface_id": "MV-G3-IF-007",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 1,
+      "left_zyx": [
+        4,
+        3,
+        35
+      ],
+      "right_zyx": [
+        4,
+        4,
+        35
+      ],
+      "encoder_l2_delta": 0.6129438877105713,
+      "encoder_cosine_similarity": 0.9964630007743835
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        6,
+        21,
+        67
+      ],
+      "right_zyx": [
+        6,
+        21,
+        68
+      ],
+      "encoder_l2_delta": 0.3232191801071167,
+      "encoder_cosine_similarity": 0.9987239241600037
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        5,
+        21,
+        67
+      ],
+      "right_zyx": [
+        5,
+        21,
+        68
+      ],
+      "encoder_l2_delta": 0.3447589874267578,
+      "encoder_cosine_similarity": 0.9986298084259033
+    },
+    {
+      "interface_id": "MV-G3-IF-008",
+      "decision": "SAME_PROCESS",
+      "channel_zyx": 2,
+      "left_zyx": [
+        7,
+        21,
+        67
+      ],
+      "right_zyx": [
+        7,
+        21,
+        68
+      ],
+      "encoder_l2_delta": 0.26504117250442505,
+      "encoder_cosine_similarity": 0.9991245865821838
+    }
+  ],
+  "scientific_boundary": "This is an exploratory 2-D general-cell encoder representation audit. It is not a documented neuronal-affinity output, does not make biological claims, and cannot enter training, labels, MV-FRAG, MV-N, MV-SYN, or MV-CONN without an independently predeclared and validated downstream gate."
+}

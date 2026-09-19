@@ -1,0 +1,63 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "class_counts": {
+      "ARTIFACT": 7,
+      "NORMAL": 1
+    },
+    "hints_sha256": "aed49fd18e12665ababd35956605a8dce9f5e63a86ec5aeef3bdae0b118b698a",
+    "n_tiles": 8,
+    "optimize_ok_tiles": 0,
+    "priority_map": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\voxscout\\priority_map.json",
+    "provenance": {
+      "edges": [
+        {
+          "attrs": {},
+          "child": "priority_map",
+          "parent": "volume",
+          "relation": "analyzed_by_voxscout"
+        }
+      ],
+      "graph_id": "1b29e641f7e34a8ea7419a9813b91ca7",
+      "nodes": [
+        {
+          "attrs": {
+            "dtype": "uint8",
+            "shape": [
+              40,
+              80,
+              80
+            ]
+          },
+          "kind": "volume",
+          "label": "",
+          "node_id": "volume"
+        },
+        {
+          "attrs": {
+            "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\voxscout\\priority_map.json"
+          },
+          "kind": "artifact",
+          "label": "",
+          "node_id": "priority_map"
+        }
+      ]
+    },
+    "tool": "voxscout",
+    "version": "0.1.0",
+    "volume_shape": [
+      40,
+      80,
+      80
+    ]
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T16:00:59Z",
+  "tool": "voxscout"
+}

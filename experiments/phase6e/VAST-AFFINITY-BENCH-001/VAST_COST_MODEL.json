@@ -1,0 +1,40 @@
+{
+  "id": "VAST_COST_MODEL",
+  "status": "BASELINE_LOCAL_ONLY",
+  "created_at": "2026-09-18T22:35:00Z",
+  "warning": "No Vast GPU TPS measured yet. Economics below use local RX 7800 XT baseline 18.9 tiles/s and must be replaced after $5 qualification.",
+  "tile_math": {
+    "crop_zyx": [20, 64, 64],
+    "stride_zyx": [10, 64, 64],
+    "tiles_per_chunk": 3468
+  },
+  "remaining_chunks": 28609,
+  "remaining_tiles": 99216012,
+  "baseline": {
+    "device": "AMD Radeon RX 7800 XT (local ROCm)",
+    "validated_tiles_per_second": 18.9,
+    "seconds_per_chunk": 183.4920634920635,
+    "chunks_per_hour": 19.61851851851852,
+    "projected_remaining_gpu_hours": 1458.2
+  },
+  "break_even_usd_per_gpu_hour": {
+    "budget_25": 0.0171,
+    "budget_50": 0.0343,
+    "budget_100": 0.0686,
+    "budget_160": 0.1097,
+    "note": "max payable $/GPU-h = budget / 1458.2 GPU-h at 18.9 tiles/s"
+  },
+  "example_at_010_dph": {
+    "gpu_hourly_usd": 0.10,
+    "effective_cost_per_chunk": 0.005097,
+    "cost_per_1000_chunks": 5.097,
+    "projected_remaining_cost_usd": 145.82,
+    "within_hard_160": true,
+    "within_target_100": false
+  },
+  "budgets": {
+    "hard_usd": 160,
+    "target_usd": 100,
+    "benchmark_usd": 5
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "tool": "tilemedic",
+  "ts": "20260918T155222Z",
+  "tile_key": "T-Z000-Y000-X000",
+  "diagnosis": "OOM",
+  "action": "lower_batch_retry",
+  "success": true,
+  "safe": true,
+  "detail": {
+    "batch_size": 4
+  },
+  "altered_keys": [
+    "batch_size"
+  ]
+}

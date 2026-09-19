@@ -1,0 +1,20 @@
+{
+  "id": "MV-DVID-AUTO-PAIR-REPORT-001",
+  "status": "AUTOMATIC_DIFFERENT_PROCESS_SUPERVISION_INSUFFICIENT",
+  "frozen_rule": {
+    "same": "same in every true-3-D supervoxel regime AND raw boundary <= 0.20 AND SegNeuron affinity >= 0.80",
+    "different": "different in every true-3-D supervoxel regime AND raw boundary >= 0.70 AND SegNeuron affinity <= 0.20",
+    "ignore": "all other adjacent pairs",
+    "offsets_zyx": [[-1,0,0],[0,-1,0],[0,0,-1]]
+  },
+  "crops": [
+    {"id":"MV-DVID-ANN-000001","role":"DVID_TARGET_TRAIN","same_pairs":68680,"different_pairs":0,"ignore_pairs":3044280,"result":"REJECTED"},
+    {"id":"MV-DVID-ANN-000002","role":"DVID_TARGET_TRAIN","same_pairs":113631,"different_pairs":0,"ignore_pairs":4564001,"result":"REJECTED"},
+    {"id":"MV-DVID-ANN-000004","role":"DVID_TARGET_VALIDATION","same_pairs":106985,"different_pairs":0,"ignore_pairs":4570647,"result":"REJECTED"}
+  ],
+  "interpretation": "The frozen conservative criteria identify interior continuity but no defensible target-domain CUT-side relationships. Relaxing the criteria after observing this outcome would manufacture the required class and is prohibited.",
+  "decision": "No mixed-domain, teacher/student, or experimental target-adaptation run is authorized from these records.",
+  "regression_fixture": "MV-GTVOL-000004 was not used; it remains regression-only.",
+  "next_requirement": "Obtain genuinely independent target boundary information: reviewed DVID boundary labels, a documented compatible independent membrane/segmentation model, or external annotation.",
+  "biological_artifacts": {"MV-FRAG":0,"MV-N":0,"MV-CONN":0}
+}

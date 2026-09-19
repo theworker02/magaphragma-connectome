@@ -1,0 +1,49 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "counts": {
+      "AMBIGUOUS": 1,
+      "CONFLICTING": 1,
+      "PROBABLE": 0,
+      "REJECTED": 1,
+      "REVIEW": 0,
+      "SUPPORTED": 1
+    },
+    "review_queue": [
+      {
+        "information_gain": 0.6873303,
+        "overall_confidence": 0.43,
+        "post_id": "n6",
+        "pre_id": "n5",
+        "verdict": "CONFLICTING",
+        "xyz": [
+          5.0,
+          5.0,
+          5.0
+        ]
+      },
+      {
+        "information_gain": 0.46733996,
+        "overall_confidence": 0.494,
+        "post_id": "n8",
+        "pre_id": "n7",
+        "verdict": "AMBIGUOUS",
+        "xyz": [
+          8.0,
+          8.0,
+          8.0
+        ]
+      }
+    ],
+    "total": 4
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T15:58:39Z",
+  "tool": "synapselens"
+}

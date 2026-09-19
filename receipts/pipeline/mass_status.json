@@ -1,0 +1,42 @@
+{
+  "fleet": {
+    "aggregate_chunks_per_hour": 18.581816331097155,
+    "aggregate_tiles_per_sec": 17.900483065623593,
+    "chunks_per_hour_per_gpu": 18.581816331097155,
+    "chunks_remaining": 28769,
+    "created_at": "2026-09-18T22:16:20.246960Z",
+    "eta_hours_fleet": 1548.234009387679,
+    "eta_hours_one_gpu": 1548.234009387679,
+    "formula": "T_wall \u2248 T_single_GPU / N_effective_GPUs",
+    "id": "HYPERDRAIN_FLEET_PLAN",
+    "n_gpus": 1,
+    "per_gpu_ceiling_note": "Pure MNet forward on RX 7800 XT measures ~19 tiles/s. Packed production sits at that ceiling (~18 tiles/s). 25\u201330\u00d7 calendar time requires ~25\u201330 GPUs, not a 25\u00d7 single-GPU kernel.",
+    "tiles_per_chunk": 3468,
+    "tiles_per_sec_per_gpu": 17.900483065623593,
+    "wall_speedup_vs_one_gpu": 1.0
+  },
+  "pipeline": "mass-status",
+  "queue": {
+    "counts": {
+      "AFFINITY_DONE_SEG_PENDING": 29,
+      "PENDING": 28768,
+      "RUNNING": 1
+    },
+    "engine": "hyperdrain",
+    "fraction_done": 0.0010070143759983332,
+    "n_done": 29,
+    "n_total": 28798,
+    "updated_at": "2026-09-18T22:16:20.241764Z"
+  },
+  "steps": [
+    {
+      "action": "fleet",
+      "n_gpus": 1,
+      "tool": "hyperdrain"
+    },
+    {
+      "action": "queue-status",
+      "tool": "hyperdrain"
+    }
+  ]
+}

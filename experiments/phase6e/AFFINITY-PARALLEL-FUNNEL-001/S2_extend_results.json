@@ -1,0 +1,217 @@
+[
+  {
+    "candidate_id": "C_PATCH_20_64_64",
+    "phase": "extend",
+    "receipt": {
+      "all_checkpoint_summaries": [
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 10,
+          "margin": 0.023772791028022766
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 20,
+          "margin": 0.018158435821533203
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": true,
+          "global_step": 30,
+          "margin": -0.004183109849691391
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": true,
+          "global_step": 40,
+          "margin": -0.006769627332687378
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": true,
+          "global_step": 50,
+          "margin": -0.004596490412950516
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 60,
+          "margin": 0.0003770887851715088
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 70,
+          "margin": 0.0010552257299423218
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 80,
+          "margin": 0.0011706575751304626
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 90,
+          "margin": 0.0022699758410453796
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 100,
+          "margin": 0.0024157799780368805
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 110,
+          "margin": 0.011231295764446259
+        },
+        {
+          "balanced_edge_accuracy_at_0p5": 0.5,
+          "chance_under_early_eliminate_rule": false,
+          "global_step": 120,
+          "margin": 0.014491006731987
+        }
+      ],
+      "candidate_id": "C_PATCH_20_64_64",
+      "changes_exactly_one_thing": "patch_shape_zyx [20,128,128] \u2192 [20,64,64] (tighter spatial context around labeled face)",
+      "checkpoint_every": 10,
+      "config": {
+        "different_class_loss_multiplier": 1.0,
+        "learning_rate": 0.0001,
+        "optimizer": "Adam",
+        "patch_shape_zyx": [
+          20,
+          64,
+          64
+        ],
+        "target_loss_weight": 0.25
+      },
+      "created_at": "2026-09-18T03:59:08.088359Z",
+      "device": "AMD  Radeon RX 7800 XT",
+      "do_not_run_dense_segmentation_from_short_or_fail": true,
+      "do_not_weaken_GATE_D": true,
+      "early_eliminate_at_step": null,
+      "early_eliminated": false,
+      "eval_metrics": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "margin": 0.023772791028022766,
+        "mean_pred_DIFFERENT": 0.6398649662733078,
+        "mean_pred_SAME": 0.6636377573013306,
+        "n_eval_edges": 6
+      },
+      "eval_metrics_extended": {
+        "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+        "SAME_PROCESS_accuracy_at_0p5": 0.5,
+        "balanced_edge_accuracy_at_0p5": 0.5,
+        "constant_same_accuracy": 0.3333333333333333,
+        "margin": 0.023772791028022766,
+        "mean_pred_DIFFERENT": 0.6398649662733078,
+        "mean_pred_SAME": 0.6636377573013306,
+        "n_eval_edges": 6,
+        "opaque_ids_scored": [
+          "MV-PGT2-5E2C51243843",
+          "MV-PGT2-BAB09CA48AC4",
+          "MV-PGT2-BB854E1BF43D",
+          "MV-PGT2-C2C6E21DB1B7",
+          "MV-PGT2-E992DA993C6B",
+          "MV-PGT2-FD2E7E5D4C10"
+        ],
+        "pair_predictions": [
+          {
+            "affinity": 0.9968252182006836,
+            "opaque_decision_id": "MV-PGT2-5E2C51243843",
+            "target": 0
+          },
+          {
+            "affinity": 0.27388086915016174,
+            "opaque_decision_id": "MV-PGT2-BAB09CA48AC4",
+            "target": 0
+          },
+          {
+            "affinity": 0.9942135214805603,
+            "opaque_decision_id": "MV-PGT2-BB854E1BF43D",
+            "target": 0
+          },
+          {
+            "affinity": 0.34060853719711304,
+            "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7",
+            "target": 1
+          },
+          {
+            "affinity": 0.29454025626182556,
+            "opaque_decision_id": "MV-PGT2-E992DA993C6B",
+            "target": 0
+          },
+          {
+            "affinity": 0.9866669774055481,
+            "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10",
+            "target": 1
+          }
+        ]
+      },
+      "eval_sources": [
+        "MV-DVID-RAW-SURVEY-078",
+        "MV-DVID-RAW-SURVEY-083"
+      ],
+      "funnel_id": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+      "gate_outcomes": {
+        "GATE_A_eval_completeness": true,
+        "GATE_B_both_classes_scored": true,
+        "GATE_C_better_than_constant_same": true,
+        "GATE_D_positive_margin": true,
+        "GATE_E_no_eval_leakage": true
+      },
+      "init_checkpoint_path_and_sha256": {
+        "path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+        "sha256": "094eabaaaa93ce33349e5c3a9ee1c166bcda8081c307d6a2d51c74a10d8af354"
+      },
+      "matrix_id": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+      "phase": "extend",
+      "promoted_gt_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+      "run_id": "AFFINITY-PARALLEL-C_PATCH_20_64_64-EXTEND",
+      "runtime_seconds": 318.03934049606323,
+      "seeds": {
+        "dataloader_generator_seed": 20260918,
+        "numpy_seed": 20260918,
+        "python_hash_seed": "0",
+        "split_seed_material": "AFFINITY_TRAINING_REOPEN_001|SPLIT",
+        "torch_manual_seed": 20260918
+      },
+      "selected_checkpoint_path": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/extend/checkpoints/checkpoint-step10.pt",
+      "selected_checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+      "selected_checkpoint_step": 10,
+      "status": "PASS",
+      "steps_completed": 120,
+      "steps_requested": 120,
+      "tests_failure_class": "F4_SPATIAL_SCALE_SIGNAL",
+      "torch_version": "2.9.1+rocm7.2.1.gitff65f5bc",
+      "train_sources": [
+        "MV-DVID-RAW-SURVEY-076",
+        "MV-DVID-RAW-SURVEY-079",
+        "MV-DVID-RAW-SURVEY-082",
+        "MV-DVID-RAW-SURVEY-087",
+        "MV-DVID-RAW-SURVEY-088",
+        "MV-DVID-RAW-SURVEY-092"
+      ],
+      "train_sources_seen_in_batches": [
+        "MV-DVID-RAW-SURVEY-076",
+        "MV-DVID-RAW-SURVEY-079",
+        "MV-DVID-RAW-SURVEY-082",
+        "MV-DVID-RAW-SURVEY-087",
+        "MV-DVID-RAW-SURVEY-088",
+        "MV-DVID-RAW-SURVEY-092"
+      ],
+      "verdict": "AFFINITY-PARALLEL-C_PATCH_20_64_64-EXTEND_PASS"
+    },
+    "returncode": 0,
+    "stderr_tail": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/third_party/segneuron/Train_and_Inference/utils/aff_util.py:4: UserWarning: A NumPy version >=1.23.5 and <2.3.0 is required for this version of SciPy (detected version 2.5.3)\n  from scipy.special import comb\n",
+    "stdout_tail": "{\n  \"verdict\": \"AFFINITY-PARALLEL-C_PATCH_20_64_64-EXTEND_PASS\",\n  \"status\": \"PASS\",\n  \"gates\": {\n    \"GATE_A_eval_completeness\": true,\n    \"GATE_B_both_classes_scored\": true,\n    \"GATE_C_better_than_constant_same\": true,\n    \"GATE_D_positive_margin\": true,\n    \"GATE_E_no_eval_leakage\": true\n  },\n  \"eval_metrics\": {\n    \"n_eval_edges\": 6,\n    \"SAME_PROCESS_accuracy_at_0p5\": 0.5,\n    \"DIFFERENT_PROCESS_accuracy_at_0p5\": 0.5,\n    \"balanced_edge_accuracy_at_0p5\": 0.5,\n    \"mean_pred_SAME\": 0.6636377573013306,\n    \"mean_pred_DIFFERENT\": 0.6398649662733078,\n    \"margin\": 0.023772791028022766\n  }\n}\n"
+  }
+]

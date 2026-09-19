@@ -1,0 +1,75 @@
+{
+  "causes": {
+    "likely_causes": [
+      {
+        "cause": "synapse_threshold_changed",
+        "evidence": [
+          "synapses +1 -0 conf=0"
+        ],
+        "score": 1.25
+      }
+    ],
+    "primary": "synapse_threshold_changed",
+    "scores": {
+      "boundary_reconciliation_changed": 0.0,
+      "checkpoint_changed": 0.0,
+      "segmentation_config_changed": 0.0,
+      "source_data_changed": 0.0,
+      "synapse_threshold_changed": 1.25
+    }
+  },
+  "delta": {
+    "component_changes": {
+      "added": [
+        [
+          "n1",
+          "n2"
+        ]
+      ],
+      "count_a": 1,
+      "count_b": 1,
+      "removed": [
+        [
+          "n1"
+        ]
+      ]
+    },
+    "confidence_changes": [],
+    "degree_changes": {
+      "n2": {
+        "a": 0,
+        "b": 1,
+        "delta": 1
+      }
+    },
+    "edges_changed": {
+      "added": [],
+      "removed": []
+    },
+    "neurons_added": [
+      "n2"
+    ],
+    "neurons_removed": [],
+    "objects_merged": [],
+    "objects_split": [],
+    "spatial_changes": [],
+    "synapses_added": [
+      "s1"
+    ],
+    "synapses_removed": []
+  },
+  "pipeline": "diff",
+  "steps": [
+    {
+      "action": "diff",
+      "neurons_added": 1,
+      "synapses_added": 1,
+      "tool": "deltagraph"
+    },
+    {
+      "action": "infer-causes",
+      "n_causes": 1,
+      "tool": "deltagraph"
+    }
+  ]
+}

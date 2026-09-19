@@ -1,0 +1,12 @@
+{
+  "artifact": {
+    "kind": "voxscout_hints",
+    "media_type": "application/json",
+    "meta": {},
+    "name": "axonforge_hints.json",
+    "sha256": "aed49fd18e12665ababd35956605a8dce9f5e63a86ec5aeef3bdae0b118b698a",
+    "size_bytes": 633
+  },
+  "blob_relpath": "derived/artifacts/ae/d4/aed49fd18e12665ababd35956605a8dce9f5e63a86ec5aeef3bdae0b118b698a",
+  "written_at": "2026-09-18T16:02:58Z"
+}

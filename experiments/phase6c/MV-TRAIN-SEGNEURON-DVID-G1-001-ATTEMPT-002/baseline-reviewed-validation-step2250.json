@@ -1,0 +1,16 @@
+{
+  "status": "COMPLETED",
+  "classification": "READ_ONLY_BASELINE_EVALUATION",
+  "checkpoint": "experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+  "checkpoint_sha256": "094eabaaaa93ce33349e5c3a9ee1c166bcda8081c307d6a2d51c74a10d8af354",
+  "validation_receipt": "local_research_build/phase6e/external-review/dense-raw-candidate-002/reviewed-affinity-supervision-v2/receipt.json",
+  "reviewed_pairs": 14,
+  "masked_affinity_bce": 0.7417092446038234,
+  "same_pair_count": 6,
+  "different_pair_count": 8,
+  "same_mean_affinity": 0.9936409493287405,
+  "different_mean_affinity": 0.481540123000741,
+  "same_accuracy_at_0_5": 1.0,
+  "different_accuracy_at_0_5": 0.75,
+  "protected_regression_used": false
+}

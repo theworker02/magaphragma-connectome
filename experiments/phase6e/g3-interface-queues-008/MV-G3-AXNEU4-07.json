@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-RAW-AXISNEUTRAL-QUEUE-MV-G3-AXNEU4-07-008",
+  "created_at": "2026-09-17T21:38:37.643396Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU4-07-008",
+  "crop_id": "MV-G3-AXNEU4-07",
+  "raw_sha256": "c39928206ab843b34b3fc4cd82d7ca2fe3b95a967959c4c5a9ff9f8355469bff",
+  "selection": {
+    "method": "AXIS_NEUTRAL_PAIRED_LOCATION_DETERMINISTIC_V4",
+    "stratum": "Q3",
+    "center_zyx": [
+      23,
+      58,
+      68
+    ],
+    "label_blind": true,
+    "forbidden_inputs": [
+      "SAME/DIFFERENT labels",
+      "class predictions",
+      "learned affinities",
+      "argmax-gradient edge eligibility"
+    ]
+  },
+  "questions": [
+    {
+      "id": "MV-G3-IF-007-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-007",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        23,
+        58,
+        68
+      ],
+      "pair_right_zyx": [
+        24,
+        58,
+        68
+      ],
+      "channel_zyx": 0,
+      "axis_name": "Z",
+      "stratum": "Q3",
+      "raw_gradient_score": 0.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_DETERMINISTIC_V4",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-007-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-007",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        23,
+        58,
+        68
+      ],
+      "pair_right_zyx": [
+        23,
+        59,
+        68
+      ],
+      "channel_zyx": 1,
+      "axis_name": "Y",
+      "stratum": "Q3",
+      "raw_gradient_score": 0.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_DETERMINISTIC_V4",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-007-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-007",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        23,
+        58,
+        68
+      ],
+      "pair_right_zyx": [
+        23,
+        58,
+        69
+      ],
+      "channel_zyx": 2,
+      "axis_name": "X",
+      "stratum": "Q3",
+      "raw_gradient_score": 0.0,
+      "selection": "AXIS_NEUTRAL_PAIRED_LOCATION_DETERMINISTIC_V4",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Axis-neutral paired-location design: all three edges at one physical center are independently reviewed; no axis is privileged and no class is targeted."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "MV-G2-G1-DIAGNOSTIC-EXECUTION-001",
+  "status": "BLOCKED_BEFORE_EXECUTION",
+  "frozen_checkpoint": {
+    "path": "experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+    "sha256": "6913f35d63c0df20df799c043b77bce94137fd8c7948a3ae7fae518aac23685b"
+  },
+  "cohort": "experiments/phase6d/G2_SPATIAL_EXPANSION_COHORT_001.json",
+  "attempted_runtime_probe": {
+    "environment": "/home/mloon25/.local/share/micromamba/envs/segneuron-postprocess",
+    "result": "PYTORCH_UNAVAILABLE",
+    "observed_error": "ModuleNotFoundError: No module named 'torch'"
+  },
+  "runtime_search": {
+    "result": "PREVIOUS_ROCM_TRAINING_RUNTIME_NOT_LOCATED_IN_CURRENT_WSL_HOME",
+    "classification": "EXECUTION_ENVIRONMENT_UNAVAILABLE"
+  },
+  "scientific_state": {
+    "g1_model_failure": false,
+    "g1_checkpoint_mutation": false,
+    "cohort_mutation": false,
+    "biological_records_created": 0
+  },
+  "next_executable_action": "Restore or identify the previously qualified ROCm PyTorch training environment, then run frozen step2280 inference once per already-frozen G2 region and create only machine-assisted review queues."
+}

@@ -1,0 +1,107 @@
+{
+  "cli": {
+    "deltagraph": {
+      "code": 0,
+      "err": ""
+    },
+    "neurocache": {
+      "code": 0,
+      "err": "",
+      "stdout": "{\n  \"blob_count\": 1,\n  \"root\": \"C:\\\\Users\\\\matth\\\\OneDrive\\\\Desktop\\\\magaphragma-connectome\\\\receipts\\\\neurocache\",\n  \"total_bytes\": 901\n}\n"
+    },
+    "synapselens": {
+      "code": 0,
+      "err": ""
+    },
+    "tracewire": {
+      "code": 0,
+      "err": "",
+      "stdout": "=== TRACE BACK ===\nvolume: smoke-volume-001\n??? preprocess: smoke-preprocess-001\n??? tile: smoke-tile-001\n??? model_checkpoint: smoke-model_checkpoint-001\n??? inference: smoke-inference-001\n??? segment: smoke-segment-001\n??? synapse: smoke-synapse-001\n??? graph_edge: smoke-graph_edge-001\n??? neuron: smoke-neuron-001\n"
+    }
+  },
+  "deltagraph": {
+    "neurons_added": [
+      "n4",
+      "n5"
+    ],
+    "neurons_removed": [
+      "n3"
+    ],
+    "objects_split": [],
+    "ok": true,
+    "primary_cause": "synapse_threshold_changed",
+    "synapses_added": [
+      "s3"
+    ],
+    "version": "0.1.0"
+  },
+  "neurocache": {
+    "identity_hash": "4d7bfe94440909912e16736c6ca7ffe46b6e9f45a17becfe50298b4e368041d8",
+    "live_stats": {
+      "blob_count": 1,
+      "root": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\neurocache",
+      "total_bytes": 901
+    },
+    "ok": true,
+    "version": "0.1.0"
+  },
+  "synapselens": {
+    "counts": {
+      "AMBIGUOUS": 1,
+      "CONFLICTING": 1,
+      "PROBABLE": 0,
+      "REJECTED": 1,
+      "REVIEW": 0,
+      "SUPPORTED": 1
+    },
+    "ok": true,
+    "review_queue_len": 2,
+    "top_gain": 1.2163084938282065,
+    "verdicts": [
+      "REJECTED",
+      "CONFLICTING",
+      "AMBIGUOUS",
+      "SUPPORTED"
+    ],
+    "version": "0.1.0"
+  },
+  "tracewire": {
+    "ascii": "volume: id-volume\n??? preprocess: id-preprocess\n??? tile: id-tile\n??? model_checkpoint: id-model_checkpoint\n??? inference: id-inference\n??? segment: id-segment\n??? synapse: id-synapse\n??? graph_edge: id-graph_edge\n??? neuron: id-neuron",
+    "back": [
+      "id-volume",
+      "id-preprocess",
+      "id-tile",
+      "id-model_checkpoint",
+      "id-inference",
+      "id-segment",
+      "id-synapse",
+      "id-graph_edge",
+      "id-neuron"
+    ],
+    "forward": [
+      "id-volume",
+      "id-preprocess",
+      "id-tile",
+      "id-model_checkpoint",
+      "id-inference",
+      "id-segment",
+      "id-synapse",
+      "id-graph_edge",
+      "id-neuron"
+    ],
+    "ok": true,
+    "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\tracewire\\graph.json",
+    "stages": [
+      "volume",
+      "preprocess",
+      "tile",
+      "model_checkpoint",
+      "inference",
+      "segment",
+      "synapse",
+      "graph_edge",
+      "neuron"
+    ],
+    "version": "0.1.0"
+  }
+}

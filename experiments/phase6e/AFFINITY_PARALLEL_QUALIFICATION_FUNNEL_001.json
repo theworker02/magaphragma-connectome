@@ -1,0 +1,143 @@
+{
+  "created_at": "2026-09-18T03:20:00Z",
+  "early_eliminate_clarification": "experiments/phase6e/AFFINITY_PARALLEL_EARLY_ELIMINATE_CLARIFICATION_001.json",
+  "frozen_before_seeing_candidate_results": true,
+  "id": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "non_goals": [
+    "Weakening GATE_D",
+    "Launching dense full-volume before ROI QC",
+    "Serial 120-step retrain of the identical PGT002-001 config",
+    "Post-hoc candidate invention inside this freeze after seeing S1 scores"
+  ],
+  "orchestrator": {
+    "auto_hashes": true,
+    "auto_receipts": true,
+    "dry_run_default": true,
+    "entrypoint": "tools/orchestrate_affinity_qualification_funnel.py",
+    "human_intervenes_at": [
+      "S4",
+      "S6",
+      "S8"
+    ],
+    "requires_explicit_execute_flag": true,
+    "worker": "tools/train_affinity_parallel_candidate.py"
+  },
+  "parent_failed_run": "AFFINITY_TRAIN_PGT002_001_FAIL_PERMANENT",
+  "preserved_invariants": {
+    "GATE_D_positive_margin": "UNCHANGED (margin > 0 required)",
+    "decision_threshold_0p5": "UNCHANGED",
+    "dense_full_volume_until_roi_qc_pass": true,
+    "do_not_promote_pgt002_001_step10": true,
+    "permanent_exclusions": "validation_002 / batch_001 / smoke / discovery remain excluded",
+    "promoted_gt": "PRODUCTION_GT_PROMOTED_BATCH_002 only",
+    "train_eval_split_of_PGT002": "UNCHANGED"
+  },
+  "purpose": "Replace serial train\u2192diagnose\u2192retrain with a frozen parallel qualification funnel: short-run several substantially different training candidates against the SAME frozen eval/gates, eliminate chance-level configs early, extend only survivors, then (only after affinity PASS) run a predeclared small ROI through affinities\u2192segmentation\u2192QC before any full-volume inference.",
+  "rationale_for_superseding_serial_failure_analysis": "Run #001 already showed step 10 \u2248 step 120 at balanced_acc=0.5 / non-positive margin. Serial arms B\u2013D of the failure-analysis protocol test similar factors more slowly than a predeclared parallel short-run matrix. Construction preflight (former arm A) is retained as Stage 0. Evidence standard is not lowered: GATE_A\u2013E and threshold 0.5 remain identical to AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001.",
+  "schema_version": 1,
+  "stages": [
+    {
+      "automatic": true,
+      "fail": "CONSTRUCTION_DEFECT \u2192 archive; halt funnel; fix under new frozen contract (do not weaken GATE_D)",
+      "human_gate": false,
+      "pass": "CONSTRUCTION_OK \u2192 proceed to S1",
+      "procedure": "Read-only audit: recompute patch/local for all PGT002 edges; assert one-voxel target and channel geometry; confirm scalar affinity index matches supervised voxel.",
+      "stage_id": "S0_CONSTRUCTION_PREFLIGHT"
+    },
+    {
+      "automatic": true,
+      "budget": {
+        "checkpoint_every": 10,
+        "early_eliminate_check_steps": [
+          10,
+          20,
+          30
+        ],
+        "short_steps": 30
+      },
+      "early_eliminate_rule_frozen_before_results": {
+        "at": "every early_eliminate_check_step",
+        "eliminate_if_all_of": [
+          "balanced_edge_accuracy_at_0p5 == 0.5 (within 1e-9)",
+          "margin <= 0"
+        ],
+        "note": "Prospective rule justified by PGT002-001 plateau evidence. Uses frozen eval ONLY under this predeclared eliminate rule\u2014not for inventing new candidates or retuning threshold after seeing scores."
+      },
+      "human_gate": false,
+      "matrix": "AFFINITY_PARALLEL_CANDIDATE_MATRIX_001",
+      "outputs": "Per-candidate receipt + archive FAIL or SURVIVOR_SHORT",
+      "stage_id": "S1_PARALLEL_SHORT_QUALIFICATION"
+    },
+    {
+      "automatic": true,
+      "budget": {
+        "checkpoint_every": 10,
+        "extend_to_steps": 120
+      },
+      "eligibility": "Candidates with status SURVIVOR_SHORT after S1",
+      "human_gate": false,
+      "if_zero_survivors": "Funnel ends QUALIFICATION_FAIL; archive matrix summary; do not invent post-hoc candidates in the same freeze",
+      "stage_id": "S2_EXTEND_SURVIVORS_ONLY"
+    },
+    {
+      "automatic": true,
+      "gates": "Identical to AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001 GATE_A\u2013E",
+      "human_gate": false,
+      "outputs": "AFFINITY_PARALLEL_FUNNEL_001_PASS or per-candidate FAIL archives",
+      "pass_rule": "All GATE_A\u2013E true on selected checkpoint (eval balanced_acc max; ties \u2192 lowest step)",
+      "stage_id": "S3_FROZEN_GATE_A_E"
+    },
+    {
+      "automatic": false,
+      "decision": "Human records which PASS checkpoint is authorized for ROI inference (does not change gates/metrics)",
+      "forbidden": [
+        "Threshold retuning",
+        "Promoting a FAIL candidate",
+        "Skipping ROI for full-volume"
+      ],
+      "human_gate": true,
+      "stage_id": "S4_HUMAN_SCIENTIFIC_GATE_AFFINITY_QUALIFIED",
+      "trigger": "\u22651 candidate PASS under S3"
+    },
+    {
+      "automatic": true,
+      "human_gate": false,
+      "roi": "AFFINITY_ROI_RECONSTRUCTION_GATE_001",
+      "stack": [
+        "dense affinities on predeclared ROI",
+        "segmentation",
+        "agglomeration (if configured)",
+        "segmentation QC gates",
+        "optional synapse/graph stubs remain CLOSED until seg QC PASS"
+      ],
+      "stage_id": "S5_ROI_MINI_CONNECTOME",
+      "status_until_S4": "CLOSED"
+    },
+    {
+      "automatic": false,
+      "human_gate": true,
+      "on_fail": "Archive ROI failure + diagnostics; do not full-volume",
+      "on_pass": "Authorize S7",
+      "stage_id": "S6_HUMAN_SEG_QC_GATE",
+      "trigger": "S5 artifacts ready"
+    },
+    {
+      "automatic": true,
+      "human_gate": false,
+      "note": "Only after ROI segmentation QC PASS",
+      "stage_id": "S7_FULL_VOLUME_INFERENCE",
+      "status_until_S6_pass": "CLOSED"
+    },
+    {
+      "active_learning_signal": "model uncertainty + segmentation disagreement + high-impact topology errors \u2192 human review",
+      "automatic": false,
+      "human_gate": true,
+      "priority": "Topology-affecting errors and model-uncertainty / disagreement cases\u2014not cosmetic voxel fixes or obvious SAME faces",
+      "stage_id": "S8_TARGETED_PROOFREADING_AND_ACTIVE_LABELING"
+    }
+  ],
+  "status": "EXECUTED_AWAITING_HUMAN_S4",
+  "summary_path": "experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/FUNNEL_SUMMARY.json",
+  "supersedes_as_active_gate": "AFFINITY_TRAIN_PGT002_FAILURE_ANALYSIS_001",
+  "training_not_launched_by_this_document": true
+}

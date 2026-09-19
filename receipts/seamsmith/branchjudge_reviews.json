@@ -1,0 +1,254 @@
+[
+  {
+    "a_label": 2,
+    "b_label": 1,
+    "branchjudge": {
+      "conflicting": [
+        "segmentation confidence 0.40",
+        "image agreement 0.09",
+        "low segmentation confidence at junction (0.40)"
+      ],
+      "decision": "REVIEW",
+      "evidence": [
+        {
+          "detail": "endpoints separated by 7.1 voxels",
+          "name": "geometric_continuity",
+          "score": 0.10383464999999995,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "direction agreement 1.00, link align 1.00",
+          "name": "direction_vectors",
+          "score": 0.9992009587217895,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "similar local diameter ratio 1.00",
+          "name": "diameter_consistency",
+          "score": 1.0,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "segmentation confidence 0.40",
+          "name": "segmentation_confidence",
+          "score": 0.597553,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "objects meet near chunk boundary",
+          "name": "boundary_location",
+          "score": 0.3,
+          "supports": "NEUTRAL"
+        },
+        {
+          "detail": "morph score 1.00",
+          "name": "morphological_compatibility",
+          "score": 0.9996004793608948,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "image agreement 0.09",
+          "name": "local_imagery",
+          "score": 0.823238,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "model evidence 0.99",
+          "name": "model_evidence",
+          "score": 0.9821960000000001,
+          "supports": "MERGE"
+        }
+      ],
+      "merge_evidence": 0.7230784553159548,
+      "note": "Scores are evidence weights, not calibrated biological probabilities.",
+      "source_region": {
+        "centroid_a": [
+          0.0,
+          0.0,
+          2.5
+        ],
+        "centroid_b": [
+          0.1,
+          0.0,
+          14.576692999999999
+        ],
+        "endpoint_distance": 7.076692999999999
+      },
+      "split_evidence": 0.2769215446840452,
+      "strongest": [
+        "similar local diameter ratio 1.00",
+        "morph score 1.00",
+        "direction agreement 1.00, link align 1.00"
+      ]
+    },
+    "seam_action": "REVIEW"
+  },
+  {
+    "a_label": 2,
+    "b_label": 3,
+    "branchjudge": {
+      "conflicting": [
+        "endpoints separated by 16.1 voxels",
+        "segmentation confidence 0.40",
+        "low segmentation confidence at junction (0.40)"
+      ],
+      "decision": "REVIEW",
+      "evidence": [
+        {
+          "detail": "endpoints separated by 16.1 voxels",
+          "name": "geometric_continuity",
+          "score": 0.55622575,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "direction agreement 1.00, link align 1.00",
+          "name": "direction_vectors",
+          "score": 0.9992009587217895,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "similar local diameter ratio 1.00",
+          "name": "diameter_consistency",
+          "score": 1.0,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "segmentation confidence 0.40",
+          "name": "segmentation_confidence",
+          "score": 0.5983510000000001,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "objects meet near chunk boundary",
+          "name": "boundary_location",
+          "score": 0.3,
+          "supports": "NEUTRAL"
+        },
+        {
+          "detail": "morph score 1.00",
+          "name": "morphological_compatibility",
+          "score": 0.9996004793608948,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "image agreement 0.50",
+          "name": "local_imagery",
+          "score": 0.0,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "model evidence 1.00",
+          "name": "model_evidence",
+          "score": 1.0,
+          "supports": "MERGE"
+        }
+      ],
+      "merge_evidence": 0.7759573025961908,
+      "note": "Scores are evidence weights, not calibrated biological probabilities.",
+      "source_region": {
+        "centroid_a": [
+          0.0,
+          0.0,
+          2.5
+        ],
+        "centroid_b": [
+          0.1,
+          0.0,
+          23.624515
+        ],
+        "endpoint_distance": 16.124515
+      },
+      "split_evidence": 0.22404269740380933,
+      "strongest": [
+        "similar local diameter ratio 1.00",
+        "model evidence 1.00",
+        "morph score 1.00"
+      ]
+    },
+    "seam_action": "REVIEW"
+  },
+  {
+    "a_label": 1,
+    "b_label": 3,
+    "branchjudge": {
+      "conflicting": [
+        "segmentation confidence 0.39",
+        "image agreement 0.09",
+        "low segmentation confidence at junction (0.39)"
+      ],
+      "decision": "REVIEW",
+      "evidence": [
+        {
+          "detail": "endpoints separated by 8.4 voxels",
+          "name": "geometric_continuity",
+          "score": 0.16935235000000004,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "direction agreement 1.00, link align 1.00",
+          "name": "direction_vectors",
+          "score": 0.9992009587217895,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "similar local diameter ratio 1.00",
+          "name": "diameter_consistency",
+          "score": 1.0,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "segmentation confidence 0.39",
+          "name": "segmentation_confidence",
+          "score": 0.6092150000000001,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "objects meet near chunk boundary",
+          "name": "boundary_location",
+          "score": 0.3,
+          "supports": "NEUTRAL"
+        },
+        {
+          "detail": "morph score 1.00",
+          "name": "morphological_compatibility",
+          "score": 0.9996004793608948,
+          "supports": "MERGE"
+        },
+        {
+          "detail": "image agreement 0.09",
+          "name": "local_imagery",
+          "score": 0.823238,
+          "supports": "SPLIT"
+        },
+        {
+          "detail": "model evidence 0.99",
+          "name": "model_evidence",
+          "score": 0.9887060000000001,
+          "supports": "MERGE"
+        }
+      ],
+      "merge_evidence": 0.7134164054272812,
+      "note": "Scores are evidence weights, not calibrated biological probabilities.",
+      "source_region": {
+        "centroid_a": [
+          0.0,
+          0.0,
+          2.5
+        ],
+        "centroid_b": [
+          0.1,
+          0.0,
+          15.887047000000003
+        ],
+        "endpoint_distance": 8.387047
+      },
+      "split_evidence": 0.2865835945727187,
+      "strongest": [
+        "similar local diameter ratio 1.00",
+        "morph score 1.00",
+        "direction agreement 1.00, link align 1.00"
+      ]
+    },
+    "seam_action": "REVIEW"
+  }
+]

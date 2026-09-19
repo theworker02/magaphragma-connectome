@@ -1,0 +1,171 @@
+{
+  "class_counts": {
+    "HIGH_COMPLEXITY": 8
+  },
+  "n_tiles": 8,
+  "tile_zyx": [
+    16,
+    16,
+    16
+  ],
+  "tiles": [
+    {
+      "artifact_score": 0.086145,
+      "boundary_complexity": 0.268589,
+      "box": {
+        "x0": 16,
+        "x1": 32,
+        "y0": 0,
+        "y1": 16,
+        "z0": 16,
+        "z1": 32
+      },
+      "information_density": 7.168115,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.648453,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z001-Y000-X001",
+      "tissue_probability": 0.688965,
+      "uncertainty": 0.432932
+    },
+    {
+      "artifact_score": 0.078528,
+      "boundary_complexity": 0.269101,
+      "box": {
+        "x0": 0,
+        "x1": 16,
+        "y0": 0,
+        "y1": 16,
+        "z0": 16,
+        "z1": 32
+      },
+      "information_density": 7.171918,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.646801,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z001-Y000-X000",
+      "tissue_probability": 0.672852,
+      "uncertainty": 0.432932
+    },
+    {
+      "artifact_score": 0.07948,
+      "boundary_complexity": 0.267237,
+      "box": {
+        "x0": 16,
+        "x1": 32,
+        "y0": 0,
+        "y1": 16,
+        "z0": 0,
+        "z1": 16
+      },
+      "information_density": 7.16895,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.622505,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z000-Y000-X001",
+      "tissue_probability": 0.672119,
+      "uncertainty": 0.353759
+    },
+    {
+      "artifact_score": 0.083105,
+      "boundary_complexity": 0.269369,
+      "box": {
+        "x0": 16,
+        "x1": 32,
+        "y0": 16,
+        "y1": 32,
+        "z0": 16,
+        "z1": 32
+      },
+      "information_density": 7.175117,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.572569,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z001-Y001-X001",
+      "tissue_probability": 0.685547,
+      "uncertainty": 0.181188
+    },
+    {
+      "artifact_score": 0.075989,
+      "boundary_complexity": 0.269789,
+      "box": {
+        "x0": 16,
+        "x1": 32,
+        "y0": 16,
+        "y1": 32,
+        "z0": 0,
+        "z1": 16
+      },
+      "information_density": 7.17762,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.57099,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z000-Y001-X001",
+      "tissue_probability": 0.691406,
+      "uncertainty": 0.181188
+    },
+    {
+      "artifact_score": 0.080676,
+      "boundary_complexity": 0.265581,
+      "box": {
+        "x0": 0,
+        "x1": 16,
+        "y0": 0,
+        "y1": 16,
+        "z0": 0,
+        "z1": 16
+      },
+      "information_density": 7.167905,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.570357,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z000-Y000-X000",
+      "tissue_probability": 0.689697,
+      "uncertainty": 0.181188
+    },
+    {
+      "artifact_score": 0.080664,
+      "boundary_complexity": 0.261876,
+      "box": {
+        "x0": 0,
+        "x1": 16,
+        "y0": 16,
+        "y1": 32,
+        "z0": 0,
+        "z1": 16
+      },
+      "information_density": 7.173237,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.568938,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z000-Y001-X000",
+      "tissue_probability": 0.697998,
+      "uncertainty": 0.181188
+    },
+    {
+      "artifact_score": 0.077283,
+      "boundary_complexity": 0.264113,
+      "box": {
+        "x0": 0,
+        "x1": 16,
+        "y0": 16,
+        "y1": 32,
+        "z0": 16,
+        "z1": 32
+      },
+      "information_density": 7.168241,
+      "prior_coverage": 0.0,
+      "recommend_priority": 0.568925,
+      "region_class": "HIGH_COMPLEXITY",
+      "tile_key": "T-Z001-Y001-X000",
+      "tissue_probability": 0.691895,
+      "uncertainty": 0.181188
+    }
+  ],
+  "tool_version": "0.1.0",
+  "volume_shape": [
+    32,
+    32,
+    32
+  ]
+}

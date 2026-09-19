@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "id": "AFFINITY_SPEC002_VALIDATION_001-MASTER-QUEUE",
+  "validation_batch_id": "AFFINITY_SPEC002_VALIDATION_001",
+  "created_at": "2026-09-18T01:38:54.315068Z",
+  "status": "EXPERT_EQUIVARIANT_VALIDATION_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "expected_n_decisions": 36,
+  "questions": [
+    {
+      "opaque_decision_id": "MV-AS2-DB736BF3A650",
+      "presentation_order_index": 0,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        59,
+        26,
+        92
+      ],
+      "pair_right_zyx": [
+        59,
+        27,
+        92
+      ],
+      "crop_id": "MV-AS2-VAL-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-025FD9E703DC",
+      "presentation_order_index": 1,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        47,
+        44,
+        3
+      ],
+      "crop_id": "MV-AS2-VAL-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-0747A4D01EF4",
+      "presentation_order_index": 2,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        46,
+        44,
+        4
+      ],
+      "crop_id": "MV-AS2-VAL-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-EFDB23691282",
+      "presentation_order_index": 3,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        6,
+        117
+      ],
+      "pair_right_zyx": [
+        33,
+        6,
+        118
+      ],
+      "crop_id": "MV-AS2-VAL-12",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-12\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-98AB6A0FDA93",
+      "presentation_order_index": 4,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        3,
+        75
+      ],
+      "pair_right_zyx": [
+        24,
+        3,
+        75
+      ],
+      "crop_id": "MV-AS2-VAL-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-E2DFFF28C354",
+      "presentation_order_index": 5,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        59,
+        26,
+        92
+      ],
+      "pair_right_zyx": [
+        59,
+        26,
+        93
+      ],
+      "crop_id": "MV-AS2-VAL-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-675B3EB10F63",
+      "presentation_order_index": 6,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        35,
+        118
+      ],
+      "pair_right_zyx": [
+        3,
+        35,
+        119
+      ],
+      "crop_id": "MV-AS2-VAL-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-07\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-AD2AC52E85E1",
+      "presentation_order_index": 7,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        83,
+        50
+      ],
+      "pair_right_zyx": [
+        13,
+        84,
+        50
+      ],
+      "crop_id": "MV-AS2-VAL-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-1DEE72C69446",
+      "presentation_order_index": 8,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        52,
+        33,
+        100
+      ],
+      "pair_right_zyx": [
+        53,
+        33,
+        100
+      ],
+      "crop_id": "MV-AS2-VAL-09",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-09\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-28780B3574D6",
+      "presentation_order_index": 9,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        6,
+        117
+      ],
+      "pair_right_zyx": [
+        33,
+        7,
+        117
+      ],
+      "crop_id": "MV-AS2-VAL-12",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-12\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-DBD677A38153",
+      "presentation_order_index": 10,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        26,
+        35,
+        117
+      ],
+      "pair_right_zyx": [
+        27,
+        35,
+        117
+      ],
+      "crop_id": "MV-AS2-VAL-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-7DFB5587E1C5",
+      "presentation_order_index": 11,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        71,
+        105
+      ],
+      "pair_right_zyx": [
+        33,
+        72,
+        105
+      ],
+      "crop_id": "MV-AS2-VAL-11",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-11\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-E00EAF7EDEE2",
+      "presentation_order_index": 12,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        90,
+        111
+      ],
+      "pair_right_zyx": [
+        23,
+        91,
+        111
+      ],
+      "crop_id": "MV-AS2-VAL-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-551CD4881E6E",
+      "presentation_order_index": 13,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        52,
+        33,
+        100
+      ],
+      "pair_right_zyx": [
+        52,
+        34,
+        100
+      ],
+      "crop_id": "MV-AS2-VAL-09",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-09\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-7697649F146A",
+      "presentation_order_index": 14,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        35,
+        118
+      ],
+      "pair_right_zyx": [
+        3,
+        36,
+        118
+      ],
+      "crop_id": "MV-AS2-VAL-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-07\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-8DBB090BA47C",
+      "presentation_order_index": 15,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        17,
+        122
+      ],
+      "pair_right_zyx": [
+        33,
+        17,
+        123
+      ],
+      "crop_id": "MV-AS2-VAL-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-D8CEF690A2AF",
+      "presentation_order_index": 16,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        3,
+        75
+      ],
+      "pair_right_zyx": [
+        23,
+        3,
+        76
+      ],
+      "crop_id": "MV-AS2-VAL-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-5B89F2275A5F",
+      "presentation_order_index": 17,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        26,
+        35,
+        117
+      ],
+      "pair_right_zyx": [
+        26,
+        36,
+        117
+      ],
+      "crop_id": "MV-AS2-VAL-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-9794FCDF16DE",
+      "presentation_order_index": 18,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        90,
+        111
+      ],
+      "pair_right_zyx": [
+        24,
+        90,
+        111
+      ],
+      "crop_id": "MV-AS2-VAL-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-D5FEFF79F4FC",
+      "presentation_order_index": 19,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        46,
+        44,
+        3
+      ],
+      "pair_right_zyx": [
+        46,
+        45,
+        3
+      ],
+      "crop_id": "MV-AS2-VAL-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-552503A3CB89",
+      "presentation_order_index": 20,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        26,
+        35,
+        117
+      ],
+      "pair_right_zyx": [
+        26,
+        35,
+        118
+      ],
+      "crop_id": "MV-AS2-VAL-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-63C8E7EB9FC2",
+      "presentation_order_index": 21,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        6,
+        117
+      ],
+      "pair_right_zyx": [
+        34,
+        6,
+        117
+      ],
+      "crop_id": "MV-AS2-VAL-12",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-12\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-FAF1E277891A",
+      "presentation_order_index": 22,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        83,
+        50
+      ],
+      "pair_right_zyx": [
+        13,
+        83,
+        51
+      ],
+      "crop_id": "MV-AS2-VAL-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-CC394BC59101",
+      "presentation_order_index": 23,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        25,
+        75
+      ],
+      "pair_right_zyx": [
+        44,
+        25,
+        75
+      ],
+      "crop_id": "MV-AS2-VAL-10",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-10\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-40F1F16938C4",
+      "presentation_order_index": 24,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        3,
+        75
+      ],
+      "pair_right_zyx": [
+        23,
+        4,
+        75
+      ],
+      "crop_id": "MV-AS2-VAL-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-3944E0D75BE9",
+      "presentation_order_index": 25,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        71,
+        105
+      ],
+      "pair_right_zyx": [
+        34,
+        71,
+        105
+      ],
+      "crop_id": "MV-AS2-VAL-11",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-11\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-38E8CC104439",
+      "presentation_order_index": 26,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        52,
+        33,
+        100
+      ],
+      "pair_right_zyx": [
+        52,
+        33,
+        101
+      ],
+      "crop_id": "MV-AS2-VAL-09",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-09\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-6DAC3CD4D1A5",
+      "presentation_order_index": 27,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        17,
+        122
+      ],
+      "pair_right_zyx": [
+        33,
+        18,
+        122
+      ],
+      "crop_id": "MV-AS2-VAL-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-87DD5A875721",
+      "presentation_order_index": 28,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        23,
+        90,
+        111
+      ],
+      "pair_right_zyx": [
+        23,
+        90,
+        112
+      ],
+      "crop_id": "MV-AS2-VAL-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-454BE5106634",
+      "presentation_order_index": 29,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        59,
+        26,
+        92
+      ],
+      "pair_right_zyx": [
+        60,
+        26,
+        92
+      ],
+      "crop_id": "MV-AS2-VAL-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-D9FFDF9A9CFB",
+      "presentation_order_index": 30,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        25,
+        75
+      ],
+      "pair_right_zyx": [
+        43,
+        26,
+        75
+      ],
+      "crop_id": "MV-AS2-VAL-10",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-10\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-467FD807C273",
+      "presentation_order_index": 31,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        83,
+        50
+      ],
+      "pair_right_zyx": [
+        14,
+        83,
+        50
+      ],
+      "crop_id": "MV-AS2-VAL-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-EFAFCE6AE819",
+      "presentation_order_index": 32,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        35,
+        118
+      ],
+      "pair_right_zyx": [
+        4,
+        35,
+        118
+      ],
+      "crop_id": "MV-AS2-VAL-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-07\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-5098E19F63CB",
+      "presentation_order_index": 33,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        25,
+        75
+      ],
+      "pair_right_zyx": [
+        43,
+        25,
+        76
+      ],
+      "crop_id": "MV-AS2-VAL-10",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-10\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-9ED68059AAA5",
+      "presentation_order_index": 34,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        17,
+        122
+      ],
+      "pair_right_zyx": [
+        34,
+        17,
+        122
+      ],
+      "crop_id": "MV-AS2-VAL-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-AS2-7F1EBA36FBF8",
+      "presentation_order_index": 35,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        33,
+        71,
+        105
+      ],
+      "pair_right_zyx": [
+        33,
+        71,
+        106
+      ],
+      "crop_id": "MV-AS2-VAL-11",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-11\\workspace.json",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "All 36 SPEC002 validation decisions in deterministic blinded order across 12 locations. Not training. Not G3-009."
+}

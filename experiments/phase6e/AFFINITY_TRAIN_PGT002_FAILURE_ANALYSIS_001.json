@@ -1,0 +1,119 @@
+{
+  "id": "AFFINITY_TRAIN_PGT002_FAILURE_ANALYSIS_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T03:10:00Z",
+  "status": "SUPERSEDED_AS_ACTIVE_GATE_BY_AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "superseded_by": "AFFINITY_PARALLEL_QUALIFICATION_FUNNEL_001",
+  "supersession_note": "Construction audit retained as funnel Stage S0. Parallel short-run matrix tests F2/F4 factors faster than serial arms B–D without lowering GATE_A–E.",
+  "frozen_before_seeing_diagnostic_results": true,
+  "parent_failed_run": "AFFINITY_TRAIN_PGT002_001_FAIL_PERMANENT",
+  "parent_receipt": "experiments/phase6e/AFFINITY-TRAIN-PGT002-001/AFFINITY_TRAIN_PGT002_001_RECEIPT.json",
+  "purpose": "Discriminate among mutually exclusive-ish failure classes for why the first controlled affinity run plateaued at balanced_acc=0.5 with non-positive margin—without changing GATE_D, without promoting step 10, and without launching dense segmentation.",
+  "non_goals": [
+    "Passing GATE_D by threshold retuning",
+    "Claiming a trained production affinity model",
+    "Dense inference",
+    "Changing several knobs at once in a single uncontrolled retrain"
+  ],
+  "preserved_invariants": {
+    "GATE_D_positive_margin": "UNCHANGED",
+    "decision_threshold_0p5": "UNCHANGED",
+    "train_eval_split_of_PGT002": "UNCHANGED for any diagnostic that reuses PGT002 edges",
+    "permanent_exclusions": "validation_002 / batch_001 / smoke / discovery remain excluded from training"
+  },
+  "failure_classes_under_test": [
+    {
+      "id": "F1_INSUFFICIENT_PRODUCTION_SUPERVISION",
+      "claim": "18 train / 6 eval edges are too few or too weakly informative for MNet to learn SAME>DIFFERENT separation under this protocol."
+    },
+    {
+      "id": "F2_OPTIMIZATION_OR_CONFIG",
+      "claim": "Learning signal exists but Adam/LR/loss weighting/step budget/init caused a plateau unrelated to label insufficiency."
+    },
+    {
+      "id": "F3_INPUT_OR_TARGET_CONSTRUCTION",
+      "claim": "Bug or mismatch in patching, channel indexing, target encoding (SAME=1/DIFF=0), or raw normalization prevents the labeled face from supervising the predicted affinity channel."
+    },
+    {
+      "id": "F4_SPATIAL_SCALE_SIGNAL",
+      "claim": "The labeled one-voxel face is not recoverable from the (20,128,128) patch / network receptive field as currently used."
+    },
+    {
+      "id": "F5_ARCHITECTURE_FEATURE_EXTRACTION",
+      "claim": "MNet (as initialized from FIB-SEM-003) does not extract EM features that distinguish these faces even when construction and optimization are sound."
+    }
+  ],
+  "diagnostic_arms": [
+    {
+      "arm_id": "A_CONSTRUCTION_AUDIT",
+      "tests": "F3",
+      "changes_exactly_one_thing": "none (read-only audit)",
+      "procedure": [
+        "For every train and eval edge in the frozen supervision manifest, recompute patch origin and local (c,z,y,x).",
+        "Assert mask/target write hits exactly one voxel; assert pair_right = pair_left + e_channel.",
+        "Load checkpoint-step10 and confirm the scalar read for eval uses the same (c,z,y,x) as the supervised voxel.",
+        "Report any mismatch as CONSTRUCTION_DEFECT; else CONSTRUCTION_OK."
+      ],
+      "predeclared_outcomes": {
+        "CONSTRUCTION_DEFECT": "Supports F3; pause other arms until construction is fixed under a new frozen contract (do not weaken GATE_D).",
+        "CONSTRUCTION_OK": "F3 not supported by this audit; proceed to arm B."
+      }
+    },
+    {
+      "arm_id": "B_LINEAR_PROBE_ON_FROZEN_FEATURES",
+      "tests": "F5 primarily; also informs F1/F4",
+      "changes_exactly_one_thing": "Replace MNet head with a frozen-backbone linear probe on the supervised voxel feature (no dense train of MNet)",
+      "procedure": [
+        "Freeze MNet backbone from init checkpoint-step2250 (and separately from failed step10) without updating weights.",
+        "Extract feature vector at the supervised local voxel (or a fixed pooled descriptor if voxel feature unavailable—document which).",
+        "Fit a linear classifier / logistic regressor ONLY on train edges; score ONLY on eval edges.",
+        "Compute margin in probability or logit space analogous to GATE_D (mean SAME − mean DIFFERENT on eval)."
+      ],
+      "predeclared_outcomes": {
+        "PROBE_MARGIN_POSITIVE_AND_BALANCED_GT_CONSTANT": "Features contain separable signal → favors F2 (optimization/config of full train) over F5; F1 less likely as sole cause.",
+        "PROBE_NO_SEPARATION": "Favors F1 and/or F4 and/or F5; proceed to arm C to separate scale vs architecture vs label count.",
+        "PROBE_SEPARATES_AT_INIT_BUT_NOT_AT_STEP10": "Training may have degraded features → favors F2."
+      }
+    },
+    {
+      "arm_id": "C_SCALE_ABLATION_READ_ONLY_THEN_ONE_FACTOR",
+      "tests": "F4",
+      "changes_exactly_one_thing": "Spatial context provided to the probe/model (patch size or local neighborhood radius), holding labels/split/threshold/GATE_D fixed",
+      "procedure": [
+        "Using the same edges and split, compare linear-probe (or single frozen-config train ONLY if arm B supports F2) at the current patch vs a smaller local crop centered on the face (e.g. 20³ or 32³) vs a larger context if memory allows.",
+        "Do not change GATE_D or threshold.",
+        "Execute at most one trainable follow-up config if and only if arm A=OK and arm B indicates optimization issues—not before."
+      ],
+      "predeclared_outcomes": {
+        "SMALLER_CONTEXT_HELPS": "Supports F4 (current scale dilutes signal).",
+        "LARGER_CONTEXT_HELPS": "Supports F4 (need more context).",
+        "NO_SCALE_HELPS": "F4 not supported; remaining mass on F1/F5/F2."
+      }
+    },
+    {
+      "arm_id": "D_SUPERVISION_SUFFICIENCY_BOUND",
+      "tests": "F1",
+      "changes_exactly_one_thing": "Amount of supervision via nested train subsets (not new labels yet)",
+      "procedure": [
+        "With construction OK and using the frozen eval set only for scoring, fit the arm-B probe on nested train subsets of size 6, 12, 18 edges (deterministic hash order).",
+        "Plot eval margin vs subset size.",
+        "If margin is flat near ≤0 across all sizes, insufficient count alone is unlikely to be the only issue in-probe; if margin rises with size toward >0, supports F1 as addressable by more production GT (new batch under existing production protocol—not validation_002)."
+      ],
+      "predeclared_outcomes": {
+        "MARGIN_INCREASES_WITH_N": "Supports F1 → next production action is more independent production GT, not Gate D changes.",
+        "MARGIN_FLAT": "F1 not supported as sole cause; prefer F4/F5/F2."
+      }
+    }
+  ],
+  "execution_order": ["A_CONSTRUCTION_AUDIT", "B_LINEAR_PROBE_ON_FROZEN_FEATURES", "C_SCALE_ABLATION_READ_ONLY_THEN_ONE_FACTOR", "D_SUPERVISION_SUFFICIENCY_BOUND"],
+  "stop_rules": [
+    "Stop and repair under a new frozen contract if A finds CONSTRUCTION_DEFECT.",
+    "Do not run dense segmentation from any diagnostic artifact.",
+    "Do not declare AFFINITY_TRAIN_*_PASS from probe results alone.",
+    "A future full retrain requires a new experiment contract citing which failure class was identified."
+  ],
+  "deliverables": [
+    "experiments/phase6e/AFFINITY_TRAIN_PGT002_FAILURE_ANALYSIS_001_RESULTS.json",
+    "Per-arm receipts under experiments/phase6e/AFFINITY-TRAIN-PGT002-FAILANAL-001/"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "id": "MV-REG-PHASE2-001",
+  "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+  "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+  "source_project": "Flatiron public DVID repository wasp5-yuri",
+  "source_node": "aa49d16e88424cdbae89f4b8ced2a49b",
+  "source_instance": "five_yuri_4contrast",
+  "source_raw_url": "https://waspem-dvid2.flatironinstitute.org/api/node/aa49d16e88424cdbae89f4b8ced2a49b/five_yuri_4contrast/raw/0_1_2/",
+  "source_bounds_xyz": {"x": [4000, 4512], "y": [6000, 6512], "z": [6000, 6064]},
+  "source_canary_xyz": [4000, 6000, 6000],
+  "source_dimensions_xyz": [16648, 13544, 15401],
+  "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+  "origin_nm_xyz": [0.0, 0.0, 0.0],
+  "axis_order": "xyz",
+  "array_order": "zyx",
+  "chunk_size_xyz": [64, 64, 64],
+  "orientation": "XYZ",
+  "license_status": "UNVERIFIED_FOR_REDISTRIBUTION",
+  "local_cache_only": true,
+  "selection_rationale": "Public Flatiron DVID raw endpoint, centered on an independently verified readable block; bounded 512x512x64 subvolume for Phase 2."
+}

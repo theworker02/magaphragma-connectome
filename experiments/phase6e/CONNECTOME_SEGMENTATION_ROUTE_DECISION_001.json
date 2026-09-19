@@ -1,0 +1,182 @@
+{
+  "id": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "schema_version": 1,
+  "status": "DECISION_LOCKED_NO_TRAINING",
+  "decision_state": "NO_VALID_SEGMENTATION_ROUTE_YET",
+  "scientific_goal": "real EM → validated segmentation → reconstructed biological processes → synapse/connectivity extraction → QC/proofreading → real microscale connectome",
+  "explicitly_not_optimizing_for": "connectome-shaped output without validated segmentation",
+  "g3_supervision_collection": "CLOSED",
+  "evidence_basis": {
+    "008_freeze": "experiments/phase6e/G3_008_COMPLETE_REVIEW_FREEZE_001.json",
+    "008_completion_audit": "experiments/phase6e/G3_AXNEU4_008_COMPLETION_AUDIT.json",
+    "semantics_audit": "experiments/phase6e/G3_AFFINITY_TARGET_SEMANTICS_AUDIT_001.json",
+    "presentation_forensic": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_FORENSIC_001.json",
+    "geometry_audit": "experiments/phase6e/MV-G3-AXIS-SEMANTICS-GEOMETRY-AUDIT-001.json",
+    "context_comparison": "experiments/phase6e/MV-G3-AXIS-CONTEXT-COMPARISON-001.json",
+    "gradient_tail": "experiments/phase6e/MV-G3-AXIS-GRADIENT-TAIL-AUDIT-001.json",
+    "identifiability": [
+      "experiments/phase6e/MV-G3-IDENTIFIABILITY-AUDIT-001.json",
+      "experiments/phase6e/MV-G3-IDENTIFIABILITY-AUDIT-002.json"
+    ],
+    "target_spec_002": "experiments/phase6e/G3_AFFINITY_TARGET_SPEC_002.json",
+    "coordinate_frames": "registration/coordinate_frames.json",
+    "independent_model_audit": "research/INDEPENDENT_NEURONAL_EM_MODEL_AUDIT_001.json"
+  },
+  "phase_a_failure_mechanism": {
+    "established_defect": "PRESENTATION_NOT_PERMUTATION_EQUIVARIANT",
+    "central_edge_geometry": "PASS (equivariant +1 pair; prior 4/4 tests)",
+    "presentation_failures": [
+      "displayed_plane_equivalence (XY co-marks Y/X neighbors but not Z)",
+      "camera_view_equivalence (napari focus on A; Z neighbor off Z-slice)",
+      "marker_overlay_equivalence on primary XY panel",
+      "context_window axis symmetry of joint visibility on XY",
+      "axis identity text leakage + fixed Z→Y→X order"
+    ],
+    "complete_cause_of_12_of_12_human_labels": false,
+    "still_open": [
+      "presentation_ui_semantic_artifact as sufficient cause",
+      "annotation_target_definition at one-voxel adjacency",
+      "raw_image_membrane_Z_milling_phenomenon",
+      "genuine_biological_orientation_effect"
+    ],
+    "ruled_out": [
+      "central_coordinate_pair_bug",
+      "voxel_size_anisotropy (8nm isotropic)",
+      "argmax_gradient_axis_assignment confound (ruled out by -008 paired design)"
+    ]
+  },
+  "phase_c_affinity_pipeline_verdict": "AFFINITY_PIPELINE_REPAIRABLE_WITH_PRESENTATION_FIX",
+  "phase_c_notes": {
+    "meaning": "The mathematical affinity architecture A(v,a)=1[S(v)=S(v+e_a)≠0] survives. The failed G3 human procedure does not. A presentation-equivariant annotation path could in principle collect valid estimates of A, but that does NOT by itself open a connectome route without either (i) proving corrected labels are non-collinear / identifiable or (ii) obtaining instance GT S on target crops.",
+    "exact_presentation_fix_if_pursued": [
+      "Show A and B co-marked on every docked plane that contains both voxels (including a mid-face plane for Z)",
+      "Park napari dims on the face midpoint or provide linked A/B Z slices for Z-edges",
+      "Use global (or matched) intensity normalization across docked planes",
+      "Axis-anonymous UI text during decision (reveal axis only after commit) OR randomized axis order",
+      "Pass synthetic six-permutation presentation suite before any human labels"
+    ],
+    "smallest_independent_validation_experiment": {
+      "id": "PROPOSED_G3_PRESENTATION_EQUIVARIANT_SMOKE_NOT_LAUNCHED",
+      "n": "≤4 paired locations on held-out survey crops unused by -008, or synthetic-to-human transfer check",
+      "predeclared_success": "Labels are not a deterministic function of axis identity; presentation suite green",
+      "predeclared_failure": "Orientation-collinear pattern persists under equivariant UI → escalate definition/image/biology hypotheses",
+      "auto_launch": false
+    },
+    "why_not_derive_on_dvid_now": "No validated instance segmentation S exists on SURVEY/G3-008 DVID crops; GTVOL plans remain UNANNOTATED (label_path null)."
+  },
+  "phase_d_independent_segmentation_inventory": {
+    "dvid_native_instance_gt": false,
+    "mechanical_affinity_derivation_on_target": false,
+    "candidates": [
+      {
+        "name": "SegNeuron",
+        "architecture": "MNet",
+        "output": "3-ch ZYX affinity (+ aux FG)",
+        "weights_local": "documented SegNeuronModel.ckpt",
+        "domain": "EMNeuron / ~5–10nm; 8nm in-range",
+        "runnable": true,
+        "evaluable_without_g3": true,
+        "production_on_dvid": "machine-only without target GT; not validated as Megaphragma truth"
+      },
+      {
+        "name": "PyTC BANIS+ NISB",
+        "architecture": "MedNeXt-L/k3",
+        "output": "6-ch affinity",
+        "weights_local": true,
+        "domain": "NISB 9×9×20 nm",
+        "runnable": "ROCm smoke ran",
+        "evaluable_without_g3": true,
+        "production_on_dvid": "REJECTED on DVID transfer smoke"
+      },
+      {
+        "name": "Bootstrapper FIB capsule",
+        "output": "9-ch 3D affinity corrector",
+        "weights_local": false,
+        "production_on_dvid": "REJECTED — LFS stubs / missing weights / requires upstream aff"
+      },
+      {
+        "name": "Funke LSD",
+        "weights_local": false,
+        "production_on_dvid": "REJECTED — no packaged 3D pretrained ckpt"
+      },
+      {
+        "name": "MOSS MtLSD",
+        "output": "2D Y/X aff → boundary",
+        "weights_local": true,
+        "production_on_dvid": "REJECTED — not true 3D; weight license unknown"
+      },
+      {
+        "name": "Google FFN FIB25",
+        "architecture": "ConvStack3D FFN",
+        "output": "instance",
+        "weights_local": "partial/claimed",
+        "domain": "FIB-25 8³ nm",
+        "runnable": "env import only; inference not executed",
+        "evaluable_without_g3": "would need instance GT or CATMAID (reg UNKNOWN/blocked)",
+        "production_on_dvid": "BLOCKED — license + execution + registration"
+      },
+      {
+        "name": "Cellpose cpdino-vitb",
+        "output": "flows/cellprob (not neuronal affinity)",
+        "weights_local": true,
+        "production_on_dvid": "representation probe only; not a connectome segmenter"
+      },
+      {
+        "name": "CREMI boundary TF toy",
+        "domain": "CREMI 40×4×4",
+        "production_on_dvid": "REJECTED for production"
+      },
+      {
+        "name": "EMNeuron MaskIns / CREMI neuron_ids",
+        "role": "external instance GT for mechanical affinities and held-out metrics",
+        "match_dvid_survey": false,
+        "note": "Valid off-target GT; cannot certify Megaphragma DVID segmentation"
+      }
+    ]
+  },
+  "why_not_other_decision_states": {
+    "REPAIR_AFFINITY_TARGET": "Eligible as a *next experiment track* (presentation fix + smoke) but not the current connectome-route state: even a repaired human affinity procedure still lacks dense validated S and does not unblock process reconstruction alone.",
+    "DERIVE_AFFINITIES_FROM_VALID_SEGMENTATION_GT": "Impossible on target DVID crops today — no valid S.",
+    "EVALUATE_INDEPENDENT_PRETRAINED_SEGMENTATION": "Useful as off-target honesty checks (EMNeuron/CREMI) but no candidate is currently a validated DVID production segmenter; BANIS rejected; FFN blocked."
+  },
+  "recommended_next_experiment_only": {
+    "title": "Presentation-equivariant affinity elicitation smoke (NOT a new -009 training cohort)",
+    "purpose": "Discriminate presentation artifact vs remaining definition/image/biology hypotheses under SPEC_002",
+    "do_not": [
+      "train on G3-008 labels",
+      "create -009",
+      "rebalance cohorts",
+      "dense segmentation",
+      "auto-launch without explicit human approval"
+    ],
+    "gates_before_any_training": [
+      "synthetic six-permutation presentation suite green",
+      "≤4-location human smoke not orientation-collinear by axis identity",
+      "written decision to reopen annotation OR pivot to acquiring instance S on DVID"
+    ]
+  },
+  "pipeline_stage_board": {
+    "EM_voxels": "AVAILABLE (DVID survey raw 8nm)",
+    "biological_affinities": "BLOCKED (operational target invalid; SPEC_002 defined but unrealized on target)",
+    "segmentation_agglomeration": "BLOCKED (no validated affinities or instance S on target)",
+    "process_neuron_reconstruction": "BLOCKED",
+    "connectivity_extraction": "BLOCKED (also CATMAID↔DVID transform UNKNOWN)",
+    "graph_QC_connectome": "BLOCKED",
+    "unblocked_now": [
+      "target specification (SPEC_002)",
+      "presentation forensic / repair design",
+      "off-target external GT evaluation harnesses (EMNeuron/CREMI) that do not use G3 labels",
+      "documentation of closed G3 supervision"
+    ]
+  },
+  "end_report": {
+    "exact_cause_of_g3_target_failure": "Operational target invalid because collected labels are orientation-collinear (12/12) under a presentation path proven not permutation-equivariant. Exact sufficient cause among UI vs definition vs Z-image vs biology is NOT fully established; UI non-equivariance is the primary identified defect.",
+    "affinity_architecture_survives": true,
+    "valid_ground_truth_segmentation_on_target": false,
+    "viable_independent_segmentation_models_for_dvid_production": [],
+    "viable_off_target_eval_resources": ["EMNeuron MaskIns", "CREMI neuron_ids", "SegNeuron on EMNeuron"],
+    "recommended_next_experiment": "Presentation-equivariant smoke under SPEC_002 (not launched)",
+    "downstream_unblocked": ["SPEC_002", "forensic presentation repair design", "off-target non-G3 eval"],
+    "downstream_still_blocked": ["target affinities", "segmentation", "reconstruction", "synapses", "connectome"]
+  }
+}

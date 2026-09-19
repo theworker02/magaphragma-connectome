@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\gaphound\\latest_scan.json",
+  "kind": "json",
+  "issues": [],
+  "meta": {
+    "sha256": "80218e3de8975e5190e840d945c114907547b9bc8db4e6ef8321ca709f5f46f3",
+    "size_bytes": 233,
+    "keys": [
+      "counts",
+      "coverage",
+      "highest_priority",
+      "missing_frac",
+      "regions",
+      "shape_zyx",
+      "tile_zyx",
+      "validated"
+    ]
+  }
+}

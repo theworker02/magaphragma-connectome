@@ -1,0 +1,63 @@
+{
+  "created_at": "2026-09-18T06:09:09.878346Z",
+  "device": "AMD  Radeon RX 7800 XT",
+  "id": "AFFINITY_S7_INFER_BACKEND_BENCH_001",
+  "results": [
+    {
+      "backend": "eager",
+      "backend_meta": {
+        "applied": "eager",
+        "detail": null,
+        "requested": "eager"
+      },
+      "batch": 16,
+      "ms_per_tile": 53.540105084636025,
+      "ok": true,
+      "seconds": 41.11880070500047,
+      "steps": 48,
+      "tiles": 768,
+      "tiles_per_sec": 18.67758754711451,
+      "vram_peak_bytes": 3047634432,
+      "warmup": 6
+    },
+    {
+      "backend": "compile",
+      "backend_meta": {
+        "applied": "compile",
+        "detail": "torch.compile(mode=default)",
+        "requested": "compile"
+      },
+      "batch": 16,
+      "ms_per_tile": 48.462048213541685,
+      "ok": true,
+      "seconds": 37.21885302800001,
+      "steps": 48,
+      "tiles": 768,
+      "tiles_per_sec": 20.634703584826433,
+      "vram_peak_bytes": 1566783488,
+      "warmup": 6
+    },
+    {
+      "backend": "migraphx",
+      "backend_meta": {
+        "applied": "eager",
+        "detail": "torch_migraphx import failed: Unable to import migraphx. Please ensure MIGraphX is installed.\nMIGraphX can be installed using standard linux package managers (eg. `apt install migraphx`),\nor refer to https://github.com/ROCm/AMDMIGraphX for advanced use cases.\nIf using a source based build, make sure to add the source build path to PYTHONPATH",
+        "requested": "migraphx"
+      },
+      "batch": 16,
+      "ms_per_tile": 53.61272739973918,
+      "ok": true,
+      "seconds": 41.17457464299969,
+      "steps": 48,
+      "tiles": 768,
+      "tiles_per_sec": 18.652287404517775,
+      "vram_peak_bytes": 3220167168,
+      "warmup": 6
+    }
+  ],
+  "speedup_vs_eager": 1.1047841983219229,
+  "torch": "2.9.1+rocm7.2.1.gitff65f5bc",
+  "torch_hip": "7.2.53211-e1a6bc5663",
+  "winner": "compile",
+  "winner_tiles_per_sec": 20.634703584826433
+}

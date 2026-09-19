@@ -1,0 +1,41 @@
+{
+  "biological_registry": {
+    "counts": {
+      "annotations": 0,
+      "connections": 0,
+      "neurons": 0,
+      "segments": 0,
+      "synapses": 0,
+      "volumes": 0
+    },
+    "dataset_state": "EMPTY",
+    "message": "No biological reconstruction release has been published.",
+    "scientific_release": null
+  },
+  "interpretation": "Counts are not coverage measures. Absence of records is represented as an empty dataset, not missing values or synthetic samples.",
+  "organism": "Megaphragma viggianii",
+  "project": "Vigilia Connectome",
+  "registry_sha256": "af73d7ead5b7c1cca14c933c247500c0fa3f269c14e85faa50fa1dfa2e218588",
+  "reproduction": {
+    "command": "vigilia verify && vigilia provenance-report",
+    "input_registry": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets\\registry.json"
+  },
+  "schema_version": "1.0",
+  "source_audit_evidence_count": 1,
+  "sources": [
+    {
+      "access_status": "PUBLIC_REFERENCE_ENDPOINT_VERIFIED",
+      "citation": "Chua NJ et al. (2023), DOI:10.1016/j.cub.2023.09.021",
+      "doi": "10.1016/j.cub.2023.09.021",
+      "id": "MV-SRC-LAMINA-CATMAID",
+      "license_status": "UNVERIFIED_FOR_DATA_EXPORT"
+    },
+    {
+      "access_status": "PUBLIC_DATASET_REPORTED_ARTIFACT_NOT_PINNED",
+      "citation": "Li Y et al. (2024), DOI:10.1109/TMI.2024.3400276",
+      "doi": "10.1109/TMI.2024.3400276",
+      "id": "MV-SRC-WASPSYN-2024",
+      "license_status": "CC-BY_REPORTED_BY_PRIMARY_PAPER"
+    }
+  ]
+}

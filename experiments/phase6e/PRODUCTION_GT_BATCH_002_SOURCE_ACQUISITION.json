@@ -1,0 +1,269 @@
+{
+  "created_at": "2026-09-18T02:32:53.587820Z",
+  "id": "PRODUCTION_GT_BATCH_002_SOURCE_ACQUISITION",
+  "n_axis_balanced": 20,
+  "n_fetched": 24,
+  "n_selected": 8,
+  "per_selected": [
+    {
+      "axis_abs_ge12_counts": {
+        "X": 443550,
+        "X_max": 151.0,
+        "Y": 432991,
+        "Y_max": 202.0,
+        "Z": 434555,
+        "Z_max": 138.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8512,
+          8640
+        ],
+        "z": [
+          11584,
+          11648
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-088",
+      "intensity_std": 58.15514367653241,
+      "raw_sha256": "0da51dce5ec7833a96c28d87fe610a26e9e70bb23328059104f51b651ce0687d"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 427783,
+        "X_max": 132.0,
+        "Y": 452354,
+        "Y_max": 166.0,
+        "Z": 429604,
+        "Z_max": 140.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10688,
+          10816
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11072,
+          11136
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-078",
+      "intensity_std": 59.124072793067995,
+      "raw_sha256": "db4130cbdc69c25e09a9b6772aa6b216e3b0273112b88b0c12e4795328932381"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 415510,
+        "X_max": 146.0,
+        "Y": 417191,
+        "Y_max": 180.0,
+        "Z": 451903,
+        "Z_max": 148.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10560,
+          10688
+        ],
+        "y": [
+          8128,
+          8256
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-083",
+      "intensity_std": 58.05310817722803,
+      "raw_sha256": "6a46d50e7d50954d8c331574ccde905a4ba425034908fb86ab3b31824a0dbcb6"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 452043,
+        "X_max": 152.0,
+        "Y": 417176,
+        "Y_max": 171.0,
+        "Z": 415469,
+        "Z_max": 138.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          7488,
+          7616
+        ],
+        "z": [
+          10560,
+          10624
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-079",
+      "intensity_std": 60.548312276397105,
+      "raw_sha256": "6923f56473a9db60d687987c03a9a4b218a448dbd3a1f579a20cb25146ce5557"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 411742,
+        "X_max": 145.0,
+        "Y": 450558,
+        "Y_max": 183.0,
+        "Z": 432350,
+        "Z_max": 184.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10944,
+          11072
+        ],
+        "y": [
+          7744,
+          7872
+        ],
+        "z": [
+          12096,
+          12160
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-087",
+      "intensity_std": 58.19746591505388,
+      "raw_sha256": "93e4ab2f2d8c4b4fa06ad7e24cdeef835595c53f372d14e1b107607066345077"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 413755,
+        "X_max": 137.0,
+        "Y": 404125,
+        "Y_max": 163.0,
+        "Z": 432574,
+        "Z_max": 116.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10752,
+          10880
+        ],
+        "y": [
+          7936,
+          8064
+        ],
+        "z": [
+          11904,
+          11968
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-092",
+      "intensity_std": 52.48668534717448,
+      "raw_sha256": "6d707f657981c59bb02d3559f5fdc401847f295c5844f7532ed749d8af8f1030"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 397257,
+        "X_max": 133.0,
+        "Y": 413620,
+        "Y_max": 179.0,
+        "Z": 404475,
+        "Z_max": 130.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          10752,
+          10880
+        ],
+        "y": [
+          8128,
+          8256
+        ],
+        "z": [
+          12864,
+          12928
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-082",
+      "intensity_std": 59.194464985306425,
+      "raw_sha256": "b1e14b8279899d1183ee87b2ca185cbb871b05bc869584effd1c98a319a7e1f3"
+    },
+    {
+      "axis_abs_ge12_counts": {
+        "X": 430216,
+        "X_max": 138.0,
+        "Y": 394371,
+        "Y_max": 167.0,
+        "Z": 428957,
+        "Z_max": 128.0
+      },
+      "axis_balanced_ce_scale": true,
+      "bounds_xyz": {
+        "x": [
+          11072,
+          11200
+        ],
+        "y": [
+          7808,
+          7936
+        ],
+        "z": [
+          13696,
+          13760
+        ]
+      },
+      "id": "MV-DVID-RAW-SURVEY-076",
+      "intensity_std": 56.61056160826761,
+      "raw_sha256": "19000df78c5934ad1b7b392acec9895d998cca9777240ff4b28101ee648783eb"
+    }
+  ],
+  "prohibited_inputs": [
+    "batch_001_labels",
+    "human_labels",
+    "visual_different_targeting",
+    "model_predictions"
+  ],
+  "reserve_ids": [
+    "MV-DVID-RAW-SURVEY-069",
+    "MV-DVID-RAW-SURVEY-070",
+    "MV-DVID-RAW-SURVEY-071",
+    "MV-DVID-RAW-SURVEY-072",
+    "MV-DVID-RAW-SURVEY-073",
+    "MV-DVID-RAW-SURVEY-074",
+    "MV-DVID-RAW-SURVEY-075",
+    "MV-DVID-RAW-SURVEY-077",
+    "MV-DVID-RAW-SURVEY-080",
+    "MV-DVID-RAW-SURVEY-081",
+    "MV-DVID-RAW-SURVEY-084",
+    "MV-DVID-RAW-SURVEY-085",
+    "MV-DVID-RAW-SURVEY-086",
+    "MV-DVID-RAW-SURVEY-089",
+    "MV-DVID-RAW-SURVEY-090",
+    "MV-DVID-RAW-SURVEY-091"
+  ],
+  "sampling_freeze": "experiments/phase6e/PRODUCTION_GT_BATCH_002_SAMPLING_FREEZE.json",
+  "selected_ids": [
+    "MV-DVID-RAW-SURVEY-076",
+    "MV-DVID-RAW-SURVEY-078",
+    "MV-DVID-RAW-SURVEY-079",
+    "MV-DVID-RAW-SURVEY-082",
+    "MV-DVID-RAW-SURVEY-083",
+    "MV-DVID-RAW-SURVEY-087",
+    "MV-DVID-RAW-SURVEY-088",
+    "MV-DVID-RAW-SURVEY-092"
+  ],
+  "status": "ACQUIRED"
+}

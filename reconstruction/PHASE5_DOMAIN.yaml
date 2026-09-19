@@ -1,0 +1,13 @@
+schema_version: "1.0"
+id: MV-DOMAIN-PIPELINE-VALIDATION-001
+previous_id: MV-PHASE5-DOMAIN-001
+status: PIPELINE_VALIDATION_ONLY_NOT_A_PRODUCTION_DENOMINATOR
+specimen_id: SPECIMEN_UNKNOWN
+source_volume: MV-FIBSEM-WASP5-YURI-4C
+source_bounds_xyz: {x: [4000, 4512], y: [6000, 6512], z: [6000, 6064]}
+voxel_size_nm_xyz: [8.0, 8.0, 8.0]
+axis_order: XYZ
+coordinate_frame: MV-FRAME-DVID-WASP5-001
+source_to_catmaid_transform: UNKNOWN
+rights: LOCAL_PROCESSING_ONLY
+note: "This retained 512x512x64 real-EM crop validates bounded pipeline mechanics only. It is not established as the CATMAID specimen, a production denominator, or a whole-specimen domain. The separate MV-DOMAIN-PRODUCTION-001 local manifest is derived only from authoritative DVID parent metadata and a far-boundary read receipt."

@@ -1,0 +1,123 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+**/credentials.json
+**/.ssh/
+**/secrets/
+
+# Python / virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+.venv-*/
+venv/
+**/site-packages/
+pyvenv.cfg
+bin/
+lib/
+include/
+Scripts/
+share/
+
+# Test / tool caches
+.pytest_cache/
+.pytest-*/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local research trees and derived artifacts (multi-GB)
+local_research_build/
+derived/
+datasets/cache/
+datasets/registrations/
+datasets/raw/
+ground_truth/raw/
+ground_truth/labels/
+ground_truth/proposals/
+!datasets/registry.json
+!biological/.gitkeep
+
+# Third-party checkouts are local/vendored clones (own .git, multi-GB).
+# See third_party/README.md for what to obtain separately.
+third_party/*
+!third_party/README.md
+
+# Large imagery / TIFF dumps
+*.tif
+*.tiff
+*.bz2
+*.tar.bz2
+
+# Large binaries — obtain checkpoints / affinities separately (see HANDOFF.md)
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.whl
+*.so
+*.dylib
+*.dll
+*.pyd
+*.pickle
+*.pkl
+*.joblib
+
+# Affinity / experiment bulky outputs
+experiments/**/chunks/
+experiments/**/checkpoints/
+experiments/**/run/
+experiments/**/*.log
+experiments/**/claims/
+experiments/phase6e/AFFINITY-FULLVOL-S7-001/queue_state.json
+experiments/phase6e/HYPERDRAIN/
+experiments/phase6b/
+experiments/phase6e/MV-TRAIN-*/
+experiments/phase6e/g3-*/**/*.npy
+experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/**/extend/
+experiments/phase6e/AFFINITY-TRAIN-PGT002-001/run/
+experiments/phase6e/AFFINITY-ROI-001/**/*.npy
+
+# Accidental path / OS junk
+C?Usersmatth/
+CUsers*/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+ypool.txt
+
+# Editor
+.idea/
+.vscode/
+*.code-workspace

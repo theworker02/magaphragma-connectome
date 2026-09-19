@@ -1,0 +1,42 @@
+{
+  "T-Z000-Y000-X000": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.570357
+  },
+  "T-Z000-Y000-X001": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.622505
+  },
+  "T-Z000-Y001-X000": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.568938
+  },
+  "T-Z000-Y001-X001": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.57099
+  },
+  "T-Z001-Y000-X000": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.646801
+  },
+  "T-Z001-Y000-X001": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.648453
+  },
+  "T-Z001-Y001-X000": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.568925
+  },
+  "T-Z001-Y001-X001": {
+    "class": "HIGH_COMPLEXITY",
+    "optimize_ok": false,
+    "priority": 0.572569
+  }
+}

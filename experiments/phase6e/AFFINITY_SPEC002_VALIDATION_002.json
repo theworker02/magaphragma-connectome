@@ -1,0 +1,1427 @@
+{
+  "blinding": {
+    "axis_blind_during_judgment": true,
+    "mapping_hash": "3abb30d6e9003c7d07537e27de74da781e3e16373fe30eab3cf2f6770cf340f1",
+    "order_hash": "459bc8c12cafaac4f0bb676653ca3e8214e25abd07fb48454a33600976d13f47",
+    "sealed_axis_map_path": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002_AXIS_MAP_SEALED.json",
+    "unblind_only_after_all_36_complete": true
+  },
+  "completed_at": "2026-09-18T02:19:18.340807Z",
+  "created_at": "2026-09-18T02:06:39.417145Z",
+  "design": {
+    "edges_per_location": 3,
+    "enrichment": "max single-face |\u0394I| >= 12.0",
+    "n_locations": 12,
+    "selection_rule": "One hash-min abs-enriched center per fresh C/E-neighborhood crop; all three +1 faces reviewed; pinned historical edge exclusion.",
+    "sources": [
+      "MV-DVID-RAW-SURVEY-049",
+      "MV-DVID-RAW-SURVEY-050",
+      "MV-DVID-RAW-SURVEY-051",
+      "MV-DVID-RAW-SURVEY-052",
+      "MV-DVID-RAW-SURVEY-057",
+      "MV-DVID-RAW-SURVEY-058",
+      "MV-DVID-RAW-SURVEY-059",
+      "MV-DVID-RAW-SURVEY-061",
+      "MV-DVID-RAW-SURVEY-064",
+      "MV-DVID-RAW-SURVEY-066",
+      "MV-DVID-RAW-SURVEY-067",
+      "MV-DVID-RAW-SURVEY-068"
+    ],
+    "total_decisions": 36,
+    "why_not_relative_q": "AS2-001 used relative Q1\u2013Q4 on mean3 face-step (~0.3\u20133 abs) and got NEGATIVE_CLASS_NOT_DEMONSTRATED. AS2-002 uses C/E-neighborhood fresh crops and abs-max-face enrichment after DIFFERENT_CLASS_DISCOVERY_001 demonstrated DIFFERENT on abs\u226512 edges under equivariant UI."
+  },
+  "do_not_train": true,
+  "id": "AFFINITY_SPEC002_VALIDATION_002",
+  "launch_example": ".\\.venv-reviewer\\Scripts\\python.exe tools\\review_equivariant_edge_batch.py experiments\\phase6e\\affinity-spec002-validation-002-queues\\MASTER_BATCH.json --reviewer matth",
+  "not_a_g3_training_cohort": true,
+  "not_experiment_009": true,
+  "paths": {
+    "master_queue": "experiments/phase6e/affinity-spec002-validation-002-queues/MASTER_BATCH.json",
+    "packages": "experiments/phase6e/affinity-spec002-validation-002-packages",
+    "queues": "experiments/phase6e/affinity-spec002-validation-002-queues"
+  },
+  "per_location": [
+    {
+      "center_zyx": [
+        41,
+        112,
+        82
+      ],
+      "crop_id": "MV-AS2B-VAL-01",
+      "face_steps": {
+        "X": 17.0,
+        "Y": 7.0,
+        "Z": 17.0
+      },
+      "max_face_step": 17.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-049",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-01-AS2B"
+    },
+    {
+      "center_zyx": [
+        3,
+        36,
+        8
+      ],
+      "crop_id": "MV-AS2B-VAL-02",
+      "face_steps": {
+        "X": 15.0,
+        "Y": 6.0,
+        "Z": 15.0
+      },
+      "max_face_step": 15.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-050",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-02-AS2B"
+    },
+    {
+      "center_zyx": [
+        13,
+        93,
+        93
+      ],
+      "crop_id": "MV-AS2B-VAL-03",
+      "face_steps": {
+        "X": 44.0,
+        "Y": 0.0,
+        "Z": 39.0
+      },
+      "max_face_step": 44.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-051",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-03-AS2B"
+    },
+    {
+      "center_zyx": [
+        48,
+        68,
+        108
+      ],
+      "crop_id": "MV-AS2B-VAL-04",
+      "face_steps": {
+        "X": 9.0,
+        "Y": 45.0,
+        "Z": 12.0
+      },
+      "max_face_step": 45.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-052",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-04-AS2B"
+    },
+    {
+      "center_zyx": [
+        3,
+        36,
+        32
+      ],
+      "crop_id": "MV-AS2B-VAL-05",
+      "face_steps": {
+        "X": 65.0,
+        "Y": 6.0,
+        "Z": 30.0
+      },
+      "max_face_step": 65.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-057",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-05-AS2B"
+    },
+    {
+      "center_zyx": [
+        3,
+        79,
+        118
+      ],
+      "crop_id": "MV-AS2B-VAL-06",
+      "face_steps": {
+        "X": 6.0,
+        "Y": 6.0,
+        "Z": 14.0
+      },
+      "max_face_step": 14.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-058",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-06-AS2B"
+    },
+    {
+      "center_zyx": [
+        3,
+        57,
+        106
+      ],
+      "crop_id": "MV-AS2B-VAL-07",
+      "face_steps": {
+        "X": 2.0,
+        "Y": 14.0,
+        "Z": 14.0
+      },
+      "max_face_step": 14.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-059",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-07-AS2B"
+    },
+    {
+      "center_zyx": [
+        13,
+        50,
+        45
+      ],
+      "crop_id": "MV-AS2B-VAL-08",
+      "face_steps": {
+        "X": 4.0,
+        "Y": 24.0,
+        "Z": 12.0
+      },
+      "max_face_step": 24.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-061",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-08-AS2B"
+    },
+    {
+      "center_zyx": [
+        20,
+        123,
+        123
+      ],
+      "crop_id": "MV-AS2B-VAL-09",
+      "face_steps": {
+        "X": 11.0,
+        "Y": 5.0,
+        "Z": 22.0
+      },
+      "max_face_step": 22.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-064",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-09-AS2B"
+    },
+    {
+      "center_zyx": [
+        18,
+        59,
+        123
+      ],
+      "crop_id": "MV-AS2B-VAL-10",
+      "face_steps": {
+        "X": 9.0,
+        "Y": 24.0,
+        "Z": 0.0
+      },
+      "max_face_step": 24.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-066",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-10-AS2B"
+    },
+    {
+      "center_zyx": [
+        3,
+        113,
+        3
+      ],
+      "crop_id": "MV-AS2B-VAL-11",
+      "face_steps": {
+        "X": 34.0,
+        "Y": 21.0,
+        "Z": 20.0
+      },
+      "max_face_step": 34.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-067",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-11-AS2B"
+    },
+    {
+      "center_zyx": [
+        56,
+        3,
+        14
+      ],
+      "crop_id": "MV-AS2B-VAL-12",
+      "face_steps": {
+        "X": 3.0,
+        "Y": 10.0,
+        "Z": 22.0
+      },
+      "max_face_step": 22.0,
+      "n_questions": 3,
+      "source_id": "MV-DVID-RAW-SURVEY-068",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2B-VAL-12-AS2B"
+    }
+  ],
+  "predeclared_verdict_rules": {
+    "NEGATIVE_CLASS_NOT_DEMONSTRATED": "Zero DIFFERENT_PROCESS decisions across the entire validation batch (after excluding UNCERTAIN/BAD_QUESTION from class counts).",
+    "ORIENTATION_INVARIANCE_FAILED": "After unblinding, class is pathologically determined by global axis: every evaluable location triplet matches Z=DIFFERENT_PROCESS & Y=SAME_PROCESS & X=SAME_PROCESS (the historical orientation-collinear pattern), OR any single axis is perfectly predictive of class across all evaluable edges (one axis all DIFFERENT and never SAME while another axis all SAME and never DIFFERENT, with \u22653 evaluable edges on each of those axes).",
+    "SPEC002_ANNOTATION_PROCEDURE_VALIDATED": "Synthetic gate PASS; provenance valid; complete blinded review; \u22651 DIFFERENT_PROCESS; \u22651 SAME_PROCESS; NOT NEGATIVE_CLASS_NOT_DEMONSTRATED; NOT ORIENTATION_INVARIANCE_FAILED; no presentation-leakage evidence sufficient to explain labels.",
+    "SPEC002_PROCEDURE_UNRESOLVED": "Any other semantic/presentation integrity failure, incomplete review, or ambiguous outcome not covered above.",
+    "exclusions_from_class_counts": [
+      "UNCERTAIN",
+      "BAD_QUESTION"
+    ],
+    "no_threshold_tuning_after_labels": true,
+    "priority_order": [
+      "NEGATIVE_CLASS_NOT_DEMONSTRATED",
+      "ORIENTATION_INVARIANCE_FAILED",
+      "SPEC002_PROCEDURE_UNRESOLVED",
+      "SPEC002_ANNOTATION_PROCEDURE_VALIDATED"
+    ],
+    "validation_labels_are_not_automatic_production_gt": true
+  },
+  "presentation_mode": "EQUIVARIANT_EDGE_FACE_V1",
+  "protocol_id": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001",
+  "results": {
+    "class_counts": {
+      "DIFFERENT_PROCESS": 15,
+      "SAME_PROCESS": 14,
+      "excluded_UNCERTAIN_or_BAD": 7
+    },
+    "decisions": [
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          13,
+          50,
+          45
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-08",
+        "decision": "BAD_QUESTION",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697842110069",
+        "face_step": 12.0,
+        "opaque_decision_id": "MV-AS2B-036FC42A816A",
+        "pair_left_zyx": [
+          13,
+          50,
+          45
+        ],
+        "pair_right_zyx": [
+          14,
+          50,
+          45
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-061"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          113,
+          3
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-11",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697722255811",
+        "face_step": 34.0,
+        "opaque_decision_id": "MV-AS2B-08340CE67549",
+        "pair_left_zyx": [
+          3,
+          113,
+          3
+        ],
+        "pair_right_zyx": [
+          3,
+          113,
+          4
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-067"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          13,
+          93,
+          93
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-03",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697882115056",
+        "face_step": 44.0,
+        "opaque_decision_id": "MV-AS2B-0C82D6116896",
+        "pair_left_zyx": [
+          13,
+          93,
+          93
+        ],
+        "pair_right_zyx": [
+          13,
+          93,
+          94
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-051"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          13,
+          93,
+          93
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-03",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697582976542",
+        "face_step": 39.0,
+        "opaque_decision_id": "MV-AS2B-1B11643CCC6F",
+        "pair_left_zyx": [
+          13,
+          93,
+          93
+        ],
+        "pair_right_zyx": [
+          14,
+          93,
+          93
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-051"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          57,
+          106
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-07",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697678463787",
+        "face_step": 2.0,
+        "opaque_decision_id": "MV-AS2B-1DF8936CB178",
+        "pair_left_zyx": [
+          3,
+          57,
+          106
+        ],
+        "pair_right_zyx": [
+          3,
+          57,
+          107
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-059"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          48,
+          68,
+          108
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-04",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697731419519",
+        "face_step": 45.0,
+        "opaque_decision_id": "MV-AS2B-23A94ACE9F43",
+        "pair_left_zyx": [
+          48,
+          68,
+          108
+        ],
+        "pair_right_zyx": [
+          48,
+          69,
+          108
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-052"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          56,
+          3,
+          14
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-12",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697549893194",
+        "face_step": 3.0,
+        "opaque_decision_id": "MV-AS2B-26C4B4EFAEB2",
+        "pair_left_zyx": [
+          56,
+          3,
+          14
+        ],
+        "pair_right_zyx": [
+          56,
+          3,
+          15
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-068"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          36,
+          8
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-02",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697907582073",
+        "face_step": 15.0,
+        "opaque_decision_id": "MV-AS2B-2F32D05AA938",
+        "pair_left_zyx": [
+          3,
+          36,
+          8
+        ],
+        "pair_right_zyx": [
+          3,
+          36,
+          9
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-050"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          18,
+          59,
+          123
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-10",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697786892767",
+        "face_step": 24.0,
+        "opaque_decision_id": "MV-AS2B-34176154591C",
+        "pair_left_zyx": [
+          18,
+          59,
+          123
+        ],
+        "pair_right_zyx": [
+          18,
+          60,
+          123
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-066"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          20,
+          123,
+          123
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-09",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697667453501",
+        "face_step": 5.0,
+        "opaque_decision_id": "MV-AS2B-41098D7C0B47",
+        "pair_left_zyx": [
+          20,
+          123,
+          123
+        ],
+        "pair_right_zyx": [
+          20,
+          124,
+          123
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-064"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          79,
+          118
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-06",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697587506539",
+        "face_step": 6.0,
+        "opaque_decision_id": "MV-AS2B-47F6845E9037",
+        "pair_left_zyx": [
+          3,
+          79,
+          118
+        ],
+        "pair_right_zyx": [
+          3,
+          79,
+          119
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-058"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          79,
+          118
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-06",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697826834866",
+        "face_step": 14.0,
+        "opaque_decision_id": "MV-AS2B-57E94C5CEE72",
+        "pair_left_zyx": [
+          3,
+          79,
+          118
+        ],
+        "pair_right_zyx": [
+          4,
+          79,
+          118
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-058"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          79,
+          118
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-06",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697672756685",
+        "face_step": 6.0,
+        "opaque_decision_id": "MV-AS2B-64D3968E8131",
+        "pair_left_zyx": [
+          3,
+          79,
+          118
+        ],
+        "pair_right_zyx": [
+          3,
+          80,
+          118
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-058"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          48,
+          68,
+          108
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-04",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697704170907",
+        "face_step": 9.0,
+        "opaque_decision_id": "MV-AS2B-683DB6A20AA1",
+        "pair_left_zyx": [
+          48,
+          68,
+          108
+        ],
+        "pair_right_zyx": [
+          48,
+          68,
+          109
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-052"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          20,
+          123,
+          123
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-09",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697895489717",
+        "face_step": 11.0,
+        "opaque_decision_id": "MV-AS2B-6D16D16D2D96",
+        "pair_left_zyx": [
+          20,
+          123,
+          123
+        ],
+        "pair_right_zyx": [
+          20,
+          123,
+          124
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-064"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          18,
+          59,
+          123
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-10",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697606922504",
+        "face_step": 0.0,
+        "opaque_decision_id": "MV-AS2B-7FF10531083D",
+        "pair_left_zyx": [
+          18,
+          59,
+          123
+        ],
+        "pair_right_zyx": [
+          19,
+          59,
+          123
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-066"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          57,
+          106
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-07",
+        "decision": "BAD_QUESTION",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697934190262",
+        "face_step": 14.0,
+        "opaque_decision_id": "MV-AS2B-8396C38827D3",
+        "pair_left_zyx": [
+          3,
+          57,
+          106
+        ],
+        "pair_right_zyx": [
+          4,
+          57,
+          106
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-059"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          57,
+          106
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-07",
+        "decision": "UNCERTAIN",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697718174259",
+        "face_step": 14.0,
+        "opaque_decision_id": "MV-AS2B-859BD62F7310",
+        "pair_left_zyx": [
+          3,
+          57,
+          106
+        ],
+        "pair_right_zyx": [
+          3,
+          58,
+          106
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-059"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          56,
+          3,
+          14
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-12",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697469166506",
+        "face_step": 10.0,
+        "opaque_decision_id": "MV-AS2B-8780E01BE205",
+        "pair_left_zyx": [
+          56,
+          3,
+          14
+        ],
+        "pair_right_zyx": [
+          56,
+          4,
+          14
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-068"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          20,
+          123,
+          123
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-09",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697727236275",
+        "face_step": 22.0,
+        "opaque_decision_id": "MV-AS2B-8EFE1DD96B87",
+        "pair_left_zyx": [
+          20,
+          123,
+          123
+        ],
+        "pair_right_zyx": [
+          21,
+          123,
+          123
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-064"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          36,
+          8
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-02",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697735850209",
+        "face_step": 15.0,
+        "opaque_decision_id": "MV-AS2B-91C0340A030C",
+        "pair_left_zyx": [
+          3,
+          36,
+          8
+        ],
+        "pair_right_zyx": [
+          4,
+          36,
+          8
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-050"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          3,
+          36,
+          32
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-05",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697564988108",
+        "face_step": 65.0,
+        "opaque_decision_id": "MV-AS2B-998FECF23A57",
+        "pair_left_zyx": [
+          3,
+          36,
+          32
+        ],
+        "pair_right_zyx": [
+          3,
+          36,
+          33
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-057"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          41,
+          112,
+          82
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-01",
+        "decision": "UNCERTAIN",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697488639143",
+        "face_step": 17.0,
+        "opaque_decision_id": "MV-AS2B-9A8A1A62DAC6",
+        "pair_left_zyx": [
+          41,
+          112,
+          82
+        ],
+        "pair_right_zyx": [
+          41,
+          112,
+          83
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-049"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          56,
+          3,
+          14
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-12",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697649766858",
+        "face_step": 22.0,
+        "opaque_decision_id": "MV-AS2B-AF965708036B",
+        "pair_left_zyx": [
+          56,
+          3,
+          14
+        ],
+        "pair_right_zyx": [
+          57,
+          3,
+          14
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-068"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          13,
+          93,
+          93
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-03",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697766515901",
+        "face_step": 0.0,
+        "opaque_decision_id": "MV-AS2B-B4C4BB92B2B5",
+        "pair_left_zyx": [
+          13,
+          93,
+          93
+        ],
+        "pair_right_zyx": [
+          13,
+          94,
+          93
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-051"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          18,
+          59,
+          123
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-10",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697878390995",
+        "face_step": 9.0,
+        "opaque_decision_id": "MV-AS2B-BA907E166085",
+        "pair_left_zyx": [
+          18,
+          59,
+          123
+        ],
+        "pair_right_zyx": [
+          18,
+          59,
+          124
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-066"
+      },
+      {
+        "axis_name": "X",
+        "center_zyx": [
+          13,
+          50,
+          45
+        ],
+        "channel_zyx": 2,
+        "crop_id": "MV-AS2B-VAL-08",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697768199041",
+        "face_step": 4.0,
+        "opaque_decision_id": "MV-AS2B-BC95A724DD27",
+        "pair_left_zyx": [
+          13,
+          50,
+          45
+        ],
+        "pair_right_zyx": [
+          13,
+          50,
+          46
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-061"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          113,
+          3
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-11",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697685939304",
+        "face_step": 20.0,
+        "opaque_decision_id": "MV-AS2B-BCEACC82C037",
+        "pair_left_zyx": [
+          3,
+          113,
+          3
+        ],
+        "pair_right_zyx": [
+          4,
+          113,
+          3
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-067"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          36,
+          8
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-02",
+        "decision": "BAD_QUESTION",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697921001852",
+        "face_step": 6.0,
+        "opaque_decision_id": "MV-AS2B-BD458C2E84B1",
+        "pair_left_zyx": [
+          3,
+          36,
+          8
+        ],
+        "pair_right_zyx": [
+          3,
+          37,
+          8
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-050"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          41,
+          112,
+          82
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-01",
+        "decision": "UNCERTAIN",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697532921871",
+        "face_step": 7.0,
+        "opaque_decision_id": "MV-AS2B-C1645D6955B7",
+        "pair_left_zyx": [
+          41,
+          112,
+          82
+        ],
+        "pair_right_zyx": [
+          41,
+          113,
+          82
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-049"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          113,
+          3
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-11",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697750671297",
+        "face_step": 21.0,
+        "opaque_decision_id": "MV-AS2B-C70EC10E67DD",
+        "pair_left_zyx": [
+          3,
+          113,
+          3
+        ],
+        "pair_right_zyx": [
+          3,
+          114,
+          3
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-067"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          41,
+          112,
+          82
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-01",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697701438221",
+        "face_step": 17.0,
+        "opaque_decision_id": "MV-AS2B-C868C25870AB",
+        "pair_left_zyx": [
+          41,
+          112,
+          82
+        ],
+        "pair_right_zyx": [
+          42,
+          112,
+          82
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-049"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          3,
+          36,
+          32
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-05",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697806191310",
+        "face_step": 30.0,
+        "opaque_decision_id": "MV-AS2B-E040DE3A1BC4",
+        "pair_left_zyx": [
+          3,
+          36,
+          32
+        ],
+        "pair_right_zyx": [
+          4,
+          36,
+          32
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-057"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          3,
+          36,
+          32
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-05",
+        "decision": "SAME_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697856879106",
+        "face_step": 6.0,
+        "opaque_decision_id": "MV-AS2B-EBCF97F11CFE",
+        "pair_left_zyx": [
+          3,
+          36,
+          32
+        ],
+        "pair_right_zyx": [
+          3,
+          37,
+          32
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-057"
+      },
+      {
+        "axis_name": "Y",
+        "center_zyx": [
+          13,
+          50,
+          45
+        ],
+        "channel_zyx": 1,
+        "crop_id": "MV-AS2B-VAL-08",
+        "decision": "UNCERTAIN",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697800815152",
+        "face_step": 24.0,
+        "opaque_decision_id": "MV-AS2B-F2397AE11BE0",
+        "pair_left_zyx": [
+          13,
+          50,
+          45
+        ],
+        "pair_right_zyx": [
+          13,
+          51,
+          45
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-061"
+      },
+      {
+        "axis_name": "Z",
+        "center_zyx": [
+          48,
+          68,
+          108
+        ],
+        "channel_zyx": 0,
+        "crop_id": "MV-AS2B-VAL-04",
+        "decision": "DIFFERENT_PROCESS",
+        "event_id": "MV-EXTERNAL-BOUNDARY-EVENT-1789697646316103",
+        "face_step": 12.0,
+        "opaque_decision_id": "MV-AS2B-FADC41DD5E25",
+        "pair_left_zyx": [
+          48,
+          68,
+          108
+        ],
+        "pair_right_zyx": [
+          49,
+          68,
+          108
+        ],
+        "reviewer": "matth",
+        "source_id": "MV-DVID-RAW-SURVEY-052"
+      }
+    ],
+    "n_decisions": 36,
+    "orientation_invariance_detail": null,
+    "orientation_invariance_failed": false,
+    "triplets": [
+      {
+        "center_zyx": [
+          41,
+          112,
+          82
+        ],
+        "crop_id": "MV-AS2B-VAL-01",
+        "excluded_from_class_counts": true,
+        "labels_zyx": {
+          "X": "UNCERTAIN",
+          "Y": "UNCERTAIN",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-049"
+      },
+      {
+        "center_zyx": [
+          3,
+          36,
+          8
+        ],
+        "crop_id": "MV-AS2B-VAL-02",
+        "excluded_from_class_counts": true,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "BAD_QUESTION",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-050"
+      },
+      {
+        "center_zyx": [
+          13,
+          93,
+          93
+        ],
+        "crop_id": "MV-AS2B-VAL-03",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": true,
+        "source_id": "MV-DVID-RAW-SURVEY-051"
+      },
+      {
+        "center_zyx": [
+          48,
+          68,
+          108
+        ],
+        "crop_id": "MV-AS2B-VAL-04",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": true,
+        "source_id": "MV-DVID-RAW-SURVEY-052"
+      },
+      {
+        "center_zyx": [
+          3,
+          36,
+          32
+        ],
+        "crop_id": "MV-AS2B-VAL-05",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "DIFFERENT_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-057"
+      },
+      {
+        "center_zyx": [
+          3,
+          79,
+          118
+        ],
+        "crop_id": "MV-AS2B-VAL-06",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "DIFFERENT_PROCESS",
+          "Y": "DIFFERENT_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-058"
+      },
+      {
+        "center_zyx": [
+          3,
+          57,
+          106
+        ],
+        "crop_id": "MV-AS2B-VAL-07",
+        "excluded_from_class_counts": true,
+        "labels_zyx": {
+          "X": "DIFFERENT_PROCESS",
+          "Y": "UNCERTAIN",
+          "Z": "BAD_QUESTION"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-059"
+      },
+      {
+        "center_zyx": [
+          13,
+          50,
+          45
+        ],
+        "crop_id": "MV-AS2B-VAL-08",
+        "excluded_from_class_counts": true,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "UNCERTAIN",
+          "Z": "BAD_QUESTION"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-061"
+      },
+      {
+        "center_zyx": [
+          20,
+          123,
+          123
+        ],
+        "crop_id": "MV-AS2B-VAL-09",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "DIFFERENT_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-064"
+      },
+      {
+        "center_zyx": [
+          18,
+          59,
+          123
+        ],
+        "crop_id": "MV-AS2B-VAL-10",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "SAME_PROCESS",
+          "Y": "DIFFERENT_PROCESS",
+          "Z": "SAME_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-066"
+      },
+      {
+        "center_zyx": [
+          3,
+          113,
+          3
+        ],
+        "crop_id": "MV-AS2B-VAL-11",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "DIFFERENT_PROCESS",
+          "Y": "DIFFERENT_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-067"
+      },
+      {
+        "center_zyx": [
+          56,
+          3,
+          14
+        ],
+        "crop_id": "MV-AS2B-VAL-12",
+        "excluded_from_class_counts": false,
+        "labels_zyx": {
+          "X": "DIFFERENT_PROCESS",
+          "Y": "SAME_PROCESS",
+          "Z": "DIFFERENT_PROCESS"
+        },
+        "matches_orientation_collinear_pattern": false,
+        "source_id": "MV-DVID-RAW-SURVEY-068"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "status": "COMPLETE_UNBLINDED",
+  "supersedes_attempt": "AFFINITY_SPEC002_VALIDATION_001",
+  "synthetic_gate": {
+    "overall_pass": true,
+    "path": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json"
+  },
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "verdict": {
+    "detail": "Both classes present (SAME=14, DIFFERENT=15); orientation invariance not failed.",
+    "do_not_train": true,
+    "not_automatic_production_gt": true,
+    "rules_match_protocol": true,
+    "rules_source": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001.predeclared_verdict_rules",
+    "value": "SPEC002_ANNOTATION_PROCEDURE_VALIDATED"
+  }
+}

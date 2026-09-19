@@ -1,0 +1,11 @@
+{
+  "id": "VAST_GPU_OFFERS",
+  "status": "AWAITING_AUTHENTICATED_FETCH",
+  "created_at": "2026-09-18T22:35:00Z",
+  "note": "Live marketplace offers were not written in this session because VAST_API_KEY was not available to the agent shell as an exported variable. Implementation is ready: run the command below in a shell where the key is exported.",
+  "fetch_command": "export VAST_API_KEY=...; python tools/affinity_vast.py offers --limit 40",
+  "alt_fetch_command": "bash tools/_fetch_vast_offers_wsl.sh   # requires exported VAST_API_KEY in that shell",
+  "remaining_chunks_snapshot": 28609,
+  "assumed_tiles_per_second_until_measured": 18.9,
+  "offers": []
+}

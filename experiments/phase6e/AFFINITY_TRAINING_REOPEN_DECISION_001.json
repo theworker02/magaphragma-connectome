@@ -1,0 +1,58 @@
+{
+  "id": "AFFINITY_TRAINING_REOPEN_DECISION_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T02:45:00Z",
+  "status": "AFFINITY_TRAINING_REOPENED",
+  "AFFINITY_TRAINING_REOPEN": "APPROVED",
+  "prior_status": "AFFINITY_TRAINING_CLOSED",
+  "distinct_from_gt_promotion": {
+    "gt_promotion_artifact": "experiments/phase6e/PRODUCTION_GT_PROMOTED_BATCH_002.json",
+    "gt_promotion_establishes": "which data qualify as production GT",
+    "this_authorization_establishes": "whether and under what frozen experimental design that GT may enter affinity training"
+  },
+  "eligible_training_gt": {
+    "only": [
+      {
+        "id": "PRODUCTION_GT_BATCH_002",
+        "promoted_artifact": "experiments/phase6e/PRODUCTION_GT_PROMOTED_BATCH_002.json",
+        "promotion_status_required": "PRODUCTION_GT_PROMOTED",
+        "promoted_artifact_sha256": "91c59b50931a1e0699c491fa5ff3c4c60490e877a8369b83275e48d9e36612ea",
+        "source_batch_sha256": "40d30f5f0488de2e01dcd7d826a1aaf3afa4ba9476195ffa6357b39ebd77c8a6",
+        "sealed_axis_map_sha256": "fd50157033cec569188d897d97dec1673dfa422ae579f6cf4e2bc3924fa321e4",
+        "class_counts_at_authorization": {
+          "SAME_PROCESS": 14,
+          "DIFFERENT_PROCESS": 10,
+          "excluded": 0
+        }
+      }
+    ]
+  },
+  "permanently_excluded_from_training": [
+    "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002.json",
+    "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_001.json",
+    "experiments/phase6e/PRODUCTION_GT_BATCH_001.json",
+    "experiments/phase6e/PRODUCTION_GT_BATCH_001_FAILED_CANDIDATE.json",
+    "experiments/phase6e/DIFFERENT_CLASS_DISCOVERY_001.json",
+    "experiments/phase6e/G3_PRESENTATION_REPAIR_SMOKE_001.json",
+    "G3-008 labels / packages / queues",
+    "all smoke/debug/procedure-validation labels",
+    "UNCERTAIN and BAD_QUESTION decisions (excluded/ambiguous)"
+  ],
+  "required_before_any_training_run": [
+    "promoted GT artifact hash recorded (this decision)",
+    "exact train/eval split frozen (experiment contract)",
+    "model/config/seed(s) frozen (experiment contract)",
+    "checkpoint-selection rule frozen (experiment contract)",
+    "evaluation metrics and pass/fail gates frozen (experiment contract)",
+    "no evaluation examples used for optimization or model selection"
+  ],
+  "experiment_contract_path": "experiments/phase6e/AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001.json",
+  "does_not_authorize": [
+    "dense segmentation readiness claims",
+    "connectome claims",
+    "reuse of validation_002 or batch_001 as training GT",
+    "unfrozen hyperparameter search on the eval split",
+    "launch without the frozen experiment contract"
+  ],
+  "next_allowed_action": "Execute the first controlled affinity-training run strictly under AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001 (not launched by this decision alone)"
+}

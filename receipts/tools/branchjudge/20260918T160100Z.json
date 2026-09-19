@@ -1,0 +1,84 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "conflicting": [
+      "segmentation confidence 0.40",
+      "low segmentation confidence at junction (0.40)"
+    ],
+    "decision": "REVIEW",
+    "evidence": [
+      {
+        "detail": "endpoints separated by 3.8 voxels",
+        "name": "geometric_continuity",
+        "score": 0.23999999999999988,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "direction agreement 1.00, link align 1.00",
+        "name": "direction_vectors",
+        "score": 1.0,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "similar local diameter ratio 1.00",
+        "name": "diameter_consistency",
+        "score": 1.0,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "segmentation confidence 0.40",
+        "name": "segmentation_confidence",
+        "score": 0.6,
+        "supports": "SPLIT"
+      },
+      {
+        "detail": "morph score 1.00",
+        "name": "morphological_compatibility",
+        "score": 1.0,
+        "supports": "MERGE"
+      },
+      {
+        "detail": "image agreement 0.50",
+        "name": "local_imagery",
+        "score": 0.0,
+        "supports": "SPLIT"
+      },
+      {
+        "detail": "model evidence 0.50",
+        "name": "model_evidence",
+        "score": 0.0,
+        "supports": "SPLIT"
+      }
+    ],
+    "merge_evidence": 0.84375,
+    "note": "Scores are evidence weights, not calibrated biological probabilities.",
+    "source_region": {
+      "centroid_a": [
+        0.0,
+        0.0,
+        2.5
+      ],
+      "centroid_b": [
+        0.0,
+        0.0,
+        10.4
+      ],
+      "endpoint_distance": 3.8000000000000007
+    },
+    "split_evidence": 0.15625,
+    "strongest": [
+      "direction agreement 1.00, link align 1.00",
+      "similar local diameter ratio 1.00",
+      "morph score 1.00"
+    ]
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T16:01:00Z",
+  "tool": "branchjudge"
+}

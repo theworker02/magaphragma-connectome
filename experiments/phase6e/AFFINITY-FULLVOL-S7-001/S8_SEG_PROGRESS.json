@@ -1,0 +1,28 @@
+{
+  "chunks_completed_this_run": [
+    "MV-CHUNK-10000033",
+    "MV-CHUNK-10000034",
+    "MV-CHUNK-10000035",
+    "MV-CHUNK-10000036",
+    "MV-CHUNK-10000037",
+    "MV-CHUNK-10000038",
+    "MV-CHUNK-10000039",
+    "MV-CHUNK-10000040",
+    "MV-CHUNK-10000042",
+    "MV-CHUNK-10000043",
+    "MV-CHUNK-10000044",
+    "MV-CHUNK-10018694",
+    "MV-CHUNK-10018915",
+    "MV-CHUNK-10018931",
+    "MV-CHUNK-10018932",
+    "MV-CHUNK-10018933",
+    "MV-CHUNK-10018949",
+    "MV-CHUNK-10019136",
+    "MV-CHUNK-10019152",
+    "MV-CHUNK-10019153"
+  ],
+  "id": "AFFINITY_S8_SEG_PROGRESS",
+  "n_affinity_done_seg_pending": 9,
+  "n_complete": 54,
+  "updated_at": "2026-09-18T14:18:22.383190Z"
+}

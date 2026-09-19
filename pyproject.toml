@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vigilia-connectome"
+version = "0.1.0a0"
+description = "Evidence-first infrastructure for the Megaphragma viggianii connectome"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Vigilia Connectome contributors"}]
+
+[project.scripts]
+vigilia = "mvconnectome.cli:main"
+connectome = "mvconnectome.toolchain:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.unittest]
+start-directory = "tests"

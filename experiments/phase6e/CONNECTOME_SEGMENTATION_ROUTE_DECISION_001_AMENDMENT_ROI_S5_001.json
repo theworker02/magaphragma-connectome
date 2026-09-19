@@ -1,0 +1,23 @@
+{
+  "id": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_ROI_S5_001",
+  "created_at": "2026-09-18T04:11:00Z",
+  "parent_decision": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "amends": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_PARALLEL_FUNNEL_001",
+  "status": "AMENDMENT_LOCKED",
+  "state": "ROI_S5_COMPLETE_AWAITING_HUMAN_S6",
+  "updated_pipeline_stage_board": {
+    "affinity_parallel_funnel": "C_PATCH_20_64_64 PASS; S4 authorized",
+    "roi_gate": "OPENED (AFFINITY_ROI_RECONSTRUCTION_GATE_001)",
+    "roi_package": "experiments/phase6e/AFFINITY-ROI-001/",
+    "roi_machine_qc": "MACHINE_QC_PASS (SEG_ROI_QC_CONTRACT_001)",
+    "human_s6_seg_qc": "PENDING",
+    "full_volume_inference": "STILL_CLOSED",
+    "synapse_graph": "STILL_CLOSED"
+  },
+  "do_not": [
+    "Full-volume until human S6 PASS",
+    "Treat ROI labels as production MV-SEG / biological identity",
+    "Weaken affinity GATE_D"
+  ],
+  "next_human_gate": "S6_HUMAN_SEG_QC_GATE — review ROI labels/topology; authorize S7 only on PASS"
+}

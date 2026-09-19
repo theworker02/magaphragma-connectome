@@ -1,0 +1,24 @@
+{
+  "id": "MV-ELF-RUNTIME-RESTORE-001",
+  "status": "ELF_RUNTIME_RESTORED_PASS",
+  "runtime": {
+    "platform": "Ubuntu WSL",
+    "environment_manager": "Micromamba",
+    "environment_prefix": "/home/mloon25/.micromamba/envs/segneuron-postprocess",
+    "python": "3.10",
+    "python_elf": "0.8.1",
+    "nifty": "1.2.4",
+    "vigra": "1.12.3"
+  },
+  "environment_specification": {
+    "path": "third_party/segneuron/environment-postprocess.yml",
+    "sha256": "5a0d034d54b23bc836d0ff078ecde8a49c081604201df464be5ecd984ac7c3cd"
+  },
+  "verification": {
+    "elf_import": "PASS",
+    "synthetic_multicut_semantics": "PASS",
+    "true_3d_reviewer_aid": "PASS",
+    "true_3d_receipt": "local_research_build/phase6c/MV-GTVOL-000001-step2250-machine-proposal-true3d/receipt.json"
+  },
+  "scientific_boundary": "The reviewed true-3-D output is MACHINE_PSEUDOLABEL_DIAGNOSTIC and creates no ground truth, MV-FRAG, MV-N, or MV-CONN."
+}

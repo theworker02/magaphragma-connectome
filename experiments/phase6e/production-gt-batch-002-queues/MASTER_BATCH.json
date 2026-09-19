@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "id": "PRODUCTION_GT_BATCH_002-MASTER-QUEUE",
+  "production_batch_id": "PRODUCTION_GT_BATCH_002",
+  "created_at": "2026-09-18T02:33:08.726763Z",
+  "status": "EXPERT_EQUIVARIANT_PRODUCTION_REVIEW_REQUIRED",
+  "axis_blind": true,
+  "expected_n_decisions": 24,
+  "questions": [
+    {
+      "opaque_decision_id": "MV-PGT2-4B39A820CA3B",
+      "presentation_order_index": 0,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        44,
+        91,
+        63
+      ],
+      "crop_id": "MV-PGT2-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-07\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-4966B41367CE",
+      "presentation_order_index": 1,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        40,
+        124,
+        101
+      ],
+      "crop_id": "MV-PGT2-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-9FAE4E76F2A2",
+      "presentation_order_index": 2,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        92,
+        63
+      ],
+      "crop_id": "MV-PGT2-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-07\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-2BEBEEDCFF92",
+      "presentation_order_index": 3,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        41,
+        123,
+        101
+      ],
+      "crop_id": "MV-PGT2-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-BAB09CA48AC4",
+      "presentation_order_index": 4,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        55,
+        94,
+        55
+      ],
+      "crop_id": "MV-PGT2-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-7637862CBC1B",
+      "presentation_order_index": 5,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        14,
+        17,
+        62
+      ],
+      "crop_id": "MV-PGT2-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10",
+      "presentation_order_index": 6,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        16,
+        110,
+        3
+      ],
+      "crop_id": "MV-PGT2-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-2CE1833D1CCB",
+      "presentation_order_index": 7,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        70,
+        3
+      ],
+      "crop_id": "MV-PGT2-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-AF87B0160AA0",
+      "presentation_order_index": 8,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        21,
+        123,
+        123
+      ],
+      "crop_id": "MV-PGT2-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-288803F0D60B",
+      "presentation_order_index": 9,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        20,
+        123,
+        124
+      ],
+      "crop_id": "MV-PGT2-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-49E6371C12AA",
+      "presentation_order_index": 10,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        21,
+        123,
+        111
+      ],
+      "crop_id": "MV-PGT2-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7",
+      "presentation_order_index": 11,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        54,
+        95,
+        55
+      ],
+      "crop_id": "MV-PGT2-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-DD8E15EDBE9C",
+      "presentation_order_index": 12,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        4,
+        69,
+        3
+      ],
+      "crop_id": "MV-PGT2-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-5E2C51243843",
+      "presentation_order_index": 13,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        15,
+        110,
+        4
+      ],
+      "crop_id": "MV-PGT2-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-30FB1AD8CDD9",
+      "presentation_order_index": 14,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        3,
+        69,
+        3
+      ],
+      "pair_right_zyx": [
+        3,
+        69,
+        4
+      ],
+      "crop_id": "MV-PGT2-01",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-01\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-E992DA993C6B",
+      "presentation_order_index": 15,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        54,
+        94,
+        55
+      ],
+      "pair_right_zyx": [
+        54,
+        94,
+        56
+      ],
+      "crop_id": "MV-PGT2-05",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-05\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-BF49DC3573EF",
+      "presentation_order_index": 16,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        20,
+        123,
+        112
+      ],
+      "crop_id": "MV-PGT2-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-57A99981556A",
+      "presentation_order_index": 17,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        123
+      ],
+      "pair_right_zyx": [
+        20,
+        124,
+        123
+      ],
+      "crop_id": "MV-PGT2-08",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-08\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-278692AF03E9",
+      "presentation_order_index": 18,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        13,
+        18,
+        62
+      ],
+      "crop_id": "MV-PGT2-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-BB854E1BF43D",
+      "presentation_order_index": 19,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        15,
+        110,
+        3
+      ],
+      "pair_right_zyx": [
+        15,
+        111,
+        3
+      ],
+      "crop_id": "MV-PGT2-02",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-02\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-2BAB2DBDF0A7",
+      "presentation_order_index": 20,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        40,
+        123,
+        101
+      ],
+      "pair_right_zyx": [
+        40,
+        123,
+        102
+      ],
+      "crop_id": "MV-PGT2-04",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-04\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-58E145DE5FF6",
+      "presentation_order_index": 21,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        20,
+        123,
+        111
+      ],
+      "pair_right_zyx": [
+        20,
+        124,
+        111
+      ],
+      "crop_id": "MV-PGT2-06",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-06\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-BCABD87BA2BF",
+      "presentation_order_index": 22,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        13,
+        17,
+        62
+      ],
+      "pair_right_zyx": [
+        13,
+        17,
+        63
+      ],
+      "crop_id": "MV-PGT2-03",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-03\\workspace.json",
+      "model_navigation": false
+    },
+    {
+      "opaque_decision_id": "MV-PGT2-55E748E01AD8",
+      "presentation_order_index": 23,
+      "kind": "EQUIVARIANT_EDGE_FACE",
+      "pair_left_zyx": [
+        43,
+        91,
+        63
+      ],
+      "pair_right_zyx": [
+        43,
+        91,
+        64
+      ],
+      "crop_id": "MV-PGT2-07",
+      "workspace_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-002-packages\\MV-PGT2-07\\workspace.json",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "PRODUCTION_GT_BATCH_002 candidate under frozen stronger C/E sampling. SPEC002+QC unchanged. Not training. Batch 001 permanently failed."
+}

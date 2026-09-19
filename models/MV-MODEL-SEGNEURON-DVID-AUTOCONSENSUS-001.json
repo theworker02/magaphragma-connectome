@@ -1,0 +1,10 @@
+{
+  "id": "MV-MODEL-SEGNEURON-DVID-AUTOCONSENSUS-001",
+  "status": "EXPERIMENTAL_PSEUDOLABEL_ADAPTATION",
+  "initialization_checkpoint": "experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+  "initialization_checkpoint_sha256": "094eabaaaa93ce33349e5c3a9ee1c166bcda8081c307d6a2d51c74a10d8af354",
+  "target_label_lineage": "MACHINE_PSEUDOLABEL -> AUTO_CONSENSUS_LABEL -> EXPERIMENTAL_SUPERVISION",
+  "excluded_region": "MV-GTVOL-000004",
+  "scientific_limitations": ["not_human_reviewed", "not_independent_biological_validation", "no_biological_artifact_admission"],
+  "training_executed": false
+}

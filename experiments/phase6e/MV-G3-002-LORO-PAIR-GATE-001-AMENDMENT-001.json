@@ -1,0 +1,14 @@
+{
+  "id": "MV-G3-002-LORO-PAIR-GATE-001-AMENDMENT-001",
+  "status": "PATH_CORRECTION_ONLY",
+  "amends": "MV-G3-002-LORO-PAIR-GATE-001",
+  "scope": "H receipt path only",
+  "original_record_remains_unchanged": true,
+  "corrected_receipt_path": "experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-H-001/receipt.json",
+  "receipt_sha256": "c61bdd83b3208b355cc6f8cdd86883b88be081a3bf1c33998dad632bc9e2596e",
+  "metrics_changed": false,
+  "labels_changed": false,
+  "checkpoint_changed": false,
+  "scientific_decision_changed": false,
+  "note": "The original frozen summary contains DIVID in the H receipt path. This amendment resolves the path without mutating the original record."
+}

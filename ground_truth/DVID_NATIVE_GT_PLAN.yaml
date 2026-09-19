@@ -1,0 +1,28 @@
+{
+  "id": "MV-DVID-NATIVE-GT-PLAN-0001",
+  "status": "REGIONS_SELECTED_AWAITING_QUALIFIED_INSTANCE_ANNOTATION",
+  "source": {
+    "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+    "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+    "parent_domain_id": "MV-DOMAIN-PRODUCTION-001",
+    "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+    "voxel_size_nm_xyz": [8.0, 8.0, 8.0],
+    "axis_order": "XYZ",
+    "array_order": "ZYX",
+    "raw_data_immutable": true,
+    "rights": "LOCAL_PROCESSING_ONLY_PENDING_SOURCE_TERMS_REVIEW"
+  },
+  "selection_method": "stratified_spatial_sampling_over_parent_extent; coordinates are real source coordinates. Morphological difficulty is not claimed until qualified visual QA.",
+  "region_shape_voxels_xyz": [192, 192, 192],
+  "required_excluded_buffer_voxels": 512,
+  "regions": [
+    {"id":"MV-GTVOL-000001","split":"train","spatial_group":"TRAIN_NORTHWEST","bounds_xyz":{"x":[1024,1216],"y":[1024,1216],"z":[1024,1216]},"selection_reason":"stratified parent-volume sample; pending visual-QA difficulty assessment"},
+    {"id":"MV-GTVOL-000002","split":"train","spatial_group":"TRAIN_CENTRAL","bounds_xyz":{"x":[7808,8000],"y":[3008,3200],"z":[6784,6976]},"selection_reason":"stratified parent-volume sample; pending visual-QA difficulty assessment"},
+    {"id":"MV-GTVOL-000003","split":"train","spatial_group":"TRAIN_SOUTHEAST","bounds_xyz":{"x":[13632,13824],"y":[9728,9920],"z":[12032,12224]},"selection_reason":"stratified parent-volume sample; pending visual-QA difficulty assessment"},
+    {"id":"MV-GTVOL-000004","split":"validation","spatial_group":"VALIDATION_NORTHEAST","bounds_xyz":{"x":[4096,4288],"y":[10624,10816],"z":[3904,4096]},"selection_reason":"spatially isolated validation sample; pending visual-QA difficulty assessment"},
+    {"id":"MV-GTVOL-000005","split":"validation","spatial_group":"VALIDATION_SOUTHWEST","bounds_xyz":{"x":[15040,15232],"y":[2048,2240],"z":[13440,13632]},"selection_reason":"spatially isolated validation sample; pending visual-QA difficulty assessment"},
+    {"id":"MV-GTVOL-000006","split":"test","spatial_group":"TEST_CENTRAL_EAST","bounds_xyz":{"x":[10880,11072],"y":[5888,6080],"z":[8320,8512]},"selection_reason":"spatially isolated held-out test sample; frozen before model evaluation"}
+  ],
+  "prohibited": ["CATMAID-derived seeds", "CATMAID identity transfer", "model predictions as final labels", "cross-split patch allocation"],
+  "annotation_acceptance": "Only neuronal instance masks with qualified reviewer and explicit review-state progression may be registered. Boundary-truncated and ambiguous instances must remain explicit."
+}

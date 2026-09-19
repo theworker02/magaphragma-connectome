@@ -1,0 +1,25 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "action": "lower_batch_retry",
+    "altered_keys": [
+      "batch_size"
+    ],
+    "detail": {
+      "batch_size": 8
+    },
+    "diagnosis": "OOM",
+    "safe": true,
+    "success": true,
+    "tile_key": "t1"
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T16:02:29Z",
+  "tool": "tilemedic"
+}

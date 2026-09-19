@@ -1,0 +1,168 @@
+{
+  "id": "MV-G3-008-COMPLETE-REVIEW-FREEZE-001",
+  "schema_version": 1,
+  "status": "FROZEN_COMPLETE_HUMAN_REVIEW",
+  "experiment": "G3_008_AXIS_NEUTRAL_PAIRED_LOCATION",
+  "protocol_id": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-004",
+  "sampler_id": "AXIS_NEUTRAL_PAIRED_LOCATION_DETERMINISTIC_V4",
+  "canonical_selection": "bin/run1.json",
+  "pinned_exclusion_sha256": "2cbabb9933c3e88fa2a03287ec8cd2b65f0dd3b72dcaf35b235402c7892dafeb",
+  "pinned_exclusion_count": 713,
+  "C_E_MAGNITUDE_CONTRAST_AVAILABLE_IN_FRESH_ELIGIBLE_POOL": false,
+  "design": {
+    "locations": 12,
+    "edges_per_location": 3,
+    "total_decisions": 36,
+    "axes": ["Z", "Y", "X"],
+    "strata": {"Q1": 3, "Q2": 3, "Q3": 3, "Q4": 3},
+    "contrast_definition": "relative within fresh eligible population quartiles; Q4 is NOT C/E-like absolute high contrast"
+  },
+  "integrity": {
+    "completed_decisions": 36,
+    "completed_locations": 12,
+    "exactly_one_final_valid_decision_per_edge": true,
+    "queue_matches_run1": true,
+    "no_duplicate_or_conflicting_decisions": true,
+    "issues": [],
+    "events_canonical_sha256": "cad6b266a6076ceedbac003db20fc7765c86ae95156b512b12f4565fd9086e5e",
+    "completion_audit_path": "experiments/phase6e/G3_AXNEU4_008_COMPLETION_AUDIT.json"
+  },
+  "paired_location_question": {
+    "question": "Does the historical orientation pattern persist when Z/Y/X are judged at the same physical location?",
+    "answer": "YES",
+    "orientation_collinear_triplets": 12,
+    "total_triplets": 12,
+    "pattern": "Z=DIFFERENT_PROCESS, Y=SAME_PROCESS, X=SAME_PROCESS",
+    "holds_in_all_strata_Q1_Q4": true
+  },
+  "branch": "SEMANTIC_TARGET_STOP",
+  "do_not": [
+    "train_affinity_model_on_these_labels",
+    "fabricate_segmentation_or_connectome",
+    "collect_additional_labels_merely_to_force_identifiability",
+    "silently_redefine_target"
+  ],
+  "triplets": [
+    {
+      "crop_id": "MV-G3-AXNEU4-01",
+      "source_id": "MV-DVID-RAW-SURVEY-005",
+      "stratum": "Q1",
+      "center_zyx": [6, 123, 57],
+      "raw_contrast": 0.6666666666666666,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-02",
+      "source_id": "MV-DVID-RAW-SURVEY-006",
+      "stratum": "Q2",
+      "center_zyx": [23, 3, 111],
+      "raw_contrast": 1.0,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-03",
+      "source_id": "MV-DVID-RAW-SURVEY-011",
+      "stratum": "Q3",
+      "center_zyx": [55, 17, 10],
+      "raw_contrast": 2.3333333333333335,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-04",
+      "source_id": "MV-DVID-RAW-SURVEY-012",
+      "stratum": "Q4",
+      "center_zyx": [39, 119, 3],
+      "raw_contrast": 3.0,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-05",
+      "source_id": "MV-DVID-RAW-SURVEY-016",
+      "stratum": "Q1",
+      "center_zyx": [13, 115, 117],
+      "raw_contrast": 0.6666666666666666,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-06",
+      "source_id": "MV-DVID-RAW-SURVEY-018",
+      "stratum": "Q2",
+      "center_zyx": [33, 39, 38],
+      "raw_contrast": 1.3333333333333333,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-07",
+      "source_id": "MV-DVID-RAW-SURVEY-020",
+      "stratum": "Q3",
+      "center_zyx": [23, 58, 68],
+      "raw_contrast": 1.6666666666666667,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-08",
+      "source_id": "MV-DVID-RAW-SURVEY-021",
+      "stratum": "Q4",
+      "center_zyx": [23, 68, 111],
+      "raw_contrast": 4.666666666666667,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-09",
+      "source_id": "MV-DVID-RAW-SURVEY-023",
+      "stratum": "Q1",
+      "center_zyx": [24, 92, 123],
+      "raw_contrast": 0.3333333333333333,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-10",
+      "source_id": "MV-DVID-RAW-SURVEY-026",
+      "stratum": "Q2",
+      "center_zyx": [52, 77, 76],
+      "raw_contrast": 1.3333333333333333,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-11",
+      "source_id": "MV-DVID-RAW-SURVEY-028",
+      "stratum": "Q3",
+      "center_zyx": [3, 113, 39],
+      "raw_contrast": 2.0,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    },
+    {
+      "crop_id": "MV-G3-AXNEU4-12",
+      "source_id": "MV-DVID-RAW-SURVEY-029",
+      "stratum": "Q4",
+      "center_zyx": [13, 83, 62],
+      "raw_contrast": 3.3333333333333335,
+      "Z": "DIFFERENT_PROCESS",
+      "Y": "SAME_PROCESS",
+      "X": "SAME_PROCESS"
+    }
+  ],
+  "semantic_audit_path": "experiments/phase6e/G3_AFFINITY_TARGET_SEMANTICS_AUDIT_001.json"
+}

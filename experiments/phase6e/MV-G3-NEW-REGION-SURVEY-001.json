@@ -1,0 +1,1782 @@
+{
+  "eligibility_criteria": {
+    "forbidden_inputs": [
+      "SAME/DIFFERENT labels",
+      "class predictions",
+      "learned affinities",
+      "A-H class composition"
+    ],
+    "label_blind": true,
+    "min_interior_volume_each_axis": 9,
+    "must_be_spatially_non_overlapping_with_all_existing": true,
+    "must_not_be_protected_volume": true,
+    "must_not_be_used_by_existing_region": true,
+    "raw_integrity_required": true
+  },
+  "eligible_candidates": [
+    "MV-DVID-RAW-SURVEY-003",
+    "MV-DVID-RAW-SURVEY-005",
+    "MV-DVID-RAW-SURVEY-006",
+    "MV-DVID-RAW-SURVEY-007",
+    "MV-DVID-RAW-SURVEY-009",
+    "MV-DVID-RAW-SURVEY-010",
+    "MV-DVID-RAW-SURVEY-011",
+    "MV-DVID-RAW-SURVEY-012",
+    "MV-DVID-RAW-SURVEY-013",
+    "MV-DVID-RAW-SURVEY-014",
+    "MV-DVID-RAW-SURVEY-016",
+    "MV-DVID-RAW-SURVEY-018",
+    "MV-DVID-RAW-SURVEY-019",
+    "MV-DVID-RAW-SURVEY-020",
+    "MV-DVID-RAW-SURVEY-021",
+    "MV-DVID-RAW-SURVEY-023",
+    "MV-DVID-RAW-SURVEY-026",
+    "MV-DVID-RAW-SURVEY-028",
+    "MV-DVID-RAW-SURVEY-029",
+    "MV-DVID-RAW-SURVEY-030",
+    "MV-DVID-RAW-SURVEY-032"
+  ],
+  "eligible_count": 21,
+  "excluded_existing_sources": [
+    "MV-DVID-RAW-SURVEY-001",
+    "MV-DVID-RAW-SURVEY-002",
+    "MV-DVID-RAW-SURVEY-004",
+    "MV-DVID-RAW-SURVEY-008",
+    "MV-DVID-RAW-SURVEY-015",
+    "MV-DVID-RAW-SURVEY-017",
+    "MV-DVID-RAW-SURVEY-022",
+    "MV-DVID-RAW-SURVEY-024",
+    "MV-DVID-RAW-SURVEY-025",
+    "MV-DVID-RAW-SURVEY-027",
+    "MV-DVID-RAW-SURVEY-031"
+  ],
+  "existing_region_boxes": [
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-A",
+      "source_id": "MV-DVID-RAW-SURVEY-001",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-B",
+      "source_id": "MV-DVID-RAW-SURVEY-008",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-C",
+      "source_id": "MV-DVID-RAW-SURVEY-017",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-D",
+      "source_id": "MV-DVID-RAW-SURVEY-024",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-E",
+      "source_id": "MV-DVID-RAW-SURVEY-027",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-F",
+      "source_id": "MV-DVID-RAW-SURVEY-031",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-VALIDATION-V1",
+      "source_id": "MV-DVID-RAW-SURVEY-004",
+      "split": "G3_TARGET_VALIDATION"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-VALIDATION-V2",
+      "source_id": "MV-DVID-RAW-SURVEY-015",
+      "split": "G3_TARGET_VALIDATION"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-VALIDATION-V3",
+      "source_id": "MV-DVID-RAW-SURVEY-025",
+      "split": "G3_TARGET_VALIDATION"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-G",
+      "source_id": "MV-DVID-RAW-SURVEY-002",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-H",
+      "source_id": "MV-DVID-RAW-SURVEY-022",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-A",
+      "source_id": "MV-DVID-RAW-SURVEY-001",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-B",
+      "source_id": "MV-DVID-RAW-SURVEY-008",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-D",
+      "source_id": "MV-DVID-RAW-SURVEY-024",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-F",
+      "source_id": "MV-DVID-RAW-SURVEY-031",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-G",
+      "source_id": "MV-DVID-RAW-SURVEY-002",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-H",
+      "source_id": "MV-DVID-RAW-SURVEY-022",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-A",
+      "source_id": "MV-DVID-RAW-SURVEY-001",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-B",
+      "source_id": "MV-DVID-RAW-SURVEY-008",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-D",
+      "source_id": "MV-DVID-RAW-SURVEY-024",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-F",
+      "source_id": "MV-DVID-RAW-SURVEY-031",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-G",
+      "source_id": "MV-DVID-RAW-SURVEY-002",
+      "split": "G3_TARGET_TRAIN"
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "crop_id": "MV-G3-TRAIN-H",
+      "source_id": "MV-DVID-RAW-SURVEY-022",
+      "split": "G3_TARGET_TRAIN"
+    }
+  ],
+  "id": "MV-G3-NEW-REGION-SURVEY-001",
+  "survey_manifest": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\manifest.json",
+    "sha256": "97b16d616b3eb25c4b7139e8e228eaae7cafeaeee88ef55e7a9239fc3ad2b80e"
+  },
+  "surveyed_population": [
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-001",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-A"
+      ],
+      "raw_sha256": "bcff730698cbde54cbe310355942e26cdd603874ec2941506281d89bbe9c9239",
+      "raw_statistics": {
+        "mean": 246.49273681640625,
+        "mean_abs_gradient": 0.8079180717468262,
+        "p01_p50_p99": [
+          242.0,
+          247.0,
+          250.0
+        ],
+        "std": 1.5707372426986694
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-002",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-G"
+      ],
+      "raw_sha256": "74caf4ee2e2d20a61099f3dcef29c12133f7588da25572b010cc98d7b4ea3227",
+      "raw_statistics": {
+        "mean": 246.2980499267578,
+        "mean_abs_gradient": 0.8429282307624817,
+        "p01_p50_p99": [
+          242.0,
+          246.0,
+          250.0
+        ],
+        "std": 1.6386568546295166
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-003",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "ca728132f431603511c9ff4e84cb64f5863d73dac4a3de69663678cac5ffcebc",
+      "raw_statistics": {
+        "mean": 245.67764282226562,
+        "mean_abs_gradient": 0.9043356776237488,
+        "p01_p50_p99": [
+          241.0,
+          246.0,
+          249.0
+        ],
+        "std": 1.7564241886138916
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-004",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-VALIDATION-V1"
+      ],
+      "raw_sha256": "5b43d4f00367781f46a860b51bd264e78ae0ca3d39802088f11fb5558b5db6b1",
+      "raw_statistics": {
+        "mean": 244.821044921875,
+        "mean_abs_gradient": 0.9860994219779968,
+        "p01_p50_p99": [
+          240.0,
+          245.0,
+          249.0
+        ],
+        "std": 1.9005310535430908
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-005",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "ba13215792b0278429b4a98b8ceccf60d481b797554cefa7f894991060cc5e4d",
+      "raw_statistics": {
+        "mean": 244.01705932617188,
+        "mean_abs_gradient": 1.0296363830566406,
+        "p01_p50_p99": [
+          239.0,
+          244.0,
+          248.0
+        ],
+        "std": 1.976728916168213
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-006",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "32e3ac4b406c943888034423abce14a3b8ebba41bac3f78f7daeb5333ba02235",
+      "raw_statistics": {
+        "mean": 243.35433959960938,
+        "mean_abs_gradient": 1.1207753419876099,
+        "p01_p50_p99": [
+          238.0,
+          244.0,
+          248.0
+        ],
+        "std": 2.1419479846954346
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-007",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "6d61ddbcbc7b177211857ec6bf6f381adc7e9e046377da71ef69417112d511b4",
+      "raw_statistics": {
+        "mean": 242.47735595703125,
+        "mean_abs_gradient": 1.222921371459961,
+        "p01_p50_p99": [
+          236.0,
+          243.0,
+          247.0
+        ],
+        "std": 2.327112913131714
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-008",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-B"
+      ],
+      "raw_sha256": "475ee2cc235625b16a8cd7cdc9291ae144d166e0444ad9d62ce32ec06ce37774",
+      "raw_statistics": {
+        "mean": 241.82818603515625,
+        "mean_abs_gradient": 1.2741742134094238,
+        "p01_p50_p99": [
+          235.0,
+          242.0,
+          247.0
+        ],
+        "std": 2.424623727798462
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-009",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 6656,
+      "overlaps_with": [],
+      "raw_sha256": "340a3b664247910792d01217c00661e9d805c8ba29432053e1682d480963fc46",
+      "raw_statistics": {
+        "mean": 243.04867553710938,
+        "mean_abs_gradient": 1.1000930070877075,
+        "p01_p50_p99": [
+          237.0,
+          243.0,
+          247.0
+        ],
+        "std": 2.1038386821746826
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-010",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "3613064be285ecc3c4fc979691c71648df666cbb5ef9a8e7ba233cb80659249b",
+      "raw_statistics": {
+        "mean": 242.08811950683594,
+        "mean_abs_gradient": 1.2299326658248901,
+        "p01_p50_p99": [
+          236.0,
+          242.0,
+          247.0
+        ],
+        "std": 2.3393356800079346
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-011",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "ed6da55ec9d327cd001231f04a8724ba42a7361f05d8fe2f65ee8dbf276979ca",
+      "raw_statistics": {
+        "mean": 241.46261596679688,
+        "mean_abs_gradient": 1.3181759119033813,
+        "p01_p50_p99": [
+          235.0,
+          242.0,
+          246.0
+        ],
+        "std": 2.4939520359039307
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-012",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "06e378e5531853cf2324a2b9b49e035252333963ef821efacfbda09d307c0df1",
+      "raw_statistics": {
+        "mean": 241.13311767578125,
+        "mean_abs_gradient": 1.324837327003479,
+        "p01_p50_p99": [
+          234.0,
+          241.0,
+          246.0
+        ],
+        "std": 2.5069501399993896
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-013",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 7616,
+      "overlaps_with": [],
+      "raw_sha256": "424cfb707ce6b81a4712774aca860878e5d17f87d2971c19b68ac102af2bdb3f",
+      "raw_statistics": {
+        "mean": 242.55223083496094,
+        "mean_abs_gradient": 1.058517336845398,
+        "p01_p50_p99": [
+          237.0,
+          243.0,
+          247.0
+        ],
+        "std": 2.0347330570220947
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-014",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "0ae6df2eeeb1bb17d2d9540131ecab63f882efae60706c2f14bc8c132e6166a9",
+      "raw_statistics": {
+        "mean": 241.63357543945312,
+        "mean_abs_gradient": 1.1595655679702759,
+        "p01_p50_p99": [
+          236.0,
+          242.0,
+          246.0
+        ],
+        "std": 2.2196590900421143
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-015",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-VALIDATION-V2"
+      ],
+      "raw_sha256": "da035333727235123fa31ae05a6f1a539d61362bd1f72f886be852a2ed8d9542",
+      "raw_statistics": {
+        "mean": 241.33802795410156,
+        "mean_abs_gradient": 1.203764796257019,
+        "p01_p50_p99": [
+          235.0,
+          241.0,
+          246.0
+        ],
+        "std": 2.2987570762634277
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          3776,
+          3840
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-016",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "8feee4b77f7697ac8f5b7f5385942f8a724f75608b527db4e96c86369630ac80",
+      "raw_statistics": {
+        "mean": 241.17935180664062,
+        "mean_abs_gradient": 1.1989998817443848,
+        "p01_p50_p99": [
+          235.0,
+          241.0,
+          246.0
+        ],
+        "std": 2.2888972759246826
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-017",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-C"
+      ],
+      "raw_sha256": "ff7a7ae770a775605752448f5318b50050324a895ea49b41b22dab3bbcf2335b",
+      "raw_statistics": {
+        "mean": 190.16221618652344,
+        "mean_abs_gradient": 8.046053886413574,
+        "p01_p50_p99": [
+          103.0,
+          198.0,
+          238.0
+        ],
+        "std": 33.12591552734375
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-018",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "2ef65a6b2d1dcc216fd8073bee042179d7e58d1e402a51a054e2e3ae94e74a07",
+      "raw_statistics": {
+        "mean": 247.19247436523438,
+        "mean_abs_gradient": 0.7709417343139648,
+        "p01_p50_p99": [
+          243.0,
+          247.0,
+          250.0
+        ],
+        "std": 1.5091023445129395
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-019",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "a5057a1e34a89f9fd79df34191bc376222e951cf0d8a012b6f20c480026a2602",
+      "raw_statistics": {
+        "mean": 245.71585083007812,
+        "mean_abs_gradient": 0.9211950302124023,
+        "p01_p50_p99": [
+          241.0,
+          246.0,
+          249.0
+        ],
+        "std": 1.7866225242614746
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          1600,
+          1728
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-020",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "c39928206ab843b34b3fc4cd82d7ca2fe3b95a967959c4c5a9ff9f8355469bff",
+      "raw_statistics": {
+        "mean": 244.33497619628906,
+        "mean_abs_gradient": 1.0229792594909668,
+        "p01_p50_p99": [
+          239.0,
+          244.0,
+          248.0
+        ],
+        "std": 1.9825299978256226
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-021",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "bdc5b40a41cbeba386ed235246453d2087ec517fb1afe3ac7c2da884e0cbcb33",
+      "raw_statistics": {
+        "mean": 244.48251342773438,
+        "mean_abs_gradient": 0.990880012512207,
+        "p01_p50_p99": [
+          239.0,
+          245.0,
+          248.0
+        ],
+        "std": 1.921151041984558
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-022",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-H",
+        "MV-G3-TRAIN-H",
+        "MV-G3-TRAIN-H"
+      ],
+      "raw_sha256": "4d630429b618700e7ab4972123ae627e3279c5b9221f2d108ee0ddc35c925ee5",
+      "raw_statistics": {
+        "mean": 240.91671752929688,
+        "mean_abs_gradient": 1.3361296653747559,
+        "p01_p50_p99": [
+          234.0,
+          241.0,
+          246.0
+        ],
+        "std": 2.6362979412078857
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-023",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "53337a956fca0fc81bf8a2c986bcc1e1f256f2ddd1cb2a4763a996c2b61887e2",
+      "raw_statistics": {
+        "mean": 188.36981201171875,
+        "mean_abs_gradient": 8.399924278259277,
+        "p01_p50_p99": [
+          95.0,
+          196.0,
+          242.0
+        ],
+        "std": 40.15532302856445
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          4992,
+          5120
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-024",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-D"
+      ],
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "raw_statistics": {
+        "mean": 238.88023376464844,
+        "mean_abs_gradient": 1.5021357536315918,
+        "p01_p50_p99": [
+          231.0,
+          239.0,
+          245.0
+        ],
+        "std": 2.8720993995666504
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-025",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-VALIDATION-V3"
+      ],
+      "raw_sha256": "5ca319f584b064768f46ae352d5b0f198f01d11b29c8ba7f8305734d02676983",
+      "raw_statistics": {
+        "mean": 181.37435913085938,
+        "mean_abs_gradient": 4.793099880218506,
+        "p01_p50_p99": [
+          53.0,
+          176.0,
+          248.0
+        ],
+        "std": 57.27154541015625
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-026",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "18a2e4527d1fa8de6421b73ed520807a0f6242846d70a998cc06be4f8adec447",
+      "raw_statistics": {
+        "mean": 144.9369354248047,
+        "mean_abs_gradient": 15.280797004699707,
+        "p01_p50_p99": [
+          36.0,
+          142.0,
+          238.0
+        ],
+        "std": 54.58867645263672
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-027",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-E"
+      ],
+      "raw_sha256": "67576bd85058b72c2d0637d19f5e0dccbed906fd4537aceee7f0a2b82935c66b",
+      "raw_statistics": {
+        "mean": 153.14108276367188,
+        "mean_abs_gradient": 14.913451194763184,
+        "p01_p50_p99": [
+          33.0,
+          160.0,
+          238.0
+        ],
+        "std": 58.5054817199707
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          8384,
+          8512
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-028",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "3f8f36ff168743b9a0af088381bea2b9fc920f521bc6625b81fa15117f831f98",
+      "raw_statistics": {
+        "mean": 240.65322875976562,
+        "mean_abs_gradient": 1.3522539138793945,
+        "p01_p50_p99": [
+          234.0,
+          241.0,
+          246.0
+        ],
+        "std": 2.5843427181243896
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          1984,
+          2112
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-029",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 3264,
+      "overlaps_with": [],
+      "raw_sha256": "ee943c9d1b3b3a9fb8f39fee4a0480a32e65dd1acf8ce510e3a9bb4a16268740",
+      "raw_statistics": {
+        "mean": 245.99148559570312,
+        "mean_abs_gradient": 0.8309667706489563,
+        "p01_p50_p99": [
+          242.0,
+          246.0,
+          249.0
+        ],
+        "std": 1.6170531511306763
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          6144,
+          6272
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-030",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "672f380e6c6974b81b8c51ca1e3b780acad9303cff1795ee7890743b4fa1deb1",
+      "raw_statistics": {
+        "mean": 245.27508544921875,
+        "mean_abs_gradient": 0.9177367091178894,
+        "p01_p50_p99": [
+          241.0,
+          245.0,
+          249.0
+        ],
+        "std": 1.779396653175354
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          10304,
+          10432
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-031",
+      "dtype": "uint8",
+      "eligible": false,
+      "min_gap_to_any_existing": -64,
+      "overlaps_with": [
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-F"
+      ],
+      "raw_sha256": "e3f37482cde357f771b5a35a4fd6222235c803972641b7b4456f451658a69550",
+      "raw_statistics": {
+        "mean": 245.2352752685547,
+        "mean_abs_gradient": 0.9331132769584656,
+        "p01_p50_p99": [
+          240.0,
+          245.0,
+          249.0
+        ],
+        "std": 1.8028254508972168
+      },
+      "rejection_reasons": [
+        "ALREADY_USED_BY_EXISTING_G3_REGION",
+        "SPATIAL_OVERLAP_WITH_EXISTING_REGION"
+      ],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    },
+    {
+      "bounds_xyz": {
+        "x": [
+          14464,
+          14592
+        ],
+        "y": [
+          11776,
+          11904
+        ],
+        "z": [
+          11456,
+          11520
+        ]
+      },
+      "candidate_source_id": "MV-DVID-RAW-SURVEY-032",
+      "dtype": "uint8",
+      "eligible": true,
+      "min_gap_to_any_existing": 4032,
+      "overlaps_with": [],
+      "raw_sha256": "bf53402a0eac81d8176a1fcb99fc7cfe8001dce7e37cc53e7b44b52dfa706c40",
+      "raw_statistics": {
+        "mean": 245.52276611328125,
+        "mean_abs_gradient": 0.8743700981140137,
+        "p01_p50_p99": [
+          241.0,
+          246.0,
+          249.0
+        ],
+        "std": 1.695237398147583
+      },
+      "rejection_reasons": [],
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ]
+    }
+  ]
+}

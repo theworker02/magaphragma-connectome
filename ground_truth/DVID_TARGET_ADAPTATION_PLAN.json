@@ -1,0 +1,23 @@
+{
+  "id": "MV-DVID-TARGET-ADAPTATION-001",
+  "status": "AWAITING_REVIEWED_DVID_NATIVE_LABELS",
+  "source_model": {
+    "id": "MV-MODEL-SEGNEURON-FIBSEM-SOURCE-003-STEP2250",
+    "checkpoint": "experiments/phase6b/MV-TRAIN-SEGNEURON-FIBSEM-003/checkpoint-step2250.pt",
+    "role": "MACHINE_PROPOSAL_INITIALIZATION_ONLY"
+  },
+  "roles": {
+    "train": ["MV-GTVOL-000001", "MV-GTVOL-000002", "MV-GTVOL-000003"],
+    "validation": ["MV-GTVOL-000005"],
+    "test_reserved": ["MV-GTVOL-000006"],
+    "regression_only": "MV-GTVOL-000004"
+  },
+  "label_lineage": "REAL_DVID_RAW -> MACHINE_PSEUDOLABEL -> REVIEWED_OR_CORRECTED_LABEL -> DVID_NATIVE_SUPERVISION",
+  "review_requirements": {
+    "machine_proposal_is_ground_truth": false,
+    "minimum_training_unlock": "one REVIEWED-or-stronger train region plus one distinct REVIEWED-or-stronger validation region",
+    "gold_standard_requires": "qualified independent adjudication",
+    "ambiguous_and_volume_truncated_objects": "must_remain_explicit"
+  },
+  "prohibited": ["labeling MV-GTVOL-000004", "training on MV-GTVOL-000004", "validation selection on MV-GTVOL-000004", "CATMAID-derived seeds or identities", "promotion of machine pseudolabels without reviewer correction or review"]
+}

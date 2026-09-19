@@ -1,0 +1,10 @@
+{
+  "tool": "gaphound",
+  "ts": "20260918T155551Z",
+  "repair_plan": {
+    "n_work_items": 0,
+    "vs_full_volume_tiles": 7,
+    "worklist": [],
+    "note": "Minimum AxonForge worklist to close holes \u2014 does not rerun full volume."
+  }
+}

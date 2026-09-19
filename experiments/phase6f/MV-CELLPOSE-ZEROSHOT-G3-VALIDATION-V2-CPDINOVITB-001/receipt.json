@@ -1,0 +1,110 @@
+{
+  "id": "MV-CELLPOSE-ZEROSHOT-MV-G3-VALIDATION-V2-cpdino-vitb",
+  "created_at": "2026-09-17T13:15:36.130657Z",
+  "status": "COMPLETED_MACHINE_DIAGNOSTIC_ONLY",
+  "classification": "INDEPENDENT_GENERAL_CELL_SEGMENTATION_MODEL_ZERO_SHOT_OUTPUT",
+  "crop_id": "MV-G3-VALIDATION-V2",
+  "protected_regression_used": false,
+  "input": {
+    "raw": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-015-raw_zyx.npy",
+    "sha256": "da035333727235123fa31ae05a6f1a539d61362bd1f72f886be852a2ed8d9542",
+    "statistics": {
+      "shape": [
+        64,
+        128,
+        128
+      ],
+      "dtype": "uint8",
+      "finite_count": 1048576,
+      "nan_count": 0,
+      "inf_count": 0,
+      "min": 226.0,
+      "max": 250.0,
+      "mean": 241.33802890777588,
+      "std": 2.29875697498762,
+      "quantiles_p01_p05_p50_p95_p99": [
+        235.0,
+        237.0,
+        241.0,
+        245.0,
+        246.0
+      ]
+    }
+  },
+  "model": {
+    "name": "cpdino-vitb",
+    "source": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\third_party\\cellpose",
+    "source_commit": "a54cb48849b7e225a81e8e43dcb042d42427f543",
+    "checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\third_party\\cellpose-runtime\\models\\cpdino-vitb",
+    "checkpoint_sha256": "3ed4c06a3963ab13ff377d4e2957174aaaf637434eb031ae9931fcbfaf9a217f",
+    "checkpoint_semantics": "Cellpose flow and cell-probability head; not Z/Y/X neuronal affinities"
+  },
+  "runtime": {
+    "device": "AMD  Radeon RX 7800 XT",
+    "torch": "2.9.0+rocmsdk20251116",
+    "torch_hip": "7.1.52802-561cc400e1",
+    "compatibility_adapter": "DECLARED_TORCHVISION_NMS_SCHEMA_ONLY; no NMS implementation or invocation",
+    "normalization": "Cellpose eval(normalize=True): documented percentile normalization",
+    "do_3D": true,
+    "compute_masks": false,
+    "tile_size": 384,
+    "runtime_seconds": 83.7607250213623,
+    "peak_gpu_memory_allocated_bytes": 1092153856
+  },
+  "outputs": {
+    "flows_czyx": {
+      "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6f\\MV-CELLPOSE-ZEROSHOT-G3-VALIDATION-V2-CPDINOVITB-001\\cellpose_flows_czyx.npy",
+      "sha256": "b822fcc3657362973a39a484d4a6abfd39bb95fa969f0ee0d49a4238513806c7",
+      "statistics": {
+        "shape": [
+          3,
+          64,
+          128,
+          128
+        ],
+        "dtype": "float32",
+        "finite_count": 3145728,
+        "nan_count": 0,
+        "inf_count": 0,
+        "min": -6.185196876525879,
+        "max": 5.773809432983398,
+        "mean": 0.008192351087927818,
+        "std": 0.8063578009605408,
+        "quantiles_p01_p05_p50_p95_p99": [
+          -2.4920941185951233,
+          -1.2670127689838409,
+          0.01122940331697464,
+          1.2819840252399444,
+          2.3894757723808286
+        ]
+      }
+    },
+    "cell_probability_zyx": {
+      "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6f\\MV-CELLPOSE-ZEROSHOT-G3-VALIDATION-V2-CPDINOVITB-001\\cellpose_cell_probability_zyx.npy",
+      "sha256": "e5d95be6525c2c0097549d7d0e490ed3a844ba40b3d9307141798a3af29d30e3",
+      "statistics": {
+        "shape": [
+          64,
+          128,
+          128
+        ],
+        "dtype": "float32",
+        "finite_count": 1048576,
+        "nan_count": 0,
+        "inf_count": 0,
+        "min": -7.596900939941406,
+        "max": 5.313015937805176,
+        "mean": 0.06977269798517227,
+        "std": 1.096482753753662,
+        "quantiles_p01_p05_p50_p95_p99": [
+          -2.742111921310425,
+          -1.8041653037071228,
+          0.09921246767044067,
+          1.8408834338188171,
+          2.682198643684387
+        ]
+      }
+    }
+  },
+  "scientific_boundary": "No Cellpose mask dynamics were run. Outputs have not been thresholded, interpreted as neurons, converted to labels, or used for training."
+}

@@ -1,0 +1,30 @@
+{
+  "source": "third_party/segneuron README and Train_and_Inference/inference.py",
+  "source_commit": "ea6f0c963a2f60f0f130244da27e2b2d753f8ee9",
+  "input": {
+    "required_dtype": "uint8",
+    "required_axes": "ZYX",
+    "normalization": "float32(raw) / 255.0",
+    "resampling": "none; caller must select an appropriate scale"
+  },
+  "output": {
+    "affinities": {
+      "axes": "CZYX",
+      "semantics": "same-process merge probabilities",
+      "offsets_zyx": [[-1, 0, 0], [0, -1, 0], [0, 0, -1]]
+    },
+    "foreground_head": {
+      "axes": "ZYX",
+      "semantics": "label != 0 foreground/interior confidence",
+      "historical_filename": "boundaries.tif",
+      "is_membrane_probability": false,
+      "postprocess_fusion": "elementwise minimum with every affinity channel"
+    },
+    "activation": "single internal sigmoid applied by MNet to both heads"
+  },
+  "prohibited_interpretations": [
+    "invert foreground_head as a membrane probability",
+    "treat affinity channels as boundary probabilities",
+    "apply a second sigmoid to retained probabilities"
+  ]
+}

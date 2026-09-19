@@ -1,0 +1,118 @@
+{
+  "created_at": "2026-09-17T22:16:22.092215Z",
+  "design": {
+    "axis_balance_by_construction": "exactly one Z, one Y, one X edge per location",
+    "contrast_bands": [
+      {
+        "hi": 4.0,
+        "label": "LOW",
+        "lo": 0.0
+      },
+      {
+        "hi": 10.0,
+        "label": "MID",
+        "lo": 4.0
+      },
+      {
+        "hi": null,
+        "label": "HIGH",
+        "lo": 10.0
+      }
+    ],
+    "crops": [
+      {
+        "crop_id": "MV-G3-AXNEU2-LO1",
+        "regime": "low",
+        "source_id": "MV-DVID-RAW-SURVEY-010"
+      },
+      {
+        "crop_id": "MV-G3-AXNEU2-LO2",
+        "regime": "low",
+        "source_id": "MV-DVID-RAW-SURVEY-019"
+      },
+      {
+        "crop_id": "MV-G3-AXNEU2-HI1",
+        "regime": "high",
+        "source_id": "MV-DVID-RAW-SURVEY-017"
+      },
+      {
+        "crop_id": "MV-G3-AXNEU2-HI2",
+        "regime": "high",
+        "source_id": "MV-DVID-RAW-SURVEY-027"
+      }
+    ],
+    "edge_eligibility": "all three eligible independently; NOT argmax(|gradient|) gated",
+    "edges_per_location": {
+      "X": "(z,y,x)<->(z,y,x+1)",
+      "Y": "(z,y,x)<->(z,y+1,x)",
+      "Z": "(z,y,x)<->(z+1,y,x)"
+    },
+    "location_stratifier": "mean |c->c+1| over the three axis edges (raw EM only)",
+    "locations_per_crop": 3,
+    "total_edges": 36,
+    "total_locations": 12
+  },
+  "experiment": "AXIS_NEUTRAL_PAIRED_LOCATION_V2",
+  "id": "MV-G3-AXIS-NEUTRAL-SAMPLING-PROTOCOL-002",
+  "per_crop": [
+    {
+      "band_counts": {
+        "HIGH": 0,
+        "LOW": 3,
+        "MID": 0
+      },
+      "crop_id": "MV-G3-AXNEU2-LO1",
+      "edges": 9,
+      "locations": 3,
+      "regime": "low",
+      "source_id": "MV-DVID-RAW-SURVEY-010",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU2-LO1-006"
+    },
+    {
+      "band_counts": {
+        "HIGH": 0,
+        "LOW": 3,
+        "MID": 0
+      },
+      "crop_id": "MV-G3-AXNEU2-LO2",
+      "edges": 9,
+      "locations": 3,
+      "regime": "low",
+      "source_id": "MV-DVID-RAW-SURVEY-019",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU2-LO2-006"
+    },
+    {
+      "band_counts": {
+        "HIGH": 0,
+        "LOW": 1,
+        "MID": 2
+      },
+      "crop_id": "MV-G3-AXNEU2-HI1",
+      "edges": 9,
+      "locations": 3,
+      "regime": "high",
+      "source_id": "MV-DVID-RAW-SURVEY-017",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU2-HI1-006"
+    },
+    {
+      "band_counts": {
+        "HIGH": 3,
+        "LOW": 0,
+        "MID": 0
+      },
+      "crop_id": "MV-G3-AXNEU2-HI2",
+      "edges": 9,
+      "locations": 3,
+      "regime": "high",
+      "source_id": "MV-DVID-RAW-SURVEY-027",
+      "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-G3-AXNEU2-HI2-006"
+    }
+  ],
+  "schema_version": 1,
+  "status": "PREDECLARED_FIXED_BEFORE_LABELS",
+  "supersedes_note": "New version; does not modify PROTOCOL-001 (preserved).",
+  "survey_manifest": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\manifest.json",
+    "sha256": "97b16d616b3eb25c4b7139e8e228eaae7cafeaeee88ef55e7a9239fc3ad2b80e"
+  }
+}

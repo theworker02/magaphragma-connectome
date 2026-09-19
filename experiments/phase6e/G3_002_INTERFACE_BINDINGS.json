@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-002-INTERFACE-BINDINGS",
+  "regions": {
+    "MV-G3-TRAIN-A": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-A/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-TRAIN-A.json"},
+    "MV-G3-TRAIN-B": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-B/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-TRAIN-B.json"},
+    "MV-G3-TRAIN-D": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-D/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-TRAIN-D.json"},
+    "MV-G3-TRAIN-F": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-TRAIN-F/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-TRAIN-F.json"},
+    "MV-G3-TRAIN-G": {"workspace": "experiments/phase6e/g3-external-review-packages-002/MV-G3-TRAIN-G/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-002/MV-G3-TRAIN-G.json"},
+    "MV-G3-TRAIN-H": {"workspace": "experiments/phase6e/g3-external-review-packages-002/MV-G3-TRAIN-H/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-002/MV-G3-TRAIN-H.json"},
+    "MV-G3-VALIDATION-V1": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V1/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-VALIDATION-V1.json"},
+    "MV-G3-VALIDATION-V2": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V2/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-VALIDATION-V2.json"},
+    "MV-G3-VALIDATION-V3": {"workspace": "experiments/phase6e/g3-external-review-packages-001/MV-G3-VALIDATION-V3/workspace.json", "queue": "experiments/phase6e/g3-interface-queues-001/MV-G3-VALIDATION-V3.json"}
+  }
+}

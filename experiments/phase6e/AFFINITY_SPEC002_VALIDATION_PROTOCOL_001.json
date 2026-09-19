@@ -1,0 +1,127 @@
+{
+  "annotation_question_wording": "Do the two marked locations belong to the same biological process/object across their shared face?",
+  "batch_artifact": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_001.json",
+  "batch_id": "AFFINITY_SPEC002_VALIDATION_001",
+  "blinding": {
+    "axis_blind": true,
+    "deterministic_pseudorandom_order": true,
+    "do_not_reveal_during_judgment": [
+      "X/Y/Z identity",
+      "fixed axis order",
+      "raw stratum",
+      "historical labels",
+      "expected outcome"
+    ],
+    "opaque_decision_ids": true,
+    "reveal_axis_only_after_all_decisions_frozen": true
+  },
+  "completed_at": "2026-09-18T01:44:42.270344Z",
+  "created_at": "2026-09-18T01:33:55.992927Z",
+  "design": {
+    "edges_per_location": 3,
+    "n_locations": 12,
+    "one_location_per_independent_source": true,
+    "raw_only_strata": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4"
+    ],
+    "seed_material": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001|SPEC_002|EQUIVARIANT_EDGE_FACE_V1",
+    "selection_inputs_allowed": [
+      "coordinates",
+      "raw_intensity",
+      "local_contrast",
+      "gradient_magnitude",
+      "raw_pixel_membrane_likeness",
+      "geometric_validity",
+      "spatial_separation"
+    ],
+    "selection_inputs_forbidden": [
+      "human_labels",
+      "invalid_g3_labels",
+      "smoke_labels",
+      "model_affinity_predictions",
+      "segmentation_predictions",
+      "targeting_inferred_SAME_DIFFERENT"
+    ],
+    "strata_definition": "Relative quartiles of mean |single-voxel intensity step| over the three +1 faces at each candidate center, pooled within the eligible independent fresh-source population. NOT historical C/E absolute thresholds. Strata are NOT SAME-like or DIFFERENT-like.",
+    "total_decisions": 36
+  },
+  "do_not_train": true,
+  "final_verdict": {
+    "detail": "Zero DIFFERENT_PROCESS decisions among class-countable edges.",
+    "do_not_train": true,
+    "not_automatic_production_gt": true,
+    "rules_match_protocol": true,
+    "rules_source": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001.predeclared_verdict_rules",
+    "value": "NEGATIVE_CLASS_NOT_DEMONSTRATED"
+  },
+  "frozen_before_human_labels": true,
+  "id": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001",
+  "independence_check": {
+    "available_independent_sources": 18,
+    "n_locations_required": 12,
+    "prefer_one_location_per_independent_source": true,
+    "satisfied": true
+  },
+  "next_required_if_stopped": null,
+  "not_a_g3_training_cohort": true,
+  "not_g3_009": true,
+  "predeclared_verdict_rules": {
+    "NEGATIVE_CLASS_NOT_DEMONSTRATED": "Zero DIFFERENT_PROCESS decisions across the entire validation batch (after excluding UNCERTAIN/BAD_QUESTION from class counts).",
+    "ORIENTATION_INVARIANCE_FAILED": "After unblinding, class is pathologically determined by global axis: every evaluable location triplet matches Z=DIFFERENT_PROCESS & Y=SAME_PROCESS & X=SAME_PROCESS (the historical orientation-collinear pattern), OR any single axis is perfectly predictive of class across all evaluable edges (one axis all DIFFERENT and never SAME while another axis all SAME and never DIFFERENT, with \u22653 evaluable edges on each of those axes).",
+    "SPEC002_ANNOTATION_PROCEDURE_VALIDATED": "Synthetic gate PASS; provenance valid; complete blinded review; \u22651 DIFFERENT_PROCESS; \u22651 SAME_PROCESS; NOT NEGATIVE_CLASS_NOT_DEMONSTRATED; NOT ORIENTATION_INVARIANCE_FAILED; no presentation-leakage evidence sufficient to explain labels.",
+    "SPEC002_PROCEDURE_UNRESOLVED": "Any other semantic/presentation integrity failure, incomplete review, or ambiguous outcome not covered above.",
+    "exclusions_from_class_counts": [
+      "UNCERTAIN",
+      "BAD_QUESTION"
+    ],
+    "no_threshold_tuning_after_labels": true,
+    "priority_order": [
+      "NEGATIVE_CLASS_NOT_DEMONSTRATED",
+      "ORIENTATION_INVARIANCE_FAILED",
+      "SPEC002_PROCEDURE_UNRESOLVED",
+      "SPEC002_ANNOTATION_PROCEDURE_VALIDATED"
+    ],
+    "validation_labels_are_not_automatic_production_gt": true
+  },
+  "presentation": {
+    "mode": "EQUIVARIANT_EDGE_FACE_V1",
+    "module_path": "src/mvconnectome/equivariant_edge_presentation.py",
+    "module_sha256": "75304cb17ac62d8eeb83eae38eb6f29b6437f3cb81f53360041093d21deb1a4a",
+    "requirements": [
+      "synthetic_permutation_equivariance_pass",
+      "both_endpoints_equivalently_visible",
+      "identical_physical_FOV_nm",
+      "identical_normalization",
+      "identical_marker_semantics",
+      "no_axis_specific_context_construction",
+      "no_axis_labels_during_judgment"
+    ],
+    "reviewer_path": "tools/review_equivariant_edge_batch.py",
+    "reviewer_sha256": "ce080bff7a75c3502f71aed05ace67ad36248cb838603223774d902d7b9ef55e"
+  },
+  "provisioned_at": "2026-09-18T01:38:54.316184Z",
+  "reassessed_at": "2026-09-18T01:38:39.837898Z",
+  "reassessment": {
+    "acquisition_receipt": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_SOURCE_ACQUISITION_001.json",
+    "amendment_id": "AFFINITY_SPEC002_VALIDATION_PROTOCOL_001_AMENDMENT_SOURCE_ACQUISITION",
+    "verdict_rules_sha256": "a8dde9ca2d1da427f81dfd37873f292c6ea2e5a2131d8b76e0e058d51fafd685",
+    "verdict_rules_unchanged": true
+  },
+  "schema_version": 1,
+  "scientific_question": "Can the repaired, presentation-equivariant, axis-blinded annotation procedure recover BOTH biological affinity classes on fresh isotropic FIB-SEM tissue while remaining orientation-invariant?",
+  "smoke_labels_are_not_production_gt": true,
+  "source_inventory_path": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_SOURCE_INVENTORY_001.json",
+  "status": "COMPLETE_NEGATIVE_CLASS_NOT_DEMONSTRATED",
+  "stop_reason": null,
+  "synthetic_gate": {
+    "decision": "SYNTHETIC_GATE_PASSED_HUMAN_SMOKE_MAY_PROCEED",
+    "fixtures_sha256": "cdfbf5771c67b61dec1df1abdb50eb297ba2ce407a51eab2d1dd699961eb613d",
+    "overall_pass": true,
+    "path": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json",
+    "sha256": "10e540c34b526959314c9901b564eda91ea52c16eba62501d9d9b899d6962076"
+  },
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002"
+}

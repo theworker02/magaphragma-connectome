@@ -1,0 +1,92 @@
+  download MV-CHUNK-10018694/affinities_core_czyx.npy
+  download MV-CHUNK-10018694/boundaries_core.tif
+  download MV-CHUNK-10018694/receipt.json
+  download MV-CHUNK-10018694/throughput_telemetry.json
+  download MV-CHUNK-10018915/affinities_core_czyx.npy
+  download MV-CHUNK-10018915/boundaries_core.tif
+  download MV-CHUNK-10018915/receipt.json
+  download MV-CHUNK-10018915/throughput_telemetry.json
+  download MV-CHUNK-10018931/affinities_core_czyx.npy
+  download MV-CHUNK-10018931/boundaries_core.tif
+  download MV-CHUNK-10018931/receipt.json
+  download MV-CHUNK-10018931/throughput_telemetry.json
+  download MV-CHUNK-10018932/affinities_core_czyx.npy
+  download MV-CHUNK-10018932/boundaries_core.tif
+  download MV-CHUNK-10018932/receipt.json
+  download MV-CHUNK-10018932/throughput_telemetry.json
+  download MV-CHUNK-10018933/affinities_core_czyx.npy
+  download MV-CHUNK-10018933/boundaries_core.tif
+  download MV-CHUNK-10018933/receipt.json
+  download MV-CHUNK-10018933/throughput_telemetry.json
+  download MV-CHUNK-10018949/affinities_core_czyx.npy
+  download MV-CHUNK-10018949/boundaries_core.tif
+  download MV-CHUNK-10018949/receipt.json
+  download MV-CHUNK-10018949/throughput_telemetry.json
+  download MV-CHUNK-10019136/affinities_core_czyx.npy
+  download MV-CHUNK-10019136/boundaries_core.tif
+  download MV-CHUNK-10019136/receipt.json
+  download MV-CHUNK-10019136/throughput_telemetry.json
+  download MV-CHUNK-10019152/affinities_core_czyx.npy
+  download MV-CHUNK-10019152/boundaries_core.tif
+  download MV-CHUNK-10019152/receipt.json
+  download MV-CHUNK-10019152/throughput_telemetry.json
+  download MV-CHUNK-10019153/affinities_core_czyx.npy
+  download MV-CHUNK-10019153/boundaries_core.tif
+  download MV-CHUNK-10019153/receipt.json
+  download MV-CHUNK-10019153/throughput_telemetry.json
+  download MV-CHUNK-10019154/affinities_core_czyx.npy
+  download MV-CHUNK-10019154/boundaries_core.tif
+  download MV-CHUNK-10019168/affinities_core_czyx.npy
+  download MV-CHUNK-10019169/affinities_core_czyx.npy
+  download MV-CHUNK-10019169/boundaries_core.tif
+  download MV-CHUNK-10019170/affinities_core_czyx.npy
+  download MV-CHUNK-10019170/boundaries_core.tif
+  download MV-CHUNK-10019171/affinities_core_czyx.npy
+  download MV-CHUNK-10019171/boundaries_core.tif
+  download MV-CHUNK-10019171/receipt.json
+  download MV-CHUNK-10019171/throughput_telemetry.json
+  download MV-CHUNK-10019172/affinities_core_czyx.npy
+  download MV-CHUNK-10019172/boundaries_core.tif
+  download MV-CHUNK-10019186/affinities_core_czyx.npy
+  download MV-CHUNK-10019186/boundaries_core.tif
+{
+  "bucket": "magaphragma-s7-fast002-artifactbucket-wynhdg4uocpn",
+  "s3_ready": 16,
+  "downloaded": [
+    "MV-CHUNK-10018694",
+    "MV-CHUNK-10018915",
+    "MV-CHUNK-10018931",
+    "MV-CHUNK-10018932",
+    "MV-CHUNK-10018933",
+    "MV-CHUNK-10018949",
+    "MV-CHUNK-10019136",
+    "MV-CHUNK-10019152",
+    "MV-CHUNK-10019153",
+    "MV-CHUNK-10019154",
+    "MV-CHUNK-10019168",
+    "MV-CHUNK-10019169",
+    "MV-CHUNK-10019170",
+    "MV-CHUNK-10019171",
+    "MV-CHUNK-10019172",
+    "MV-CHUNK-10019186"
+  ],
+  "already_local": [],
+  "marked_seg_pending": [
+    "MV-CHUNK-10018694",
+    "MV-CHUNK-10018915",
+    "MV-CHUNK-10018931",
+    "MV-CHUNK-10018932",
+    "MV-CHUNK-10018933",
+    "MV-CHUNK-10018949",
+    "MV-CHUNK-10019136",
+    "MV-CHUNK-10019152",
+    "MV-CHUNK-10019153",
+    "MV-CHUNK-10019154",
+    "MV-CHUNK-10019168",
+    "MV-CHUNK-10019169",
+    "MV-CHUNK-10019170",
+    "MV-CHUNK-10019171",
+    "MV-CHUNK-10019172",
+    "MV-CHUNK-10019186"
+  ]
+}

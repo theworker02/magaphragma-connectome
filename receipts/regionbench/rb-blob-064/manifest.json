@@ -1,0 +1,19 @@
+{
+  "file_sha256": "9831506a40a33facc2df5473e1ed3ff299357d9a6040f9bb54bf8cbd72e490ca",
+  "frozen": true,
+  "region": {
+    "description": "dense central blob",
+    "kind": "blob",
+    "manifest_relpath": "receipts/regionbench/rb-blob-064/manifest.json",
+    "npy_relpath": "receipts/regionbench/rb-blob-064/volume.npy",
+    "region_id": "rb-blob-064",
+    "seed": 303,
+    "shape": [
+      64,
+      64,
+      64
+    ],
+    "volume_sha256": "e4666bb53be6f2811bc58189a6c6a0e26ff443210aaa71421d2b76bb4355f00c"
+  },
+  "schema": "regionbench/v1"
+}\n

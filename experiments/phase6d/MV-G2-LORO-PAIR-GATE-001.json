@@ -1,0 +1,828 @@
+{
+  "schema_version": 1,
+  "id": "MV-G2-LORO-PAIR-GATE-001",
+  "created_at": "2026-09-17T03:18:03.561532Z",
+  "status": "FAIL",
+  "folds": [
+    {
+      "fold": "A",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\receipt.json",
+      "receipt_sha256": "e97f7a6c5a623053a99c1a40026b80a589b65a9ac03842f0231928a5cded8307",
+      "selected_checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-A-001\\checkpoint-step2290.pt",
+      "held_out_region": "MV-G2-TRAIN-A",
+      "held_out_pair_metrics": {
+        "reviewed_pairs": 6,
+        "masked_affinity_bce": 0.29003751611647505,
+        "same_pair_count": 5,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.974300479888916,
+        "same_quantiles_p10_p50_p90": [
+          0.9407924056053162,
+          0.9950798749923706,
+          0.9955930471420288
+        ],
+        "different_mean_affinity": 0.32869094610214233,
+        "different_quantiles_p10_p50_p90": [
+          0.32869094610214233,
+          0.32869094610214233,
+          0.32869094610214233
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 1.0,
+        "margin": 0.6456095337867737,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9333429932594299
+          },
+          {
+            "target": 1,
+            "affinity": 0.9953737854957581
+          },
+          {
+            "target": 1,
+            "affinity": 0.9950798749923706
+          },
+          {
+            "target": 1,
+            "affinity": 0.995739221572876
+          },
+          {
+            "target": 1,
+            "affinity": 0.9519665241241455
+          },
+          {
+            "target": 0,
+            "affinity": 0.32869094610214233
+          }
+        ]
+      },
+      "pair_prerequisite": "PASS",
+      "independent_validation_pair_metrics": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 0.9438889920711517,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8026396632194519,
+          "same_quantiles_p10_p50_p90": [
+            0.7966415762901307,
+            0.8026396632194519,
+            0.8086377501487731
+          ],
+          "different_mean_affinity": 0.9078170657157898,
+          "different_quantiles_p10_p50_p90": [
+            0.9078170657157898,
+            0.9078170657157898,
+            0.9078170657157898
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.10517740249633789,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9078170657157898
+            },
+            {
+              "target": 1,
+              "affinity": 0.7951420545578003
+            },
+            {
+              "target": 1,
+              "affinity": 0.8101372718811035
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.7963414788246155,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.9680816650390625,
+          "same_quantiles_p10_p50_p90": [
+            0.9255032181739807,
+            0.9920626282691956,
+            0.996269142627716
+          ],
+          "different_mean_affinity": 0.9592629671096802,
+          "different_quantiles_p10_p50_p90": [
+            0.9592629671096802,
+            0.9592629671096802,
+            0.9592629671096802
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.00881869792938228,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.9150270819664001
+            },
+            {
+              "target": 1,
+              "affinity": 0.9971433281898499
+            },
+            {
+              "target": 1,
+              "affinity": 0.9949578642845154
+            },
+            {
+              "target": 1,
+              "affinity": 0.9920626282691956
+            },
+            {
+              "target": 0,
+              "affinity": 0.9592629671096802
+            },
+            {
+              "target": 1,
+              "affinity": 0.9412174224853516
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 0.8286639129122099,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.9869277392114911,
+          "same_quantiles_p10_p50_p90": [
+            0.9655099391937256,
+            0.9983596205711365,
+            0.9998425126075745
+          ],
+          "different_mean_affinity": 0.9728901088237762,
+          "different_quantiles_p10_p50_p90": [
+            0.9539261281490325,
+            0.9728901088237762,
+            0.9918540894985199
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.014037630387714883,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9965950846672058
+            },
+            {
+              "target": 0,
+              "affinity": 0.9491851329803467
+            },
+            {
+              "target": 1,
+              "affinity": 0.9588561654090881
+            },
+            {
+              "target": 1,
+              "affinity": 0.9699457883834839
+            },
+            {
+              "target": 1,
+              "affinity": 0.9997379183769226
+            },
+            {
+              "target": 1,
+              "affinity": 0.9983596205711365
+            },
+            {
+              "target": 1,
+              "affinity": 0.9999994039535522
+            },
+            {
+              "target": 1,
+              "affinity": 0.9818666577339172
+            },
+            {
+              "target": 1,
+              "affinity": 0.9997286200523376
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fold": "B",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-B-001\\receipt.json",
+      "receipt_sha256": "977df757ab239fa9c71804366789f45de62ca6a1732e500c27a0afe51cd7458f",
+      "selected_checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-B-001\\checkpoint-step2300.pt",
+      "held_out_region": "MV-G2-TRAIN-B",
+      "held_out_pair_metrics": {
+        "reviewed_pairs": 4,
+        "masked_affinity_bce": 0.8475164696574211,
+        "same_pair_count": 3,
+        "different_pair_count": 1,
+        "same_mean_affinity": 0.8006439904371897,
+        "same_quantiles_p10_p50_p90": [
+          0.5739128708839416,
+          0.9142515063285828,
+          0.9819321036338806
+        ],
+        "different_mean_affinity": 0.9906474947929382,
+        "different_quantiles_p10_p50_p90": [
+          0.9906474947929382,
+          0.9906474947929382,
+          0.9906474947929382
+        ],
+        "same_accuracy_at_0_5": 0.6666666666666666,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": -0.19000350435574853,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9988522529602051
+          },
+          {
+            "target": 0,
+            "affinity": 0.9906474947929382
+          },
+          {
+            "target": 1,
+            "affinity": 0.48882821202278137
+          },
+          {
+            "target": 1,
+            "affinity": 0.9142515063285828
+          }
+        ]
+      },
+      "pair_prerequisite": "FAIL",
+      "independent_validation_pair_metrics": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 1.2298552095890045,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.46730987075716257,
+          "same_quantiles_p10_p50_p90": [
+            0.1180969687178731,
+            0.46730987075716257,
+            0.816522772796452
+          ],
+          "different_mean_affinity": 0.0349472351372242,
+          "different_quantiles_p10_p50_p90": [
+            0.0349472351372242,
+            0.0349472351372242,
+            0.0349472351372242
+          ],
+          "same_accuracy_at_0_5": 0.5,
+          "different_accuracy_at_0_5": 1.0,
+          "margin": 0.4323626356199384,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.0349472351372242
+            },
+            {
+              "target": 1,
+              "affinity": 0.030793743208050728
+            },
+            {
+              "target": 1,
+              "affinity": 0.9038259983062744
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.957384725411733,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8723757028579712,
+          "same_quantiles_p10_p50_p90": [
+            0.6493235349655151,
+            0.9919511079788208,
+            0.9957231044769287
+          ],
+          "different_mean_affinity": 0.9853157997131348,
+          "different_quantiles_p10_p50_p90": [
+            0.9853157997131348,
+            0.9853157997131348,
+            0.9853157997131348
+          ],
+          "same_accuracy_at_0_5": 0.8,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.1129400968551636,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.487821102142334
+            },
+            {
+              "target": 1,
+              "affinity": 0.9975572824478149
+            },
+            {
+              "target": 1,
+              "affinity": 0.9929718375205994
+            },
+            {
+              "target": 1,
+              "affinity": 0.9919511079788208
+            },
+            {
+              "target": 0,
+              "affinity": 0.9853157997131348
+            },
+            {
+              "target": 1,
+              "affinity": 0.8915771842002869
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 1.1486219861027267,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.98448474918093,
+          "same_quantiles_p10_p50_p90": [
+            0.9666327953338623,
+            0.9861466288566589,
+            0.9998254179954529
+          ],
+          "different_mean_affinity": 0.9927367269992828,
+          "different_quantiles_p10_p50_p90": [
+            0.9874109566211701,
+            0.9927367269992828,
+            0.9980624973773956
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.008251977818352851,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9993939399719238
+            },
+            {
+              "target": 0,
+              "affinity": 0.9860795140266418
+            },
+            {
+              "target": 1,
+              "affinity": 0.963201642036438
+            },
+            {
+              "target": 1,
+              "affinity": 0.9689202308654785
+            },
+            {
+              "target": 1,
+              "affinity": 0.999840259552002
+            },
+            {
+              "target": 1,
+              "affinity": 0.9861466288566589
+            },
+            {
+              "target": 1,
+              "affinity": 0.9925286769866943
+            },
+            {
+              "target": 1,
+              "affinity": 0.9809402823448181
+            },
+            {
+              "target": 1,
+              "affinity": 0.9998155236244202
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fold": "C",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-C-001\\receipt.json",
+      "receipt_sha256": "ba2b73ac21b0f4a253354cd1b4b3442554047717f13d8cec266ad42fd88a212e",
+      "selected_checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-C-001\\checkpoint-step2310.pt",
+      "held_out_region": "MV-G2-TRAIN-C",
+      "held_out_pair_metrics": {
+        "reviewed_pairs": 13,
+        "masked_affinity_bce": 0.46084082568100154,
+        "same_pair_count": 11,
+        "different_pair_count": 2,
+        "same_mean_affinity": 0.9607541723684832,
+        "same_quantiles_p10_p50_p90": [
+          0.9091649055480957,
+          0.9926109910011292,
+          0.9979625940322876
+        ],
+        "different_mean_affinity": 0.8449872732162476,
+        "different_quantiles_p10_p50_p90": [
+          0.7308247327804566,
+          0.8449872732162476,
+          0.9591498136520386
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 0.0,
+        "margin": 0.11576689915223559,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.9991992115974426
+          },
+          {
+            "target": 1,
+            "affinity": 0.9941313862800598
+          },
+          {
+            "target": 1,
+            "affinity": 0.9626966118812561
+          },
+          {
+            "target": 1,
+            "affinity": 0.9746130704879761
+          },
+          {
+            "target": 0,
+            "affinity": 0.9876904487609863
+          },
+          {
+            "target": 0,
+            "affinity": 0.7022840976715088
+          },
+          {
+            "target": 1,
+            "affinity": 0.9979625940322876
+          },
+          {
+            "target": 1,
+            "affinity": 0.9929271340370178
+          },
+          {
+            "target": 1,
+            "affinity": 0.9973708391189575
+          },
+          {
+            "target": 1,
+            "affinity": 0.9882148504257202
+          },
+          {
+            "target": 1,
+            "affinity": 0.7594043016433716
+          },
+          {
+            "target": 1,
+            "affinity": 0.9926109910011292
+          },
+          {
+            "target": 1,
+            "affinity": 0.9091649055480957
+          }
+        ]
+      },
+      "pair_prerequisite": "FAIL",
+      "independent_validation_pair_metrics": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 0.7765889465808868,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.5364166237413883,
+          "same_quantiles_p10_p50_p90": [
+            0.19369108751416209,
+            0.5364166237413883,
+            0.8791421599686146
+          ],
+          "different_mean_affinity": 0.11998969316482544,
+          "different_quantiles_p10_p50_p90": [
+            0.11998969316482544,
+            0.11998969316482544,
+            0.11998969316482544
+          ],
+          "same_accuracy_at_0_5": 0.5,
+          "different_accuracy_at_0_5": 1.0,
+          "margin": 0.4164269305765629,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.11998969316482544
+            },
+            {
+              "target": 1,
+              "affinity": 0.1080097034573555
+            },
+            {
+              "target": 1,
+              "affinity": 0.9648235440254211
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.7884232401847839,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.933787727355957,
+          "same_quantiles_p10_p50_p90": [
+            0.8085012078285218,
+            0.9956047534942627,
+            0.9987451195716858
+          ],
+          "different_mean_affinity": 0.9168794751167297,
+          "different_quantiles_p10_p50_p90": [
+            0.9168794751167297,
+            0.9168794751167297,
+            0.9168794751167297
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.016908252239227317,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.6905025839805603
+            },
+            {
+              "target": 1,
+              "affinity": 0.9982708692550659
+            },
+            {
+              "target": 1,
+              "affinity": 0.9990612864494324
+            },
+            {
+              "target": 1,
+              "affinity": 0.9956047534942627
+            },
+            {
+              "target": 0,
+              "affinity": 0.9168794751167297
+            },
+            {
+              "target": 1,
+              "affinity": 0.9854991436004639
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 0.9824013921121756,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.9860885313579014,
+          "same_quantiles_p10_p50_p90": [
+            0.9694338440895081,
+            0.9888985753059387,
+            0.9981753468513489
+          ],
+          "different_mean_affinity": 0.9859530925750732,
+          "different_quantiles_p10_p50_p90": [
+            0.9779865741729736,
+            0.9859530925750732,
+            0.9939196109771729
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.0001354387828281789,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9959112405776978
+            },
+            {
+              "target": 0,
+              "affinity": 0.9759949445724487
+            },
+            {
+              "target": 1,
+              "affinity": 0.9677292108535767
+            },
+            {
+              "target": 1,
+              "affinity": 0.9902585744857788
+            },
+            {
+              "target": 1,
+              "affinity": 0.9888985753059387
+            },
+            {
+              "target": 1,
+              "affinity": 0.9886147975921631
+            },
+            {
+              "target": 1,
+              "affinity": 0.9977801442146301
+            },
+            {
+              "target": 1,
+              "affinity": 0.9705702662467957
+            },
+            {
+              "target": 1,
+              "affinity": 0.998768150806427
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fold": "D",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-D-001\\receipt.json",
+      "receipt_sha256": "70edc638b892093a0cc3e9586020fba7f239dfa58f189398c00cc55eeacfd953",
+      "selected_checkpoint": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6d\\MV-TRAIN-SEGNEURON-DVID-G2-LORO-D-001\\checkpoint-step2300.pt",
+      "held_out_region": "MV-G2-TRAIN-D",
+      "held_out_pair_metrics": {
+        "reviewed_pairs": 5,
+        "masked_affinity_bce": 0.664668068382889,
+        "same_pair_count": 3,
+        "different_pair_count": 2,
+        "same_mean_affinity": 0.9372973640759786,
+        "same_quantiles_p10_p50_p90": [
+          0.8523780941963196,
+          0.9965983033180237,
+          0.9984962582588196
+        ],
+        "different_mean_affinity": 0.5881868526339531,
+        "different_quantiles_p10_p50_p90": [
+          0.3050641164183617,
+          0.5881868526339531,
+          0.8713095888495446
+        ],
+        "same_accuracy_at_0_5": 1.0,
+        "different_accuracy_at_0_5": 0.5,
+        "margin": 0.34911051144202554,
+        "pair_predictions": [
+          {
+            "target": 1,
+            "affinity": 0.8163230419158936
+          },
+          {
+            "target": 1,
+            "affinity": 0.9989707469940186
+          },
+          {
+            "target": 1,
+            "affinity": 0.9965983033180237
+          },
+          {
+            "target": 0,
+            "affinity": 0.9420902729034424
+          },
+          {
+            "target": 0,
+            "affinity": 0.2342834323644638
+          }
+        ]
+      },
+      "pair_prerequisite": "FAIL",
+      "independent_validation_pair_metrics": {
+        "MV-G2-VALIDATION-V1": {
+          "reviewed_pairs": 3,
+          "masked_affinity_bce": 1.3016667763392131,
+          "same_pair_count": 2,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.5188332162797451,
+          "same_quantiles_p10_p50_p90": [
+            0.14910798594355584,
+            0.5188332162797451,
+            0.8885584466159344
+          ],
+          "different_mean_affinity": 0.7117444276809692,
+          "different_quantiles_p10_p50_p90": [
+            0.7117444276809692,
+            0.7117444276809692,
+            0.7117444276809692
+          ],
+          "same_accuracy_at_0_5": 0.5,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.19291121140122414,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.7117444276809692
+            },
+            {
+              "target": 1,
+              "affinity": 0.056676678359508514
+            },
+            {
+              "target": 1,
+              "affinity": 0.9809897541999817
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V2": {
+          "reviewed_pairs": 6,
+          "masked_affinity_bce": 0.6077027842402458,
+          "same_pair_count": 5,
+          "different_pair_count": 1,
+          "same_mean_affinity": 0.8427436888217926,
+          "same_quantiles_p10_p50_p90": [
+            0.5522675931453704,
+            0.9804030656814575,
+            0.9934636235237122
+          ],
+          "different_mean_affinity": 0.7312598824501038,
+          "different_quantiles_p10_p50_p90": [
+            0.7312598824501038,
+            0.7312598824501038,
+            0.7312598824501038
+          ],
+          "same_accuracy_at_0_5": 0.8,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": 0.11148380637168886,
+          "pair_predictions": [
+            {
+              "target": 1,
+              "affinity": 0.9804030656814575
+            },
+            {
+              "target": 1,
+              "affinity": 0.9947845339775085
+            },
+            {
+              "target": 1,
+              "affinity": 0.9798077940940857
+            },
+            {
+              "target": 1,
+              "affinity": 0.2672407925128937
+            },
+            {
+              "target": 0,
+              "affinity": 0.7312598824501038
+            },
+            {
+              "target": 1,
+              "affinity": 0.9914822578430176
+            }
+          ]
+        },
+        "MV-G2-VALIDATION-V3": {
+          "reviewed_pairs": 9,
+          "masked_affinity_bce": 1.2518836418684158,
+          "same_pair_count": 7,
+          "different_pair_count": 2,
+          "same_mean_affinity": 0.9876332112721035,
+          "same_quantiles_p10_p50_p90": [
+            0.9689068555831909,
+            0.9977090358734131,
+            0.9995296359062195
+          ],
+          "different_mean_affinity": 0.9973261654376984,
+          "different_quantiles_p10_p50_p90": [
+            0.9956393778324127,
+            0.9973261654376984,
+            0.999012953042984
+          ],
+          "same_accuracy_at_0_5": 1.0,
+          "different_accuracy_at_0_5": 0.0,
+          "margin": -0.009692954165594903,
+          "pair_predictions": [
+            {
+              "target": 0,
+              "affinity": 0.9994346499443054
+            },
+            {
+              "target": 0,
+              "affinity": 0.9952176809310913
+            },
+            {
+              "target": 1,
+              "affinity": 0.9854130148887634
+            },
+            {
+              "target": 1,
+              "affinity": 0.9785348176956177
+            },
+            {
+              "target": 1,
+              "affinity": 0.9992502331733704
+            },
+            {
+              "target": 1,
+              "affinity": 0.9544649124145508
+            },
+            {
+              "target": 1,
+              "affinity": 0.9999487400054932
+            },
+            {
+              "target": 1,
+              "affinity": 0.9981117248535156
+            },
+            {
+              "target": 1,
+              "affinity": 0.9977090358734131
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "decision": {
+    "LORO_RECONSTRUCTION": "NOT_RUN",
+    "reason": "All folds must pass held-out reviewed SAME/DIFFERENT pair prerequisites before raw-inference reconstruction evaluation.",
+    "G2_SPATIAL_GENERALIZATION": "FAIL",
+    "protected_volume_000004_used": false,
+    "biological_promotions": {
+      "MV-FRAG": 0,
+      "MV-N": 0,
+      "MV-SYN": 0,
+      "MV-CONN": 0
+    }
+  }
+}

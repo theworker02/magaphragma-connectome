@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-09-18T05:04:48.718395Z",
+  "disk_telemetry": null,
+  "engineering_id": "AFFINITY_S7_THROUGHPUT_ENGINEERING_001",
+  "from_terminal": "C:\\Users\\matth\\.cursor\\projects\\c-Users-matth-OneDrive-Desktop-magaphragma-connectome\\terminals\\79542.txt",
+  "gates_unchanged": {
+    "MV_SEG_production": "CLOSED",
+    "biological_identity": "FORBIDDEN from machine labels",
+    "connectivity_graph": "CLOSED",
+    "synapses": "CLOSED"
+  },
+  "gpu_utilization": "UNAVAILABLE_IN_WSL_ROOT_ROCM_SMI_DRIVER_NOT_INITIALIZED",
+  "id": "AFFINITY_S7_THROUGHPUT_PILOT_RECEIPT_001",
+  "log_parse": {
+    "completed": false,
+    "ended_at": null,
+    "exit_code": null,
+    "last_tile": 13000,
+    "read_shape_zyx": [
+      160,
+      1152,
+      1152
+    ],
+    "running_for_ms": 1321907,
+    "started_at": "2026-09-18T04:42:45.198Z",
+    "tiles_total": 20736
+  },
+  "measured_or_estimated": {
+    "estimated_infer_seconds_per_chunk": 2108.543350153846,
+    "fraction_complete": 0.626929012345679,
+    "naive_serial_full_volume_gpu_days": 702.7989745107692,
+    "naive_serial_full_volume_gpu_hours": 16867.17538825846,
+    "tiles_done": 13000,
+    "tiles_per_second_wall_proxy": 9.834277297873452,
+    "tiles_total": 20736,
+    "wall_seconds_so_far": 1321.907
+  },
+  "next_step": "On COMPLETE receipt, freeze ONE throughput lever contract (T1\u2013T6) citing this receipt",
+  "output_bytes": {
+    "raw_read_zyx.npy": 212336768
+  },
+  "pilot_chunk_id": "MV-CHUNK-10019646",
+  "status": "PARTIAL_LIVE_ESTIMATE"
+}

@@ -1,0 +1,62 @@
+name: EM microscopy partner request
+description: Propose a collaboration involving electron microscopy imaging or data.
+title: "[EM Partner]: "
+labels: ["collaboration", "em-partner"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in collaborating. The goal is straightforward: with an electron microscopy (EM) partner we can reconstruct and release more open-sourced bug brains for anyone to build on.
+
+        Please do not attach or link restricted data here, and do not share anything you don't have the rights to redistribute. This form is for starting a conversation, not transferring data.
+  - type: input
+    id: who
+    attributes:
+      label: Who are you / your lab or group?
+      description: Name, affiliation, and a link if you have one.
+    validations:
+      required: true
+  - type: dropdown
+    id: capability
+    attributes:
+      label: What can you contribute?
+      multiple: true
+      options:
+        - EM imaging / acquisition
+        - Existing EM datasets
+        - Sample preparation
+        - Segmentation / reconstruction expertise
+        - Compute resources
+        - Funding
+        - Other (describe below)
+    validations:
+      required: true
+  - type: textarea
+    id: imaging
+    attributes:
+      label: Imaging details (if applicable)
+      description: Species/specimen, modality (e.g. SBEM, FIB-SEM, ssTEM), resolution, volume size, and current state of the data.
+      placeholder: e.g. Megaphragma sp., FIB-SEM, 8 nm isotropic, ~15k^3 voxels, raw stacks only
+    validations:
+      required: false
+  - type: textarea
+    id: rights
+    attributes:
+      label: Data rights and licensing
+      description: What are the redistribution / derivative-release rights for any data you'd bring? Open release is the aim.
+    validations:
+      required: false
+  - type: textarea
+    id: goals
+    attributes:
+      label: What would you like to achieve together?
+      description: Your goals, timeline, and any constraints.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred contact
+      description: How should we follow up? (email, institutional page, etc.)
+    validations:
+      required: false

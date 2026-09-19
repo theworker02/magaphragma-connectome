@@ -1,0 +1,180 @@
+{
+  "id": "MV-G3-Y-TRAIN-CANDIDATE-POOL-DIAGNOSTIC",
+  "eligibility_definition": "interior voxel AND argmax(|gradient|) axis == Y(1); no score cap, no separation, no truncation",
+  "separation_note": "12-voxel separation is a queue-SELECTION rule; reported as separated_centres_full_pool, not as eligibility",
+  "label_blind": true,
+  "per_crop": [
+    {
+      "crop_id": "MV-G3-TRAIN-A",
+      "total_eligible_Y_voxels": 251241,
+      "separated_centres_full_pool": 430,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 7,
+      "remaining_eligible_after_prior": 251234,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        1.118,
+        1.581,
+        2.121,
+        2.693,
+        7.826
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "deepest_prior_rank": 6,
+      "eligible_depth_beyond_deepest_prior": 251234,
+      "fraction_within_10pct_of_median_score": 0.18
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-B",
+      "total_eligible_Y_voxels": 266580,
+      "separated_centres_full_pool": 438,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 5,
+      "remaining_eligible_after_prior": 266575,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        1.658,
+        2.449,
+        3.24,
+        4.093,
+        10.524
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "deepest_prior_rank": 4,
+      "eligible_depth_beyond_deepest_prior": 266575,
+      "fraction_within_10pct_of_median_score": 0.182
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-D",
+      "total_eligible_Y_voxels": 267877,
+      "separated_centres_full_pool": 427,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 6,
+      "remaining_eligible_after_prior": 267871,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        2.062,
+        2.872,
+        3.808,
+        4.743,
+        14.916
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "deepest_prior_rank": 6,
+      "eligible_depth_beyond_deepest_prior": 267870,
+      "fraction_within_10pct_of_median_score": 0.156
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-F",
+      "total_eligible_Y_voxels": 255240,
+      "separated_centres_full_pool": 439,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 7,
+      "remaining_eligible_after_prior": 255233,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        1.225,
+        1.803,
+        2.345,
+        3.0,
+        10.595
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "deepest_prior_rank": 6,
+      "eligible_depth_beyond_deepest_prior": 255233,
+      "fraction_within_10pct_of_median_score": 0.15
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-G",
+      "total_eligible_Y_voxels": 254096,
+      "separated_centres_full_pool": 437,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 8,
+      "remaining_eligible_after_prior": 254088,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        1.118,
+        1.581,
+        2.179,
+        2.739,
+        8.573
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "deepest_prior_rank": 7,
+      "eligible_depth_beyond_deepest_prior": 254088,
+      "fraction_within_10pct_of_median_score": 0.176
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-H",
+      "total_eligible_Y_voxels": 264708,
+      "separated_centres_full_pool": 423,
+      "prior_selected_distinct_centres": 11,
+      "prior_selections_found_in_eligible_pool": 5,
+      "remaining_eligible_after_prior": 264703,
+      "score_quantiles_min_q25_med_q75_q90_max": [
+        0.5,
+        1.803,
+        2.55,
+        3.354,
+        4.272,
+        10.512
+      ],
+      "prior_selection_ranks_within_eligible": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "deepest_prior_rank": 4,
+      "eligible_depth_beyond_deepest_prior": 264703,
+      "fraction_within_10pct_of_median_score": 0.15
+    }
+  ],
+  "cross_crop_prior_distribution": {
+    "MV-G3-TRAIN-A": 11,
+    "MV-G3-TRAIN-B": 11,
+    "MV-G3-TRAIN-D": 11,
+    "MV-G3-TRAIN-F": 11,
+    "MV-G3-TRAIN-G": 11,
+    "MV-G3-TRAIN-H": 11
+  }
+}

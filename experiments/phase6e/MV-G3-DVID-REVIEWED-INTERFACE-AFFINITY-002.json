@@ -1,0 +1,544 @@
+{
+  "biological_promotions": {
+    "MV-CONN": 0,
+    "MV-FRAG": 0,
+    "MV-N": 0,
+    "MV-SYN": 0
+  },
+  "cohort": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\MV-G3-SPATIAL-DIVERSITY-COHORT-002.json",
+    "sha256": "81da989552f4f08724b9b4d0de4013193dd62248888c34338ab339268a94c32a"
+  },
+  "created_at": "2026-09-17T12:19:32.697362Z",
+  "id": "MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002",
+  "input_bindings": {
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\G3_002_INTERFACE_BINDINGS.json",
+    "sha256": "a14763153a704f8db9b468f3c4de1f9a8b93679a0013dccb6620ba48fd82ae05"
+  },
+  "loro_folds": [
+    {
+      "held_out_region": "MV-G3-TRAIN-A",
+      "train_with": [
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-B",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-D",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-F",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-G",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-G",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-H"
+      ]
+    },
+    {
+      "held_out_region": "MV-G3-TRAIN-H",
+      "train_with": [
+        "MV-G3-TRAIN-A",
+        "MV-G3-TRAIN-B",
+        "MV-G3-TRAIN-D",
+        "MV-G3-TRAIN-F",
+        "MV-G3-TRAIN-G"
+      ]
+    }
+  ],
+  "loss_contract": "Only supervised direct pairs are used. Each eligible reviewed interface has total loss weight one; validation is evaluation-only.",
+  "materializer": {
+    "contract": "INTERFACE_LEVEL_FAIL_CLOSED_V1",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\src\\mvconnectome\\g3_supervision.py",
+    "sha256": "641fb701f430c526a0ab52b6b68ab66852aa7e001943c7721bf0b058cdeda6e6"
+  },
+  "protected_regression": {
+    "included": false,
+    "volume": "MV-GTVOL-000004"
+  },
+  "regions": [
+    {
+      "crop_id": "MV-G3-TRAIN-A",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 5
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 9,
+        "SAME_PROCESS": 15
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\supervision_mask_czyx.npy",
+        "sha256": "b7ae96ecbd0e5e30e5fcae4ab4318ac8f90e859ff27b10b0251cff6f7334fd53",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-001-raw_zyx.npy",
+      "raw_sha256": "bcff730698cbde54cbe310355942e26cdd603874ec2941506281d89bbe9c9239",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\receipt.json",
+      "receipt_sha256": "5cf487324ba4b3c00388923c079f5ff518910528a0f3260c7b4670bf02a50df5",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\affinity_targets_czyx.npy",
+        "sha256": "ef40b461ea89d304d4dd72f14d63aa390fb136a1a525a7672d944fced904b9a9",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-A\\interface_weights_czyx.npy",
+        "sha256": "96ef8f258873c218ceba6bd49e2eb0aa6b9c19ff02c13d93454710cec2c00a8b",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-B",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 5
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 9,
+        "SAME_PROCESS": 15
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\supervision_mask_czyx.npy",
+        "sha256": "0a67d37f1526abf80b511e08e65d28554d5f5ecb454354aeadbf32005046ae41",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-008-raw_zyx.npy",
+      "raw_sha256": "475ee2cc235625b16a8cd7cdc9291ae144d166e0444ad9d62ce32ec06ce37774",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\receipt.json",
+      "receipt_sha256": "ab67854d7f2d987d8c09f7facc9ec9344fab361e63d133dc1793ce25e82e3417",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\affinity_targets_czyx.npy",
+        "sha256": "8c17364fabe07e42ab964d0e8558604bcd7901f51785f8c3a6e3a55b98b53503",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-B\\interface_weights_czyx.npy",
+        "sha256": "f3f2caf8e6c9a63f10d350706f6e61f8c36f8076fd6fd4d11cf9f1edc71ba445",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-D",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 5
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 9,
+        "SAME_PROCESS": 15
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\supervision_mask_czyx.npy",
+        "sha256": "e929d51441461f14d566eb3bef4e1b21e4c16c775fc1463dfb49b4316ceb1414",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-024-raw_zyx.npy",
+      "raw_sha256": "eae6cc5360cfff339fda01708c93ab7d6265ae376a2ba9d4a76237086b5d498a",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\receipt.json",
+      "receipt_sha256": "4346cfb8b0239799c1156b16014cbab4f1646e7ea0b933406caf8667d0a69302",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\affinity_targets_czyx.npy",
+        "sha256": "8f9f8a1b98597dbf9de9e85fae593adf89ced86f0d4bd970dbc5abcc409d97b4",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-D\\interface_weights_czyx.npy",
+        "sha256": "886917f81788bf82ea98eec547f79e163288b9b12d878a3efc2b0025bf49aa49",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-F",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 4
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 12,
+        "SAME_PROCESS": 12
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\supervision_mask_czyx.npy",
+        "sha256": "0ee334eb2d366c3e3821e55c04be29c162f87c1fe3cd054c06a8c1ff1289e3dc",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-031-raw_zyx.npy",
+      "raw_sha256": "e3f37482cde357f771b5a35a4fd6222235c803972641b7b4456f451658a69550",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\receipt.json",
+      "receipt_sha256": "8134a1712069abc5661b66c3cf3fc0881ad69e29ddb13a7d91b437ee3a02de30",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\affinity_targets_czyx.npy",
+        "sha256": "f5084b8385927462cc07357d2be19d98dfb5b65389bd926c20fccd01c4c8ddf4",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-F\\interface_weights_czyx.npy",
+        "sha256": "17d20af81972ad4f398c7190618443cca9e85e9780d6a2117cb796f8385144ac",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-G",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 1,
+        "SAME_PROCESS": 7
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 21
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\supervision_mask_czyx.npy",
+        "sha256": "78f10b760e78b38b7c2ccd4eabaa21ce4ef980336b98f8fe78df531db2acde85",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-002-raw_zyx.npy",
+      "raw_sha256": "74caf4ee2e2d20a61099f3dcef29c12133f7588da25572b010cc98d7b4ea3227",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\receipt.json",
+      "receipt_sha256": "7b8554516a950afffabd31832abe20f1f7b771873454e3b5fc3093d4ba4f4202",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\affinity_targets_czyx.npy",
+        "sha256": "77ea21322cd8b9145e0c6455f75304ddf3a4cc9980ad5a0b70fd26ce267256dd",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-G\\interface_weights_czyx.npy",
+        "sha256": "2033c5e79722c98fdbcc90798de57bde1cfdebd72dd55b6c0df20efa1bd814ef",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-TRAIN-H",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 5,
+        "SAME_PROCESS": 2
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 15,
+        "SAME_PROCESS": 6
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\supervision_mask_czyx.npy",
+        "sha256": "c069e0bd7d94ccc0bd2da7bff6b0d8cad7635d72ab0f468b80873bae17c1f4f5",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-022-raw_zyx.npy",
+      "raw_sha256": "4d630429b618700e7ab4972123ae627e3279c5b9221f2d108ee0ddc35c925ee5",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\receipt.json",
+      "receipt_sha256": "b6e083bd5f8d267c402c0d461f7d97d9ed242c075d2103ab100f7443908d2124",
+      "split": "G3_TARGET_TRAIN",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\affinity_targets_czyx.npy",
+        "sha256": "e9a64f448cb6829784e49f14b0aa4f3bdfb43427adb0a7f429729a29b10a8183",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-TRAIN-H\\interface_weights_czyx.npy",
+        "sha256": "4b0535e2409c8458ce5d5fa30eec3e1c6e9b9d90a90005f4fff1e624e0ef961c",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V1",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 2,
+        "SAME_PROCESS": 6
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 6,
+        "SAME_PROCESS": 18
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\supervision_mask_czyx.npy",
+        "sha256": "fbd96328cc3903013b4e63df41212525d59b1c65be8de1dca33e88b692ac0626",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-004-raw_zyx.npy",
+      "raw_sha256": "5b43d4f00367781f46a860b51bd264e78ae0ca3d39802088f11fb5558b5db6b1",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\receipt.json",
+      "receipt_sha256": "9e25410fb4e9e006becb6df905c19f6d22867c1623002dd90860ef71b33c032f",
+      "split": "G3_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\affinity_targets_czyx.npy",
+        "sha256": "e31cb788d14ec0e4521cbbf04d1da674c37bbea617c12f8dd5021ab5ca14d868",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V1\\interface_weights_czyx.npy",
+        "sha256": "d40a363590c189b8888eb7429c062f1ffed88d45b8642b2b0bb0b1ac91efcfc3",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V2",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 4,
+        "SAME_PROCESS": 4
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 12,
+        "SAME_PROCESS": 12
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\supervision_mask_czyx.npy",
+        "sha256": "2068b812175ccb5aeb9bfc812a570ad4948a76b7d67ec7dd166e561eae319a1a",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-015-raw_zyx.npy",
+      "raw_sha256": "da035333727235123fa31ae05a6f1a539d61362bd1f72f886be852a2ed8d9542",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\receipt.json",
+      "receipt_sha256": "e614b92e03eff2246a5a598bd0ad7da22929cc09479b7b330a67dbfeb076d7c5",
+      "split": "G3_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\affinity_targets_czyx.npy",
+        "sha256": "ecd810c0993ff62f10abfcd1fd4f2fcf9def23f66e22bbf7a4b7e6a0bc64e1e7",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V2\\interface_weights_czyx.npy",
+        "sha256": "1948d966f536e5213106283f1b0dcaaf72e629c88f3915efc4e5147bd673b9d2",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "crop_id": "MV-G3-VALIDATION-V3",
+      "eligible_interfaces": {
+        "DIFFERENT_PROCESS": 3,
+        "SAME_PROCESS": 4
+      },
+      "eligible_pairs": {
+        "DIFFERENT_PROCESS": 9,
+        "SAME_PROCESS": 12
+      },
+      "mask": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\supervision_mask_czyx.npy",
+        "sha256": "363eadf86bf54db65224691d037bc5ed962d430de96bcd120bb9e8d7206fcf1e",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "raw_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-025-raw_zyx.npy",
+      "raw_sha256": "5ca319f584b064768f46ae352d5b0f198f01d11b29c8ba7f8305734d02676983",
+      "receipt": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\receipt.json",
+      "receipt_sha256": "8a4b3b1961f7f8ad7517b41f22a331e766def757eab955915aa900ddcf3d9495",
+      "split": "G3_TARGET_VALIDATION",
+      "targets": {
+        "dtype": "uint8",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\affinity_targets_czyx.npy",
+        "sha256": "347f98b54aab9479f94e50ddf3ebb02c86264c1e317ceaf69dc47522aa1adf12",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      },
+      "weights": {
+        "dtype": "float32",
+        "normalization": "SUM_OF_WEIGHTS_PER_ELIGIBLE_INTERFACE_EQUALS_ONE",
+        "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\g3-reviewed-interface-affinity-002\\MV-G3-VALIDATION-V3\\interface_weights_czyx.npy",
+        "sha256": "396bc185af277f1e77ba2d1ce69bcc9c4dbeff46ccdc15d8d6258b779f5932bb",
+        "shape_czyx": [
+          3,
+          64,
+          128,
+          128
+        ]
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "FROZEN_READY_FOR_G3_LORO"
+}

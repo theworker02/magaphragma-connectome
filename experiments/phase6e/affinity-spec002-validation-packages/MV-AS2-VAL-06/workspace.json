@@ -1,0 +1,58 @@
+{
+  "allowed_decisions": [
+    "BAD_QUESTION",
+    "DIFFERENT_PROCESS",
+    "SAME_PROCESS",
+    "UNCERTAIN"
+  ],
+  "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+  "created_at": "2026-09-18T01:38:54.305167Z",
+  "crop_id": "MV-AS2-VAL-06",
+  "event_log": {
+    "append_only": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\affinity-spec002-validation-packages\\MV-AS2-VAL-06\\workspace.events.jsonl"
+  },
+  "id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-AS2-VAL-06-AS2VAL",
+  "pair_contract": "pair_left_zyx is followed by its positive neighbour along channel_zyx: 0=Z, 1=Y, 2=X.",
+  "parent_region_id": "MV-DVID-RAW-SURVEY-038",
+  "presentation_mode": "EQUIVARIANT_EDGE_FACE_V1",
+  "prohibited_promotions": [
+    "REVIEWED_DVID_LABEL",
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "provenance": {
+    "center_zyx": [
+      23,
+      90,
+      111
+    ],
+    "do_not_train": true,
+    "experiment": "AFFINITY_SPEC002_VALIDATION_001",
+    "not_a_g3_training_cohort": true,
+    "not_experiment_009": true,
+    "stratum": "Q2",
+    "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002"
+  },
+  "raw": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-038-raw_zyx.npy",
+    "sha256": "e45369ec8edf2deac9cccae2b8e2eb641f045c32de0699e3fec8f4f323d0677a",
+    "shape_zyx": [
+      64,
+      128,
+      128
+    ]
+  },
+  "review_state": "UNREVIEWED",
+  "schema_version": 1,
+  "source_origin_xyz": [
+    3008,
+    2432,
+    5696
+  ],
+  "split": "AFFINITY_SPEC002_VALIDATION_ONLY",
+  "status": "EXTERNAL_EXPERT_RAW_EM_REVIEW_REQUIRED"
+}

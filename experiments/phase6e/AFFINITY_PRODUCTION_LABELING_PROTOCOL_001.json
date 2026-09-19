@@ -1,0 +1,130 @@
+{
+  "id": "AFFINITY_PRODUCTION_LABELING_PROTOCOL_001",
+  "schema_version": 1,
+  "created_at": "2026-09-18T02:25:00Z",
+  "status": "FROZEN_BEFORE_PRODUCTION_LABELS",
+  "frozen_before_seeing_production_labels": true,
+  "no_procedural_tuning_after_production_labels": true,
+  "annotation_reopen": {
+    "decision_id": "AFFINITY_ANNOTATION_REOPEN_DECISION_001",
+    "ANNOTATION_REOPEN": "APPROVED",
+    "cites_verdict": "SPEC002_ANNOTATION_PROCEDURE_VALIDATED",
+    "cites_artifact": "experiments/phase6e/AFFINITY_SPEC002_VALIDATION_002.json"
+  },
+  "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+  "presentation": {
+    "mode": "EQUIVARIANT_EDGE_FACE_V1",
+    "module": "src/mvconnectome/equivariant_edge_presentation.py",
+    "reviewer": "tools/review_equivariant_edge_batch.py",
+    "synthetic_gate_must_pass": "experiments/phase6e/G3_PRESENTATION_EQUIVARIANCE_REPAIR_001.json",
+    "question_wording": "Do the two marked locations belong to the same biological process/object across their shared face?"
+  },
+  "crop_selection_rules": {
+    "never_human_reviewed_required": true,
+    "one_location_per_independent_source": true,
+    "spatial_independence_from_prior_reviewed_sources": true,
+    "ce_neighborhood_preferred": true,
+    "abs_enrichment": {
+      "metric": "max single-face absolute intensity step |ΔI| over Z/Y/X +1 faces at candidate center",
+      "minimum": 12.0,
+      "rationale": "AS2-001 relative Q strata failed negative-class recoverability; AS2-002 abs≥12 enrichment recovered both classes under equivariant UI"
+    },
+    "pinned_historical_edge_exclusion": "experiments/phase6e/G3_008_PINNED_EXCLUSION_SNAPSHOT_001.json",
+    "emit_all_three_axes_per_location": true,
+    "selection_inputs_allowed": [
+      "coordinates",
+      "raw_intensity",
+      "local_contrast",
+      "gradient_magnitude",
+      "raw_pixel_membrane_likeness",
+      "geometric_validity",
+      "spatial_separation"
+    ],
+    "selection_inputs_forbidden": [
+      "human_labels",
+      "validation_batch_labels",
+      "discovery_labels",
+      "smoke_labels",
+      "invalid_g3_labels",
+      "model_affinity_predictions",
+      "segmentation_predictions"
+    ]
+  },
+  "axis_blindness": {
+    "opaque_decision_ids": true,
+    "deterministic_pseudorandom_order": true,
+    "no_axis_labels_during_judgment": true,
+    "reveal_axis_only_after_batch_complete": true
+  },
+  "label_schema": {
+    "allowed_decisions": ["SAME_PROCESS", "DIFFERENT_PROCESS", "UNCERTAIN", "BAD_QUESTION"],
+    "class_countable": ["SAME_PROCESS", "DIFFERENT_PROCESS"],
+    "excluded_from_class_counts": ["UNCERTAIN", "BAD_QUESTION"]
+  },
+  "exclusion_criteria": {
+    "permanently_excluded_from_production_and_training": [
+      "G3-008 labels and sources under review",
+      "presentation-repair smoke labels (SURVEY-030/032)",
+      "AFFINITY_SPEC002_VALIDATION_001 labels and its 12 sources",
+      "AFFINITY_SPEC002_VALIDATION_002 labels and its 12 sources — PERMANENT training exclusion (validation evidence only)",
+      "DIFFERENT_CLASS_DISCOVERY_001 labels (SURVEY-035 discovery edges)",
+      "SURVEY-017/027 as sole targeting without new independent crops"
+    ],
+    "not_g3_009": true
+  },
+  "qc_gates_before_PRODUCTION_GT_PROMOTED": {
+    "complete_batch": "All predeclared decisions recorded with geometry matching sealed axis map",
+    "both_classes_present": "≥1 SAME_PROCESS and ≥1 DIFFERENT_PROCESS among class-countable edges",
+    "orientation_invariance": "NOT dominated by Z=DIFFERENT & Y=SAME & X=SAME across all evaluable location triplets; no single axis perfectly predictive of class as defined in SPEC002 protocol",
+    "provenance_complete": "raw sha256, source bounds, sealed map hashes, reviewer id, timestamps present",
+    "no_validation_leakage": "No decision reused from AFFINITY_SPEC002_VALIDATION_002 or other excluded artifacts",
+    "fail_closed": true
+  },
+  "promotion": {
+    "batch_labels_start_as": "CANDIDATE_PRODUCTION_GT",
+    "promoted_artifact_id_pattern": "PRODUCTION_GT_PROMOTED_<batch_id>",
+    "training_requires": "Separate AFFINITY_TRAINING_REOPEN / TRAIN_AUTHORIZATION after at least one PRODUCTION_GT_PROMOTED corpus",
+    "validation_002_never_enters_training": true
+  },
+  "immutable_provenance_required_fields": [
+    "batch_id",
+    "protocol_id",
+    "reopen_decision_id",
+    "source_id",
+    "raw_sha256",
+    "center_zyx",
+    "pair_left_zyx",
+    "pair_right_zyx",
+    "channel_zyx_sealed",
+    "opaque_decision_id",
+    "decision",
+    "reviewer",
+    "event_id",
+    "order_hash",
+    "mapping_hash"
+  ],
+  "first_batch_predeclared": {
+    "id": "PRODUCTION_GT_BATCH_001",
+    "n_locations": 8,
+    "edges_per_location": 3,
+    "total_decisions": 24,
+    "source_pool_predeclared": [
+      "MV-DVID-RAW-SURVEY-053",
+      "MV-DVID-RAW-SURVEY-054",
+      "MV-DVID-RAW-SURVEY-055",
+      "MV-DVID-RAW-SURVEY-056",
+      "MV-DVID-RAW-SURVEY-060",
+      "MV-DVID-RAW-SURVEY-062",
+      "MV-DVID-RAW-SURVEY-063",
+      "MV-DVID-RAW-SURVEY-065"
+    ],
+    "source_pool_note": "AS2-002 acquisition reserve — never used in the 36 validation decisions; fresh biological locations only",
+    "sampling_procedure": "For each listed source, among greedy-separated interior centers with max face |ΔI|≥12 and not in pinned historical exclusion, pick the hash-min center under seed PRODUCTION_GT_BATCH_001|ABS_FACE_ENRICHED|EQUIVARIANT_EDGE_FACE_V1; emit Z,Y,X edges; axis-blind shuffle",
+    "outcome": "CANDIDATE_PRODUCTION_GT_QC_FAILED — permanent failed candidate artifact PRODUCTION_GT_BATCH_001_FAILED_CANDIDATE.json"
+  },
+  "second_batch_predeclared": {
+    "id": "PRODUCTION_GT_BATCH_002",
+    "sampling_freeze": "experiments/phase6e/PRODUCTION_GT_BATCH_002_SAMPLING_FREEZE.json",
+    "note": "Stronger C/E-scale tissue sampling justified solely by AS2-002 pre-production evidence; SPEC002 procedure and QC gates unchanged"
+  }
+}

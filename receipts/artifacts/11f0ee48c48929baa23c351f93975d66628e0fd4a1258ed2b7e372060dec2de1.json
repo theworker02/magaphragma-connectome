@@ -1,0 +1,12 @@
+{
+  "artifact": {
+    "kind": "seam_report",
+    "media_type": "application/json",
+    "meta": {},
+    "name": "seam_report.json",
+    "sha256": "11f0ee48c48929baa23c351f93975d66628e0fd4a1258ed2b7e372060dec2de1",
+    "size_bytes": 3653
+  },
+  "blob_relpath": "derived/artifacts/11/f0/11f0ee48c48929baa23c351f93975d66628e0fd4a1258ed2b7e372060dec2de1",
+  "written_at": "2026-09-18T18:09:00Z"
+}

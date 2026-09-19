@@ -1,0 +1,40 @@
+{
+  "affinity_files": {
+    "even": 123,
+    "odd": 115,
+    "total": 238
+  },
+  "claims": 5,
+  "completed": 230,
+  "failed": 12,
+  "id": "AFFINITY_S7_HYBRID_PROGRESS",
+  "local_even": 116,
+  "out": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\AFFINITY-FULLVOL-S7-001",
+  "pct": 0.799,
+  "pending": 28553,
+  "running": 3,
+  "shards": {
+    "0": {
+      "done": 116,
+      "label": "Local \u00b7 even",
+      "role": "local"
+    },
+    "1": {
+      "done": 114,
+      "label": "Vast \u00b7 odd",
+      "role": "vast"
+    }
+  },
+  "status_counts": {
+    "AFFINITY_DONE_SEG_PENDING": 173,
+    "COMPLETE": 57,
+    "FAILED": 12,
+    "NOT_STARTED": 28553,
+    "RUNNING": 3
+  },
+  "subtitle": "hybrid drain",
+  "title": "Affinity S7",
+  "total": 28798,
+  "updated_at": "2026-09-19T16:19:06.767450Z",
+  "vast_odd": 114
+}

@@ -1,0 +1,45 @@
+{
+  "tool": "runddoctor",
+  "ts": "20260918T155204Z",
+  "checks": [
+    {
+      "name": "dataset readable",
+      "ok": true,
+      "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\datasets"
+    },
+    {
+      "name": "manifests valid",
+      "ok": true,
+      "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\axonforge\\work_graph.json"
+    },
+    {
+      "name": "checkpoint available",
+      "ok": true,
+      "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\models"
+    },
+    {
+      "name": "GPU detected",
+      "ok": true,
+      "detail": "optional"
+    },
+    {
+      "name": "AxonForge operational",
+      "ok": true,
+      "detail": "import ok"
+    },
+    {
+      "name": "cache writable",
+      "ok": true,
+      "detail": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\receipts\\neurocache"
+    },
+    {
+      "name": "storage available",
+      "ok": true,
+      "detail": "865.6 GiB free"
+    }
+  ],
+  "warnings": [],
+  "recommended": [
+    "connectome tools  # pipeline looks clear"
+  ]
+}

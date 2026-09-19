@@ -1,0 +1,12 @@
+{
+  "artifact": {
+    "kind": "anomaly_map",
+    "media_type": "application/json",
+    "meta": {},
+    "name": "anomaly_map.json",
+    "sha256": "9b866502a77024d3b490fe7f57c998aa45d34a5996e9e1d760481d375ace75d5",
+    "size_bytes": 3418
+  },
+  "blob_relpath": "derived/artifacts/9b/86/9b866502a77024d3b490fe7f57c998aa45d34a5996e9e1d760481d375ace75d5",
+  "written_at": "2026-09-18T16:02:59Z"
+}

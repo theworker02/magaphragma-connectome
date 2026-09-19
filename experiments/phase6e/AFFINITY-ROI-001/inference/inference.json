@@ -1,0 +1,28 @@
+{
+  "affinities_sha256": "da48e1e1dfa2c5a9018276f567db5de292c118491fbeff114d2863b616dfee3b",
+  "affinities_shape_czyx": [
+    3,
+    64,
+    256,
+    256
+  ],
+  "boundaries_shape_zyx": [
+    64,
+    256,
+    256
+  ],
+  "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/extend/checkpoints/checkpoint-step10.pt",
+  "checkpoint_sha256": "73ad8a06229127b6eb9c759e7ba208a3c6a70c2b3556d7742cb6e7d8bd292b92",
+  "created_at": "2026-09-18T04:10:06.588039Z",
+  "crop_size_zyx": [
+    20,
+    64,
+    64
+  ],
+  "raw_sha256": "63b33bf6b40af7dbaa68f0c936b242e7a4a48e22973dd7ae10cbdf802027089d",
+  "stride_zyx": [
+    10,
+    32,
+    32
+  ]
+}

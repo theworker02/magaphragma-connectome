@@ -1,0 +1,30 @@
+{
+  "id": "MV-G3-002-LORO-PAIR-GATE-001",
+  "created_at": "2026-09-17T12:43:40.7145746Z",
+  "status": "FAIL",
+  "dataset": {
+    "path": "experiments/phase6e/MV-G3-DVID-REVIEWED-INTERFACE-AFFINITY-002.json",
+    "sha256": "e26c747e16bd5426e12323032f00fa6e9481ca60745536a73997846f422dadc4"
+  },
+  "initialization": {
+    "checkpoint": "experiments/phase6c/MV-TRAIN-SEGNEURON-DVID-G1-001-ATTEMPT-002/checkpoint-step2280.pt",
+    "model_and_adam_state_restored_per_fold": true,
+    "scheduler": "NONE"
+  },
+  "bounded_schedule": {"steps_per_fold": 30, "checkpoint_every": 10, "target_loss_weight": 0.25, "target_loss": "reviewed_masked_affinity_weighted_by_normalized_interface"},
+  "folds": [
+    {"fold":"A","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-A-001/receipt.json","receipt_sha256":"11c85576f7859f662c4c18df517b5716fb23b3bf2d052dc591b341cfd4ac1a54","selected_step":2300,"same_accuracy_at_0_5":1.0,"different_accuracy_at_0_5":0.0,"same_mean_affinity":0.841012,"different_mean_affinity":0.848672,"margin":-0.007661,"pair_prerequisite":"FAIL"},
+    {"fold":"B","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-B-001/receipt.json","receipt_sha256":"4dfc1a77ac36464567f367e3fff826a2147369f82d97650c84c3b1ccfd1ed7db","selected_step":2300,"same_accuracy_at_0_5":1.0,"different_accuracy_at_0_5":0.666667,"same_mean_affinity":0.843812,"different_mean_affinity":0.508458,"margin":0.335354,"pair_prerequisite":"FAIL"},
+    {"fold":"D","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-D-001/receipt.json","receipt_sha256":"d268872dd34b7c338d701d936f5bca908b2d4866ad230779d778b3029251bf3d","selected_step":2290,"same_accuracy_at_0_5":0.8,"different_accuracy_at_0_5":0.333333,"same_mean_affinity":0.696685,"different_mean_affinity":0.761861,"margin":-0.065176,"pair_prerequisite":"FAIL"},
+    {"fold":"F","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-F-001/receipt.json","receipt_sha256":"e74ab6b94b166e0724cf23a14092934691bf7fc802258f226a8632e1106213a7","selected_step":2310,"same_accuracy_at_0_5":1.0,"different_accuracy_at_0_5":0.25,"same_mean_affinity":0.691897,"different_mean_affinity":0.592776,"margin":0.099121,"pair_prerequisite":"FAIL"},
+    {"fold":"G","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DVID-G3-LORO-G-001/receipt.json","receipt_sha256":"40663cee60f7175837e42b4b2e214b8b7d80cc9fce443e2a45bdfbb957842ca9","selected_step":2300,"same_accuracy_at_0_5":1.0,"different_accuracy_at_0_5":0.0,"same_mean_affinity":0.916582,"different_mean_affinity":0.969782,"margin":-0.053201,"pair_prerequisite":"FAIL"},
+    {"fold":"H","receipt":"experiments/phase6e/MV-TRAIN-SEGNEURON-DIVID-G3-LORO-H-001/receipt.json","receipt_sha256":"c61bdd83b3208b355cc6f8cdd86883b88be081a3bf1c33998dad632bc9e2596e","selected_step":2310,"same_accuracy_at_0_5":1.0,"different_accuracy_at_0_5":0.0,"same_mean_affinity":0.906316,"different_mean_affinity":0.839945,"margin":0.066371,"pair_prerequisite":"FAIL"}
+  ],
+  "gate": {
+    "required": "Every promoted LORO fold must preserve SAME_PROCESS and correctly lower affinity on every held-out reviewed DIFFERENT_PROCESS interface at the declared 0.5 decision boundary.",
+    "result": "No fold met the declared class-specific held-out interface prerequisite."
+  },
+  "scientific_consequence": "G3-002 demonstrates incomplete spatial transfer of target boundary supervision. Full held-out 3-D reconstruction, V1/V2/V3 full reconstruction, model/evaluator freeze, and MV-GTVOL-000004 protected replay are not justified.",
+  "prohibited_actions": ["retune_G3_002_labels", "change_interface_weights", "postprocess_to_force_cuts", "run_MV-GTVOL-000004", "create_MV-FRAG", "create_MV-N", "create_MV-SYN", "create_MV-CONN"],
+  "biological_status": {"MV-FRAG": 0, "MV-N": 0, "MV-SYN": 0, "MV-CONN": 0}
+}

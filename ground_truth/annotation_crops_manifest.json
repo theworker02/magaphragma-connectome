@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-09-16T20:35:08.351840Z",
+  "crops": [
+    {
+      "annotation_status": "UNANNOTATED",
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "id": "MV-DVID-ANN-000001",
+      "ignore_voxels": 0,
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "machine_assist": null,
+      "origin_zyx": [
+        32,
+        32,
+        32
+      ],
+      "parent_raw_sha256": "a8282dc04a789528a7e83a5fba92a057f1ec23a1d71eec6ff9efa1d40eedcd07",
+      "parent_region_id": "MV-GTVOL-000001",
+      "raw_crop_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\ground_truth\\raw\\annotation_crops\\MV-DVID-ANN-000001\\raw_zyx.npy",
+      "raw_crop_sha256": "3a14ba4546f74fec691b74e36aab04dba6cafaafa202581555714fe32e2a6137",
+      "raw_dtype": "uint8",
+      "raw_shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "review_state": "NOT_STARTED",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_origin_xyz": [
+        1056,
+        1056,
+        1056
+      ],
+      "specimen_status": "SPECIMEN_ID_UNKNOWN_DO_NOT_CROSS_SPECIMENS",
+      "split": "DVID_TARGET_TRAIN",
+      "visual_qa_focus": [
+        "dense_or_sparse_neuropil",
+        "membrane_clarity",
+        "thin_processes",
+        "contrast"
+      ],
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+      "voxel_size_nm_xyz": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "annotation_status": "UNANNOTATED",
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "id": "MV-DVID-ANN-000002",
+      "ignore_voxels": 0,
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "machine_assist": null,
+      "origin_zyx": [
+        48,
+        24,
+        40
+      ],
+      "parent_raw_sha256": "b996b406bb8e48c36cc7257aa8aa46d36768283515d88b7640e4e653ee1f85fb",
+      "parent_region_id": "MV-GTVOL-000002",
+      "raw_crop_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\ground_truth\\raw\\annotation_crops\\MV-DVID-ANN-000002\\raw_zyx.npy",
+      "raw_crop_sha256": "9d9c794e765af4c6fbc0e9fbd65add6f85f2b4e5b98220c1fa6e25cd7d6d0c4d",
+      "raw_dtype": "uint8",
+      "raw_shape_zyx": [
+        96,
+        128,
+        128
+      ],
+      "review_state": "NOT_STARTED",
+      "shape_zyx": [
+        96,
+        128,
+        128
+      ],
+      "source_origin_xyz": [
+        7848,
+        3032,
+        6832
+      ],
+      "specimen_status": "SPECIMEN_ID_UNKNOWN_DO_NOT_CROSS_SPECIMENS",
+      "split": "DVID_TARGET_TRAIN",
+      "visual_qa_focus": [
+        "thicker_profiles",
+        "closely_apposed_processes",
+        "branch_points",
+        "boundary_difficulty"
+      ],
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+      "voxel_size_nm_xyz": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "annotation_status": "UNANNOTATED",
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "id": "MV-DVID-ANN-000003",
+      "ignore_voxels": 0,
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "machine_assist": null,
+      "origin_zyx": [
+        64,
+        40,
+        24
+      ],
+      "parent_raw_sha256": "64608aa85c05c8da24a9634c788531d9e9d55d013bcd8dce704babe7982539e1",
+      "parent_region_id": "MV-GTVOL-000003",
+      "raw_crop_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\ground_truth\\raw\\annotation_crops\\MV-DVID-ANN-000003\\raw_zyx.npy",
+      "raw_crop_sha256": "2fa2cff17f62a6e15b91895227d5a468c2e255040e0f15ec2448f5c7d491868b",
+      "raw_dtype": "uint8",
+      "raw_shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "review_state": "NOT_STARTED",
+      "shape_zyx": [
+        64,
+        128,
+        128
+      ],
+      "source_origin_xyz": [
+        13656,
+        9768,
+        12096
+      ],
+      "specimen_status": "SPECIMEN_ID_UNKNOWN_DO_NOT_CROSS_SPECIMENS",
+      "split": "DVID_TARGET_TRAIN",
+      "visual_qa_focus": [
+        "different_local_contrast",
+        "thin_processes",
+        "membrane_clarity"
+      ],
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+      "voxel_size_nm_xyz": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "annotation_status": "UNANNOTATED",
+      "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+      "dataset_id": "MV-SRC-FLATIRON-DVID-WASP5",
+      "id": "MV-DVID-ANN-000004",
+      "ignore_voxels": 0,
+      "instance_count": 0,
+      "label_path": null,
+      "label_sha256": null,
+      "machine_assist": null,
+      "origin_zyx": [
+        48,
+        32,
+        32
+      ],
+      "parent_raw_sha256": "8cdfba5d18ea3e7fb9e1d74c375dc24dc605c719c58682a595815fb23d857434",
+      "parent_region_id": "MV-GTVOL-000005",
+      "raw_crop_path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\ground_truth\\raw\\annotation_crops\\MV-DVID-ANN-000004\\raw_zyx.npy",
+      "raw_crop_sha256": "ca4cae75ac7af99696ecff2b1c8b5cd176de52d2f19c5191913a591c01b24b98",
+      "raw_dtype": "uint8",
+      "raw_shape_zyx": [
+        96,
+        128,
+        128
+      ],
+      "review_state": "NOT_STARTED",
+      "shape_zyx": [
+        96,
+        128,
+        128
+      ],
+      "source_origin_xyz": [
+        15072,
+        2080,
+        13488
+      ],
+      "specimen_status": "SPECIMEN_ID_UNKNOWN_DO_NOT_CROSS_SPECIMENS",
+      "split": "DVID_TARGET_VALIDATION",
+      "visual_qa_focus": [
+        "independent_target_validation",
+        "mixed_local_morphology",
+        "boundary_difficulty"
+      ],
+      "volume_id": "MV-FIBSEM-WASP5-YURI-4C",
+      "voxel_size_nm_xyz": [
+        8.0,
+        8.0,
+        8.0
+      ]
+    }
+  ],
+  "id": "MV-DVID-ANNOTATION-CROP-PLAN-001",
+  "plan_sha256": "10e9b0363b60342e82b3c95c79f2497cc1acfdbc8381075e81f6fb9e03d55011",
+  "schema_version": 1,
+  "status": "CROPS_MATERIALIZED_AWAITING_REVIEW"
+}

@@ -1,0 +1,60 @@
+{
+  "allowed_decisions": [
+    "BAD_QUESTION",
+    "DIFFERENT_PROCESS",
+    "SAME_PROCESS",
+    "UNCERTAIN"
+  ],
+  "coordinate_frame": "MV-FRAME-DVID-WASP5-001",
+  "created_at": "2026-09-18T02:25:11.233177Z",
+  "crop_id": "MV-PGT1-08",
+  "event_log": {
+    "append_only": true,
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\experiments\\phase6e\\production-gt-batch-001-packages\\MV-PGT1-08\\workspace.events.jsonl"
+  },
+  "id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-MV-PGT1-08-PGT1",
+  "pair_contract": "pair_left_zyx is followed by its positive neighbour along channel_zyx: 0=Z, 1=Y, 2=X.",
+  "parent_region_id": "MV-DVID-RAW-SURVEY-065",
+  "presentation_mode": "EQUIVARIANT_EDGE_FACE_V1",
+  "prohibited_promotions": [
+    "REVIEWED_DVID_LABEL",
+    "MV-FRAG",
+    "MV-N",
+    "MV-SYN",
+    "MV-CONN"
+  ],
+  "provenance": {
+    "candidate_production_gt": true,
+    "center_zyx": [
+      43,
+      47,
+      63
+    ],
+    "do_not_train": true,
+    "experiment": "PRODUCTION_GT_BATCH_001",
+    "max_face_step": 14.0,
+    "not_experiment_009": true,
+    "not_promoted_until_qc": true,
+    "target_spec": "MV-G3-AFFINITY-TARGET-SPEC-002",
+    "validation_002_excluded_from_training": true
+  },
+  "raw": {
+    "dtype": "uint8",
+    "path": "C:\\Users\\matth\\OneDrive\\Desktop\\magaphragma-connectome\\local_research_build\\phase6e\\dvid_raw_context_survey_001\\MV-DVID-RAW-SURVEY-065-raw_zyx.npy",
+    "sha256": "abf60ea40f8dffac67101ad04460d24c444c1d072e3d464ca7aa5cd08aba4b59",
+    "shape_zyx": [
+      64,
+      128,
+      128
+    ]
+  },
+  "review_state": "UNREVIEWED",
+  "schema_version": 1,
+  "source_origin_xyz": [
+    1216,
+    1600,
+    10688
+  ],
+  "split": "PRODUCTION_GT_BATCH_001_CANDIDATE",
+  "status": "EXTERNAL_EXPERT_RAW_EM_REVIEW_REQUIRED"
+}

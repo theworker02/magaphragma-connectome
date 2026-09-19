@@ -1,0 +1,115 @@
+{
+  "status": "RUNNING",
+  "best": {
+    "global_step": 10,
+    "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/short/checkpoints/checkpoint-step10.pt",
+    "checkpoint_sha256": "421fb1c8e86186a7fb94a1972857de4b86280b174bf8b0eb839b47150494913d",
+    "eval_metrics": {
+      "n_eval_edges": 6,
+      "opaque_ids_scored": [
+        "MV-PGT2-5E2C51243843",
+        "MV-PGT2-BAB09CA48AC4",
+        "MV-PGT2-BB854E1BF43D",
+        "MV-PGT2-C2C6E21DB1B7",
+        "MV-PGT2-E992DA993C6B",
+        "MV-PGT2-FD2E7E5D4C10"
+      ],
+      "SAME_PROCESS_accuracy_at_0p5": 0.5,
+      "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "mean_pred_SAME": 0.6618508547544479,
+      "mean_pred_DIFFERENT": 0.6381741985678673,
+      "margin": 0.023676656186580658,
+      "constant_same_accuracy": 0.3333333333333333,
+      "pair_predictions": [
+        {
+          "target": 0,
+          "affinity": 0.9968363046646118,
+          "opaque_decision_id": "MV-PGT2-5E2C51243843"
+        },
+        {
+          "target": 0,
+          "affinity": 0.2696155607700348,
+          "opaque_decision_id": "MV-PGT2-BAB09CA48AC4"
+        },
+        {
+          "target": 0,
+          "affinity": 0.9942252039909363,
+          "opaque_decision_id": "MV-PGT2-BB854E1BF43D"
+        },
+        {
+          "target": 1,
+          "affinity": 0.33700641989707947,
+          "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7"
+        },
+        {
+          "target": 0,
+          "affinity": 0.29201972484588623,
+          "opaque_decision_id": "MV-PGT2-E992DA993C6B"
+        },
+        {
+          "target": 1,
+          "affinity": 0.9866952896118164,
+          "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10"
+        }
+      ]
+    },
+    "chance_under_early_eliminate_rule": false
+  },
+  "last": {
+    "global_step": 30,
+    "checkpoint": "/mnt/c/Users/matth/OneDrive/Desktop/magaphragma-connectome/experiments/phase6e/AFFINITY-PARALLEL-FUNNEL-001/C_PATCH_20_64_64/short/checkpoints/checkpoint-step30.pt",
+    "checkpoint_sha256": "8bc9bb8b69cdfd8e32cf8b9a4fbedf72beca58379702479d2b26580cf01e2aef",
+    "eval_metrics": {
+      "n_eval_edges": 6,
+      "opaque_ids_scored": [
+        "MV-PGT2-5E2C51243843",
+        "MV-PGT2-BAB09CA48AC4",
+        "MV-PGT2-BB854E1BF43D",
+        "MV-PGT2-C2C6E21DB1B7",
+        "MV-PGT2-E992DA993C6B",
+        "MV-PGT2-FD2E7E5D4C10"
+      ],
+      "SAME_PROCESS_accuracy_at_0p5": 0.5,
+      "DIFFERENT_PROCESS_accuracy_at_0p5": 0.5,
+      "balanced_edge_accuracy_at_0p5": 0.5,
+      "mean_pred_SAME": 0.5844246372580528,
+      "mean_pred_DIFFERENT": 0.5877136215567589,
+      "margin": -0.0032889842987060547,
+      "constant_same_accuracy": 0.3333333333333333,
+      "pair_predictions": [
+        {
+          "target": 0,
+          "affinity": 0.9983322024345398,
+          "opaque_decision_id": "MV-PGT2-5E2C51243843"
+        },
+        {
+          "target": 0,
+          "affinity": 0.18347612023353577,
+          "opaque_decision_id": "MV-PGT2-BAB09CA48AC4"
+        },
+        {
+          "target": 0,
+          "affinity": 0.9963955283164978,
+          "opaque_decision_id": "MV-PGT2-BB854E1BF43D"
+        },
+        {
+          "target": 1,
+          "affinity": 0.17633859813213348,
+          "opaque_decision_id": "MV-PGT2-C2C6E21DB1B7"
+        },
+        {
+          "target": 0,
+          "affinity": 0.17265063524246216,
+          "opaque_decision_id": "MV-PGT2-E992DA993C6B"
+        },
+        {
+          "target": 1,
+          "affinity": 0.9925106763839722,
+          "opaque_decision_id": "MV-PGT2-FD2E7E5D4C10"
+        }
+      ]
+    },
+    "chance_under_early_eliminate_rule": true
+  }
+}

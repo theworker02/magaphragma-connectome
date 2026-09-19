@@ -1,0 +1,19 @@
+{
+  "pipeline": "connectivity",
+  "steps": [
+    {
+      "action": "prioritize",
+      "counts": {
+        "AMBIGUOUS": 1,
+        "CONFLICTING": 0,
+        "PROBABLE": 0,
+        "REJECTED": 0,
+        "REVIEW": 0,
+        "SUPPORTED": 1
+      },
+      "review_queue": 1,
+      "tool": "synapselens",
+      "total": 2
+    }
+  ]
+}

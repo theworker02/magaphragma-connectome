@@ -1,0 +1,515 @@
+{
+  "schema_version": 1,
+  "id": "MV-G3-RAW-Y-STRATIFIED-QUEUE-F-004",
+  "created_at": "2026-09-17T15:47:53.440955Z",
+  "status": "EXPERT_INTERFACE_REVIEW_REQUIRED",
+  "workspace_id": "MV-EXTERNAL-BOUNDARY-WORKSPACE-F-004",
+  "crop_id": "MV-G3-TRAIN-F",
+  "raw_sha256": "e3f37482cde357f771b5a35a4fd6222235c803972641b7b4456f451658a69550",
+  "selection": {
+    "method": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+    "bands": [
+      "0-10%",
+      "10-25%",
+      "25-50%",
+      "50-75%",
+      "75-90%",
+      "90-100%"
+    ],
+    "interfaces_per_band": 1,
+    "orientation_axis": "Y",
+    "orientation_axis_channel_zyx": 1,
+    "label_blind": true,
+    "prohibited_inputs": [
+      "SegNeuron",
+      "supervoxels",
+      "prior labels",
+      "reviewed SAME/DIFFERENT decisions",
+      "affinity model predictions"
+    ],
+    "band_allocation": {
+      "0-10%": 1,
+      "10-25%": 1,
+      "25-50%": 1,
+      "50-75%": 1,
+      "75-90%": 1,
+      "90-100%": 1
+    },
+    "excluded_prior_pairs": 33,
+    "declared_sampling_rule": {
+      "sampler_id": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "declared_before_labels": true,
+      "population": "interior voxels whose argmax(|3D raw-EM gradient|) axis == Y(channel 1)",
+      "candidate_ordering": "descending raw-EM gradient magnitude score (stable sort); rank 0 == highest score",
+      "selectable_centres": "greedy 12-voxel spatially-separated centres over the ranked eligible population (exact predicate d^2 >= 144)",
+      "band_boundaries_fraction_of_separated_pool": [
+        {
+          "label": "0-10%",
+          "lo": 0.0,
+          "hi": 0.1
+        },
+        {
+          "label": "10-25%",
+          "lo": 0.1,
+          "hi": 0.25
+        },
+        {
+          "label": "25-50%",
+          "lo": 0.25,
+          "hi": 0.5
+        },
+        {
+          "label": "50-75%",
+          "lo": 0.5,
+          "hi": 0.75
+        },
+        {
+          "label": "75-90%",
+          "lo": 0.75,
+          "hi": 0.9
+        },
+        {
+          "label": "90-100%",
+          "lo": 0.9,
+          "hi": 1.0
+        }
+      ],
+      "band_index_math": "start = floor(lo * n_separated); end = ceil(hi * n_separated); ranks [start, end)",
+      "allocation": "1 interface per (crop, band) by default (per_band configurable); 6 TRAIN crops x 6 bands",
+      "within_band_pick": "lowest rank (highest gradient) in band that is interior, in-bounds, not a prior exact pair, and 12-voxel separated from centres already chosen in this batch",
+      "interface_geometry": "boundary: center member offset (0,0) plus neighbours (-1,0),(1,0) along the two axes orthogonal to Y; positive neighbour along Y is the affinity pair",
+      "allowed_selection_inputs": [
+        "raw-EM 3D gradient",
+        "Y orientation",
+        "TRAIN split",
+        "crop identity",
+        "deterministic rank/quantile bands",
+        "exclusion of prior exact pairs"
+      ],
+      "forbidden_selection_inputs": [
+        "SAME/DIFFERENT labels",
+        "target-class predictions",
+        "affinity model outputs",
+        "previously observed SAME/DIFFERENT decisions"
+      ],
+      "purpose": "broad geometric/raw-EM coverage; NOT targeting the missing DIFFERENT_PROCESS class"
+    }
+  },
+  "questions": [
+    {
+      "id": "MV-G3-IF-001-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        34,
+        53,
+        62
+      ],
+      "pair_right_zyx": [
+        34,
+        54,
+        62
+      ],
+      "channel_zyx": 1,
+      "band": "0-10%",
+      "rank_within_separated": 7,
+      "raw_gradient_score": 6.745368957519531,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-001-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        33,
+        53,
+        62
+      ],
+      "pair_right_zyx": [
+        33,
+        54,
+        62
+      ],
+      "channel_zyx": 1,
+      "band": "0-10%",
+      "rank_within_separated": 7,
+      "raw_gradient_score": 6.745368957519531,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-001-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-001",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        35,
+        53,
+        62
+      ],
+      "pair_right_zyx": [
+        35,
+        54,
+        62
+      ],
+      "channel_zyx": 1,
+      "band": "0-10%",
+      "rank_within_separated": 7,
+      "raw_gradient_score": 6.745368957519531,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        16,
+        71,
+        104
+      ],
+      "pair_right_zyx": [
+        16,
+        72,
+        104
+      ],
+      "channel_zyx": 1,
+      "band": "10-25%",
+      "rank_within_separated": 43,
+      "raw_gradient_score": 5.852349758148193,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        15,
+        71,
+        104
+      ],
+      "pair_right_zyx": [
+        15,
+        72,
+        104
+      ],
+      "channel_zyx": 1,
+      "band": "10-25%",
+      "rank_within_separated": 43,
+      "raw_gradient_score": 5.852349758148193,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-002-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-002",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        17,
+        71,
+        104
+      ],
+      "pair_right_zyx": [
+        17,
+        72,
+        104
+      ],
+      "channel_zyx": 1,
+      "band": "10-25%",
+      "rank_within_separated": 43,
+      "raw_gradient_score": 5.852349758148193,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        28,
+        6,
+        30
+      ],
+      "pair_right_zyx": [
+        28,
+        7,
+        30
+      ],
+      "channel_zyx": 1,
+      "band": "25-50%",
+      "rank_within_separated": 109,
+      "raw_gradient_score": 5.338539123535156,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        27,
+        6,
+        30
+      ],
+      "pair_right_zyx": [
+        27,
+        7,
+        30
+      ],
+      "channel_zyx": 1,
+      "band": "25-50%",
+      "rank_within_separated": 109,
+      "raw_gradient_score": 5.338539123535156,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-003-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-003",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        29,
+        6,
+        30
+      ],
+      "pair_right_zyx": [
+        29,
+        7,
+        30
+      ],
+      "channel_zyx": 1,
+      "band": "25-50%",
+      "rank_within_separated": 109,
+      "raw_gradient_score": 5.338539123535156,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-004-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-004",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        58,
+        117,
+        72
+      ],
+      "pair_right_zyx": [
+        58,
+        118,
+        72
+      ],
+      "channel_zyx": 1,
+      "band": "50-75%",
+      "rank_within_separated": 219,
+      "raw_gradient_score": 4.636809349060059,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-004-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-004",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        57,
+        117,
+        72
+      ],
+      "pair_right_zyx": [
+        57,
+        118,
+        72
+      ],
+      "channel_zyx": 1,
+      "band": "50-75%",
+      "rank_within_separated": 219,
+      "raw_gradient_score": 4.636809349060059,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-004-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-004",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        59,
+        117,
+        72
+      ],
+      "pair_right_zyx": [
+        59,
+        118,
+        72
+      ],
+      "channel_zyx": 1,
+      "band": "50-75%",
+      "rank_within_separated": 219,
+      "raw_gradient_score": 4.636809349060059,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-005-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-005",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        41,
+        84,
+        124
+      ],
+      "pair_right_zyx": [
+        41,
+        85,
+        124
+      ],
+      "channel_zyx": 1,
+      "band": "75-90%",
+      "rank_within_separated": 329,
+      "raw_gradient_score": 3.640054941177368,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-005-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-005",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        40,
+        84,
+        124
+      ],
+      "pair_right_zyx": [
+        40,
+        85,
+        124
+      ],
+      "channel_zyx": 1,
+      "band": "75-90%",
+      "rank_within_separated": 329,
+      "raw_gradient_score": 3.640054941177368,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-005-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-005",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        42,
+        84,
+        124
+      ],
+      "pair_right_zyx": [
+        42,
+        85,
+        124
+      ],
+      "channel_zyx": 1,
+      "band": "75-90%",
+      "rank_within_separated": 329,
+      "raw_gradient_score": 3.640054941177368,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-006-01",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-006",
+      "interface_member": 1,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        3,
+        11,
+        66
+      ],
+      "pair_right_zyx": [
+        3,
+        12,
+        66
+      ],
+      "channel_zyx": 1,
+      "band": "90-100%",
+      "rank_within_separated": 395,
+      "raw_gradient_score": 2.5,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-006-02",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-006",
+      "interface_member": 2,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        2,
+        11,
+        66
+      ],
+      "pair_right_zyx": [
+        2,
+        12,
+        66
+      ],
+      "channel_zyx": 1,
+      "band": "90-100%",
+      "rank_within_separated": 395,
+      "raw_gradient_score": 2.5,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    },
+    {
+      "id": "MV-G3-IF-006-03",
+      "kind": "RAW_EM_INTERFACE_MEMBER",
+      "interface_id": "MV-G3-IF-006",
+      "interface_member": 3,
+      "interface_members": 3,
+      "pair_left_zyx": [
+        4,
+        11,
+        66
+      ],
+      "pair_right_zyx": [
+        4,
+        12,
+        66
+      ],
+      "channel_zyx": 1,
+      "band": "90-100%",
+      "rank_within_separated": 395,
+      "raw_gradient_score": 2.5,
+      "selection": "STRATIFIED_Y_TRAIN_RANK_BANDS_V1",
+      "model_navigation": false
+    }
+  ],
+  "scientific_boundary": "Raw-EM rank-band stratification chooses review locations for coverage only. Each direct pair remains an independent expert decision; stratification does not target any biological class."
+}

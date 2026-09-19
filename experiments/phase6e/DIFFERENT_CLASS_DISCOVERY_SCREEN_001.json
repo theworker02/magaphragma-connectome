@@ -1,0 +1,21 @@
+{
+  "abs_min": 12.0,
+  "as2_excluded_centers_on_035": [
+    [
+      33,
+      17,
+      122
+    ]
+  ],
+  "chosen_source": "MV-DVID-RAW-SURVEY-035",
+  "n_selected": 12,
+  "per_source": {
+    "MV-DVID-RAW-SURVEY-035": {
+      "X": 354531,
+      "Y": 349935,
+      "Z": 330150
+    }
+  },
+  "selection_rule": "abs |\u0394I| >= 12.0 on single face; darker-endpoint tiebreak; sep>=16; 4 per axis; prefer SURVEY-035 C/E-magnitude tissue",
+  "why_not_as2_relative_q": "AS2 relative Q strata selected mean3 face-step in [0.33, 3.0]; historical C/E abs magnitudes ~8\u201317. Relative enrichment was insufficient to place reviewers on membrane-scale transitions."
+}

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AxonForge — Connectome Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg0: #e8edf2;
+      --bg1: #f4f7fa;
+      --ink: #14202b;
+      --ink-soft: #3d5163;
+      --muted: #6a7f92;
+      --line: rgba(20, 32, 43, 0.12);
+      --line-strong: rgba(20, 32, 43, 0.22);
+      --panel: rgba(255, 255, 255, 0.72);
+      --panel-solid: #ffffff;
+      --steel: #1f6f8b;
+      --steel-deep: #0f4c63;
+      --signal: #c45c26;
+      --ok: #1f7a4c;
+      --warn: #a66b12;
+      --err: #b42318;
+      --mono: "JetBrains Mono", ui-monospace, monospace;
+      --sans: "Sora", sans-serif;
+      --display: "Fraunces", Georgia, serif;
+      --radius: 4px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background:
+        radial-gradient(900px 480px at 8% -8%, rgba(31, 111, 139, 0.16), transparent 55%),
+        radial-gradient(700px 420px at 92% 0%, rgba(196, 92, 38, 0.08), transparent 50%),
+        linear-gradient(165deg, var(--bg1) 0%, var(--bg0) 55%, #dfe6ee 100%);
+      background-attachment: fixed;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.35;
+      background-image:
+        linear-gradient(rgba(20, 32, 43, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 32, 43, 0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(180deg, #000 0%, transparent 88%);
+    }
+
+    .shell {
+      position: relative;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: clamp(1.5rem, 4vw, 3rem) clamp(1.1rem, 3vw, 2rem) 3.5rem;
+      animation: rise 0.7s var(--ease) both;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    /* —— Brand / first composition —— */
+    .hero {
+      display: grid;
+      gap: 1.25rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--line-strong);
+      margin-bottom: 1.75rem;
+    }
+    .brand-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.75rem 1.5rem;
+    }
+    .brand {
+      font-family: var(--display);
+      font-size: clamp(2.6rem, 7vw, 4.4rem);
+      font-weight: 650;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      margin: 0;
+      color: var(--ink);
+    }
+    .brand em {
+      font-style: normal;
+      color: var(--steel-deep);
+    }
+    .meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.35rem;
+      text-align: right;
+    }
+    .ver {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--steel);
+    }
+    .project {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+    .lede {
+      max-width: 36rem;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 1.02rem;
+      line-height: 1.45;
+    }
+
+    /* —— Command rail —— */
+    .command {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.25rem;
+      align-items: end;
+      padding: 1.15rem 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 40px rgba(20, 32, 43, 0.06);
+    }
+    @media (max-width: 780px) {
+      .command { grid-template-columns: 1fr; }
+      .meta { align-items: flex-start; text-align: left; }
+    }
+    .power-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem 1.5rem;
+    }
+    .power-label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 9rem;
+    }
+    .power-label strong {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .power-label span {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--ink);
+    }
+    .switch {
+      --w: 56px; --h: 30px;
+      position: relative;
+      width: var(--w);
+      height: var(--h);
+      background: #c5d0da;
+      border: 1px solid var(--line-strong);
+      border-radius: 2px;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.25s var(--ease), border-color 0.25s var(--ease);
+    }
+    .switch.on {
+      background: var(--ok);
+      border-color: transparent;
+    }
+    .switch .knob {
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 22px; height: 22px;
+      background: #fff;
+      border-radius: 1px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+      transition: transform 0.25s var(--ease);
+    }
+    .switch.on .knob { transform: translateX(26px); }
+    .auto {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--ink-soft);
+      font-size: 0.88rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .auto input {
+      width: 1rem; height: 1rem;
+      accent-color: var(--steel);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      justify-content: flex-end;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid var(--line-strong);
+      background: var(--panel-solid);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.7rem 1rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s var(--ease), background 0.2s var(--ease), border-color 0.2s var(--ease);
+    }
+    .btn:hover { transform: translateY(-1px); border-color: var(--steel); }
+    .btn:active { transform: none; }
+    .btn-primary {
+      background: var(--steel-deep);
+      border-color: var(--steel-deep);
+      color: #f3f8fb;
+    }
+    .btn-primary:hover { background: var(--steel); border-color: var(--steel); }
+    .btn-accent {
+      background: #f3ebe4;
+      border-color: rgba(196, 92, 38, 0.35);
+      color: #7a3410;
+    }
+
+    .status-line {
+      grid-column: 1 / -1;
+      min-height: 1.35rem;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .status-line.ok { color: var(--ok); }
+    .status-line.err { color: var(--err); }
+    .status-line.running {
+      color: var(--steel-deep);
+    }
+    .status-line.running::before {
+      content: "";
+      display: inline-block;
+      width: 0.55rem; height: 0.55rem;
+      margin-right: 0.45rem;
+      border-radius: 50%;
+      background: var(--steel);
+      animation: pulse 1.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.35; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1); }
+    }
+
+    /* —— Completeness composition —— */
+    .stage {
+      display: grid;
+      grid-template-columns: 1.35fr 0.9fr;
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 900px) {
+      .stage { grid-template-columns: 1fr; }
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+      padding: 1.25rem 1.35rem 1.4rem;
+    }
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .panel-head h2 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: 1.35rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+    .panel-head .hint {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .coverage {
+      display: grid;
+      gap: 1rem;
+    }
+    .big-metric {
+      display: flex;
+      align-items: baseline;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+    .big-metric .num {
+      font-family: var(--mono);
+      font-size: clamp(2.2rem, 5vw, 3.1rem);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      color: var(--ink);
+      font-variant-numeric: tabular-nums;
+    }
+    .big-metric .unit {
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .bar {
+      height: 10px;
+      background: rgba(20, 32, 43, 0.08);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .bar > i {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--steel-deep), var(--steel) 70%, #3aa0b5);
+      transition: width 0.85s var(--ease);
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      padding-top: 0.35rem;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 560px) {
+      .stat-row { grid-template-columns: 1fr 1fr; }
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding-top: 0.65rem;
+    }
+    .stat .k {
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .stat .v {
+      font-family: var(--mono);
+      font-size: 1.05rem;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink);
+    }
+
+    .throughput {
+      display: grid;
+      gap: 0.85rem;
+    }
+    .t-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.35rem 1rem;
+      align-items: baseline;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .t-item:last-child { border-bottom: 0; padding-bottom: 0; }
+    .t-item .k {
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+    .t-item .v {
+      font-family: var(--mono);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink);
+    }
+    .pass-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--steel-deep);
+      background: rgba(31, 111, 139, 0.1);
+      border: 1px solid rgba(31, 111, 139, 0.22);
+      padding: 0.3rem 0.55rem;
+      border-radius: var(--radius);
+    }
+
+    /* —— Tools + pipeline —— */
+    .lower {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    @media (max-width: 900px) {
+      .lower { grid-template-columns: 1fr; }
+    }
+    .pipeline-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .tool-rail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.65rem;
+    }
+    .tool {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding: 0.15rem 0;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tool:hover {
+      color: var(--steel-deep);
+      border-bottom-color: rgba(31, 111, 139, 0.45);
+    }
+    .tool .stage-tag {
+      color: var(--muted);
+      margin-right: 0.25rem;
+    }
+
+    /* —— Review —— */
+    .review-wrap { margin-top: 1.25rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0.4rem;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    td {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .empty {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .foot {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-family: var(--mono);
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div class="brand-row">
+        <h1 class="brand">Axon<em>Forge</em></h1>
+        <div class="meta">
+          <div class="ver" id="af-version">v1.4</div>
+          <div class="project">Connectome Project</div>
+        </div>
+      </div>
+      <p class="lede">
+        Completeness-preserving adaptive tile acceleration — control power, plan the volume, and watch validated coverage without dropping unresolved work.
+      </p>
+    </header>
+
+    <section class="command" aria-label="AxonForge controls">
+      <div class="power-block">
+        <div class="power-label">
+          <strong>Power</strong>
+          <span id="af-switch-meta">manual · on</span>
+        </div>
+        <button type="button" class="switch on" id="af-light-switch" aria-pressed="true" title="Toggle AxonForge">
+          <span class="knob"></span>
+        </button>
+        <label class="auto">
+          <input type="checkbox" id="af-auto" />
+          Autonomous when work is pending
+        </label>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" id="af-submit-run" href="#">Submit demo &amp; run</a>
+        <button type="button" class="btn" id="af-pipeline-plan">Plan (VoxScout)</button>
+        <button type="button" class="btn btn-accent" id="af-pipeline-gaps">Close gaps</button>
+      </div>
+      <div class="status-line" id="status" role="status"></div>
+    </section>
+
+    <section class="stage" aria-label="Live telemetry">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Volume integrity</h2>
+          <span class="hint" id="pass-hint">awaiting pass</span>
+        </div>
+        <div class="coverage">
+          <div class="big-metric">
+            <span class="num" id="coverage-pct">0%</span>
+            <span class="unit">validated coverage</span>
+          </div>
+          <div class="bar" aria-hidden="true"><i id="coverage-bar"></i></div>
+          <div class="stat-row">
+            <div class="stat"><span class="k">Total volume</span><span class="v" id="m-total">0</span></div>
+            <div class="stat"><span class="k">Validated</span><span class="v" id="m-validated">0</span></div>
+            <div class="stat"><span class="k">Unresolved</span><span class="v" id="m-unresolved">0</span></div>
+            <div class="stat"><span class="k">Uncertain</span><span class="v" id="m-uncertain">0</span></div>
+            <div class="stat"><span class="k">Queue depth</span><span class="v" id="m-queue">0</span></div>
+            <div class="stat"><span class="k">Failed tasks</span><span class="v" id="m-failed">0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Throughput</h2>
+          <span class="pass-badge" id="pass-badge">—</span>
+        </div>
+        <div class="throughput">
+          <div class="t-item"><span class="k">Tiles / s</span><span class="v" id="m-tps">0</span></div>
+          <div class="t-item"><span class="k">Voxels / s</span><span class="v" id="m-vps">0</span></div>
+          <div class="t-item"><span class="k">I/O MB/s</span><span class="v" id="m-io">0</span></div>
+          <div class="t-item"><span class="k">Cache hit</span><span class="v" id="m-cache">0%</span></div>
+          <div class="t-item"><span class="k">GPU / VRAM</span><span class="v" id="m-gpu">—</span></div>
+          <div class="t-item"><span class="k">Est. remaining</span><span class="v" id="m-eta">—</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lower">
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Toolchain</h2>
+          <span class="hint">connected stages</span>
+        </div>
+        <div class="pipeline-actions">
+          <span class="empty" style="font-size:0.85rem">Hints and repair tools share this runtime graph.</span>
+        </div>
+        <div class="tool-rail" id="tools-list"></div>
+      </div>
+
+      <div class="panel review-wrap" style="margin-top:0">
+        <div class="panel-head">
+          <h2>Active review queue</h2>
+          <span class="hint" id="review-count">0 flagged</span>
+        </div>
+        <div id="review"><p class="empty">No flagged tasks.</p></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>Local control · API :8741</span>
+      <span id="foot-refresh">Polling every 1.5s</span>
+    </footer>
+  </div>
+
+  <script>
+    const API = (location.port === "8742") ? "http://127.0.0.1:8741" : "";
+
+    (function wireSubmit() {
+      const a = document.getElementById("af-submit-run");
+      if (!a) return;
+      const returnTo = encodeURIComponent(location.origin + "/");
+      a.href = API + "/demo_run?reset=true&return_to=" + returnTo;
+    })();
+
+    const fmt = (n) => {
+      if (n == null || Number.isNaN(n)) return "0";
+      if (Math.abs(n) >= 1e6) return (n / 1e6).toFixed(2) + "M";
+      if (Math.abs(n) >= 1e3) return (n / 1e3).toFixed(2) + "k";
+      if (Number.isInteger(n)) return String(n);
+      return Number(n).toFixed(2);
+    };
+
+    function setText(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+
+    function setSwitchUI(sw) {
+      const btn = document.getElementById("af-light-switch");
+      const meta = document.getElementById("af-switch-meta");
+      const auto = document.getElementById("af-auto");
+      if (!btn || !sw) return;
+      const on = !!sw.powered_on;
+      btn.classList.toggle("on", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      meta.textContent = (sw.mode || "manual") + " · " + (on ? "on" : "off") +
+        (sw.last_reason ? " · " + sw.last_reason : "");
+      if (auto) auto.checked = !!sw.autonomous;
+    }
+
+    async function postSwitch(body) {
+      const r = await fetch(API + "/switch", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      });
+      const sw = await r.json();
+      setSwitchUI(sw);
+      return sw;
+    }
+
+    document.getElementById("af-light-switch")?.addEventListener("click", () => {
+      postSwitch({ toggle: true });
+    });
+    document.getElementById("af-auto")?.addEventListener("change", (e) => {
+      postSwitch({ autonomous: e.target.checked });
+    });
+
+    async function runPipeline(kind) {
+      const st = document.getElementById("status");
+      st.textContent = kind === "plan" ? "Running VoxScout plan…" : "Closing gaps…";
+      st.className = "status-line";
+      try {
+        const r = await fetch(API + (kind === "plan" ? "/pipeline/plan" : "/pipeline/close-gaps"), { method: "POST" });
+        const data = await r.json();
+        st.className = "status-line ok";
+        st.textContent = kind === "plan"
+          ? `Plan done — ${data.steps?.[1]?.n_hints || 0} hints`
+          : `Close-gaps done — repair ${data.repair_items ?? data.steps?.length ?? "?"}`;
+        refresh();
+        refreshTools();
+      } catch (e) {
+        st.className = "status-line err";
+        st.textContent = String(e);
+      }
+    }
+    document.getElementById("af-pipeline-plan")?.addEventListener("click", (e) => {
+      e.preventDefault();
+      runPipeline("plan");
+    });
+    document.getElementById("af-pipeline-gaps")?.addEventListener("click", (e) => {
+      e.preventDefault();
+      runPipeline("close-gaps");
+    });
+
+    async function refreshTools() {
+      try {
+        const r = await fetch(API + "/tools");
+        if (!r.ok) return;
+        const data = await r.json();
+        const el = document.getElementById("tools-list");
+        if (!el) return;
+        el.innerHTML = (data.tools || []).map((t) =>
+          `<span class="tool"><span class="stage-tag">${t.stage || ""}</span>${t.name}</span>`
+        ).join("");
+      } catch (_) {}
+    }
+
+    function setCoverage(total, validated) {
+      const pct = total > 0 ? Math.min(100, (validated / total) * 100) : 0;
+      setText("coverage-pct", pct.toFixed(1) + "%");
+      const bar = document.getElementById("coverage-bar");
+      if (bar) bar.style.width = pct.toFixed(1) + "%";
+    }
+
+    async function refresh() {
+      const st = document.getElementById("status");
+      try {
+        const r = await fetch(API + "/status");
+        if (!r.ok) throw new Error("status " + r.status);
+        const data = await r.json();
+        const t = data.telemetry || {};
+        setSwitchUI(data.switch);
+        if (data.version) setText("af-version", "v" + String(data.version).replace(/^v/, ""));
+
+        setCoverage(t.total_volume || 0, t.validated || 0);
+        setText("m-total", fmt(t.total_volume));
+        setText("m-validated", fmt(t.validated));
+        setText("m-unresolved", fmt(t.unresolved));
+        setText("m-uncertain", fmt(t.uncertain_regions));
+        setText("m-queue", fmt(t.queue_depth));
+        setText("m-failed", fmt(t.failed_tasks));
+        setText("m-tps", fmt(t.tiles_per_sec));
+        setText("m-vps", fmt(t.voxels_per_sec));
+        setText("m-io", fmt(t.io_mb_s));
+        setText("m-cache", ((t.cache_hit_rate || 0) * 100).toFixed(1) + "%");
+        setText("m-gpu", `${fmt(t.gpu_util)}% / ${fmt(t.vram_mb)} MB`);
+        setText("m-eta", t.est_remaining_s ? fmt(t.est_remaining_s) + "s" : "—");
+
+        const pass = t.adaptive_pass || "—";
+        setText("pass-badge", pass === "—" ? "idle" : pass);
+        setText("pass-hint", pass === "—" ? "awaiting pass" : "pass " + pass);
+
+        const q = t.review_queue || [];
+        setText("review-count", q.length + " flagged");
+        const rev = document.getElementById("review");
+        if (!q.length) {
+          rev.innerHTML = "<p class='empty'>No flagged tasks.</p>";
+        } else {
+          rev.innerHTML =
+            "<table><thead><tr><th>Tile</th><th>Reason</th><th>Priority</th></tr></thead><tbody>" +
+            q.slice(0, 50).map((i) =>
+              `<tr><td>${i.id}</td><td>${i.reason}</td><td>${i.priority}</td></tr>`
+            ).join("") +
+            "</tbody></table>";
+        }
+
+        if (new URLSearchParams(location.search).get("ran") === "1") {
+          st.className = "status-line ok";
+          st.textContent = "Demo run complete.";
+        } else if (t.last_error) {
+          st.className = "status-line err";
+          st.textContent = t.last_error;
+        } else if (t.running) {
+          st.className = "status-line running";
+          st.textContent = "Adaptive pass running…";
+        } else {
+          st.className = "status-line";
+          st.textContent = "";
+        }
+      } catch (e) {
+        st.className = "status-line err";
+        st.textContent = "API unreachable: " + e;
+      }
+    }
+
+    refresh();
+    refreshTools();
+    setInterval(refresh, 1500);
+    setInterval(refreshTools, 10000);
+  </script>
+</body>
+</html>

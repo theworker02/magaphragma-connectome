@@ -1,0 +1,60 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "counts": {
+      "failed": 1
+    },
+    "coverage": 0.0,
+    "highest_priority": {
+      "box": {
+        "x0": 0,
+        "x1": 32,
+        "y0": 0,
+        "y1": 32,
+        "z0": 0,
+        "z1": 32
+      },
+      "kind": "failed",
+      "priority": 0.9,
+      "reason": "equivalence_gate_reject",
+      "tile_key": "T-Z000-Y000-X000"
+    },
+    "missing_frac": 0.0,
+    "regions": [
+      {
+        "box": {
+          "x0": 0,
+          "x1": 32,
+          "y0": 0,
+          "y1": 32,
+          "z0": 0,
+          "z1": 32
+        },
+        "kind": "failed",
+        "priority": 0.9,
+        "reason": "equivalence_gate_reject",
+        "tile_key": "T-Z000-Y000-X000"
+      }
+    ],
+    "shape_zyx": [
+      32,
+      32,
+      32
+    ],
+    "tile_zyx": [
+      32,
+      32,
+      32
+    ],
+    "validated": 0.0
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T22:16:19Z",
+  "tool": "gaphound"
+}

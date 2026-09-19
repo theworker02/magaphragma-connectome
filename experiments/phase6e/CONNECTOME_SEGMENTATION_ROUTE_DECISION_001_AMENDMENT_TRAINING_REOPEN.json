@@ -1,0 +1,27 @@
+{
+  "id": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_TRAINING_REOPEN",
+  "created_at": "2026-09-18T02:45:00Z",
+  "parent_decision": "MV-CONNECTOME-SEGMENTATION-ROUTE-DECISION-001",
+  "parent_amendment": "CONNECTOME_SEGMENTATION_ROUTE_DECISION_001_AMENDMENT_SPEC002_VALIDATED",
+  "status": "AMENDMENT_LOCKED",
+  "state_transition_addendum": [
+    "PRODUCTION_GT_BATCH_002 → FROZEN QC PASS → PRODUCTION_GT_PROMOTED_BATCH_002",
+    "GT promotion ≠ training permission (distinct transitions)",
+    "AFFINITY_TRAINING_REOPEN_DECISION_001 → AFFINITY_TRAINING_REOPENED",
+    "first controlled run only under AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001 (not auto-launched)"
+  ],
+  "AFFINITY_TRAINING_REOPEN": "APPROVED",
+  "updated_pipeline_stage_board": {
+    "annotation_procedure_SPEC002": "VALIDATED",
+    "production_GT_generation": "BATCH_002_PROMOTED",
+    "production_GT_batch_001": "PERMANENT_FAILED_CANDIDATE",
+    "affinity_training": "REOPENED_UNDER_FROZEN_CONTRACT_NOT_YET_EXECUTED",
+    "segmentation_agglomeration": "STILL_BLOCKED",
+    "process_neuron_reconstruction": "STILL_BLOCKED",
+    "connectivity_extraction": "STILL_BLOCKED",
+    "graph_QC_connectome": "STILL_BLOCKED"
+  },
+  "eligible_training_gt_only": "PRODUCTION_GT_PROMOTED_BATCH_002",
+  "experiment_contract": "experiments/phase6e/AFFINITY_TRAINING_EXPERIMENT_CONTRACT_001.json",
+  "reopen_decision": "experiments/phase6e/AFFINITY_TRAINING_REOPEN_DECISION_001.json"
+}

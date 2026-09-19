@@ -1,0 +1,170 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "causes": {
+      "likely_causes": [
+        {
+          "cause": "synapse_threshold_changed",
+          "evidence": [
+            "meta.synapse_threshold differs",
+            "synapses +1 -1 conf=1"
+          ],
+          "score": 4.3
+        },
+        {
+          "cause": "checkpoint_changed",
+          "evidence": [
+            "meta.checkpoint differs",
+            "spatial drift on shared neurons"
+          ],
+          "score": 3.5
+        },
+        {
+          "cause": "boundary_reconciliation_changed",
+          "evidence": [
+            "meta.boundary_reconciliation differs"
+          ],
+          "score": 2.5
+        },
+        {
+          "cause": "segmentation_config_changed",
+          "evidence": [
+            "large neuron set churn"
+          ],
+          "score": 1.0
+        },
+        {
+          "cause": "source_data_changed",
+          "evidence": [
+            "spatial_shifts=1"
+          ],
+          "score": 0.85
+        }
+      ],
+      "primary": "synapse_threshold_changed",
+      "scores": {
+        "boundary_reconciliation_changed": 2.5,
+        "checkpoint_changed": 3.5,
+        "segmentation_config_changed": 1.0,
+        "source_data_changed": 0.85,
+        "synapse_threshold_changed": 4.3
+      }
+    },
+    "delta": {
+      "component_changes": {
+        "added": [
+          [
+            "n5"
+          ],
+          [
+            "n1",
+            "n2",
+            "n4"
+          ]
+        ],
+        "count_a": 2,
+        "count_b": 2,
+        "removed": [
+          [
+            "n1",
+            "n2"
+          ],
+          [
+            "n3"
+          ]
+        ]
+      },
+      "confidence_changes": [
+        {
+          "confidence_a": 0.9,
+          "confidence_b": 0.85,
+          "delta": -0.050000000000000044,
+          "id": "n1"
+        },
+        {
+          "confidence_a": 0.6,
+          "confidence_b": 0.9,
+          "delta": 0.30000000000000004,
+          "id": "s1",
+          "kind": "synapse"
+        }
+      ],
+      "degree_changes": {
+        "n1": {
+          "a": 1,
+          "b": 2,
+          "delta": 1
+        },
+        "n2": {
+          "a": 2,
+          "b": 1,
+          "delta": -1
+        },
+        "n3": {
+          "a": 1,
+          "b": 0,
+          "delta": -1
+        },
+        "n4": {
+          "a": 0,
+          "b": 1,
+          "delta": 1
+        }
+      },
+      "edges_changed": {
+        "added": [
+          [
+            "n1",
+            "n4"
+          ]
+        ],
+        "removed": [
+          [
+            "n2",
+            "n3"
+          ]
+        ]
+      },
+      "neurons_added": [
+        "n4",
+        "n5"
+      ],
+      "neurons_removed": [
+        "n3"
+      ],
+      "objects_merged": [],
+      "objects_split": [],
+      "spatial_changes": [
+        {
+          "centroid_a": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "centroid_b": [
+            2.0,
+            0.0,
+            0.0
+          ],
+          "distance": 2.0,
+          "id": "n1"
+        }
+      ],
+      "synapses_added": [
+        "s3"
+      ],
+      "synapses_removed": [
+        "s2"
+      ]
+    }
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T15:58:39Z",
+  "tool": "deltagraph"
+}

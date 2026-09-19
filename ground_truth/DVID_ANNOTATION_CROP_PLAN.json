@@ -1,0 +1,11 @@
+{
+  "id": "MV-DVID-ANNOTATION-CROP-PLAN-001",
+  "status": "FROZEN_SPLITS_AWAITING_VISUAL_QA_AND_REVIEW",
+  "selection_method": "spatially separated parent regions; local intensity/morphology categories require reviewer visual QA and are not asserted from coordinates",
+  "crops": [
+    {"id":"MV-DVID-ANN-000001","parent_region_id":"MV-GTVOL-000001","split":"DVID_TARGET_TRAIN","origin_zyx":[32,32,32],"shape_zyx":[64,128,128],"visual_qa_focus":["dense_or_sparse_neuropil","membrane_clarity","thin_processes","contrast"]},
+    {"id":"MV-DVID-ANN-000002","parent_region_id":"MV-GTVOL-000002","split":"DVID_TARGET_TRAIN","origin_zyx":[48,24,40],"shape_zyx":[96,128,128],"visual_qa_focus":["thicker_profiles","closely_apposed_processes","branch_points","boundary_difficulty"]},
+    {"id":"MV-DVID-ANN-000003","parent_region_id":"MV-GTVOL-000003","split":"DVID_TARGET_TRAIN","origin_zyx":[64,40,24],"shape_zyx":[64,128,128],"visual_qa_focus":["different_local_contrast","thin_processes","membrane_clarity"]},
+    {"id":"MV-DVID-ANN-000004","parent_region_id":"MV-GTVOL-000005","split":"DVID_TARGET_VALIDATION","origin_zyx":[48,32,32],"shape_zyx":[96,128,128],"visual_qa_focus":["independent_target_validation","mixed_local_morphology","boundary_difficulty"]}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "inputs": [],
+  "meta": {},
+  "morph_anomalies": [],
+  "outputs": [],
+  "payload": {
+    "counts": {
+      "ARTIFACT": 8
+    },
+    "n_tiles": 8
+  },
+  "region_class": null,
+  "seam_action": null,
+  "status": "ok",
+  "synapse_verdict": null,
+  "timestamp": "2026-09-18T15:57:12Z",
+  "tool": "voxscout"
+}
