@@ -1,0 +1,38 @@
+name: Label Help Wanted issues
+
+# One-shot helper: Cursor's GitHub App can open issues but cannot attach labels.
+# This workflow uses the repo Actions token (issues: write) to apply `helpwanted`
+# and close the duplicate recreate attempt.
+on:
+  push:
+    paths:
+      - ".github/workflows/label-helpwanted.yml"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply helpwanted label and close duplicate
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          REPO="${{ github.repository }}"
+
+          for n in 2 3; do
+            echo "Labeling #$n…"
+            gh api -X POST "repos/$REPO/issues/$n/labels" \
+              -f "labels[]=helpwanted" \
+              --silent || true
+            gh issue view "$n" --repo "$REPO" --json number,labels \
+              --jq '"#" + (.number|tostring) + " labels=" + ([.labels[].name] | join(","))'
+          done
+
+          echo "Closing duplicate #3…"
+          gh issue close 3 --repo "$REPO" --reason duplicate \
+            --comment "Duplicate of #2 (recreate attempt while attaching the helpwanted label). Please use #2."
