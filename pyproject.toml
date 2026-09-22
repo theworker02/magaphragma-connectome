@@ -7,7 +7,7 @@ name = "vigilia-connectome"
 version = "0.1.0a0"
 description = "Evidence-first infrastructure for the Megaphragma viggianii connectome"
 requires-python = ">=3.11"
-license = {text = "Apache-2.0"}
+license = { text = "Proprietary" }
 authors = [{name = "Vigilia Connectome contributors"}]
 
 [project.scripts]
