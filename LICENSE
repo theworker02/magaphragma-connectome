@@ -1,43 +1,113 @@
-Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+# Proprietary License â€” Use Only After Sale or Acquisition
 
-TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+**Copyright (c) 2026 theworker02 (https://github.com/theworker02)**
 
-1. Definitions.
+All rights reserved.
 
-"License" shall mean the terms and conditions for use, reproduction,
-and distribution as defined by Sections 1 through 9 of this document.
+**This is not an open-source license.** This repository and all related materials are proprietary intellectual property. **No right to use, copy, modify, distribute, sublicense, or deploy in production is granted** until a **written commercial license** OR a **completed acquisition / asset transfer** is executed with the Rightsholder.
 
-2. Grant of Copyright License. Subject to the terms and conditions of
-this License, each Contributor hereby grants to You a perpetual,
-worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-copyright license to reproduce, prepare Derivative Works of,
-publicly display, publicly perform, sublicense, and distribute the Work.
+---
 
-3. Grant of Patent License. Subject to the terms and conditions of this
-License, each Contributor hereby grants to You a perpetual, worldwide,
-non-exclusive, no-charge, royalty-free, irrevocable patent license to
-make, have made, use, offer to sell, sell, import, and otherwise transfer
-the Work.
+## 1. Definitions
 
-4. Redistribution. You may reproduce and distribute copies or Derivative
-Works provided that You give recipients a copy of this License, retain
-applicable notices, and mark modified files.
+For purposes of this License:
 
-5. Submission of Contributions. Unless You explicitly state otherwise,
-any Contribution intentionally submitted for inclusion in the Work shall
-be under this License.
+- **Materials** means all source code, object code, designs, architectures, documentation, diagrams, trademarks, trade secrets, know-how, configurations, demos, SBOM/acquisition packages, and other content in or associated with this repository (including `docs/`, `acquisition/`, `site/`, and any private materials disclosed under NDA).
+- **Product** means Vigilia Connectome and any implementations thereof described in these Materials.
+- **Rightsholder** means theworker02 (GitHub: https://github.com/theworker02), or any successor assignee named in a written acquisition or commercial license agreement.
+- **You** means any person or entity that accesses, receives, or possesses the Materials.
 
-6. Trademarks. This License does not grant permission to use trade names,
-trademarks, service marks, or product names of the Licensor.
+## 2. Default grant â€” none
 
-7. Disclaimer of Warranty. Unless required by applicable law or agreed to
-in writing, the Work is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
-OR CONDITIONS OF ANY KIND, either express or implied.
+**No license is granted by default.**
 
-8. Limitation of Liability. In no event shall any Contributor be liable for
-damages arising from use of the Work.
+Except as expressly permitted in Section 3, or as superseded by a written agreement under Section 6, You may **not**:
 
-9. Accepting Warranty or Additional Liability. You may offer support or
-warranty obligations only on Your own behalf and indemnify Contributors.
+1. Use the Materials or Product for any purpose, including development, testing, staging, evaluation beyond an explicit written grant, or production;
+2. Copy, reproduce, or create derivative works of the Materials;
+3. Modify, adapt, translate, or transform the Materials;
+4. Distribute, publish, sublicense, lease, lend, or otherwise transfer the Materials to any third party;
+5. Deploy the Product (or any substantial portion) in any production, multi-tenant, customer-facing, or revenue-generating environment;
+6. Host, operate, or offer the Product (or a competing service substantially based on the Materials) as a public or multi-tenant SaaS, managed service, or marketplace offering;
+7. Reverse engineer, decompile, disassemble, or otherwise attempt to derive source, algorithms, protocols, or trade secrets from the Materials **for the purpose of building a competing product or service**;
+8. Remove, obscure, or alter any copyright, trademark, confidentiality, or proprietary notices;
+9. Use the Rightsholder's names, logos, or product marks in a way that implies endorsement, partnership, or affiliation without prior written consent.
+
+**Cloning, forking, starring, or downloading this repository does not create any license.**
+
+## 3. Narrow exceptions (evaluation & public marketing only)
+
+The following limited permissions apply **only** if and to the extent expressly granted in writing by the Rightsholder:
+
+### 3.1 Evaluation under NDA
+
+If the Rightsholder grants You **written** permission to evaluate Materials under a non-disclosure agreement (NDA) or similar confidentiality instrument:
+
+- You may access and review Materials solely for internal evaluation of a potential purchase, investment, partnership, or commercial license;
+- You must keep Materials confidential per the NDA;
+- Evaluation rights do **not** include production use, redistribution, sublicensing, or preparation of competing products;
+- Evaluation rights end automatically when the NDA expires or is terminated, or when the Rightsholder revokes access in writing.
+
+**Absent a written NDA/evaluation grant, all rights are reserved.**
+
+### 3.2 Public marketing pages
+
+If any public marketing, landing, or status pages are published by the Rightsholder, You may view those pages for ordinary informational purposes. Public viewing of marketing pages does **not** grant rights to use code, designs, or other proprietary Materials.
+
+## 4. Explicit prohibitions (competing use)
+
+Without limiting Section 2, You shall not:
+
+- Use Materials to design, train, implement, or accelerate a competing product targeting the same problem domain as the Product;
+- Reproduce proprietary protocol designs, discovery schemas, identity models, or operational runbooks disclosed in diligence Materials for competitive purposes;
+- Publicly host or commercially operate a service derived from these Materials as a substitute for a licensed or acquired Product.
+
+## 5. Ownership
+
+Title, ownership, and all intellectual property rights in the Materials and Product remain exclusively with the Rightsholder. Access under this License is not a sale of IP. No implied licenses are granted by estoppel, course of dealing, or otherwise.
+
+## 6. Superseding agreements (acquisition & commercial license)
+
+Upon **completed acquisition** (closing under a definitive purchase / asset-transfer agreement) or an **executed written commercial license** between You and the Rightsholder:
+
+- The rights transferred or granted in that agreement **supersede** this LICENSE to the extent of any conflict;
+- Surviving confidentiality, disclaimer, and limitation provisions of this LICENSE continue unless the superseding agreement expressly provides otherwise;
+- Until closing or license execution, this LICENSE remains in full force.
+
+**Deal agreements control after execution.** Drafts in diligence folders are **not** executed instruments.
+
+## 7. Contributions
+
+Public contributions are not solicited. Any unsolicited submission is governed by `CONTRIBUTING.md` (if present) and does not create a license for You to use the Product. The Rightsholder may refuse, ignore, or permanently delete unsolicited submissions. By submitting a contribution you assign to Rightsholder, or irrevocably license to Rightsholder under terms sufficient for Rightsholder to relicense and commercialize, all rights in that contribution.
+
+## 8. Termination
+
+Any unauthorized use terminates any implied or purported permission immediately. Upon termination or demand, You must cease use and destroy or return Materials in Your possession, except copies required to be retained by law (which remain confidential).
+
+## 9. Disclaimer of warranty
+
+THE MATERIALS AND PRODUCT ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE RIGHTSHOLDER DOES NOT WARRANT THAT DOCUMENTATION DESCRIBES FEATURES DEPLOYED IN PRODUCTION UNLESS EXPLICITLY LABELED AS EXECUTED.
+
+## 10. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE RIGHTSHOLDER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, GOODWILL, OR BUSINESS OPPORTUNITY, ARISING OUT OF OR RELATED TO THE MATERIALS OR THIS LICENSE, WHETHER IN CONTRACT, TORT, OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+## 11. Governing law
+
+Governing law and venue shall be as specified in a written NDA, commercial license, or acquisition agreement between the parties. If none exists, the Rightsholder may designate governing law in a future written instrument. Nothing in this LICENSE waives any remedies for misappropriation of trade secrets or copyright infringement.
+
+## 12. Not legal advice
+
+**This LICENSE is a protective proprietary notice for a pre-sale / pre-acquisition repository. It is not legal advice.** Before relying on it in a real transaction, diligence process, or enforcement scenario, consult qualified counsel licensed in the relevant jurisdiction(s). **No forged or executed agreements are included in this repository.**
+
+## 13. Contact
+
+For commercial licensing, acquisition inquiries, or written evaluation access:
+
+- **Contact:** GitHub [@theworker02](https://github.com/theworker02)
+- **Funding / support:** [thanks.dev/u/gh/theworker02](https://thanks.dev/u/gh/theworker02)
+- **Process:** See `ACQUISITION.md`
+
+---
+
+*Version: 1.0.0 Â· Last updated: 2026-09-22*

@@ -1,21 +1,29 @@
 # Vigilia Connectome
 
+
+---
+
+## License & acquisition
+
+This project is **proprietary**. Production use, redistribution, and commercial deployment require a written commercial license or completed acquisition. See [LICENSE](./LICENSE) and [ACQUISITION.md](./ACQUISITION.md). Contact [@theworker02](https://github.com/theworker02).
+
+
 <p align="center">
   <img src="figures/organism/megaphragma-viggianii-head-eye-sem.jpg" alt="Scanning electron micrographs of a female Megaphragma viggianii head and compound eye" width="820" />
 </p>
 
-<p align="center"><em>Megaphragma viggianii</em> — female head and compound eye (SEM).<br />
-Makarova et al., <em>eLife</em> (2025), Fig. 1 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
+<p align="center"><em>Megaphragma viggianii</em> â€” female head and compound eye (SEM).<br />
+Makarova et al., <em>eLife</em> (2025), Fig. 1 Â· <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> Â·
 <a href="https://doi.org/10.7554/eLife.103247">doi:10.7554/eLife.103247</a></p>
 
-> **Takeover handoff — unfinished but substantial.**  
+> **Takeover handoff â€” unfinished but substantial.**  
 > Most of the heavy lifting is done (evidence core, Affinity S7 FAST path, Vast/local hybrid tooling, AWS Affinity decommissioned). The full-volume affinity campaign (~28.8k chunks) is **not** finished. **I did not stop because the science failed, the approach was wrong, or the codebase ran out of road.** I stopped because **resources ran out**: cloud budget, out-of-pocket AI/compute spend, and the wall-clock cost of finishing a multi-terabyte EM affinity campaign alone. If you have GPU hours, EM collaboration, or funding to continue, start with **[HANDOFF.md](HANDOFF.md)**. This GitHub tree is intentionally **lean**: no secrets, no multi-GB affinity dumps, no checkpoints.
 
 ## Evidence-first infrastructure for the *Megaphragma viggianii* connectome
 
-Vigilia Connectome is local-first research infrastructure for creating a defensible connectome of the miniature parasitoid wasp ***Megaphragma viggianii*** — only when every supporting datum, coordinate transform, model output, review decision, and release claim can be traced and independently inspected. It is not a synthetic-connectome demo, a generic graph viewer, or a pipeline that treats a convincing model mask as biology.
+Vigilia Connectome is local-first research infrastructure for creating a defensible connectome of the miniature parasitoid wasp ***Megaphragma viggianii*** â€” only when every supporting datum, coordinate transform, model output, review decision, and release claim can be traced and independently inspected. It is not a synthetic-connectome demo, a generic graph viewer, or a pipeline that treats a convincing model mask as biology.
 
-The central design decision is simple: a plausible result is not automatically a biological result. Raw imagery, local caches, published source annotations, machine predictions, human-review events, and release-eligible biological entities remain separate artifacts with explicit transitions between them. A missing source, checksum, rights statement, transform, or review is visible evidence of uncertainty—not a blank to be filled with inference.
+The central design decision is simple: a plausible result is not automatically a biological result. Raw imagery, local caches, published source annotations, machine predictions, human-review events, and release-eligible biological entities remain separate artifacts with explicit transitions between them. A missing source, checksum, rights statement, transform, or review is visible evidence of uncertaintyâ€”not a blank to be filled with inference.
 
 > **Current status:** No Vigilia biological reconstruction release exists. The repository contains no invented neurons, synapses, connectivity edges, segmentation outputs, or demonstration biological metrics. Local research artifacts are not evidence of redistribution permission, cross-dataset registration, or scientific-release eligibility.
 
@@ -23,29 +31,29 @@ The central design decision is simple: a plausible result is not automatically a
 
 ## Meet the animal
 
-*Megaphragma* is a genus of fairyfly wasps (Trichogrammatidae) among the smallest insects with a complex nervous system. Adults are on the order of a few hundred micrometres long — comparable to some single-celled organisms — yet they still fly, sense, and behave. *M. viggianii* is the species this project targets: published whole-head serial EM, a complete early-visual-system / lamina reconstruction (Chua et al., 2023), WASPSYN synapse benchmarks (Li et al., 2024), and subsequent eye morphofunctional mapping (Makarova et al., 2025).
+*Megaphragma* is a genus of fairyfly wasps (Trichogrammatidae) among the smallest insects with a complex nervous system. Adults are on the order of a few hundred micrometres long â€” comparable to some single-celled organisms â€” yet they still fly, sense, and behave. *M. viggianii* is the species this project targets: published whole-head serial EM, a complete early-visual-system / lamina reconstruction (Chua et al., 2023), WASPSYN synapse benchmarks (Li et al., 2024), and subsequent eye morphofunctional mapping (Makarova et al., 2025).
 
-That extreme miniaturization is exactly why the connectome problem is interesting — and why finishing it is expensive. The source domain reported for production planning alone is on the order of **16,648 × 13,544 × 15,401** voxels at **8 nm** isotropic. Affinity inference over that volume was planned as a **28,798-chunk** resumable campaign. The software and fleet tooling to run that campaign exist; the unpaid GPU-months to drain the queue do not.
+That extreme miniaturization is exactly why the connectome problem is interesting â€” and why finishing it is expensive. The source domain reported for production planning alone is on the order of **16,648 Ã— 13,544 Ã— 15,401** voxels at **8 nm** isotropic. Affinity inference over that volume was planned as a **28,798-chunk** resumable campaign. The software and fleet tooling to run that campaign exist; the unpaid GPU-months to drain the queue do not.
 
-### The target species — *Megaphragma viggianii*
+### The target species â€” *Megaphragma viggianii*
 
 <p align="center">
   <img src="figures/organism/megaphragma-viggianii-head-eye-sem.jpg" alt="M. viggianii head (A) and labeled compound eye with 29 ommatidia (B)" width="780" />
 </p>
 
-<p align="center"><strong>Above:</strong> SEM of a female <em>M. viggianii</em> head (A) and compound eye (B). The eye has <strong>29 ommatidia</strong> (labeled as in Chua et al., 2023); scale bars 20 µm / 10 µm.
-Credit: Makarova et al., <em>eLife</em> 2025 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+<p align="center"><strong>Above:</strong> SEM of a female <em>M. viggianii</em> head (A) and compound eye (B). The eye has <strong>29 ommatidia</strong> (labeled as in Chua et al., 2023); scale bars 20 Âµm / 10 Âµm.
+Credit: Makarova et al., <em>eLife</em> 2025 Â· <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 
-### Same genus, whole-animal scale — *Megaphragma mymaripenne*
+### Same genus, whole-animal scale â€” *Megaphragma mymaripenne*
 
-High-quality whole-body SEMs of *M. viggianii* under verified open licenses are scarce, so the gallery also includes *M. mymaripenne* (same genus) to show what these animals look like at full-body scale. Body length is on the order of **~200 µm** (see 100 µm scale bar).
+High-quality whole-body SEMs of *M. viggianii* under verified open licenses are scarce, so the gallery also includes *M. mymaripenne* (same genus) to show what these animals look like at full-body scale. Body length is on the order of **~200 Âµm** (see 100 Âµm scale bar).
 
 <p align="center">
   <img src="figures/organism/megaphragma-mymaripenne-sem-full.jpg" alt="Megaphragma mymaripenne whole-animal SEM: dorsal, lateral, and ventral views" width="780" />
 </p>
 
-<p align="center"><strong>Above:</strong> External morphology of <em>M. mymaripenne</em> (SEM) — dorsal (A), lateral (B), ventral (C). Scale bar 100 µm.
-Alexey A. Polilov · <em>PLoS ONE</em> 2017 · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="https://doi.org/10.1371/journal.pone.0175566">doi:10.1371/journal.pone.0175566</a>.</p>
+<p align="center"><strong>Above:</strong> External morphology of <em>M. mymaripenne</em> (SEM) â€” dorsal (A), lateral (B), ventral (C). Scale bar 100 Âµm.
+Alexey A. Polilov Â· <em>PLoS ONE</em> 2017 Â· <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> Â· <a href="https://doi.org/10.1371/journal.pone.0175566">doi:10.1371/journal.pone.0175566</a>.</p>
 
 <p align="center">
   <img src="figures/organism/megaphragma-mymaripenne-sem-body.jpg" alt="Lateral SEM of Megaphragma mymaripenne showing fringed wings" width="520" />
@@ -55,16 +63,16 @@ Alexey A. Polilov · <em>PLoS ONE</em> 2017 · <a href="https://creativecommons.
 
 <p align="center"><strong>Left:</strong> Lateral whole-animal view (fringed fairyfly wings).<br />
 <strong>Right:</strong> Head / antennae / mouthparts SEM montage.<br />
-Same Polilov 2017 source · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+Same Polilov 2017 source Â· <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 
-### Light microscopy — *Megaphragma* sp.
+### Light microscopy â€” *Megaphragma* sp.
 
 <p align="center">
   <img src="figures/organism/megaphragma-sp-slide-montage.jpg" alt="Light-microscopy slide montage of Megaphragma sp. head, body, and wings" width="420" />
 </p>
 
-<p align="center"><em>Megaphragma</em> sp. uncleared slide montage — head + antenna, mesosoma (note large mesophragma — the genus name), wings + middle leg. Scale line = 100 µm.
-Huber &amp; Noyes, <em>J. Hymenoptera Research</em> 2013 · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> ·
+<p align="center"><em>Megaphragma</em> sp. uncleared slide montage â€” head + antenna, mesosoma (note large mesophragma â€” the genus name), wings + middle leg. Scale line = 100 Âµm.
+Huber &amp; Noyes, <em>J. Hymenoptera Research</em> 2013 Â· <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> Â·
 via <a href="https://commons.wikimedia.org/wiki/File:Megaphragma.jpg">Wikimedia Commons</a>.</p>
 
 ### Why the brain is famous (and hard)
@@ -74,9 +82,9 @@ via <a href="https://commons.wikimedia.org/wiki/File:Megaphragma.jpg">Wikimedia 
 </p>
 
 <p align="center">Comparative brain morphology across miniature Hymenoptera, including <em>M. viggianii</em>. Several <em>Megaphragma</em> lineages are known for extreme neuronal miniaturization (including loss of nuclei in many brain neurons in adults).
-Open-access figure · <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10017799/">PMC10017799</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+Open-access figure Â· <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10017799/">PMC10017799</a> Â· <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 
-Full figure credits and license notes: **[figures/organism/ATTRIBUTION.md](figures/organism/ATTRIBUTION.md)**. Upstream microscopy and reconstruction **data** still follow [DATA_LICENSES.md](DATA_LICENSES.md) — open figure licenses are not a grant to redistribute raw EM volumes.
+Full figure credits and license notes: **[figures/organism/ATTRIBUTION.md](figures/organism/ATTRIBUTION.md)**. Upstream microscopy and reconstruction **data** still follow [DATA_LICENSES.md](DATA_LICENSES.md) â€” open figure licenses are not a grant to redistribute raw EM volumes.
 
 ---
 
@@ -84,29 +92,29 @@ Full figure credits and license notes: **[figures/organism/ATTRIBUTION.md](figur
 
 This section is the honest part of the handoff.
 
-### What “done enough to hand off” already means
+### What â€œdone enough to hand offâ€ already means
 
 | Delivered | Meaning |
 | --- | --- |
-| Evidence-first core (`src/mvconnectome/`) | Typed records, provenance, gated promotion from machine → review → biology |
+| Evidence-first core (`src/mvconnectome/`) | Typed records, provenance, gated promotion from machine â†’ review â†’ biology |
 | Phase 5C production domain | Deterministic **28,798**-item resumable queue over the reported parent extent |
-| Affinity training / qualification funnel | Parallel funnel + GATE_A–E contracts; checkpoint path established |
+| Affinity training / qualification funnel | Parallel funnel + GATE_Aâ€“E contracts; checkpoint path established |
 | Affinity S7 FAST inference | Workers, claim coordination, durable commit, progress tooling |
 | Vast.ai production cloud path | `tools/affinity_vast.py`, budgets, offer plan/launch/stop |
 | Local AMD ROCm worker | Free concurrent worker on the **same** shared claim queue |
-| AWS Affinity path | **DECOMMISSIONED** on purpose — [docs/AWS_DECOMMISSION.md](docs/AWS_DECOMMISSION.md) |
+| AWS Affinity path | **DECOMMISSIONED** on purpose â€” [docs/AWS_DECOMMISSION.md](docs/AWS_DECOMMISSION.md) |
 | Contracts / receipts | Large JSON evidence set under `experiments/phase6e/` (kept in git) |
 
 Last recorded S7 snapshot on the originating machine (indicative only; this checkout does **not** include chunk binaries):
 
 - Total chunks: **28,798**
-- Completed locally: on the order of **~200–240** affinity chunks
+- Completed locally: on the order of **~200â€“240** affinity chunks
 - Remaining: **~28.5k**
 - That is not a failed experiment. That is a **partially drained production queue** stopped before the money and machine-time required to finish it.
 
 ### What forced the stop
 
-I was **only forced to stop because of resources** — not because the pipeline collapsed, not because the biology was unreachable, and not because the evidence rules were wrong.
+I was **only forced to stop because of resources** â€” not because the pipeline collapsed, not because the biology was unreachable, and not because the evidence rules were wrong.
 
 1. **Hard cloud budget.** Production Affinity cloud spend is gated at **`$160` USD** (`AFFINITY_CLOUD_BUDGET_USD`), with preferred target **`$100`** and benchmark-only **`$5`**. The cost model optimizes **dollars per completed production chunk**, not GPU prestige. Details: [docs/AFFINITY_COST_MODEL.md](docs/AFFINITY_COST_MODEL.md), [docs/VAST_AFFINITY.md](docs/VAST_AFFINITY.md), [docs/HYBRID_FLEET.md](docs/HYBRID_FLEET.md).
 
@@ -120,12 +128,12 @@ I was **only forced to stop because of resources** — not because the pipeline 
 
 ### What this is *not*
 
-- Not “the method doesn’t work.”
-- Not “the volume can’t be processed.”
-- Not “we abandoned evidence discipline.”
+- Not â€œthe method doesnâ€™t work.â€
+- Not â€œthe volume canâ€™t be processed.â€
+- Not â€œwe abandoned evidence discipline.â€
 - Not a polished fake demo with invented neurons to look finished.
 
-It **is** a takeover-ready research codebase that got further than most solo connectome attempts — and then hit the resource wall with ~1% of the affinity queue drained and the rest still planned, claimable, and instrumented.
+It **is** a takeover-ready research codebase that got further than most solo connectome attempts â€” and then hit the resource wall with ~1% of the affinity queue drained and the rest still planned, claimable, and instrumented.
 
 If you can bring **GPU hours**, **cloud budget**, **EM collaboration**, or **sponsorship**, you can continue from a real midpoint. Start at [HANDOFF.md](HANDOFF.md) and [START_HERE.md](START_HERE.md).
 
@@ -135,23 +143,23 @@ If you can bring **GPU hours**, **cloud budget**, **EM collaboration**, or **spo
 
 | Path | Status |
 | --- | --- |
-| **Vast.ai** | Production cloud provider — [docs/VAST_AFFINITY.md](docs/VAST_AFFINITY.md), hybrid fleet [docs/HYBRID_FLEET.md](docs/HYBRID_FLEET.md) |
+| **Vast.ai** | Production cloud provider â€” [docs/VAST_AFFINITY.md](docs/VAST_AFFINITY.md), hybrid fleet [docs/HYBRID_FLEET.md](docs/HYBRID_FLEET.md) |
 | **Local AMD ROCm** | Free concurrent worker on the **same** shared claim queue |
-| **AWS (EC2/ASG/DDB/S3)** | **DECOMMISSIONED** for Affinity production — [docs/AWS_DECOMMISSION.md](docs/AWS_DECOMMISSION.md) |
+| **AWS (EC2/ASG/DDB/S3)** | **DECOMMISSIONED** for Affinity production â€” [docs/AWS_DECOMMISSION.md](docs/AWS_DECOMMISSION.md) |
 
 Hard cloud budget: `$160` (`AFFINITY_CLOUD_BUDGET_USD`). Cost model: [docs/AFFINITY_COST_MODEL.md](docs/AFFINITY_COST_MODEL.md). Historical AWS fleet experiments remain on disk as evidence; they are not an active execution path.
 
 ## What has passed, and what remains intentionally constrained
 
-“Passed” below means only that the stated technical or provenance boundary was demonstrated. It never establishes a neighbouring biological claim.
+â€œPassedâ€ below means only that the stated technical or provenance boundary was demonstrated. It never establishes a neighbouring biological claim.
 
 | Boundary or capability | State | Meaning and limit |
 | --- | --- | --- |
 | DVID parent metadata and far-edge raw-byte read | Passed, local-only | The reported parent extent and a far-boundary raw read were verified. The whole volume was not downloaded or processed. |
-| Phase 5C production-domain plan | Passed | A deterministic **28,798-item** resumable queue covers a 16,648 × 13,544 × 15,401 voxel, 8 nm isotropic source domain. Queue entries are work plans, not segmentation results. |
+| Phase 5C production-domain plan | Passed | A deterministic **28,798-item** resumable queue covers a 16,648 Ã— 13,544 Ã— 15,401 voxel, 8 nm isotropic source domain. Queue entries are work plans, not segmentation results. |
 | Bounded real raw-EM inspection | Passed, local-only | Real DVID raw material can be cached and inspected. Redistribution and derivative-release rights remain unresolved. |
 | CATMAID-local analysis | Passed, quarantined | The local status record contains 556 source neurons, 275,790 morphology nodes, 5,821 connectors, 4,030 resolved source synapses, and 2,562 local graph edges. These are attributed source derivatives, not a new Vigilia release. |
-| CATMAID ↔ DVID registration | Intentionally blocked | No independently supported specimen/frame relationship exists. CATMAID-derived DVID seeding and physical mappings are prohibited. |
+| CATMAID â†” DVID registration | Intentionally blocked | No independently supported specimen/frame relationship exists. CATMAID-derived DVID seeding and physical mappings are prohibited. |
 | Reviewed DVID-native instance labels | Not yet present | Raw cubes can be materialized; labels require qualified review, same-grid nonempty instances, split safety, and append-only provenance. |
 | Production segmenter | None selected | The CREMI candidate was rejected on held-out evaluation. SegNeuron technical output remains machine-only until target-domain qualification succeeds. |
 | FFN production use | Blocked | The external FFN environment import passed, but an appropriate pinned checkpoint is unavailable. A future passing FFN validation would only permit candidate triage. |
@@ -164,25 +172,25 @@ The authoritative local inventory is [CONNECTOME_STATUS.md](reports/CONNECTOME_S
 
 ~~~text
 source and rights evidence
-        │
-        ▼
+        â”‚
+        â–¼
 immutable source declaration + checksum
-        │
-        ▼
-local raw/cache artifact ──► machine diagnostic or proposal
-        │                           │
-        │                           └── never a neuron, synapse, or connection by itself
-        ▼
+        â”‚
+        â–¼
+local raw/cache artifact â”€â”€â–º machine diagnostic or proposal
+        â”‚                           â”‚
+        â”‚                           â””â”€â”€ never a neuron, synapse, or connection by itself
+        â–¼
 coordinate-frame and split-safety validation
-        │
-        ▼
+        â”‚
+        â–¼
 append-only qualified human review evidence
-        │
-        ▼
+        â”‚
+        â–¼
 evidence-backed biological candidate
-        │
-        ▼
-release-integrity gate ──► immutable release artifact
+        â”‚
+        â–¼
+release-integrity gate â”€â”€â–º immutable release artifact
 ~~~
 
 The implementation enforces six rules.
@@ -306,7 +314,7 @@ See [HANDOFF.md](HANDOFF.md). Prefer planning before launch:
 ~~~bash
 python tools/affinity_vast.py offers
 python tools/affinity_vast.py plan --budget 100 --target-hours 168 --max-gpus 20
-# launch spends money — requires --yes and passes budget checks
+# launch spends money â€” requires --yes and passes budget checks
 python tools/affinity_vast.py status
 ~~~
 
@@ -337,31 +345,31 @@ Cached raw imagery, generated arrays, model checkpoints, virtual environments, a
 
 This README is the overview. The evidence-nearest records remain authoritative:
 
-- [START_HERE.md](START_HERE.md) — smallest safe first milestone.
-- [HANDOFF.md](HANDOFF.md) — unfinished takeover checklist and fleet commands.
-- [DATA_SOURCES.md](research/DATA_SOURCES.md) and [DATA_CITATION.md](DATA_CITATION.md) — source and citation obligations.
-- [DATA_LICENSES.md](DATA_LICENSES.md) and [figures/organism/ATTRIBUTION.md](figures/organism/ATTRIBUTION.md) — data vs figure rights.
-- [COORDINATE_SYSTEM.md](docs/COORDINATE_SYSTEM.md) and [CATMAID_DVID_REGISTRATION.md](research/CATMAID_DVID_REGISTRATION.md) — frame semantics and the current registration prohibition.
-- [PHASE5C_PRODUCTION_DOMAIN.md](research/PHASE5C_PRODUCTION_DOMAIN.md) — work queue and source-domain boundary.
-- [PHASE5D_GROUND_TRUTH_AUDIT.md](research/PHASE5D_GROUND_TRUTH_AUDIT.md) — ground-truth qualification state.
-- [MODEL_SELECTION.md](reports/MODEL_SELECTION.md) and [PRODUCTION_MODEL_HELDOUT_EVALUATION.md](reports/PRODUCTION_MODEL_HELDOUT_EVALUATION.md) — candidate-model evidence and rejection/qualification status.
+- [START_HERE.md](START_HERE.md) â€” smallest safe first milestone.
+- [HANDOFF.md](HANDOFF.md) â€” unfinished takeover checklist and fleet commands.
+- [DATA_SOURCES.md](research/DATA_SOURCES.md) and [DATA_CITATION.md](DATA_CITATION.md) â€” source and citation obligations.
+- [DATA_LICENSES.md](DATA_LICENSES.md) and [figures/organism/ATTRIBUTION.md](figures/organism/ATTRIBUTION.md) â€” data vs figure rights.
+- [COORDINATE_SYSTEM.md](docs/COORDINATE_SYSTEM.md) and [CATMAID_DVID_REGISTRATION.md](research/CATMAID_DVID_REGISTRATION.md) â€” frame semantics and the current registration prohibition.
+- [PHASE5C_PRODUCTION_DOMAIN.md](research/PHASE5C_PRODUCTION_DOMAIN.md) â€” work queue and source-domain boundary.
+- [PHASE5D_GROUND_TRUTH_AUDIT.md](research/PHASE5D_GROUND_TRUTH_AUDIT.md) â€” ground-truth qualification state.
+- [MODEL_SELECTION.md](reports/MODEL_SELECTION.md) and [PRODUCTION_MODEL_HELDOUT_EVALUATION.md](reports/PRODUCTION_MODEL_HELDOUT_EVALUATION.md) â€” candidate-model evidence and rejection/qualification status.
 
-Maintained non-G3 source, tools, tests, the Phase 5C benchmark, and the viewer are documented at their module/API boundaries. Annotations focus on the data contract, scientific meaning, and—most importantly—the claim the code deliberately does **not** make. Existing G3 code remains untouched because it already has dedicated in-code and research documentation.
+Maintained non-G3 source, tools, tests, the Phase 5C benchmark, and the viewer are documented at their module/API boundaries. Annotations focus on the data contract, scientific meaning, andâ€”most importantlyâ€”the claim the code deliberately does **not** make. Existing G3 code remains untouched because it already has dedicated in-code and research documentation.
 
 ## Key scientific citations
 
 Minimum citations for the organism and imaging sources (also [DATA_CITATION.md](DATA_CITATION.md)):
 
-- Chua NJ, Makarova AA, Gunn P, et al. *A complete reconstruction of the early visual system of an adult insect*. Current Biology 33(21), 4611–4623.e4 (2023). DOI: [10.1016/j.cub.2023.09.021](https://doi.org/10.1016/j.cub.2023.09.021).
-- Li Y, Li W, Chen Q, et al. *WASPSYN: A Challenge for Domain Adaptive Synapse Detection in Microwasp Brain Connectomes*. IEEE TMI 43(11), 3719–3730 (2024). DOI: [10.1109/TMI.2024.3400276](https://doi.org/10.1109/TMI.2024.3400276).
+- Chua NJ, Makarova AA, Gunn P, et al. *A complete reconstruction of the early visual system of an adult insect*. Current Biology 33(21), 4611â€“4623.e4 (2023). DOI: [10.1016/j.cub.2023.09.021](https://doi.org/10.1016/j.cub.2023.09.021).
+- Li Y, Li W, Chen Q, et al. *WASPSYN: A Challenge for Domain Adaptive Synapse Detection in Microwasp Brain Connectomes*. IEEE TMI 43(11), 3719â€“3730 (2024). DOI: [10.1109/TMI.2024.3400276](https://doi.org/10.1109/TMI.2024.3400276).
 - Makarova AA, et al. *The first complete 3D reconstruction and morphofunctional mapping of an insect eye*. eLife (2025). DOI: [10.7554/eLife.103247](https://doi.org/10.7554/eLife.103247).
-- Polilov AA. *Anatomy of adult Megaphragma…* PLoS ONE 12(5): e0175566 (2017). DOI: [10.1371/journal.pone.0175566](https://doi.org/10.1371/journal.pone.0175566).
+- Polilov AA. *Anatomy of adult Megaphragmaâ€¦* PLoS ONE 12(5): e0175566 (2017). DOI: [10.1371/journal.pone.0175566](https://doi.org/10.1371/journal.pone.0175566).
 
 ## Collaboration and support
 
-I'm actively looking for an **electron microscopy (EM) partner**. If we can find one to collaborate with directly, we can release more open-sourced bug brains—more connectomes reconstructed and shared openly for anyone to build on. If you work with EM imaging, or know someone who does, please reach out.
+I'm actively looking for an **electron microscopy (EM) partner**. If we can find one to collaborate with directly, we can release more open-sourced bug brainsâ€”more connectomes reconstructed and shared openly for anyone to build on. If you work with EM imaging, or know someone who does, please reach out.
 
-Building this also had real out-of-pocket cost (roughly $160 USD in AI credits spent working through blockers, plus the hard $160 cloud Affinity budget ceiling). **Resource limits — not scientific failure — are why the affinity campaign is paused.** If the project is useful to you and you'd like to help offset that, sponsorship or a small contribution is genuinely appreciated and completely optional. Details are in [SUPPORT.md](SUPPORT.md).
+Building this also had real out-of-pocket cost (roughly $160 USD in AI credits spent working through blockers, plus the hard $160 cloud Affinity budget ceiling). **Resource limits â€” not scientific failure â€” are why the affinity campaign is paused.** If the project is useful to you and you'd like to help offset that, sponsorship or a small contribution is genuinely appreciated and completely optional. Details are in [SUPPORT.md](SUPPORT.md).
 
 ## Contributing safely
 
@@ -372,6 +380,6 @@ Building this also had real out-of-pocket cost (roughly $160 USD in AI credits s
 5. Never commit raw imagery, derived large arrays, secrets, credentials, virtual environments, or third-party source copies as a shortcut.
 6. When adding organism figures, only use rights-cleared open licenses and update [figures/organism/ATTRIBUTION.md](figures/organism/ATTRIBUTION.md).
 
-The project’s credibility comes from leaving a boundary intact when evidence is insufficient. A future release should be able to answer not only “what was reconstructed?” but also “from which immutable source, under which rights, in which coordinate frame, by which model and reviewers, and which claims were still deliberately withheld?”
+The projectâ€™s credibility comes from leaving a boundary intact when evidence is insufficient. A future release should be able to answer not only â€œwhat was reconstructed?â€ but also â€œfrom which immutable source, under which rights, in which coordinate frame, by which model and reviewers, and which claims were still deliberately withheld?â€
 
 And if you continue the work: you are picking up a project that stopped for **resources**, with the queue, tooling, and evidence rules already built to go further.
